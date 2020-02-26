@@ -1,0 +1,48 @@
+{
+    "type": "silentgear:main",
+    "stats": [
+        {"name": "durability",      "value": 2500},
+        {"name": "armor_durability","value":   35},
+        {"name": "enchantability",  "value":   13},
+        {"name": "harvest_level",   "value":    3},
+        {"name": "harvest_speed",   "value":    9},
+        {"name": "melee_damage",    "value":    4},
+        {"name": "magic_damage",    "value":    2},
+        {"name": "attack_speed",    "value":  0.1},
+        {"name": "armor",           "value":   20},
+        {"name": "armor_toughness", "value":    8},
+        {"name": "magic_armor",     "value":    8},
+        {"name": "ranged_damage",   "value":    2},
+        {"name": "ranged_speed",    "value":    0},
+        {"name": "rarity",          "value":   45}
+    ],
+    "traits": [
+        {"name": "silentgear:aquatic", "level": 5},
+        {"name": "silentgear:malleable", "level": 2}
+    ],
+    "crafting_items": {
+        "normal": {
+            "tag": "forge:ingots/neptunium"
+        },
+        "small": {
+            "tag": "forge:nuggets/neptunium",
+            "size": 9
+        }
+    },
+    "name": {
+        "text": "Neptunium"
+    },
+    "textures": {
+        "all": {
+            "lite_texture": "high_contrast_with_highlight",
+            "highlight": true,
+            "texture_domain": "silentgear",
+            "texture_suffix": "generic_hc",
+            "normal_color": "#17F4B8"
+        }
+    },
+    "availability": {
+        "tier": 3,
+        "gear_blacklist": []
+    }
+}

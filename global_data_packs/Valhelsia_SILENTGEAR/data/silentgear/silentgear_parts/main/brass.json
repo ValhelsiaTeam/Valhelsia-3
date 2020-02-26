@@ -1,0 +1,48 @@
+{
+    "type": "silentgear:main",
+    "stats": [
+        {"name": "durability",      "value":  480},
+        {"name": "armor_durability","value":   15},
+        {"name": "enchantability",  "value":   14},
+        {"name": "harvest_level",   "value":    2},
+        {"name": "harvest_speed",   "value":    4},
+        {"name": "melee_damage",    "value":    1},
+        {"name": "magic_damage",    "value":    3},
+        {"name": "attack_speed",    "value":  0.1},
+        {"name": "armor",           "value":   12},
+        {"name": "armor_toughness", "value":    1},
+        {"name": "magic_armor",     "value":    6},
+        {"name": "ranged_damage",   "value":  1.5},
+        {"name": "ranged_speed",    "value":  0.2},
+        {"name": "rarity",          "value":   25}
+    ],
+    "traits": [
+        {"name": "silentgear:malleable", "level": 2},
+        {"name": "silentgear:synergistic", "level": 1}
+    ],
+    "crafting_items": {
+        "normal": {
+            "tag": "forge:ingots/brass"
+        },
+        "small": {
+            "tag": "forge:nuggets/brass",
+            "size": 9
+        }
+    },
+    "name": {
+        "text": "Brass"
+    },
+    "textures": {
+        "all": {
+            "lite_texture": "high_contrast",
+            "highlight": true,
+            "texture_domain": "silentgear",
+            "texture_suffix": "generic_hc",
+            "normal_color": "#F2D458"
+        }
+    },
+    "availability": {
+        "tier": 2,
+        "gear_blacklist": []
+    }
+}

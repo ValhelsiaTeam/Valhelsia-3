@@ -1,0 +1,48 @@
+{
+    "type": "silentgear:main",
+    "stats": [
+        {"name": "durability",      "value":   64},
+        {"name": "armor_durability","value":    8},
+        {"name": "enchantability",  "value":   20},
+        {"name": "harvest_level",   "value":    0},
+        {"name": "harvest_speed",   "value":   11},
+        {"name": "melee_damage",    "value":    0},
+        {"name": "magic_damage",    "value":    4},
+        {"name": "attack_speed",    "value":  0.2},
+        {"name": "armor",           "value":   10},
+        {"name": "armor_toughness", "value":    0},
+        {"name": "magic_armor",     "value":   10},
+        {"name": "ranged_damage",   "value":    0},
+        {"name": "ranged_speed",    "value":  0.3},
+        {"name": "rarity",          "value":   25}
+    ],
+    "traits": [
+        {"name": "silentgear:malleable", "level": 2},
+        {"name": "silentgear:soft", "level": 1}
+    ],
+    "crafting_items": {
+        "normal": {
+            "item": "silents_mechanisms:silver_ingot"
+        },
+        "small": {
+            "item": "silents_mechanisms:silver_ingot",
+            "size": 9
+        }
+    },
+    "name": {
+        "text": "Silver"
+    },
+    "textures": {
+        "all": {
+            "lite_texture": "high_contrast_with_highlight",
+            "highlight": true,
+            "texture_domain": "silentgear",
+            "texture_suffix": "generic_hc",
+            "normal_color": "#CBCCEA"
+        }
+    },
+    "availability": {
+        "tier": 2,
+        "gear_blacklist": []
+    }
+}

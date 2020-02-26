@@ -1,0 +1,41 @@
+{
+    "type": "silentgear:grip",
+    "stats": [
+        {"name": "durability",        "value":  0.0, "op": "MUL1"},
+        {"name": "repair_efficiency", "value":  0.0, "op": "MUL1"},
+        {"name": "enchantability",    "value":  0.0, "op": "ADD"},
+        {"name": "harvest_level",     "value":    0, "op": "MAX"},
+        {"name": "harvest_speed",     "value":  0.05, "op": "MUL1"},
+        {"name": "melee_damage",      "value":  0.0, "op": "ADD"},
+        {"name": "magic_damage",      "value":  0.0, "op": "ADD"},
+        {"name": "attack_speed",      "value":  0.05, "op": "ADD"},
+        {"name": "ranged_damage",     "value":  0.0, "op": "ADD"},
+        {"name": "ranged_speed",      "value":  0.1, "op": "ADD"},
+        {"name": "rarity",            "value":    6}
+    ],
+    "traits": [
+        {"name": "silentgear:eroded", "level": 3},
+        {"name": "silentgear:magmatic", "level": 1}
+    ],
+    "crafting_items": {
+        "normal": {
+            "item": "minecraft:netherrack"
+        }
+    },
+    "name": {
+        "text": "Netherrack"
+    },
+    "textures": {
+        "all": {
+            "lite_texture": "low_contrast",
+            "highlight": false,
+            "texture_domain": "silentgear",
+            "texture_suffix": "generic_lc",
+            "normal_color": "#854242"
+        }
+    },
+    "availability": {
+        "tier": 0,
+        "gear_blacklist": []
+    }
+}

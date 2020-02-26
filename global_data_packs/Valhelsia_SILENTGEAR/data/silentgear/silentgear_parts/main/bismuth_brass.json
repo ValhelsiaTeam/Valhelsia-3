@@ -1,0 +1,48 @@
+{
+    "type": "silentgear:main",
+    "stats": [
+        {"name": "durability",      "value": 1200},
+        {"name": "armor_durability","value":   24},
+        {"name": "enchantability",  "value":   16},
+        {"name": "harvest_level",   "value":    3},
+        {"name": "harvest_speed",   "value":   10},
+        {"name": "melee_damage",    "value":  3.5},
+        {"name": "magic_damage",    "value":    6},
+        {"name": "attack_speed",    "value":  0.1},
+        {"name": "armor",           "value":   18},
+        {"name": "armor_toughness", "value":    3},
+        {"name": "magic_armor",     "value":    8},
+        {"name": "ranged_damage",   "value":    2},
+        {"name": "ranged_speed",    "value":  0.2},
+        {"name": "rarity",          "value":   35}
+    ],
+    "traits": [
+        {"name": "silentgear:malleable", "level": 3},
+        {"name": "silentgear:lustrous", "level": 2}
+    ],
+    "crafting_items": {
+        "normal": {
+            "tag": "forge:ingots/bismuth_brass"
+        },
+        "small": {
+            "tag": "forge:nuggets/bismuth_brass",
+            "size": 9
+        }
+    },
+    "name": {
+        "text": "Bismuth Brass"
+    },
+    "textures": {
+        "all": {
+            "lite_texture": "high_contrast_with_highlight",
+            "highlight": true,
+            "texture_domain": "silentgear",
+            "texture_suffix": "generic_hc",
+            "normal_color": "#E9C1B4"
+        }
+    },
+    "availability": {
+        "tier": 3,
+        "gear_blacklist": []
+    }
+}

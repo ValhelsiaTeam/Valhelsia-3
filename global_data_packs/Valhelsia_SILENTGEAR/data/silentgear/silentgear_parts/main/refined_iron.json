@@ -1,0 +1,48 @@
+{
+    "type": "silentgear:main",
+    "stats": [
+        {"name": "durability",      "value":  410},
+        {"name": "armor_durability","value":   17},
+        {"name": "enchantability",  "value":   16},
+        {"name": "harvest_level",   "value":    2},
+        {"name": "harvest_speed",   "value":    7},
+        {"name": "melee_damage",    "value":  2.5},
+        {"name": "magic_damage",    "value":  1.5},
+        {"name": "attack_speed",    "value":  0.2},
+        {"name": "armor",           "value":   17},
+        {"name": "armor_toughness", "value":    1},
+        {"name": "magic_armor",     "value":    7},
+        {"name": "ranged_damage",   "value":    2},
+        {"name": "ranged_speed",    "value":  0.2},
+        {"name": "rarity",          "value":   25}
+    ],
+    "traits": [
+        {"name": "silentgear:malleable", "level": 5}
+    ],
+    "crafting_items": {
+        "normal": {
+            "tag": "forge:ingots/refined_iron"
+        },
+        "small": {
+            "tag": "forge:nuggets/refined_iron",
+            "size": 9
+        }
+    },
+    "name": {
+        "text": "Refined Iron"
+    },
+    "textures": {
+        "all": {
+            "lite_texture": "high_contrast",
+            "highlight": true,
+            "texture_domain": "silentgear",
+            "texture_suffix": "generic_hc",
+            "normal_color": "#D7D7D7",
+            "broken_color": "#D7D7D7"
+        }
+    },
+    "availability": {
+        "tier": 2,
+        "gear_blacklist": []
+    }
+}

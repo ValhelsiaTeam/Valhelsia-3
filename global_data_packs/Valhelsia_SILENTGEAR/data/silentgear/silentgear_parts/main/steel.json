@@ -1,0 +1,47 @@
+{
+    "type": "silentgear:main",
+    "stats": [
+        {"name": "durability",      "value":  500},
+        {"name": "armor_durability","value":   20},
+        {"name": "enchantability",  "value":   12},
+        {"name": "harvest_level",   "value":    2},
+        {"name": "harvest_speed",   "value":    5},
+        {"name": "melee_damage",    "value":    3},
+        {"name": "magic_damage",    "value":    1},
+        {"name": "attack_speed",    "value": -0.2},
+        {"name": "armor",           "value":   20},
+        {"name": "armor_toughness", "value":    3},
+        {"name": "magic_armor",     "value":    6},
+        {"name": "ranged_damage",   "value":    2},
+        {"name": "ranged_speed",    "value": -0.1},
+        {"name": "rarity",          "value":   35}
+    ],
+    "traits": [
+        {"name": "silentgear:malleable", "level": 5}
+    ],
+    "crafting_items": {
+        "normal": {
+            "item": "silents_mechanisms:steel_ingot"
+        },
+        "small": {
+            "item": "silents_mechanisms:steel_ingot",
+            "size": 9
+        }
+    },
+    "name": {
+        "text": "Steel"
+    },
+    "textures": {
+        "all": {
+            "lite_texture": "high_contrast",
+            "highlight": true,
+            "texture_domain": "silentgear",
+            "texture_suffix": "generic_hc",
+            "normal_color": "#929292"
+        }
+    },
+    "availability": {
+        "tier": 2,
+        "gear_blacklist": []
+    }
+}

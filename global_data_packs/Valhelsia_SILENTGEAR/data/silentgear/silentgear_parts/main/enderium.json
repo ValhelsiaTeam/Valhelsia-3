@@ -1,0 +1,48 @@
+{
+    "type": "silentgear:main",
+    "stats": [
+        {"name": "durability",      "value": 1100},
+        {"name": "armor_durability","value":   34},
+        {"name": "enchantability",  "value":   15},
+        {"name": "harvest_level",   "value":    4},
+        {"name": "harvest_speed",   "value":   13},
+        {"name": "melee_damage",    "value":    5},
+        {"name": "magic_damage",    "value":    6},
+        {"name": "attack_speed",    "value":  0.1},
+        {"name": "armor",           "value":   22},
+        {"name": "armor_toughness", "value":    4},
+        {"name": "magic_armor",     "value":    8},
+        {"name": "ranged_damage",   "value":  3.5},
+        {"name": "ranged_speed",    "value": -0.1},
+        {"name": "rarity",          "value":   45}
+    ],
+    "traits": [
+        {"name": "silentgear:malleable", "level": 2}
+    ],
+    "crafting_items": {
+        "normal": {
+            "tag": "forge:ingots/enderium"
+        },
+        "small": {
+            "tag": "forge:nuggets/enderium",
+            "size": 9
+        }
+    },
+    "name": {
+        "text": "Enderium"
+    },
+    "textures": {
+        "all": {
+            "lite_texture": "high_contrast",
+            "highlight": false,
+            "texture_domain": "silentgear",
+            "texture_suffix": "generic_hc",
+            "normal_color": "#468C75",
+            "broken_color": "#468C75"
+        }
+    },
+    "availability": {
+        "tier": 4,
+        "gear_blacklist": []
+    }
+}

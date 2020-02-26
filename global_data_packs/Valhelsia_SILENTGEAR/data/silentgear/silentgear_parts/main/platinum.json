@@ -1,0 +1,48 @@
+{
+    "type": "silentgear:main",
+    "stats": [
+        {"name": "durability",      "value":  900},
+        {"name": "armor_durability","value":   22},
+        {"name": "enchantability",  "value":   14},
+        {"name": "harvest_level",   "value":    3},
+        {"name": "harvest_speed",   "value":    9},
+        {"name": "melee_damage",    "value":  3.5},
+        {"name": "magic_damage",    "value":    4},
+        {"name": "attack_speed",    "value":    0},
+        {"name": "armor",           "value":   18},
+        {"name": "armor_toughness", "value":    2},
+        {"name": "magic_armor",     "value":   12},
+        {"name": "ranged_damage",   "value":    1},
+        {"name": "ranged_speed",    "value":    0},
+        {"name": "rarity",          "value":   40}
+    ],
+    "traits": [
+        {"name": "silentgear:malleable", "level": 2}
+    ],
+    "crafting_items": {
+        "normal": {
+            "tag": "forge:ingots/platinum"
+        },
+        "small": {
+            "tag": "forge:nuggets/platinum",
+            "size": 9
+        }
+    },
+    "name": {
+        "text": "Platinum"
+    },
+    "textures": {
+        "all": {
+            "lite_texture": "high_contrast",
+            "highlight": true,
+            "texture_domain": "silentgear",
+            "texture_suffix": "generic_hc",
+            "normal_color": "#B3B3FF",
+            "broken_color": "#B3B3FF"
+        }
+    },
+    "availability": {
+        "tier": 3,
+        "gear_blacklist": []
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "type": "silentgear:main",
+    "stats": [
+        {"name": "durability",      "value":  480},
+        {"name": "armor_durability","value":   15},
+        {"name": "enchantability",  "value":   14},
+        {"name": "harvest_level",   "value":    2},
+        {"name": "harvest_speed",   "value":    7},
+        {"name": "melee_damage",    "value":    2},
+        {"name": "magic_damage",    "value":    2},
+        {"name": "attack_speed",    "value":  0.2},
+        {"name": "armor",           "value":   13},
+        {"name": "armor_toughness", "value":  0.5},
+        {"name": "magic_armor",     "value":    3},
+        {"name": "ranged_damage",   "value":    2},
+        {"name": "ranged_speed",    "value":  0.2},
+        {"name": "rarity",          "value":   25}
+    ],
+    "traits": [
+        {"name": "silentgear:malleable", "level": 3},
+        {"name": "silentgear:soft", "level": 2},
+        {"name": "silentgear:synergistic","level": 1}
+    ],
+    "crafting_items": {
+        "normal": {
+            "tag": "forge:ingots/aluminum"
+        },
+        "small": {
+            "tag": "forge:nuggets/aluminum",
+            "size": 9
+        }
+    },
+    "name": {
+        "text": "Aluminum"
+    },
+    "textures": {
+        "all": {
+            "lite_texture": "high_contrast_with_highlight",
+            "highlight": true,
+            "texture_domain": "silentgear",
+            "texture_suffix": "generic_hc",
+            "normal_color": "#BFD4DE"
+        }
+    },
+    "availability": {
+        "tier": 2,
+        "gear_blacklist": []
+    }
+}

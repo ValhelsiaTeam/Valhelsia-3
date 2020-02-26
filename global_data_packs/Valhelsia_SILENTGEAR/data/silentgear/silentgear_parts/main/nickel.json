@@ -1,0 +1,48 @@
+{
+    "type": "silentgear:main",
+    "stats": [
+        {"name": "durability",      "value":  384},
+        {"name": "armor_durability","value":   17},
+        {"name": "enchantability",  "value":   14},
+        {"name": "harvest_level",   "value":    2},
+        {"name": "harvest_speed",   "value":    7},
+        {"name": "melee_damage",    "value":  2.5},
+        {"name": "magic_damage",    "value":  1.5},
+        {"name": "attack_speed",    "value":  0.1},
+        {"name": "armor",           "value":   13},
+        {"name": "armor_toughness", "value":    0},
+        {"name": "magic_armor",     "value":    6},
+        {"name": "ranged_damage",   "value":  0.5},
+        {"name": "ranged_speed",    "value":  0.2},
+        {"name": "rarity",          "value":   25}
+    ],
+    "traits": [
+        {"name": "silentgear:malleable", "level": 3},
+        {"name": "silentgear:adamant", "level": 1}
+    ],
+    "crafting_items": {
+        "normal": {
+            "tag": "forge:ingots/nickel"
+        },
+        "small": {
+            "tag": "forge:nuggets/nickel",
+            "size": 9
+        }
+    },
+    "name": {
+        "text": "Nickel"
+    },
+    "textures": {
+        "all": {
+            "lite_texture": "high_contrast",
+            "highlight": true,
+            "texture_domain": "silentgear",
+            "texture_suffix": "iron",
+            "normal_color": "#EFE87B"
+        }
+    },
+    "availability": {
+        "tier": 2,
+        "gear_blacklist": []
+    }
+}

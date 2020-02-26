@@ -1,0 +1,48 @@
+{
+    "type": "silentgear:main",
+    "stats": [
+        {"name": "durability",      "value":  192},
+        {"name": "armor_durability","value":   10},
+        {"name": "enchantability",  "value":   15},
+        {"name": "harvest_level",   "value":    1},
+        {"name": "harvest_speed",   "value":    3},
+        {"name": "melee_damage",    "value":  1.5},
+        {"name": "magic_damage",    "value":    1},
+        {"name": "attack_speed",    "value":    0},
+        {"name": "armor",           "value":   11},
+        {"name": "armor_toughness", "value":    0},
+        {"name": "magic_armor",     "value":    1},
+        {"name": "ranged_damage",   "value":  0.5},
+        {"name": "ranged_speed",    "value":  0.1},
+        {"name": "rarity",          "value":   10}
+    ],
+    "traits": [
+        {"name": "silentgear:malleable", "level": 1},
+        {"name": "silentgear:soft", "level": 2}
+    ],
+    "crafting_items": {
+        "normal": {
+            "tag": "forge:ingots/zinc"
+        },
+        "small": {
+            "tag": "forge:nuggets/zinc",
+            "size": 9
+        }
+    },
+    "name": {
+        "text": "Zinc"
+    },
+    "textures": {
+        "all": {
+            "lite_texture": "high_contrast_with_highlight",
+            "highlight": true,
+            "texture_domain": "silentgear",
+            "texture_suffix": "iron",
+            "normal_color": "#C9D3CE"
+        }
+    },
+    "availability": {
+        "tier": 1,
+        "gear_blacklist": []
+    }
+}
