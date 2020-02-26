@@ -1,0 +1,9 @@
+#The time in ticks in which a player can still be rescued from death.
+maxDeathTicks = 2400
+#The distance at which a player can rescue another.
+maxRescueDist = 3.0
+#The time in ticks it takes to rescue a player.
+rescueTime = 100
+#If true, knocked out players will glow, making them visible through blocks.
+glowOnDeath = true
+
