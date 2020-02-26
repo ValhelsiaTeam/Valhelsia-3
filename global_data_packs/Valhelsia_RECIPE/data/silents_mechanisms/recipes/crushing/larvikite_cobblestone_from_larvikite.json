@@ -1,0 +1,13 @@
+{
+    "type": "silents_mechanisms:crushing",
+    "process_time": 200,
+    "ingredient": {
+        "item": "embellishcraft:larvikite"
+    },
+    "results": [
+        {
+            "item": "embellishcraft:larvikite_cobblestone",
+            "count": 1
+        }
+    ]
+}

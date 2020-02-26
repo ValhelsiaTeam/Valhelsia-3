@@ -1,0 +1,16 @@
+{
+    "type": "create:splashing",
+    "group": "minecraft:misc",
+    "ingredients": [
+    	{
+    		"item": "embellishcraft:steel_wall_ladder"
+    	}
+    ], 
+	"results": [
+		{
+			"item": "embellishcraft:rusty_wall_ladder",
+			"count": 1
+		}
+	],
+	"processingTime": 100
+}

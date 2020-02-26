@@ -1,0 +1,16 @@
+{
+    "type": "create:splashing",
+    "group": "minecraft:misc",
+    "ingredients": [
+    	{
+    		"item": "create:limestone"
+    	}
+    ], 
+	"results": [
+		{
+			"item": "create:weathered_limestone",
+			"count": 1
+		}
+	],
+	"processingTime": 100
+}

@@ -1,0 +1,16 @@
+{
+    "type": "create:crushing",
+    "group": "minecraft:misc",
+    "ingredients": [
+    	{
+    		"item": "embellishcraft:basalt"
+    	}
+    ], 
+	"results": [
+		{
+			"item": "embellishcraft:basalt_cobblestone",
+			"count": 1
+		}
+	],
+	"processingTime": 100
+}

@@ -1,0 +1,16 @@
+{
+    "type": "create:splashing",
+    "group": "minecraft:misc",
+    "ingredients": [
+    	{
+    		"tag": "minecraft:beds"
+    	}
+    ], 
+	"results": [
+		{
+			"item": "minecraft:white_bed",
+			"count": 1
+		}
+	],
+	"processingTime": 100
+}

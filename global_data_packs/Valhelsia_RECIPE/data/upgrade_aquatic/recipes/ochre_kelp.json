@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [      
+    {
+      "item": "minecraft:kelp"
+    },
+	
+    {
+      "tag": "forge:dyes/yellow"
+    }
+	
+  ],
+
+  "result": {
+    "item": "upgrade_aquatic:ochre_kelp"
+  }
+}

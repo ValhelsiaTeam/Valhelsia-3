@@ -1,0 +1,35 @@
+{
+    "type": "create:crushing",
+    "group": "minecraft:misc",
+    "ingredients": [
+    	{
+    		"item": "forbidden_arcanus:arcane_crystal_ore"
+    	}
+    ], 
+	"results": [
+		{
+			"item": "forbidden_arcanus:arcane_crystal",
+			"count": 1
+		},
+		{
+			"item": "forbidden_arcanus:arcane_crystal_dust",
+			"count": 1
+		},
+		{
+			"item": "forbidden_arcanus:arcane_crystal",
+			"count": 1,
+			"chance": 0.5
+		},
+		{
+			"item": "forbidden_arcanus:arcane_crystal_dust",
+			"count": 1,
+			"chance": 0.5
+		},
+		{
+			"item": "minecraft:cobblestone",
+			"count": 1,
+			"chance": 0.125
+		}
+	],
+	"processingTime": 300
+}

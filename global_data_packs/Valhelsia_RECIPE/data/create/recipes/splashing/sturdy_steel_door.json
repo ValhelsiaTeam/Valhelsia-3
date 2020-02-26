@@ -1,0 +1,16 @@
+{
+    "type": "create:splashing",
+    "group": "minecraft:misc",
+    "ingredients": [
+    	{
+    		"item": "embellishcraft:sturdy_steel_door"
+    	}
+    ], 
+	"results": [
+		{
+			"item": "embellishcraft:sturdy_rusty_door",
+			"count": 1
+		}
+	],
+	"processingTime": 100
+}

@@ -1,0 +1,16 @@
+{
+    "type": "create:crushing",
+    "group": "minecraft:misc",
+    "ingredients": [
+    	{
+    		"item": "embellishcraft:gneiss"
+    	}
+    ], 
+	"results": [
+		{
+			"item": "embellishcraft:gneiss_cobblestone",
+			"count": 1
+		}
+	],
+	"processingTime": 100
+}

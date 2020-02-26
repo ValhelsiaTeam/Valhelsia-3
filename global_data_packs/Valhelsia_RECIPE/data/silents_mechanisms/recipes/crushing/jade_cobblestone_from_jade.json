@@ -1,0 +1,13 @@
+{
+    "type": "silents_mechanisms:crushing",
+    "process_time": 200,
+    "ingredient": {
+        "item": "embellishcraft:jade"
+    },
+    "results": [
+        {
+            "item": "embellishcraft:jade_cobblestone",
+            "count": 1
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "type": "create:splashing",
+    "group": "minecraft:misc",
+    "ingredients": [
+    	{
+    		"tag": "upgrade_aquatic:bedrolls"
+    	}
+    ], 
+	"results": [
+		{
+			"item": "upgrade_aquatic:bedroll_leather",
+			"count": 1
+		}
+	],
+	"processingTime": 100
+}

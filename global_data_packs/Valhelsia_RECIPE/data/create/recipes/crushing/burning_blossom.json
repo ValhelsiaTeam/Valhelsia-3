@@ -1,0 +1,21 @@
+{
+    "type": "create:crushing",
+    "group": "minecraft:misc",
+    "ingredients": [
+    	{
+    		"item": "biomesoplenty:burning_blossom"
+    	}
+    ], 
+	"results": [
+		{
+			"item": "minecraft:orange_dye",
+			"count": 2
+		},
+		{
+			"item": "minecraft:yellow_dye",
+			"count": 1,
+			"chance": 0.25
+		}
+	],
+	"processingTime": 50
+}

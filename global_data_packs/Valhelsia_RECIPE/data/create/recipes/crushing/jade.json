@@ -1,0 +1,16 @@
+{
+    "type": "create:crushing",
+    "group": "minecraft:misc",
+    "ingredients": [
+    	{
+    		"item": "embellishcraft:jade"
+    	}
+    ], 
+	"results": [
+		{
+			"item": "embellishcraft:jade_cobblestone",
+			"count": 1
+		}
+	],
+	"processingTime": 100
+}

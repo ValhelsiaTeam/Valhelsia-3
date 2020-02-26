@@ -1,0 +1,13 @@
+{
+    "type": "silents_mechanisms:crushing",
+    "process_time": 200,
+    "ingredient": {
+        "item": "minecraft:stone"
+    },
+    "results": [
+        {
+            "item": "minecraft:cobblestone",
+            "count": 1
+        }
+    ]
+}

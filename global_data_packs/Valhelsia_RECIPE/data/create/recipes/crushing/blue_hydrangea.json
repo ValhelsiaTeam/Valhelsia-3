@@ -1,0 +1,21 @@
+{
+    "type": "create:crushing",
+    "group": "minecraft:misc",
+    "ingredients": [
+    	{
+    		"item": "biomesoplenty:blue_hydrangea"
+    	}
+    ], 
+	"results": [
+		{
+			"item": "minecraft:light_blue_dye",
+			"count": 2
+		},
+		{
+			"item": "minecraft:light_gray_dye",
+			"count": 1,
+			"chance": 0.05
+		}
+	],
+	"processingTime": 50
+}

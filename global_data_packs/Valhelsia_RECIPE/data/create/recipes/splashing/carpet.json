@@ -1,0 +1,16 @@
+{
+    "type": "create:splashing",
+    "group": "minecraft:misc",
+    "ingredients": [
+    	{
+    		"tag": "minecraft:carpets"
+    	}
+    ], 
+	"results": [
+		{
+			"item": "minecraft:white_carpet",
+			"count": 1
+		}
+	],
+	"processingTime": 100
+}

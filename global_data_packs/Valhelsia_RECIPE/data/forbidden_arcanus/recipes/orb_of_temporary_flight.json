@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [      
+    {
+      "item": "minecraft:ender_eye"
+    },
+	
+    {
+      "item": "forbidden_arcanus:corrupti_dust"
+    },
+	
+	{
+      "item": "forbidden_arcanus:mundabitur_dust"
+    },
+	
+	{
+      "item": "minecraft:ghast_tear"
+    },
+	
+	{
+      "item": "minecraft:dragon_breath"
+    }
+	
+  ],
+
+  "result": {
+    "item": "forbidden_arcanus:orb_of_temporary_flight"
+  }
+}

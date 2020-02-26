@@ -1,0 +1,16 @@
+{
+    "type": "create:splashing",
+    "group": "minecraft:misc",
+    "ingredients": [
+    	{
+    		"item": "embellishcraft:brown_pillow"
+    	}
+    ], 
+	"results": [
+		{
+			"item": "embellishcraft:white_pillow",
+			"count": 1
+		}
+	],
+	"processingTime": 100
+}

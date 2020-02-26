@@ -1,0 +1,21 @@
+{
+    "type": "create:crushing",
+    "group": "minecraft:misc",
+    "ingredients": [
+    	{
+    		"item": "upgrade_aquatic:searocket_white"
+    	}
+    ], 
+	"results": [
+		{
+			"item": "minecraft:white_dye",
+			"count": 2
+		},
+		{
+			"item": "minecraft:light_gray_dye",
+			"count": 1,
+			"chance": 0.1
+		}
+	],
+	"processingTime": 50
+}
