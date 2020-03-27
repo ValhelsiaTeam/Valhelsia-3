@@ -1,0 +1,49 @@
+{
+    "type": "silentgear:main",
+    "stats": [
+        {"name": "durability",      "value":  600},
+        {"name": "armor_durability","value":   22},
+        {"name": "enchantability",  "value":   16},
+        {"name": "harvest_level",   "value":    3},
+        {"name": "harvest_speed",   "value":   10},
+        {"name": "melee_damage",    "value":    3},
+        {"name": "magic_damage",    "value":    4},
+        {"name": "attack_speed",    "value":  0.1},
+        {"name": "armor",           "value":   16},
+        {"name": "armor_toughness", "value":    2},
+        {"name": "magic_armor",     "value":    4},
+        {"name": "ranged_damage",   "value":    2},
+        {"name": "ranged_speed",    "value":  0.2},
+        {"name": "rarity",          "value":   35}
+    ],
+    "traits": [
+        {"name": "silentgear:malleable", "level": 2},
+        {"name": "silentgear:lustrous", "level": 2}
+    ],
+    "crafting_items": {
+        "normal": {
+            "tag": "forge:ingots/signalum"
+        },
+        "small": {
+            "tag": "forge:nuggets/signalum",
+            "size": 9
+        }
+    },
+    "name": {
+        "text": "Signalum"
+    },
+    "textures": {
+        "all": {
+            "lite_texture": "high_contrast",
+            "highlight": false,
+            "texture_domain": "silentgear",
+            "texture_suffix": "generic_hc",
+            "normal_color": "#468C75",
+            "broken_color": "#468C75"
+        }
+    },
+    "availability": {
+        "tier": 4,
+        "gear_blacklist": []
+    }
+}

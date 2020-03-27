@@ -1,0 +1,48 @@
+{
+    "type": "silentgear:main",
+    "stats": [
+        {"name": "durability",      "value": 1024},
+        {"name": "armor_durability","value":   26},
+        {"name": "enchantability",  "value":   12},
+        {"name": "harvest_level",   "value":    3},
+        {"name": "harvest_speed",   "value":  7.5},
+        {"name": "melee_damage",    "value":  3.5},
+        {"name": "magic_damage",    "value":    1},
+        {"name": "attack_speed",    "value": -0.3},
+        {"name": "armor",           "value":   20},
+        {"name": "armor_toughness", "value":    4},
+        {"name": "magic_armor",     "value":    4},
+        {"name": "ranged_damage",   "value":  2.5},
+        {"name": "ranged_speed",    "value": -0.2},
+        {"name": "rarity",          "value":   35}
+    ],
+    "traits": [
+        {"name": "silentgear:malleable", "level": 3}
+    ],
+    "crafting_items": {
+        "normal": {
+            "tag": "forge:ingots/compressed_iron"
+        },
+        "small": {
+            "tag": "forge:nuggets/compressed_iron",
+            "size": 9
+        }
+    },
+    "name": {
+        "text": "Compressed Iron"
+    },
+    "textures": {
+        "all": {
+            "lite_texture": "high_contrast",
+            "highlight": true,
+            "texture_domain": "silentgear",
+            "texture_suffix": "generic_hc",
+            "normal_color": "#A6A6A6",
+            "broken_color": "#A6A6A6"
+        }
+    },
+    "availability": {
+        "tier": 3,
+        "gear_blacklist": []
+    }
+}

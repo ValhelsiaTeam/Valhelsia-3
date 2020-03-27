@@ -1,0 +1,58 @@
+{
+    "type": "silentgear:main",
+    "stats": [
+        {"name": "durability",      "value": 1881},
+        {"name": "armor_durability","value":   37},
+        {"name": "enchantability",  "value":   15},
+        {"name": "harvest_level",   "value":    3},
+        {"name": "harvest_speed",   "value":   11},
+        {"name": "melee_damage",    "value":    5},
+        {"name": "magic_damage",    "value":    3},
+        {"name": "attack_speed",    "value": -0.1},
+        {"name": "armor",           "value":   24},
+        {"name": "armor_toughness", "value":    6},
+        {"name": "magic_armor",     "value":    8},
+        {"name": "ranged_damage",   "value":    4},
+        {"name": "ranged_speed",    "value": -0.3},
+        {"name": "rarity",          "value":   45}
+    ],
+    "traits": [
+        {"name": "silentgear:malleable", "level": 4},
+        {"name": "silentgear:flame_ward", "level": 1,
+            "conditions": [
+                {"type": "silentgear:gear_type", "gear_type": "armor"},
+                {"type": "silentgear:or",
+                    "values": [
+                        {"type": "silentgear:material_count", "count": 3},
+                        {"type": "silentgear:material_ratio","ratio": 0.33}
+                    ]
+                }
+            ]
+        }
+    ],
+    "crafting_items": {
+        "normal": {
+            "tag": "forge:ingots/crimson_steel"
+        },
+        "small": {
+            "tag": "forge:nuggets/crimson_steel",
+            "size": 9
+        }
+    },
+    "name": {
+        "text": "Crimson Steel"
+    },
+    "textures": {
+        "all": {
+            "lite_texture": "high_contrast_with_highlight",
+            "highlight": true,
+            "texture_domain": "silentgear",
+            "texture_suffix": "crimson_steel",
+            "normal_color": "#DC143C"
+        }
+    },
+    "availability": {
+        "tier": 3,
+        "gear_blacklist": []
+    }
+}

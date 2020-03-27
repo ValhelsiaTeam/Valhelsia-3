@@ -1,0 +1,49 @@
+{
+    "type": "silentgear:main",
+    "stats": [
+        {"name": "durability",      "value":  800},
+        {"name": "armor_durability","value":   27},
+        {"name": "enchantability",  "value":   14},
+        {"name": "harvest_level",   "value":    3},
+        {"name": "harvest_speed",   "value":   11},
+        {"name": "melee_damage",    "value":  3.5},
+        {"name": "magic_damage",    "value":  2.5},
+        {"name": "attack_speed",    "value":  0.2},
+        {"name": "armor",           "value":   18},
+        {"name": "armor_toughness", "value":    3},
+        {"name": "magic_armor",     "value":    5},
+        {"name": "ranged_damage",   "value":    2},
+        {"name": "ranged_speed",    "value":  0.1},
+        {"name": "rarity",          "value":   35}
+    ],
+    "traits": [
+        {"name": "silentgear:malleable", "level": 2},
+        {"name": "silentgear:refractive", "level": 1}
+    ],
+    "crafting_items": {
+        "normal": {
+            "tag": "forge:ingots/lumium"
+        },
+        "small": {
+            "tag": "forge:nuggets/lumium",
+            "size": 9
+        }
+    },
+    "name": {
+        "text": "Lumium"
+    },
+    "textures": {
+        "all": {
+            "lite_texture": "high_contrast",
+            "highlight": false,
+            "texture_domain": "silentgear",
+            "texture_suffix": "generic_hc",
+            "normal_color": "#468C75",
+            "broken_color": "#468C75"
+        }
+    },
+    "availability": {
+        "tier": 4,
+        "gear_blacklist": []
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "type": "silentgear:main",
+    "stats": [
+        {"name": "durability",      "value":  640},
+        {"name": "armor_durability","value":   23},
+        {"name": "enchantability",  "value":   12},
+        {"name": "harvest_level",   "value":    3},
+        {"name": "harvest_speed",   "value":    5},
+        {"name": "melee_damage",    "value":  2.5},
+        {"name": "magic_damage",    "value":    4},
+        {"name": "attack_speed",    "value":  0.1},
+        {"name": "armor",           "value":   17},
+        {"name": "armor_toughness", "value":    3},
+        {"name": "magic_armor",     "value":    8},
+        {"name": "ranged_damage",   "value":    1},
+        {"name": "ranged_speed",    "value":  0.1},
+        {"name": "rarity",          "value":   30}
+    ],
+    "traits": [
+        {"name": "silentgear:malleable", "level": 2},
+        {"name": "silentgear:lustrous", "level": 2}
+    ],
+    "crafting_items": {
+        "normal": {
+            "tag": "forge:ingots/bismuth"
+        },
+        "small": {
+            "tag": "forge:nuggets/bismuth",
+            "size": 9
+        }
+    },
+    "name": {
+        "text": "Bismuth"
+    },
+    "textures": {
+        "all": {
+            "lite_texture": "high_contrast_with_highlight",
+            "highlight": true,
+            "texture_domain": "silentgear",
+            "texture_suffix": "generic_hc",
+            "normal_color": "#D1C2D5"
+        }
+    },
+    "availability": {
+        "tier": 3,
+        "tool_blacklist": []
+    }
+}

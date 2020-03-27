@@ -1,0 +1,126 @@
+
+[general]
+	#Shows a message in chat warning the player that the mod is early in development
+	showBetaWelcomeMessage = false
+
+#All world generation settings require you to restart Minecraft!
+[world]
+	#Set to 'false' to completely disable ore generation from this mod, ignoring all other settings.
+	#You can also enable/disable ores individually, but this is useful if you plan to use another mod for ore generation.
+	masterSwitch = true
+
+	[world.gen]
+
+		[world.gen.URANIUM]
+			#Minimum Y-coordinate (base height) of veins
+			minHeight = 0
+			#Number of veins per chunk
+			veinCount = 1
+			#Maximum Y-coordinate (highest level) of veins
+			maxHeight = 18
+			#Size of veins
+			veinSize = 4
+
+		[world.gen.NICKEL]
+			#Minimum Y-coordinate (base height) of veins
+			minHeight = 0
+			#Number of veins per chunk
+			veinCount = 1
+			#Maximum Y-coordinate (highest level) of veins
+			maxHeight = 24
+			#Size of veins
+			veinSize = 6
+
+		[world.gen.BAUXITE]
+			#Minimum Y-coordinate (base height) of veins
+			minHeight = 15
+			#Number of veins per chunk
+			veinCount = 6
+			#Maximum Y-coordinate (highest level) of veins
+			maxHeight = 50
+			#Size of veins
+			veinSize = 8
+
+		[world.gen.SILVER]
+			#Minimum Y-coordinate (base height) of veins
+			minHeight = 0
+			#Number of veins per chunk
+			veinCount = 4
+			#Maximum Y-coordinate (highest level) of veins
+			maxHeight = 40
+			#Size of veins
+			veinSize = 8
+
+		[world.gen.TIN]
+			#Minimum Y-coordinate (base height) of veins
+			minHeight = 20
+			#Number of veins per chunk
+			veinCount = 8
+			#Maximum Y-coordinate (highest level) of veins
+			maxHeight = 80
+			#Size of veins
+			veinSize = 8
+
+		[world.gen.PLATINUM]
+			#Minimum Y-coordinate (base height) of veins
+			minHeight = 5
+			#Number of veins per chunk
+			veinCount = 1
+			#Maximum Y-coordinate (highest level) of veins
+			maxHeight = 20
+			#Size of veins
+			veinSize = 8
+
+		[world.gen.COPPER]
+			#Minimum Y-coordinate (base height) of veins
+			minHeight = 40
+			#Number of veins per chunk
+			veinCount = 8
+			#Maximum Y-coordinate (highest level) of veins
+			maxHeight = 90
+			#Size of veins
+			veinSize = 8
+
+		[world.gen.BISMUTH]
+			#Minimum Y-coordinate (base height) of veins
+			minHeight = 16
+			#Number of veins per chunk
+			veinCount = 4
+			#Maximum Y-coordinate (highest level) of veins
+			maxHeight = 64
+			#Size of veins
+			veinSize = 8
+
+		[world.gen.ZINC]
+			#Minimum Y-coordinate (base height) of veins
+			minHeight = 20
+			#Number of veins per chunk
+			veinCount = 4
+			#Maximum Y-coordinate (highest level) of veins
+			maxHeight = 60
+			#Size of veins
+			veinSize = 8
+
+		[world.gen.LEAD]
+			#Minimum Y-coordinate (base height) of veins
+			minHeight = 0
+			#Number of veins per chunk
+			veinCount = 4
+			#Maximum Y-coordinate (highest level) of veins
+			maxHeight = 30
+			#Size of veins
+			veinSize = 8
+
+	[world.oilLake]
+		#Chance of oil lakes spawning (1 in chance). Higher numbers = less common. Set 0 to disable.
+		#Water is 4, lava is 80. Oil lakes will spawn underground about 90% of the time.
+		#Note that disabling oil will make some items uncraftable unless recipes are changed
+		chance = 6
+
+[machine]
+
+	[machine.fluidGenerators]
+		#The amount of fluid (in milliBuckets, or mB) fluid generators consume at once.
+		#Lower values reduce waste, but may cause lag as the generator more frequently turns on/off.
+		#A generator with less fluid in the tank will not be able to run.
+		injectionVolume = 100

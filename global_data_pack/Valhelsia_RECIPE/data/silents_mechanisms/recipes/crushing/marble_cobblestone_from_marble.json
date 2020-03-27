@@ -1,0 +1,13 @@
+{
+    "type": "silents_mechanisms:crushing",
+    "process_time": 200,
+    "ingredient": {
+        "item": "embellishcraft:marble"
+    },
+    "results": [
+        {
+            "item": "embellishcraft:marble_cobblestone",
+            "count": 1
+        }
+    ]
+}

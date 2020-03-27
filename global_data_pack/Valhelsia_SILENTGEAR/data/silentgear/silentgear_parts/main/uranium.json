@@ -1,0 +1,47 @@
+{
+    "type": "silentgear:main",
+    "stats": [
+        {"name": "durability",      "value":  800},
+        {"name": "armor_durability","value":   20},
+        {"name": "enchantability",  "value":   17},
+        {"name": "harvest_level",   "value":    3},
+        {"name": "harvest_speed",   "value":    7},
+        {"name": "melee_damage",    "value":    2},
+        {"name": "magic_damage",    "value":    2},
+        {"name": "attack_speed",    "value":  0.1},
+        {"name": "armor",           "value":   13},
+        {"name": "armor_toughness", "value":    1},
+        {"name": "magic_armor",     "value":    3},
+        {"name": "ranged_damage",   "value":  0.5},
+        {"name": "ranged_speed",    "value":  0.1},
+        {"name": "rarity",          "value":   40}
+    ],
+    "traits": [
+        {"name": "silentgear:malleable", "level": 3}
+    ],
+    "crafting_items": {
+        "normal": {
+            "tag": "forge:ingots/uranium"
+        },
+        "small": {
+            "tag": "forge:nuggets/uranium",
+            "size": 9
+        }
+    },
+    "name": {
+        "text": "Uranium"
+    },
+    "textures": {
+        "all": {
+            "lite_texture": "high_contrast_with_highlight",
+            "highlight": true,
+            "texture_domain": "silentgear",
+            "texture_suffix": "generic_hc",
+            "normal_color": "#21FF0F"
+        }
+    },
+    "availability": {
+        "tier": 3,
+        "gear_blacklist": []
+    }
+}

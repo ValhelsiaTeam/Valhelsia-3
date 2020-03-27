@@ -1,0 +1,48 @@
+{
+    "type": "silentgear:main",
+    "stats": [
+        {"name": "durability",      "value":   96},
+        {"name": "armor_durability","value":   11},
+        {"name": "enchantability",  "value":   25},
+        {"name": "harvest_level",   "value":    2},
+        {"name": "harvest_speed",   "value":   14},
+        {"name": "melee_damage",    "value":    1},
+        {"name": "magic_damage",    "value":    5},
+        {"name": "attack_speed",    "value":  0.3},
+        {"name": "armor",           "value":   14},
+        {"name": "armor_toughness", "value":    0},
+        {"name": "magic_armor",     "value":   11},
+        {"name": "ranged_damage",   "value":    1},
+        {"name": "ranged_speed",    "value":  0.4},
+        {"name": "rarity",          "value":   35}
+    ],
+    "traits": [
+        {"name": "silentgear:malleable", "level": 2},
+        {"name": "silentgear:soft", "level": 2}
+    ],
+    "crafting_items": {
+        "normal": {
+            "tag": "forge:ingots/electrum"
+        },
+        "small": {
+            "tag": "forge:nuggets/electrum",
+            "size": 9
+        }
+    },
+    "name": {
+        "text": "Electrum"
+    },
+    "textures": {
+        "all": {
+            "lite_texture": "high_contrast",
+            "highlight": true,
+            "texture_domain": "silentgear",
+            "texture_suffix": "generic_hc",
+            "normal_color": "#D6E037"
+        }
+    },
+    "availability": {
+        "tier": 3,
+        "gear_blacklist": []
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "type": "silentgear:main",
+    "stats": [
+        {"name": "durability",      "value":  480},
+        {"name": "armor_durability","value":   17},
+        {"name": "enchantability",  "value":   12},
+        {"name": "harvest_level",   "value":    2},
+        {"name": "harvest_speed",   "value":    6},
+        {"name": "melee_damage",    "value":    2},
+        {"name": "magic_damage",    "value":    1},
+        {"name": "attack_speed",    "value":  0.2},
+        {"name": "armor",           "value":   17},
+        {"name": "armor_toughness", "value":    1},
+        {"name": "magic_armor",     "value":    6},
+        {"name": "ranged_damage",   "value":  1.5},
+        {"name": "ranged_speed",    "value": -0.1},
+        {"name": "rarity",          "value":   25}
+    ],
+    "traits": [
+        {"name": "silentgear:malleable", "level": 2},
+        {"name": "silentgear:adamant", "level": 1}
+    ],
+    "crafting_items": {
+        "normal": {
+            "tag": "forge:ingots/bronze"
+        },
+        "small": {
+            "tag": "forge:nuggets/bronze",
+            "size": 9
+        }
+    },
+    "name": {
+        "text": "Bronze"
+    },
+    "textures": {
+        "all": {
+            "lite_texture": "high_contrast",
+            "highlight": true,
+            "texture_domain": "silentgear",
+            "texture_suffix": "generic_hc",
+            "normal_color": "#D96121"
+        }
+    },
+    "availability": {
+        "tier": 2,
+        "gear_blacklist": []
+    }
+}
