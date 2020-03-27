@@ -17,7 +17,7 @@ showOtherTeam:true
 showWaypoints:true
 showIngameWaypoints:true
 displayRedstone:true
-deathpoints:false
+deathpoints:true
 oldDeathpoints:true
 distance:1
 showCoords:true
