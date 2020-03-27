@@ -1,6 +1,0 @@
-
-#Client only settings for Upgrade Aquatic
-[client]
-	#The amount of days till the insomnia overlay is rendered. Put Zero for no rendering at all
-	daysTillRenderInsomniaOverlay = 0
-
