@@ -252,7 +252,7 @@
 	"Axe Leaf Harvesting" = true
 	"Sign Editing" = true
 	"Dirt To Path" = true
-	"Simple Harvest" = true
+	"Simple Harvest" = false
 	"Hoe Harvesting" = true
 	"Reacharound Placing" = true
 	"Villagers Follow Emeralds" = true
@@ -261,7 +261,7 @@
 	"Double Door Opening" = true
 	"Automatic Recipe Unlock" = true
 	"Poison Potato Usage" = true
-	"Improved Sleeping" = true
+	"Improved Sleeping" = false
 	"Springy Slime" = true
 	Emotes = true
 	"Utility Recipes" = true
@@ -1038,7 +1038,7 @@
 				"Is Blacklist" = false
 
 [client]
-	"Greener Grass" = true
+	"Greener Grass" = false
 	"Variant Animal Textures" = true
 	"Back Button Keybind" = true
 	"Improved Tooltips" = true
