@@ -13,7 +13,7 @@
 	rifter_spawn_rarity = 1000
 	#The maximum amount of rifters that spawn from a rift. Default= 1
 	#Range: 1 ~ 5
-	max_rifter_by_rift = 1
+	max_rifter_by_rift = 2
 	#Allows rifters to capture tamed entities and drag them into rifts. Default= false
 	rifter_capture_tamed_animal = false
 	#Mobs on this blacklist cannot be captured by rifters. Format is mod id:name of creature, just use the mod id to blacklist everything from it. Default= iceandfire, midnight:nightstag
