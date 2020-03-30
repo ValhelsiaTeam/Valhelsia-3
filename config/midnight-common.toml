@@ -1,0 +1,30 @@
+
+#All the options that can only be set on the server.
+[general]
+	#Spawn rate of entities of the 'monster' type in midnight (eg. Rifter, Hunter). Default= 1
+	#Range: 1 ~ 10000
+	monster_spawn_rate = 1
+	#Mobs on this whitelist can be captured by rifters, players and animals are already captured by default. Format is mod id:name of creature, just use the modid to whitelist everything from it. Default= empty
+	capturable_entities = []
+	#Allows rifters to teleport to players when they aren't being looked at. Default= true
+	allow_rifter_teleport = true
+	#The rarity that rifts spawn rifters. Larger numbers increase rarity. If 0, rifters don't spawn. Default= 1000
+	#Range: 0 ~ 10000
+	rifter_spawn_rarity = 1000
+	#The maximum amount of rifters that spawn from a rift. Default= 1
+	#Range: 1 ~ 5
+	max_rifter_by_rift = 1
+	#Allows rifters to capture tamed entities and drag them into rifts. Default= false
+	rifter_capture_tamed_animal = false
+	#Mobs on this blacklist cannot be captured by rifters. Format is mod id:name of creature, just use the mod id to blacklist everything from it. Default= iceandfire, midnight:nightstag
+	not_capturable_animals = ["iceandfire", "midnight:nightstag"]
+	#Allows the modded flowers to appear with bonemeal in Midnight. Default= false
+	foreign_flowers_from_bonemeal = false
+	#The chance to take a small amount of damage when picking a bladeshroom cap as a percentage. If 0, this is disabled. Default= 5
+	#Range: 0 ~ 100
+	bladeshroom_damage_chance = 5
+	#If true, players will respawn in Midnight after dying in the dimension. Default= false
+	can_respawn_in_midnight = false
+	#Allows the lightning in Midnight to burn blocks and do damage to entities. Default= false
+	allow_lightning_damage = false
+
