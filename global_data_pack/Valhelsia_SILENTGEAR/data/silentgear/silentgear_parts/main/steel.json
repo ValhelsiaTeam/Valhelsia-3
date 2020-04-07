@@ -21,10 +21,10 @@
     ],
     "crafting_items": {
         "normal": {
-            "item": "silents_mechanisms:steel_ingot"
+            "tag": "forge:ingots/steel"
         },
         "small": {
-            "item": "silents_mechanisms:steel_ingot",
+            "tag": "forge:nuggets/steel",
             "size": 9
         }
     },

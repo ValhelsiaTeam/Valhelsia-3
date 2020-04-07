@@ -22,10 +22,10 @@
     ],
     "crafting_items": {
         "normal": {
-            "item": "silents_mechanisms:lead_ingot"
+            "tag": "forge:ingots/lead"
         },
         "small": {
-            "item": "silents_mechanisms:lead_ingot",
+            "tag": "forge:nuggets/lead",
             "size": 9
         }
     },

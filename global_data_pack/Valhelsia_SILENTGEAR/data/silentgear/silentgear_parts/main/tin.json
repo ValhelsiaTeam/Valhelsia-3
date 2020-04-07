@@ -22,10 +22,10 @@
     ],
     "crafting_items": {
         "normal": {
-            "item": "silents_mechanisms:tin_ingot"
+            "tag": "forge:ingots/tin"
         },
         "small": {
-            "item": "silents_mechanisms:tin_ingot",
+            "tag": "forge:nuggets/tin",
             "size": 9
         }
     },

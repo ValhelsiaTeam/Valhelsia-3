@@ -22,10 +22,10 @@
     ],
     "crafting_items": {
         "normal": {
-            "item": "silents_mechanisms:copper_ingot"
+            "tag": "forge:ingots/copper"
         },
         "small": {
-            "item": "silents_mechanisms:copper_ingot",
+            "tag": "forge:nuggets/copper",
             "size": 9
         }
     },

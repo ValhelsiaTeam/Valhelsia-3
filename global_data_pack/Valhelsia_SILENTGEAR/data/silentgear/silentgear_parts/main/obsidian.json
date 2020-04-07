@@ -21,7 +21,7 @@
     ],
     "crafting_items": {
         "normal": {
-            "item": "forbidden_arcanus:obsidian_ingot"
+            "tag": "forge:ingots/obsidian"
         }
     },
     "name": {
