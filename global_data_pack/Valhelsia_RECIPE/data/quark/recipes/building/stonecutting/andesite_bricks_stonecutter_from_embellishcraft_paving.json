@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "embellishcraft:andesite_paving"
+  },
+  "result": "quark:andesite_bricks",
+  "count": 1,
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "quark:flag",
+          "flag": "stone_bricks"
+        },
+        {
+          "type": "quark:flag",
+          "flag": "andesite"
+        }
+      ]
+    }
+  ]
+} 
