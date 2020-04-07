@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+	"group": "xnet",
+    "pattern": [
+        "dCd",
+        "rgr",
+        "drd"
+    ],
+    "key": {
+        "d": {
+            "tag": "forge:dyes/green"
+        },
+        "C": {
+            "tag": "forge:chests/wooden"
+        },
+        "r": {
+            "item": "minecraft:redstone"
+        },
+        "g": {
+            "tag": "forge:ingots/gold"
+        }
+    },
+    "result": {
+        "item": "xnet:connector_green",
+        "count": 1
+    }
+}
