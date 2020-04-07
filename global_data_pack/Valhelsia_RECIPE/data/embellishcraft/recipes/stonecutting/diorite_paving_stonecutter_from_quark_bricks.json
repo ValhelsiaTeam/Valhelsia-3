@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "quark:diorite_bricks"
+  },
+  "result": "embellishcraft:diorite_paving",
+  "count": 1
+} 

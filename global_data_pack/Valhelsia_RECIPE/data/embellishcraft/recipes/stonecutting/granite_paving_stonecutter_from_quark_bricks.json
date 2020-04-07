@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "quark:granite_bricks"
+  },
+  "result": "embellishcraft:granite_paving",
+  "count": 1
+} 
