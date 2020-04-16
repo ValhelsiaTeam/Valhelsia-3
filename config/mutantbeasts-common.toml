@@ -1,0 +1,20 @@
+
+#Common configuration settings
+[common]
+	#Mutant Zombie spawn weight
+	#Range: 0 ~ 100
+	mutantZombieSpawnWeight = 5
+	#Mutant Skeleton spawn weight
+	#Range: 0 ~ 100
+	mutantSkeletonSpawnWeight = 5
+	#Mutant Enderman spawn weight
+	#Range: 0 ~ 100
+	mutantEndermanSpawnWeight = 5
+	#Affects spawn rate of all mutants
+	#The smaller the number, the lower the chance
+	#Range: 1 ~ 20
+	globalSpawnRate = 10
+	#Mutant Creeper spawn weight
+	#Range: 0 ~ 100
+	mutantCreeperSpawnWeight = 5
+
