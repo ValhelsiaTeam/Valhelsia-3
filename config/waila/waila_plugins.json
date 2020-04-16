@@ -1,0 +1,26 @@
+{
+  "minecraft": {
+    "crop_progress": true,
+    "comparator": true,
+    "hide_infestations": true,
+    "display_furnace_contents": true,
+    "jukebox": true,
+    "lever": true,
+    "spawner_type": true,
+    "redstone": true,
+    "repeater": true
+  },
+  "botanypots": {
+    "show_progress": true,
+    "show_time": true,
+    "show_crop": true,
+    "show_soil": true,
+    "show_debug": false
+  },
+  "waila": {
+    "show_registry": false,
+    "show_entity_hp": false,
+    "show_states": false,
+    "show_entities": false
+  }
+}
