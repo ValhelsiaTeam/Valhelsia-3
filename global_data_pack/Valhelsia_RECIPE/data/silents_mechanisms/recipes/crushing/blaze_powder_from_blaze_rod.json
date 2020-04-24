@@ -1,0 +1,13 @@
+{
+    "type": "silents_mechanisms:crushing",
+    "process_time": 200,
+    "ingredient": {
+        "item": "minecraft:blaze_rod"
+    },
+    "results": [
+        {
+            "item": "minecraft:blaze_powder",
+            "count": 2
+        }
+    ]
+}
