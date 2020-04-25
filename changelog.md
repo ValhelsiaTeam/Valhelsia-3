@@ -11,7 +11,7 @@
 ### Mod removed:
 - Guard Villagers?
 
-## Updated
+### Updated
 - Archer's Paradox 1.15.2-0.4.0b
 - Biomes O' Plenty 1.15.2-10.0.0.355
 - Bookshelf 1.15.2-5.5.33
@@ -44,7 +44,7 @@
 - The Midnight 0.5.7-2
 - Torch Slabs Mod 1.15.2_v1.6.8
 
-## Changes
+### Changes
 - [f811c1c](https://github.com/Khytwel/Valhelsia/commit/f811c1c0e7cbe497922feee55782c35e35f3815f) - Silent's Mechanisms: The compressor now uses 3 blaze powders and more energy to make a blaze rod. 
 - [efa383e](https://github.com/Khytwel/Valhelsia/commit/efa383eadf720050cdd1f72eb407b0931d817c7d) - Quark: Disable "Matrix Enchanting" and "Totem Of Holding".
 - [a921481](https://github.com/Khytwel/Valhelsia/commit/a92148171f4985ac2b2af819f36c222239e6e808) - Mutant Beasts: Revise the spawning rate of mobs.
