@@ -3,12 +3,12 @@
 ![100% center](https://zupimages.net/up/20/17/mfyp.png)
 **Updated to Forge 31.1.49**
 
-## Mods added:
+### Mods added:
 + Trash?
 + Flux Network
 + Mining Gadgets?
 
-## Mod removed:
+### Mod removed:
 - Guard Villagers?
 
 ## Updated
