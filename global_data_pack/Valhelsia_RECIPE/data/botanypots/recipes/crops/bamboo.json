@@ -1,0 +1,1 @@
+{"type":"botanypots:crop","seed":{"item":"minecraft:bamboo"},"categories":["sand","dirt","grass"],"growthTicks":1600,"display":{"block":"minecraft:bamboo"},"results":[{"chance":0.75,"output":{"item":"minecraft:bamboo"},"minRolls":1,"maxRolls":1}]}
