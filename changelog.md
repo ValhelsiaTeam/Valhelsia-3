@@ -4,7 +4,6 @@
 **Updated to Forge 31.1.49**
 
 ### Mods added:
-+ Trash?
 + Flux Network
 + Mining Gadgets?
 
