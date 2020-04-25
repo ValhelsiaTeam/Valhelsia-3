@@ -1,7 +1,6 @@
 # Changelog 2.1.7
 
 ![100% center](https://zupimages.net/up/20/17/mfyp.png)
-
 **Updated to Forge 31.1.49**
 
 ## Mods added:
