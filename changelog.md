@@ -30,10 +30,10 @@
 - Mekanism 1.15.2-9.10.1.414
 - Mekanism Generators 1.15.2-9.10.1.414
 - Mekanism Tools 1.15.2-9.10.1.414
-- MineColonies 0.11.876-ALPHA
+- MineColonies 0.11.878-ALPHA
 - MixinBootstrap 1.0.3
 - Performant 1.15-2.09m
-- Quark r2.1-233
+- Quark r2.1-234
 - RandomPatches 1.15.2-1.21.1.2
 - Serene Seasons 1.15.2-3.0.0.69
 - Silent Gear 1.15.2-1.6.0+86
