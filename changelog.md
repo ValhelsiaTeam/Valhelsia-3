@@ -1,6 +1,6 @@
 # Changelog 2.1.7
 
-![100% center](https://zupimages.net/viewer.php?id=20/17/slyp.png)
+![100% center](https://zupimages.net/up/20/17/slyp.png)
 
 **Updated to Forge 31.1.49**
 
