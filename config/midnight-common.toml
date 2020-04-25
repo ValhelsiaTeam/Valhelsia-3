@@ -3,7 +3,7 @@
 [general]
 	#Spawn rate of entities of the 'monster' type in midnight (eg. Rifter, Hunter). Default= 1
 	#Range: 1 ~ 10000
-	monster_spawn_rate = 1
+	monster_spawn_rate = 1000
 	#Mobs on this whitelist can be captured by rifters, players and animals are already captured by default. Format is mod id:name of creature, just use the modid to whitelist everything from it. Default= empty
 	capturable_entities = []
 	#Allows rifters to teleport to players when they aren't being looked at. Default= true
