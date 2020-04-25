@@ -5,7 +5,8 @@
 
 ### Mods added:
 + Flux Network
-+ Mining Gadgets?
++ Mining Gadgets
++ Autumnity
 
 ### Mod removed:
 - Guard Villagers?
