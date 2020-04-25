@@ -2,7 +2,7 @@
 
 ![40% center](https://zupimages.net/up/20/17/6rkc.png)
 
-** Updated to Forge 31.1.49**
+**Updated to Forge 31.1.49**
 
 ## Mods added:
 + Trash?
