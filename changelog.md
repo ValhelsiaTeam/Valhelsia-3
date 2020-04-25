@@ -1,13 +1,12 @@
 # Changelog 2.1.7
+**Updated to Forge 31.1.49**
 
+**Mods added:**
 + Trash?
 + Flux Network
 + Mining Gadgets?
 
--
-
-Forge 31.1.49
-
+**Mods updated**
 
 **Changes**
 - [f811c1c](https://github.com/Khytwel/Valhelsia/commit/f811c1c0e7cbe497922feee55782c35e35f3815f) - Silent's Mechanisms: The compressor now uses 3 blaze powders and more energy to make a blaze rod. 
