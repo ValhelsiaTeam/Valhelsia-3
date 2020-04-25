@@ -4,12 +4,10 @@
 **Updated to Forge 31.1.49**
 
 ### Mods added:
++ Mekanism Additions
 + Flux Network
 + Mining Gadgets
 + Autumnity
-
-### Mod removed:
-- Guard Villagers?
 
 ### Updated
 - Archer's Paradox 1.15.2-0.4.0b
