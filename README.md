@@ -15,3 +15,4 @@ Valhelsia Structures is licensed under a [Creative Commons Attribution-NonCommer
 **NOTE:** You can use our mod in your modpack, but you must give credit. **No rehosting of the mod is allowed.**
 
 ------------------------------
+
