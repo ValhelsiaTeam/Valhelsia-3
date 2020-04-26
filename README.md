@@ -4,7 +4,7 @@
 
 ![100% center](https://img.shields.io/discord/396333981601234944?color=463F32&label=Discord&logo=discord&style=flat-square)![100% center](https://img.shields.io/twitter/follow/valhelsia?color=463F32&label=Twitter&logo=twitter&style=flat-square)
 
-[https://discordapp.com/invite/reQZEXu](Discord) - [https://twitter.com/valhelsia](Twitter)
+[Discord](https://discordapp.com/invite/reQZEXu) - [Twitter](https://twitter.com/valhelsia)
 
 **Valhelsia Structures** is a mod that generates new structures such as abandoned buildings and dungeons.
 We are in **beta** phase and will receive new structures and features as updates are made. 
