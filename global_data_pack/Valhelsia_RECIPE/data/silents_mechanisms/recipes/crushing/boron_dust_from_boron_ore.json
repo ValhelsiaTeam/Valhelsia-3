@@ -1,0 +1,18 @@
+{
+    "type": "silents_mechanisms:crushing",
+    "process_time": 400,
+    "ingredient": {
+        "item": "lightestlamp:boron_ore"
+    },
+    "results": [
+        {
+            "item": "lightestlamp:boron_dust",
+            "count": 2
+        },
+        {
+            "item": "minecraft:netherrack",
+            "count": 1,
+            "chance": 0.1
+        }
+    ]
+}
