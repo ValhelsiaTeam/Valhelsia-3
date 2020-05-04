@@ -1,0 +1,18 @@
+{
+    "type": "silents_mechanisms:crushing",
+    "process_time": 400,
+    "ingredient": {
+        "item": "quark:biotite_ore"
+    },
+    "results": [
+        {
+            "item": "quark:biotite",
+            "count": 2
+        },
+        {
+            "item": "minecraft:end_stone",
+            "count": 1,
+            "chance": 0.1
+        }
+    ]
+}
