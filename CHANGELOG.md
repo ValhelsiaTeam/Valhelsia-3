@@ -13,7 +13,6 @@
 - Custom Window Title
 
 ### Updated:
-- Forge 31.1.73
 - Biomes O' Plenty 1.15.2-10.0.0.358
 - Botania r1.15-383
 - Comforts 1.15.2-2.0.0.2
