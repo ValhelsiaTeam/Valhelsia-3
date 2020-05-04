@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "lightestlamp:boron_ore"
+  },
+  "result": "lightestlamp:boron_ingot",
+  "experience": 1.0,
+  "cookingtime": 125
+}
