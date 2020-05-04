@@ -32,7 +32,7 @@
 - Mekanism Additions 1.15.2-9.10.2.415
 - Mekanism Generators 1.15.2-9.10.2.415
 - Mekanism Tools 1.15.2-9.10.2.415
-- MineColonies 0.11.918-BETA
+- MineColonies 0.11.910-ALPHA
 - NetherPortalFix 1.15.2-6.0.2
 - Patchouli-1.15.2-1.2-33
 - Powah! 1.15.2-1.1.14
