@@ -56,6 +56,8 @@
 - [618d61e](https://github.com/Khytwel/Valhelsia/commit/618d61e78c6288b522627978bb382f53ccae0163) - Quark: Biotite Ore can be crushed into crusher from Silent's Mechanisms.
 - [ff1b3b6](https://github.com/Khytwel/Valhelsia/commit/ff1b3b6a70c635e8d1149e52dc2c058f0b89c45f) - Mekanism: Disabling Anchor Upgrade which was causing problems for the servers.
 
+-----------------------------------
+
 # Changelog 2.1.7
 
 ![100% center](https://zupimages.net/up/20/17/mfyp.png)
