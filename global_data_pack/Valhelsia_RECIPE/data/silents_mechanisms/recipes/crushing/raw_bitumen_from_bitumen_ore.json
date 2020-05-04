@@ -1,0 +1,18 @@
+{
+    "type": "silents_mechanisms:crushing",
+    "process_time": 400,
+    "ingredient": {
+        "tag": "forge:ores/bitumen"
+    },
+    "results": [
+        {
+            "item": "mapperbase:raw_bitumen",
+            "count": 2
+        },
+        {
+            "item": "minecraft:cobblestone",
+            "count": 1,
+            "chance": 0.1
+        }
+    ]
+}
