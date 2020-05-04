@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "*#*",
+        "#X#",
+        "*#*"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:arrow"
+        },
+        "X": {
+            "item": "minecraft:tnt"
+        },
+        "*": {
+            "item": "minecraft:gunpowder"
+        }
+    },
+    "result": {
+        "item": "forbidden_arcanus:boom_arrow",
+        "count": 4
+    }
+}
