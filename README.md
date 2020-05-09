@@ -6,10 +6,10 @@
 
 <p align="center">
   <a href="https://discordapp.com/invite/reQZEXu">
-    <img src="https://img.shields.io/discord/396333981601234944?color=463F32&label=Discord&logo=discord&style=flat-square">
+    <img src="https://img.shields.io/discord/396333981601234944?color=1b1b1b&label=Discord&logo=Discord&style=plastic">
   </a>
   <a href="https://twitter.com/valhelsia">
-    <img src="https://img.shields.io/twitter/follow/valhelsia?color=463F32&label=Twitter&logo=twitter&style=flat-square">
+    <img src="https://img.shields.io/twitter/follow/valhelsia?color=1b1b1b&label=Twitter&logo=twitter&style=plastic">
   </a>
 </p>
 
