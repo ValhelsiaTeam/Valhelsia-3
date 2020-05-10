@@ -1,0 +1,49 @@
+{
+  "type": "bonsaitrees2:sapling",
+  "sapling": {
+    "item": "fruittrees:apple_sapling"
+  },
+  "drops": [
+    {
+      "result": {
+        "item": "minecraft:stick"
+      },
+      "rolls": 3,
+      "chance": 0.2
+    },
+
+    {
+      "result": {
+        "item": "minecraft:oak_log"
+      },
+      "rolls": 1,
+      "chance": 0.75
+    },
+
+    {
+      "result": {
+        "item": "fruittrees:apple_leaves"
+      },
+      "rolls": 1,
+      "chance": 0.1
+    },
+
+    {
+      "result": {
+        "item": "fruittrees:apple_sapling"
+      },
+      "rolls": 1,
+      "chance": 0.05
+    },
+
+    {
+      "result": {
+        "item": "minecraft:apple"
+      },
+      "rolls": 1,
+      "chance": 0.01
+    }
+  ],
+
+  "compatibleSoilTags": ["dirt", "grass"]
+}

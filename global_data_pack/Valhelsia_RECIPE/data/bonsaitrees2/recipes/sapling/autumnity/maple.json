@@ -1,0 +1,41 @@
+{
+  "type": "bonsaitrees2:sapling",
+  "sapling": {
+    "item": "autumnity:maple_sapling"
+  },
+  "drops": [
+    {
+      "result": {
+        "item": "minecraft:stick"
+      },
+      "rolls": 3,
+      "chance": 0.2
+    },
+
+    {
+      "result": {
+        "item": "autumnity:maple_log"
+      },
+      "rolls": 1,
+      "chance": 0.75
+    },
+
+    {
+      "result": {
+        "item": "autumnity:maple_leaves"
+      },
+      "rolls": 1,
+      "chance": 0.1
+    },
+
+    {
+      "result": {
+        "item": "autumnity:maple_sapling"
+      },
+      "rolls": 1,
+      "chance": 0.05
+    }
+  ],
+
+  "compatibleSoilTags": ["dirt", "grass"]
+}
