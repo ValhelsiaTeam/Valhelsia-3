@@ -27,19 +27,22 @@
 	# Min: 1
 	# Max: 2147483647
 	# Default: 15
-	keepAlivePacketInterval = 15
+	# Modified for Valhelsia: Doubled to be more lenient.
+	keepAlivePacketInterval = 30
 	# The read timeout.
 	# This is the time it takes for a player to be disconnected after not responding to a KeepAlive packet.
 	# This value is automatically rounded up to a product of keepAlivePacketInterval.
 	# Min: 1
 	# Max: 2147483647
 	# Default: 90
-	readTimeout = 90
+	# Modified for Valhelsia: Doubled to be more lenient.
+	readTimeout = 180
 	# The login timeout.
 	# Min: 1
 	# Max: 2147483647
 	# Default: 900
-	loginTimeout = 900
+	# Modified for Valhelsia: Doubled to be more lenient.
+	loginTimeout = 1800
 
 # Options related to client-sided features.
 [client]
@@ -73,12 +76,14 @@
 		# The Minecraft window title.
 		# The Minecraft version is provided as an argument.
 		# Default: Minecraft* %s
+		# Modified for Valhelsia: Obvious reasons.
 		title = "Valhelsia"
 		# The Minecraft window title.
 		# The Minecraft version and current activity are provided as arguments.
 		# For example: "RandomPatches - %2$s"
 		# Default: Minecraft* %s - %s
-		titleWithActivity = "Valhelsia"
+		# Modified for Valhelsia: Obvious reasons.
+		titleWithActivity = "Valhelsia - %2$s"
 
 # Options related to boats.
 [boats]
