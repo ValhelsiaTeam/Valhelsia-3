@@ -1,3 +1,65 @@
+# Changelog 2.2.0
+
+![100% center](https://zupimages.net/up/20/17/mfyp.png)
+**Updated to Forge 31.1.87**
+
+### Mods added:
++ JEI Integration
++ Just Enough Resources
++ RFTools Control
+
+### Mods removed:
+- Mutant Beasts
+- Guard Villagers
+- Simple Chunk Loaders
+- ValkyrieLib
+
+### Updated:
+- AIOT Botania 1.15.2-1.2.2
+- Bookshelf 1.15.2-5.5.34
+- Botania r1.15-384
+- Botany Pots 1.15.2-2.0.17
+- Bountiful 1.15.2-3.1.1
+- CraftPresence 1.15.2-1.6.5
+- Double Slabs 1.15-2.2.7
+- Essentials 1.15.2-2.7.1
+- Kottle 1.5.2
+- McJtyLib 1.15-4.1.0-beta
+- Mekanism 1.15.2-9.10.5.418
+- Mekanism Additions 1.15.2-9.10.5.418
+- Mekanism Generators 1.15.2-9.10.5.418
+- Mekanism Tools 1.15.2-9.10.5.418
+- MineColonies 0.11.945-ALPHA
+- Neat 1.6-21
+- Performant 1.15-2.10m
+- Quark r2.1-236
+- ReAuth 1.14-1.15-3.8.1
+- Refined Pipes 0.4.1
+- RFTools Base 1.15-1.1.1-beta
+- RFTools Builder 1.15-2.1.1-beta
+- RFTools Power 1.15-2.1.1-beta
+- RFTools Storage 1.15-1.1.2-beta
+- RFTools Utility 1.15-2.1.2-beta
+- Silent Gear 1.15.2-1.6.3+89
+- Silent's Mechanisms 1.15.2-0.7.1+51
+- Structurize 0.10.315-ALPHA
+- Swamp Expansion 1.15.2-1.6.1
+- TerraForged 1.15.2-0.0.14
+- Torch Slabs Mod 1.15.2_v1.6.10
+- XNet 1.15-2.1.2-beta
+
+### Changes:
+- [290b387](https://github.com/ValhelsiaTeam/Valhelsia/commit/290b387839e4328809960df148bc0fce47fbf281) - Default Options: V-SYNC disabled.
+- [226f77c](https://github.com/ValhelsiaTeam/Valhelsia/commit/226f77c714c93b9198b6485b5494fec76434ee44) - Extended Lights: The Pig Fat can now be crafted with two porkchop.
+- [9a28149](https://github.com/ValhelsiaTeam/Valhelsia/commit/9a28149993547f1aa38138a7989291f1d95ded93) - Bonsai Trees 2: All sapling is now compatible with bonsai and changed the pourcentage of chance to drop a fruit for Simple Farming (it goes from 33% to 1-3%).
+- [2074ae1](https://github.com/ValhelsiaTeam/Valhelsia/commit/2074ae1273426cc1a61155ca297928bdfb7f8902) - Minecraft: Vines is now craftable with a Willow Vine from Biomes O' Plenty.
+- [6c9955c](https://github.com/ValhelsiaTeam/Valhelsia/commit/6c9955c631a9f20c569b21afd7b3e4c2822a931b) - Forbidden & Arcanus: Dragon Scale is now craftable with a Dragon Scake from Quark.
+- [003b0ad](https://github.com/ValhelsiaTeam/Valhelsia/commit/003b0ad8c5001c63ca446901d9d9a38c8edd6daf) - Quark: Dragon Scale is now craftable with a Dragon Scake from Forbidden & Arcanus.
+- [6e9e9c2](https://github.com/ValhelsiaTeam/Valhelsia/commit/6e9e9c2403103c5849e0162cf28d7a1ca1a93b1e) - Silent's Mechanisms: Custom recipe file for blaze rod deleted (blaze rod duplication fixed on the side of the mod).
+- [f964b97](https://github.com/ValhelsiaTeam/Valhelsia/commit/f964b9722a28fa2e1a8c4da42b1015524939b3cf) - Mutant Beasts: Config file deleted (mod deleted).
+
+-----------------------------------
+
 # Changelog 2.1.8
 
 ![100% center](https://zupimages.net/up/20/17/mfyp.png)
