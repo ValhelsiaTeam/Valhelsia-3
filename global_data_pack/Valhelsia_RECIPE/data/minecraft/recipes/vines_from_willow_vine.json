@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "biomesoplenty:willow_vine"
+        }
+    ],
+    "result": {
+        "item": "minecraft:vine",
+        "count": 1
+    }
+}
