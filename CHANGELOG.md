@@ -1,4 +1,4 @@
-# Changelog 2.2.0
+# Changelog ~~2.2.0~~ 2.2.0a
 
 ![100% center](https://zupimages.net/up/20/17/mfyp.png)
 **Updated to Forge 31.1.87**
@@ -16,6 +16,7 @@
 
 ### Updated:
 - AIOT Botania 1.15.2-1.2.2
+- Apotheosis 1.15.2-3.1.0 (2.2.0a)
 - Bookshelf 1.15.2-5.5.34
 - Botania r1.15-384
 - Botany Pots 1.15.2-2.0.17
@@ -32,7 +33,7 @@
 - MineColonies 0.11.945-ALPHA
 - Neat 1.6-21
 - Performant 1.15-2.10m
-- Quark r2.1-236
+- ~~Quark r2.1-236~~ Quark r2.1-237 (2.2.0a)
 - ReAuth 1.14-1.15-3.8.1
 - Refined Pipes 0.4.1
 - RFTools Base 1.15-1.1.1-beta
