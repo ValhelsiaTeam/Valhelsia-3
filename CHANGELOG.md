@@ -58,6 +58,7 @@
 - [003b0ad](https://github.com/ValhelsiaTeam/Valhelsia/commit/003b0ad8c5001c63ca446901d9d9a38c8edd6daf) - Quark: Dragon Scale is now craftable with a Dragon Scake from Forbidden & Arcanus.
 - [6e9e9c2](https://github.com/ValhelsiaTeam/Valhelsia/commit/6e9e9c2403103c5849e0162cf28d7a1ca1a93b1e) - Silent's Mechanisms: Custom recipe file for blaze rod deleted (blaze rod duplication fixed on the side of the mod).
 - [f964b97](https://github.com/ValhelsiaTeam/Valhelsia/commit/f964b9722a28fa2e1a8c4da42b1015524939b3cf) - Mutant Beasts: Config file deleted (mod deleted).
+- [a85d5d7](https://github.com/ValhelsiaTeam/Valhelsia/commit/a85d5d7f39d9223bc3b6cc4223d27ff4dd8dffd9) - Random Patches: Some adjustments.
 
 -----------------------------------
 
