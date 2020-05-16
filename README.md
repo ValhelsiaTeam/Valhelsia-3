@@ -18,7 +18,7 @@
 ------------------------------
 
 **If you're interested in hosting a server with Valhelsia, click the animation below!**
-[![partner](https://zupimages.net/up/20/20/1wbh.png)
+[![partner](https://zupimages.net/up/20/20/zp4u.png)
 
 Valhelsia Team partnered with BisectHosting!
 BisectHosting offers a quick, simple and quality solution. After your purchase, the server is already configured and ready to use.
