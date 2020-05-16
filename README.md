@@ -17,7 +17,7 @@
 
 ------------------------------
 
-**If you're interested in hosting a server with Valhelsia, click the animation below!**
+**If you're interested in hosting a server with Valhelsia, click the animation below!**                                           
 [![partner](https://zupimages.net/up/20/20/zp4u.png)](https://bisecthosting.com/Valhelsia)
 
 Valhelsia Team partnered with BisectHosting!
