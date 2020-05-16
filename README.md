@@ -17,8 +17,11 @@
 
 ------------------------------
 
-We partner with mTxServ. If you're interested in hosting a server for your adventure, click the animation below!
-[![partner](https://zupimages.net/up/19/43/2bem.gif)](https://mtxserv.com/)
+**If you're interested in hosting a server with Valhelsia, click the animation below!**
+[![partner](https://zupimages.net/up/20/20/1wbh.png)
 
-**The game must stay widely accessible, and buying its server at mTxServ offers a quick, simple and quality solution at an affordable price.**
+Valhelsia Team partnered with BisectHosting!
+BisectHosting offers a quick, simple and quality solution. After your purchase, the server is already configured and ready to use.
+Use the code "**Valhelsia**" to get **25%** off your first month as a new client for any of their gaming servers.
+This modpack is recommended to have **at least 5GB** to run smoothly with 5-7 players.
 
