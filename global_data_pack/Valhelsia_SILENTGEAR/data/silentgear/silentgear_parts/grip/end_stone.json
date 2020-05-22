@@ -1,13 +1,13 @@
 {
     "type": "silentgear:grip",
     "stats": [
-        {"name": "durability",        "value":   0.1, "op": "MUL1"},
-        {"name": "repair_efficiency", "value":   0.0, "op": "MUL1"},
-        {"name": "enchantability",    "value":  0.05, "op": "ADD"},
+        {"name": "durability",        "value": 0.1,   "op": "MUL1"},
+        {"name": "repair_efficiency", "value": 0.0,   "op": "MUL1"},
+        {"name": "enchantability",    "value": 0.05,  "op": "ADD"},
         {"name": "harvest_speed",     "value": -0.05, "op": "MUL1"},
-        {"name": "attack_speed",      "value":  -0.1, "op": "ADD"},
-        {"name": "ranged_speed",      "value":  -0.1, "op": "ADD"},
-        {"name": "rarity",            "value":     9}
+        {"name": "attack_speed",      "value": -0.1,  "op": "ADD"},
+        {"name": "ranged_speed",      "value": -0.1,  "op": "ADD"},
+        {"name": "rarity",            "value":    9}
     ],
     "traits": [
         {"name": "silentgear:jagged", "level": 3},
