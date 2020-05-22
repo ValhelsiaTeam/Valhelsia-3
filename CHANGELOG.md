@@ -1,3 +1,55 @@
+# Changelog 2.2.1
+
+![100% center](https://zupimages.net/up/20/17/mfyp.png)
+**Updated to Forge 31.2.0**
+
+### Mods added:
++ PSI
++ Persistent Bits
++ FTB Backup
+
+### Updated:
+- Apotheosis 1.15.2-3.1.2
+- Aquaculture 1.15.2-2.0.14
+- Atmospheric 1.15.2-v1.3.0
+- Autumnity 1.3.0-1.15.2
+- Biomes O' Plenty 1.15.2-10.0.0.363
+- Bookshelf 1.15.2-5.6.38
+- BotanyPots-1.15.2-2.0.21
+- Buzzier Bees 1.15.2-v1.5.0
+- CC: Tweaked 1.15.2-1.88.1
+- Corpse 1.15.2-1.0.5
+- Dark Utilities 1.15.2-3.0.6
+- Double Slabs 1.15-2.3.0
+- Mekanism 1.15.2-9.10.6.419
+- Mekanism Additions 1.15.2-9.10.6.419
+- Mekanism Generators 1.15.2-9.10.6.419
+- Mekanism Tools 1.15.2-9.10.6.419
+- MineColonies 1.15.2-0.11.948
+- Neat 1.6-22
+- OpenBlocks Elevator 1.15.2-1.7.1
+- Reap Mod 1.12.4
+- Serene Seasons 1.15.2-3.0.0.71
+- Silent Gear 1.15.2-1.7.0+93
+- Swamp Expansion 1.15.2-v1.7.1
+- The Endergetic Expansion 1.15.2-v1.3.1
+- Torch Slabs Mod 1.15.2_v1.6.13
+- Upgrade Aquatic 1.15.2-v1.6.1
+- Xaero's Minimap 20.11.0_1.15.2
+
+### Changes:
+- [6b2eee9](https://github.com/ValhelsiaTeam/Valhelsia/commit/6b2eee9c104d54f0a1826e873c1a40347eb96331) - Macaw's Bridges: The Iron Plate can now be crafted with two iron ingot and one heavy weighted pressure plate.
+- [c0e7eb6](https://github.com/ValhelsiaTeam/Valhelsia/commit/c0e7eb6e2a7e02fe70ac201c31ee6cc741f5f253) - Minecraft: Smooth Red Sandstone and Smooth Sandstone is now smelting. Fixed conflict with EmbellishCraft.
+- [f629f9d](https://github.com/ValhelsiaTeam/Valhelsia/commit/f629f9dfd0d7fc3d877bc386f31839c2a2fc4447) - Mekanism Additions: Baby Enderman can't spawn anymore.
+- [06cb596](https://github.com/ValhelsiaTeam/Valhelsia/commit/06cb59624a96d20aa5b5bb3b92d7dacf75344a34) - Silent Gear: The End Stone is now a grip material.
+- [f16e2d0](https://github.com/ValhelsiaTeam/Valhelsia/commit/f16e2d04d77e7379701a9e122cf76293fba1c627) - Silent Gear: Some adjustments for Manaweave Cloth.
+- [1406256](https://github.com/ValhelsiaTeam/Valhelsia/commit/1406256ca6d6590cff58c76ae2725af36738341e) - Silent Gear: Some adjustments for Manasteel.
+- [c1ec56e](https://github.com/ValhelsiaTeam/Valhelsia/commit/c1ec56e7c73736cdb04720e13cf68ea7fd8a231b) - Silent Gear: Some adjustments for Elementium.
+- [52e396a](https://github.com/ValhelsiaTeam/Valhelsia/commit/c1ec56e7c73736cdb04720e13cf68ea7fd8a231b) - Silent Gear: Some adjustments for Terrasteel.
+- [fa26b3a](https://github.com/ValhelsiaTeam/Valhelsia/commit/fa26b3aa6ae16662e5bada0abcded8830e8d79ce) - Silent Gear: Livingwood Twig from Botania can now be used as a rod.
+
+-----------------------------------
+
 # Changelog ~~2.2.0~~ 2.2.0a
 
 ![100% center](https://zupimages.net/up/20/17/mfyp.png)
