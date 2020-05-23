@@ -1,4 +1,4 @@
-# Changelog 2.2.1
+# Changelog ~~2.2.1~~ 2.2.1a
 
 ![100% center](https://zupimages.net/up/20/17/mfyp.png)
 **Updated to Forge 31.2.0**
@@ -6,7 +6,7 @@
 ### Mods added:
 + PSI
 + Persistent Bits
-+ FTB Backup
++ FTB Backups
 
 ### Updated:
 - Apotheosis 1.15.2-3.1.2
@@ -14,10 +14,10 @@
 - Atmospheric 1.15.2-v1.3.0
 - Autumnity 1.3.0-1.15.2
 - Biomes O' Plenty 1.15.2-10.0.0.363
-- Bookshelf 1.15.2-5.6.38
-- BotanyPots-1.15.2-2.0.21
+- ~~Bookshelf 1.15.2-5.6.38~~ Bookshelf 1.15.2-5.5.34 (2.2.1a)
+- ~~BotanyPots-1.15.2-2.0.21~~ Botany Pots 1.15.2-2.0.17 (2.2.1a)
 - Buzzier Bees 1.15.2-v1.5.0
-- CC: Tweaked 1.15.2-1.88.1
+- ~~CC: Tweaked 1.15.2-1.88.1~~ CC: Tweaked 1.15.2-1.87.1 (2.2.1a)
 - Corpse 1.15.2-1.0.5
 - Dark Utilities 1.15.2-3.0.6
 - Double Slabs 1.15-2.3.0
@@ -47,6 +47,7 @@
 - [c1ec56e](https://github.com/ValhelsiaTeam/Valhelsia/commit/c1ec56e7c73736cdb04720e13cf68ea7fd8a231b) - Silent Gear: Some adjustments for Elementium.
 - [52e396a](https://github.com/ValhelsiaTeam/Valhelsia/commit/c1ec56e7c73736cdb04720e13cf68ea7fd8a231b) - Silent Gear: Some adjustments for Terrasteel.
 - [fa26b3a](https://github.com/ValhelsiaTeam/Valhelsia/commit/fa26b3aa6ae16662e5bada0abcded8830e8d79ce) - Silent Gear: Livingwood Twig from Botania can now be used as a rod.
+- [003b15e](https://github.com/ValhelsiaTeam/Valhelsia/commit/003b15ea0acf2f52349aff244ab3649b3f7fb03b) - Mekanism: Craft disabled for Anchor Upgrade (causes big problems in the long-term). (2.2.1a)
 
 -----------------------------------
 
