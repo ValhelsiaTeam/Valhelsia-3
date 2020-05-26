@@ -37,7 +37,7 @@
             "lite_texture": "high_contrast_with_highlight",
             "highlight": false,
             "texture_domain": "silentgear",
-            "texture_suffix": "generic_h",
+            "texture_suffix": "generic_hc",
             "normal_color": "#C2CBB8"
         }
     },
