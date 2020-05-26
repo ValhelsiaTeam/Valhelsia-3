@@ -1,0 +1,25 @@
+
+#Bitumen Generation
+[bitumen]
+	#Size of bitumen pockets [0-100, default: 18]
+	#Range: 0 ~ 100
+	bitumenSize = 22
+	#Minimal height for bitumen pocket generation, [0-255, default: 40]
+	#Range: 0 ~ 255
+	bitumenMinHeight = 40
+	#Generate bitumen in the world [true / false]
+	bitumenGeneration = true
+	#Chances of bitumen pocket being generated [0-100, default: 25]
+	#Range: 0 ~ 100
+	bitumenChance = 6
+	#Maximal height for bitumen pocket generation [0-255, default: 160]
+	#Range: 0 ~ 255
+	bitumenMaxHeight = 160
+
+#Biome Blacklist: list here the biomes you do not want bitumen ore to be generated in (syntax: "modid:biome". Examples: "minecraft:plains", "biomesoplenty:meadow"...). Note: you can replace the default values, bitumen ore only generates where stone is. It never generates in the Nether or the End.
+[blacklist]
+	#List of blacklisted biomes for bitumen ore generation
+	bitumenBiomeBlacklist = ["minecraft:nether", "minecraft:the_end"]
+	#Set to true to switch bitumen ore blacklist to whitelist mode [true / false]
+	bitumenWhitelist = false
+

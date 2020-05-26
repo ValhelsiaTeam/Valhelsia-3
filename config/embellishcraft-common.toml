@@ -1,0 +1,130 @@
+
+#Basalt Generation
+[basalt]
+	#Maximal height for basalt pocket generation [0-255, default: 40]
+	#Range: 0 ~ 255
+	basaltMaxHeight = 30
+	#Size of basalt pockets [0-100, default: 33]
+	#Range: 0 ~ 100
+	basaltSize = 40
+	#Generate basalt in the world [true / false]
+	basaltGeneration = true
+	#Minimal height for basalt pocket generation, [0-255, default: 0]
+	#Range: 0 ~ 255
+	basaltMinHeight = 0
+	#Chances of basalt pocket being generated [0-100, default: 10]
+	#Range: 0 ~ 100
+	basaltChance = 3
+
+#Slate Generation
+[slate]
+	#Maximal height for slate pocket generation [0-255, default: 70]
+	#Range: 0 ~ 255
+	slateMaxHeight = 75
+	#Chances of slate pocket being generated [0-100, default: 10]
+	#Range: 0 ~ 100
+	slateChance = 3
+	#Size of slate pockets [0-100, default: 33]
+	#Range: 0 ~ 100
+	slateSize = 40
+	#Generate slate in the world [true / false]
+	slateGeneration = true
+	#Minimal height for slate pocket generation, [0-255, default: 40]
+	#Range: 0 ~ 255
+	slateMinHeight = 45
+
+#Marble Generation
+[marble]
+	#Size of marble pockets [0-100, default: 20]
+	#Range: 0 ~ 100
+	marbleSize = 30
+	#Chances of marble pocket being generated [0-100, default: 10]
+	#Range: 0 ~ 100
+	marbleChance = 3
+	#Generate marble in the world [true / false]
+	marbleGeneration = true
+	#Maximal height for marble pocket generation [0-255, default: 100]
+	#Range: 0 ~ 255
+	marbleMaxHeight = 120
+	#Minimal height for marble pocket generation, [0-255, default: 50]
+	#Range: 0 ~ 255
+	marbleMinHeight = 60
+
+#Gneiss Generation
+[gneiss]
+	#Chances of gneiss pocket being generated [0-100, default: 10]
+	#Range: 0 ~ 100
+	gneissChance = 3
+	#Minimal height for gneiss pocket generation, [0-255, default: 50]
+	#Range: 0 ~ 255
+	gneissMinHeight = 35
+	#Generate gneiss in the world [true / false]
+	gneissGeneration = true
+	#Maximal height for gneiss pocket generation [0-255, default: 100]
+	#Range: 0 ~ 255
+	gneissMaxHeight = 65
+	#Size of gneiss pockets [0-100, default: 33]
+	#Range: 0 ~ 100
+	gneissSize = 40
+
+#Jade Generation
+[jade]
+	#Chances of jade pocket being generated [0-100, default: 5]
+	#Range: 0 ~ 100
+	jadeChance = 2
+	#Maximal height for jade pocket generation [0-255, default: 100]
+	#Range: 0 ~ 255
+	jadeMaxHeight = 120
+	#Generate jade in the world [true / false]
+	jadeGeneration = true
+	#Minimal height for jade pocket generation, [0-255, default: 50]
+	#Range: 0 ~ 255
+	jadeMinHeight = 50
+	#Size of jade pockets [0-100, default: 15]
+	#Range: 0 ~ 100
+	jadeSize = 20
+
+#Larvikite Generation
+[larvikite]
+	#Chances of larvikite pocket being generated [0-100, default: 5]
+	#Range: 0 ~ 100
+	larvikiteChance = 3
+	#Minimal height for larvikite pocket generation, [0-255, default: 50]
+	#Range: 0 ~ 255
+	larvikiteMinHeight = 32
+	#Generate larvikite in the world [true / false]
+	larvikiteGeneration = true
+	#Size of larvikite pockets [0-100, default: 15]
+	#Range: 0 ~ 100
+	larvikiteSize = 30
+	#Maximal height for larvikite pocket generation [0-255, default: 100]
+	#Range: 0 ~ 255
+	larvikiteMaxHeight = 72
+
+#Biome Blacklist: list here the biomes you do not want a rock to be generated in (syntax: "modid:biome". Examples: "minecraft:plains", "biomesoplenty:meadow"...). Note: you can replace the default values, rocks only generate where stone is. They never generate in the Nether or the End.
+[blacklist]
+	#Set to true to switch jade blacklist to whitelist mode [true / false]
+	jadeWhitelist = false
+	#List of blacklisted biomes for basalt generation
+	basaltBiomeBlacklist = ["minecraft:nether", "minecraft:the_end"]
+	#Set to true to switch basalt blacklist to whitelist mode [true / false]
+	basaltWhitelist = false
+	#Set to true to switch gneiss blacklist to whitelist mode [true / false]
+	gneissWhitelist = false
+	#List of blacklisted biomes for jade generation
+	jadeBiomeBlacklist = ["minecraft:nether", "minecraft:the_end"]
+	#List of blacklisted biomes for slate generation
+	slateBiomeBlacklist = ["minecraft:nether", "minecraft:the_end"]
+	#Set to true to switch marble blacklist to whitelist mode [true / false]
+	marbleWhitelist = false
+	#Set to true to switch larvikite blacklist to whitelist mode [true / false]
+	larvikiteWhitelist = false
+	#List of blacklisted biomes for marble generation
+	marbleBiomeBlacklist = ["minecraft:nether", "minecraft:the_end"]
+	#List of blacklisted biomes for larvikite generation
+	larvikiteBiomeBlacklist = ["minecraft:nether", "minecraft:the_end"]
+	#Set to true to switch slate blacklist to whitelist mode [true / false]
+	slateWhitelist = false
+	#List of blacklisted biomes for gneiss generation
+	gneissBiomeBlacklist = ["minecraft:nether", "minecraft:the_end"]
+
