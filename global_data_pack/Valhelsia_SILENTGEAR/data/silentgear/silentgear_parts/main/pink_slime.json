@@ -1,0 +1,46 @@
+{
+    "type": "silentgear:main",
+    "stats": [
+        {"name": "durability",      "value":  900},
+        {"name": "armor_durability","value":  20},
+        {"name": "enchantability",  "value":  20},
+        {"name": "harvest_level",   "value":   3},
+        {"name": "harvest_speed",   "value":   8},
+        {"name": "melee_damage",    "value":   3},
+        {"name": "magic_damage",    "value":   5},
+        {"name": "attack_speed",    "value": 0.1},
+        {"name": "armor",           "value":  20},
+        {"name": "armor_toughness", "value":   2},
+        {"name": "magic_armor",     "value":   8},
+        {"name": "ranged_damage",   "value":   0},
+        {"name": "ranged_speed",    "value": 0.2},
+        {"name": "rarity",          "value":  35},
+        {"name": "chargeability",   "value": 1.2}
+    ],
+    "traits": [
+        {"name": "silentgear:organic", "level": 3},
+		{"name": "silentgear:lustrous", "level": 1},
+        {"name": "silentgear:malleable", "level": 4}
+    ],
+    "crafting_items": {
+        "normal": {
+            "item": "industrialforegoing:pink_slime_ingot"
+        }
+    },
+    "name": {
+        "translate": "item.industrialforegoing.pink_slime"
+    },
+    "textures": {
+        "all": {
+            "lite_texture": "high_contrast",
+            "highlight": true,
+            "texture_domain": "silentgear",
+            "texture_suffix": "generic_hc",
+            "normal_color": "#C279B6"
+        }
+    },
+    "availability": {
+        "tier": 3,
+        "gear_blacklist": []
+    }
+}
