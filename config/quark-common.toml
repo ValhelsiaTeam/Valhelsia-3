@@ -12,7 +12,7 @@
 	"Use Fast Worldgen" = false
 	"Enable 'q' Button" = true
 	#A list of screens that don't play well with quark's buttons. Use "Print Screen Classnames" to find the names of any others you'd want to add.
-	"Ignored Screens" = ["com.tfar.craftingstation.client.CraftingStationScreen", "com.raoulvdberge.refinedstorage.screen.grid.GridScreen", "com.raoulvdberge.refinedstorage.screen.DiskManipulatorScreen", "com.raoulvdberge.refinedstorage.screen.InterfaceScreen"]
+	"Ignored Screens" = ["com.tfar.craftingstation.client.CraftingStationScreen", "com.raoulvdberge.refinedstorage.screen.grid.GridScreen", "com.raoulvdberge.refinedstorage.screen.DiskManipulatorScreen", "com.raoulvdberge.refinedstorage.screen.InterfaceScreen", "net.silentchaos512.gear.block.craftingstation.CraftingStationScreen"]
 	"Use Anti Overlap" = true
 	#Quark messes with the Stonecutter to allow any item that can be used in it to be shift clicked in. Set this to false to turn it off.
 	"Hack Stonecutter Shift Click" = true
@@ -206,6 +206,7 @@
 
 [tools]
 	Pickarang = true
+	"Color Runes" = true
 	"Ancient Tomes" = true
 	"Pathfinder Maps" = true
 	"Slime In A Bucket" = true
@@ -235,6 +236,14 @@
 		#minecraft:ice_mountains,2,8,14,7FE4FF,Ice Mountains Pathfinder Map
 		Customs = []
 		"Xp From Trade" = 5
+
+	[tools.color_runes]
+		"Jungle Temple Weight" = 8
+		"Desert Temple Weight" = 8
+		"Dungeon Weight" = 10
+		"Item Quality" = 0
+		"Apply Cost" = 15
+		"Nether Fortress Weight" = 8
 
 	[tools.ancient_tomes]
 		"Valid Enchantments" = ["minecraft:feather_falling", "minecraft:thorns", "minecraft:sharpness", "minecraft:smite", "minecraft:bane_of_arthropods", "minecraft:knockback", "minecraft:fire_aspect", "minecraft:looting", "minecraft:sweeping", "minecraft:efficiency", "minecraft:unbreaking", "minecraft:fortune", "minecraft:power", "minecraft:punch", "minecraft:luck_of_the_sea", "minecraft:lure", "minecraft:loyalty", "minecraft:riptide", "minecraft:impaling", "minecraft:piercing"]
