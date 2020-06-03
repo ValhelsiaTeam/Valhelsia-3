@@ -52,14 +52,14 @@
 			veinSize = 8
 
 		[world.gen.TIN]
-			#Minimum Y-coordinate (base height) of veins
-			minHeight = 20
-			#Number of veins per chunk
-			veinCount = 8
-			#Maximum Y-coordinate (highest level) of veins
-			maxHeight = 80
-			#Size of veins
-			veinSize = 8
+		  #Minimum Y-coordinate (base height) of veins [Default 20]
+		  minHeight = 0
+		  #Number of veins per chunk [Default 8]
+		  veinCount = 0
+		  #Maximum Y-coordinate (highest level) of veins [Default 80]
+		  maxHeight = 0
+		  #Size of veins [Default 8]
+		  veinSize = 0
 
 		[world.gen.PLATINUM]
 			#Minimum Y-coordinate (base height) of veins
@@ -72,14 +72,14 @@
 			veinSize = 8
 
 		[world.gen.COPPER]
-			#Minimum Y-coordinate (base height) of veins
-			minHeight = 40
-			#Number of veins per chunk
-			veinCount = 8
-			#Maximum Y-coordinate (highest level) of veins
-			maxHeight = 90
-			#Size of veins
-			veinSize = 8
+			#Minimum Y-coordinate (base height) of veins [Default 40]
+			minHeight = 0
+			#Number of veins per chunk [Default 8]
+			veinCount = 0
+			#Maximum Y-coordinate (highest level) of veins [Default 90]
+			maxHeight = 0
+			#Size of veins [Default 8]
+			veinSize = 0
 
 		[world.gen.BISMUTH]
 			#Minimum Y-coordinate (base height) of veins
