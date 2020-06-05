@@ -1,3 +1,62 @@
+# Changelog 2.2.2
+
+![100% center](https://zupimages.net/up/20/17/mfyp.png)
+**Forge 31.2.0**
+
+### Mods added:
++ Absent by Design
++ Curio of Undying
+
+### Updated:
+- Abnormals Core 1.15.2-v1.0.5
+- AmbientSounds 3 v3.0.20_mc1.15.2
+- Atmospheric 1.15.2-1.4.0
+- Autumnity 1.3.1-1.15.2
+- Biomes O' Plenty 1.15.2-10.0.0.365
+- Bookshelf 1.15.2-5.6.40
+- Buzzier Bees 1.15.2-1.5.1
+- CC: Tweaked 1.15.2-1.88.1
+- Cooking for Blockheads 1.15.2-8.0.2
+- Corpse 1.15.2-1.0.6
+- Curios API 1.15.2-2.0.2.4
+- Double Slabs 1.15-2.4.2
+- Essentials 1.15.2-2.7.2
+- Fruit Trees 1.15.2-1.4.1
+- Forbidden and Arcanus 1.15.2-1.4-beta-2
+- Industrial Foregoing 1.15.2-2.3.2-e3bf186
+- JAOPCA 1.15.2-3.2.0.10
+- McJtyLib 1.15-4.1.1-beta
+- Mekanism 1.15.2-9.10.7.420
+- Mekanism Additions 1.15.2-9.10.7.420
+- Mekanism Generators 1.15.2-9.10.7.420
+- Mekanism Tools 1.15.2-9.10.7.420
+- MineColonies 1.15.2-0.11.957
+- Performant 1.15-2.11m
+- Psi r1.2-82
+- Quark r2.1-240
+- Reap Mod 1.12.5
+- Refined Pipes 0.4.2
+- Refined Storage 1.8.4
+- RFTools Builder 1.15-2.1.3-beta
+- RFTools Storage 1.15-1.1.4-beta
+- RFTools Utility 1.15-2.1.3-beta
+- Serene Seasons 1.15.2-3.0.0.72
+- Silent Gear 1.15.2-1.7.1+94
+- Silent's Mechanisms 1.15.2-0.7.2+52
+- Simple Farming 1.15.2-1.2.9
+- Structurize 0.10.321-ALPHA
+- The Midnight 0.5.8
+- Titanium 1.15.2-2.4.1
+- Valhelsia Structures 15.0.3a
+- Xaero's Minimap 20.12.2_Forge_1.15.2
+- Xaero's World Map 1.6.2_Forge_1.15.2
+- XNet 1.15-2.1.4-beta
+
+### Changes:
+Working progress...
+
+-----------------------------------
+
 # Changelog ~~2.2.1~~ 2.2.1a
 
 ![100% center](https://zupimages.net/up/20/17/mfyp.png)
