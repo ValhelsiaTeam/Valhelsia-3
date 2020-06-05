@@ -1,0 +1,1 @@
+{"type":"mekanism:sawing","input":{"ingredient":{"tag":"atmospheric:rosewood_logs"}},"mainOutput":{"item":"atmospheric:rosewood_planks","count":6},"secondaryOutput":{"item":"mekanism:sawdust"},"secondaryChance":0.25}
