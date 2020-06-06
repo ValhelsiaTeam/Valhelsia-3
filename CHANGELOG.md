@@ -53,7 +53,17 @@
 - XNet 1.15-2.1.4-beta
 
 ### Changes:
-Working progress...
+- [b0bd813](https://github.com/ValhelsiaTeam/Valhelsia/commit/b0bd81351c99546455a930f7a75c4bddfb12f992) - Quark: Fixed the inventory mangment button overlay crafing grind in crafting station.
+- [3e0693d](https://github.com/ValhelsiaTeam/Valhelsia/commit/3e0693db84245f135acec3bb5a9493549a43be2b) - Silent Gear: Add stats for Pink Slime Ingot.
+- [43a8d29](https://github.com/ValhelsiaTeam/Valhelsia/commit/43a8d29e47e8f8f122f033b4ecff65e7999104fe) - Silent Gear: Add stats for Steel Rod.
+- [2bc176b](https://github.com/ValhelsiaTeam/Valhelsia/commit/2bc176bb99fadb679bbd74918691d7790a4cb510) - Silent Gear: Some adjustments for Invar.
+- [1cca8cf](https://github.com/ValhelsiaTeam/Valhelsia/commit/1cca8cfb8be67de5d34411170113f4fad36386a6) - World: Change rarity of EmbellishCraft stones and Bitumen.
+- [ec2b161](https://github.com/ValhelsiaTeam/Valhelsia/commit/ec2b161465507bb0a25e1471cfcdd34ca9b5205d) - World: Generation of copper ore and tin ore of Silent's Mechanisms mod is now disabled.
+- [acf9150](https://github.com/ValhelsiaTeam/Valhelsia/commit/acf9150ec45ca5f675a7234a916620cef4278774) - Apotheosis: Increased max level of Splitting enchant to 5 and Scavenger to 3.
+- [9299655](https://github.com/ValhelsiaTeam/Valhelsia/commit/929965578c3b954ae052bb751be0012c18fbeac8) - MineColonies: Smaller maximum raid sizes.
+- [6f30647](https://github.com/ValhelsiaTeam/Valhelsia/commit/6f30647352228b9faf2d5bd6873bdc7591ac8e6f) - Silent's Mechanisms: Added Crusher compatiblity for bone.
+- [6f30647](https://github.com/ValhelsiaTeam/Valhelsia/commit/6f30647352228b9faf2d5bd6873bdc7591ac8e6f) - Mekanism: Added Sawmill compatibility for rosewood log.
+- [59eda5f](https://github.com/ValhelsiaTeam/Valhelsia/commit/59eda5fcbc2659bc26a03ba8016dabe9874fbc63) - Mekanism: Added more compatibility to make Bioful with a Crusher. 
 
 -----------------------------------
 
