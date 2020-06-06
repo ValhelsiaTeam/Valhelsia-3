@@ -1,4 +1,4 @@
-# Changelog 2.2.2
+# Changelog ~~2.2.2~~ 2.2.2a
 
 ![100% center](https://zupimages.net/up/20/17/mfyp.png)
 **Forge 31.2.0**
@@ -6,6 +6,9 @@
 ### Mods added:
 + Absent by Design
 + Curio of Undying
+
+### Mod removed:
+- KleeSlabs
 
 ### Updated:
 - Abnormals Core 1.15.2-v1.0.5
@@ -19,7 +22,7 @@
 - Cooking for Blockheads 1.15.2-8.0.2
 - Corpse 1.15.2-1.0.6
 - Curios API 1.15.2-2.0.2.4
-- Double Slabs 1.15-2.4.2
+- ~~Double Slabs 1.15-2.4.2~~ Double Slabs 1.15-2.4.3
 - Essentials 1.15.2-2.7.2
 - Fruit Trees 1.15.2-1.4.1
 - Forbidden and Arcanus 1.15.2-1.4-beta-2
@@ -33,7 +36,7 @@
 - MineColonies 1.15.2-0.11.957
 - Performant 1.15-2.11m
 - Psi r1.2-82
-- Quark r2.1-240
+- ~~Quark r2.1-240~~ Quark r2.1-243
 - Reap Mod 1.12.5
 - Refined Pipes 0.4.2
 - Refined Storage 1.8.4
@@ -45,7 +48,7 @@
 - Silent's Mechanisms 1.15.2-0.7.2+52
 - Simple Farming 1.15.2-1.2.9
 - Structurize 0.10.321-ALPHA
-- The Midnight 0.5.8
+- ~~The Midnight 0.5.8~~ The Midnight 0.5.9
 - Titanium 1.15.2-2.4.1
 - Valhelsia Structures 15.0.3a
 - Xaero's Minimap 20.12.2_Forge_1.15.2
