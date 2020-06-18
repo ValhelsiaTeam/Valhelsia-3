@@ -18,8 +18,8 @@
 			veinCount = 1
 			#Maximum Y-coordinate (highest level) of veins
 			maxHeight = 18
-			#Size of veins
-			veinSize = 4
+			#Size of veins [Default 4]
+			veinSize = 0
 
 		[world.gen.NICKEL]
 			#Minimum Y-coordinate (base height) of veins
@@ -28,8 +28,8 @@
 			veinCount = 1
 			#Maximum Y-coordinate (highest level) of veins
 			maxHeight = 24
-			#Size of veins
-			veinSize = 6
+			#Size of veins [Default 8]
+			veinSize = 0
 
 		[world.gen.BAUXITE]
 			#Minimum Y-coordinate (base height) of veins
@@ -38,8 +38,8 @@
 			veinCount = 6
 			#Maximum Y-coordinate (highest level) of veins
 			maxHeight = 50
-			#Size of veins
-			veinSize = 8
+			#Size of veins [Default 8]
+			veinSize = 0
 
 		[world.gen.SILVER]
 			#Minimum Y-coordinate (base height) of veins
@@ -48,16 +48,16 @@
 			veinCount = 4
 			#Maximum Y-coordinate (highest level) of veins
 			maxHeight = 40
-			#Size of veins
-			veinSize = 8
+			#Size of veins [Default 8]
+			veinSize = 0
 
 		[world.gen.TIN]
-		  #Minimum Y-coordinate (base height) of veins [Default 20]
-		  minHeight = 0
-		  #Number of veins per chunk [Default 8]
-		  veinCount = 0
-		  #Maximum Y-coordinate (highest level) of veins [Default 80]
-		  maxHeight = 0
+		  #Minimum Y-coordinate (base height) of veins
+		  minHeight = 20
+		  #Number of veins per chunk
+		  veinCount = 8
+		  #Maximum Y-coordinate (highest level) of veins
+		  maxHeight = 80
 		  #Size of veins [Default 8]
 		  veinSize = 0
 
@@ -72,12 +72,12 @@
 			veinSize = 8
 
 		[world.gen.COPPER]
-			#Minimum Y-coordinate (base height) of veins [Default 40]
-			minHeight = 0
-			#Number of veins per chunk [Default 8]
-			veinCount = 0
-			#Maximum Y-coordinate (highest level) of veins [Default 90]
-			maxHeight = 0
+			#Minimum Y-coordinate (base height) of veins
+			minHeight = 40
+			#Number of veins per chunk
+			veinCount = 8
+			#Maximum Y-coordinate (highest level) of veins
+			maxHeight = 90
 			#Size of veins [Default 8]
 			veinSize = 0
 
@@ -98,8 +98,8 @@
 			veinCount = 4
 			#Maximum Y-coordinate (highest level) of veins
 			maxHeight = 60
-			#Size of veins
-			veinSize = 8
+			#Size of veins [Default 8]
+			veinSize = 0
 
 		[world.gen.LEAD]
 			#Minimum Y-coordinate (base height) of veins
@@ -108,8 +108,8 @@
 			veinCount = 4
 			#Maximum Y-coordinate (highest level) of veins
 			maxHeight = 30
-			#Size of veins
-			veinSize = 8
+			#Size of veins [Default 8]
+			veinSize = 0
 
 	[world.oilLake]
 		#Chance of oil lakes spawning (1 in chance). Higher numbers = less common. Set 0 to disable.

@@ -57,7 +57,7 @@ worldMap:true
 terrainDepth:true
 terrainSlopes:true
 terrainSlopesExperiment:false
-alwaysArrow:false
+mainEntityAs:2
 blockTransparency:true
 waypointOpacityIngame:80
 waypointOpacityMap:90
@@ -73,9 +73,18 @@ showTime:1
 biomeColorsVanillaMode:false
 lookingAtAngle:20
 lookingAtAngleVertical:180
-interface:dummy:0:0:false:false:true:false
-interface:dummy:0:135:false:false:false:false
-interface:dummy:120:0:true:false:false:false
+centeredEnlarged:false
+zoomedOutEnlarged:false
+entityNametags:false
+minimapTextAlign:0
+showAngles:false
+waypointsMutualEdit:true
+compass:true
+caveMapsDepth:30
+hideWaypointCoordinates:false
 interface:dummy:0:50:true:false:false:false
+interface:dummy:0:10000:true:false:false:false
+interface:dummy:0:0:false:false:true:false
+interface:dummy:0:36:true:false:false:false
 interface:gui.xaero_minimap:0:0:false:false:true:false
 #WAYPOINTS HAVE BEEN MOVED TO xaerowaypoints.txt!
