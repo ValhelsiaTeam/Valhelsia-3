@@ -206,9 +206,10 @@
 
 [tools]
 	Pickarang = true
+	"Pathfinder Maps" = true
+	"Bottled Cloud" = true
 	"Color Runes" = true
 	"Ancient Tomes" = true
-	"Pathfinder Maps" = true
 	"Slime In A Bucket" = true
 	Camera = true
 	Trowel = true
@@ -217,6 +218,19 @@
 		#Amount of blocks placed is this value + 1. Default is 255 (4 stacks).
 		#Set to 0 to make the Trowel unbreakable
 		"Trowel Max Durability" = 255
+
+	[tools.bottled_cloud]
+		"Cloud Level Top" = 132
+		"Cloud Level Bottom" = 127
+
+	[tools.ancient_tomes]
+		"Valid Enchantments" = ["minecraft:feather_falling", "minecraft:thorns", "minecraft:sharpness", "minecraft:smite", "minecraft:bane_of_arthropods", "minecraft:knockback", "minecraft:fire_aspect", "minecraft:looting", "minecraft:sweeping", "minecraft:efficiency", "minecraft:unbreaking", "minecraft:fortune", "minecraft:power", "minecraft:punch", "minecraft:luck_of_the_sea", "minecraft:lure", "minecraft:loyalty", "minecraft:riptide", "minecraft:impaling", "minecraft:piercing"]
+		"Dungeon Weight" = 20
+		"Item Quality" = 2
+		"Apply Cost" = 35
+		"Library Weight" = 30
+		"Monster Box Weight" = 5
+		"Merge Cost" = 35
 
 	[tools.pathfinder_maps]
 		#In this section you can add custom Pathfinder Maps. This works for both vanilla and modded biomes.
@@ -245,15 +259,6 @@
 		"Apply Cost" = 15
 		"Nether Fortress Weight" = 8
 
-	[tools.ancient_tomes]
-		"Valid Enchantments" = ["minecraft:feather_falling", "minecraft:thorns", "minecraft:sharpness", "minecraft:smite", "minecraft:bane_of_arthropods", "minecraft:knockback", "minecraft:fire_aspect", "minecraft:looting", "minecraft:sweeping", "minecraft:efficiency", "minecraft:unbreaking", "minecraft:fortune", "minecraft:power", "minecraft:punch", "minecraft:luck_of_the_sea", "minecraft:lure", "minecraft:loyalty", "minecraft:riptide", "minecraft:impaling", "minecraft:piercing"]
-		"Dungeon Weight" = 20
-		"Item Quality" = 2
-		"Apply Cost" = 35
-		"Library Weight" = 30
-		"Monster Box Weight" = 5
-		"Merge Cost" = 35
-
 	[tools.pickarang]
 		#22.5 is ender chests, 25.0 is monster boxes, 50 is obsidian. Most things are below 5.
 		"Max Hardness" = 20.0
@@ -272,6 +277,7 @@
 	"Armed Armor Stands" = true
 	"Lock Rotation" = true
 	"Dragon Scales" = true
+	"Replace Scaffolding" = true
 	"Axe Leaf Harvesting" = true
 	"Sign Editing" = true
 	"Dirt To Path" = true
@@ -284,7 +290,7 @@
 	"Double Door Opening" = true
 	"Automatic Recipe Unlock" = true
 	"Poison Potato Usage" = true
-	"Improved Sleeping" = false
+	"Improved Sleeping" = true
 	"Springy Slime" = true
 	Emotes = true
 	"Utility Recipes" = true
@@ -341,12 +347,13 @@
 	[tweaks.reacharound_placing]
 		Leniency = 0.5
 		Whitelist = []
+		"Display Horizontal" = "<  >"
 		Display = "[  ]"
 
 	[tweaks.improved_sleeping]
 		"Enable Afk" = true
 		"Afk Time" = 2400
-		"Percent Req" = 1.0
+		"Percent Req" = 0.3
 
 	[tweaks.emotes]
 		#The enabled default emotes. Remove from this list to disable them. You can also re-order them, if you feel like it.
@@ -381,6 +388,10 @@
 	[tweaks.campfires_boost_elytra]
 		"Boost Strength" = 0.5
 		"Max Speed" = 1.0
+
+	[tweaks.replace_scaffolding]
+		#How many times the algorithm for finding out where a block would be placed is allowed to turn. If you set this to large values (> 3) it may start producing weird effects.
+		"Max Bounces" = 1
 
 [world]
 	"New Stone Types" = true
@@ -1129,6 +1140,7 @@
 		#minecraft:mending=minecraft:carrot_on_a_stick
 		"Enchanting Additional Stacks" = []
 		"Food Tooltips" = false
+		"Show Saturation" = true
 		"Map Tooltips" = true
 		"Enchanting Stacks" = ["minecraft:diamond_sword", "minecraft:diamond_pickaxe", "minecraft:diamond_shovel", "minecraft:diamond_axe", "minecraft:diamond_hoe", "minecraft:diamond_helmet", "minecraft:diamond_chestplate", "minecraft:diamond_leggings", "minecraft:diamond_boots", "minecraft:shears", "minecraft:bow", "minecraft:fishing_rod", "minecraft:crossbow", "minecraft:trident", "minecraft:elytra", "quark:pickarang"]
 

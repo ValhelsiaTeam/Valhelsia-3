@@ -74,3 +74,13 @@ customization {
   height = 20
 }
 
+customization {
+  path = config/fancymenu/customization/valhelsia/bisecthosting.png
+  orientation = mid-centered
+  x = -83
+  width = 166
+  action = addtexture
+  y = 205
+  height = 50
+}
+

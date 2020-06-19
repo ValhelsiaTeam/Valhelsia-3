@@ -7,7 +7,7 @@
 	#Any mod ids added to this list will not be able to have any of their blocks, picked up by the cardboard box.
 	cardboardModBlacklist = []
 	#Disable to make the anchor upgrade not do anything.
-	allowChunkloading = false
+	allowChunkloading = true
 	#How much heat energy is created from one Joule of regular energy in the Resistive Heater.
 	#Range: 0.0 ~ 1.0
 	resistiveHeaterEfficiency = 0.6

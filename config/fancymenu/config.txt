@@ -9,7 +9,7 @@ B:playmenumusic = 'true';
 
 ##[customization]
 
-B:showcustomizationbuttons = 'true';
+B:showcustomizationbuttons = 'false';
 
 
 ##[mainmenu]
