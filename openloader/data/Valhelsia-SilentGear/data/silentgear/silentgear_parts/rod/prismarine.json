@@ -1,0 +1,39 @@
+{
+    "type": "silentgear:rod",
+    "stats": [
+        {"name": "durability",      "value":  0.2, "op": "MUL2"},
+        {"name": "enchantability",  "value":  0.3, "op": "MUL2"},
+        {"name": "harvest_level",   "value":    2, "op": "MAX"},
+        {"name": "harvest_speed",   "value":  0.2, "op": "MUL2"},
+        {"name": "melee_damage",    "value":  0.2, "op": "MUL2"},
+        {"name": "magic_damage",    "value":  0.2, "op": "MUL2"},
+        {"name": "attack_speed",    "value":  0.1, "op": "ADD"},
+        {"name": "ranged_damage",   "value":  0.2, "op": "MUL2"},
+        {"name": "ranged_speed",    "value":  0.1, "op": "MUL2"},
+        {"name": "rarity",          "value":   35}
+    ],
+    "traits": [
+        {"name": "silentgear:aquatic", "level": 4},
+        {"name": "silentgear:organic", "level": 1}
+    ],
+    "crafting_items": {
+        "normal": {
+            "item": "upgrade_aquatic:prismarine_rod"
+        }
+    },
+    "name": {
+        "translate": "item.upgrade_aquatic.prismarine_rod"
+    },
+    "textures": {
+        "all": {
+            "lite_texture": "low_contrast",
+            "texture_domain": "silentgear",
+            "texture_suffix": "generic_lc",
+            "normal_color": "#69AF92"
+        }
+    },
+    "availability": {
+        "tier": 3,
+        "gear_blacklist": []
+    }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "group": "steel_ingot",
+  "ingredient": {
+    "item": "silents_mechanisms:refined_iron_ingot"
+  },
+  "result": "mapperbase:steel_ingot",
+  "experience": 1.0,
+  "cookingtime": 120
+}

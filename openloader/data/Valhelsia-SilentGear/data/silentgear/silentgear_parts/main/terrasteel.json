@@ -1,0 +1,51 @@
+{
+    "type": "silentgear:main",
+    "stats": [
+        {"name": "durability",      "value": 2300},
+        {"name": "armor_durability","value":   34},
+        {"name": "enchantability",  "value":   26},
+        {"name": "harvest_level",   "value":    4},
+        {"name": "harvest_speed",   "value":    9},
+        {"name": "melee_damage",    "value":    3},
+        {"name": "magic_damage",    "value":    3},
+        {"name": "attack_speed",    "value":  0.0},
+        {"name": "armor",           "value":   20},
+        {"name": "armor_toughness", "value":   12},
+        {"name": "magic_armor",     "value":   10},
+        {"name": "ranged_damage",   "value":    2},
+        {"name": "ranged_speed",    "value": -0.2},
+        {"name": "rarity",          "value":   45},
+        {"name": "chargeability",   "value":  1.0}
+    ],
+    "traits": [
+        {"name": "silentgear:stellar", "level": 3},
+        {"name": "silentgear:ancient", "level": 3},
+	{"name": "silentgear:malleable", "level": 3}
+    ],
+    "crafting_items": {
+        "normal": {
+            "item": "botania:terrasteel_ingot"
+        },
+        "small": {
+            "item": "botania:terrasteel_nugget",
+            "size": 9
+        }
+    },
+    "name": {
+        "text": "Terrasteel"
+    },
+    "textures": {
+        "all": {
+            "lite_texture": "high_contrast_with_highlight",
+            "highlight": true,
+            "texture_domain": "silentgear",
+            "texture_suffix": "generic_hc",
+            "normal_color": "#57FF09"
+        }
+    },
+    "availability": {
+        "visible": true,
+        "tier": 3,
+        "gear_blacklist": []
+    }
+}

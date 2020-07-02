@@ -1,0 +1,38 @@
+{
+    "type": "silentgear:grip",
+    "stats": [
+        {"name": "durability",        "value": 0.1,   "op": "MUL1"},
+        {"name": "repair_efficiency", "value": 0.0,   "op": "MUL1"},
+        {"name": "enchantability",    "value": 0.05,  "op": "ADD"},
+        {"name": "harvest_speed",     "value": -0.05, "op": "MUL1"},
+        {"name": "attack_speed",      "value": -0.1,  "op": "ADD"},
+        {"name": "ranged_speed",      "value": -0.1,  "op": "ADD"},
+        {"name": "rarity",            "value":    9}
+    ],
+    "traits": [
+        {"name": "silentgear:jagged", "level": 3},
+        {"name": "silentgear:ancient", "level": 2}
+    ],
+    "crafting_items": {
+        "normal": {
+            "item": "minecraft:end_stone"
+        }
+    },
+    "name": {
+        "text": "End Stone"
+    },
+    "textures": {
+        "all": {
+            "lite_texture": "low_contrast",
+            "highlight": false,
+            "texture_domain": "silentgear",
+            "texture_suffix": "generic_lc",
+            "texture_color": "#FFFFCC",
+            "broken_color": "#FFFFCC"
+        }
+    },
+    "availability": {
+        "tier": 0,
+        "gear_blacklist": []
+    }
+}

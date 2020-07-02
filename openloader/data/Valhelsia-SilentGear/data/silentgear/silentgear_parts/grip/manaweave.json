@@ -1,0 +1,36 @@
+{
+    "type": "silentgear:grip",
+    "stats": [
+        {"name": "durability",        "value": 0.1,  "op": "MUL1"},
+        {"name": "repair_efficiency", "value": 0.1,  "op": "MUL1"},
+        {"name": "enchantability",    "value": 0.15, "op": "MUL1"},
+        {"name": "harvest_speed",     "value": 0.05, "op": "MUL1"},
+        {"name": "attack_speed",      "value": 0.05, "op": "ADD"},
+        {"name": "ranged_speed",      "value": 0.05, "op": "ADD"},
+        {"name": "rarity",            "value":   10}
+    ],
+    "traits": [
+        {"name": "silentgear:ancient", "level": 1},
+	{"name": "silentgear:synergistic", "level": 2}
+    ],
+    "crafting_items": {
+        "normal": {
+            "item": "botania:manaweave_cloth"
+        }
+    },
+    "name": {
+        "text": "Manaweave Cloth"
+    },
+    "textures": {
+        "all": {
+            "lite_texture": "low_contrast",
+            "texture_domain": "silentgear",
+            "texture_suffix": "wool",
+            "normal_color": "#B3FFFF"
+        }
+    },
+    "availability": {
+        "tier": 1,
+        "gear_blacklist": []
+    }
+}

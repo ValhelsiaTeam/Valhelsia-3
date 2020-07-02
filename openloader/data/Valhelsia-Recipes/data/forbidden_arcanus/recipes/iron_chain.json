@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "X",
+        "#",
+        "X"
+    
+    ],
+    
+    "key":
+    {
+        "X":
+        {
+            "item": "minecraft:iron_ingot"
+        },
+        "#":
+        {
+            "item": "minecraft:iron_nugget"
+        }
+        
+    },
+    
+    "result":
+    {
+        "item": "forbidden_arcanus:iron_chain",
+        "count": 5
+    }
+}

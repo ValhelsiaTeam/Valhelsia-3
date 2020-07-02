@@ -1,0 +1,51 @@
+{
+    "type": "silentgear:main",
+    "stats": [
+        {"name": "durability",      "value":  720},
+        {"name": "armor_durability","value":   18},
+        {"name": "enchantability",  "value":   20},
+        {"name": "harvest_level",   "value":    3},
+        {"name": "harvest_speed",   "value":  6.2},
+        {"name": "melee_damage",    "value":    2},
+        {"name": "magic_damage",    "value":    3},
+        {"name": "attack_speed",    "value":  0.0},
+        {"name": "armor",           "value":   15},
+        {"name": "armor_toughness", "value":    0},
+        {"name": "magic_armor",     "value":   10},
+        {"name": "ranged_damage",   "value":    3},
+        {"name": "ranged_speed",    "value":  0.2},
+        {"name": "rarity",          "value":   38},
+        {"name": "chargeability",   "value":  0.8}
+    ],
+    "traits": [
+        {"name": "silentgear:magmatic", "level": 1},
+        {"name": "silentgear:malleable", "level": 1},
+	{"name": "silentgear:stellar", "level": 2}
+    ],
+    "crafting_items": {
+        "normal": {
+            "item": "botania:elementium_ingot"
+        },
+	"small": {
+            "item": "botania:elementium_nugget",
+	    "size": 9
+        }
+    },
+    "name": {
+        "text": "Elementium"
+    },
+    "textures": {
+        "all": {
+            "lite_texture": "high_contrast_with_highlight",
+            "highlight": true,
+            "texture_domain": "silentgear",
+            "texture_suffix": "generic_hc",
+            "normal_color": "#ED339A"
+        }
+    },
+    "availability": {
+        "visible": true,
+        "tier": 3,
+        "gear_blacklist": []
+    }
+}

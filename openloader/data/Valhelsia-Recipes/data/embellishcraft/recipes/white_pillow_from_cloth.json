@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [      
+    {
+      "item": "forbidden_arcanus:cloth"
+    },
+	{
+      "item": "forbidden_arcanus:cloth"
+    },
+	{
+      "item": "minecraft:white_wool"
+    }
+  ],
+  "result": {
+    "item": "embellishcraft:white_pillow",
+    "count": 2
+  }
+} 

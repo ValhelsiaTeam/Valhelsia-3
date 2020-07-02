@@ -1,0 +1,50 @@
+{
+    "type": "silentgear:main",
+    "stats": [
+        {"name": "durability",      "value":  300},
+        {"name": "armor_durability","value":   16},
+        {"name": "enchantability",  "value":   20},
+        {"name": "harvest_level",   "value":    3},
+        {"name": "harvest_speed",   "value":  6.2},
+        {"name": "melee_damage",    "value":    2},
+        {"name": "magic_damage",    "value":    3},
+        {"name": "attack_speed",    "value":  0.0},
+        {"name": "armor",           "value":   15},
+        {"name": "armor_toughness", "value":    0},
+        {"name": "magic_armor",     "value":   10},
+        {"name": "ranged_damage",   "value":    0},
+        {"name": "ranged_speed",    "value":  0.1},
+        {"name": "rarity",          "value":   25},
+        {"name": "chargeability",   "value":  0.7}
+    ],
+    "traits": [
+        {"name": "silentgear:malleable", "level": 2},
+        {"name": "silentgear:chilled", "level": 2}
+    ],
+    "crafting_items": {
+        "normal": {
+            "item": "botania:manasteel_ingot"
+        },
+        "small": {
+            "item": "botania:manasteel_nugget",
+            "size": 9
+        }
+    },
+    "name": {
+        "text": "Manasteel"
+    },
+    "textures": {
+        "all": {
+            "lite_texture": "high_contrast_with_highlight",
+            "highlight": true,
+            "texture_domain": "silentgear",
+            "texture_suffix": "generic_hc",
+            "normal_color": "#3389ff"
+        }
+    },
+    "availability": {
+        "visible": true,
+        "tier": 2,
+        "gear_blacklist": []
+    }
+}
