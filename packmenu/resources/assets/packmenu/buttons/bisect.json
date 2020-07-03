@@ -1,0 +1,19 @@
+{
+	"x": 1,
+	"y": 0,
+	"width": 160,
+	"height": 35,
+	"u": 160,
+	"v": 0,
+	"hoverU": 160,
+	"hoverV": 35,
+	"texWidth": 512,
+	"texHeight": 256,
+	"texture": "packmenu:textures/gui/buttons.png",
+	"widgets": false,
+	"langKey": "valhelsia.bisect",
+	"action": "OPEN_URL",
+	"data": "https://www.bisecthosting.com/Valhelsia",
+	"textXOffset": 18,
+	"anchor": "MIDDLE_CENTER"
+}

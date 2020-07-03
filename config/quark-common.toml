@@ -10,7 +10,7 @@
 	"Shulker Boxes" = ["minecraft:white_shulker_box", "minecraft:orange_shulker_box", "minecraft:magenta_shulker_box", "minecraft:light_blue_shulker_box", "minecraft:yellow_shulker_box", "minecraft:lime_shulker_box", "minecraft:pink_shulker_box", "minecraft:gray_shulker_box", "minecraft:light_gray_shulker_box", "minecraft:cyan_shulker_box", "minecraft:purple_shulker_box", "minecraft:blue_shulker_box", "minecraft:brown_shulker_box", "minecraft:green_shulker_box", "minecraft:red_shulker_box", "minecraft:black_shulker_box"]
 	#Set to true to make the quark big worldgen features such as stone clusters or underground biomes generate as spheres rather than unique shapes. It's faster, but won't look as cool
 	"Use Fast Worldgen" = false
-	"Enable 'q' Button" = true
+	"Enable 'q' Button" = false
 	#A list of screens that don't play well with quark's buttons. Use "Print Screen Classnames" to find the names of any others you'd want to add.
 	"Ignored Screens" = ["com.tfar.craftingstation.client.CraftingStationScreen", "com.raoulvdberge.refinedstorage.screen.grid.GridScreen", "com.raoulvdberge.refinedstorage.screen.DiskManipulatorScreen", "com.raoulvdberge.refinedstorage.screen.InterfaceScreen", "net.silentchaos512.gear.block.craftingstation.CraftingStationScreen", "blusunrize.immersiveengineering.client.gui.CraftingTableScreen"]
 	"Use Anti Overlap" = true
