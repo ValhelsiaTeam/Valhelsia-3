@@ -20,7 +20,7 @@
 + AkashicTome
 + CraftTweaker
 
-### Mod removed:
+### Mods removed:
 - FancyMenu
 - DRP - Global Data Pack
 - Blur
@@ -79,6 +79,9 @@
 - Useful Backpacks 1.15.2-1.10.1.66
 - Wawla - What Are We Looking At 1.15.2-3.0.3
 - Waystones 1.15.2-6.0.2
+
+### Changes:
+- [f6af6c2](https://github.com/ValhelsiaTeam/Valhelsia/commit/f6af6c29813dc03e892a8bd98be6a3789d187136) - Mapper Base: Disable steel for JEI and recipes.
 
 -----------------------------------
 
