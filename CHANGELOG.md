@@ -1,3 +1,87 @@
+# Changelog 2.2.4
+
+![100% center](https://zupimages.net/up/20/17/mfyp.png)
+**Forge 31.2.30**
+
+### Mods added:
++ PackMenu
++ Open Loader
++ Scenic
++ Paintings ++
++ Better Advancements
++ Inventory Sorter
++ Armor Toughness Bar
++ Engineer's Decor
++ Server Tab Info
++ Snow Under Trees
++ Druidcraft
++ ServerConfig Updater
++ The Conjurer
++ AkashicTome
++ CraftTweaker
+
+### Mod removed:
+- FancyMenu
+- DRP - Global Data Pack
+- Blur
+- Misc Additions
+
+### Updated:
+- Absent by Design 1.15.2-1.1.0
+- AIOT Botania 1.15.2-1.2.3
+- Apotheosis 1.15.2-3.2.1
+- Aquaculture 2 1.15.2-2.0.16
+- Atmospheric 1.15.2-1.4.1
+- Biomes O' Plenty 1.15.2-10.0.0.366
+- Botania r1.15-387
+- Botany Pots 1.15.2-2.0.25
+- Buzzier Bees 1.15.2-1.5.2
+- CC: Tweaked 1.15.2-1.89.1
+- Cherished Worlds 1.15.2-3.0.0.1
+- Controlling 6.1.5.6
+- Cooking for Blockheads 1.15.2-8.0.3
+- Crafting Tweaks 1.15.2-11.0.1
+- Dark Utilities 1.15.2-3.0.7
+- Double Slabs 1.15-2.7.6
+- EmbellishCraft 1.15.2-2.2.1.0
+- Essentials 1.15.2-2.7.3
+- Extended Lights 2.1
+- Flux Networks 1.15.2-5.0.3-4
+- Forbidden and Arcanus 1.15.2-1.4
+- Fruit Trees 1.15.2-1.5.0
+- Just Enough Items (JEI) 1.15.2-6.0.2.12
+- Kiwi 1.15.2-2.7.2
+- Light Overlay 4.7.0
+- Lightest Lamps 3.4.3
+- Mapper Base 1.15.2-1.1.1.0
+- Mekanism 1.15.2-9.10.9.422
+- Mekanism Additions 1.15.2-9.10.9.422
+- Mekanism Generators 1.15.2-9.10.9.422
+- Mekanism Tools 1.15.2-9.10.9.422
+- MineColonies 0.13.18-ALPHA
+- Persistent Bits 1.15.2-2.0.3
+- Placebo 1.15.2-3.1.0
+- Polymorph 1.15.2-0.3
+- RandomPatches 1.15.2-1.22.0.0
+- Refined Storage 1.8.6
+- Silent Gear 1.15.2-1.8.2+109
+- Silent Lib 1.15.2-4.6.4+56
+- Silent's Mechanisms 1.15.2-0.7.6+57
+- Simple Storage Network 1.15.2-1.0.1
+- Structurize 0.13.4-ALPHA
+- Swamp Expansion 1.15.2-1.7.2
+- TerraForged 1.15.2-0.0.15
+- The Endergetic Expansion 1.15.2-v1.3.2
+- Torch Slabs Mod 1.15.2_v1.7.0
+- Torchmaster 2.2.0
+- U Team Core 1.15.2-3.0.0.160
+- Upgrade Aquatic 1.15.2-1.7.0
+- Useful Backpacks 1.15.2-1.10.1.66
+- Wawla - What Are We Looking At 1.15.2-3.0.3
+- Waystones 1.15.2-6.0.2
+
+-----------------------------------
+
 # Changelog 2.2.3
 
 ![100% center](https://zupimages.net/up/20/17/mfyp.png)
