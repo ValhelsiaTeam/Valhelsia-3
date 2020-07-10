@@ -1,0 +1,17 @@
+{
+	"x": -198,
+	"y": 37,
+	"width": 35,
+	"height": 35,
+	"u": 0,
+	"v": 210,
+	"hoverU": 35,
+	"hoverV": 210,
+	"texWidth": 512,
+	"texHeight": 256,
+	"texture": "packmenu:textures/gui/buttons.png",
+	"widgets": false,
+	"action": "OPEN_GUI",
+	"data": "LANGUAGE",
+	"anchor": "MIDDLE_CENTER"
+}

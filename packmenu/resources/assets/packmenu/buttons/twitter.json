@@ -1,0 +1,17 @@
+{
+	"x": -16,
+	"y": -44,
+	"width": 32,
+	"height": 32,
+	"u": 448,
+	"v": 192,
+	"hoverU": 448,
+	"hoverV": 224,
+	"texWidth": 512,
+	"texHeight": 256,
+	"texture": "packmenu:textures/gui/buttons.png",
+	"widgets": false,
+	"action": "OPEN_URL",
+	"data": "https://twitter.com/valhelsia",
+	"anchor": "BOTTOM_CENTER"
+}

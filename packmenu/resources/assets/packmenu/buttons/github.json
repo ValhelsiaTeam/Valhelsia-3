@@ -1,0 +1,17 @@
+{
+	"x": 50,
+	"y": -44,
+	"width": 32,
+	"height": 32,
+	"u": 416,
+	"v": 192,
+	"hoverU": 416,
+	"hoverV": 224,
+	"texWidth": 512,
+	"texHeight": 256,
+	"texture": "packmenu:textures/gui/buttons.png",
+	"widgets": false,
+	"action": "OPEN_URL",
+	"data": "https://github.com/ValhelsiaTeam",
+	"anchor": "BOTTOM_CENTER"
+}

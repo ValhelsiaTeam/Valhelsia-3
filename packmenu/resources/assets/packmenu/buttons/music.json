@@ -1,0 +1,21 @@
+{
+	"x": -221,
+	"y": -26,
+	"width": 240,
+	"height": 16,
+	"u": 0,
+	"v": 0,
+	"hoverU": 0,
+	"hoverV": 0,
+	"texWidth": 16,
+	"texHeight": 16,
+	"texture": "packmenu:textures/gui/empty.png",
+	"langKey": "valhelsia.music",
+	"dropShadow": true,
+	"fontColor": 16777215,
+	"hoverFontColor": 16777011,
+	"widgets": false,
+	"action": "OPEN_URL",
+	"data": "https://twitter.com/Tit0Rush",
+	"anchor": "BOTTOM_RIGHT"
+}
