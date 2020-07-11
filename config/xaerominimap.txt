@@ -22,7 +22,7 @@ oldDeathpoints:true
 distance:1
 showCoords:true
 lockNorth:false
-zoom:0
+zoom:1
 mapSize:-1
 entityAmount:1
 chunkGrid:-5
