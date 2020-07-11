@@ -1,9 +1,9 @@
 # Changelog 3.0.1
 
 ![100% center](https://zupimages.net/up/20/17/mfyp.png)
-**Forge 32.0.62
+**Forge 32.0.62**
 
-### Mod(s)dded:
+### Mod(s) added:
 + Comforts
 + Cooking for Blockheads
 + CraftTweaker
