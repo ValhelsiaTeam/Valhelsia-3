@@ -7,7 +7,7 @@ differentiateByServerAddress:true
 #INGAME SETTINGS (DO NOT EDIT!)
 minimap:true
 caveMaps:1
-caveZoom:1
+caveZoom:2
 showPlayers:true
 showHostile:false
 showMobs:false

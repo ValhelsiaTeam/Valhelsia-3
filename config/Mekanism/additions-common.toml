@@ -56,7 +56,7 @@
 		#Config options regarding baby strays.
 		[additions-common.spawning.baby-strays]
 			#Enable the spawning of baby strays. Think baby zombies.
-			shouldSpawn = false
+			shouldSpawn = true
 			#The multiplier for weight of baby strays spawns, compared to the adult mob.
 			#Range: 0.0 ~ 100.0
 			weightPercentage = 0.5
