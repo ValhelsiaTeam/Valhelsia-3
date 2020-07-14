@@ -1,0 +1,20 @@
+{
+    "type": "create:crushing",
+    "ingredients": [
+    	{
+    		"item": "atmospheric:barrel_cactus"
+    	}
+    ],
+	"results": [
+		{
+			"item": "minecraft:orange_dye",
+			"count": 2
+		},
+		{
+			"item": "minecraft:green_dye",
+			"count": 1,
+			"chance": 0.05
+		}
+	],
+	"processingTime": 50
+}

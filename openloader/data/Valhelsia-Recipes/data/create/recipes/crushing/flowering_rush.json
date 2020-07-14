@@ -1,0 +1,25 @@
+{
+    "type": "create:crushing",
+    "ingredients": [
+    	{
+    		"item": "upgrade_aquatic:flowering_rush"
+    	}
+    ],
+	"results": [
+		{
+			"item": "minecraft:pink_dye",
+			"count": 3
+		},
+		{
+			"item": "minecraft:lime_dye",
+			"count": 2,
+			"chance": 0.05
+		},
+    {
+      "item": "minecraft:pink_dye",
+      "count": 2,
+      "chance": 0.25
+		}
+	],
+	"processingTime": 50
+}

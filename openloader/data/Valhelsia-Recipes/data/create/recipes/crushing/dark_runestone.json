@@ -1,0 +1,25 @@
+{
+    "type": "create:crushing",
+    "ingredients": [
+    	{
+    		"item": "forbidden_arcanus:dark_runestone"
+    	}
+    ],
+	"results": [
+		{
+			"item": "forbidden_arcanus:dark_rune",
+			"count": 2
+		},
+		{
+			"item": "forbidden_arcanus:dark_rune",
+			"count": 1,
+			"chance": 0.25
+		},
+		{
+			"item": "forbidden_arcanus:dark_stone",
+			"count": 1,
+			"chance": 0.125
+		}
+	],
+	"processingTime": 500
+}

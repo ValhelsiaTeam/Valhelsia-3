@@ -1,0 +1,15 @@
+{
+    "type": "create:cutting",
+    "ingredients": [
+    	{
+    		"item": "upgrade_aquatic:driftwood"
+    	}
+    ], 
+	"results": [
+		{
+			"item": "upgrade_aquatic:driftwood_stripped",
+			"count": 1
+		}
+	],
+	"processingTime": 50
+}

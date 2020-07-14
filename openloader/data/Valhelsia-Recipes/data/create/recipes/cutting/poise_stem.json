@@ -1,0 +1,15 @@
+{
+    "type": "create:cutting",
+    "ingredients": [
+    	{
+    		"item": "endergetic:poise_stem"
+    	}
+    ], 
+	"results": [
+		{
+			"item": "endergetic:poise_stem_stripped",
+			"count": 1
+		}
+	],
+	"processingTime": 50
+}

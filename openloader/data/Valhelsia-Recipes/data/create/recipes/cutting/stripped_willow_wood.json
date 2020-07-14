@@ -1,0 +1,15 @@
+{
+    "type": "create:cutting",
+    "ingredients": [
+    	{
+    		"item": "swampexpansion:stripped_willow_wood"
+    	}
+    ], 
+	"results": [
+		{
+			"item": "swampexpansion:willow_planks",
+			"count": 5
+		}
+	],
+	"processingTime": 100
+}

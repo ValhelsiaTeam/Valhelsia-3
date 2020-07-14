@@ -1,0 +1,15 @@
+{
+    "type": "create:crushing",
+    "ingredients": [
+    	{
+    		"tag": "forge:storage_blocks/silver"
+    	}
+    ],
+	"results": [
+		{
+			"item": "jaopca:create_crushed_ores.silver",
+			"count": 5
+		}
+	],
+	"processingTime": 400
+}

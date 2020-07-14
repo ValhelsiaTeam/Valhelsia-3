@@ -1,0 +1,15 @@
+{
+    "type": "create:cutting",
+    "ingredients": [
+    	{
+    		"item": "endergetic:poise_wood"
+    	}
+    ], 
+	"results": [
+		{
+			"item": "endergetic:poise_wood_stripped",
+			"count": 1
+		}
+	],
+	"processingTime": 50
+}

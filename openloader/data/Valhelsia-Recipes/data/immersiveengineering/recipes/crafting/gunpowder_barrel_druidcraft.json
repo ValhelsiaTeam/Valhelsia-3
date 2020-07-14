@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " f ",
+    "gbg",
+    "ggg"
+  ],
+  "key": {
+    "f": {
+      "item": "druidcraft:hemp"
+    },
+    "g": {
+      "tag": "forge:gunpowder"
+    },
+    "b": {
+      "item": "immersiveengineering:wooden_barrel"
+    }
+  },
+  "result": {
+    "item": "immersiveengineering:gunpowder_barrel"
+  }
+}

@@ -1,0 +1,15 @@
+{
+    "type": "create:cutting",
+    "ingredients": [
+    	{
+    		"item": "forbidden_arcanus:mysterywood_log"
+    	}
+    ], 
+	"results": [
+		{
+			"item": "forbidden_arcanus:stripped_mysterywood_log",
+			"count": 1
+		}
+	],
+	"processingTime": 50
+}

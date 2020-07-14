@@ -1,0 +1,15 @@
+{
+    "type": "create:cutting",
+    "ingredients": [
+    	{
+    		"item": "autumnity:maple_wood"
+    	}
+    ], 
+	"results": [
+		{
+			"item": "autumnity:stripped_maple_wood",
+			"count": 1
+		}
+	],
+	"processingTime": 50
+}

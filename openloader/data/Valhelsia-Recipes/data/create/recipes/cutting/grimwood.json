@@ -1,0 +1,15 @@
+{
+    "type": "create:cutting",
+    "ingredients": [
+    	{
+    		"item": "atmospheric:grimwood"
+    	}
+    ], 
+	"results": [
+		{
+			"item": "atmospheric:stripped_grimwood",
+			"count": 1
+		}
+	],
+	"processingTime": 50
+}

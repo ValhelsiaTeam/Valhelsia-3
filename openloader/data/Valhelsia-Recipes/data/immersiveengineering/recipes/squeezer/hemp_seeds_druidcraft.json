@@ -1,0 +1,11 @@
+{
+  "type": "immersiveengineering:squeezer",
+  "fluid": {
+    "fluid": "immersiveengineering:plantoil",
+    "amount": 100
+  },
+  "input": {
+    "item": "druidcraft:hemp_seeds"
+  },
+  "energy": 6400
+}

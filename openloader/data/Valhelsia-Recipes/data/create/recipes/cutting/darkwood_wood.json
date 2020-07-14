@@ -1,0 +1,15 @@
+{
+    "type": "create:cutting",
+    "ingredients": [
+    	{
+    		"item": "druidcraft:darkwood_wood"
+    	}
+    ], 
+	"results": [
+		{
+			"item": "druidcraft:stripped_darkwood_wood",
+			"count": 1
+		}
+	],
+	"processingTime": 50
+}

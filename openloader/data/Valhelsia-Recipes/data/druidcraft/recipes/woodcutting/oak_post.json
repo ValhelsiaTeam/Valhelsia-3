@@ -1,0 +1,8 @@
+{
+    "type": "druidcraft:woodcutting",
+    "ingredient": {
+      "item":"minecraft:oak_log"
+    },
+    "result": "valhelsia_structures:oak_post",
+    "count": 2
+  }

@@ -1,0 +1,20 @@
+{
+    "type": "create:crushing",
+    "ingredients": [
+    	{
+    		"item": "autumnity:autumn_crocus"
+    	}
+    ],
+	"results": [
+		{
+			"item": "minecraft:magenta_dye",
+			"count": 2
+		},
+		{
+			"item": "minecraft:purple_dye",
+			"count": 1,
+			"chance": 0.05
+		}
+	],
+	"processingTime": 50
+}

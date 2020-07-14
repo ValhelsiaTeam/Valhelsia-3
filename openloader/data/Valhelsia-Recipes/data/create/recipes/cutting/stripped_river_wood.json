@@ -1,0 +1,15 @@
+{
+    "type": "create:cutting",
+    "ingredients": [
+    	{
+    		"item": "upgrade_aquatic:stripped_river_wood"
+    	}
+    ], 
+	"results": [
+		{
+			"item": "upgrade_aquatic:river_planks",
+			"count": 5
+		}
+	],
+	"processingTime": 100
+}

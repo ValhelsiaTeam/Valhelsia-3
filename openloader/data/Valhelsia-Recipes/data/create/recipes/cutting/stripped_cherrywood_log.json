@@ -1,0 +1,15 @@
+{
+    "type": "create:cutting",
+    "ingredients": [
+    	{
+    		"item": "forbidden_arcanus:stripped_cherrywood_log"
+    	}
+    ], 
+	"results": [
+		{
+			"item": "forbidden_arcanus:cherrywood_planks",
+			"count": 5
+		}
+	],
+	"processingTime": 100
+}

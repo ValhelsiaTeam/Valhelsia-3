@@ -1,0 +1,20 @@
+{
+  "type": "immersiveengineering:cloche",
+  "results": [
+    {
+      "item": "autumnity:foul_berries",
+      "count": 2
+    }
+  ],
+  "input": {
+    "item": "autumnity:foul_berry_pips"
+  },
+  "soil": {
+    "item": "minecraft:dirt"
+  },
+  "time": 560,
+  "render": {
+    "type": "crop",
+    "block": "autumnity:foul_berry_bush"
+  }
+}

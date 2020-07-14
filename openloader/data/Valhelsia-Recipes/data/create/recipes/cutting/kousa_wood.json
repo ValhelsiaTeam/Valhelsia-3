@@ -1,0 +1,15 @@
+{
+    "type": "create:cutting",
+    "ingredients": [
+    	{
+    		"item": "atmospheric:kousa_wood"
+    	}
+    ], 
+	"results": [
+		{
+			"item": "atmospheric:stripped_kousa_wood",
+			"count": 1
+		}
+	],
+	"processingTime": 50
+}

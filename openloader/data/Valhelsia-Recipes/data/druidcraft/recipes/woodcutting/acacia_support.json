@@ -1,0 +1,8 @@
+{
+    "type": "druidcraft:woodcutting",
+    "ingredient": {
+      "item":"minecraft:acacia_planks"
+    },
+    "result": "decorative_blocks:acacia_support",
+    "count": 1
+  }

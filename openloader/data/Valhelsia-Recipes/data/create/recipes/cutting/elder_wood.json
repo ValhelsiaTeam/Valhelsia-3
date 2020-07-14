@@ -1,0 +1,15 @@
+{
+    "type": "create:cutting",
+    "ingredients": [
+    	{
+    		"item": "druidcraft:elder_wood"
+    	}
+    ], 
+	"results": [
+		{
+			"item": "druidcraft:stripped_elder_wood",
+			"count": 1
+		}
+	],
+	"processingTime": 50
+}

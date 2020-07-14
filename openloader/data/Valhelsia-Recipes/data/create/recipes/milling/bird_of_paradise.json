@@ -1,0 +1,25 @@
+{
+    "type": "create:milling",
+    "ingredients": [
+    	{
+    		"item": "buzzierbees:bird_of_paradise"
+    	}
+    ],
+	"results": [
+		{
+			"item": "minecraft:orange_dye",
+			"count": 3
+		},
+		{
+			"item": "minecraft:lime_dye",
+			"count": 2,
+			"chance": 0.05
+		},
+		{
+		"item": "minecraft:orange_dye",
+		"count": 2,
+		"chance": 0.25
+		}
+	],
+	"processingTime": 50
+}

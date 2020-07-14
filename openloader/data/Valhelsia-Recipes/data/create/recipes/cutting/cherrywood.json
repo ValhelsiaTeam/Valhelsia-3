@@ -1,0 +1,15 @@
+{
+    "type": "create:cutting",
+    "ingredients": [
+    	{
+    		"item": "forbidden_arcanus:cherrywood"
+    	}
+    ], 
+	"results": [
+		{
+			"item": "forbidden_arcanus:stripped_cherrywood",
+			"count": 1
+		}
+	],
+	"processingTime": 50
+}

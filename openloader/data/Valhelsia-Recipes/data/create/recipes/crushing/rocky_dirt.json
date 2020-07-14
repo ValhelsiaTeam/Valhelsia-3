@@ -1,0 +1,21 @@
+{
+    "type": "create:crushing",
+    "ingredients": [
+    	{
+    		"item": "scenic:rocky_dirt"
+    	}
+    ],
+	"results": [
+		{
+			"item": "minecraft:gravel",
+            "count": 1,
+            "chance": 0.5
+		},
+		{
+			"item": "minecraft:coarse_dirt",
+			"count": 1,
+			"chance": 0.5
+		}
+	],
+	"processingTime": 500
+}

@@ -1,0 +1,20 @@
+{
+  "type": "immersiveengineering:cloche",
+  "results": [
+    {
+      "item": "swampexpansion:cattail_seeds",
+      "count": 2
+    }
+  ],
+  "input": {
+    "item": "swampexpansion:cattail_seeds"
+  },
+  "soil": {
+    "item": "minecraft:dirt"
+  },
+  "time": 640,
+  "render": {
+    "type": "crop",
+    "block": "forbidden_arcanus:tall_cattail"
+  }
+}

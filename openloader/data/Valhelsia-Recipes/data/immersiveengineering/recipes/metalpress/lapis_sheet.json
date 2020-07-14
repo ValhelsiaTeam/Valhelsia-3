@@ -1,0 +1,13 @@
+{
+    "type": "immersiveengineering:metal_press",
+    "mold": {
+      "item": "immersiveengineering:mold_plate"
+    },
+    "result": {
+      "item": "create:lapis_sheet"
+    },
+    "input": {
+      "item": "minecraft:lapis_block"
+    },
+    "energy": 2400
+  }

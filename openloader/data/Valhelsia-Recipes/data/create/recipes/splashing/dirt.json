@@ -1,0 +1,14 @@
+{
+    "type": "create:splashing",
+    "ingredients": [
+    	{
+    		"item": "minecraft:dirt"
+    	}
+    ], 
+	"results": [
+		{
+			"item": "swampexpansion:mud_ball",
+			"count": 1
+		}
+	]
+}
