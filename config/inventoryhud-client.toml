@@ -20,7 +20,7 @@
 [armorhud]
 	#Armor HUD position (X)
 	#Range: -9999 ~ 9999
-	xArmPos = 94
+	xArmPos = 95
 	#Armor HUD position (Y)
 	#Range: -9999 ~ 9999
 	yArmPos = 200

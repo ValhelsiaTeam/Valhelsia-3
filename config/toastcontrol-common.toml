@@ -37,12 +37,11 @@
 		no_slide = false
 		#The Y offset for toasts to be drawn at.
 		#Range: -8192 ~ 8192
-		y_offset = 0
+		y_offset = 5
 		#If toasts show on the left of the screen.
 		start_left = true
 		#If toasts are transparent.  Overrides translucency.
 		transparent = false
 		#The X offset for toasts to be drawn at.
 		#Range: -8192 ~ 8192
-		x_offset = 0
-
+		x_offset = 5
