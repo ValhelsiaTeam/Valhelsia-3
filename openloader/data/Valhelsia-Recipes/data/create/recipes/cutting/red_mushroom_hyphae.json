@@ -1,0 +1,15 @@
+{
+    "type": "create:cutting",
+    "ingredients": [
+    	{
+    		"item": "enhanced_mushrooms:red_mushroom_hyphae"
+    	}
+    ], 
+	"results": [
+		{
+			"item": "enhanced_mushrooms:stripped_red_mushroom_hyphae",
+			"count": 1
+		}
+	],
+	"processingTime": 50
+}

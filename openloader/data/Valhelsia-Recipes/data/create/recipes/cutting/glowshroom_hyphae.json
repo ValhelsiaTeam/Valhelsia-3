@@ -1,0 +1,15 @@
+{
+    "type": "create:cutting",
+    "ingredients": [
+    	{
+    		"item": "enhanced_mushrooms:glowshroom_hyphae"
+    	}
+    ], 
+	"results": [
+		{
+			"item": "enhanced_mushrooms:stripped_glowshroom_hyphae",
+			"count": 1
+		}
+	],
+	"processingTime": 50
+}

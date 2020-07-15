@@ -1,0 +1,15 @@
+{
+    "type": "create:cutting",
+    "ingredients": [
+    	{
+    		"item": "enhanced_mushrooms:red_mushroom_stem"
+    	}
+    ], 
+	"results": [
+		{
+			"item": "enhanced_mushrooms:stripped_red_mushroom_stem",
+			"count": 1
+		}
+	],
+	"processingTime": 50
+}
