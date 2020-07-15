@@ -24,7 +24,11 @@
 - Xaero's World Map 1.7.4_1.16.1
 
 ### Change(s):
-- 
+- Disabled "Show version box on TPS page".
+- Updated interactive check list of Torch Slabs Mod.
+- Fix recipe conflict with big chain of Decorative Blocks and chain of F&A.
+- Small adjustment of the pop up when obtaining an advancement.
+- Small adjustment for Inventory HUD+.
 
 -----------------------------------
 
