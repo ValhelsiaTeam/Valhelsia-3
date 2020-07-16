@@ -37,7 +37,7 @@
 	armAbove = 100
 	#Armor HUD durability view (PERCENTAGE, DAMAGE, DAMAGE LEFT)
 	#Allowed Values: PERCENTAGE, DAMAGE, DAMAGE_LEFT
-	armView = "PERCENTAGE"
+	armView = "DAMAGE LEFT"
 	#Armor HUD vertical align
 	#Allowed Values: TOP, CENTER, BOTTOM
 	armValign = "BOTTOM"
