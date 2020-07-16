@@ -1,0 +1,220 @@
+
+#Ore Generation
+[oregen]
+
+	#Copper ore generation.
+	[oregen.Copper_oregen]
+		#Number of veins per chunk (set to 0 to disable).
+		#Range: 0 ~ 256
+		oreChances = 0
+		#Number of veins per chunk (set to 0 to disable).
+		#Range: 0 ~ 256
+		minY = 32
+		#Number of veins per chunk (set to 0 to disable).
+		#Range: 0 ~ 256
+		maxY = 76
+		#Max size of the vein.
+		#Range: 1 ~ 256
+		veinSize = 1
+
+	#Silver ore generation.
+	[oregen.Silver_oregen]
+		#Number of veins per chunk (set to 0 to disable).
+		#Range: 0 ~ 256
+		oreChances = 0
+		#Number of veins per chunk (set to 0 to disable).
+		#Range: 0 ~ 256
+		minY = 0
+		#Number of veins per chunk (set to 0 to disable).
+		#Range: 0 ~ 256
+		maxY = 24
+		#Max size of the vein.
+		#Range: 1 ~ 256
+		veinSize = 1
+
+	#Lead ore generation.
+	[oregen.Lead_oregen]
+		#Number of veins per chunk (set to 0 to disable).
+		#Range: 0 ~ 256
+		oreChances = 0
+		#Number of veins per chunk (set to 0 to disable).
+		#Range: 0 ~ 256
+		minY = 8
+		#Number of veins per chunk (set to 0 to disable).
+		#Range: 0 ~ 256
+		maxY = 32
+		#Max size of the vein.
+		#Range: 1 ~ 256
+		veinSize = 1
+
+	#Quicksilver ore generation.
+	[oregen.Quicksilver_oregen]
+		#Number of veins per chunk (set to 0 to disable).
+		#Range: 0 ~ 256
+		oreChances = 3
+		#Number of veins per chunk (set to 0 to disable).
+		#Range: 0 ~ 256
+		minY = 0
+		#Number of veins per chunk (set to 0 to disable).
+		#Range: 0 ~ 256
+		maxY = 16
+		#Max size of the vein.
+		#Range: 1 ~ 256
+		veinSize = 4
+
+	#Amethyst ore generation.
+	[oregen.Amethyst_oregen]
+		#Number of veins per chunk (set to 0 to disable).
+		#Range: 0 ~ 256
+		oreChances = 4
+		#Number of veins per chunk (set to 0 to disable).
+		#Range: 0 ~ 256
+		minY = 0
+		#Number of veins per chunk (set to 0 to disable).
+		#Range: 0 ~ 256
+		maxY = 24
+		#Max size of the vein.
+		#Range: 1 ~ 256
+		veinSize = 3
+
+	#Tin ore generation.
+	[oregen.Tin_oregen]
+		#Number of veins per chunk (set to 0 to disable).
+		#Range: 0 ~ 256
+		oreChances = 0
+		#Number of veins per chunk (set to 0 to disable).
+		#Range: 0 ~ 256
+		minY = 24
+		#Number of veins per chunk (set to 0 to disable).
+		#Range: 0 ~ 256
+		maxY = 64
+		#Max size of the vein.
+		#Range: 1 ~ 256
+		veinSize = 1
+
+#Mob Spawn Configuration
+[mob_spawns]
+
+	#Owl spawn config.
+	[mob_spawns.Owl_spawn]
+		#Min to spawn in a group.
+		#Range: 0 ~ 256
+		min = 1
+		#Max to spawn in a group.
+		#Range: 0 ~ 256
+		max = 3
+		#List of biome types to spawn.
+		biomes = "CONIFEROUS,SPOOKY,MAGICAL,FOREST,MOUNTAIN,SNOWY,"
+		#Chance to spawn (set to 0 to disable).
+		#Range: 0 ~ 256
+		spawnChance = 9
+
+	#Endermini spawn config.
+	[mob_spawns.Endermini_spawn]
+		#Min to spawn in a group.
+		#Range: 0 ~ 256
+		min = 1
+		#Max to spawn in a group.
+		#Range: 0 ~ 256
+		max = 2
+		#List of biome types to spawn.
+		biomes = "END,"
+		#Chance to spawn (set to 0 to disable).
+		#Range: 0 ~ 256
+		spawnChance = 1
+
+	#Frog spawn config.
+	[mob_spawns.Frog_spawn]
+		#Min to spawn in a group.
+		#Range: 0 ~ 256
+		min = 2
+		#Max to spawn in a group.
+		#Range: 0 ~ 256
+		max = 4
+		#List of biome types to spawn.
+		biomes = "SWAMP,JUNGLE,BEACH,RIVER,"
+		#Chance to spawn (set to 0 to disable).
+		#Range: 0 ~ 256
+		spawnChance = 6
+
+	#Lava Cat spawn config.
+	[mob_spawns."Lava Cat_spawn"]
+		#Min to spawn in a group.
+		#Range: 0 ~ 256
+		min = 1
+		#Max to spawn in a group.
+		#Range: 0 ~ 256
+		max = 1
+		#List of biome types to spawn.
+		biomes = "NETHER,"
+		#Chance to spawn (set to 0 to disable).
+		#Range: 0 ~ 256
+		spawnChance = 1
+
+	#Beetle spawn config.
+	[mob_spawns.Beetle_spawn]
+		#Min to spawn in a group.
+		#Range: 0 ~ 256
+		min = 2
+		#Max to spawn in a group.
+		#Range: 0 ~ 256
+		max = 4
+		#List of biome types to spawn.
+		biomes = "SWAMP,JUNGLE,FOREST,PLAINS,"
+		#Chance to spawn (set to 0 to disable).
+		#Range: 0 ~ 256
+		spawnChance = 5
+
+	#Sprout spawn config.
+	[mob_spawns.Sprout_spawn]
+		#Min to spawn in a group.
+		#Range: 0 ~ 256
+		min = 2
+		#Max to spawn in a group.
+		#Range: 0 ~ 256
+		max = 4
+		#List of biome types to spawn.
+		biomes = "JUNGLE,LUSH,MAGICAL,RIVER,FOREST,BEACH,"
+		#Chance to spawn (set to 0 to disable).
+		#Range: 0 ~ 256
+		spawnChance = 2
+
+	#Silver Fox spawn config.
+	[mob_spawns."Silver Fox_spawn"]
+		#Min to spawn in a group.
+		#Range: 0 ~ 256
+		min = 1
+		#Max to spawn in a group.
+		#Range: 0 ~ 256
+		max = 3
+		#List of biome types to spawn.
+		biomes = "FOREST,COLD,CONIFEROUS,"
+		#Chance to spawn (set to 0 to disable).
+		#Range: 0 ~ 256
+		spawnChance = 4
+
+	#Silkworm spawn config.
+	[mob_spawns.silkworm_spawn]
+		#Whether or not silkworm eggs drop from leaves
+		leafDrops = true
+		#Chance to spawn whenever a leaf is broken (1 in X)
+		leafDropChance = 65
+		#Chance for silkworm eggs to spawn a silkworm (1 in X, 1 is guaranteed)
+		successChance = 1
+		#Chance per tick for silkworms to grown (1 in X)
+		growthChance = 68
+
+	#Deer spawn config.
+	[mob_spawns.Deer_spawn]
+		#Min to spawn in a group.
+		#Range: 0 ~ 256
+		min = 2
+		#Max to spawn in a group.
+		#Range: 0 ~ 256
+		max = 4
+		#List of biome types to spawn.
+		biomes = "FOREST,COLD,CONIFEROUS,PLAINS,"
+		#Chance to spawn (set to 0 to disable).
+		#Range: 0 ~ 256
+		spawnChance = 6
+
