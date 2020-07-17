@@ -1,3 +1,58 @@
+# Changelog 2.2.5
+
+![100% center](https://zupimages.net/up/20/17/mfyp.png)
+**Forge 31.2.31**
+
+### Mod(s) added:
++ Atum 2: Return to the Sands
++ Better Burning
++ YUNG's Better Mineshafts
++ Waddles
++ Inventory HUD+
++ JEI Enchantment Info
++ Savage & Ravage
++ Enhanced Mushrooms
++ Mystical World
++ Fairy Lights
++ Incubation
+
+### Mod(s) removed:
+- None
+
+### Updated:
+- Apotheosis 1.15.2-3.2.4
+- Autumnity 1.3.3-1.15.2
+- Botany Pots 1.15.2-2.0.27
+- CraftTweaker 1.15.2-6.0.0.34
+- Double Slabs 1.15-2.8.2
+- FastWorkbench 1.15.2-3.1.1
+- Immersive Engineering 0.15-105
+- JEITweaker 1.15.2-1.0.1.3
+- McJtyLib 1.15-4.1.2-beta
+- MineColonies 0.13.34-ALPHA
+- Patchouli 1.15.2-1.2-35
+- Polymorph 1.15.2-0.7
+- Refined Storage 1.8.8
+- Refined Storage Addons 0.6.3
+- RFTools Base 1.15-1.1.2-beta
+- RFTools Builder 1.15-2.1.4-beta
+- RFTools Control 1.15-3.0.3-beta
+- RFTools Storage 1.15-1.1.5-beta
+- RFTools Utility 1.15-2.1.4-beta
+- Scenic 1.15.2-1.0.2
+- Silent Lib 1.15.2-4.6.6+59
+- Structurize 0.13.8-ALPHA
+- Swamp Expansion 1.15.2-1.7.3
+- Torchmaster 2.2.1
+- Upgrade Aquatic 1.15.2-1.7.1
+- Xaero's Minimap 20.16.0.1_1.15.2
+- Xaero's World Map 1.7.4_1.15.2
+- XNet 1.15-2.1.6-beta
+
+### Change(s):
+
+-----------------------------------
+
 # Changelog 2.2.4
 
 ![100% center](https://zupimages.net/up/20/17/mfyp.png)
