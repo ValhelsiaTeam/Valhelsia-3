@@ -1,4 +1,4 @@
-# Changelog 2.2.5
+# Changelog ~~2.2.5~~ 2.2.5a
 
 ![100% center](https://zupimages.net/up/20/17/mfyp.png)
 **Forge 31.2.31**
@@ -24,12 +24,14 @@
 - Autumnity 1.3.3-1.15.2
 - Botany Pots 1.15.2-2.0.27
 - CraftTweaker 1.15.2-6.0.0.34
-- Double Slabs 1.15-2.8.2
+- Clumps 5.0.1.3 (2.2.5a)
+- ~~Double Slabs 1.15-2.8.2~~ Double Slabs 1.15-2.8.3 (2.2.5a)
 - FastWorkbench 1.15.2-3.1.1
 - Immersive Engineering 0.15-105
 - JEITweaker 1.15.2-1.0.1.3
 - McJtyLib 1.15-4.1.2-beta
 - MineColonies 0.13.34-ALPHA
+- Mystical World 1.15.2-2.0.2 (2.2.5a)
 - Patchouli 1.15.2-1.2-35
 - Polymorph 1.15.2-0.7
 - Refined Storage 1.8.8
@@ -48,6 +50,7 @@
 - Xaero's Minimap 20.16.0.1_1.15.2
 - Xaero's World Map 1.7.4_1.15.2
 - XNet 1.15-2.1.6-beta
+- YUNG's Better Mineshafts 1.15.2-1.2 (2.2.5a)
 
 ### Change(s):
 
