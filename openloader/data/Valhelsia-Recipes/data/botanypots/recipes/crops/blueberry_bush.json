@@ -1,0 +1,1 @@
+{"type":"botanypots:crop","seed":{"item":"simplefarming:blueberry_bush"},"categories":["dirt","grass"],"growthTicks":1600,"display":{"block":"simplefarming:blueberry_bush"},"results":[{"chance":0.75,"output":{"item":"simplefarming:blueberries"},"minRolls":1,"maxRolls":3}]}
