@@ -1,3 +1,42 @@
+# Changelog 3.0.5
+
+![100% center](https://zupimages.net/up/20/17/mfyp.png)
+**Downgraded to Forge 32.0.70**
+
+### Mod(s) added:
++ Enchanted Book Redesign
++ Just Enough Resources (JER)
++ OldJavaWarning
++ Polymorph
++ Snow! Real Magic!
+
+### Mod(s) removed:
+- Cosmetic Armor Reworked (issue - https://github.com/zlainsama/CosmeticArmorReworked/issues/48)
+
+### Updated:
+- Biomes O' Plenty 1.16.1-11.0.0.387
+- Cloth Config API  4.0.2
+- Clumps 6.0.0.3
+- CraftTweaker 1.16.1-7.0.0.12
+- Curios API 1.16.1-3.0-beta4
+- Default Options 1.16.1-12.0.1
+- Enhanced Mushrooms 1.16.1-v2.0.2
+- Immersive Engineering 0.16-109
+- Mekanism 1.16.1-10.0.2.425
+- Mekanism Additions 1.16.1-10.0.2.425
+- Mekanism Generators 1.16.1-10.0.2.425
+- Mekanism Tools 1.16.1-10.0.2.425
+- Pam's HarvestCraft 2 - Food Core 1.16.1-1.0.3
+- RandomPatches 1.16.1-1.22.0.0
+- Refined Storage 1.9.2
+- Structurize 0.13.20-ALPHA
+- YUNG's Better Mineshafts 1.16.1-1.3
+
+### Change(s):
+- 
+
+-----------------------------------
+
 # Changelog 3.0.4
 
 ![100% center](https://zupimages.net/up/20/17/mfyp.png)
