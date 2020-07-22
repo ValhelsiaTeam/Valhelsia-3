@@ -1,3 +1,33 @@
+# Changelog 3.0.6
+
+![100% center](https://zupimages.net/up/20/17/mfyp.png)
+**Downgraded to Forge 32.0.75**
+
+### Mod(s) added:
++ Bones
++ Cosmetic Armor Reworked
++ Industrial Foregoing
+
+### Mod(s) removed:
+- None
+
+### Updated:
+- Biomes O' Plenty 1.16.1-11.0.0.389
+- CraftTweaker 1.16.1-7.0.0.13
+- Curios API (Forge) 1.16.1-3.0
+- Enhanced Mushrooms 1.16.1-v2.0.3
+- Mekanism 1.16.1-10.0.3.426
+- Mekanism Additions 1.16.1-10.0.3.426
+- Mekanism Generators 1.16.1-10.0.3.426
+- Mekanism Tools 1.16.1-10.0.3.426
+- Xaero's Minimap 20.17.0_1.16.1
+
+### Change(s):
+- Disable copper craft from IE.
+- Fixed typo in config for Inventory HUD+.
+
+-----------------------------------
+
 # Changelog 3.0.5
 
 ![100% center](https://zupimages.net/up/20/17/mfyp.png)
