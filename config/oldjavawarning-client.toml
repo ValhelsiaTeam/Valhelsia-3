@@ -14,6 +14,6 @@
 #Settings related to checking for a very specific Minecraft version.
 [java-version]
 	#What is the minimum version of Java to look for?
-	minVersion = "1.8.0_262"
+	minVersion = "1.8.0_51"
 	#Whether or not the Java version should be checked.
 	enabled = true
