@@ -20,7 +20,7 @@
 - Titanium 1.16.1-3.0.2
 
 ### Change(s):
-- Disable lead and uranium from IE.
+- Disable lead and uranium craft from IE.
 
 -----------------------------------
 
