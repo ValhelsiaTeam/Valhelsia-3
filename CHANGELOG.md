@@ -1,3 +1,29 @@
+# Changelog 3.0.7
+
+![100% center](https://zupimages.net/up/20/17/mfyp.png)
+**Downgraded to Forge 32.0.70**
+
+### Mod(s) added:
++ Absent by Design
++ Quark
++ Quark Oddities
++ The Endergetic Expansion 
+
+### Mod(s) removed:
+- Morpheus
+
+### Updated:
+- Biomes O' Plenty 1.16.1-11.0.0.390
+- Double Slabs 1.16-3.2.0
+- Industrial Foregoing 1.16.1-3.0.3-5935836
+- Polymorph 1.16.1-0.11
+- Titanium 1.16.1-3.0.2
+
+### Change(s):
+- Disable lead and uranium from IE.
+
+-----------------------------------
+
 # Changelog 3.0.6
 
 ![100% center](https://zupimages.net/up/20/17/mfyp.png)
