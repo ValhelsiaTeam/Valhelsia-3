@@ -1,7 +1,7 @@
 # Changelog 3.0.6
 
 ![100% center](https://zupimages.net/up/20/17/mfyp.png)
-**Downgraded to Forge 32.0.75**
+**Forge 32.0.75**
 
 ### Mod(s) added:
 + Bones
