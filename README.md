@@ -24,5 +24,5 @@ Valhelsia Team partnered with BisectHosting!
 
 BisectHosting offers a quick, simple and quality solution. After your purchase, the server is already configured and ready to use.                 
 Use the code "**Valhelsia**" to get **25%** off your first month as a new client for any of their gaming servers.                                                                         
-This modpack is recommended to have **at least 5GB** to run smoothly with 5-7 players.
+This modpack is recommended to have **at least 4GB** to run smoothly with 5-7 players.
 
