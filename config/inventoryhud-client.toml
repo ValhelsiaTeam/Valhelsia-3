@@ -20,10 +20,10 @@
 [armorhud]
 	#Armor HUD position (X)
 	#Range: -9999 ~ 9999
-	xArmPos = 95
+	xArmPos = 94
 	#Armor HUD position (Y)
 	#Range: -9999 ~ 9999
-	yArmPos = 200
+	yArmPos = 0
 	#Armor HUD horizontal align
 	#Allowed Values: LEFT, MIDDLE, RIGHT
 	armHalign = "RIGHT"
@@ -40,7 +40,7 @@
 	armView = "DAMAGE_LEFT"
 	#Armor HUD vertical align
 	#Allowed Values: TOP, CENTER, BOTTOM
-	armValign = "BOTTOM"
+	armValign = "CENTER"
 
 #Settings for Potions HUD
 [potionshud]
@@ -63,3 +63,4 @@
 	#Potion HUD horizontal align
 	#Allowed Values: LEFT, MIDDLE, RIGHT
 	potHalign = "LEFT"
+

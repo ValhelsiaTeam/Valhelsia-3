@@ -191,7 +191,7 @@
 
 [management]
 	"Chests In Boats" = true
-	"Inventory Sorting" = true
+	"Inventory Sorting" = false
 	"Shulker Box Right Click" = true
 	"F To Switch" = true
 	"Hotbar Changer" = true
@@ -199,9 +199,9 @@
 	"Easy Transfering" = true
 
 	[management.inventory_sorting]
-		"Enable Chests" = true
-		"Enable Player Inventory In Chests" = true
-		"Enable Player Inventory" = true
+		"Enable Chests" = false
+		"Enable Player Inventory In Chests" = false
+		"Enable Player Inventory" = false
 
 	[management.item_sharing]
 		"Render Items In Chat" = true
