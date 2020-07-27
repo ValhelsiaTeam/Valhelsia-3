@@ -1,3 +1,33 @@
+# Changelog 3.0.8
+
+![100% center](https://zupimages.net/up/20/17/mfyp.png)
+**Forge 32.0.70**
+
+### Mod(s) added:
++ Armor Toughness Bar
++ Hwyla
++ Inventory Sorter
+
+### Mod(s) removed:
+- Mone
+
+### Updated:
+- CraftTweaker 1.16.1-7.0.0.14
+- Engineer's Decor 1.16.1-1.1.1-b4
+- Enhanced Mushrooms 1.16.1-v2.0.4
+- Just Enough Resources 1.16.1-0.11.0.81
+- PackMenu 1.16.1-2.1.0
+- Pam's HarvestCraft 2 - Food Core 1.16.1-1.0.4
+- RandomPatches 1.16.1-1.22.1.1
+- Step 1.16.1-1.0.3
+- Structurize 0.13.28-ALPHA
+
+### Change(s):
+- Small adjustments of the different HUDs
+- Disabled Inventory Sorting for Quark.
+
+-----------------------------------
+
 # Changelog 3.0.7
 
 ![100% center](https://zupimages.net/up/20/17/mfyp.png)
