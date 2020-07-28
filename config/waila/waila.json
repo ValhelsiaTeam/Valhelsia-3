@@ -16,7 +16,7 @@
     "overlayPosY": 0.99,
     "overlayScale": 1.0,
     "color": {
-      "alpha": 80,
+      "alpha": 0.0,
       "themes": [
         {
           "id": "waila:dark",

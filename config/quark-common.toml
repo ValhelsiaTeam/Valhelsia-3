@@ -702,8 +702,8 @@
 	[world.crevices]
 
 		[world.crevices.spawn_settings]
-			"Horizontal Size" = 60
-			Rarity = 120
+			"Horizontal Size" = 30
+			Rarity = 240
 			"Min Y Level" = 15
 			"Horizontal Variation" = 20
 			"Max Y Level" = 50
@@ -959,12 +959,12 @@
 	[world.mega_caves]
 
 		[world.mega_caves.spawn_settings]
-			"Horizontal Size" = 60
-			Rarity = 1200
+			"Horizontal Size" = 40
+			Rarity = 1600
 			"Min Y Level" = 10
 			"Horizontal Variation" = 30
 			"Max Y Level" = 20
-			"Vertical Size" = 20
+			"Vertical Size" = 15
 			"Vertical Variation" = 10
 
 			[world.mega_caves.spawn_settings.biomes]
@@ -1251,3 +1251,4 @@
 		#That's a lot to take in, so here's an example. This would be for the default config of the Slime underground biome. (Spaces are allowed.)
 		#minecraft:overworld; false; SWAMP; false; 120; 10..40; 26,14; 14,6; minecraft:water@915, minecraft:slime_block@85; minecraft:green_terracotta@2, minecraft:lime_terracotta@3, minecraft:light_blue_terracotta@1; CEILING; false
 		"Biome Definitions" = []
+
