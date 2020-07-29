@@ -1,3 +1,66 @@
+# Changelog 2.2.6
+
+![100% center](https://zupimages.net/up/20/17/mfyp.png)
+**Forge 31.2.33**
+
+### Mod(s) added:
++ OldJavaWarning
+
+### Mod(s) removed:
+- Bad Wither No Cookie - Reloaded
+- Bountiful
+- CraftPresence
+- Doggy Talents
+- Reap Mod
+- Serene Seasons (performance)
+
+### Updated:
+- Atum 2: Return to the Sands 1.15.2-2.1.4
+- CC: Tweaked 1.15.2-1.90.2
+- Clumps 5.0.2.4
+- CodeChicken Lib 1.15.2-3.3.1.379
+- CraftTweaker 1.15.2-6.0.0.37
+- Dark Utilities 1.15.2-3.1.8
+- Double Slabs 1.15-2.9.0
+- EnderStorage-1.15.2-2.5.0.149
+- Engineer's Decor 1.15.2-1.1.1-b1
+- Fairy Lights 3.0.7-1.15.2
+- Fruit Trees 1.15.2-1.5.2
+- Immersive Engineering 0.15-108
+- JAOPCA 1.15.2-3.2.0.13
+- JAOPCA-1.15.2-3.2.0.14
+- Macaw's Windows 1.15.2-v1.0.2
+- McJtyLib 1.15-4.1.3-beta
+- MineColonies 0.13.78-ALPHA
+- Mystical World 1.15.2-2.0.5
+- PackMenu 1.15.2-1.2.7
+- Polymorph 1.15.2-0.9
+- RFTools Base 1.15-1.1.3-beta
+- RFTools Builder 1.15-2.1.5-beta
+- RFTools Control 1.15-3.0.4-beta
+- RFTools Power 1.15-2.2.0-beta
+- RFTools Storage 1.15-1.1.6-beta
+- RFTools Utility 1.15-2.1.5-beta
+- RandomPatches 1.15.2-1.22.1.1
+- Silent Gear 1.15.2-1.11.0+147
+- Silent's Mechanisms 1.15.2-0.8.0+59
+- Simple Farming 1.15.2-1.3.0
+- Solar Flux Reborn 1.15.2-15.2.3
+- Structurize 0.13.31-RELEASE
+- Trash 1.15.2-0.2.0
+- U Team Core 1.15.2-3.0.1.164
+- Useful Backpacks 1.15.2-1.10.1.70
+- Wawla - What Are We Looking At 1.15.2-3.0.4
+- XNet 1.15-2.1.7-beta
+- Xaero's Minimap v20.17.0
+- YUNG's Better Mineshafts 1.15.2-1.3 
+
+### Change(s):
+- Small adjustment on HUDs
+- There is no more fml incompatibility between servers and clients.
+
+-----------------------------------
+
 # Changelog ~~2.2.5~~ 2.2.5a
 
 ![100% center](https://zupimages.net/up/20/17/mfyp.png)
