@@ -1,3 +1,56 @@
+# Changelog 3.0.10
+
+![100% center](https://zupimages.net/up/20/17/mfyp.png)
+**Updated to Forge 32.0.88**
+
+### Mod(s) added:
++ AIOT Botania
++ Artifacts
++ Bed Benefits
++ Botania
++ Dark Utilities
++ Drawers Tooltip
++ Macaw's Bridges
++ Macaw's Roofs 
+
+### Mod(s) removed:
+- Mone
+
+### Updated:
+- Abnormals Core 1.16.1-2.0.1
+- Bedspreads 1.16.1-4.0.0.1
+- Biomes O' Plenty 1.16.1-11.0.0.391
+- Buzzier Bees 1.16.1-2.0.1
+- Cherished Worlds 1.16.1-4.0.0.1
+- Controlling 7.0.0.3
+- Cosmetic Armor Reworked 1.16.1-v1b
+- Curios API 1.16.1-3.0.0.1
+- DoubleSlabs 1.16-3.3.0
+- Engineer's Decor 1.16.1-1.1.1-b5
+- Engineer's Decor 1.16.1-1.1.1-b6
+- Enhanced Mushrooms 1.16.1-v2.0.8
+- Hwyla 1.10.10-B77_1.16.1
+- Just Enough Items 1.16.1-7.0.1.9
+- Just Enough Resources 1.16.1-0.11.1.90
+- Kiwi 1.16.1-3.2.1
+- KubeJS 2.7.2.55
+- Mekanism 1.16.1-10.0.8.431
+- Mekanism Additions 1.16.1-10.0.8.431
+- Mekanism Generators 1.16.1-10.0.8.431
+- Mekanism Tools 1.16.1-10.0.8.431
+- Pam's HarvestCraft 2 - Food Core 1.16.1-1.0.5
+- Placebo 1.16.1-4.0.3
+- Polymorph 1.16.1-0.12
+- Quark r2.2-258
+- Snow! Real Magic! 1.16.1-2.0.1
+- Structurize 0.13.36-ALPHA
+- Toast Control 1.16.1-4.0.1 
+
+### Change(s):
+- None
+
+-----------------------------------
+
 # Changelog 3.0.9
 
 ![100% center](https://zupimages.net/up/20/17/mfyp.png)
