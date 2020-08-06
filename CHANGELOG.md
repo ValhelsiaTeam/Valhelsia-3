@@ -1,3 +1,47 @@
+# Changelog 3.0.11
+
+![100% center](https://zupimages.net/up/20/17/mfyp.png)
+**Updated to Forge 32.0.106**
+
+### Mod(s) added:
++ Aquaculture 2
++ Extended Lights
++ FTB Backups
++ Scuba Gear
++ Waila Harvestability 
+
+### Mod(s) removed:
+- Polymorph (craft issue)
+
+### Updated:
+- Artifacts 1.16.1-2.5.2
+- AutoRegLib 1.6-43
+- Bedspreads 1.16.1-4.0.0.2
+- Biomes O' Plenty 1.16.1-11.0.0.392
+- CraftTweaker 1.16.1-7.0.0.22
+- Curios API 1.16.1-3.0.0.2
+- Double Slabs 1.16-3.3.3
+- FastFurnace 1.16.1-4.1.0
+- FastWorkbench 1.16.1-4.2.0
+- Forbidden and Arcanus 1.16.1-1.0.1
+- Immersive Engineering 1.16.1-3.1-112
+- Industrial Foregoing 1.16.1-3.0.4-eeeb31e
+- JEI Enchantment Info 1.16.1-1.2.0
+- Just Enough Resources 1.16.1-0.11.1.93
+- KubeJS 2.7.2.56
+- Placebo 1.16.1-4.1.0
+- Quark r2.2-260
+- Structure Gel API 1.16.1-1.2.1
+- Structurize 0.13.37-ALPHA
+- The Conjurer 1.16.1-1.0.8
+- Titanium 1.16.1-3.0.3
+- Toast Control 1.16.1-4.1.0
+
+### Change(s):
+- Updated the Torch Slabs Mod config for the interactive blacklist.
+
+-----------------------------------
+
 # Changelog 3.0.10
 
 ![100% center](https://zupimages.net/up/20/17/mfyp.png)
