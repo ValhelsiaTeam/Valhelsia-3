@@ -1,3 +1,46 @@
+# Changelog 2.2.7
+
+![100% center](https://zupimages.net/up/20/17/mfyp.png)
+**Forge 31.2.33**
+
+### Mod(s) added:
++ Chicken Chunks 1.8.+
++ KubeJS
++ Performant
++ Simple Discord Rich Presence 
+
+### Mod(s) removed:
+- Persistent Bits
+
+### Updated:
+- Botania r1.15-388
+- Comforts 1.15.2-2.0.0.4
+- CraftTweaker 1.15.2-6.0.0.38
+- Curios API 1.15.2-2.0.2.6
+- Double Slabs 1.15-2.10.1
+- Ender Storage 1.15.2-2.5.0.151
+- Engineer's Decor 1.15.2-1.1.1
+- Essentials 1.15.2-2.7.4
+- FTB Backups 2.1.0.2
+- Forbidden and Arcanus 1.15.2-1.5
+- Immersive Engineering 1.15.2-3.1-111
+- JEI Enchantment Info 1.16.1-1.2.0
+- Kiwi 1.15.2-2.8.2
+- Lollipop 1.15.2-1.0.16
+- MineColonies 0.13.115-ALPHA
+- Mystical World 1.15.2-2.0.6
+- Powah! 1.15.2-1.1.15
+- Psi r1.2-83
+- Silent Gear 1.15.2-1.11.2+153
+- Structurize 0.13.42-ALPHA
+- The Conjurer 1.15.2-1.0.7
+- Torchmaster 2.2.2
+
+### Change(s):
+- 
+
+-----------------------------------
+
 # Changelog 2.2.6
 
 ![100% center](https://zupimages.net/up/20/17/mfyp.png)
