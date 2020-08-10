@@ -37,7 +37,9 @@
 - Torchmaster 2.2.2
 
 ### Change(s):
-- 
+- Disabled Sandstorm from Atum.
+- Small fix for custom menu.
+- Disabled Dark Souls from Quark Oddities. 
 
 -----------------------------------
 
