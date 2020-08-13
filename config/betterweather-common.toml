@@ -1,0 +1,32 @@
+
+#Better Weather Settings
+[Acid_Rain_Settings]
+
+	[Acid_Rain_Settings.Client_Settings]
+		#Remove the smoke particles emitted by the acid rain.
+		# Default is false.
+		RemoveParticles = false
+
+	[Acid_Rain_Settings.World_Settings]
+		#Destroy Blocks?
+		DestroyBlocks = false
+		#How often blocks are destroyed during an acid rain event.
+		#Range: 10 ~ 100000
+		BlockDestroyTickSpeed = 500
+		#The chance of acid rain that's checked every 5000 ticks.
+		#Range: 0.0 ~ 1.0
+		Chance = 0.1
+
+	[Acid_Rain_Settings.Entity_Settings]
+		#Allowed Values: PLAYER, MONSTER, ANIMAL.
+		# Default: MONSTER,PLAYER
+		EntityTypes = "MONSTER,PLAYER"
+		#Hurt Entities?
+		HurtEntities = true
+		#The amount of damage taken.
+		# Default is 0.5
+		#Range: 0.0 ~ 20.0
+		DamageStrength = 0.5
+		#How often are entities(including players) hurt?
+		#Range: 10 ~ 100000
+		EntityDamageTickSpeed = 75
