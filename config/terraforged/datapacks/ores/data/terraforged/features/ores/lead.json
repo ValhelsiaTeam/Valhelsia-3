@@ -2,7 +2,7 @@
     "match": [
       [
         "minecraft:ore",
-		"immersiveengineering:lead_ore"
+		"immersiveengineering:ore_lead"
       ]
     ],
     "replace": {
@@ -14,7 +14,7 @@
             "size": 6,
             "target": "wg_stone",
             "state": {
-              "Name": "immersiveengineering:lead_ore"
+              "Name": "immersiveengineering:ore_lead"
             }
           }
         },

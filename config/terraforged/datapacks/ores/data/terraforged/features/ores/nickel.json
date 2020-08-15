@@ -2,7 +2,7 @@
     "match": [
       [
         "minecraft:ore",
-		"immersiveengineering:nickel_ore"
+		"immersiveengineering:ore_nickel"
       ]
     ],
     "replace": {
@@ -14,7 +14,7 @@
             "size": 6,
             "target": "wg_stone",
             "state": {
-              "Name": "immersiveengineering:nickel_ore"
+              "Name": "immersiveengineering:ore_nickel"
             }
           }
         },

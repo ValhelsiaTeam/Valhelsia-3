@@ -2,7 +2,7 @@
     "match": [
       [
         "minecraft:ore",
-		"immersiveengineering:bauxite_ore"
+		"immersiveengineering:ore_aluminum"
       ]
     ],
     "replace": {
@@ -14,7 +14,7 @@
             "size": 4,
             "target": "wg_stone",
             "state": {
-              "Name": "immersiveengineering:bauxite_ore"
+              "Name": "immersiveengineering:ore_aluminum"
             }
           }
         },
