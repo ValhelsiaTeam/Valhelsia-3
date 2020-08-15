@@ -8,4 +8,11 @@ events.listen('recipes', function (event) {
     A: 'minecraft:iron_ingot',
     B: 'minecraft:iron_nugget'
   })
+  event.shaped(item.of('minecraft:chest', 1), [
+    'AAA',
+    'A A',
+    'AAA'
+  ], {
+    A: 'minecraft:oak_planks'
+  })
 })
