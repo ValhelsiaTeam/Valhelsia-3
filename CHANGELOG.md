@@ -1,3 +1,59 @@
+# Changelog 3.0.12
+
+![100% center](https://zupimages.net/up/20/17/mfyp.png)
+**Updated to Forge 32.0.108**
+
+### Mod(s) added:
++ AmbientSounds 3
++ Atmospheric
++ Autumnity
++ Better Weather
++ MineColonies
++ Polymorph
++ SwingThroughGrass
++ Upgrade Aquatic 
+
+### Mod(s) removed:
+- CraftTweaker
+
+### Updated:
+- Abnormals Core 1.16.1-v2.0.2
+- Aquaculture 2 1.16.1-2.0.18
+- Biomes O' Plenty 1.16.1-11.0.0.393
+- Bookshelf 1.16.1-6.3.20
+- Botania 1.16-402
+- Caelus API  1.16.1-2.0-beta7
+- Comforts 1.16.1-3.0.0.1
+- Cooking for Blockheads 1.16.1-9.0.2
+- Dark Utilities 1.16.1-4.0.3
+- Decorative Blocks 7c
+- FastFurnace 1.16.1-4.1.1
+- Inventory HUD+ 1.16.1-3.1.0
+- Just Enough Items  1.16.1-7.0.1.10
+- KubeJs 2.7.2.58
+- Light Overlay 5.4.2
+- Mekanism 1.16.1-10.0.9.432
+- Mekanism Additions 1.16.1-10.0.9.432
+- Mekanism Generators 1.16.1-10.0.9.432
+- Mekanism Tools 1.16.1-10.0.9.432
+- NetherPortalFix 1.16.1-7.0.1
+- PackMenu 1.16.1-2.1.2
+- Placebo 1.16.1-4.1.3
+- Server Tab Info 1.16.1-1.3.1
+- Structurize 0.13.44-ALPHA
+- Titanium 1.16.1-3.0.4
+- Toast Control 1.16.1-4.1.1
+- Waystones 1.16.1-7.1.0
+- Xaero's Minimap 20.20.0_1.16.1
+- Xaero's World Map 1.10.0_1.16.1
+
+### Change(s):
+- Add Brazilian Portuguese translation for Simple Rich Presence by YuriXbr
+- Add recipe for Minecraft Chest.
+- Disabled Sleeping Bag from Comforts and Steel from Immersive Engineering (ingot, nugget and tools).
+- Disabled Dark Souls Mode from Quark.
+- Small adjustment for Inventory HUD.
+
 # Changelog 3.0.11
 
 ![100% center](https://zupimages.net/up/20/17/mfyp.png)
