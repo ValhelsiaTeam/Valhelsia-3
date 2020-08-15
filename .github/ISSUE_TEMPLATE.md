@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-You can report bugs you have encountered in the game by creating an issue. For any help request about a client crash directly after launching or the installation of the modpack/launcher this happens at the Discord server support level (There is a FAQ channel there that will help you with that problem).
+You can report bugs you have encountered in the game by creating an issue. For any help request about a client crash directly after launching or the installation of the modpack/launcher this happens at the Discord server support level (There is a FAQ channel there that will help you with that problem). We do not accept suggestions. Besides, our GitHub is not made for that.
 
 Moreover, if you open an issue and you don't give us the logs or crash-reports, it will be directly dismissed!
 If the bug concerns a particular mod, please report it directly to them! In case this bug is fixed, thank you to not open an issue to tell us to update this one, it will be updated in due time!
