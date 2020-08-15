@@ -1,0 +1,32 @@
+{
+    "match": [
+      [
+        "minecraft:ore",
+		"silents_mechanisms:platinum_ore"
+      ]
+    ],
+    "replace": {
+      "name": "minecraft:decorated",
+      "config": {
+        "feature": {
+          "name": "minecraft:ore",
+          "config": {
+            "size": 8,
+            "target": "wg_stone",
+            "state": {
+              "Name": "silents_mechanisms:platinum_ore"
+            }
+          }
+        },
+        "decorator": {
+          "name": "minecraft:count_range",
+          "config": {
+            "count": 1,
+            "bottom_offset": 5,
+            "top_offset": 0,
+            "maximum": 15
+          }
+        }
+      }
+    }
+  }

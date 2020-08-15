@@ -1,0 +1,32 @@
+{
+    "match": [
+      [
+        "minecraft:ore",
+		"create:zinc_ore"
+      ]
+    ],
+    "replace": {
+      "name": "minecraft:decorated",
+      "config": {
+        "feature": {
+          "name": "minecraft:ore",
+          "config": {
+            "size": 14,
+            "target": "wg_stone",
+            "state": {
+              "Name": "create:zinc_ore"
+            }
+          }
+        },
+        "decorator": {
+          "name": "minecraft:count_range",
+          "config": {
+            "count": 4,
+            "bottom_offset": 15,
+            "top_offset": 0,
+            "maximum": 55
+          }
+        }
+      }
+    }
+  }
