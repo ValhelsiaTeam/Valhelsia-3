@@ -630,8 +630,8 @@
 
 	[world.speleothems]
 		"Tries Per Chunk In Nether" = 4
-		"Speleothems Per Chunk In Nether" = 12
-		"Speleothems Per Chunk" = 12
+		"Speleothems Per Chunk In Nether" = 6
+		"Speleothems Per Chunk" = 6
 		"Max Ylevel" = 55
 		"Tries Per Chunk" = 60
 
