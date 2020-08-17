@@ -266,12 +266,16 @@
 		"Max Hardness" = 20.0
 		#2 is Iron, 3 is Diamond.
 		"Harvest Level" = 3
+		#2 is Iron, 4 is Diamond.
+		"Netherite Harvest Level" = 3
 		#How long it takes before the pickarang starts returning to the player if it doesn't hit anything.
 		Timeout = 20
 		#Set to -1 to have the Pickarang be unbreakable.
 		Durability = 800
 		#Set this to true to disable the short cooldown between throwing pickarangs.
 		"No Cooldown" = false
+		#Set to -1 to have the Pickarang be unbreakable.
+		"Netherite Durability" = 1040
 		#Set this to true to use the recipe without the Heart of Diamond, even if the Heart of Diamond is enabled.
 		"Never Use Heart Of Diamond" = false
 
@@ -396,12 +400,13 @@
 		"Max Bounces" = 1
 
 [world]
+	"Realistic World Gen" = true
 	"New Stone Types" = true
 	"Lush Underground Biome" = true
 	"Big Dungeon" = true
 	Speleothems = true
 	Biotite = true
-	"Big Stone Clusters" = true
+	"Big Stone Clusters" = false
 	"Elder Prismarine Underground Biome" = true
 	"Brimstone Underground Biome" = true
 	"Blossom Trees" = true
@@ -1253,3 +1258,4 @@
 		#That's a lot to take in, so here's an example. This would be for the default config of the Slime underground biome. (Spaces are allowed.)
 		#minecraft:overworld; false; SWAMP; false; 120; 10..40; 26,14; 14,6; minecraft:water@915, minecraft:slime_block@85; minecraft:green_terracotta@2, minecraft:lime_terracotta@3, minecraft:light_blue_terracotta@1; CEILING; false
 		"Biome Definitions" = []
+
