@@ -419,10 +419,10 @@
 	"Underground Clay" = true
 	"Slime Underground Biome" = true
 	"Spider Nest Underground Biome" = true
-	Crevices = true
+	Crevices = false
 	"Monster Box" = true
 	"Nether Obsidian Spikes" = true
-	"Mega Caves" = true
+	"Mega Caves" = false
 
 	[world.monster_box]
 		#The chance for the monster box generator to try and place one in a chunk, 1 is 100%
