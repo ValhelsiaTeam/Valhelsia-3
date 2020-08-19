@@ -1,3 +1,35 @@
+# Changelog 3.0.13
+
+![100% center](https://zupimages.net/up/20/17/mfyp.png)
+**Forge 32.0.108**
+
+### Mod(s) added:
++ OpenBlocks Elevator
++ SwingThroughGrass
+
+### Mod(s) removed:
+- None
+
+### Updated:
+- Engineer's Decor 1.16.1-1.1.1-b7
+- Forbidden and Arcanus 1.16.1-1.1.1
+- Immersive Engineering 1.16.1-3.2.0-115
+- Industrial Foregoing 1.16.1-3.0.5-7e692e4
+- KubeJS 2.7.2.59
+- MineColonies 0.13.154-ALPHA
+- StorageDrawers 1.16.2-8.1.0
+- Valhelsia Structures 16.0.2
+- Waystones 1.16.1-7.1.1 
+
+### Change(s):
+- Disable "Creepers do not destroy blocks" from Savage & Ravage
+- Disable "Crevices" & "Mega Caves" from Quark.
+- Disabled "Big Stone Clusters" from Quark.
+- Decreased the rate of "Speleothems" from Quark.
+- Changed the minimum recommended to run the modpack to 4GB instead of 3.
+
+-----------------------------------
+
 # Changelog 3.0.12
 
 ![100% center](https://zupimages.net/up/20/17/mfyp.png)
