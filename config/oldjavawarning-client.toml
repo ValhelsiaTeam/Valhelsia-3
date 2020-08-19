@@ -9,7 +9,7 @@
 	#Should users with low RAM be warned?
 	warnLowMemory = true
 	#The amount of recommended ram to play the pack. This is in megabytes.
-	recommendedRam = 3072
+	recommendedRam = 4096
 
 #Settings related to checking for a very specific Minecraft version.
 [java-version]
