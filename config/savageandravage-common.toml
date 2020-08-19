@@ -1,0 +1,15 @@
+"Creepers do not destroy blocks" = false
+"Creepies spawn after creeper explosions" = true
+"Have Creepers drop Creeper Spores after they die from an explosion" = true
+#If true, creepies grow significantly larger when they explode.
+"Creepie go big when boom" = false
+
+["Quark Poisonous Potato Compat"]
+	#This affects the chance to stunt a creepie's growth when a poisonous potato is fed.
+	#Range: 0.0 ~ 1.0
+	"Poison chance" = 0.1
+	#If false, the feature will still work but not give creepies poison.
+	"Poison effect" = true
+	#If true, creepies can be fed a poisonous potato to stunt their growth when Quark is installed.
+	"Compat enabled" = true
+
