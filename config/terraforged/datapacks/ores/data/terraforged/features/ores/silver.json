@@ -1,0 +1,32 @@
+{
+    "match": [
+      [
+        "minecraft:ore",
+		"immersiveengineering:ore_silver"
+      ]
+    ],
+    "replace": {
+      "name": "minecraft:decorated",
+      "config": {
+        "feature": {
+          "name": "minecraft:ore",
+          "config": {
+            "size": 8,
+            "target": "wg_stone",
+            "state": {
+              "Name": "immersiveengineering:ore_silver"
+            }
+          }
+        },
+        "decorator": {
+          "name": "minecraft:count_range",
+          "config": {
+            "count": 4,
+            "bottom_offset": 8,
+            "top_offset": 0,
+            "maximum": 32
+          }
+        }
+      }
+    }
+  }

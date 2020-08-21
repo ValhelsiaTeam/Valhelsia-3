@@ -1,0 +1,32 @@
+{
+    "match": [
+      [
+        "minecraft:ore",
+		"silents_mechanisms:bismuth_ore"
+      ]
+    ],
+    "replace": {
+      "name": "minecraft:decorated",
+      "config": {
+        "feature": {
+          "name": "minecraft:ore",
+          "config": {
+            "size": 8,
+            "target": "wg_stone",
+            "state": {
+              "Name": "silents_mechanisms:bismuth_ore"
+            }
+          }
+        },
+        "decorator": {
+          "name": "minecraft:count_range",
+          "config": {
+            "count": 4,
+            "bottom_offset": 16,
+            "top_offset": 0,
+            "maximum": 48
+          }
+        }
+      }
+    }
+  }

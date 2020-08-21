@@ -1,0 +1,32 @@
+{
+    "match": [
+      [
+        "minecraft:ore",
+		"create:copper_ore"
+      ]
+    ],
+    "replace": {
+      "name": "minecraft:decorated",
+      "config": {
+        "feature": {
+          "name": "minecraft:ore",
+          "config": {
+            "size": 12,
+            "target": "wg_stone",
+            "state": {
+              "Name": "create:copper_ore"
+            }
+          }
+        },
+        "decorator": {
+          "name": "minecraft:count_range",
+          "config": {
+            "count": 3,
+            "bottom_offset": 40,
+            "top_offset": 0,
+            "maximum": 46
+          }
+        }
+      }
+    }
+  }
