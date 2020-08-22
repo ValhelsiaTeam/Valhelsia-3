@@ -1,8 +1,0 @@
-
-#chunk loader settings
-["chunk loading"]
-	#The radius (in chunks) that the chunk loader will cover
-	#Range: > 1
-	loadingRadius = 2
-	#Enable verbose logging of placements and removals of chunk loaders
-	verboseLoaders = false
