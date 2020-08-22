@@ -399,7 +399,7 @@
 	"Big Dungeon" = true
 	Speleothems = true
 	Biotite = true
-	"Big Stone Clusters" = true
+	"Big Stone Clusters" = false
 	"Elder Prismarine Underground Biome" = true
 	"Brimstone Underground Biome" = true
 	"Blossom Trees" = true
@@ -413,9 +413,9 @@
 	"Slime Underground Biome" = true
 	"Spider Nest Underground Biome" = true
 	"Monster Box" = true
-	Crevices = true
+	Crevices = false
 	"Nether Obsidian Spikes" = true
-	"Mega Caves" = true
+	"Mega Caves" = false
 
 	[world.monster_box]
 		#The chance for the monster box generator to try and place one in a chunk, 1 is 100%
@@ -623,8 +623,8 @@
 
 	[world.speleothems]
 		"Tries Per Chunk In Nether" = 4
-		"Speleothems Per Chunk In Nether" = 12
-		"Speleothems Per Chunk" = 12
+		"Speleothems Per Chunk In Nether" = 6
+		"Speleothems Per Chunk" = 6
 		"Max Ylevel" = 55
 		"Tries Per Chunk" = 60
 
