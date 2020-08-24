@@ -1,3 +1,50 @@
+# Changelog 2.2.8
+
+![100% center](https://zupimages.net/up/20/17/mfyp.png)
+**Updated to Forge 31.2.36**
+
+### Mod(s) added:
++ Macaw's Trapdoors
+
+### Mod(s) removed:
+- CraftTweaker
+
+### Updated:
+- CC: Tweaked 1.15.2-1.91.0
+- Clumps 5.0.2.5
+- Decorative Blocks 1.15.2-1.7
+- Druidcraft 1.15-0.4.31
+- Engineer's Decor 1.15.2-1.1.2
+- Fairy Lights 3.0.8-1.15.2
+- Immersive Engineering 1.15.2-3.2.0-114
+- Inventory HUD+ 1.15.2-3.1.0
+- JEI Integration 1.15.2-3.1.1.2
+- Just Enough Items 1.15.2-6.0.3.15
+- Kiwi 1.15.2-2.8.3
+- KubeJS 2.7.1.15
+- Light Overlay 4.7.1
+- McJtyLib 1.15-4.1.4
+- MineColonies 0.13.171-ALPHA
+- Mystical World 1.15.2-2.1.1
+- Performant 1.15-3.10m
+- RFTools Power 1.15-2.2.1
+- RFTools Utility 1.15-2.1.6
+- Server Tab Info 1.15.2-1.2.8
+- Silent Gear 1.15.2-1.11.3+160
+- U Team Core 1.15.2-3.0.2.169
+- Useful Backpacks 1.15.2-1.10.2.73
+- Xaero's Minimap 20.20.1_1.15.2
+- Xaero's World Map 1.10.1_1.15.2 
+
+### Change(s):
+- Add recipe Oak Chest from Vanilla & change the recipe for Chain from Decorative Blocks.
+- Add the first unification of different steels.
+- Import Recipes Disabled and Tags from CraftTweaker to KubeJs.
+- Disable "Crevices", "Mega Caves", "Big Stone Clusters" & Decreased the rate of "Speleothems" from Quark.
+- Small adjustment Inventory HUD+.
+
+-----------------------------------
+
 # Changelog 2.2.7
 
 ![100% center](https://zupimages.net/up/20/17/mfyp.png)
