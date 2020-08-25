@@ -9,6 +9,12 @@ events.listen('recipes', function (event) {
 
     //Industrial Foregoing
     'industrialforegoing:infinity_drill',
+
+    //MineColonies
+    'minecolonies:chainmailhelmet',
+    'minecolonies:chainmailchestplate',
+    'minecolonies:chainmailleggings',
+    'minecolonies:chainmailboots',
   ]
   idRemove.forEach(function (remove) {
     event.remove({id: remove})

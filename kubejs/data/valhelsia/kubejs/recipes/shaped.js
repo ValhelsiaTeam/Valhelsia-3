@@ -15,4 +15,30 @@ events.listen('recipes', function (event) {
   ], {
     A: 'minecraft:oak_planks'
   })
+  event.shaped(item.of('minecraft:chainmail_helmet', 1), [
+    'AAA',
+    'A A'
+  ], {
+    A: 'forbidden_arcanus:iron_chain'
+  })
+  event.shaped(item.of('minecraft:chainmail_chestplate', 1), [
+    'A A',
+    'AAA',
+    'AAA'
+  ], {
+    A: 'forbidden_arcanus:iron_chain'
+  })
+  event.shaped(item.of('minecraft:chainmail_leggings', 1), [
+    'AAA',
+    'A A',
+    'A A'
+  ], {
+    A: 'forbidden_arcanus:iron_chain'
+  })
+  event.shaped(item.of('minecraft:chainmail_boots', 1), [
+    'A A',
+    'A A'
+  ], {
+    A: 'forbidden_arcanus:iron_chain'
+  })
 })
