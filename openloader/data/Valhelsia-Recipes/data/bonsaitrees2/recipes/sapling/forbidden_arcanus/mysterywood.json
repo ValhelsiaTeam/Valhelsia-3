@@ -34,6 +34,14 @@
       },
       "rolls": 1,
       "chance": 0.05
+    },
+	
+	{
+      "result": {
+        "item": "minecraft:golden_apple"
+      },
+      "rolls": 1,
+      "chance": 0.01
     }
   ],
 

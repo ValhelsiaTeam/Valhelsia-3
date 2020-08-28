@@ -34,6 +34,14 @@
       },
       "rolls": 1,
       "chance": 0.05
+    },
+	
+	{
+      "result": {
+        "item": "forbidden_arcanus:cherry_peach"
+      },
+      "rolls": 1,
+      "chance": 0.05
     }
   ],
 
