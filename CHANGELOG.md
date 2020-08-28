@@ -1,3 +1,41 @@
+# Changelog 3.0.14
+
+**Forge 32.0.108**
+
+### Mod(s) added:
++ Macaw's Trapdoors
++ Worley's Caves
+
+### Mod(s) removed:
+- Better Weather (server issue)
+
+### Updated:
+- AIOT Botania 1.16.2-1.3
+- Abnormals Core 1.16.1-v2.0.3
+- Aquaculture 2 1.16.1-2.0.19
+- Better Weather 1.0.1
+- Biomes O' Plenty 1.16.1-11.0.0.395
+- Botania 1.16.1-403
+- Clumps 6.0.0.8
+- Decorative Blocks 1.16.1-1.4
+- Engineer's Decor 1.16.1-1.1.2
+- Extra Boats 1.16.1-1.4.1
+- FTB Backups 2.1.1.6
+- FastFurnace 1.16.1-4.1.2
+- Iron Chests 1.16.1-11.0.4
+- Just Enough Resources 1.16.1-0.11.1.94
+- MineColonies 0.13.185-ALPHA
+- Quark r2.2-261
+- Xaero's Minimap 20.20.1_1.16.1
+- Xaero's World Map 1.10.1_1.16.1 
+
+### Change(s):
+- Disabled craft for Chainmail Armor from MineColonies and add a new craft with the Iron Chain.
+- Small adjustment for Lush and Overgrown caves, more common.
+- Small adjustment for the mineshafts.
+
+-----------------------------------
+
 # Changelog 3.0.13
 
 ![100% center](https://zupimages.net/up/20/17/mfyp.png)
@@ -85,6 +123,8 @@
 - Disabled Sleeping Bag from Comforts and Steel from Immersive Engineering (ingot, nugget and tools).
 - Disabled Dark Souls Mode from Quark.
 - Small adjustment for Inventory HUD.
+
+-----------------------------------
 
 # Changelog 3.0.11
 
