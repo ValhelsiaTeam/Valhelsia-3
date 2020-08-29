@@ -1,0 +1,33 @@
+{
+  "type": "botanypots:crop",
+  "seed": {
+    "item": "simplefarming:chicory_root"
+  },
+  "categories": ["dirt"],
+  "growthTicks": 3,
+  "growthModifier": 1.2,
+  "display": {
+    "block": "simplefarming:chicory",
+    "properties": {
+      "age": 3
+    }
+  },
+  "results": [
+    {
+      "chance": 0.75,
+      "output": {
+        "item": "simplefarming:chicory_root"
+      },
+      "minRolls": 1,
+      "maxRolls": 2
+    },
+    {
+      "chance": 0.05,
+      "output": {
+        "item": "simplefarming:chicory_root"
+      },
+      "minRolls": 1,
+      "maxRolls": 2
+    }
+  ]
+}
