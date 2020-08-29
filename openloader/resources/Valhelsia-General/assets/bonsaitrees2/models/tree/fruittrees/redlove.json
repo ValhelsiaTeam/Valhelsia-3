@@ -1,0 +1,57 @@
+{
+  "type": "bonsaitrees2:sapling/fruittrees/redlove",
+  "version": 3,
+  "ref": {
+    "a": {"block":"fruittrees:redlove_leaves","properties":{"age":"1","distance":"2","persistent":"false"}},
+    "b": {"block":"fruittrees:redlove_leaves","properties":{"age":"1","distance":"1","persistent":"true"}},
+    "c": {"block":"fruittrees:redlove_leaves","properties":{"age":"3","distance":"3","persistent":"false"}},
+    "d": {"block":"fruittrees:redlove_leaves","properties":{"age":"2","distance":"1","persistent":"false"}},
+    "e": {"block":"fruittrees:redlove_leaves","properties":{"age":"3","distance":"2","persistent":"false"}},
+    "f": {"block":"fruittrees:redlove_leaves","properties":{"age":"2","distance":"2","persistent":"false"}},
+    "g": {"block":"fruittrees:redlove_leaves","properties":{"age":"2","distance":"3","persistent":"false"}},
+    "h": {"block":"fruittrees:cherry_log","properties":{"axis":"y"}},
+    "i": {"block":"fruittrees:redlove_leaves","properties":{"age":"1","distance":"3","persistent":"false"}},
+    "j": {"block":"fruittrees:redlove_leaves","properties":{"age":"2","distance":"4","persistent":"false"}},
+    "k": {"block":"fruittrees:redlove_leaves","properties":{"age":"3","distance":"1","persistent":"false"}},
+    "l": {"block":"fruittrees:redlove_leaves","properties":{"age":"1","distance":"1","persistent":"false"}},
+    "m": {"block":"fruittrees:redlove_leaves","properties":{"age":"1","distance":"4","persistent":"false"}},
+    "n": {"block":"fruittrees:redlove_leaves","properties":{"age":"3","distance":"4","persistent":"false"}}
+  },
+  "shape": [
+    [
+      "     ",
+      "     ",
+      " gaim",
+      "ngei ",
+      "     "
+    ],
+    [
+      "  e  ",
+      "  d  ",
+      "cfdag",
+      "ialei",
+      "     "
+    ],
+    [
+      " abe ",
+      " dhl ",
+      "adhda",
+      "adhkf",
+      "  h  "
+    ],
+    [
+      "  f  ",
+      "  de ",
+      "gadai",
+      "ifkai",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      "ngfcj",
+      "jgfim",
+      "     "
+    ]
+  ]
+}

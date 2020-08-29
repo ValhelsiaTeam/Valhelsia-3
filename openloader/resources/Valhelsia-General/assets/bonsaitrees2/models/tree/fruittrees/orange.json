@@ -1,0 +1,60 @@
+{
+  "type": "bonsaitrees2:sapling/fruittrees/orange",
+  "version": 3,
+  "ref": {
+    "a": {"block":"fruittrees:orange_leaves","properties":{"age":"1","distance":"2","persistent":"false"}},
+    "b": {"block":"fruittrees:citrus_log","properties":{"axis":"y"}},
+    "c": {"block":"fruittrees:orange_leaves","properties":{"age":"1","distance":"3","persistent":"false"}},
+    "d": {"block":"fruittrees:orange_leaves","properties":{"age":"1","distance":"1","persistent":"false"}},
+    "e": {"block":"fruittrees:orange_leaves","properties":{"age":"2","distance":"1","persistent":"false"}},
+    "f": {"block":"fruittrees:orange_leaves","properties":{"age":"3","distance":"3","persistent":"false"}},
+    "g": {"block":"fruittrees:orange_leaves","properties":{"age":"2","distance":"3","persistent":"false"}},
+    "h": {"block":"fruittrees:orange_leaves","properties":{"age":"1","distance":"1","persistent":"true"}},
+    "i": {"block":"fruittrees:orange_leaves","properties":{"age":"3","distance":"2","persistent":"false"}},
+    "j": {"block":"fruittrees:orange_leaves","properties":{"age":"3","distance":"4","persistent":"false"}},
+    "k": {"block":"fruittrees:orange_leaves","properties":{"age":"2","distance":"2","persistent":"false"}},
+    "l": {"block":"fruittrees:orange_leaves","properties":{"age":"2","distance":"4","persistent":"false"}}
+  },
+  "shape": [
+    [
+      "     ",
+      "     ",
+      " gkg ",
+      " fkc ",
+      "     ",
+      "     "
+    ],
+    [
+      "  a  ",
+      " ae  ",
+      "gadac",
+      "cadag",
+      "     ",
+      "     "
+    ],
+    [
+      " ihk ",
+      " ebe ",
+      "idbdk",
+      "adbda",
+      "  b  ",
+      "  b  "
+    ],
+    [
+      "  a  ",
+      " id  ",
+      "gadag",
+      "gadac",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      "jgicl",
+      " cicj",
+      "     ",
+      "     "
+    ]
+  ]
+}

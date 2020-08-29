@@ -1,0 +1,69 @@
+{
+  "type": "bonsaitrees2:sapling/fruittrees/cherry",
+  "version": 3,
+  "ref": {
+    "a": {"block":"fruittrees:cherry_log","properties":{"axis":"y"}},
+    "b": {"block":"fruittrees:cherry_leaves","properties":{"age":"2","distance":"3","persistent":"false"}},
+    "c": {"block":"fruittrees:cherry_leaves","properties":{"age":"2","distance":"1","persistent":"false"}},
+    "d": {"block":"fruittrees:cherry_leaves","properties":{"age":"3","distance":"2","persistent":"false"}},
+    "e": {"block":"fruittrees:cherry_leaves","properties":{"age":"1","distance":"2","persistent":"false"}},
+    "f": {"block":"fruittrees:cherry_leaves","properties":{"age":"0","distance":"3","persistent":"false"}},
+    "g": {"block":"fruittrees:cherry_leaves","properties":{"age":"3","distance":"1","persistent":"false"}},
+    "h": {"block":"fruittrees:cherry_leaves","properties":{"age":"2","distance":"2","persistent":"false"}},
+    "i": {"block":"fruittrees:cherry_leaves","properties":{"age":"3","distance":"3","persistent":"false"}},
+    "j": {"block":"fruittrees:cherry_leaves","properties":{"age":"0","distance":"1","persistent":"false"}},
+    "k": {"block":"fruittrees:cherry_leaves","properties":{"age":"1","distance":"3","persistent":"false"}},
+    "l": {"block":"fruittrees:cherry_leaves","properties":{"age":"2","distance":"1","persistent":"true"}},
+    "m": {"block":"fruittrees:cherry_leaves","properties":{"age":"1","distance":"1","persistent":"false"}},
+    "n": {"block":"fruittrees:cherry_leaves","properties":{"age":"2","distance":"4","persistent":"false"}},
+    "o": {"block":"fruittrees:cherry_leaves","properties":{"age":"1","distance":"4","persistent":"false"}},
+    "p": {"block":"fruittrees:cherry_leaves","properties":{"age":"0","distance":"2","persistent":"false"}}
+  },
+  "shape": [
+    [
+      "     ",
+      "     ",
+      " fek ",
+      "nidb ",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      "  e  ",
+      " hce ",
+      "ihchf",
+      "ihmdb",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      " hlp ",
+      " mag ",
+      "hcamd",
+      "hcajh",
+      "  a  ",
+      "  a  ",
+      "  a  "
+    ],
+    [
+      "  h  ",
+      "  ge ",
+      "khmhb",
+      "bhchk",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      "okei ",
+      " bein",
+      "     ",
+      "     ",
+      "     "
+    ]
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "type": "bonsaitrees2:sapling/fruittrees/lime",
+  "version": 3,
+  "ref": {
+    "a": {"block":"fruittrees:lime_leaves","properties":{"age":"1","distance":"2","persistent":"false"}},
+    "b": {"block":"fruittrees:citrus_log","properties":{"axis":"y"}},
+    "c": {"block":"fruittrees:lime_leaves","properties":{"age":"1","distance":"3","persistent":"false"}},
+    "d": {"block":"fruittrees:lime_leaves","properties":{"age":"2","distance":"1","persistent":"false"}},
+    "e": {"block":"fruittrees:lime_leaves","properties":{"age":"1","distance":"1","persistent":"false"}},
+    "f": {"block":"fruittrees:lime_leaves","properties":{"age":"2","distance":"3","persistent":"false"}},
+    "g": {"block":"fruittrees:lime_leaves","properties":{"age":"3","distance":"3","persistent":"false"}},
+    "h": {"block":"fruittrees:lime_leaves","properties":{"age":"2","distance":"2","persistent":"false"}},
+    "i": {"block":"fruittrees:lime_leaves","properties":{"age":"1","distance":"1","persistent":"true"}},
+    "j": {"block":"fruittrees:lime_leaves","properties":{"age":"3","distance":"2","persistent":"false"}},
+    "k": {"block":"fruittrees:lime_leaves","properties":{"age":"2","distance":"4","persistent":"false"}},
+    "l": {"block":"fruittrees:lime_leaves","properties":{"age":"1","distance":"4","persistent":"false"}},
+    "m": {"block":"fruittrees:lime_leaves","properties":{"age":"3","distance":"4","persistent":"false"}}
+  },
+  "shape": [
+    [
+      "     ",
+      "     ",
+      "kfag ",
+      "lfhg ",
+      "     ",
+      "     "
+    ],
+    [
+      "  h  ",
+      "  d  ",
+      "faeac",
+      "caeaf",
+      "     ",
+      "     "
+    ],
+    [
+      " hih ",
+      " dbe ",
+      "jdbej",
+      "hdbea",
+      "  b  ",
+      "  b  "
+    ],
+    [
+      "  h  ",
+      "  e  ",
+      "gheaf",
+      "caeaf",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      " cjfm",
+      " fjck",
+      "     ",
+      "     "
+    ]
+  ]
+}
