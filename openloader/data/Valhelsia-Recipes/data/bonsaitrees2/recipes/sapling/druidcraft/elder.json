@@ -1,0 +1,52 @@
+{
+  "type": "bonsaitrees2:sapling",
+  
+  "sapling": {
+    "item": "druidcraft:elder_sapling"
+  },
+
+  "drops": [
+    {
+      "result": {
+        "item": "druidcraft:elderberries"
+      },
+      "rolls": 2,
+      "chance": 0.05
+    },
+	
+	{
+      "result": {
+        "item": "druidcraft:elderflower"
+      },
+      "rolls": 1,
+      "chance": 0.05
+    },
+
+    {
+      "result": {
+        "item": "druidcraft:elder_log"
+      },
+      "rolls": 1,
+      "chance": 0.75
+    },
+
+    {
+      "result": {
+        "item": "druidcraft:elder_leaves"
+      },
+      "rolls": 1,
+      "chance": 0.1
+    },
+
+    {
+      "result": {
+        "item": "druidcraft:elder_sapling"
+      },
+      "rolls": 1,
+      "chance": 0.05
+    }
+  ],
+
+  "compatibleSoilTags": ["dirt", "grass"]
+}
+

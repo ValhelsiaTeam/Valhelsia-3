@@ -1,0 +1,44 @@
+{
+  "type": "bonsaitrees2:sapling",
+  
+  "sapling": {
+    "item": "endergetic:poise_grass_tall"
+  },
+
+  "drops": [
+    {
+      "result": {
+        "item": "endergetic:poise_stem"
+      },
+      "rolls": 1,
+      "chance": 0.75
+    },
+	
+	{
+      "result": {
+        "item": "endergetic:poise_stem_glowing"
+      },
+      "rolls": 1,
+      "chance": 0.05
+    },
+
+    {
+      "result": {
+        "item": "endergetic:poise_grass_tall"
+      },
+      "rolls": 1,
+      "chance": 0.05
+    },
+
+    {
+      "result": {
+        "item": "endergetic:poise_cluster"
+      },
+      "rolls": 1,
+      "chance": 0.1
+    }
+  ],
+
+  "compatibleSoilTags": ["poismoss"]
+}
+
