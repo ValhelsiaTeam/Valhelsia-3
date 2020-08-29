@@ -1,0 +1,63 @@
+{
+  "type": "bonsaitrees2:sapling/autumnity/yellow_maple",
+  "version": 3,
+  "ref": {
+    "a": {"block":"autumnity:maple_log","properties":{"axis":"y"}},
+    "b": {"block":"autumnity:yellow_maple_leaves","properties":{"distance":"1"}},
+	"c": {"block":"autumnity:yellow_maple_leaves","properties":{"distance":"2"}},
+	"d": {"block":"autumnity:yellow_maple_leaves","properties":{"distance":"3"}},
+	"e": {"block":"autumnity:yellow_maple_leaves","properties":{"distance":"4"}}
+  },
+  "shape": [
+    [
+      "     ",
+      " ede ",
+      " dcd ",
+      " dcd ",
+      "  c  ",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      "  de ",
+      " dcde",
+      "dcbcd",
+      "dcbcd",
+      " cbcd",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      " dcd ",
+      "dcbcd",
+      "cbabc",
+      "cbabc",
+      "cbabc",
+      "  a  ",
+      "  a  ",
+	  "  a  "
+    ],
+    [
+      " ed  ",
+      "edcd ",
+      "dcbcd",
+      "dcbcd",
+      " cbc ",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      "  de ",
+      " dcd ",
+      " dcd ",
+      "  c  ",
+      "     ",
+      "     ",
+      "     "
+    ]
+  ]
+}

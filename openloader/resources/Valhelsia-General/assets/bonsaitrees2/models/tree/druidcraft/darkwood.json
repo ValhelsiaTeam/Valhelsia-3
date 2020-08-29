@@ -1,0 +1,67 @@
+{
+  "type": "bonsaitrees2:sapling/druidcraft/darkwood",
+  "version": 3,
+  "ref": {
+    "a": {"block":"druidcraft:darkwood_log","properties":{"axis":"y"}},
+    "b": {"block":"druidcraft:darkwood_leaves","properties":{"distance":"1","persistent":"false"}},
+    "c": {"block":"druidcraft:darkwood_leaves","properties":{"distance":"3","persistent":"false"}},
+    "d": {"block":"druidcraft:darkwood_leaves","properties":{"distance":"2","persistent":"false"}}
+  },
+  "shape": [
+    [
+      "     ",
+      "     ",
+      "     ",
+      " cdc ",
+      "     ",
+      " cdc ",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      "  d  ",
+      "     ",
+      "  b  ",
+      "cdbdc",
+      "  b  ",
+      "cdbdc",
+      "  b  ",
+      "     ",
+      "     "
+    ],
+    [
+      " dbd ",
+      "  a  ",
+      " bab ",
+      "dbabd",
+      " bab ",
+      "dbabd",
+      " bab ",
+      "  a  ",
+      "  a  "
+    ],
+    [
+      "  d  ",
+      "     ",
+      "  b  ",
+      "cdbdc",
+      "  b  ",
+      "cdbdc",
+      "  b  ",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      "     ",
+      " cdc ",
+      "     ",
+      " cdc ",
+      "     ",
+      "     ",
+      "     "
+    ]
+  ]
+}

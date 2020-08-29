@@ -1,0 +1,80 @@
+{
+  "type": "bonsaitrees2:sapling/forbidden_arcanus/cherrywood",
+  "version": 3,
+  "ref": {
+    "a": {"block":"forbidden_arcanus:cherrywood_log", "properties":{"axis":"y"}},
+	"b": {"block":"forbidden_arcanus:cherrywood_leaves"}
+  },
+  "shape": [
+    [
+      "       ",
+      " bbbbb ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "   b   ",
+      "bbbbbbb",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "  bbb  ",
+      "bbbbbbb",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      " bbbbb ",
+      "bbbabbb",
+      "   a   ",
+      "  aa   ",
+      "  a    ",
+      "  a    ",
+      "  a    ",
+      "  a    "
+    ],
+    [
+      "  bbb  ",
+      "bbbbbbb",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "   b   ",
+      "bbbbbbb",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "       ",
+      " bbbbb ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ]
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "type": "bonsaitrees2:sapling/atmospheric/aspen",
+  "version": 3,
+  "ref": {
+    "a": {"block":"atmospheric:aspen_leaves","properties":{"distance":"2","persistent":"false"}},
+    "b": {"block":"atmospheric:aspen_log","properties":{"axis":"y"}},
+    "c": {"block":"atmospheric:aspen_leaves","properties":{"distance":"3","persistent":"false"}},
+    "d": {"block":"atmospheric:aspen_leaves","properties":{"distance":"1","persistent":"false"}},
+    "e": {"block":"atmospheric:aspen_leaves","properties":{"distance":"1","persistent":"false"}}
+  },
+  "shape": [
+    [
+      "     ",
+      "     ",
+      "     ",
+      "     ",
+      " cac ",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      "  e  ",
+      "     ",
+      "  d  ",
+      "cadac",
+      "     ",
+      "     "
+    ],
+    [
+      "  e  ",
+      " ebe ",
+      "  b  ",
+      " dbd ",
+      "adbda",
+      "  b  ",
+      "  b  "
+    ],
+    [
+      "     ",
+      "  e  ",
+      "     ",
+      "  d  ",
+      "cadac",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      "     ",
+      "     ",
+      " cac ",
+      "     ",
+      "     "
+    ]
+  ]
+}

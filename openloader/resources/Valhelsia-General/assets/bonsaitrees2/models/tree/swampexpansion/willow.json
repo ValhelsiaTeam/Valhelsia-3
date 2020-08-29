@@ -1,0 +1,110 @@
+{
+  "type": "bonsaitrees2:sapling/swampexpansion/willow",
+  "version": 3,
+  "ref": {
+    "a": {"block":"swampexpansion:willow_leaves","properties":{"distance":"4","persistent":"false"}},
+    "b": {"block":"swampexpansion:willow_leaves","properties":{"distance":"2","persistent":"false"}},
+    "c": {"block":"swampexpansion:willow_leaves","properties":{"distance":"3","persistent":"false"}},
+    "d": {"block":"swampexpansion:willow_leaves","properties":{"distance":"1","persistent":"false"}},
+    "e": {"block":"minecraft:vine","properties":{"east":"false","north":"false","south":"true","up":"false","west":"false"}},
+    "f": {"block":"swampexpansion:willow_leaves","properties":{"distance":"5","persistent":"false"}},
+    "g": {"block":"minecraft:vine","properties":{"east":"false","north":"false","south":"false","up":"false","west":"true"}},
+    "h": {"block":"swampexpansion:hanging_willow_leaves"},
+    "i": {"block":"minecraft:vine","properties":{"east":"false","north":"true","south":"false","up":"false","west":"false"}},
+    "j": {"block":"swampexpansion:willow_leaves","properties":{"distance":"6","persistent":"false"}},
+    "k": {"block":"minecraft:vine","properties":{"east":"true","north":"false","south":"false","up":"false","west":"false"}},
+    "l": {"block":"swampexpansion:willow_log","properties":{"axis":"y"}}
+  },
+  "shape": [
+    [
+      "         ",
+      "         ",
+      " g       ",
+      " g       ",
+      " g       ",
+      " g       ",
+      " g       ",
+      "         "
+    ],
+    [
+      "         ",
+      "         ",
+      " jfacafg ",
+      "  facafji",
+      "     h hi",
+      "        i",
+      "         ",
+      "         "
+    ],
+    [
+      "   aca   ",
+      "  acbci  ",
+      " facbcafi",
+      "efacbcafi",
+      "e   h   i",
+      "e       i",
+      "e       i",
+      "e        "
+    ],
+    [
+      "  acbcai ",
+      "  cbdbci ",
+      "eacbdbcai",
+      "eacbdbcai",
+      "ehhh h hi",
+      "e       i",
+      "e       i",
+      "e        "
+    ],
+    [
+      "  cbdbc  ",
+      "  bdldbi ",
+      " cbdldbci",
+      " cbdldbci",
+      " hh l  hi",
+      "    l   i",
+      "    l   i",
+      "    l    "
+    ],
+    [
+      "  acbcai ",
+      "  cbdbci ",
+      "eacbdbcai",
+      "eacbdbcai",
+      "ehh  h  i",
+      "e       i",
+      "e        ",
+      "         "
+    ],
+    [
+      "   acai  ",
+      "  kcbca  ",
+      " facbcaf ",
+      " facbcaf ",
+      "   hh    ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "         ",
+      "    k k  ",
+      " kfacafji",
+      " jfacafii",
+      " hhhhhhii",
+      "       i ",
+      "         ",
+      "         "
+    ],
+    [
+      "         ",
+      "         ",
+      "         ",
+      "      k  ",
+      "      k  ",
+      "         ",
+      "         ",
+      "         "
+    ]
+  ]
+}

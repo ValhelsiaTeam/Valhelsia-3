@@ -1,0 +1,62 @@
+{
+  "type": "bonsaitrees2:sapling/midnight/shadowroot",
+  "version": 3,
+  "ref": {
+    "a": {"block":"midnight:shadowroot_leaves","properties":{"distance":"1","persistent":"false"}},
+    "b": {"block":"midnight:shadowroot_log","properties":{"axis":"y"}},
+    "c": {"block":"midnight:shadowroot_leaves","properties":{"distance":"2","persistent":"false"}},
+    "d": {"block":"midnight:shadowroot_leaves","properties":{"distance":"3","persistent":"false"}},
+    "e": {"block":"midnight:shadowroot_log","properties":{"axis":"z"}},
+    "f": {"block":"midnight:shadowroot_leaves","properties":{"distance":"4","persistent":"false"}}
+  },
+  "shape": [
+    [
+      "        ",
+      "    a   ",
+      "   cac  ",
+      "    ac  ",
+      "        ",
+      "  dc    ",
+      " d      ",
+      "        ",
+      "     c  ",
+      "      c ",
+      "        ",
+      "        ",
+      "        ",
+      "        "
+    ],
+    [
+      "    a   ",
+      "   aba  ",
+      "   aba  ",
+      "   aba  ",
+      "  caba  ",
+      " dcab   ",
+      "dcaeb   ",
+      "fd  ba  ",
+      "    bac ",
+      "    beac",
+      "    bac ",
+      "    bb  ",
+      "    bb  ",
+      "    bb  "
+    ],
+    [
+      "        ",
+      "    a   ",
+      "   cac  ",
+      "   cac  ",
+      "   c    ",
+      "  dc    ",
+      " d      ",
+      "        ",
+      "     c  ",
+      "      c ",
+      "      d ",
+      "        ",
+      "        ",
+      "        "
+    ]
+  ]
+}

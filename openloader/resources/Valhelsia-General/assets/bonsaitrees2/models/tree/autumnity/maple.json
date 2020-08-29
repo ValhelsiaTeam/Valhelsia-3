@@ -1,0 +1,63 @@
+{
+  "type": "bonsaitrees2:sapling/autumnity/maple",
+  "version": 3,
+  "ref": {
+    "a": {"block":"autumnity:maple_log","properties":{"axis":"y"}},
+    "b": {"block":"autumnity:maple_leaves","properties":{"distance":"1"}},
+	"c": {"block":"autumnity:maple_leaves","properties":{"distance":"2"}},
+	"d": {"block":"autumnity:maple_leaves","properties":{"distance":"3"}},
+	"e": {"block":"autumnity:maple_leaves","properties":{"distance":"4"}}
+  },
+  "shape": [
+    [
+      "     ",
+      " ed  ",
+      " dcd ",
+      " dcd ",
+      "  cd ",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      " ed  ",
+      " dcd ",
+      "dcbcd",
+      "dcbcd",
+      "dcbcd",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      " dcd ",
+      "dcbcd",
+      "cbabc",
+      "cbabc",
+      "cbabc",
+      "  a  ",
+      "  a  ",
+      "  a  "
+    ],
+    [
+      "  de ",
+      "edcd ",
+      "dcbcd",
+      "dcbcd",
+      " cbc ",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      "  d  ",
+      " dcd ",
+      " dcd ",
+      "  c  ",
+      "     ",
+      "     ",
+      "     "
+    ]
+  ]
+}

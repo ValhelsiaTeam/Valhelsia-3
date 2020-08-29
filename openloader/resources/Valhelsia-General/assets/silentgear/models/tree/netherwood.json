@@ -1,0 +1,80 @@
+{
+  "type": "silentgear:sapling/netherwood",
+  "version": 3,
+  "ref": {
+    "a": {"block":"silentgear:netherwood_log", "properties":{"axis":"y"}},
+	"b": {"block":"silentgear:netherwood_leaves"}
+  },
+  "shape": [
+    [
+      "       ",
+      " bbbbb ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "   b   ",
+      "bbbbbbb",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "  bbb  ",
+      "bbbbbbb",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      " bbbbb ",
+      "bbbabbb",
+      "   a   ",
+      "  aa   ",
+      "  a    ",
+      "  a    ",
+      "  a    ",
+      "  a    "
+    ],
+    [
+      "  bbb  ",
+      "bbbbbbb",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "   b   ",
+      "bbbbbbb",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "       ",
+      " bbbbb ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ]
+  ]
+}

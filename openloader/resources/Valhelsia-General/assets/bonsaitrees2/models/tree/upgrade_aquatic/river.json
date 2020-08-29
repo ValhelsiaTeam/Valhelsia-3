@@ -1,0 +1,36 @@
+{
+  "type": "bonsaitrees2:sapling/upgrade_aquatic/river",
+  "version": 3,
+  "ref": {
+    "a": {"block":"upgrade_aquatic:river_log","properties":{"axis":"y"}},
+    "b": {"block":"upgrade_aquatic:river_leaves","properties":{"distance":"1","persistent":"false"}},
+    "c": {"block":"upgrade_aquatic:mulberry_vine","properties":{"age":"4","double":"false"}},
+    "d": {"block":"upgrade_aquatic:river_leaves","properties":{"distance":"2","persistent":"false"}}
+  },
+  "shape": [
+    [
+      "   ",
+      " d ",
+      "db ",
+      " bd",
+      "   ",
+      "   "
+    ],
+    [
+      " d ",
+      "dbd",
+      "bab",
+      "bab",
+      " ac",
+      " a "
+    ],
+    [
+      "   ",
+      "   ",
+      "db ",
+      " b ",
+      "   ",
+      "   "
+    ]
+  ]
+}
