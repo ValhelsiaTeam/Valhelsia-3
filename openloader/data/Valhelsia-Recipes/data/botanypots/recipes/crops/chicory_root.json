@@ -4,7 +4,7 @@
     "item": "simplefarming:chicory_root"
   },
   "categories": ["dirt"],
-  "growthTicks": 3,
+  "growthTicks": 800,
   "growthModifier": 1.2,
   "display": {
     "block": "simplefarming:chicory",

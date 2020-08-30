@@ -4,7 +4,7 @@
     "item": "druidcraft:hemp_seeds"
   },
   "categories": ["dirt"],
-  "growthTicks": 3,
+  "growthTicks": 800,
   "growthModifier": 1.5,
   "display": {
     "block": "druidcraft:hemp_crop",
