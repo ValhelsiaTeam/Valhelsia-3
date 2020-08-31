@@ -1,13 +1,6 @@
 events.listen('recipes', function (event) {
 
-  event.shaped(item.of('decorative_blocks:chain', 2), [
-    'A',
-    'B',
-    'A'
-  ], {
-    A: 'minecraft:iron_ingot',
-    B: 'minecraft:iron_nugget'
-  })
+  //Minecarft
   event.shaped(item.of('minecraft:chest', 1), [
     'AAA',
     'A A',
@@ -40,5 +33,22 @@ events.listen('recipes', function (event) {
     'A A'
   ], {
     A: 'forbidden_arcanus:iron_chain'
+  })
+
+  //Decorative Blocks
+  event.shaped(item.of('decorative_blocks:chain', 2), [
+    'A',
+    'B',
+    'A'
+  ], {
+    A: 'minecraft:iron_ingot',
+    B: 'minecraft:iron_nugget'
+  })
+
+  //Powah
+  event.shaped(item.of('powah:uraninite_raw_poor', 1), [
+    'A'
+  ], {
+    A: 'mekanism:ingot_uranium'
   })
 })
