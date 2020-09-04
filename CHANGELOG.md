@@ -1,3 +1,34 @@
+# Changelog 3.0.15
+
+**Forge 32.0.108**
+
+### Mod(s) added:
++ Apotheosis
++ Better Weather
++ JEI Integration
++ Powah! 
+
+### Mod(s) removed:
+- JEITweaker
+
+### Updated:
+- AIOT Botania 1.16.2-1.3.1
+- Decorative Blocks 1.16.1-1.5
+- Engineer's Decor 1.16.1-1.1.3
+- Immersive Engineering 1.16.1-4.0.0-118
+- Just Enough Resources (JER) 1.16.1-0.11.1.96
+- Light Overlay 5.4.3
+- MineColonies 0.13.213-ALPHA
+- Pam's HarvestCraft 2 - Food Core 1.16.1-1.0.6
+- Quark r2.2-262
+- Structurize 0.13.61-ALPHA 
+
+### Change(s):
+- Apotheosis is now much more balanced with our first changes, addition of some spawners to the blacklist, harder and more limited upgrade of the spawner compared to Valhelsia 2. Added Jei information for some Monster Egg.
+- Added Mekanism-Powah! compatibility.
+
+-----------------------------------
+
 # Changelog 3.0.14
 
 **Forge 32.0.108**
