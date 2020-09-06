@@ -1,0 +1,51 @@
+{
+  "availability": {
+    "tier": 3,
+    "visible": true,
+    "gear_blacklist": [],
+	"can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "tag": "forge:ingots/terrasteel"
+    }
+  },
+  "name": {
+    "text": "Terrasteel"
+  },
+  "stats": {
+    "main": {
+      "durability": 2300.0,
+      "armor_durability": 34.0,
+      "enchantability": 26.0,
+      "harvest_level": 4.0,
+      "harvest_speed": 9.0,
+      "melee_damage": 7.0,
+      "magic_damage": 5.0,
+      "attack_speed": 0.0,
+      "armor": 20.0,
+      "armor_toughness": 12.0,
+      "magic_armor": 10.0,
+      "ranged_damage": 2.0,
+      "ranged_speed": -0.2,
+      "rarity": 45.0,
+	  "silentgems:chargeability": 1.0
+    }
+  },
+  "traits": {
+    "main": [
+      {
+        "name": "silentgear:malleable",
+        "level": 3
+      },
+       {
+        "name": "silentgear:ancient",
+        "level": 3
+      },
+       {
+        "name": "silentgear:stellar",
+        "level": 3
+      }
+    ]
+  }
+}

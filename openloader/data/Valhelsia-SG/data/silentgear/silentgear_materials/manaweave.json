@@ -1,0 +1,53 @@
+{
+  "availability": {
+    "tier": 1,
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "item": "botania:manaweave_cloth"
+    }
+  },
+  "name": {
+    "text": "Manaweave Cloth"
+  },
+  "stats": {
+    "grip": {
+	  "durability": {
+        "mul1": 0.1
+      },
+      "repair_efficiency": {
+        "mul1": 0.1
+      },
+      "enchantability": {
+        "mul1": 0.15
+      },
+      "harvest_speed": {
+        "mul1": 0.05
+      },
+      "attack_speed": {
+        "add": 0.05
+      },
+      "ranged_speed": {
+        "add": 0.05
+      },
+      "rarity": {
+        "add": 10.0
+      }
+    }
+  },
+  "traits": {
+    "grip": [
+      {
+        "name": "silentgear:ancient",
+        "level": 1
+      },
+	   {
+        "name": "silentgear:synergistic",
+        "level": 2
+      }
+    ]
+  }
+}
