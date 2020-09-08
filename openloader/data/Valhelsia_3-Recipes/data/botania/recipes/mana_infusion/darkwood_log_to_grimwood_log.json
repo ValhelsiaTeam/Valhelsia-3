@@ -1,0 +1,14 @@
+{
+    "type": "botania:mana_infusion",
+    "input": {
+      "item": "druidcraft:darkwood_log"
+    },
+    "output": {
+      "item": "atmospheric:grimwood_log"
+    },
+    "mana": 40,
+    "group": "botania:log_cycle",
+    "catalyst": {
+      "name": "botania:alchemy_catalyst"
+    }
+  }
