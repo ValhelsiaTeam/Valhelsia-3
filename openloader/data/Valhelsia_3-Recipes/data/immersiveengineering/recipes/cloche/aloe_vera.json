@@ -1,0 +1,27 @@
+{
+  "type": "immersiveengineering:cloche",
+  "results": [
+    {
+      "item": "atmospheric:aloe_leaves",
+      "count": 2
+    },
+    {
+      "item": "minecraft:yellow_dye",
+      "count": 2
+    },
+    {
+      "item": "atmospheric:aloe_kernels"
+    }
+  ],
+  "input": {
+    "item": "atmospheric:aloe_kernels"
+  },
+  "soil": {
+    "item": "atmospheric:arid_sand"
+  },
+  "time": 800,
+  "render": {
+    "type": "crop",
+    "block": "atmospheric:aloe_vera"
+  }
+}
