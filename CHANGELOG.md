@@ -1,3 +1,33 @@
+# Changelog 3.0.16
+
+**Forge 32.0.108**
+
+### Mod(s) added:
++ Farmer's Delight
++ Open Loader
+
+### Mod(s) removed:
+- None
+
+### Updated:
+- Autumnity 1.16.1-1.4.1
+- Bamboo Blocks 1.16.1-2.0.1
+- Botania 1.16.1-403.1
+- Engineer's Decor 1.16.1-1.1.4
+- Fast Leaf Decay v25
+- Forbidden and Arcanus 1.16.1-1.1.2
+- Just Enough Resources 1.16.1-0.11.1.98
+- MineColonies 0.13.238-ALPHA
+- Structurize 0.13.65-ALPHA
+
+### Change(s):
+- Add Mekanism Steel compatibility with Arc Furnace & Blast Furnace. 
+- Add Farmer's Delight compatibility for Garden Gloche (Immersive Engineering).
+- Add Immersive Engineering recipes (Garden Cloche) from Valhelsia: Origins. 
+- Add Botania recipes from Valhelsia: Origins.
+
+-----------------------------------
+
 # Changelog 3.0.15
 
 **Forge 32.0.108**
