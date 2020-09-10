@@ -1,0 +1,56 @@
+{
+  "availability": {
+    "tier": 3,
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "item": "botania:livingwood_twig"
+    }
+  },
+  "name": {
+    "text": "Livingwood Twig"
+  },
+  "stats": {
+    "rod": {
+      "durability": {
+        "mul2": 0.2
+      },
+      "enchantability": {
+        "mul2": 0.3
+      },
+      "harvest_level": {
+        "max": 2.0
+      },
+      "harvest_speed": {
+        "mul2": 0.2
+      },
+      "melee_damage": {
+        "mul2": 0.1
+      },
+      "magic_damage": {
+        "mul2": 0.3
+      },
+      "attack_speed": {
+        "add": 0.2
+      },
+      "ranged_damage": {
+        "mul2": 0.1
+      },
+      "ranged_speed": {
+        "mul2": 0.2
+      },
+      "rarity": 35.0
+    }
+  },
+  "traits": {
+    "rod": [
+      {
+        "name": "silentgear:synergistic",
+        "level": 2
+      }
+    ]
+  }
+}

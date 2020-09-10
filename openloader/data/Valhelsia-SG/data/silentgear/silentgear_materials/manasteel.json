@@ -1,0 +1,47 @@
+{
+  "availability": {
+    "tier": 2,
+    "visible": true,
+    "gear_blacklist": [],
+	"can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "tag": "forge:ingots/manasteel"
+    }
+  },
+  "name": {
+    "text": "Manasteel"
+  },
+  "stats": {
+    "main": {
+      "durability": 300.0,
+      "armor_durability": 16.0,
+      "enchantability": 20.0,
+      "harvest_level": 3.0,
+      "harvest_speed": 6.2,
+      "melee_damage": 2.0,
+      "magic_damage": 3.0,
+      "attack_speed": 0.0,
+      "armor": 15.0,
+      "armor_toughness": 0.0,
+      "magic_armor": 10.0,
+      "ranged_damage": 0.0,
+      "ranged_speed": 0.1,
+      "rarity": 25.0,
+	  "silentgems:chargeability": 0.7
+    }
+  },
+  "traits": {
+    "main": [
+      {
+        "name": "silentgear:malleable",
+        "level": 2
+      },
+       {
+        "name": "silentgear:chilled",
+        "level": 2
+      }
+    ]
+  }
+}

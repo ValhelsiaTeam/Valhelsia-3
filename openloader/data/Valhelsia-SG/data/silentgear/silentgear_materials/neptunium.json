@@ -1,0 +1,47 @@
+{
+  "availability": {
+    "tier": 3,
+    "visible": true,
+    "gear_blacklist": [],
+	"can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "tag": "forge:ingots/neptunium"
+    }
+  },
+  "name": {
+    "text": "Neptunium"
+  },
+  "stats": {
+    "main": {
+      "durability": 2500.0,
+      "armor_durability": 35.0,
+      "enchantability": 13.0,
+      "harvest_level": 3.0,
+      "harvest_speed": 9.0,
+      "melee_damage": 4.0,
+      "magic_damage": 2.0,
+      "attack_speed": 0.1,
+      "armor": 20.0,
+      "armor_toughness": 8.0,
+      "magic_armor": 8.0,
+      "ranged_damage": 2.0,
+      "ranged_speed": 0.0,
+      "rarity": 45.0,
+	  "silentgems:chargeability": 1.0
+    }
+  },
+  "traits": {
+    "main": [
+      {
+        "name": "silentgear:aquatic",
+        "level": 5
+      },
+       {
+        "name": "silentgear:malleable",
+        "level": 2
+      }
+    ]
+  }
+}

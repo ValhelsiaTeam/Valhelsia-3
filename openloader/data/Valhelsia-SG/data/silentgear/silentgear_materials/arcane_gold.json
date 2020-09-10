@@ -1,0 +1,47 @@
+{
+  "availability": {
+    "tier": 3,
+    "visible": true,
+    "gear_blacklist": [],
+	"can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "item": "forbidden_arcanus:arcane_gold_ingot"
+    }
+  },
+  "name": {
+    "text": "Arcane Gold"
+  },
+  "stats": {
+    "main": {
+      "durability": 1700.0,
+      "armor_durability": 20.0,
+      "enchantability": 35.0,
+      "harvest_level": 3.0,
+      "harvest_speed": 8.0,
+      "melee_damage": 3.0,
+      "magic_damage": 7.0,
+      "attack_speed": 0.1,
+      "armor": 19.0,
+      "armor_toughness": 1.0,
+      "magic_armor": 9.0,
+      "ranged_damage": 2.0,
+      "ranged_speed": 0.2,
+      "rarity": 40.0,
+	  "silentgems:chargeability": 1.0
+    }
+  },
+  "traits": {
+    "main": [
+      {
+        "name": "silentgear:malleable",
+        "level": 3
+      },
+       {
+        "name": "silentgear:lustrous",
+        "level": 2
+      }
+    ]
+  }
+}
