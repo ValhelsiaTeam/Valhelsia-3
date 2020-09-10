@@ -36,6 +36,9 @@ events.listen('recipes', function (event) {
     'silents_mechanisms:steel_ingot',
     'silents_mechanisms:steel_nugget',
     'silents_mechanisms:steel_dust',
+    'silents_mechanisms:copper_ingot',
+    'silents_mechanisms:copper_nugget',
+    'silents_mechanisms:copper_dust',
 
     //Immersive Engineering
     'immersiveengineering:ingot_steel',
@@ -45,12 +48,25 @@ events.listen('recipes', function (event) {
     'immersiveengineering:shovel_steel',
     'immersiveengineering:axe_steel',
     'immersiveengineering:hoe_steel',
+    'immersiveengineering:ingot_copper',
+    'immersiveengineering:nugget_copper',
+    'immersiveengineering:plate_copper',
+
+    //Mekanism
+    'mekanism:copper_ore',
+    'mekanism:ingot_copper',
+    'mekanism:nugget_copper',
 
     //Mekanism Tools
     'mekanismtools:steel_helmet',
     'mekanismtools:steel_chestplate',
     'mekanismtools:steel_leggings',
-    'mekanismtools:steel_boots'
+    'mekanismtools:steel_boots',
+
+    //Mystical World
+    'mysticalworld:copper_ingot',
+    'mysticalworld:copper_nugget',
+    'mysticalworld:copper_dust',
   ]
   outputRemove.forEach(function (remove) {
     event.remove({output: remove})
