@@ -1,8 +1,10 @@
 {
   "type": "bonsaitrees2:sapling",
+  
   "sapling": {
-    "item": "fruittrees:apple_sapling"
+    "item": "druidcraft:darkwood_sapling"
   },
+
   "drops": [
     {
       "result": {
@@ -14,7 +16,7 @@
 
     {
       "result": {
-        "item": "minecraft:oak_log"
+        "item": "druidcraft:darkwood_log"
       },
       "rolls": 1,
       "chance": 0.75
@@ -22,7 +24,7 @@
 
     {
       "result": {
-        "item": "fruittrees:apple_leaves"
+        "item": "druidcraft:darkwood_leaves"
       },
       "rolls": 1,
       "chance": 0.1
@@ -30,20 +32,13 @@
 
     {
       "result": {
-        "item": "fruittrees:apple_sapling"
+        "item": "druidcraft:darkwood_sapling"
       },
       "rolls": 1,
       "chance": 0.05
-    },
-
-    {
-      "result": {
-        "item": "minecraft:apple"
-      },
-      "rolls": 1,
-      "chance": 0.01
     }
   ],
 
   "compatibleSoilTags": ["dirt", "grass"]
 }
+

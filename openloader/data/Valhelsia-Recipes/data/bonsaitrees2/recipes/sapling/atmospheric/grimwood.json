@@ -1,7 +1,7 @@
 {
   "type": "bonsaitrees2:sapling",
   "sapling": {
-    "item": "forbidden_arcanus:cherrywood_sapling"
+    "item": "atmospheric:grimwood_sapling"
   },
   "drops": [
     {
@@ -14,7 +14,7 @@
 
     {
       "result": {
-        "item": "forbidden_arcanus:cherrywood_log"
+        "item": "atmospheric:grimwood_log"
       },
       "rolls": 1,
       "chance": 0.75
@@ -22,7 +22,7 @@
 
     {
       "result": {
-        "item": "forbidden_arcanus:cherrywood_leaves"
+        "item": "atmospheric:grimwood_leaves"
       },
       "rolls": 1,
       "chance": 0.1
@@ -30,15 +30,7 @@
 
     {
       "result": {
-        "item": "forbidden_arcanus:cherrywood_sapling"
-      },
-      "rolls": 1,
-      "chance": 0.05
-    },
-	
-	{
-      "result": {
-        "item": "forbidden_arcanus:cherry_peach"
+        "item": "atmospheric:grimwood_sapling"
       },
       "rolls": 1,
       "chance": 0.05

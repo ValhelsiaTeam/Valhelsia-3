@@ -1,0 +1,16 @@
+{
+  "type": "bonsaitrees2:soil",
+  "mod": "botania",
+
+  "soil": {
+    "item": "botania:golden_grass"
+  },
+
+  "display": {
+    "block": "botania:golden_grass"
+  },
+
+  "tickModifier": 0.9,
+
+  "compatibleSoilTags": ["grass"]
+}

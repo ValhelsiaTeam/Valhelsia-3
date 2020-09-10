@@ -1,0 +1,120 @@
+{
+  "type": "bonsaitrees2:sapling/atmospheric/yucca",
+  "version": 3,
+  "ref": {
+    "a": {"block":"atmospheric:yucca_leaves","properties":{"distance":"2","persistent":"false"}},
+    "b": {"block":"atmospheric:yucca_log","properties":{"axis":"y"}},
+    "c": {"block":"atmospheric:yucca_leaves","properties":{"distance":"1","persistent":"false"}},
+    "d": {"block":"atmospheric:yucca_leaves","properties":{"distance":"3","persistent":"false"}}
+  },
+  "shape": [
+    [
+      "         ",
+      "    a    ",
+      "   aca   ",
+      "    c    ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "         ",
+      "   aca   ",
+      "   cbc   ",
+      "   cbc   ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "         ",
+      "    a    ",
+      "   aca   ",
+      "   ac    ",
+      "    b    ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "         ",
+      " a     a ",
+      "aca   aca",
+      " a     ad",
+      "         ",
+      "    b    ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "         ",
+      "aca   aca",
+      "cbc   cbc",
+      "acb   bca",
+      "   b  b  ",
+      "   bbb   ",
+      "    b    ",
+      "    b    ",
+      "    b    ",
+      "    b    "
+    ],
+    [
+      "         ",
+      " a     a ",
+      "aca   aca",
+      "dac    a ",
+      "         ",
+      "    b    ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "    a    ",
+      "   aca   ",
+      "    c    ",
+      "         ",
+      "    b    ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "   aca   ",
+      "   cbc   ",
+      "   cbc   ",
+      "    b    ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "    a    ",
+      "   aca   ",
+      "    c    ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ]
+  ]
+}

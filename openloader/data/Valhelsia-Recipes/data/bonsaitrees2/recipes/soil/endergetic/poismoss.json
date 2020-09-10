@@ -1,0 +1,16 @@
+{
+  "type": "bonsaitrees2:soil",
+  "mod": "endergetic",
+
+  "soil": {
+    "item": "endergetic:poise_grass_block"
+  },
+
+  "display": {
+    "block": "endergetic:poise_grass_block"
+  },
+
+  "tickModifier": 0.9,
+
+  "compatibleSoilTags": ["poismoss", "grass"]
+}

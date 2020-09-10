@@ -1,12 +1,14 @@
 {
   "type": "bonsaitrees2:sapling",
+  
   "sapling": {
-    "item": "forbidden_arcanus:cherrywood_sapling"
+    "item": "midnight:dark_willow_sapling"
   },
+
   "drops": [
     {
       "result": {
-        "item": "minecraft:stick"
+        "item": "midnight:dark_stick"
       },
       "rolls": 3,
       "chance": 0.2
@@ -14,7 +16,7 @@
 
     {
       "result": {
-        "item": "forbidden_arcanus:cherrywood_log"
+        "item": "midnight:dark_willow_log"
       },
       "rolls": 1,
       "chance": 0.75
@@ -22,28 +24,29 @@
 
     {
       "result": {
-        "item": "forbidden_arcanus:cherrywood_leaves"
+        "item": "midnight:dark_willow_leaves"
       },
       "rolls": 1,
       "chance": 0.1
     },
-
-    {
-      "result": {
-        "item": "forbidden_arcanus:cherrywood_sapling"
-      },
-      "rolls": 1,
-      "chance": 0.05
-    },
 	
 	{
       "result": {
-        "item": "forbidden_arcanus:cherry_peach"
+        "item": "midnight:hanging_dark_willow_leaves"
+      },
+      "rolls": 2,
+      "chance": 0.05
+    },
+
+    {
+      "result": {
+        "item": "midnight:dark_willow_sapling"
       },
       "rolls": 1,
       "chance": 0.05
     }
   ],
 
-  "compatibleSoilTags": ["dirt", "grass"]
+  "compatibleSoilTags": ["dirt", "grass", "midnight:dirt"]
 }
+

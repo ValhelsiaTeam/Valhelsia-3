@@ -1,7 +1,7 @@
 {
   "type": "bonsaitrees2:sapling",
   "sapling": {
-    "item": "forbidden_arcanus:cherrywood_sapling"
+    "item": "fruittrees:apple_sapling"
   },
   "drops": [
     {
@@ -14,7 +14,7 @@
 
     {
       "result": {
-        "item": "forbidden_arcanus:cherrywood_log"
+        "item": "minecraft:oak_log"
       },
       "rolls": 1,
       "chance": 0.75
@@ -22,7 +22,7 @@
 
     {
       "result": {
-        "item": "forbidden_arcanus:cherrywood_leaves"
+        "item": "fruittrees:apple_leaves"
       },
       "rolls": 1,
       "chance": 0.1
@@ -30,18 +30,18 @@
 
     {
       "result": {
-        "item": "forbidden_arcanus:cherrywood_sapling"
+        "item": "fruittrees:apple_sapling"
       },
       "rolls": 1,
       "chance": 0.05
     },
-	
-	{
+
+    {
       "result": {
-        "item": "forbidden_arcanus:cherry_peach"
+        "item": "minecraft:apple"
       },
       "rolls": 1,
-      "chance": 0.05
+      "chance": 0.03
     }
   ],
 

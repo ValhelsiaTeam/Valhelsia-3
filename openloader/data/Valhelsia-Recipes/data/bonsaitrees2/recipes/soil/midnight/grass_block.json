@@ -1,0 +1,16 @@
+{
+  "type": "bonsaitrees2:soil",
+  "mod": "midnight",
+
+  "soil": {
+    "item": "midnight:grass_block"
+  },
+
+  "display": {
+    "block": "midnight:grass_block"
+  },
+
+  "tickModifier": 0.9,
+
+  "compatibleSoilTags": ["grass"]
+}

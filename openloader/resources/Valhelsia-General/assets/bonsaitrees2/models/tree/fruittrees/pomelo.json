@@ -1,0 +1,60 @@
+{
+  "type": "bonsaitrees2:sapling/fruittrees/pomelo",
+  "version": 3,
+  "ref": {
+    "a": {"block":"fruittrees:pomelo_leaves","properties":{"age":"1","distance":"2","persistent":"false"}},
+    "b": {"block":"fruittrees:citrus_log","properties":{"axis":"y"}},
+    "c": {"block":"fruittrees:pomelo_leaves","properties":{"age":"1","distance":"3","persistent":"false"}},
+    "d": {"block":"fruittrees:pomelo_leaves","properties":{"age":"2","distance":"1","persistent":"false"}},
+    "e": {"block":"fruittrees:pomelo_leaves","properties":{"age":"1","distance":"1","persistent":"false"}},
+    "f": {"block":"fruittrees:pomelo_leaves","properties":{"age":"2","distance":"2","persistent":"false"}},
+    "g": {"block":"fruittrees:pomelo_leaves","properties":{"age":"2","distance":"3","persistent":"false"}},
+    "h": {"block":"fruittrees:pomelo_leaves","properties":{"age":"2","distance":"1","persistent":"true"}},
+    "i": {"block":"fruittrees:pomelo_leaves","properties":{"age":"3","distance":"2","persistent":"false"}},
+    "j": {"block":"fruittrees:pomelo_leaves","properties":{"age":"1","distance":"4","persistent":"false"}},
+    "k": {"block":"fruittrees:pomelo_leaves","properties":{"age":"3","distance":"4","persistent":"false"}},
+    "l": {"block":"fruittrees:pomelo_leaves","properties":{"age":"3","distance":"3","persistent":"false"}}
+  },
+  "shape": [
+    [
+      "     ",
+      "     ",
+      " gfg ",
+      " cigk",
+      "     ",
+      "     "
+    ],
+    [
+      "  a  ",
+      "  e  ",
+      "laeag",
+      "gfeac",
+      "     ",
+      "     "
+    ],
+    [
+      " ahf ",
+      " dbe ",
+      "aebef",
+      "fdbea",
+      "  b  ",
+      "  b  "
+    ],
+    [
+      "  f  ",
+      " ad  ",
+      "gaeag",
+      "gaeag",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      "kcig ",
+      " gicj",
+      "     ",
+      "     "
+    ]
+  ]
+}

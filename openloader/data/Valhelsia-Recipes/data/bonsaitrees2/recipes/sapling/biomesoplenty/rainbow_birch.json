@@ -1,0 +1,73 @@
+{
+  "type": "bonsaitrees2:sapling",
+  "sapling": {
+    "item": "biomesoplenty:rainbow_birch_sapling"
+  },
+  "drops": [
+    {
+      "result": {
+        "item": "minecraft:birch_log"
+      },
+      "rolls": 1,
+      "chance": 0.75
+    },
+
+    {
+      "result": {
+        "item": "biomesoplenty:rainbow_birch_leaves"
+      },
+      "rolls": 3,
+      "chance": 0.2
+    },
+
+    {
+      "result": {
+        "item": "minecraft:red_wool"
+      },
+      "rolls": 1,
+      "chance": 0.1
+    },
+
+    {
+      "result": {
+        "item": "minecraft:orange_wool"
+      },
+      "rolls": 1,
+      "chance": 0.1
+    },
+
+    {
+      "result": {
+        "item": "minecraft:yellow_wool"
+      },
+      "rolls": 1,
+      "chance": 0.1
+    },
+
+    {
+      "result": {
+        "item": "minecraft:green_wool"
+      },
+      "rolls": 1,
+      "chance": 0.1
+    },
+
+    {
+      "result": {
+        "item": "minecraft:blue_wool"
+      },
+      "rolls": 1,
+      "chance": 0.1
+    },
+
+    {
+      "result": {
+        "item": "minecraft:purple_wool"
+      },
+      "rolls": 1,
+      "chance": 0.1
+    }
+  ],
+
+  "compatibleSoilTags": ["dirt", "grass"]
+}

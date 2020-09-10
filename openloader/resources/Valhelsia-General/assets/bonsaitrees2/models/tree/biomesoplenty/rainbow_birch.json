@@ -1,0 +1,59 @@
+{
+  "type": "bonsaitrees2:sapling/biomesoplenty/rainbow_birch",
+  "version": 3,
+  "ref": {
+    "a": {"block":"biomesoplenty:magic_leaves","properties":{"distance":"2","persistent":"false"}},
+    "b": {"block":"minecraft:birch_log","properties":{"axis":"y"}},
+    "c": {"block":"biomesoplenty:magic_leaves","properties":{"distance":"3","persistent":"false"}},
+    "d": {"block":"biomesoplenty:magic_leaves","properties":{"distance":"1","persistent":"false"}},
+    "e": {"block":"biomesoplenty:yellow_autumn_leaves","properties":{"distance":"1","persistent":"false"}},
+    "f": {"block":"minecraft:oak_leaves","properties":{"distance":"3","persistent":"false"}},
+    "g": {"block":"biomesoplenty:maple_leaves","properties":{"distance":"2","persistent":"false"}},
+    "h": {"block":"minecraft:oak_leaves","properties":{"distance":"2","persistent":"false"}},
+    "i": {"block":"biomesoplenty:maple_leaves","properties":{"distance":"1","persistent":"false"}},
+    "j": {"block":"minecraft:oak_leaves","properties":{"distance":"1","persistent":"false"}},
+    "k": {"block":"biomesoplenty:yellow_autumn_leaves","properties":{"distance":"2","persistent":"false"}}
+  },
+  "shape": [
+    [
+      "     ",
+      "     ",
+      " fhf ",
+      " cac ",
+      "     ",
+      "     "
+    ],
+    [
+      "  g  ",
+      " kek ",
+      "fhjhf",
+      "cadac",
+      "     ",
+      "     "
+    ],
+    [
+      " gig ",
+      " ebe ",
+      "hjbjh",
+      "adbda",
+      "  b  ",
+      "  b  "
+    ],
+    [
+      "  g  ",
+      " kek ",
+      "fhjhf",
+      "cadac",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      " fhf ",
+      " cac ",
+      "     ",
+      "     "
+    ]
+  ]
+}
