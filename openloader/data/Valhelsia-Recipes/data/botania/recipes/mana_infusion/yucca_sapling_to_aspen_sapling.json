@@ -1,0 +1,14 @@
+{
+    "type": "botania:mana_infusion",
+    "input": {
+      "item": "atmospheric:yucca_sapling"
+    },
+    "output": {
+      "item": "atmospheric:aspen_sapling"
+    },
+    "mana": 120,
+    "group": "botania:sapling_cycle",
+    "catalyst": {
+      "name": "botania:alchemy_catalyst"
+    }
+  }
