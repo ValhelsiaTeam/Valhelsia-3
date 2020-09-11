@@ -35,7 +35,7 @@
 			#Range: 0.0 ~ 100.0
 			weightPercentage = 0.5
 			#Enable the spawning of baby creepers. Think baby zombies.
-			shouldSpawn = true
+			shouldSpawn = false
 
 		#Config options regarding baby wither skeletons.
 		[additions-common.spawning.baby-wither-skeletons]
@@ -51,7 +51,7 @@
 			#Range: 0.0 ~ 100.0
 			weightPercentage = 0.5
 			#Enable the spawning of baby wither skeletons. Think baby zombies.
-			shouldSpawn = true
+			shouldSpawn = false
 
 		#Config options regarding baby skeletons.
 		[additions-common.spawning.baby-skeletons]
@@ -84,4 +84,3 @@
 			weightPercentage = 0.5
 			#Enable the spawning of baby strays. Think baby zombies.
 			shouldSpawn = true
-
