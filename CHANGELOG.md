@@ -40,7 +40,6 @@
 - Disable baby creepers and wither skeletons from Mekanism Additions.
 - Adjustment of the generation of mineshafts.
 - Adjustment of the generation of caves (Quark).
-
 - Merged pull [279](https://github.com/ValhelsiaTeam/Valhelsia/pull/279) - Fixed Silent Gear integration by UgliBiBagli.
 - Merged pull [278](https://github.com/ValhelsiaTeam/Valhelsia/pull/278) - Add Botany Pots recipes by ScottKillen.
 - Merged pull [276](https://github.com/ValhelsiaTeam/Valhelsia/pull/276) - Add Bonsai Trees 2 support for recipes/models by landretk.
