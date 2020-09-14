@@ -750,7 +750,7 @@
 
 	[world.cave_roots]
 		"Min Y" = 16
-		"Chunk Attempts" = 300
+		"Chunk Attempts" = 75
 		"Max Y" = 52
 		"Enable Brewing" = true
 
@@ -1258,3 +1258,4 @@
 		#That's a lot to take in, so here's an example. This would be for the default config of the Slime underground biome. (Spaces are allowed.)
 		#minecraft:overworld; false; SWAMP; false; 120; 10..40; 26,14; 14,6; minecraft:water@915, minecraft:slime_block@85; minecraft:green_terracotta@2, minecraft:lime_terracotta@3, minecraft:light_blue_terracotta@1; CEILING; false
 		"Biome Definitions" = []
+
