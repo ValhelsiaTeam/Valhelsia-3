@@ -1,0 +1,14 @@
+{
+    "type": "botania:mana_infusion",
+    "input": {
+      "item": "upgrade_aquatic:river_log"
+    },
+    "output": {
+      "item": "upgrade_aquatic:driftwood_log"
+    },
+    "mana": 40,
+    "group": "botania:log_cycle",
+    "catalyst": {
+      "name": "botania:alchemy_catalyst"
+    }
+  }

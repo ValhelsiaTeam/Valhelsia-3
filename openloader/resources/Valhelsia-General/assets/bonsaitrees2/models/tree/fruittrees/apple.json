@@ -1,0 +1,60 @@
+{
+  "type": "bonsaitrees2:sapling/fruittrees/apple",
+  "version": 3,
+  "ref": {
+    "a": {"block":"fruittrees:apple_leaves","properties":{"age":"1","distance":"2","persistent":"false"}},
+    "b": {"block":"minecraft:oak_log","properties":{"axis":"y"}},
+    "c": {"block":"fruittrees:apple_leaves","properties":{"age":"1","distance":"3","persistent":"false"}},
+    "d": {"block":"fruittrees:apple_leaves","properties":{"age":"1","distance":"1","persistent":"false"}},
+    "e": {"block":"fruittrees:apple_leaves","properties":{"age":"3","distance":"1","persistent":"false"}},
+    "f": {"block":"fruittrees:apple_leaves","properties":{"age":"2","distance":"2","persistent":"false"}},
+    "g": {"block":"fruittrees:apple_leaves","properties":{"age":"2","distance":"3","persistent":"false"}},
+    "h": {"block":"fruittrees:apple_leaves","properties":{"age":"3","distance":"2","persistent":"false"}},
+    "i": {"block":"fruittrees:apple_leaves","properties":{"age":"2","distance":"1","persistent":"true"}},
+    "j": {"block":"fruittrees:apple_leaves","properties":{"age":"2","distance":"1","persistent":"false"}},
+    "k": {"block":"fruittrees:apple_leaves","properties":{"age":"3","distance":"3","persistent":"false"}},
+    "l": {"block":"fruittrees:apple_leaves","properties":{"age":"1","distance":"4","persistent":"false"}}
+  },
+  "shape": [
+    [
+      "     ",
+      "     ",
+      " gag ",
+      " gfc ",
+      "     ",
+      "     "
+    ],
+    [
+      "  f  ",
+      "  eh ",
+      "gadak",
+      "kfjhc",
+      "     ",
+      "     "
+    ],
+    [
+      " fih ",
+      " jbd ",
+      "adbja",
+      "adbda",
+      "  b  ",
+      "  b  "
+    ],
+    [
+      "  f  ",
+      "  j  ",
+      "cfdfc",
+      "cajac",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      " ghcl",
+      " cac ",
+      "     ",
+      "     "
+    ]
+  ]
+}

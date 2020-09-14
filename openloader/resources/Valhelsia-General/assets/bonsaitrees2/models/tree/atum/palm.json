@@ -1,0 +1,83 @@
+{
+  "type": "bonsaitrees2:sapling/atum/palm",
+  "version": 3,
+  "ref": {
+    "a": {"block":"atum:palm_log","properties":{"axis":"y"}},
+    "b": {"block":"atum:palm_leaves","properties":{"distance":"2","persistent":"false"}},
+    "c": {"block":"atum:palm_leaves","properties":{"distance":"1","persistent":"false"}},
+    "d": {"block":"atum:palm_leaves","properties":{"distance":"4","persistent":"false"}},
+    "e": {"block":"atum:palm_leaves","properties":{"distance":"3","persistent":"false"}}
+  },
+  "shape": [
+    [
+      "       ",
+      "       ",
+      "   d   ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "       ",
+      "   b   ",
+      "   e   ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "       ",
+      "  bcb  ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "   c   ",
+      " bcacb ",
+      "de a ed",
+      "   a   ",
+      "   a   ",
+      "   a   ",
+      "   a   ",
+      "   a   "
+    ],
+    [
+      "       ",
+      "  bcb  ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "       ",
+      "   b   ",
+      "   e   ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "       ",
+      "       ",
+      "   d   ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ]
+  ]
+}

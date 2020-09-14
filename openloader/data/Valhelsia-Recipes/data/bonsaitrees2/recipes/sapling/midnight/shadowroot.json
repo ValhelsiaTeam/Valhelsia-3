@@ -1,0 +1,44 @@
+{
+  "type": "bonsaitrees2:sapling",
+  
+  "sapling": {
+    "item": "midnight:shadowroot_sapling"
+  },
+
+  "drops": [
+    {
+      "result": {
+        "item": "midnight:dark_stick"
+      },
+      "rolls": 2,
+      "chance": 0.2
+    },
+
+    {
+      "result": {
+        "item": "midnight:shadowroot_log"
+      },
+      "rolls": 1,
+      "chance": 0.75
+    },
+
+    {
+      "result": {
+        "item": "midnight:shadowroot_leaves"
+      },
+      "rolls": 1,
+      "chance": 0.1
+    },
+
+    {
+      "result": {
+        "item": "midnight:shadowroot_sapling"
+      },
+      "rolls": 1,
+      "chance": 0.05
+    }
+  ],
+
+  "compatibleSoilTags": ["dirt", "grass"]
+}
+

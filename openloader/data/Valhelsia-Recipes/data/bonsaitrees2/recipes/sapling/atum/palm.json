@@ -1,0 +1,41 @@
+{
+  "type": "bonsaitrees2:sapling",
+  "sapling": {
+    "item": "atum:palm_sapling"
+  },
+  "drops": [
+    {
+      "result": {
+        "item": "atum:palm_stick"
+      },
+      "rolls": 3,
+      "chance": 0.2
+    },
+
+    {
+      "result": {
+        "item": "atum:palm_log"
+      },
+      "rolls": 1,
+      "chance": 0.75
+    },
+
+    {
+      "result": {
+        "item": "atum:palm_leaves"
+      },
+      "rolls": 1,
+      "chance": 0.1
+    },
+
+    {
+      "result": {
+        "item": "atum:palm_sapling"
+      },
+      "rolls": 1,
+      "chance": 0.05
+    }
+  ],
+
+  "compatibleSoilTags": ["dirt", "grass"]
+}

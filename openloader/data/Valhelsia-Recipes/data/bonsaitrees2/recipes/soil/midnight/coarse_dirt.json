@@ -1,0 +1,16 @@
+{
+  "type": "bonsaitrees2:soil",
+  "mod": "midnight",
+
+  "soil": {
+    "item": "midnight:coarse_dirt"
+  },
+
+  "display": {
+    "block": "midnight:coarse_dirt"
+  },
+
+  "tickModifier": 1.2,
+
+  "compatibleSoilTags": ["dirt"]
+}

@@ -1,0 +1,51 @@
+{
+  "availability": {
+    "tier": 3,
+    "visible": true,
+    "gear_blacklist": [],
+	"can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "tag": "forge:ingots/elementium"
+    }
+  },
+  "name": {
+    "text": "Elementium"
+  },
+  "stats": {
+    "main": {
+      "durability": 720.0,
+      "armor_durability": 18.0,
+      "enchantability": 20.0,
+      "harvest_level": 3.0,
+      "harvest_speed": 6.2,
+      "melee_damage": 2.0,
+      "magic_damage": 3.0,
+      "attack_speed": 0.0,
+      "armor": 15.0,
+      "armor_toughness": 0.0,
+      "magic_armor": 10.0,
+      "ranged_damage": 3.0,
+      "ranged_speed": 0.2,
+      "rarity": 38.0,
+	  "silentgems:chargeability": 0.8
+    }
+  },
+  "traits": {
+    "main": [
+      {
+        "name": "silentgear:malleable",
+        "level": 1
+      },
+       {
+        "name": "silentgear:magmatic",
+        "level": 1
+      },
+       {
+        "name": "silentgear:stellar",
+        "level": 2
+      }
+    ]
+  }
+}

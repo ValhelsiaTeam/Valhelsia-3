@@ -1,3 +1,98 @@
+# Changelog 2.2.9
+
+**Forge 31.2.36**
+
+### Mod(s) added:
++ None
+
+### Mod(s) removed:
+- None
+
+### Updated:
+- Apotheosis 1.15.2-3.3.4
+- Archer's Paradox 1.15.2-0.6.0b
+- Atum 1.15.2-2.1.6
+- CC: Tweaked 1.15.2-1.92.0
+- Clumps 5.0.2.6
+- CoFH Core 1.15.2-0.6.2b
+- Double Slabs 1.15-2.11.4
+- Engineer's Decor 1.15.2-1.1.3
+- Ensorcellation 1.15.2-0.6.0b
+- Fairy Lights 3.0.10-1.15.2
+- Immersive Engineering 1.15.2-4.0.0-117
+- Light Overlay 4.7.2
+- McJtyLib 1.15-4.1.7
+- MineColonies 0.13.247-ALPHA
+- Mystical World 1.15.2-2.1.2
+- PackMenu 1.15.2-1.2.8
+- Performant 1.15-3.11m
+- Structurize 0.13.64-ALPHA
+- Useful Backpacks 1.15.2-1.10.3.77
+- Xaero's Minimap 20.21.0_1.15.2
+- Xaero's World Map 1.10.3_1.15.2
+- YUNG's Better Mineshafts 1.15.2-1.3.1 
+
+### Change(s):
+- Fix KubeJs recipes.
+- Add first unifaction of the different types of copper.
+- Add Botania recipes from Valhelsia: Origins.
+- Add Immersive Engineering steel recipes from Valhelsia 3.
+- Disable baby creepers and wither skeletons from Mekanism Additions.
+- Adjustment of the generation of mineshafts.
+- Adjustment of the generation of caves (Quark).
+- Merged pull [279](https://github.com/ValhelsiaTeam/Valhelsia/pull/279) - Fixed Silent Gear integration by UgliBiBagli.
+- Merged pull [278](https://github.com/ValhelsiaTeam/Valhelsia/pull/278) - Add Botany Pots recipes by ScottKillen.
+- Merged pull [276](https://github.com/ValhelsiaTeam/Valhelsia/pull/276) - Add Bonsai Trees 2 support for recipes/models by landretk.
+
+-----------------------------------
+
+
+# Changelog 2.2.8
+
+**Updated to Forge 31.2.36**
+
+### Mod(s) added:
++ Macaw's Trapdoors
+
+### Mod(s) removed:
+- CraftTweaker
+
+### Updated:
+- CC: Tweaked 1.15.2-1.91.0
+- Clumps 5.0.2.5
+- Decorative Blocks 1.15.2-1.7
+- Druidcraft 1.15-0.4.31
+- Engineer's Decor 1.15.2-1.1.2
+- Fairy Lights 3.0.8-1.15.2
+- Immersive Engineering 1.15.2-3.2.0-114
+- Inventory HUD+ 1.15.2-3.1.0
+- JEI Integration 1.15.2-3.1.1.2
+- Just Enough Items 1.15.2-6.0.3.15
+- Kiwi 1.15.2-2.8.3
+- KubeJS 2.7.1.15
+- Light Overlay 4.7.1
+- McJtyLib 1.15-4.1.4
+- MineColonies 0.13.171-ALPHA
+- Mystical World 1.15.2-2.1.1
+- Performant 1.15-3.10m
+- RFTools Power 1.15-2.2.1
+- RFTools Utility 1.15-2.1.6
+- Server Tab Info 1.15.2-1.2.8
+- Silent Gear 1.15.2-1.11.3+160
+- U Team Core 1.15.2-3.0.2.169
+- Useful Backpacks 1.15.2-1.10.2.73
+- Xaero's Minimap 20.20.1_1.15.2
+- Xaero's World Map 1.10.1_1.15.2 
+
+### Change(s):
+- Add recipe Oak Chest from Vanilla & change the recipe for Chain from Decorative Blocks.
+- Add the first unification of different steels.
+- Import Recipes Disabled and Tags from CraftTweaker to KubeJs.
+- Disable "Crevices", "Mega Caves", "Big Stone Clusters" & Decreased the rate of "Speleothems" from Quark.
+- Small adjustment Inventory HUD+.
+
+-----------------------------------
+
 # Changelog 2.2.7
 
 ![100% center](https://zupimages.net/up/20/17/mfyp.png)

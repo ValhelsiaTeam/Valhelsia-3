@@ -6,3 +6,10 @@
 
 ### Menu Music
 * Rush Garcia (@Tit0Rush) - "Endless - A Minecraft Orchestration"
+
+### Contributors
+Thank you to these wonderful contributors for submitting improvements!
+* @landretk - Bonsai Trees Data Pack Additions + TerraForged Data Pack.
+* @ScottKillen - Botany Pots Data Pack Additions
+* @UgliBiBagli - Silent Gear Data Pack Additions.
+* @ZarikTH - Simple Farming Berry Bush support for Botany Pots.

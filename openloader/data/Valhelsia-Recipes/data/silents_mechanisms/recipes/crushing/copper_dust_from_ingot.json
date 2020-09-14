@@ -1,0 +1,12 @@
+{
+  "type": "silents_mechanisms:crushing",
+  "process_time": 200,
+  "ingredient": {
+    "tag": "forge:ingots/copper"
+  },
+  "results": [
+    {
+      "item": "mekanism:dust_copper"
+    }
+  ]
+}

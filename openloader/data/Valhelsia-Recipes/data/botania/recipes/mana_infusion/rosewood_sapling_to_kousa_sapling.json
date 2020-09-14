@@ -1,0 +1,14 @@
+{
+    "type": "botania:mana_infusion",
+    "input": {
+      "item": "atmospheric:rosewood_sapling"
+    },
+    "output": {
+      "item": "atmospheric:kousa_sapling"
+    },
+    "mana": 120,
+    "group": "botania:sapling_cycle",
+    "catalyst": {
+      "name": "botania:alchemy_catalyst"
+    }
+  }
