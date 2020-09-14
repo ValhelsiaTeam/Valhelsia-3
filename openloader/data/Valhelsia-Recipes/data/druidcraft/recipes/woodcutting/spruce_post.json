@@ -1,8 +1,8 @@
 {
-    "type": "druidcraft:woodcutting",
-    "ingredient": {
-      "item":"minecraft:spruce_log"
-    },
-    "result": "valhelsia_structures:spruce_post",
-    "count": 2
-  }
+  "type": "druidcraft:woodcutting",
+  "ingredient": {
+    "item":"minecraft:spruce_log"
+  },
+  "result": "valhelsia_structures:spruce_post",
+  "count": 2
+}

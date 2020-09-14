@@ -1,8 +1,8 @@
 {
-    "type": "druidcraft:woodcutting",
-    "ingredient": {
-      "item":"minecraft:spruce_planks"
-    },
-    "result": "decorative_blocks:spruce_seat",
-    "count": 1
-  }
+  "type": "druidcraft:woodcutting",
+  "ingredient": {
+    "item":"minecraft:spruce_planks"
+  },
+  "result": "decorative_blocks:spruce_seat",
+  "count": 1
+}

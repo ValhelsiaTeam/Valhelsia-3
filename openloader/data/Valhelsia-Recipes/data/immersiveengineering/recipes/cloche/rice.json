@@ -1,0 +1,21 @@
+{
+    "type": "immersiveengineering:cloche",
+    "results": [
+      {
+        "item": "swampexpansion:rice",
+        "count": 2
+      }
+    ],
+    "input": {
+      "item": "swampexpansion:rice"
+    },
+    "soil": {
+      "item": "minecraft:dirt"
+    },
+    "time": 560,
+    "render": {
+      "type": "crop",
+      "block": "swampexpansion:rice"
+    }
+  }
+  

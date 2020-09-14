@@ -1,8 +1,8 @@
 {
-    "type": "druidcraft:woodcutting",
-    "ingredient": {
-      "item":"minecraft:dark_oak_log"
-    },
-    "result": "valhelsia_structures:dark_oak_post",
-    "count": 2
-  }
+  "type": "druidcraft:woodcutting",
+  "ingredient": {
+    "item":"minecraft:dark_oak_log"
+  },
+  "result": "valhelsia_structures:dark_oak_post",
+  "count": 2
+}

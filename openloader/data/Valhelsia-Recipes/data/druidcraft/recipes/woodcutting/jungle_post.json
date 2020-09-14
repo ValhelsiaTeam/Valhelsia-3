@@ -1,8 +1,8 @@
 {
-    "type": "druidcraft:woodcutting",
-    "ingredient": {
-      "item":"minecraft:jungle_log"
-    },
-    "result": "valhelsia_structures:jungle_post",
-    "count": 2
-  }
+  "type": "druidcraft:woodcutting",
+  "ingredient": {
+    "item":"minecraft:jungle_log"
+  },
+  "result": "valhelsia_structures:jungle_post",
+  "count": 2
+}

@@ -1,0 +1,14 @@
+{
+    "type": "create:splashing",
+    "ingredients": [
+    	{
+    		"item": "upgrade_aquatic:stripped_river_wood"
+    	}
+    ], 
+	"results": [
+		{
+			"item": "upgrade_aquatic:driftwood_stripped",
+			"count": 1
+		}
+	]
+}

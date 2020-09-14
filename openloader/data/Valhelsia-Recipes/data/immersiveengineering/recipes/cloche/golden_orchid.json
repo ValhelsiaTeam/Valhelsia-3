@@ -15,7 +15,7 @@
   "soil": {
     "item": "minecraft:dirt"
   },
-  "time": 640,
+  "time": 800,
   "render": {
     "type": "crop",
     "block": "forbidden_arcanus:golden_orchid"
