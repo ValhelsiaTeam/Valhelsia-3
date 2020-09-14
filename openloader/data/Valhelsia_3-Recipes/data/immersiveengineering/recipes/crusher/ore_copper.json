@@ -4,7 +4,7 @@
     {
       "chance": 0.1,
       "output": {
-        "tag": "forge:dusts/gold"
+        "item": "mekanism:dust_gold"
       },
       "conditions": [
         {
