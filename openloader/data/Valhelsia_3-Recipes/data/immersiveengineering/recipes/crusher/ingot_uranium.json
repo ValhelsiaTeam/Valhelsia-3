@@ -1,0 +1,11 @@
+{
+  "type": "immersiveengineering:crusher",
+  "secondaries": [],
+  "result": {
+    "item": "mekanism:dust_uranium"
+  },
+  "input": {
+    "tag": "forge:ingots/uranium"
+  },
+  "energy": 3000
+}
