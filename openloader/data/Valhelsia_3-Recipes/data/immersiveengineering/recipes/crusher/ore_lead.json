@@ -4,12 +4,12 @@
     {
       "chance": 0.1,
       "output": {
-        "item": "mekanism:dust_lead"
+        "tag": "forge:dusts/silver"
       },
       "conditions": [
         {
           "value": {
-            "tag": "forge:dusts/lead",
+            "tag": "forge:dusts/silver",
             "type": "forge:tag_empty"
           },
           "type": "forge:not"
@@ -20,11 +20,11 @@
   "result": {
     "count": 2,
     "base_ingredient": {
-      "item": "mekanism:dust_uranium"
+      "item": "mekanism:dust_lead"
     }
   },
   "input": {
-    "tag": "forge:ores/uranium"
+    "tag": "forge:ores/lead"
   },
   "energy": 6000
 }

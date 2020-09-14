@@ -1,0 +1,14 @@
+{
+  "type": "immersiveengineering:arc_furnace",
+  "results": [
+    {
+      "item": "mekanism:ingot_lead"
+    }
+  ],
+  "additives": [],
+  "input": {
+    "tag": "forge:dusts/lead"
+  },
+  "time": 100,
+  "energy": 51200
+}
