@@ -1,3 +1,33 @@
+# Changelog 3.0.17
+
+**Forge 32.0.108**
+
+### Mod(s) added:
++ Fishing Real
++ Neon Craft Mod
++ Transport 
+
+### Mod(s) removed:
+- MixinBootstrap
+
+### Updated:
+- Farmer's Delight 1.16.1-0.2.2a
+- MineColonies 0.13.258-ALPHA
+- Refined Storage 1.9.2b
+- Server Tab Info 1.16.1-1.3.2
+
+### Change(s):
+- Add Fishing Real compatibility.
+- Adjustment of the generation of caves (Quark).
+- Unifaction of the different types of copper.
+- Unifaction of the different types of uranium.
+- Unifaction of the different types of lead.
+- Unifaction of the different types of iron.
+- Unifaction of the different types of gold.
+- Datapacks improvement.
+
+-----------------------------------
+
 # Changelog 3.0.16
 
 **Forge 32.0.108**
