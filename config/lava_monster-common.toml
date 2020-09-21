@@ -10,7 +10,7 @@
 	#Allows you to add to the biomes the Lava Monster can spawn in, this does not change the existing biomes, only adds extra ones. Separate with commas. (By default, the Lava Monster will spawn in biomes tagged as nether or overworld.)
 	extraBiomes = "good_nights_sleep:nightmare"
 	#The number of ticks between each lava monster spawn attempt.
-	spawnFrequency = 10
+	spawnFrequency = 100
 	#If true, lava monsters will not spawn above layer 16.
 	depthHazard = true
 	#The amount of armor lava monsters have.
