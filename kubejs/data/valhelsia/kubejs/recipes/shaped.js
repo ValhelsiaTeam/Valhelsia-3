@@ -6,7 +6,7 @@ events.listen('recipes', function (event) {
     'A A',
     'AAA'
   ], {
-    A: 'minecraft:oak_planks'
+    A: '#minecraft:planks'
   })
   event.shaped(item.of('minecraft:chainmail_helmet', 1), [
     'AAA',
