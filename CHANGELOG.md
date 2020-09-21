@@ -1,3 +1,31 @@
+# Changelog 3.0.18
+
+**Forge 32.0.108**
+
+### Mod(s) added:
++ Neapolitan
++ Netherite Horse Armor Mod
+
+### Mod(s) removed:
+- Pam's HarvestCraft 2 - Food Core
+
+### Updated:
+- Aquaculture 2 1.16.1-2.0.20
+- Biomes O' Plenty 1.16.1-11.0.0.396
+- Engineer's Decor 1.16.1-1.1.5
+- Immersive Engineering 1.16.1-4.0.1-120
+
+### Change(s):
+- Add recipe oak chest for all planks. 
+- Add recipe fix for Treated Wood Horizontal form IE. 
+- Add compatibility with IE Garden Cloche and Neapolitan mod.
+- Delete duplicate recipes from the datapack (IE compatibility Farmer's Delight).
+- Disable the spawn above layer 16 of Lava monsters.
+- Increase the number of ticks between each Lava monster spawn attempt. 
+- Small adjustment of spawn chance for the different ores, disable diamond in mineshafts.
+
+-----------------------------------
+
 # Changelog 3.0.17
 
 **Forge 32.0.108**
