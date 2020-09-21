@@ -51,4 +51,14 @@ events.listen('recipes', function (event) {
   ], {
     A: 'mekanism:ingot_uranium'
   })
+
+  //Powah
+  event.shaped(item.of('immersiveengineering:treated_wood_horizontal', 8), [
+    'AAA',
+    'ABA',
+    'AAA'
+  ], {
+    A: '#minecraft:planks',
+    B: 'immersiveengineering:creosote_bucket'
+  })
 })
