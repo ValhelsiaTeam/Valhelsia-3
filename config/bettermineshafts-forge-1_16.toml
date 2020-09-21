@@ -36,7 +36,7 @@
 		# Chance of an ore deposit containing emerald.
 		# Default: 3
 		#Range: 0 ~ 100
-		"Emerald Spawn Chance" = 3
+		"Emerald Spawn Chance" = 2
 		# Chance of an ore deposit being cobblestone only.
 		# Default: 50
 		#Range: 0 ~ 100
@@ -44,15 +44,15 @@
 		# Chance of an ore deposit containing iron.
 		# Default: 9
 		#Range: 0 ~ 100
-		"Iron Spawn Chance" = 9
+		"Iron Spawn Chance" = 8
 		# Chance of an ore deposit containing gold.
 		# Default: 7
 		#Range: 0 ~ 100
-		"Gold Spawn Chance" = 7
+		"Gold Spawn Chance" = 6
 		# Chance of an ore deposit containing diamond.
 		# Default: 1
 		#Range: 0 ~ 100
-		"Diamond Spawn Chance" = 1
+		"Diamond Spawn Chance" = 0
 		"Enable Ore Deposits" = true
 		# Chance of an ore deposit containing lapis lazuli.
 		# Default: 3
@@ -61,8 +61,9 @@
 		# Chance of an ore deposit containing coal.
 		# Default: 20
 		#Range: 0 ~ 100
-		"Coal Spawn Chance" = 20
+		"Coal Spawn Chance" = 25
 		# Chance of an ore deposit containing redstone.
 		# Default: 7
 		#Range: 0 ~ 100
-		"Redstone Spawn Chance" = 7
+		"Redstone Spawn Chance" = 6
+
