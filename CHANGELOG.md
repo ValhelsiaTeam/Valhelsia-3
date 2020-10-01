@@ -1,3 +1,30 @@
+# Changelog 3.0.19
+
+**Forge 32.0.108**
+
+### Mod(s) added:
++ None
+
+### Mod(s) removed:
+- NethetPortalFix
+
+### Updated:
+- Abnormals Core 1.16.1-2.0.4
+- Bookshelf 1.16.1-6.3.21?
+- Buzzier Bees 1.16.1-v2.1.0
+- Farmer's Delight 1.16.1-0.2.3
+- iChunUtil 1.16.1-9.0.1
+- Inventory HUD+ 1.16.x.forge-3.1.1
+- Neapolitan 1.16.1-v1.1.0
+- Quark r2.2-264
+- Savage & Ravage 1.16.1-2.1.1
+- Server Tab Info 1.16.1-1.3.3
+
+### Change(s):
+- None
+
+-----------------------------------
+
 # Changelog 3.0.18
 
 **Forge 32.0.108**
