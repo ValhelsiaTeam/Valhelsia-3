@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="https://discordapp.com/invite/reQZEXu">
+  <a href="https://discord.gg/rdfQuaM">
     <img src="https://img.shields.io/discord/396333981601234944?color=1b1b1b&label=Discord&logo=Discord&style=plastic">
   </a>
   <a href="https://twitter.com/valhelsia">
