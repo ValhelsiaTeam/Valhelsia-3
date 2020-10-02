@@ -1,3 +1,48 @@
+# Changelog 2.2.10
+
+**Forge 31.2.36**
+
+### Mod(s) added:
++ Neon Craft Mod
+
+### Mod(s) removed:
+- NetherPortalFix
+
+### Updated:
+- Absent by Design 1.15.2-1.1.1
+- Apotheosis 1.15.2-3.3.7
+- Aquaculture 2 1.15.2-2.0.20
+- Archer's Paradox 1.15.2-0.7.0b
+- Atum 2: Return to the Sands 1.15.2-2.1.8
+- CoFH Core 1.15.2-0.7.0b 
+- Create 1.15.2_v0.2.4e
+- Double Slabs 1.15-2.11.8
+- Ensorcellation 1.15.2-0.7.0b
+- Fairy Lights 3.0.11-1.15.2
+- Immersive Engineering 1.15.2-4.0.1-119
+- Inventory HUD+ 1.15.2.forge-3.1.1
+- JAOPCA 1.15.2-3.2.0.15
+- Kiwi 1.15.2-2.8.4
+- McJtyLib 1.15-4.1.10
+- MineColonies 0.13.291-ALPHA
+- Miner's Helmet 1.15.2-1.0.9
+- MixinBootstrap 1.0.4
+- Mystical World 1.15.2-2.1.3
+- Psi r1.2-84
+- RFTools Base 1.15-1.1.7
+- RFTools Builder 1.15-2.1.11
+- RFTools Control 1.15-3.0.8
+- RFTools Power 1.15-2.2.5
+- RFTools Storage 1.15-1.1.10
+- RFTools Utility 1.15-2.1.10
+- Structurize 0.13.86-ALPHA
+- XNet 1.15-2.1.11 
+
+### Change(s):
+- None
+
+-----------------------------------
+
 # Changelog 2.2.9
 
 **Forge 31.2.36**
