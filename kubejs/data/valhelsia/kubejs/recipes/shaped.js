@@ -61,4 +61,15 @@ events.listen('recipes', function (event) {
     A: '#minecraft:planks',
     B: 'immersiveengineering:creosote_bucket'
   })
+
+  //Quark
+  event.shaped(item.of('quark:ravager_hide', 1), [
+    'ABA',
+    'BCB',
+    'ABA'
+  ], {
+    A: 'minecraft:rabbit_hide',
+    B: 'forbidden_arcanus:rotten_leather',
+    C: 'minecraft:leather'
+  })
 })
