@@ -70,6 +70,6 @@ events.listen('recipes', function (event) {
   ], {
     A: 'minecraft:rabbit_hide',
     B: 'forbidden_arcanus:rotten_leather',
-    C: 'minecraft:leather'
+    C: 'quark:bonded_leather'
   })
 })
