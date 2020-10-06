@@ -1,3 +1,26 @@
+# Changelog 3.0.20
+
+**Forge 32.0.108**
+
+### Mod(s) added:
++ None
+
+### Mod(s) removed:
+- None
+
+### Updated:
+- Abnormals Core 1.16.1-2.0.5
+- Immersive Engineering 1.16.1-4.1.0-123
+- Inventory HUD+ 1.16.x.forge-3.1.3
+- Macaw's Doors 1.0.1fix-mc1.16.1
+- Quark r2.3-265
+
+### Change(s):
+- Add a recipe for the Ravager Hide, to make the backpack recipe easier.
+- Update of the Discord button on the menu.
+
+-----------------------------------
+
 # Changelog 3.0.19
 
 **Forge 32.0.108**
