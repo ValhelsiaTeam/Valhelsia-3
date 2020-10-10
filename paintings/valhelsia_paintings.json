@@ -18,5 +18,14 @@
 		}, {
 			"name" : "trail", 
 			"square" : 32
+		},
+		{
+		  "name": "bee",
+		  "x": 32,
+		  "y": 16
+		},
+		{
+		  "name": "creeper_face",
+		  "square": 16
 		}]
 }
