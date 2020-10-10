@@ -52,7 +52,7 @@
 	#Enable fast inventory advancement triggers, many advancements based on items tend to lag the players, default = true
 	fastInventoryAdvancement = true
 	#Enable faster pathfinding, default = true
-	fastPathFinding = true
+	fastPathFinding = false
 
 ["Entity AI Settings"]
 	#Sets the tick interval in which non-running AI tasks are rechecked. Vanilla default is 1(starting with 1.13+), this mods suggested default is 4(as it was in 1.12)
