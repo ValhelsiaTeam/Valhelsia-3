@@ -1,6 +1,10 @@
 ------------------------------
 
 <p align="center">
+  <img width="900" height="250" src="https://zupimages.net/up/20/29/31vt.png">
+</p>
+
+<p align="center">
   <img width="200" height="200" src="https://zupimages.net/up/20/26/ej8h.png">
 </p>
 
