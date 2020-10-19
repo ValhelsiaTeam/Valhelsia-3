@@ -1,7 +1,11 @@
-------------------------------
+<p align="center">
+  <a href="https://www.curseforge.com/minecraft/modpacks/valhelsia-2">
+    <img border="0" alt="CurseForge" src="https://zupimages.net/up/20/29/gzlv.png">
+  </a>
+</p>
 
 <p align="center">
-  <img width="200" height="200" src="https://zupimages.net/up/20/26/ej8h.png">
+<strong>Valhelsia 2</strong> is a modpack assembled in 1.15.2. This one includes many of the most popular classic mods to ensure that veteran modded players feel right at home, and   we also include many amazing new mods to discover, keeping the pack fresh and full of new experiences just waiting to happen.
 </p>
 
 <p align="center">
@@ -12,17 +16,24 @@
     <img src="https://img.shields.io/twitter/follow/valhelsia?color=1b1b1b&label=Twitter&logo=twitter&style=plastic">
   </a>
 </p>
-
-**Valhelsia** is a modpack with a mix of tech, magic, exploration and adventure...
+<p align="center">
+  <strong>We no longer provide support on GitHub, please come directly to our discord server.</strong>
+</p>
 
 ------------------------------
 
-**If you're interested in hosting a server with Valhelsia, click the image below!**                                           
-[![partner](https://zupimages.net/up/20/20/zp4u.png)](https://bisecthosting.com/Valhelsia)
+<p align="center">
+  <strong>If you're interested in hosting a server with Valhelsia, click the image below!</strong>
+</p>
 
-Valhelsia Team partnered with BisectHosting!                                                                                                                                                     
+<p align="center">
+  <a href="https://bisecthosting.com/Valhelsia">
+    <img border="0" alt="BisectHosting" src="https://zupimages.net/up/20/20/zp4u.png">
+  </a>
+</p>                                                                                                                                             
 
+<p align="center">
 BisectHosting offers a quick, simple and quality solution. After your purchase, the server is already configured and ready to use.                 
-Use the code "**Valhelsia**" to get **25%** off your first month as a new client for any of their gaming servers.                                                                         
-This modpack is recommended to have **at least 5GB** to run smoothly with 5-7 players.
-
+Use the code "<strong>Valhelsia</strong>" to get <strong>25%</strong> off your first month as a new client for any of their gaming servers.                                                                         
+This modpack is recommended to have <strong>at least 5GB</strong> to run smoothly with 5-7 players.
+</p>
