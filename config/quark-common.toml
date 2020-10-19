@@ -86,6 +86,7 @@
 
 [building]
 	"Duskbound Blocks" = true
+	"Bamboo Mat" = true
 	"Cobblestone Bricks" = true
 	"More Brick Types" = true
 	"Gold Bars" = true
@@ -104,9 +105,10 @@
 	"Lit Lamp" = true
 	"Vertical Planks" = true
 	Midori = true
+	"Tie Leads To Fences" = true
+	"Shallow Dirt" = true
 	"More Stone Variants" = true
 	"Framed Glass" = true
-	"Fairy Rings" = true
 	"Tallow And Candles" = true
 	Turf = true
 	"Paper Decor" = true
@@ -169,15 +171,6 @@
 		"Enable Snow Bricks" = true
 		#This also includes Red Sandstone Bricks and Soul Sandstone Bricks
 		"Enable Sandstone Bricks" = true
-
-	[building.fairy_rings]
-		"Forest Chance" = 0.00625
-		Ores = ["minecraft:emerald_ore", "minecraft:diamond_ore"]
-		"Plains Chance" = 0.0025
-
-		[building.fairy_rings.dimensions]
-			Dimensions = ["minecraft:overworld"]
-			"Is Blacklist" = false
 
 	[building.tallow_and_candles]
 		"Candles Fall" = true
@@ -298,6 +291,7 @@
 	"Poison Potato Usage" = true
 	"Improved Sleeping" = true
 	"Springy Slime" = true
+	"Infinity Bucket" = true
 	Emotes = true
 	"Utility Recipes" = true
 	"Pat The Dogs" = true
@@ -307,7 +301,7 @@
 	"Campfires Boost Elytra" = true
 
 	[tweaks.sign_editing]
-		"Requires Empty Hand" = false
+		"Requires Empty Hand" = true
 
 	[tweaks.pat_the_dogs]
 		#How many ticks it takes for a dog to want affection after being pet/tamed; leave -1 to disable
@@ -321,6 +315,11 @@
 
 	[tweaks.hoe_harvesting]
 		"Hoes Can Have Fortune" = true
+
+	[tweaks.infinity_bucket]
+		#Set this to false to prevent dispensers from using infinite water buckets
+		"Allow Dispensers To Use" = true
+		Cost = 10
 
 	[tweaks.poison_potato_usage]
 		"Poison Effect" = true
@@ -419,6 +418,7 @@
 	"Underground Clay" = true
 	"Slime Underground Biome" = true
 	"Spider Nest Underground Biome" = true
+	"Fairy Rings" = true
 	Crevices = false
 	"Monster Box" = true
 	"Nether Obsidian Spikes" = true
@@ -439,6 +439,8 @@
 			"Is Blacklist" = false
 
 	[world.big_stone_clusters]
+		#Blocks that stone clusters can replace. If you want to make it so it only replaces in one dimension,
+		#do "block|dimension", as we do for netherrack and end stone by default.
 		"Blocks To Replace" = ["minecraft:stone", "minecraft:andesite", "minecraft:diorite", "minecraft:granite", "minecraft:netherrack", "minecraft:end_stone", "quark:marble", "quark:limestone", "quark:jasper", "quark:slate", "quark:basalt"]
 
 		[world.big_stone_clusters.marble]
@@ -932,6 +934,15 @@
 				"Biome Types" = ["SWAMP"]
 				"Is Blacklist" = false
 
+	[world.fairy_rings]
+		"Forest Chance" = 0.00625
+		Ores = ["minecraft:emerald_ore", "minecraft:diamond_ore"]
+		"Plains Chance" = 0.0025
+
+		[world.fairy_rings.dimensions]
+			Dimensions = ["minecraft:overworld"]
+			"Is Blacklist" = false
+
 	[world.underground_clay]
 
 		[world.underground_clay.dimensions]
@@ -1076,6 +1087,15 @@
 	[mobs.crabs]
 		"Enable Brewing" = true
 
+		[mobs.crabs.spawn_config]
+			"Spawn Weight" = 5
+			"Min Group Size" = 1
+			"Max Group Size" = 3
+
+			[mobs.crabs.spawn_config.biomes]
+				"Biome Types" = ["BEACH"]
+				"Is Blacklist" = false
+
 	[mobs.foxhound]
 		#The chance coal will tame a foxhound
 		"Tame Chance" = 0.05
@@ -1086,7 +1106,7 @@
 			"Max Group Size" = 2
 
 			[mobs.foxhound.spawn_config.biomes]
-				"Biome Types" = ["NETHER"]
+				Biomes = ["minecraft:nether_wastes", "minecraft:basalt_deltas", "minecraft:soul_sand_valley"]
 				"Is Blacklist" = false
 
 	[mobs.frogs]
@@ -1258,4 +1278,3 @@
 		#That's a lot to take in, so here's an example. This would be for the default config of the Slime underground biome. (Spaces are allowed.)
 		#minecraft:overworld; false; SWAMP; false; 120; 10..40; 26,14; 14,6; minecraft:water@915, minecraft:slime_block@85; minecraft:green_terracotta@2, minecraft:lime_terracotta@3, minecraft:light_blue_terracotta@1; CEILING; false
 		"Biome Definitions" = []
-
