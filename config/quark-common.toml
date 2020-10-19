@@ -405,7 +405,7 @@
 	"Big Dungeon" = true
 	Speleothems = true
 	Biotite = true
-	"Big Stone Clusters" = false
+	"Big Stone Clusters" = true
 	"Elder Prismarine Underground Biome" = true
 	"Brimstone Underground Biome" = true
 	"Blossom Trees" = true
@@ -448,7 +448,7 @@
 			Rarity = 4
 			"Min Y Level" = 20
 			"Horizontal Variation" = 9
-			Enabled = true
+			Enabled = false
 			"Max Y Level" = 80
 			"Vertical Size" = 14
 			"Vertical Variation" = 9
@@ -466,7 +466,7 @@
 			Rarity = 4
 			"Min Y Level" = 20
 			"Horizontal Variation" = 9
-			Enabled = true
+			Enabled = false
 			"Max Y Level" = 80
 			"Vertical Size" = 14
 			"Vertical Variation" = 9
@@ -484,7 +484,7 @@
 			Rarity = 4
 			"Min Y Level" = 20
 			"Horizontal Variation" = 9
-			Enabled = true
+			Enabled = false
 			"Max Y Level" = 80
 			"Vertical Size" = 14
 			"Vertical Variation" = 9
@@ -502,7 +502,7 @@
 			Rarity = 20
 			"Min Y Level" = 0
 			"Horizontal Variation" = 6
-			Enabled = true
+			Enabled = false
 			"Max Y Level" = 40
 			"Vertical Size" = 19
 			"Vertical Variation" = 6
@@ -520,7 +520,7 @@
 			Rarity = 4
 			"Min Y Level" = 20
 			"Horizontal Variation" = 9
-			Enabled = true
+			Enabled = false
 			"Max Y Level" = 80
 			"Vertical Size" = 14
 			"Vertical Variation" = 9
@@ -538,7 +538,7 @@
 			Rarity = 4
 			"Min Y Level" = 20
 			"Horizontal Variation" = 9
-			Enabled = true
+			Enabled = false
 			"Max Y Level" = 80
 			"Vertical Size" = 14
 			"Vertical Variation" = 9
@@ -556,7 +556,7 @@
 			Rarity = 4
 			"Min Y Level" = 20
 			"Horizontal Variation" = 9
-			Enabled = true
+			Enabled = false
 			"Max Y Level" = 80
 			"Vertical Size" = 14
 			"Vertical Variation" = 9
@@ -574,7 +574,7 @@
 			Rarity = 4
 			"Min Y Level" = 20
 			"Horizontal Variation" = 9
-			Enabled = true
+			Enabled = false
 			"Max Y Level" = 80
 			"Vertical Size" = 14
 			"Vertical Variation" = 9
@@ -1278,3 +1278,4 @@
 		#That's a lot to take in, so here's an example. This would be for the default config of the Slime underground biome. (Spaces are allowed.)
 		#minecraft:overworld; false; SWAMP; false; 120; 10..40; 26,14; 14,6; minecraft:water@915, minecraft:slime_block@85; minecraft:green_terracotta@2, minecraft:lime_terracotta@3, minecraft:light_blue_terracotta@1; CEILING; false
 		"Biome Definitions" = []
+
