@@ -1,7 +1,11 @@
-------------------------------
+<p align="center">
+  <a href="https://www.curseforge.com/minecraft/modpacks/valhelsia-3">
+    <img border="0" alt="CurseForge" src="https://zupimages.net/up/20/29/31vt.png">
+  </a>
+</p>
 
 <p align="center">
-  <img width="900" height="250" src="https://zupimages.net/up/20/29/31vt.png">
+<strong>Valhelsia 3</strong> is a modpack assembled in 1.16.1. This one includes many of the most popular classic mods to ensure that veteran modded players feel right at home, and   we also include many amazing new mods to discover, keeping the pack fresh and full of new experiences just waiting to happen.
 </p>
 
 <p align="center">
@@ -14,7 +18,7 @@
 </p>
 
 <p align="center">
-<strong>Valhelsia 3</strong> is a modpack assembled in 1.16.1. This one includes many of the most popular classic mods to ensure that veteran modded players feel right at home, and   we also include many amazing new mods to discover, keeping the pack fresh and full of new experiences just waiting to happen.
+  <strong>We no longer provide support on GitHub, please come directly to our discord server.</strong>
 </p>
 
 ------------------------------
@@ -34,4 +38,3 @@ BisectHosting offers a quick, simple and quality solution. After your purchase, 
 Use the code "<strong>Valhelsia</strong>" to get <strong>25%</strong> off your first month as a new client for any of their gaming servers.                                                                         
 This modpack is recommended to have <strong>at least 4GB</strong> to run smoothly with 5-7 players.
 </p>
-
