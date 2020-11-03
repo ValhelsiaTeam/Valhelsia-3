@@ -981,7 +981,7 @@
 				"Cluster Size" = 33
 
 			[world.new_stone_types.voidstone.dimensions]
-				Dimensions = ["minecraft:the_nether"]
+				Dimensions = ["minecraft:the_end"]
 				"Is Blacklist" = false
 
 		[world.new_stone_types.slate]
