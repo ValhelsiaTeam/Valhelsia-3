@@ -29,7 +29,7 @@
 
 <p align="center">
   <a href="https://bisecthosting.com/Valhelsia">
-    <img border="0" alt="BisectHosting" src="https://zupimages.net/up/20/20/zp4u.png">
+    <img border="0" alt="BisectHosting" src="https://zupimages.net/up/20/45/qo6j.png" width="900" height="164">
   </a>
 </p>                                                                                                                                             
 
