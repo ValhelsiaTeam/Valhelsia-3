@@ -6,7 +6,7 @@
 	#Should pets be protected from damage dealt by other pets with the same owner?
 	protectPetsFromOtherPets = true
 	#Should children mobs be protected from damage?
-	protectChildren = true
+	protectChildren = false
 	#Should damage against friendly mobs be reflected back on the damage dealer?
 	reflectDamage = false
 
