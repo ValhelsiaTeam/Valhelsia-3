@@ -1420,7 +1420,7 @@
 			"Max Group Size" = 2
 
 			[mobs.foxhound.spawn_config.biomes]
-				Biomes = ["minecraft:nether_wastes", "minecraft:basalt_deltas", "minecraft:soul_sand_valley"]
+				Biomes = ["minecraft:nether_wastes", "minecraft:basalt_deltas"]
 				"Is Blacklist" = false
 
 	[mobs.frogs]
