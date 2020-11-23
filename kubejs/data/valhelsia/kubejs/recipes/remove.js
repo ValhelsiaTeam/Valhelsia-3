@@ -1,9 +1,6 @@
 events.listen('recipes', function (event) {
 
   var idRemove = [
-    //Minecraft
-    'minecraft:chain',
-
     //Decorative Blocks
     'decorative_blocks:chain',
 
@@ -57,7 +54,7 @@ events.listen('recipes', function (event) {
     'mekanismtools:steel_helmet',
     'mekanismtools:steel_chestplate',
     'mekanismtools:steel_leggings',
-    'mekanismtools:steel_boots'
+    'mekanismtools:steel_boots',
   ]
   outputRemove.forEach(function (remove) {
     event.remove({output: remove})
