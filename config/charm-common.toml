@@ -1,0 +1,348 @@
+#Removes minimum and maximum XP costs on the anvil. Anvils are also less likely to break.
+"AnvilImprovements enabled" = false
+#Lightweight armor is invisible and does not increase mob awareness when drinking Potion of Invisibility.
+"ArmorInvisibility enabled" = true
+#Unlocks all vanilla recipes.
+"AutomaticRecipeUnlock enabled" = true
+#Right-click a bat with a bucket to capture it. Right-click again to release it and locate entities around you.
+"BatBuckets enabled" = true
+#Passive and friendly mobs will heal themselves within range of a beacon with the regeneration effect.
+"BeaconsHealMobs enabled" = true
+#Beekeepers are villagers that trade beekeeping items. Their job site is the beehive.
+"Beekeepers enabled" = true
+#Ender pearl storage. Eating a chorus fruit will teleport you to the nearest ender pearl block.
+"BlockOfEnderPearls enabled" = true
+#A storage block for gunpowder. It obeys gravity and dissolves in lava.
+"BlockOfGunpowder enabled" = true
+#A storage block for sugar. It obeys gravity and dissolves in water.
+"BlockOfSugar enabled" = true
+#Bookshelves that can hold up to 9 stacks of books and maps.
+"Bookcases enabled" = true
+#Campfires no longer damage mobs.
+"CampfiresNoDamage enabled" = false
+#Candles are made from beeswax and have a lower ambient light than torches.
+"Candles enabled" = false
+#Cave spiders have a chance to drop cobwebs.
+"CaveSpidersDropCobwebs enabled" = false
+#Chickens randomly drop feathers.
+"ChickensDropFeathers enabled" = true
+#Coral can be combined with sea lanterns to make colored variants.
+"CoralSeaLanterns enabled" = true
+#Coral Squids spawn near coral in warm oceans.
+"CoralSquids enabled" = true
+#A smaller storage solution with the benefit of being transportable.
+"Crates enabled" = true
+#Combine a tool or armor with a netherite nugget on an anvil to reduce its repair cost.
+"DecreaseRepairCost enabled" = false
+#Right-clicking dirt with a shovel turns it into grass path.
+"DirtToPath enabled" = true
+#Endermites drop endermite powder that can be used to locate an End City.
+"EndermitePowder enabled" = true
+#Extends the lifetime of netherite-based items before they despawn.
+"ExtendNetherite enabled" = true
+#Extract enchantments from any enchanted item into an empty book.
+"ExtractEnchantments enabled" = false
+#A player wearing feather falling enchanted boots will not trample crops.
+"FeatherFallingCrops enabled" = true
+#Glowballs can be thrown to produce a light source where they impact.
+"Glowballs enabled" = false
+#Gold variant of vanilla iron bars.
+"GoldBars enabled" = false
+#Gold version of the vanilla chain.
+"GoldChains enabled" = true
+#Gold version of the vanilla lanterns.
+"GoldLanterns enabled" = true
+#Right-click with a hoe to quickly harvest and replant a fully-grown crop.
+"HoeHarvesting enabled" = true
+#Husks spawn anywhere within their biome and have a chance to drop sand.
+"HuskImprovements enabled" = false
+#Button to automatically tidy inventories.
+"InventoryTidying enabled" = false
+#A functional block that speeds up cooking of clay, bricks and terracotta.
+"Kilns enabled" = true
+#Lumberjacks are villagers that trade wooden items. Their job site is the woodcutter.
+"Lumberjacks enabled" = true
+#Adds decoration and more ores to mineshafts.
+"MineshaftImprovements enabled" = false
+#Villages can spawn in swamps and jungles.
+"MoreVillageBiomes enabled" = true
+#Playing a record in a jukebox stops background music from playing at the same.
+#Creative music tracks may also play in survival mode.
+"MusicImprovements enabled" = true
+#Netherite nuggets can be combined to create a netherite ingot.
+"NetheriteNuggets enabled" = false
+#Parrots stay on your shoulder when jumping and falling. Crouch to make them dismount.
+"ParrotsStayOnShoulder enabled" = true
+#Right-clicking on a grass path block with a hoe turns it back into dirt.
+"PathToDirt enabled" = true
+#Allows crafting from inventory if the player has a crafting table in their inventory.
+"PortableCrafting enabled" = false
+#Allows access to chest contents if the player has an Ender Chest in their inventory.
+"PortableEnderChest enabled" = false
+#A lantern that emits light when a redstone signal is received.
+"RedstoneLanterns enabled" = true
+#A block that acts like sand but is powered like a block of redstone.
+"RedstoneSand enabled" = true
+#Decorative block made by smelting obsidian.
+"RefinedObsidian enabled" = true
+#When any action would cause a villager to become a nitwit, it becomes an unemployed villager instead.
+"RemoveNitwits enabled" = false
+#Removes the potion enchantment glint so you can see what the potion color is.
+"RemovePotionGlint enabled" = false
+#Shows the contents of a Shulker Box on hover-over.
+"ShulkerBoxTooltips enabled" = true
+#Allows the night to pass when a specified number of players are asleep.
+"SleepImprovements enabled" = false
+#Smelt glowstone to get smooth glowstone.
+"SmoothGlowstone enabled" = true
+#Allows enchanted books to stack.
+"StackableEnchantedBooks enabled" = false
+#Allows potions to stack.
+"StackablePotions enabled" = false
+#Strays spawn anywhere within their biome and have a chance to drop blue ice.
+"StrayImprovements enabled" = false
+#Tamed animals do not take direct damage from players.
+"TamedAnimalsNoDamage enabled" = true
+#As long as a Totem of Undying is in your inventory, it will be consumed to protect you from death.
+"UseTotemFromInventory enabled" = false
+#Barrels available in all types of vanilla wood.
+"VariantBarrels enabled" = true
+#Bookshelves available in all types of vanilla wood.
+"VariantBookshelves enabled" = false
+#Chests available in all types of vanilla wood.
+"VariantChests enabled" = false
+#Ladders available in all types of vanilla wood.
+"VariantLadders enabled" = false
+#Mobs may spawn with different textures.
+"VariantMobTextures enabled" = true
+#Villagers are attracted when the player holds a block of emeralds.
+"VillagersFollowEmeraldBlocks enabled" = true
+#Wandering traders only appear near signal campfires and sell maps to biomes and structures.
+"WanderingTraderImprovements enabled" = true
+#A witch has a chance to drop a Potion of Luck when killed by a player.
+"WitchesDropLuck enabled" = true
+#A functional block that adds more efficient recipes for crafting wooden stairs and slabs.
+"Woodcutters enabled" = true
+
+[AnvilImprovements]
+	#If true, removes the maximum cost of 40 XP when working items on the anvil.
+	"Remove Too Expensive" = true
+	#If true, anvils are 50% less likely to take damage when used.
+	"Stronger anvils" = true
+
+[AutomaticRecipeUnlock]
+	#This module is automatically disabled if Quark is present. Set true to force enable.
+	Override = false
+
+[BatBuckets]
+	#Number of seconds that entities will receive the glowing effect.
+	"Glowing time" = 10
+	#Range (in blocks) in which entities will glow.
+	"Viewing range" = 24
+
+[Beekeepers]
+	#This module is automatically disabled if Buzzier Bees is present. Set true to force enable.
+	Override = false
+
+[BlockOfEnderPearls]
+	#A chorus fruit will teleport you to an ender pearl block within this range (in blocks).
+	"Chorus teleport range" = 8
+	#If true, a silverfish has a chance to be converted into an endermite when it is next to an ender pearl block.
+	"Convert silverfish to endermite" = true
+	#If true, eating a chorus fruit while in range of an ender pearl block will teleport you to it.
+	"Chorus fruit teleport" = true
+
+[Bookcases]
+	#Additional items that may be placed in bookcases.
+	"Valid books" = []
+
+[CampfiresNoDamage]
+	#If true, soul campfires will still cause damage to mobs.
+	"Soul campfires cause damage" = true
+
+[Candles]
+	#If true, candles will be lit when placed rather than needing a flint and steel.
+	"Lit when placed" = false
+	#The amount of light (out of 15) that a lit candle will provide.
+	"Light level" = 9
+	#This module is automatically disabled if Quark is present. Set true to force enable.
+	Override = false
+
+[CaveSpidersDropCobwebs]
+	#Maximum cobwebs dropped when cave spider is killed.
+	"Maximum drops" = 2
+
+[CoralSquids]
+	#Chance (out of 1.0) of a coral squid dropping coral when killed by the player.
+	"Drop chance" = 0.2
+
+[Core]
+	#Set the default glint color for all enchanted items.
+	"Enchantment glint color" = "purple"
+	#If true, routes additional debug messages into the standard game log.
+	"Debug mode" = false
+	#If inventory crafting or inventory ender chest modules are enabled, pressing escape or inventory key returns you to the inventory rather than closing the window.
+	"Inventory button return" = false
+
+[Crates]
+	#If true, hovering over a crate will show its contents in a tooltip.
+	"Show tooltip" = true
+
+[DecreaseRepairCost]
+	#The tool repair cost will be decreased by this amount.
+	"Repair cost decrease" = 5
+	#Number of levels required to reduce repair cost on the anvil.
+	"XP cost" = 0
+
+[DirtToPath]
+	#This module is automatically disabled if Quark is present. Set true to force enable.
+	Override = false
+
+[EndermitePowder]
+	#Maximum endermite powder dropped when endermite is killed.
+	"Maximum drops" = 2
+
+[EntitySpawner]
+	#Player will trigger EntitySpawner blocks when closer than this distance.
+	"Trigger distance" = 16
+
+[ExtendNetherite]
+	#Additional time (in seconds) given to netherite and netherite-based items before they despawn.
+	"Extra lifetime" = 300
+
+[ExtractEnchantments]
+	#Initial XP cost before adding XP equivalent to the enchantment level(s) of the item.
+	"Initial XP cost" = 2
+	#If the enchantment is a treasure enchantment, such as Mending, this cost will be added.
+	"Treasure XP cost" = 15
+
+[GoldBars]
+	#This module is automatically disabled if Quark is present. Set true to force enable.
+	Override = false
+
+[HoeHarvesting]
+	#This module is automatically disabled if Quark is present. Set true to force enable.
+	Override = false
+
+[HuskImprovements]
+	#If true, husks drop sand when killed.
+	"Drop sand when killed" = true
+	#Maximum sand dropped when husk is killed.
+	"Maximum drops" = 2
+	#If true, husks can spawn anywhere within their biome rather than just the surface.
+	"Spawn anywhere in biome" = true
+
+[InventoryTidying]
+	#This module is automatically disabled if Quark is present. Set true to force enable.
+	Override = false
+
+[MineshaftImprovements]
+	#If true, precious ores will spawn in the central mineshaft room.
+	"Room blocks" = true
+	#If true, occasionally there will be piles of ore in mineshaft corridors.
+	"Corridor block piles" = true
+	#If true, loot crates will be added to mineshaft corridors.
+	"Add crates" = true
+	#If true, stone, ore, lanterns and TNT will spawn inside mineshaft corridors.
+	"Corridor blocks" = true
+
+[MusicImprovements]
+	#If true, the six Creative music tracks may play in survival mode.
+	"Play Creative music" = true
+
+[PathToDirt]
+	#This module is automatically disabled if Quark is present. Set true to force enable.
+	Override = false
+
+[PlayerState]
+	#Interval (in ticks) on which additional world state will be synchronised to the client.
+	"Server state update interval" = 120
+
+[PortableCrafting]
+	#If true, sets a keybind for opening the portable crafting table (defaults to 'c').
+	"Enable keybind" = false
+
+[PortableEnderChest]
+	#If true, sets a keybind for opening the portable Ender Chest (defaults to 'b').
+	"Enable keybind" = false
+
+[ShulkerBoxTooltips]
+	#This module is automatically disabled if Quark is present. Set true to force enable.
+	Override = false
+
+[SleepImprovements]
+	#If true, the sleeping player does not need to wait as long before ending the night.
+	"Faster sleep" = false
+	#The number of players required to sleep in order to bring the next day.
+	"Number of required players" = 1
+	#This module is automatically disabled if Quark is present. Set true to force enable.
+	Override = false
+
+[StackableEnchantedBooks]
+	#Maximum enchanted book stack size.
+	"Stack size" = 16
+
+[StackablePotions]
+	#Maximum potion stack size.
+	"Stack size" = 16
+
+[StrayImprovements]
+	#Maximum blue ice dropped when stray is killed.
+	"Maximum drops" = 2
+	#If true, strays drop blue ice when killed.
+	"Drop blue ice when killed" = true
+	#If true, strays can spawn anywhere within their biome rather than just the surface.
+	"Spawn anywhere in biome" = true
+
+[VariantBookshelves]
+	#This module is automatically disabled if Quark is present. Set true to force enable.
+	Override = false
+
+[VariantChests]
+	#This module is automatically disabled if Quark is present. Set true to force enable.
+	Override = false
+
+[VariantLadders]
+	#This module is automatically disabled if Quark is present. Set true to force enable.
+	Override = false
+
+[VariantMobTextures]
+	#If true, wolves may spawn with different textures.
+	"Variant wolves" = true
+	#If true, chickens may spawn with different textures. This is disabled if Quark is present.
+	"Variant chickens" = true
+	#If true, pigs may spawn with different textures. This is disabled if Quark is present.
+	"Variant pigs" = true
+	#If true, snow golems may spawn with different derp faces.
+	"Variant snow golems" = true
+	#If true, all animals have a chance to spawn as a rare variant.
+	"Rare variants" = true
+	#Approximately 1 in X chance of a mob spawning as a rare variant.
+	"Rarity of rare variants" = 1000
+	#If true, squids may spawn with different textures.
+	"Variant squids" = true
+	#If true, cows may spawn with different textures. This is disabled if Quark is present.
+	"Variant cows" = true
+	#If true, sheep face and 'shorn' textures match their wool color. This is disabled if Quark is present.
+	"Variant sheep" = true
+	#Some animal textures are disabled if Quark is present. Set true to force enable them.
+	Override = false
+
+[VillagersFollowEmeraldBlocks]
+	#This module is automatically disabled if Quark is present. Set true to force enable.
+	Override = false
+
+[WanderingTraderImprovements]
+	#If true, makes wandering traders more likely to spawn after one Minecraft day.
+	"Frequent spawning" = false
+	#If true, wandering traders will only spawn if the player is near a signal fire.
+	"Spawn near signal fire" = true
+	#If true, wandering traders will sell maps to biomes.
+	"Trade biome maps" = true
+	#If true, wandering traders will sell maps to structures.
+	"Trade structure maps" = true
+
+[WitchesDropLuck]
+	#Chance (out of 1.0) of a witch dropping a Potion of Luck when killed by the player.
+	"Drop chance" = 0.05
+
