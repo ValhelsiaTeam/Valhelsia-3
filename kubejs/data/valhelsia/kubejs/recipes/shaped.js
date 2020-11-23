@@ -1,6 +1,14 @@
 events.listen('recipes', function (event) {
 
   //Minecarft
+  event.shaped(item.of('minecraft:bookshelf', 1), [
+    'AAA',
+    'BBB',
+    'AAA'
+  ], {
+    A: '#minecraft:planks',
+    B: 'minecraft:book'
+  })
   event.shaped(item.of('minecraft:chest', 1), [
     'AAA',
     'A A',
