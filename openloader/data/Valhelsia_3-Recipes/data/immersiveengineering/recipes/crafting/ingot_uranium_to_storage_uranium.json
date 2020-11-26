@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:ingots/uranium"
+    }
+  },
+  "result": {
+    "item": "immersiveengineering:storage_uranium",
+    "count": 1
+  }
+}
