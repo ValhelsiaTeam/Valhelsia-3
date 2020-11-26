@@ -29,7 +29,7 @@
 #Coral can be combined with sea lanterns to make colored variants.
 "CoralSeaLanterns enabled" = true
 #Coral Squids spawn near coral in warm oceans.
-"CoralSquids enabled" = true
+"CoralSquids enabled" = false
 #A smaller storage solution with the benefit of being transportable.
 "Crates enabled" = true
 #Combine a tool or armor with a netherite nugget on an anvil to reduce its repair cost.
@@ -345,4 +345,3 @@
 [WitchesDropLuck]
 	#Chance (out of 1.0) of a witch dropping a Potion of Luck when killed by the player.
 	"Drop chance" = 0.05
-
