@@ -55,6 +55,20 @@ events.listen('recipes', function (event) {
     'mekanismtools:steel_chestplate',
     'mekanismtools:steel_leggings',
     'mekanismtools:steel_boots',
+
+    //Mystical World
+    'mysticalworld:tin_ingot',
+    'mysticalworld:tin_dust',
+    'mysticalworld:tin_nugget',
+    'mysticalworld:copper_ingot',
+    'mysticalworld:copper_dust',
+    'mysticalworld:copper_nugget',
+    'mysticalworld:silver_ingot',
+    'mysticalworld:silver_dust',
+    'mysticalworld:silver_nugget',
+    'mysticalworld:lead_ingot',
+    'mysticalworld:lead_dust',
+    'mysticalworld:lead_nugget',
   ]
   outputRemove.forEach(function (remove) {
     event.remove({output: remove})
