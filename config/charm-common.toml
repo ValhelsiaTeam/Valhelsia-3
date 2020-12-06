@@ -29,7 +29,7 @@
 #Coral can be combined with sea lanterns to make colored variants.
 "CoralSeaLanterns enabled" = true
 #Coral Squids spawn near coral in warm oceans.
-"CoralSquids enabled" = false
+"CoralSquids enabled" = true
 #A smaller storage solution with the benefit of being transportable.
 "Crates enabled" = true
 #Combine a tool or armor with a netherite nugget on an anvil to reduce its repair cost.
@@ -40,7 +40,7 @@
 "EndermitePowder enabled" = true
 #Extends the lifetime of netherite-based items before they despawn.
 "ExtendNetherite enabled" = true
-#Extract enchantments from any enchanted item into an empty book.
+#Extract enchantments from any enchanted item into an empty book using the grindstone.
 "ExtractEnchantments enabled" = false
 #A player wearing feather falling enchanted boots will not trample crops.
 "FeatherFallingCrops enabled" = true
@@ -123,6 +123,18 @@
 "WitchesDropLuck enabled" = true
 #A functional block that adds more efficient recipes for crafting wooden stairs and slabs.
 "Woodcutters enabled" = true
+#Tools with the Acquisition enchantment automatically pick up drops.
+"Acquisition enabled" = true
+#Refills your hotbar from your inventory.
+"AutoRestock enabled" = true
+#Mooblooms are cow-like mobs that come in a variety of flower types. They spawn flowers where they walk and can be milked for suspicious stew.
+"Mooblooms enabled" = false
+#Raid horns are sometimes dropped from raid leaders and can be used to call off or start raids.
+"RaidHorns enabled" = true
+#Increases snow layers in cold biomes during thunderstorms.
+"SnowStorms enabled" = true
+#When applied, this enchantment lets you change the color of the enchanted glint using dye on an anvil. Requires Core 'Enchantment glint override' to be true.
+"Tinted enabled" = true
 
 [AnvilImprovements]
 	#If true, removes the maximum cost of 40 XP when working items on the anvil.
@@ -175,10 +187,14 @@
 [CoralSquids]
 	#Chance (out of 1.0) of a coral squid dropping coral when killed by the player.
 	"Drop chance" = 0.2
+	#Chance of coral squids spawning in warm ocean biomes.
+	"Spawn weight" = 50
 
 [Core]
 	#Set the default glint color for all enchanted items.
 	"Enchantment glint color" = "purple"
+	#If true, replaces vanilla glint color rendering with Charm's, allowing for multiple enchantment glint colors.
+	"Enchantment glint override" = true
 	#If true, routes additional debug messages into the standard game log.
 	"Debug mode" = false
 	#If inventory crafting or inventory ender chest modules are enabled, pressing escape or inventory key returns you to the inventory rather than closing the window.
@@ -201,10 +217,6 @@
 [EndermitePowder]
 	#Maximum endermite powder dropped when endermite is killed.
 	"Maximum drops" = 2
-
-[EntitySpawner]
-	#Player will trigger EntitySpawner blocks when closer than this distance.
-	"Trigger distance" = 16
 
 [ExtendNetherite]
 	#Additional time (in seconds) given to netherite and netherite-based items before they despawn.
@@ -345,3 +357,21 @@
 [WitchesDropLuck]
 	#Chance (out of 1.0) of a witch dropping a Potion of Luck when killed by the player.
 	"Drop chance" = 0.05
+
+[EntitySpawners]
+	#Player will trigger EntitySpawner blocks when closer than this distance.
+	"Trigger distance" = 16
+
+[RaidHorns]
+	#Chance (out of 1.0) of a patrol captain dropping a raid horn when killed by the player.
+	"Drop chance" = 0.05
+
+[SnowStorms]
+	#Chance (out of 1.0) every tick of snow increasing by one layer during a thunderstorm.
+	"Snow layer chance" = 0.15
+	#If true, heavier snow textures are rendered during thunderstorms.
+	"Heavier snow texture" = true
+
+[Tinted]
+	#Number of levels required to change a tinted item using dye on an anvil.
+	"XP cost" = 0
