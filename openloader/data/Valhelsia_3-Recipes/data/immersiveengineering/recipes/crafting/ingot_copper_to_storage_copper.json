@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:ingots/copper"
+    }
+  },
+  "result": {
+    "item": "immersiveengineering:storage_copper",
+    "count": 1
+  }
+}

@@ -1,6 +1,14 @@
 events.listen('recipes', function (event) {
 
   //Minecarft
+  event.shaped(item.of('minecraft:bookshelf', 1), [
+    'AAA',
+    'BBB',
+    'AAA'
+  ], {
+    A: '#minecraft:planks',
+    B: 'minecraft:book'
+  })
   event.shaped(item.of('minecraft:chest', 1), [
     'AAA',
     'A A',
@@ -34,6 +42,32 @@ events.listen('recipes', function (event) {
   ], {
     A: 'forbidden_arcanus:iron_chain'
   })
+  event.shaped(item.of('minecraft:chainmail_helmet', 1), [
+    'AAA',
+    'A A'
+  ], {
+    A: 'minecraft:chain'
+  })
+  event.shaped(item.of('minecraft:chainmail_chestplate', 1), [
+    'A A',
+    'AAA',
+    'AAA'
+  ], {
+    A: 'minecraft:chain'
+  })
+  event.shaped(item.of('minecraft:chainmail_leggings', 1), [
+    'AAA',
+    'A A',
+    'A A'
+  ], {
+    A: 'minecraft:chain'
+  })
+  event.shaped(item.of('minecraft:chainmail_boots', 1), [
+    'A A',
+    'A A'
+  ], {
+    A: 'minecraft:chain'
+  })
 
   //Decorative Blocks
   event.shaped(item.of('decorative_blocks:chain', 2), [
@@ -52,7 +86,7 @@ events.listen('recipes', function (event) {
     A: 'mekanism:ingot_uranium'
   })
 
-  //Powah
+  //Immersive Engineering
   event.shaped(item.of('immersiveengineering:treated_wood_horizontal', 8), [
     'AAA',
     'ABA',
