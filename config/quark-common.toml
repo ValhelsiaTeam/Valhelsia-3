@@ -712,7 +712,7 @@
 			#Allowed values: [0,)
 			"Horizontal Size" = 42
 			#Allowed values: [0,)
-			Rarity = 400
+			Rarity = 250
 			#Allowed values: [0,255]
 			"Min Y Level" = 0
 			#Allowed values: [0,)
@@ -743,7 +743,7 @@
 			#Allowed values: [0,)
 			Rarity = 60
 			#Allowed values: [0,255]
-			"Min Y Level" = 20
+			"Min Y Level" = 25
 			#Allowed values: [0,)
 			"Horizontal Variation" = 14
 			#Allowed values: [0,255]
@@ -758,7 +758,7 @@
 				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
 				# the_end, beach, forest, ocean, desert, river, swamp,
 				# mushroom, nether]
-				"Biome Categories" = ["forest"]
+				"Biome Categories" = ["forest", "swamp", "plains"]
 
 			[world.overgrown_underground_biome.biome_settings.dimensions]
 				Dimensions = ["minecraft:overworld"]
@@ -766,10 +766,10 @@
 
 	[world.speleothems]
 		"Tries Per Chunk In Nether" = 4
-		"Speleothems Per Chunk In Nether" = 6
-		"Speleothems Per Chunk" = 6
+		"Speleothems Per Chunk In Nether" = 5
+		"Speleothems Per Chunk" = 5
 		"Max Ylevel" = 55
-		"Tries Per Chunk" = 60
+		"Tries Per Chunk" = 45
 
 		[world.speleothems.dimensions]
 			Dimensions = []
@@ -907,7 +907,7 @@
 			#Allowed values: [0,)
 			Rarity = 60
 			#Allowed values: [0,255]
-			"Min Y Level" = 10
+			"Min Y Level" = 20
 			#Allowed values: [0,)
 			"Horizontal Variation" = 14
 			#Allowed values: [0,255]
@@ -1049,7 +1049,7 @@
 				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
 				# the_end, beach, forest, ocean, desert, river, swamp,
 				# mushroom, nether]
-				"Biome Categories" = ["plains"]
+				"Biome Categories" = ["plains", "plains", "swamp", "forest", "jungle"]
 
 			[world.spider_nest_underground_biome.biome_settings.dimensions]
 				Dimensions = ["minecraft:overworld"]
@@ -1088,7 +1088,7 @@
 		"Loot Table" = "minecraft:chests/simple_dungeon"
 		#The chance that a big dungeon spawn candidate will be allowed to spawn. 0.2 is 20%, which is the same as the Pillager Outpost.
 		"Spawn Chance" = 0.1
-		"Max Rooms" = 10
+		"Max Rooms" = 8
 		"Chest Chance" = 0.5
 
 		[world.big_dungeon.biome_types]
