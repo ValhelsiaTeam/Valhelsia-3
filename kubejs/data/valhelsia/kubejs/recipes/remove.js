@@ -22,6 +22,7 @@ events.listen('recipes', function (event) {
     'immersiveengineering:nugget_uranium',
     'immersiveengineering:ingot_copper',
     'immersiveengineering:nugget_copper',
+    'immersiveengineering:plate_copper',
     'immersiveengineering:ingot_lead',
     'immersiveengineering:nugget_lead',
     'immersiveengineering:ingot_steel',
@@ -31,6 +32,8 @@ events.listen('recipes', function (event) {
     'immersiveengineering:shovel_steel',
     'immersiveengineering:axe_steel',
     'immersiveengineering:hoe_steel',
+    'immersiveengineering:plate_iron',
+    'immersiveengineering:plate_gold',
 
     //Comforts
     'comforts:sleeping_bag_white',
