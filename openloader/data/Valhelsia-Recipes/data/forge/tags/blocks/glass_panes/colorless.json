@@ -4,6 +4,8 @@
     "create:tiled_glass_pane",
     "create:framed_glass_pane",
     "create:horizontal_framed_glass_pane",
-    "create:vertical_framed_glass_pane"
+    "create:vertical_framed_glass_pane",
+    "valhelsia_structures:metal_framed_glass_pane",
+    "valhelsia_structures:paper_wall"
   ]
 }
