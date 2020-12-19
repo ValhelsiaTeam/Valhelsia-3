@@ -72,6 +72,10 @@ events.listen('recipes', function (event) {
     'mysticalworld:lead_ingot',
     'mysticalworld:lead_dust',
     'mysticalworld:lead_nugget',
+
+    //Create
+    'create:copper_ingot',
+    'create:copper_nugget',
   ]
   outputRemove.forEach(function (remove) {
     event.remove({output: remove})
