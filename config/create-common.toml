@@ -34,7 +34,7 @@
 			minHeight = 10
 			#
 			#Range: 0.0 ~ 1.0
-			clusterChance = 0.03125
+			clusterChance = 0.4
 			#
 			#Range: > 0
 			maxHeight = 30
@@ -82,10 +82,10 @@
 		[worldgen.v1.limestone]
 			#
 			#Range: > 0
-			minHeight = 30
+			minHeight = 20
 			#
 			#Range: 0.0 ~ 1.0
-			clusterChance = 0.03125
+			clusterChance = 0.4
 			#
 			#Range: > 0
 			maxHeight = 70
@@ -102,7 +102,7 @@
 			minHeight = 20
 			#
 			#Range: 0.0 ~ 1.0
-			clusterChance = 0.015625
+			clusterChance = 0.2
 			#
 			#Range: > 0
 			maxHeight = 70
@@ -136,7 +136,7 @@
 			minHeight = 20
 			#
 			#Range: 0.0 ~ 1.0
-			clusterChance = 0.015625
+			clusterChance = 0.2
 			#
 			#Range: > 0
 			maxHeight = 70
@@ -153,7 +153,7 @@
 			minHeight = 0
 			#
 			#Range: 0.0 ~ 1.0
-			clusterChance = 0.03125
+			clusterChance = 0.4
 			#
 			#Range: > 0
 			maxHeight = 10
