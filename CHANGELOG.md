@@ -1,3 +1,43 @@
+# Changelog 2.3.1
+
+**Forge 31.2.47**
+
+### Mod(s) added:
++ 
+
+### Mod(s) removed:
+- Double Slabs (Critical Bug)
+- JAOPCA (not currently compatible with Create 0.3)
+
+### Updated:
+- Atum 2: Return to the Sands 1.15.2-2.1.12
+- Botany Pots 1.15.2-2.0.29
+- CodeChicken Lib 1.8.+ 1.15.2-3.3.4.395
+- Create mc1.15.2_v0.3
+- Ender Storage 1.8.+ 1.15.2-2.5.1.157
+- Engineer's Decor 1.15.2-1.1.4
+- Fairy Lights 3.0.15-1.15.2
+- McJtyLib 1.15-4.1.13
+- MineColonies 0.13.522-ALPHA
+- Mining Gadgets 1.3.6
+- Performant 1.15-3.14m
+- RFTools Base 1.15-1.1.10
+- RFTools Builder 1.15-2.1.16
+- RFTools Storage 1.15-1.1.13
+- RFTools Utility 1.15-2.1.18
+- Rhino 1.7.13.9
+- Silent Gear 1.15.2-1.11.4+187
+- Structurize 0.13.105-ALPHA
+- The Midnight 0.5.11
+- Xaero's Minimap 20.29.0_Forge_1.15.2
+- Xaero's World Map 1.11.4_Forge_1.15.2
+- XNet 1.15-2.1.14
+
+### Change(s):
+- None
+
+-----------------------------------
+
 # Changelog 2.2.10
 
 **Forge 31.2.36**
