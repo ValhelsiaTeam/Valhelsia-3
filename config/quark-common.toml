@@ -7,7 +7,7 @@
 	"Use Fast Worldgen" = false
 	"Enable 'q' Button" = false
 	#A list of screens that don't play well with quark's buttons. Use "Print Screen Classnames" to find the names of any others you'd want to add.
-	"Ignored Screens" = ["com.tfar.craftingstation.client.CraftingStationScreen", "com.raoulvdberge.refinedstorage.screen.grid.GridScreen", "com.raoulvdberge.refinedstorage.screen.DiskManipulatorScreen", "com.raoulvdberge.refinedstorage.screen.InterfaceScreen"]
+	"Ignored Screens" = ["com.tfar.craftingstation.client.CraftingStationScreen", "com.raoulvdberge.refinedstorage.screen.grid.GridScreen", "com.raoulvdberge.refinedstorage.screen.DiskManipulatorScreen", "com.raoulvdberge.refinedstorage.screen.InterfaceScreen", "blusunrize.immersiveengineering.client.gui.CraftingTableScreen"]
 	"Use Anti Overlap" = true
 	#Quark messes with the Stonecutter to allow any item that can be used in it to be shift clicked in. Set this to false to turn it off.
 	"Hack Stonecutter Shift Click" = true
@@ -449,6 +449,7 @@
 	"Underground Clay" = false
 	"Slime Underground Biome" = true
 	"Fairy Rings" = true
+	"Chorus Vegetation" = true
 	Crevices = false
 	"Nether Obsidian Spikes" = true
 	"Mega Caves" = false
@@ -645,6 +646,7 @@
 
 	[world.new_stone_types]
 		"Enable Marble" = true
+		"Enable Myalite" = true
 		"Enable Jasper" = true
 		"Enable Voidstone" = true
 		"Enable Slate" = true
@@ -680,6 +682,22 @@
 
 			[world.new_stone_types.limestone.dimensions]
 				Dimensions = ["minecraft:overworld"]
+				"Is Blacklist" = false
+
+		[world.new_stone_types.myalite]
+
+			[world.new_stone_types.myalite.oregen]
+				#Allowed values: [0,255]
+				"Max Height" = 256
+				#Allowed values: [0,)
+				"Cluster Count" = 10
+				#Allowed values: [0,255]
+				"Min Height" = 0
+				#Allowed values: [0,)
+				"Cluster Size" = 33
+
+			[world.new_stone_types.myalite.dimensions]
+				Dimensions = ["minecraft:the_end"]
 				"Is Blacklist" = false
 
 		[world.new_stone_types.voidstone]
@@ -775,6 +793,20 @@
 				# the_end, beach, forest, ocean, desert, river, swamp,
 				# mushroom, nether]
 				"Biome Categories" = ["savanna"]
+
+		[world.blossom_trees.red]
+			Rarity = 30
+
+			[world.blossom_trees.red.dimensions]
+				Dimensions = ["minecraft:overworld"]
+				"Is Blacklist" = false
+
+			[world.blossom_trees.red.biome_types]
+				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
+				# the_end, beach, forest, ocean, desert, river, swamp,
+				# mushroom, nether]
+				"Biome Categories" = ["mesa"]
+				"Is Blacklist" = false
 
 		[world.blossom_trees.pink]
 			Rarity = 100
@@ -1022,6 +1054,32 @@
 				Dimensions = ["minecraft:overworld"]
 				"Is Blacklist" = false
 
+		[world.big_stone_clusters.myalite]
+			#Allowed values: [0,)
+			"Horizontal Size" = 20
+			#Allowed values: [0,)
+			Rarity = 100
+			"Generate In Air" = true
+			#Allowed values: [0,255]
+			"Min Y Level" = 58
+			#Allowed values: [0,)
+			"Horizontal Variation" = 6
+			Enabled = true
+			#Allowed values: [0,255]
+			"Max Y Level" = 62
+			#Allowed values: [0,)
+			"Vertical Size" = 40
+			#Allowed values: [0,)
+			"Vertical Variation" = 10
+
+			[world.big_stone_clusters.myalite.biomes]
+				Biomes = ["minecraft:end_highlands"]
+				"Is Blacklist" = false
+
+			[world.big_stone_clusters.myalite.dimensions]
+				Dimensions = ["minecraft:the_end"]
+				"Is Blacklist" = false
+
 		[world.big_stone_clusters.voidstone]
 			#Allowed values: [0,)
 			"Horizontal Size" = 19
@@ -1040,11 +1098,8 @@
 			"Vertical Variation" = 6
 
 			[world.big_stone_clusters.voidstone.biomes]
+				Biomes = ["minecraft:end_highlands", "minecraft:end_midlands", "minecraft:end_barrens"]
 				"Is Blacklist" = false
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["the_end"]
 
 			[world.big_stone_clusters.voidstone.dimensions]
 				Dimensions = ["minecraft:the_end"]
@@ -1291,6 +1346,17 @@
 			# the_end, beach, forest, ocean, desert, river, swamp,
 			# mushroom, nether]
 			"Biome Categories" = ["ocean", "beach", "nether", "the_end"]
+
+	[world.chorus_vegetation]
+		"Teleport Duplication Chance" = 0.01
+		Radius = 7
+		Rarity = 150
+		"Chunk Attempts" = 120
+		"Highlands Chance" = 1.0
+		"Midlands Chance" = 0.2
+		"Endermite Spawn Chance" = 0.01
+		"Passive Teleport Chance" = 0.2
+		"Other End Biomes Chance" = 0.0
 
 	[world.fairy_rings]
 		"Forest Chance" = 0.00625
@@ -1623,3 +1689,4 @@
 		#That's a lot to take in, so here's an example. This would be for the default config of the Slime underground biome. (Spaces are allowed.)
 		#minecraft:overworld; false; SWAMP; false; 120; 10..40; 26,14; 14,6; minecraft:water@915, minecraft:slime_block@85; minecraft:green_terracotta@2, minecraft:lime_terracotta@3, minecraft:light_blue_terracotta@1; CEILING; false
 		"Biome Definitions" = []
+
