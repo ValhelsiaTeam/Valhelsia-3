@@ -134,7 +134,7 @@
 #Increases snow layers in cold biomes during thunderstorms.
 "SnowStorms enabled" = true
 #When applied, this enchantment lets you change the color of the enchanted glint using dye on an anvil. Requires Core 'Enchantment glint override' to be true.
-"Tinted enabled" = true
+"Tinted enabled" = false
 
 [AnvilImprovements]
 	#If true, removes the maximum cost of 40 XP when working items on the anvil.
@@ -194,7 +194,7 @@
 	#Set the default glint color for all enchanted items.
 	"Enchantment glint color" = "purple"
 	#If true, replaces vanilla glint color rendering with Charm's, allowing for multiple enchantment glint colors.
-	"Enchantment glint override" = true
+	"Enchantment glint override" = false
 	#If true, routes additional debug messages into the standard game log.
 	"Debug mode" = false
 	#If inventory crafting or inventory ender chest modules are enabled, pressing escape or inventory key returns you to the inventory rather than closing the window.
