@@ -53,6 +53,11 @@ events.listen('recipes', function (event) {
     'comforts:sleeping_bag_red',
     'comforts:sleeping_bag_black',
 
+    //Eidolon
+    'eidolon:lead_ingot',
+    'eidolon:lead_nugget',
+    'eidolon:lead_ore',
+
     //Mekanism Tools
     'mekanismtools:steel_helmet',
     'mekanismtools:steel_chestplate',
