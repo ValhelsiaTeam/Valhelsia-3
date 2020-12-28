@@ -1,0 +1,15 @@
+
+#Client side changes.
+[client]
+	#The Mining Helmet will cover the face of whatever mob is wearing it.
+	helmetCoversFace = true
+
+	[client.dynamic_lighting]
+		#The rate at which the Mining Helmet refreshes it's light (measured in ticks). Lower values are smoother but result in worse fps.
+		#Range: > 1
+		lightRefreshRate = 3
+		#Should dynamic lighting still occur if an entity is behind a wall. Turning this on may impact performance, but allows light to be seen around corners.
+		seeThroughWalls = false
+		#How far away you should be able to see light from a mining helmet from other mobs (measured in blocks). 0 for infinite distance. Use this to prevent far away mobs from causing light updates.
+		#Range: > 0
+		maxVisibleDistance = 256
