@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://discord.gg/rdfQuaM">
+  <a href="https://valhelsia.net/discord">
     <img src="https://img.shields.io/discord/396333981601234944?color=1b1b1b&label=Discord&logo=Discord&style=plastic">
   </a>
   <a href="https://twitter.com/valhelsia">
