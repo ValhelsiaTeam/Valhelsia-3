@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.curseforge.com/minecraft/modpacks/valhelsia-2">
-    <img border="0" alt="CurseForge" src="https://zupimages.net/up/20/29/gzlv.png">
+    <img border="0" alt="CurseForge" src="https://zupimages.net/up/20/53/3wll.png">
   </a>
 </p>
 
@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://discord.gg/rdfQuaM">
+  <a href="https://valhelsia.net/discord">
     <img src="https://img.shields.io/discord/396333981601234944?color=1b1b1b&label=Discord&logo=Discord&style=plastic">
   </a>
   <a href="https://twitter.com/valhelsia">
