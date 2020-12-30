@@ -1,0 +1,24 @@
+{
+  "type": "immersiveengineering:cloche",
+  "results": [
+    {
+      "item": "mysticalworld:aubergine",
+      "count": 2
+    },
+    {
+      "item": "mysticalworld:aubergine_seeds",
+      "count": 1
+    }
+  ],
+  "input": {
+    "item": "mysticalworld:aubergine_seeds"
+  },
+  "soil": {
+    "item": "minecraft:dirt"
+  },
+  "time": 800,
+  "render": {
+    "type": "crop",
+    "block": "mysticalworld:aubergine_crop"
+  }
+}

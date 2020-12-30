@@ -1,9 +1,6 @@
 events.listen('recipes', function (event) {
 
   var idRemove = [
-    //Minecraft
-    'minecraft:chain',
-
     //Decorative Blocks
     'decorative_blocks:chain',
 
@@ -25,6 +22,7 @@ events.listen('recipes', function (event) {
     'immersiveengineering:nugget_uranium',
     'immersiveengineering:ingot_copper',
     'immersiveengineering:nugget_copper',
+    'immersiveengineering:plate_copper',
     'immersiveengineering:ingot_lead',
     'immersiveengineering:nugget_lead',
     'immersiveengineering:ingot_steel',
@@ -34,6 +32,8 @@ events.listen('recipes', function (event) {
     'immersiveengineering:shovel_steel',
     'immersiveengineering:axe_steel',
     'immersiveengineering:hoe_steel',
+    'immersiveengineering:plate_iron',
+    'immersiveengineering:plate_gold',
 
     //Comforts
     'comforts:sleeping_bag_white',
@@ -53,11 +53,34 @@ events.listen('recipes', function (event) {
     'comforts:sleeping_bag_red',
     'comforts:sleeping_bag_black',
 
+    //Eidolon
+    'eidolon:lead_ingot',
+    'eidolon:lead_nugget',
+    'eidolon:lead_ore',
+
     //Mekanism Tools
     'mekanismtools:steel_helmet',
     'mekanismtools:steel_chestplate',
     'mekanismtools:steel_leggings',
-    'mekanismtools:steel_boots'
+    'mekanismtools:steel_boots',
+
+    //Mystical World
+    'mysticalworld:tin_ingot',
+    'mysticalworld:tin_dust',
+    'mysticalworld:tin_nugget',
+    'mysticalworld:copper_ingot',
+    'mysticalworld:copper_dust',
+    'mysticalworld:copper_nugget',
+    'mysticalworld:silver_ingot',
+    'mysticalworld:silver_dust',
+    'mysticalworld:silver_nugget',
+    'mysticalworld:lead_ingot',
+    'mysticalworld:lead_dust',
+    'mysticalworld:lead_nugget',
+
+    //Create
+    'create:copper_ingot',
+    'create:copper_nugget',
   ]
   outputRemove.forEach(function (remove) {
     event.remove({output: remove})

@@ -1,7 +1,7 @@
 
 [campsite]
-	#Chance for an ore vein to generate underneath a campsite
-	#Range: 0.0 ~ 1.0
+	#Probability for an ore vein to generate underneath a campsite
+	#Range: 0 ~ 100
 	campsite_ore_chance = 0.25
 	#The minimum y-level at which a campsite can generate
 	#Range: 0 ~ 255
@@ -9,11 +9,15 @@
 	#The maximum y-level at which a campsite can generate
 	#Range: 0 ~ 255
 	campsite_max_y = 45
-	#Chance for a container of a campsite to be replaced by a mimic
-	#Range: 0.0 ~ 1.0
+	#Whether to use wooden chests from other mods when generating campsites, may make it easier to distinguish them from mimics
+	use_modded_chests = false
+	#Probability for a container of a campsite to be replaced by a mimic
+	#Range: 0 ~ 100
 	campsite_mimic_chance = 0.3
-	#Per-chunk chance a campsite is attempted to be generated. Not every attempt succeeds, this also depends on the density and shape of caves
-	#Range: 0.0 ~ 1.0
+	#List of biome IDs in which campsites are not allowed to generate. End and nether biomes are excluded by default.
+	biome_blacklist = ["minecraft:void"]
+	#Per-chunk probability (as a percentage) a campsite is attempted to be generated. Not every attempt succeeds, this also depends on the density and shape of caves
+	#Range: 0 ~ 100
 	campsite_chance = 0.06
 
 [items]

@@ -1,15 +1,15 @@
 <p align="center">
   <a href="https://www.curseforge.com/minecraft/modpacks/valhelsia-3">
-    <img border="0" alt="CurseForge" src="https://zupimages.net/up/20/29/31vt.png">
+    <img border="0" alt="CurseForge" src="https://zupimages.net/up/20/53/90kl.png">
   </a>
 </p>
 
 <p align="center">
-<strong>Valhelsia 3</strong> is a modpack assembled in 1.16.1. This one includes many of the most popular classic mods to ensure that veteran modded players feel right at home, and   we also include many amazing new mods to discover, keeping the pack fresh and full of new experiences just waiting to happen.
+<strong>Valhelsia 3</strong> is a modpack assembled in 1.16.3. This one includes many of the most popular classic mods to ensure that veteran modded players feel right at home, and   we also include many amazing new mods to discover, keeping the pack fresh and full of new experiences just waiting to happen.
 </p>
 
 <p align="center">
-  <a href="https://discord.gg/rdfQuaM">
+  <a href="https://valhelsia.net/discord">
     <img src="https://img.shields.io/discord/396333981601234944?color=1b1b1b&label=Discord&logo=Discord&style=plastic">
   </a>
   <a href="https://twitter.com/valhelsia">
@@ -29,7 +29,7 @@
 
 <p align="center">
   <a href="https://bisecthosting.com/Valhelsia">
-    <img border="0" alt="BisectHosting" src="https://zupimages.net/up/20/20/zp4u.png">
+    <img border="0" alt="BisectHosting" src="https://zupimages.net/up/20/45/qo6j.png" width="900" height="164">
   </a>
 </p>                                                                                                                                             
 

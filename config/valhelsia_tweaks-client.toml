@@ -1,0 +1,9 @@
+
+[client]
+	#How much RAM is required to start the Modpack (in GB) [default: 4.0]
+	#Range: 0.0 ~ 64.0
+	required_ram = 4.0
+	#How much RAM is recommended for an optimal experience (in GB) [default: 5.0]
+	#Range: 0.0 ~ 64.0
+	recommended_ram = 5.0
+
