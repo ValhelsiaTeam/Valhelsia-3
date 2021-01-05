@@ -1,0 +1,24 @@
+{
+    "key": "neptunium",
+    "category": "metal",
+    "primary": "8.6",
+    "secondary": "3.2",
+    "tertiary": "3",
+    "durability": "2500",
+    "integrityCost": "2",
+    "integrityGain": "6",
+    "magicCapacity": 90,
+    "toolLevel": "4",
+    "toolEfficiency": "9",
+    "tints": {
+        "glyph": "056b50",
+        "texture": "0ae2a7"
+    },
+    "textures": ["metal", "default"],
+    "material" : {
+        "item": "aquaculture:neptunium_ingot"
+    },
+    "requiredTools": {
+        "hammer": 4
+    }
+}
