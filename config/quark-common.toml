@@ -207,7 +207,6 @@
 	"Chests In Boats" = true
 	"Inventory Sorting" = false
 	"Shulker Box Right Click" = true
-	"F To Switch" = true
 	"Hotbar Changer" = true
 	"Item Sharing" = true
 	"Right Click Armor" = true
@@ -1705,6 +1704,8 @@
 		"Nerf Villager Discount" = false
 		#Makes Iron Golems not drop Iron Ingots
 		"Disable Iron Farms" = false
+		#Makes Boats not glide on ice
+		"Disable Ice Roads" = false
 
 	[experimental.overlay_shader]
 		#Sets the name of the shader to load on a regular basis. This can load any shader the Camera module can (and requires the Camera module enabled to apply said logic).
