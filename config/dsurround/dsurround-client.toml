@@ -1,0 +1,11 @@
+
+#Defines how Sound Control logging will behave
+["Logging Options"]
+	#Enables/disables debug logging of the mod
+	"Debug Logging" = false
+	#Enables/disables display of version check information
+	"Online Version Check Result" = true
+	#Bitmask for toggling various debug traces
+	#Range: > 0
+	"Debug Flag Mask" = 0
+
