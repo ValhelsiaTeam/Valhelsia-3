@@ -12,6 +12,7 @@
 
 	[Enchantments.Displacement]
 		#If TRUE, the Displacement Enchantment is available for Armor, Shields, and Horse Armor.
+		#NOTE: Disabled to prevent crash regarding Endermites and Silverfish
 		Enable = false
 		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
 		Treasure = false
@@ -280,13 +281,13 @@
 
 	[Enchantments.Bulwark]
 		#If TRUE, the Bulwark Enchantment is available for Shields.
-		Enable = false
+		Enable = true
 		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
 		Treasure = false
 
 	[Enchantments.Phalanx]
 		#If TRUE, the Phalanx Enchantment is available for Shields.
-		Enable = false
+		Enable = true
 		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
 		Treasure = false
 		#This option adjusts the maximum allowable level for the Enchantment.
