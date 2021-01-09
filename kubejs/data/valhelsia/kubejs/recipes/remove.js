@@ -35,6 +35,9 @@ events.listen('recipes', function (event) {
     'immersiveengineering:plate_iron',
     'immersiveengineering:plate_gold',
 
+    // Charm
+    'charm:woodcutter',
+
     //Comforts
     'comforts:sleeping_bag_white',
     'comforts:sleeping_bag_orange',
