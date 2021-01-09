@@ -1,6 +1,6 @@
 events.listen('recipes', function (event) {
 
-  //Minecarft
+  // Minecarft
   event.shaped(item.of('minecraft:bookshelf', 1), [
     'AAA',
     'BBB',
@@ -69,7 +69,7 @@ events.listen('recipes', function (event) {
     A: 'minecraft:chain'
   })
 
-  //Decorative Blocks
+  // Decorative Blocks
   event.shaped(item.of('decorative_blocks:chain', 2), [
     'A',
     'B',
@@ -79,7 +79,7 @@ events.listen('recipes', function (event) {
     B: 'minecraft:iron_nugget'
   })
 
-  //Immersive Engineering
+  // Immersive Engineering
   event.shaped(item.of('immersiveengineering:treated_wood_horizontal', 8), [
     'AAA',
     'ABA',
@@ -88,7 +88,6 @@ events.listen('recipes', function (event) {
     A: '#minecraft:planks',
     B: 'immersiveengineering:creosote_bucket'
   })
-
   event.shaped(item.of('immersiveengineering:ingot_silver', 1), [
     'SSS',
     'SSS',
@@ -96,7 +95,6 @@ events.listen('recipes', function (event) {
   ], {
     S: '#forge:nuggets/silver'
   })
-
   event.shaped(item.of('immersiveengineering:storage_silver', 1), [
     'SSS',
     'SSS',

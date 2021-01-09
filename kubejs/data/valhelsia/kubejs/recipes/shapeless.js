@@ -3,6 +3,10 @@ events.listen('recipes', function (event) {
   event.shapeless(Item.of('eidolon:lead_ingot', 1), 'mekanism:ingot_lead')
   event.shapeless(Item.of('mekanism:ingot_lead', 1), 'eidolon:lead_ingot')
 
+  // Create
+  event.shapeless(Item.of('create:brass_sheet', 1), ['create:brass_ingot', 'immersiveengineering:hammer'])
+  event.shapeless(Item.of('create:lapis_sheet', 1), ['minecraft:lapis_block', 'immersiveengineering:hammer'])
+
   // Immersive Engineering
   event.shapeless(Item.of('immersiveengineering:ingot_silver', 9), '#forge:storage_blocks/silver')
   event.shapeless(Item.of('immersiveengineering:nugget_silver', 9), '#forge:ingots/silver')
