@@ -42,7 +42,7 @@
 #Options that control the various fog effects in the client
 ["Fog Options"]
 	#Enable/disable fog processing
-	"Enable Fog Processing" = true
+	"Enable Fog Processing" = false
 	#Enable biome specific fog density and color
 	"Biome Fog" = true
 	#Higher the player elevation the more haze that is experienced
@@ -67,4 +67,5 @@
 	"Spot Sound Volume" = 100
 	#Scaling factor to apply to waterfall sounds
 	#Range: 0 ~ 100
-	"Waterfall Volume" = 100
+	"Waterfall Volume" = 40
+
