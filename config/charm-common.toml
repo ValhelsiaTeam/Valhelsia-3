@@ -124,7 +124,7 @@
 #A functional block that adds more efficient recipes for crafting wooden stairs and slabs.
 "Woodcutters enabled" = false
 #Tools with the Acquisition enchantment automatically pick up drops.
-"Acquisition enabled" = true
+"Acquisition enabled" = false
 #Refills your hotbar from your inventory.
 "AutoRestock enabled" = true
 #Mooblooms are cow-like mobs that come in a variety of flower types. They spawn flowers where they walk and can be milked for suspicious stew.
@@ -135,12 +135,30 @@
 "SnowStorms enabled" = true
 #When applied, this enchantment lets you change the color of the enchanted glint using dye on an anvil. Requires Core 'Enchantment glint override' to be true.
 "Tinted enabled" = false
+#Aerial Affinity is a boots enchantment that increases mining rate when not on the ground.
+"AerialAffinity enabled" = true
+#Storage for maps that automatically updates the displayed map as you explore.
+"Atlas enabled" = true
+#Adds custom recipes.
+"ExtraRecipes enabled" = true
+#Show maps in tooltips.
+"MapTooltips enabled" = true
+#Configure how often mob sounds are played.
+"MobSoundCulling enabled" = true
+#Crying obsidian and refined obsidian can be used to construct nether portal frames.
+"MorePortalFrames enabled" = true
+#Allows stews to stack.
+"StackableStews enabled" = true
 
 [AnvilImprovements]
 	#If true, removes the maximum cost of 40 XP when working items on the anvil.
 	"Remove Too Expensive" = true
 	#If true, anvils are 50% less likely to take damage when used.
 	"Stronger anvils" = true
+	#If true, an enchanted book with a level higher than the maximum enchantment level may be applied to an item.
+	"Allow higher enchantment levels" = true
+	#If true, items show their repair cost in their tooltip when looking at the anvil screen.
+	"Show item repair cost" = true
 
 [AutomaticRecipeUnlock]
 	#This module is automatically disabled if Quark is present. Set true to force enable.
@@ -155,6 +173,8 @@
 [Beekeepers]
 	#This module is automatically disabled if Buzzier Bees is present. Set true to force enable.
 	Override = false
+	#Chance of a custom building to spawn. For reference, a vanilla library is 5.
+	"Beekeeper house weight" = 5
 
 [BlockOfEnderPearls]
 	#A chorus fruit will teleport you to an ender pearl block within this range (in blocks).
@@ -225,8 +245,6 @@
 [ExtractEnchantments]
 	#Initial XP cost before adding XP equivalent to the enchantment level(s) of the item.
 	"Initial XP cost" = 2
-	#If the enchantment is a treasure enchantment, such as Mending, this cost will be added.
-	"Treasure XP cost" = 15
 
 [GoldBars]
 	#This module is automatically disabled if Quark is present. Set true to force enable.
@@ -261,10 +279,6 @@
 [MusicImprovements]
 	#If true, the six Creative music tracks may play in survival mode.
 	"Play Creative music" = true
-
-[PathToDirt]
-	#This module is automatically disabled if Quark is present. Set true to force enable.
-	Override = false
 
 [PlayerState]
 	#Interval (in ticks) on which additional world state will be synchronised to the client.
@@ -347,8 +361,6 @@
 [WanderingTraderImprovements]
 	#If true, makes wandering traders more likely to spawn after one Minecraft day.
 	"Frequent spawning" = false
-	#If true, wandering traders will only spawn if the player is near a signal fire.
-	"Spawn near signal fire" = true
 	#If true, wandering traders will sell maps to biomes.
 	"Trade biome maps" = true
 	#If true, wandering traders will sell maps to structures.
@@ -365,6 +377,8 @@
 [RaidHorns]
 	#Chance (out of 1.0) of a patrol captain dropping a raid horn when killed by the player.
 	"Drop chance" = 0.05
+	#Volume of the raid horn sound effect when used.  1.0 is maximum volume.
+	Volume = 0.75
 
 [SnowStorms]
 	#Chance (out of 1.0) every tick of snow increasing by one layer during a thunderstorm.
@@ -375,3 +389,45 @@
 [Tinted]
 	#Number of levels required to change a tinted item using dye on an anvil.
 	"XP cost" = 0
+
+[Atlas]
+	#The atlas will create maps of this size (0-4).
+	"Map Size" = 2
+	#Allow opening the atlas while it is in the off hand
+	"Open in off hand" = false
+
+[ExtraRecipes]
+	#If true, adds a recipe for Gilded Blackstone using gold nuggets and blackstone.
+	"Gilded Blackstone" = true
+	#If true, adds a recipe for the Trident using prismarine shards and crystals.
+	Trident = false
+	#If true, adds a recipe for Cyan Dye using warped roots.
+	"Cyan Dye" = true
+	#If true, adds a recipe for Green Dye using yellow and blue dyes.
+	"Green Dye" = true
+	#If true, adds a recipe for Soul Torches using soul sand/soul soil and sticks.
+	"Soul Torch" = false
+
+[FeatherFallingCrops]
+	#Turn this off to prevent trampling even when the player does not wear feather falling boots.
+	"Requires feather falling" = true
+
+[Lumberjacks]
+	#Chance of a custom building to spawn. For reference, a vanilla library is 5.
+	"Lumberjack house weight" = 5
+
+[MapTooltips]
+	#This module is automatically disabled if Quark is present. Set true to force enable.
+	Override = false
+
+[MobSoundCulling]
+	#List of mobs to apply the custom sound delay to.
+	"Custom mob types" = ["minecraft:cow", "minecraft:sheep"]
+	#This delay applies to all mobs in the custom mob types list. As a guide, sheep and cows are 120 in vanilla.
+	"Custom mob sound delay" = 400
+
+[StackableStews]
+	#Maximum stew stack size.
+	"Stack size" = 16
+	#Also apply to suspicious stew.
+	"Enable suspicious stew" = false
