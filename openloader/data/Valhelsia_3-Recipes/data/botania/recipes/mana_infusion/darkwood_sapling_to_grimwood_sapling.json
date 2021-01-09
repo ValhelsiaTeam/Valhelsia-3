@@ -1,0 +1,14 @@
+{
+    "type": "botania:mana_infusion",
+    "input": {
+      "item": "druidcraft:darkwood_sapling"
+    },
+    "output": {
+      "item": "atmospheric:grimwood_sapling"
+    },
+    "mana": 120,
+    "group": "botania:sapling_cycle",
+    "catalyst": {
+      "name": "botania:alchemy_catalyst"
+    }
+  }
