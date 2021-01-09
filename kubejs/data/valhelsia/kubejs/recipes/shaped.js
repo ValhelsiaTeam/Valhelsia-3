@@ -104,6 +104,12 @@ events.listen('recipes', function (event) {
     S: '#forge:nuggets/silver'
   })
 
+  event.shaped(item.of('immersiveengineering:nugget_silver', 9), [
+    'S'
+  ], {
+    S: '#forge:ingots/silver'
+  })
+
   //Quark
   event.shaped(item.of('quark:ravager_hide', 1), [
     'ABA',
@@ -114,5 +120,5 @@ events.listen('recipes', function (event) {
     B: 'forbidden_arcanus:rotten_leather',
     C: 'quark:bonded_leather'
   })
-  
+
 })
