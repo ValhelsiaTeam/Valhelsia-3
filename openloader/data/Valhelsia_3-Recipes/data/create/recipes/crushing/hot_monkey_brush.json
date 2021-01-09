@@ -1,0 +1,20 @@
+{
+    "type": "create:crushing",
+    "ingredients": [
+      {
+        "item": "atmospheric:hot_monkey_brush"
+      }
+    ],
+    "results": [
+      {
+        "item": "minecraft:orange_dye",
+        "count": 2
+      },
+      {
+        "item": "minecraft:red_dye",
+        "count": 1,
+        "chance": 0.25
+      }
+    ],
+    "processingTime": 50
+  }

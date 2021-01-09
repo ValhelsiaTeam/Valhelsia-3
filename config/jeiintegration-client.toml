@@ -6,7 +6,7 @@
 	# Configure tooltip for registry name. E.g. minecraft:stone
 	registryNameTooltipMode = "disabled"
 	# Configure tooltip for NBT data.
-	nbtTooltipMode = "disabled"
+	nbtTooltipMode = "onShiftAndDebug"
 	# Configure tooltip for translation key. E.g. block.minecraft.stone
 	translationKeyTooltipMode = "onShiftAndDebug"
 	# Configure tooltip for max stack size.
@@ -14,7 +14,7 @@
 	# Configure tooltip for tags. E.g. forge:ingot, minecraft:planks
 	tagsTooltipMode = "disabled"
 	# Configure tooltip for durability.
-	durabilityTooltipMode = "enabled"
+	durabilityTooltipMode = "disabled"
 	# Configure tooltip for hunger and saturation.
 	foodTooltipMode = "disabled"
 

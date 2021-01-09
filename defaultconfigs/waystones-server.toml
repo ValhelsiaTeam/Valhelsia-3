@@ -17,7 +17,7 @@
 		inventoryButtonXpCostMultiplier = 2.0
 		#The cooldown between usages of the inventory button in seconds.
 		#Range: > 0
-		inventoryButtonCooldown = 300
+		inventoryButtonCooldown = 1200
 
 	#These options apply to teleporting using the Warp Stone item.
 	[server.warpStone]

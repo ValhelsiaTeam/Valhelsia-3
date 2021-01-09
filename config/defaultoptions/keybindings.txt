@@ -88,4 +88,6 @@ key_key.jei.previousPage:key.keyboard.page.up:NONE
 key_key.jei.nextPage:key.keyboard.page.down:NONE
 key_key.jei.bookmark:key.keyboard.a:NONE
 key_key.jei.toggleBookmarkOverlay:key.keyboard.unknown:NONE
-key_key.immersivepetroleum.projector.flip:key.mouse.left:NONE
+key_key.immersivepetroleum.projector.flip:key.keyboard.unknown:NONE
+key_psimisc.keybind:key.keyboard.unknown:NONE
+key_key.mekanismadditions.voice:key.keyboard.unknown:NONE

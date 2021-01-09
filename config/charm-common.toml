@@ -61,7 +61,7 @@
 #A functional block that speeds up cooking of clay, bricks and terracotta.
 "Kilns enabled" = true
 #Lumberjacks are villagers that trade wooden items. Their job site is the woodcutter.
-"Lumberjacks enabled" = true
+"Lumberjacks enabled" = false
 #Adds decoration and more ores to mineshafts.
 "MineshaftImprovements enabled" = false
 #Villages can spawn in swamps and jungles.
@@ -122,7 +122,7 @@
 #A witch has a chance to drop a Potion of Luck when killed by a player.
 "WitchesDropLuck enabled" = true
 #A functional block that adds more efficient recipes for crafting wooden stairs and slabs.
-"Woodcutters enabled" = true
+"Woodcutters enabled" = false
 #Tools with the Acquisition enchantment automatically pick up drops.
 "Acquisition enabled" = true
 #Refills your hotbar from your inventory.
