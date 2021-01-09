@@ -79,13 +79,6 @@ events.listen('recipes', function (event) {
     B: 'minecraft:iron_nugget'
   })
 
-  //Powah
-  event.shaped(item.of('powah:uraninite_raw_poor', 1), [
-    'A'
-  ], {
-    A: 'mekanism:ingot_uranium'
-  })
-
   //Immersive Engineering
   event.shaped(item.of('immersiveengineering:treated_wood_horizontal', 8), [
     'AAA',
@@ -104,8 +97,19 @@ events.listen('recipes', function (event) {
     S: '#forge:nuggets/silver'
   })
 
-  event.shaped(item.of('immersiveengineering:nugget_silver', 9), [
-    'S'
+  event.shaped(item.of('immersiveengineering:storage_silver', 1), [
+    'SSS',
+    'SSS',
+    'SSS'
+  ], {
+    S: '#forge:ingots/silver'
+  })
+
+  // Mystical World
+  event.shaped(item.of('mysticalworld:silver_block', 1), [
+    'SSS',
+    'SSS',
+    'SSS'
   ], {
     S: '#forge:ingots/silver'
   })
