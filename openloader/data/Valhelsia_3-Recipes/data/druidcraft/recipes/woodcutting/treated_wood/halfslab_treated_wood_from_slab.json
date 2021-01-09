@@ -1,0 +1,8 @@
+{
+  "type": "druidcraft:woodcutting",
+  "ingredient": {
+    "tag": "forge:treated_wood_slab"
+  },
+  "result": "engineersdecor:halfslab_treated_wood",
+  "count": 4
+}

@@ -1,0 +1,8 @@
+{
+  "type": "druidcraft:woodcutting",
+  "ingredient": {
+    "item": "minecraft:jungle_planks"
+  },
+  "result": "decorative_blocks:jungle_seat",
+  "count": 1
+}

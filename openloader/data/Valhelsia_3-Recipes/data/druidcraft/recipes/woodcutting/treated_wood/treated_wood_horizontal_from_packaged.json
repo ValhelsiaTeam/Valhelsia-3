@@ -1,0 +1,8 @@
+{
+  "type": "druidcraft:woodcutting",
+  "ingredient": {
+    "item": "immersiveengineering:treated_wood_packaged"
+  },
+  "result": "immersiveengineering:treated_wood_horizontal",
+  "count": 1
+}

@@ -1,0 +1,8 @@
+{
+  "type": "druidcraft:woodcutting",
+  "ingredient": {
+    "tag": "forge:treated_wood"
+  },
+  "result": "immersiveengineering:slab_treated_wood_packaged",
+  "count": 2
+}

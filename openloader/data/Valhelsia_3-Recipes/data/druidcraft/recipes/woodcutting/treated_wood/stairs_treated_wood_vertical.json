@@ -1,0 +1,8 @@
+{
+  "type": "druidcraft:woodcutting",
+  "ingredient": {
+    "tag": "forge:treated_wood"
+  },
+  "result": "immersiveengineering:stairs_treated_wood_vertical",
+  "count": 1
+}

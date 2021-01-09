@@ -1,0 +1,8 @@
+{
+  "type": "druidcraft:woodcutting",
+  "ingredient": {
+    "tag": "forge:treated_wood"
+  },
+  "result": "immersiveengineering:treated_wallmount",
+  "count": 1
+}
