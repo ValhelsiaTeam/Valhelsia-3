@@ -10,7 +10,8 @@
 	#Enable enhanced sounds for weather effects
 	"Enable Enhanced Weather Sounds" = true
 	#Options to configure sounds on an individual basis
-	"Individual Sound Config" = ["minecraft:entity.sheep.ambient cull", "minecraft:entity.chicken.ambient cull", "minecraft:entity.cow.ambient cull", "minecraft:entity.pig.ambient cull", "minecraft:entity.llama.ambient cull", "minecraft:entity.wither.death cull 25", "minecraft:entity.ender_dragon.death cull 25"]
+	"Individual Sound Config" = []
+	# Default: ["minecraft:entity.sheep.ambient cull", "minecraft:entity.chicken.ambient cull", "minecraft:entity.cow.ambient cull", "minecraft:entity.pig.ambient cull", "minecraft:entity.llama.ambient cull", "minecraft:entity.wither.death cull 25", "minecraft:entity.ender_dragon.death cull 25"]
 	#Possible sounds to play when client reaches main game menu
 	"Startup Sound List" = []
 	#Ticks between culled sound events (0 to disable culling)
