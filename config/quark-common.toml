@@ -419,7 +419,7 @@
 		"Do Harvesting Search" = true
 		#Which crops can be harvested?
 		#Format is: "harvestState[,afterHarvest]", i.e. "minecraft:wheat[age=7]" or "minecraft:cocoa[age=2,facing=north],minecraft:cocoa[age=0,facing=north]"
-		"Harvestable Blocks" = ["minecraft:wheat[age=7]", "minecraft:carrots[age=7]", "minecraft:potatoes[age=7]", "minecraft:beetroots[age=3]", "minecraft:nether_wart[age=3]", "minecraft:cocoa[age=2,facing=north],minecraft:cocoa[age=0,facing=north]", "minecraft:cocoa[age=2,facing=south],minecraft:cocoa[age=0,facing=south]", "minecraft:cocoa[age=2,facing=east],minecraft:cocoa[age=0,facing=east]", "minecraft:cocoa[age=2,facing=west],minecraft:cocoa[age=0,facing=west]", "mysticalworld:aubergine_crop[age=7]", "farmersdelight:cabbages[age=7]"]
+		"Harvestable Blocks" = ["minecraft:wheat[age=7]", "minecraft:carrots[age=7]", "minecraft:potatoes[age=7]", "minecraft:beetroots[age=3]", "minecraft:nether_wart[age=3]", "minecraft:cocoa[age=2,facing=north],minecraft:cocoa[age=0,facing=north]", "minecraft:cocoa[age=2,facing=south],minecraft:cocoa[age=0,facing=south]", "minecraft:cocoa[age=2,facing=east],minecraft:cocoa[age=0,facing=east]", "minecraft:cocoa[age=2,facing=west],minecraft:cocoa[age=0,facing=west]", "mysticalworld:aubergine_crop[age=7]", "farmersdelight:cabbages[age=7]", "farmersdelight:rice_upper_crop[age=3]"]
 
 	[tweaks.enhanced_ladders]
 		#Allowed values: (,0]
@@ -1706,9 +1706,12 @@
 		"Disable Iron Farms" = false
 		#Makes Boats not glide on ice
 		"Disable Ice Roads" = false
+		#Makes Sheep not drop Wool when killed
+		"Disable Wool Drops" = true
 
 	[experimental.overlay_shader]
 		#Sets the name of the shader to load on a regular basis. This can load any shader the Camera module can (and requires the Camera module enabled to apply said logic).
 		#Some useful shaders include 'desaturate', 'oversaturate', 'bumpy'
 		#Colorblind simulation shaders are available in the form of 'deutranopia', 'protanopia', 'tritanopia', and 'achromatopsia'
 		Shader = "none"
+
