@@ -1707,7 +1707,7 @@
 		#Makes Boats not glide on ice
 		"Disable Ice Roads" = false
 		#Makes Sheep not drop Wool when killed
-		"Disable Wool Drops" = true
+		"Disable Wool Drops" = false
 
 	[experimental.overlay_shader]
 		#Sets the name of the shader to load on a regular basis. This can load any shader the Camera module can (and requires the Camera module enabled to apply said logic).
