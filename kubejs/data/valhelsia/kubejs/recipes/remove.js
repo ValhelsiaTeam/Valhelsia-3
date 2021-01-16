@@ -1,13 +1,44 @@
 events.listen('recipes', function (event) {
 
   var idRemove = [
-    //Decorative Blocks
+    // Decorative Blocks
     'decorative_blocks:chain',
 
-    //Industrial Foregoing
+    // Industrial Foregoing
     'industrialforegoing:infinity_drill',
 
-    //MineColonies
+    // Mekanism
+    'mekanism:crushing/biofuel/oak_sapling',
+    'mekanism:crushing/biofuel/spruce_sapling',
+    'mekanism:crushing/biofuel/birch_sapling',
+    'mekanism:crushing/biofuel/jungle_sapling',
+    'mekanism:crushing/biofuel/acacia_sapling',
+    'mekanism:crushing/biofuel/dark_oak_sapling',
+    'mekanism:crushing/biofuel/oak_leaves',
+    'mekanism:crushing/biofuel/spruce_leaves',
+    'mekanism:crushing/biofuel/birch_leaves',
+    'mekanism:crushing/biofuel/jungle_leaves',
+    'mekanism:crushing/biofuel/acacia_leaves',
+    'mekanism:crushing/biofuel/dark_oak_leaves',
+    'mekanism:crushing/biofuel/dandelion',
+    'mekanism:crushing/biofuel/poppy',
+    'mekanism:crushing/biofuel/blue_orchid',
+    'mekanism:crushing/biofuel/allium',
+    'mekanism:crushing/biofuel/azure_bluet',
+    'mekanism:crushing/biofuel/red_tulip',
+    'mekanism:crushing/biofuel/orange_tulip',
+    'mekanism:crushing/biofuel/white_tulip',
+    'mekanism:crushing/biofuel/pink_tulip',
+    'mekanism:crushing/biofuel/oxeye_daisy',
+    'mekanism:crushing/biofuel/cornflower',
+    'mekanism:crushing/biofuel/lily_of_the_valley',
+    'mekanism:crushing/biofuel/wither_rose',
+    'mekanism:crushing/biofuel/sunflower',
+    'mekanism:crushing/biofuel/lilac',
+    'mekanism:crushing/biofuel/rose_bush',
+    'mekanism:crushing/biofuel/peony',
+
+    // MineColonies
     'minecolonies:chainmailhelmet',
     'minecolonies:chainmailchestplate',
     'minecolonies:chainmailleggings',
