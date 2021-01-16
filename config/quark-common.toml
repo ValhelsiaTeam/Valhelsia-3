@@ -372,7 +372,7 @@
 		#Can Rotten Flesh and Poisonous Potatoes be composted?
 		"Compostable Toxins" = true
 		#Can bones be smelted down to bone meal?
-		"Bone Meal Utility" = true
+		"Bone Meal Utility" = false
 		#Can any wool color be dyed?
 		"Dye Any Wool" = true
 		#Can Coral be crafted into dye?
