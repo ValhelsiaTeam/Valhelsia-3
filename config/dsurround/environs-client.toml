@@ -1,4 +1,10 @@
 
+#Options for defining sound behavior
+["Sound Options"]
+	"Waterfall Volume" = 15
+	"Spot Sound Volume" = 30
+	"Biome Sound Volume" = 30
+
 #Defines how logging will behave
 ["Logging Options"]
 	#Enables/disables debug logging of the mod
@@ -56,16 +62,4 @@
 	#Chance morning fog will occurs expressed as 1 in N
 	#Range: > 0
 	"Morning Fog Chance" = 1
-
-#Options for defining sound behavior
-["Sound Options"]
-	#Scaling factor to apply to spot sounds
-	#Range: 0 ~ 100
-	"Spot Sound Volume" = 30
-	#Scaling factor to apply to biome sounds
-	#Range: 0 ~ 100
-	"Biome Sound Volume" = 30
-	#Scaling factor to apply to waterfall sounds
-	#Range: 0 ~ 100
-	"Waterfall Volume" = 30
 
