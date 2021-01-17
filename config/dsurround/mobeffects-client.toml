@@ -22,7 +22,7 @@
 	"Footsteps as Quadruped" = false
 	#Footstep master volume scale
 	#Range: 0 ~ 100
-	"Footstep Volume Scale" = 75
+	"Footstep Volume Scale" = 30
 	#Enable armor rustle and rain splash accents for footstep acoustics
 	"Enable Footstep Accents" = false
 
