@@ -1,0 +1,24 @@
+{
+  "type": "immersiveengineering:cloche",
+  "results": [
+    {
+      "item": "druidcraft:hemp",
+      "count": 1
+    },
+    {
+      "item": "druidcraft:hemp_seeds",
+      "count": 1
+    }
+  ],
+  "input": {
+    "item": "druidcraft:hemp_seeds"
+  },
+  "soil": {
+    "item": "minecraft:dirt"
+  },
+  "time": 640,
+  "render": {
+    "type": "crop",
+    "block": "druidcraft:hemp_crop"
+  }
+}
