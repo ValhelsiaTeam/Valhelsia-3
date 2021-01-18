@@ -1,6 +1,10 @@
 events.listen('recipes', function (event) {
 
   var idRemove = [
+    // Charm
+    'charm:extra_recipes/soul_torch',
+    'charm:extra_recipes/trident',
+
     // Decorative Blocks
     'decorative_blocks:chain',
 
