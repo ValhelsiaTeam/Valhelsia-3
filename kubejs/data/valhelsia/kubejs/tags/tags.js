@@ -67,7 +67,6 @@ onEvent('item.tags', event => {
   event.add('forge:sapling', 'biomesoplenty:magic_sapling')
   event.add('forge:sapling', 'biomesoplenty:umbran_sapling')
   event.add('forge:sapling', 'biomesoplenty:hellbark_sapling')
-  event.add('forge:sapling', 'biomesoplenty:darkwood_sapling')
   event.add('forge:sapling', 'biomesoplenty:hellbark_sapling')
   event.add('forge:sapling', 'druidcraft:darkwood_sapling')
   event.add('forge:sapling', 'druidcraft:elder_sapling')
