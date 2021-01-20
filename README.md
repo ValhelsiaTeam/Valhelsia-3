@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-<strong>Valhelsia 3</strong> is a modpack assembled in 1.16.3. This one includes many of the most popular classic mods to ensure that veteran modded players feel right at home, and   we also include many amazing new mods to discover, keeping the pack fresh and full of new experiences just waiting to happen.
+<strong>Valhelsia 3</strong> is a modpack for Minecraft 1.16.5. The pack includes many of the most popular classic mods to ensure that veteran modded players feel right at home, and we also include many amazing new mods to discover, keeping the pack fresh and full of new experiences just waiting to happen.
 </p>
 
 <p align="center">
@@ -18,7 +18,7 @@
 </p>
 
 <p align="center">
-  <strong>We no longer provide support on GitHub, please come directly to our discord server.</strong>
+  <strong>We no longer provide support on GitHub, please come directly to our <a href="https://valhelsia.net/discord">Discord server</a>.</strong>
 </p>
 
 ------------------------------
@@ -34,7 +34,7 @@
 </p>                                                                                                                                             
 
 <p align="center">
-BisectHosting offers a quick, simple and quality solution. After your purchase, the server is already configured and ready to use.                 
-Use the code "<strong>Valhelsia</strong>" to get <strong>25%</strong> off your first month as a new client for any of their gaming servers.                                                                         
-This modpack is recommended to have <strong>at least 4GB</strong> to run smoothly with 5-7 players.
+<a href="https://bisecthosting.com/Valhelsia">BisectHosting</a> offers quick, simple and high quality server hosting with over a dozen locations available across the world, ensuring low latency. After your purchase, the server is already configured and ready to use.
+Use the code "<strong>Valhelsia</strong>" to get <strong>25%</strong> off your first month as a new client for any of their gaming servers.
+We recommend that you use <strong>at least 4GB</strong> to run the pack smoothly with 5-7 players.
 </p>
