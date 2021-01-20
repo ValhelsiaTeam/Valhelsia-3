@@ -103,6 +103,17 @@ events.listen('recipes', function (event) {
     'mekanismtools:steel_chestplate',
     'mekanismtools:steel_leggings',
     'mekanismtools:steel_boots',
+    'mekanismtools:lapis_lazuli_sword',
+    'mekanismtools:lapis_lazuli_pickaxe',
+    'mekanismtools:lapis_lazuli_axe',
+    'mekanismtools:lapis_lazuli_shovel',
+    'mekanismtools:lapis_lazuli_hoe',
+    'mekanismtools:lapis_lazuli_paxel',
+    'mekanismtools:lapis_lazuli_helmet',
+    'mekanismtools:lapis_lazuli_chestplate',
+    'mekanismtools:lapis_lazuli_leggings',
+    'mekanismtools:lapis_lazuli_boots',
+    'mekanismtools:lapis_lazuli_shield',
 
     //Mystical World
     'mysticalworld:tin_ingot',
