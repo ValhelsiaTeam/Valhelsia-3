@@ -1,0 +1,6 @@
+{
+  // The repository is mainly JSON with 2 spaces per indent-level.
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false
+}
