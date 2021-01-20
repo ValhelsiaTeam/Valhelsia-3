@@ -48,9 +48,11 @@ events.listen('recipes', function (event) {
     'minecolonies:chainmailleggings',
     'minecolonies:chainmailboots',
   ]
+
   idRemove.forEach(function (remove) {
     event.remove({id: remove})
   })
+
   var outputRemove = [
     //Immersive Engineering
     'immersiveengineering:ingot_uranium',
@@ -119,8 +121,15 @@ events.listen('recipes', function (event) {
     //Create
     'create:copper_ingot',
     'create:copper_nugget',
+
+    // Quark
+    'quark:beetroot_crate',
+    'quark:carrot_crate',
+    'quark:potato_crate'
   ]
+
   outputRemove.forEach(function (remove) {
     event.remove({output: remove})
   })
+
 })
