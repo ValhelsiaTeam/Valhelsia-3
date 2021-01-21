@@ -1,0 +1,22 @@
+{
+	"paintings" : [{
+			"name" : "arch_illager", 
+			"x" : 16, 
+			"y" : 32
+		}, {
+			"name" : "dog", 
+			"square" : 32
+		}, {
+			"name" : "panda", 
+			"square" : 32
+		}, {
+			"name" : "pig", 
+			"square" : 16
+		}, {
+			"name" : "portal", 
+			"square" : 32
+		}, {
+			"name" : "trail", 
+			"square" : 32
+		}]
+}
