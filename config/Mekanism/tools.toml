@@ -119,7 +119,7 @@
 	[tools.bronze]
 		#Base attack damage of bronze items.
 		#Range: 0.0 ~ 3.4028234663852886E38
-		bronzeAttackDamage = 6.0
+		bronzeAttackDamage = 3.0
 		#Maximum durability of bronze shields.
 		#Range: > 0
 		bronzeShieldDurability = 1568
@@ -134,7 +134,7 @@
 		bronzeShovelAtkSpeed = -3.0
 		#Attack damage modifier of bronze axes.
 		#Range: 0.0 ~ 3.4028234663852886E38
-		bronzeAxeDamage = 2.0
+		bronzeAxeDamage = 5.0
 		#Attack speed of bronze axes.
 		bronzeAxeAtkSpeed = -3.0999999046325684
 		#Attack damage modifier of bronze pickaxes.
@@ -142,36 +142,36 @@
 		#Attack speed of bronze pickaxes.
 		bronzePickaxeAtkSpeed = -2.799999952316284
 		#Attack damage modifier of bronze hoes.
-		bronzeHoeDamage = -6
+		bronzeHoeDamage = -3
 		#Attack speed of bronze hoes.
-		bronzeHoeAtkSpeed = 3.0
+		bronzeHoeAtkSpeed = -1.0
 		#Maximum durability of bronze tools.
 		#Range: > 1
 		bronzeToolMaxUses = 800
 		#Efficiency of bronze tools.
-		bronzeEfficiency = 14.0
+		bronzeEfficiency = 10.0
 		#Harvest level of bronze paxels.
 		#Range: > 0
 		bronzePaxelHarvestLevel = 3
 		#Attack damage modifier of bronze paxels.
 		#Range: 0.0 ~ 3.4028234663852886E38
-		bronzePaxelDamage = 8.0
+		bronzePaxelDamage = 4.0
 		#Attack speed of bronze paxels.
 		bronzePaxelAtkSpeed = -2.4000000953674316
 		#Efficiency of bronze paxels.
-		bronzePaxelEfficiency = 16.0
+		bronzePaxelEfficiency = 10.0
 		#Natural enchantability factor of bronze paxels.
 		#Range: > 0
-		bronzePaxelEnchantability = 14
+		bronzePaxelEnchantability = 12
 		#Maximum durability of bronze paxels.
 		#Range: > 1
-		bronzePaxelMaxUses = 1100
+		bronzePaxelMaxUses = 800
 		#Harvest level of bronze tools.
 		#Range: > 0
 		bronzeHarvestLevel = 2
 		#Natural enchantability factor of bronze items.
 		#Range: > 0
-		bronzeEnchantability = 10
+		bronzeEnchantability = 12
 		#Base armor toughness value of bronze armor.
 		#Range: 0.0 ~ 3.4028234663852886E38
 		bronzeToughness = 0.0
@@ -207,59 +207,59 @@
 	[tools.lapis_lazuli]
 		#Base attack damage of lapis_lazuli items.
 		#Range: 0.0 ~ 3.4028234663852886E38
-		lapis_lazuliAttackDamage = 2.0
+		lapis_lazuliAttackDamage = 1.0
 		#Maximum durability of lapis_lazuli shields.
 		#Range: > 0
 		lapis_lazuliShieldDurability = 582
 		#Attack damage modifier of lapis_lazuli swords.
-		lapis_lazuliSwordDamage = 3
+		lapis_lazuliSwordDamage = 2
 		#Attack speed of lapis_lazuli swords.
 		lapis_lazuliSwordAtkSpeed = -2.4000000953674316
 		#Attack damage modifier of lapis_lazuli shovels.
 		#Range: 0.0 ~ 3.4028234663852886E38
-		lapis_lazuliShovelDamage = 1.5
+		lapis_lazuliShovelDamage = 0.5
 		#Attack speed of lapis_lazuli shovels.
 		lapis_lazuliShovelAtkSpeed = -3.0
 		#Attack damage modifier of lapis_lazuli axes.
 		#Range: 0.0 ~ 3.4028234663852886E38
-		lapis_lazuliAxeDamage = 6.0
+		lapis_lazuliAxeDamage = 5.0
 		#Attack speed of lapis_lazuli axes.
-		lapis_lazuliAxeAtkSpeed = -3.0999999046325684
+		lapis_lazuliAxeAtkSpeed = -3.0
 		#Attack damage modifier of lapis_lazuli pickaxes.
-		lapis_lazuliPickaxeDamage = 1
+		lapis_lazuliPickaxeDamage = 0
 		#Attack speed of lapis_lazuli pickaxes.
 		lapis_lazuliPickaxeAtkSpeed = -2.799999952316284
 		#Attack damage modifier of lapis_lazuli hoes.
-		lapis_lazuliHoeDamage = -2
+		lapis_lazuliHoeDamage = -1
 		#Attack speed of lapis_lazuli hoes.
-		lapis_lazuliHoeAtkSpeed = -1.0
+		lapis_lazuliHoeAtkSpeed = -3.0
 		#Maximum durability of lapis_lazuli tools.
 		#Range: > 1
-		lapis_lazuliToolMaxUses = 200
+		lapis_lazuliToolMaxUses = 150
 		#Efficiency of lapis_lazuli tools.
 		lapis_lazuliEfficiency = 5.0
 		#Harvest level of lapis_lazuli paxels.
 		#Range: > 0
-		lapis_lazuliPaxelHarvestLevel = 2
+		lapis_lazuliPaxelHarvestLevel = 0
 		#Attack damage modifier of lapis_lazuli paxels.
 		#Range: 0.0 ~ 3.4028234663852886E38
-		lapis_lazuliPaxelDamage = 6.0
+		lapis_lazuliPaxelDamage = 3.0
 		#Attack speed of lapis_lazuli paxels.
 		lapis_lazuliPaxelAtkSpeed = -2.4000000953674316
 		#Efficiency of lapis_lazuli paxels.
 		lapis_lazuliPaxelEfficiency = 6.0
 		#Natural enchantability factor of lapis_lazuli paxels.
 		#Range: > 0
-		lapis_lazuliPaxelEnchantability = 10
+		lapis_lazuliPaxelEnchantability = 27
 		#Maximum durability of lapis_lazuli paxels.
 		#Range: > 1
-		lapis_lazuliPaxelMaxUses = 250
+		lapis_lazuliPaxelMaxUses = 150
 		#Harvest level of lapis_lazuli tools.
 		#Range: > 0
-		lapis_lazuliHarvestLevel = 2
+		lapis_lazuliHarvestLevel = 0
 		#Natural enchantability factor of lapis_lazuli items.
 		#Range: > 0
-		lapis_lazuliEnchantability = 8
+		lapis_lazuliEnchantability = 30
 		#Base armor toughness value of lapis_lazuli armor.
 		#Range: 0.0 ~ 3.4028234663852886E38
 		lapis_lazuliToughness = 0.0
@@ -280,22 +280,22 @@
 		lapis_lazuliHelmetDurability = 143
 		#Protection value of lapis_lazuli boots.
 		#Range: > 0
-		lapis_lazuliBootArmor = 2
+		lapis_lazuliBootArmor = 1
 		#Protection value of lapis_lazuli leggings.
 		#Range: > 0
-		lapis_lazuliLeggingArmor = 6
+		lapis_lazuliLeggingArmor = 3
 		#Protection value of lapis_lazuli chestplates.
 		#Range: > 0
-		lapis_lazuliChestplateArmor = 5
+		lapis_lazuliChestplateArmor = 4
 		#Protection value of lapis_lazuli helmets.
 		#Range: > 0
-		lapis_lazuliHelmetArmor = 2
+		lapis_lazuliHelmetArmor = 1
 
 	# Material Settings for osmium
 	[tools.osmium]
 		#Base attack damage of osmium items.
 		#Range: 0.0 ~ 3.4028234663852886E38
-		osmiumAttackDamage = 4.0
+		osmiumAttackDamage = 2.0
 		#Maximum durability of osmium shields.
 		#Range: > 0
 		osmiumShieldDurability = 1344
@@ -310,7 +310,7 @@
 		osmiumShovelAtkSpeed = -3.0
 		#Attack damage modifier of osmium axes.
 		#Range: 0.0 ~ 3.4028234663852886E38
-		osmiumAxeDamage = 4.0
+		osmiumAxeDamage = 6.0
 		#Attack speed of osmium axes.
 		osmiumAxeAtkSpeed = -3.0
 		#Attack damage modifier of osmium pickaxes.
@@ -318,36 +318,36 @@
 		#Attack speed of osmium pickaxes.
 		osmiumPickaxeAtkSpeed = -2.799999952316284
 		#Attack damage modifier of osmium hoes.
-		osmiumHoeDamage = -4
+		osmiumHoeDamage = -2
 		#Attack speed of osmium hoes.
-		osmiumHoeAtkSpeed = 1.0
+		osmiumHoeAtkSpeed = -2.0
 		#Maximum durability of osmium tools.
 		#Range: > 1
 		osmiumToolMaxUses = 500
 		#Efficiency of osmium tools.
-		osmiumEfficiency = 10.0
+		osmiumEfficiency = 8.0
 		#Harvest level of osmium paxels.
 		#Range: > 0
-		osmiumPaxelHarvestLevel = 3
+		osmiumPaxelHarvestLevel = 1
 		#Attack damage modifier of osmium paxels.
 		#Range: 0.0 ~ 3.4028234663852886E38
-		osmiumPaxelDamage = 5.0
+		osmiumPaxelDamage = 4.0
 		#Attack speed of osmium paxels.
 		osmiumPaxelAtkSpeed = -2.4000000953674316
 		#Efficiency of osmium paxels.
-		osmiumPaxelEfficiency = 12.0
+		osmiumPaxelEfficiency = 8.0
 		#Natural enchantability factor of osmium paxels.
 		#Range: > 0
 		osmiumPaxelEnchantability = 16
 		#Maximum durability of osmium paxels.
 		#Range: > 1
-		osmiumPaxelMaxUses = 700
+		osmiumPaxelMaxUses = 500
 		#Harvest level of osmium tools.
 		#Range: > 0
-		osmiumHarvestLevel = 2
+		osmiumHarvestLevel = 1
 		#Natural enchantability factor of osmium items.
 		#Range: > 0
-		osmiumEnchantability = 12
+		osmiumEnchantability = 16
 		#Base armor toughness value of osmium armor.
 		#Range: 0.0 ~ 3.4028234663852886E38
 		osmiumToughness = 1.0
@@ -368,16 +368,16 @@
 		osmiumHelmetDurability = 330
 		#Protection value of osmium boots.
 		#Range: > 0
-		osmiumBootArmor = 3
+		osmiumBootArmor = 2
 		#Protection value of osmium leggings.
 		#Range: > 0
-		osmiumLeggingArmor = 6
+		osmiumLeggingArmor = 4
 		#Protection value of osmium chestplates.
 		#Range: > 0
 		osmiumChestplateArmor = 5
 		#Protection value of osmium helmets.
 		#Range: > 0
-		osmiumHelmetArmor = 3
+		osmiumHelmetArmor = 2
 
 	# Material Settings for refined_glowstone
 	[tools.refined_glowstone]
