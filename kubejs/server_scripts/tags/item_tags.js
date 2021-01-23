@@ -5,31 +5,23 @@ onEvent('item.tags', event => {
   event.add('forge:storageblocks/slime', 'autumnity:snail_slime_block')
 
   // Farmer's Delight Knife Compat
-  event.add('farmersdelight:tools/knives', 'mysticalworld:amethyst_knife')
-  event.add('farmersdelight:tools/knives', 'mysticalworld:cactus_knife')
-  event.add('farmersdelight:tools/knives', 'mysticalworld:copper_knife')
-  event.add('farmersdelight:tools/knives', 'mysticalworld:lead_knife')
-  event.add('farmersdelight:tools/knives', 'mysticalworld:quicksilver_knife')
-  event.add('farmersdelight:tools/knives', 'mysticalworld:silver_knife')
-  event.add('farmersdelight:tools/knives', 'mysticalworld:tin_knife')
-  event.add('farmersdelight:tools/knives', 'mysticalworld:stone_knife')
-  event.add('farmersdelight:tools/knives', 'mysticalworld:wood_knife')
-  event.add('farmersdelight:tools/knives', 'mysticalworld:diamond_knife')
-  event.add('farmersdelight:tools/knives', 'mysticalworld:gold_knife')
-  event.add('farmersdelight:tools/knives', 'mysticalworld:iron_knife')
+  var knives = [
+    'mysticalworld:amethyst_knife',
+    'mysticalworld:cactus_knife',
+    'mysticalworld:copper_knife',
+    'mysticalworld:lead_knife',
+    'mysticalworld:quicksilver_knife',
+    'mysticalworld:silver_knife',
+    'mysticalworld:tin_knife',
+    'mysticalworld:stone_knife',
+    'mysticalworld:wood_knife',
+    'mysticalworld:diamond_knife',
+    'mysticalworld:gold_knife',
+    'mysticalworld:iron_knife'
+  ]
 
-  event.add('forge:tools/knives', 'mysticalworld:amethyst_knife')
-  event.add('forge:tools/knives', 'mysticalworld:cactus_knife')
-  event.add('forge:tools/knives', 'mysticalworld:copper_knife')
-  event.add('forge:tools/knives', 'mysticalworld:lead_knife')
-  event.add('forge:tools/knives', 'mysticalworld:quicksilver_knife')
-  event.add('forge:tools/knives', 'mysticalworld:silver_knife')
-  event.add('forge:tools/knives', 'mysticalworld:tin_knife')
-  event.add('forge:tools/knives', 'mysticalworld:stone_knife')
-  event.add('forge:tools/knives', 'mysticalworld:wood_knife')
-  event.add('forge:tools/knives', 'mysticalworld:diamond_knife')
-  event.add('forge:tools/knives', 'mysticalworld:gold_knife')
-  event.add('forge:tools/knives', 'mysticalworld:iron_knife')
+  event.get('farmersdelight:tools/knives').add(knives)
+  event.get('forge:tools/knives').add(knives)
 
   // Mekanism Bio Fuel Compat
   event.add('forge:sapling', 'quark:yellow_blossom_sapling')
