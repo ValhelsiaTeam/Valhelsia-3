@@ -11,6 +11,10 @@ events.listen('recipes', function (event) {
   event.shapeless(Item.of('immersiveengineering:ingot_silver', 9), '#forge:storage_blocks/silver')
   event.shapeless(Item.of('immersiveengineering:nugget_silver', 9), '#forge:ingots/silver')
 
+  // Minecraft
+  // No idea why this recipe was gone, guessing some mod removed it in error.
+  event.shapeless(Item.of('minecraft:trapped_chest', 1), ['#forge:chests/wooden', 'minecraft:tripwire_hook'])
+
   // Powah!
   event.shapeless(Item.of('powah:uraninite_raw_poor', 1), 'mekanism:ingot_uranium')
 })
