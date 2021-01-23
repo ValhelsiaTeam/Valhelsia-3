@@ -42,4 +42,35 @@ onEvent('block.tags', event => {
   ]
 
   event.get('forge:supports_conduit').add(supportsConduit)
+
+  // Missing Stair Tags
+  var woodenStairs = [
+    'astralsorcery:infused_wood_stairs'
+  ]
+
+  var stoneStairs = [
+    'astralsorcery:marble_stairs',
+    'astralsorcery:sooty_marble_stairs'
+  ]
+
+  event.get('minecraft:stairs')
+       .add(woodenStairs)
+       .add(stoneStairs)
+
+  // Missing Slab Tags
+  var woodenSlabs = [
+    'astralsorcery:infused_wood_slab'
+  ]
+
+  var stoneSlabs = [
+    'astralsorcery:marble_slab',
+    'astralsorcery:sooty_marble_slab'
+  ]
+
+  event.get('minecraft:slabs')
+       .add(woodenSlabs)
+       .add(stoneSlabs)
+
+  event.get('minecraft:wooden_slabs')
+       .add(woodenSlabs)
 })
