@@ -60,7 +60,37 @@ events.listen('recipes', function (event) {
   })
 
   var outputRemove = [
-    //Immersive Engineering
+    // Charm
+    'charm:woodcutter',
+
+    // Comforts
+    'comforts:sleeping_bag_white',
+    'comforts:sleeping_bag_orange',
+    'comforts:sleeping_bag_magenta',
+    'comforts:sleeping_bag_light_blue',
+    'comforts:sleeping_bag_yellow',
+    'comforts:sleeping_bag_lime',
+    'comforts:sleeping_bag_pink',
+    'comforts:sleeping_bag_gray',
+    'comforts:sleeping_bag_light_gray',
+    'comforts:sleeping_bag_cyan',
+    'comforts:sleeping_bag_purple',
+    'comforts:sleeping_bag_blue',
+    'comforts:sleeping_bag_brown',
+    'comforts:sleeping_bag_green',
+    'comforts:sleeping_bag_red',
+    'comforts:sleeping_bag_black',
+    
+    // Create
+    'create:copper_ingot',
+    'create:copper_nugget',
+
+    // Eidolon
+    'eidolon:lead_ingot',
+    'eidolon:lead_nugget',
+    'eidolon:lead_ore',
+    
+    // Immersive Engineering
     'immersiveengineering:ingot_uranium',
     'immersiveengineering:nugget_uranium',
     'immersiveengineering:ingot_copper',
@@ -78,33 +108,7 @@ events.listen('recipes', function (event) {
     'immersiveengineering:plate_iron',
     'immersiveengineering:plate_gold',
 
-    // Charm
-    'charm:woodcutter',
-
-    //Comforts
-    'comforts:sleeping_bag_white',
-    'comforts:sleeping_bag_orange',
-    'comforts:sleeping_bag_magenta',
-    'comforts:sleeping_bag_light_blue',
-    'comforts:sleeping_bag_yellow',
-    'comforts:sleeping_bag_lime',
-    'comforts:sleeping_bag_pink',
-    'comforts:sleeping_bag_gray',
-    'comforts:sleeping_bag_light_gray',
-    'comforts:sleeping_bag_cyan',
-    'comforts:sleeping_bag_purple',
-    'comforts:sleeping_bag_blue',
-    'comforts:sleeping_bag_brown',
-    'comforts:sleeping_bag_green',
-    'comforts:sleeping_bag_red',
-    'comforts:sleeping_bag_black',
-
-    //Eidolon
-    'eidolon:lead_ingot',
-    'eidolon:lead_nugget',
-    'eidolon:lead_ore',
-
-    //Mekanism Tools
+    // Mekanism Tools
     'mekanismtools:steel_helmet',
     'mekanismtools:steel_chestplate',
     'mekanismtools:steel_leggings',
@@ -121,7 +125,7 @@ events.listen('recipes', function (event) {
     'mekanismtools:lapis_lazuli_boots',
     'mekanismtools:lapis_lazuli_shield',
 
-    //Mystical World
+    // Mystical World
     'mysticalworld:tin_ingot',
     'mysticalworld:tin_dust',
     'mysticalworld:tin_nugget',
@@ -134,10 +138,6 @@ events.listen('recipes', function (event) {
     'mysticalworld:lead_ingot',
     'mysticalworld:lead_dust',
     'mysticalworld:lead_nugget',
-
-    //Create
-    'create:copper_ingot',
-    'create:copper_nugget',
 
     // Quark
     'quark:beetroot_crate',
