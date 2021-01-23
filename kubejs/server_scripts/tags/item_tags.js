@@ -178,7 +178,7 @@ onEvent('item.tags', event => {
     'absentbydesign:stairs_lodestone',
     'absentbydesign:stairs_quartz_bricks',
     'astralsorcery:marble_stairs',
-    'astralsorcery:sooty_marble_stairs'
+    'astralsorcery:black_marble_stairs'
   ]
 
   var concreteStairs = [
@@ -280,7 +280,7 @@ onEvent('item.tags', event => {
     'absentbydesign:slab_mushroom_stem',
     'absentbydesign:slab_red_mushroom',
     'absentbydesign:slab_brown_mushroom',
-    'absentbydesign:slab_polished_mushroom',
+    'absentbydesign:slab_mushroom_polished',
     'astralsorcery:infused_wood_slab'
   ]
 
@@ -295,7 +295,7 @@ onEvent('item.tags', event => {
     'absentbydesign:slab_lodestone',
     'absentbydesign:slab_quartz_bricks',
     'astralsorcery:marble_slab',
-    'astralsorcery:sooty_marble_slab'
+    'astralsorcery:black_marble_slab'
   ]
 
   var concreteSlabs = [

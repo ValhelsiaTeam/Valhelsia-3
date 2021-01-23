@@ -50,7 +50,7 @@ onEvent('block.tags', event => {
 
   var stoneStairs = [
     'astralsorcery:marble_stairs',
-    'astralsorcery:sooty_marble_stairs'
+    'astralsorcery:black_marble_stairs'
   ]
 
   event.get('minecraft:stairs')
@@ -64,7 +64,7 @@ onEvent('block.tags', event => {
 
   var stoneSlabs = [
     'astralsorcery:marble_slab',
-    'astralsorcery:sooty_marble_slab'
+    'astralsorcery:black_marble_slab'
   ]
 
   event.get('minecraft:slabs')
