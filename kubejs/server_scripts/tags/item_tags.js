@@ -23,6 +23,12 @@ onEvent('item.tags', event => {
   event.get('farmersdelight:tools/knives').add(knives)
   event.get('forge:tools/knives').add(knives)
 
+  // Missing #forge:seed item tags.
+  var seeds = [
+    'mysticalworld:aubergine_seeds'
+  ]
+  event.get('forge:seeds').add(seeds)
+
   // Mekanism Bio Fuel Compat
   event.add('forge:sapling', 'quark:yellow_blossom_sapling')
   event.add('forge:sapling', 'quark:lavender_blossom_sapling')
@@ -63,4 +69,7 @@ onEvent('item.tags', event => {
   event.add('forge:sapling', 'druidcraft:elder_sapling')
   event.add('forge:sapling', 'forbidden_arcanus:cherrywood_sapling')
   event.add('forge:sapling', 'forbidden_arcanus:mysterywood_sapling')
+  
+  // Misc Missing Tags
+  event.add('forge:seeds/aubergine', 'mysticalworld:aubergine_seeds')
 })
