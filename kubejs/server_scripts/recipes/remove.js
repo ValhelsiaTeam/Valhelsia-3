@@ -1,3 +1,5 @@
+// priority: 100
+
 events.listen('recipes', function (event) {
 
   var idRemove = [
@@ -24,6 +26,10 @@ events.listen('recipes', function (event) {
     'mekanism:crushing/biofuel/jungle_leaves',
     'mekanism:crushing/biofuel/acacia_leaves',
     'mekanism:crushing/biofuel/dark_oak_leaves',
+    'mekanism:crushing/biofuel/beetroot_seeds',
+    'mekanism:crushing/biofuel/melon_seeds',
+    'mekanism:crushing/biofuel/pumpkin_seeds',
+    'mekanism:crushing/biofuel/wheat_seeds',
     'mekanism:crushing/biofuel/dandelion',
     'mekanism:crushing/biofuel/poppy',
     'mekanism:crushing/biofuel/blue_orchid',
