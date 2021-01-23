@@ -1,3 +1,5 @@
+// priority: 10
+
 events.listen('recipes', function (event) {
 
   // Minecarft

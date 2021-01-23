@@ -1,3 +1,5 @@
+// priority: 10
+
 events.listen('recipes', function (event) {
   // Mekanism - Bio Fuel
   event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 5), '#minecraft:flowers')
