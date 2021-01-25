@@ -11,4 +11,7 @@ events.listen('recipes', function (event) {
   // Decorative Blocks
   crushAndMill('minecraft:coarse_dirt', 'decorative_blocks:rocky_dirt')
 
+  // Farmer's Delight
+  crushAndMill([Item.of('farmersdelight:rice', 9), Item.of('farmersdelight:straw', 9)], 'farmersdelight:rice_bale')
+
 })
