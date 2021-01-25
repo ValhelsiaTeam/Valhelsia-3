@@ -9,6 +9,8 @@ events.listen('recipes', function (event) {
 
     // Decorative Blocks
     'decorative_blocks:chain',
+    'decorative_blocks:dirt_from_rocky_dirt',
+    'decorative_blocks:rocky_dirt',
 
     // Industrial Foregoing
     'industrialforegoing:infinity_drill',

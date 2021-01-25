@@ -81,6 +81,14 @@ events.listen('recipes', function (event) {
     B: 'minecraft:iron_nugget'
   })
 
+  event.shaped(item.of('decorative_blocks:rocky_dirt', 4), [
+    'AB',
+    'BA'
+  ], {
+    A: 'minecraft:dirt',
+    B: 'minecraft:cobblestone'
+  })
+
   // Immersive Engineering
   event.shaped(item.of('immersiveengineering:treated_wood_horizontal', 8), [
     'AAA',
