@@ -2,6 +2,10 @@
 
 events.listen('recipes', function (event) {
 
+  // BoP
+  event.recipes.mekanism.crushing('biomesoplenty:white_sand', 'minecraft:diorite')
+  event.recipes.mekanism.crushing('biomesoplenty:black_sand', 'minecraft:basalt')
+
   // Decorative Blocks
   event.recipes.mekanism.crushing('minecraft:coarse_dirt', 'decorative_blocks:rocky_dirt')
 
