@@ -7,7 +7,6 @@ events.listen('recipes', function (event) {
   event.recipes.immersiveengineering.crusher(Item.of('biomesoplenty:white_sand', 2), 'biomesoplenty:smooth_white_sandstone')
   event.recipes.immersiveengineering.crusher(Item.of('biomesoplenty:white_sand', 2), 'biomesoplenty:cut_white_sandstone')
   event.recipes.immersiveengineering.crusher(Item.of('biomesoplenty:white_sand', 2), 'biomesoplenty:chiseled_white_sandstone')
-
   
   event.recipes.immersiveengineering.crusher('biomesoplenty:black_sand', 'minecraft:basalt')
   event.recipes.immersiveengineering.crusher(Item.of('biomesoplenty:black_sand', 2), 'biomesoplenty:black_sandstone')
@@ -17,4 +16,7 @@ events.listen('recipes', function (event) {
 
   // Decorative Blocks
   event.recipes.immersiveengineering.crusher('minecraft:coarse_dirt', 'decorative_blocks:rocky_dirt')
+
+  // Minecraft
+  event.recipes.immersiveengineering.crusher('minecraft:red_sand', 'minecraft:granite')
 })
