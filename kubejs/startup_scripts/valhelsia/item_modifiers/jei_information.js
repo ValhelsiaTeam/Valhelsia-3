@@ -15,7 +15,7 @@ events.listen('jei.information', function (event) {
     event.add('minecraft:rabbit_spawn_egg', ['Using a Rabbit Spawn Egg on a spawner will change the spawner to a rabbit spawner.', 'Requires a grass block surface for the spawner to work.'])
     event.add('minecraft:chicken_spawn_egg', ['Using a Chicken Spawn Egg on a spawner will change the spawner to a chicken spawner.', 'Requires a grass block surface for the spawner to work.'])
     event.add('minecraft:cow_spawn_egg', ['Using a Cow Spawn Egg on a spawner will change the spawner to a cow spawner.', 'Requires a grass block surface for the spawner to work.'])
-    event.add('minecraft:mooshroom_spawn_egg', ['Using a Mooshroom Spawn Egg on a spawner will change the spawner to a mooshroom spawner.', 'Requires a grass block surface for the spawner to work.'])
+    event.add('minecraft:mooshroom_spawn_egg', ['Using a Mooshroom Spawn Egg on a spawner will change the spawner to a mooshroom spawner.', 'Requires a mycelium surface for the spawner to work.'])
 
     //Apotheosis - Savage & Ravage: Mob
     event.add('savageandravage:skeleton_villager_spawn_egg', 'Using a Skeleton Villager Spawn Egg on a spawner will change the spawner to a skeleton villager spawner.')
