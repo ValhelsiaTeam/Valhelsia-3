@@ -12,6 +12,9 @@ events.listen('recipes', function (event) {
     'decorative_blocks:dirt_from_rocky_dirt',
     'decorative_blocks:rocky_dirt',
 
+    // Immersive Engineering
+    'immersive_engineering:paper_from_sawdust',
+
     // Industrial Foregoing
     'industrialforegoing:infinity_drill',
 
