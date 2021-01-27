@@ -12,6 +12,7 @@ events.listen('recipes', function (event) {
 
     // Create
     'create:milling/sandstone', // Replaced to add output parity with IE.
+    'create:crushing/nether_wart_block', // Replaced to add output parity with IE.
 
     // Decorative Blocks
     'decorative_blocks:chain', // Replaced with a different recipe.
