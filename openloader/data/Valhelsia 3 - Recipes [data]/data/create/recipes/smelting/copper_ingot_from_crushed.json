@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "create:crushed_copper_ore"
-  },
-  "result": "mekanism:ingot_copper",
-  "experience": 0.1,
-  "cookingtime": 200
-}

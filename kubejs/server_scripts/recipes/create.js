@@ -11,6 +11,10 @@ events.listen('recipes', function (event) {
   // Atmospheric
   crushAndMill([Item.of('atmospheric:arid_sand', 2), Item.of('bloodmagic:saltpeter').withChance(0.5)], '#forge:sandstone/arid')
   crushAndMill([Item.of('atmospheric:red_arid_sand', 2), Item.of('bloodmagic:saltpeter').withChance(0.5)], '#forge:sandstone/red_arid')
+  crushAndMill([Item.of('minecraft:orange_dye', 2), Item.of('minecraft:red_dye').withChance(0.25)], 'atmospheric:hot_monkey_brush')
+  crushAndMill([Item.of('minecraft:light_gray_dye', 4), Item.of('minecraft:lime_dye').withChance(0.05)], 'atmospheric:tall_yucca_flower')
+  crushAndMill([Item.of('minecraft:purple_dye', 4), Item.of('minecraft:lime_dye').withChance(0.05)], 'atmospheric:water_hyacinth')
+  crushAndMill(Item.of('minecraft:yellow_dye', 2), 'atmospheric:yellow_blossoms')
 
   // BoP
   crushAndMill('biomesoplenty:white_sand', 'quark:marble')
@@ -25,6 +29,9 @@ events.listen('recipes', function (event) {
   // Farmer's Delight
   crushAndMill([Item.of('farmersdelight:rice', 9), Item.of('farmersdelight:straw', 9)], 'farmersdelight:rice_bale')
 
+  // Mekanism
+  event.recipes.create.splashing([Item.of('mekanism:nugget_copper', 10), Item.of('mekanism:nugget_copper', 5).withChance(0.5)], 'create:crushed_copper_ore')
+
   // Minecraft
   // Sandstone crushing was already in, but this gives parity with Immersive Engineering (ie. 2 sand instead of 1, and chance for saltpeter)
   crushAndMill([Item.of('minecraft:sand', 2), Item.of('bloodmagic:saltpeter').withChance(0.5)], '#forge:sandstone/colorless')
@@ -35,4 +42,9 @@ events.listen('recipes', function (event) {
   // Quark
   crushAndMill([Item.of('minecraft:sugar', 18), Item.of('minecraft:sugar', 2).withChance(0.5), Item.of('minecraft:sugar', 2).withChance(0.25), Item.of('minecraft:sugar', 2).withChance(0.1)], 'quark:sugar_cane_block')
 
+  // Upgrade Aquatic
+  event.recipes.create.splashing('upgrade_aquatic:driftwood_log', 'upgrade_aquatic:river_log')
+  event.recipes.create.splashing('upgrade_aquatic:driftwood', 'upgrade_aquatic:river_wood')
+  event.recipes.create.splashing('upgrade_aquatic:stripped_driftwood_log', 'upgrade_aquatic:stripped_river_log')
+  event.recipes.create.splashing('upgrade_aquatic:stripped_driftwood', 'upgrade_aquatic:stripped_river_wood')
 })
