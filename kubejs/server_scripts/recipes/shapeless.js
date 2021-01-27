@@ -5,6 +5,9 @@ events.listen('recipes', function (event) {
   event.shapeless(Item.of('eidolon:lead_ingot', 1), 'mekanism:ingot_lead')
   event.shapeless(Item.of('mekanism:ingot_lead', 1), 'eidolon:lead_ingot')
 
+  // BoP
+  event.shapeless(Item.of('biomesoplenty:orange_sand', 2), ['#forge:sand/colorless', '#forge:sand/red'])
+
   // Create
   event.shapeless(Item.of('create:brass_sheet', 1), ['create:brass_ingot', 'immersiveengineering:hammer'])
   event.shapeless(Item.of('create:lapis_sheet', 1), ['minecraft:lapis_block', 'immersiveengineering:hammer'])

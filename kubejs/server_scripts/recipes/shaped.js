@@ -98,6 +98,7 @@ events.listen('recipes', function (event) {
     A: '#minecraft:planks',
     B: 'immersiveengineering:creosote_bucket'
   })
+
   event.shaped(item.of('immersiveengineering:ingot_silver', 1), [
     'SSS',
     'SSS',
@@ -105,6 +106,7 @@ events.listen('recipes', function (event) {
   ], {
     S: '#forge:nuggets/silver'
   })
+  
   event.shaped(item.of('immersiveengineering:storage_silver', 1), [
     'SSS',
     'SSS',

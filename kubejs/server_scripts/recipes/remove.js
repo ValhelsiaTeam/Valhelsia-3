@@ -3,17 +3,23 @@
 events.listen('recipes', function (event) {
 
   var idRemove = [
+    // Botania
+    'botania:pure_daisy/sand', // Replaced with a different recipe.
+
     // Charm
     'charm:extra_recipes/soul_torch',
     'charm:extra_recipes/trident',
 
+    // Create
+    'create:milling/sandstone', // Replaced to add output parity with IE.
+
     // Decorative Blocks
-    'decorative_blocks:chain',
-    'decorative_blocks:dirt_from_rocky_dirt',
-    'decorative_blocks:rocky_dirt',
+    'decorative_blocks:chain', // Replaced with a different recipe.
+    'decorative_blocks:dirt_from_rocky_dirt', // Removed entirely, no neat way to uncraft with the new recipe.
+    'decorative_blocks:rocky_dirt', // Replaced with a different recipe.
 
     // Immersive Engineering
-    'immersive_engineering:paper_from_sawdust',
+    'immersive_engineering:paper_from_sawdust', // Removed since Mekanism method made this redundant.
 
     // Industrial Foregoing
     'industrialforegoing:infinity_drill',
@@ -66,10 +72,10 @@ events.listen('recipes', function (event) {
 
   var outputRemove = [
     // Charm
-    'charm:woodcutter',
+    'charm:woodcutter', // Replaced with Druidcraft Woodcutter (and soon Environmental Sawmill)
 
     // Comforts
-    'comforts:sleeping_bag_white',
+    'comforts:sleeping_bag_white', // This and below are replaced with bedrolls from Upgrade Aquatic / Druidcraft
     'comforts:sleeping_bag_orange',
     'comforts:sleeping_bag_magenta',
     'comforts:sleeping_bag_light_blue',
@@ -145,7 +151,7 @@ events.listen('recipes', function (event) {
     'mysticalworld:lead_nugget',
 
     // Quark
-    'quark:beetroot_crate',
+    'quark:beetroot_crate', // These crates are replaced with Farmer's Delight ones.
     'quark:carrot_crate',
     'quark:potato_crate'
   ]

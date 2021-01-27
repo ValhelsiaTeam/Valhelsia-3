@@ -394,6 +394,84 @@ onEvent('item.tags', event => {
 
   event.get('minecraft:wooden_slabs')
        .add(woodenSlabs)
+
+       
+  // Sandstone Tags
+  var aridSandstones = [
+    'atmospheric:arid_sandstone',
+    'atmospheric:smooth_arid_sandstone',
+    'atmospheric:cut_arid_sandstone',
+    'atmospheric:chiseled_arid_sandstone',
+    'atmospheric:arid_sandstone_bricks'
+  ]
+
+  event.get('forge:sandstone/arid')
+       .add(aridSandstones)
+
+  var redAridSandstones = [
+    'atmospheric:red_arid_sandstone',
+    'atmospheric:smooth_red_arid_sandstone',
+    'atmospheric:cut_red_arid_sandstone',
+    'atmospheric:chiseled_red_arid_sandstone',
+    'atmospheric:red_arid_sandstone_bricks'
+  ]
+
+  event.get('forge:sandstone/red_arid')
+       .add(redAridSandstones)
+
+  var orangeSandstones = [
+    'biomesoplenty:orange_sandstone',
+    'biomesoplenty:smooth_orange_sandstone',
+    'biomesoplenty:cut_orange_sandstone',
+    'biomesoplenty:chiseled_orange_sandstone'
+  ]
+
+  event.get('forge:sandstone/orange')
+       .add(orangeSandstones)
+
+  var whiteSandstones = [
+    'biomesoplenty:white_sandstone',
+    'biomesoplenty:smooth_white_sandstone',
+    'biomesoplenty:cut_white_sandstone',
+    'biomesoplenty:chiseled_white_sandstone'
+  ]
+
+  event.get('forge:sandstone/white')
+       .add(whiteSandstones)
+
+  var blackSandstones = [
+    'biomesoplenty:black_sandstone',
+    'biomesoplenty:smooth_black_sandstone',
+    'biomesoplenty:cut_black_sandstone',
+    'biomesoplenty:chiseled_black_sandstone'
+  ]
+
+  event.get('forge:sandstone/black')
+       .add(blackSandstones)
+
+  var soulSandstones = [
+    'quark:soul_sandstone',
+    'quark:soul_sandstone_bricks',
+    'quark:smooth_soul_sandstone',
+    'quark:cut_soul_sandstone',
+    'quark:chiseled_soul_sandstone'
+  ]
+
+  event.get('forge:sandstone/soul')
+       .add(soulSandstones)
+
+     
+  var soullessSandstones = [
+    'forbidden_arcanus:soulless_sandstone',
+    'forbidden_arcanus:cut_soulless_sandstone',
+    'forbidden_arcanus:polished_soulless_sandstone'
+  ]
+
+  event.get('forge:sandstone/soulless')
+       .add(soullessSandstones)
+
+  event.add('forge:sandstone/colorless', 'quark:sandstone_bricks')
+  event.add('forge:sandstone/red', 'quark:red_sandstone_bricks')
   
   // Misc Missing Tags
   event.add('forge:seeds/aubergine', 'mysticalworld:aubergine_seeds')
