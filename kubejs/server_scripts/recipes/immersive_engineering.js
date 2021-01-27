@@ -2,7 +2,7 @@
 
 events.listen('recipes', function (event) {
   // BoP
-  event.recipes.immersiveengineering.crusher('biomesoplenty:white_sand', 'minecraft:diorite')
+  event.recipes.immersiveengineering.crusher('biomesoplenty:white_sand', 'quark:marble')
   event.recipes.immersiveengineering.crusher(Item.of('biomesoplenty:white_sand', 2), 'biomesoplenty:white_sandstone')
   event.recipes.immersiveengineering.crusher(Item.of('biomesoplenty:white_sand', 2), 'biomesoplenty:smooth_white_sandstone')
   event.recipes.immersiveengineering.crusher(Item.of('biomesoplenty:white_sand', 2), 'biomesoplenty:cut_white_sandstone')

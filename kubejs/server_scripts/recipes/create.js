@@ -9,7 +9,7 @@ events.listen('recipes', function (event) {
   }
 
   // BoP
-  // Note: Skip White Sand for Create because they crush Diorite into Limesand instead.
+  crushAndMill('biomesoplenty:black_sand', 'quark:marble')
   crushAndMill('biomesoplenty:black_sand', 'minecraft:basalt')
 
   // Decorative Blocks
