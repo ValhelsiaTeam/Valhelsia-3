@@ -65,6 +65,9 @@ events.listen('recipes', function (event) {
     'minecolonies:chainmailchestplate',
     'minecolonies:chainmailleggings',
     'minecolonies:chainmailboots',
+
+    // Quark
+    'quark:building/crafting/oak_bookshelf'
   ]
 
   idRemove.forEach(function (remove) {
