@@ -28,6 +28,9 @@ events.listen('recipes', function (event) {
   // Industrial Foregoing Compat
   event.recipes.immersiveengineering.fertilizer('industrialforegoing:fertilizer').growthModifier(1.5)
 
+  // Mekanism Compat
+  event.recipes.immersiveengineering.blast_furnace_fuel('#mekanism:enriched/carbon').time(600)
+
   // MineColonies Compat
   event.recipes.immersiveengineering.fertilizer('minecolonies:compost').growthModifier(1.5)
 
