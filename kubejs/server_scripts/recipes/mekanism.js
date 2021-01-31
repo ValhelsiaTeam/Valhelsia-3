@@ -2,6 +2,21 @@
 
 events.listen('recipes', function (event) {
 
+  // Infusion Conversion 
+  const infusionConversion = (type, ingredient, amount) => {
+    event.custom({
+      type: 'mekanism:infusion_conversion',
+      input: {
+        ingredient: Ingredient.of(ingredient).toJson()
+      },
+      output: {
+        infuse_type: type,
+        amount: amount
+      }
+    })
+  }
+
+
   // BoP
   event.recipes.mekanism.crushing('biomesoplenty:white_sand', 'quark:marble')
   event.recipes.mekanism.crushing('biomesoplenty:black_sand', 'minecraft:basalt')
@@ -29,5 +44,7 @@ events.listen('recipes', function (event) {
 
   // Immersive Engineering Compat
   event.recipes.mekanism.enriching(Item.of('mekanism:enriched_carbon', 2), '#forge:coal_coke')
+  infusionConversion('mekanism:carbon', '#forge:coal_coke', 40)
+  infusionConversion('mekanism:carbon', '#forge:dusts/coal_coke', 40)
 
 })
