@@ -26,4 +26,8 @@ events.listen('recipes', function (event) {
 
   // Minecraft
   event.recipes.mekanism.crushing('minecraft:red_sand', 'minecraft:granite')
+
+  // Immersive Engineering Compat
+  event.recipes.mekanism.enriching(Item.of('mekanism:enriched_carbon', 2), '#forge:coal_coke')
+
 })
