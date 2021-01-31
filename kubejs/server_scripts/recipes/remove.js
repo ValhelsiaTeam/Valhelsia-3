@@ -66,8 +66,11 @@ events.listen('recipes', function (event) {
     'minecolonies:chainmailleggings',
     'minecolonies:chainmailboots',
 
+    // Mystical World
+    'mysticalworld:ingots_silver_to_storage_block', // Duplicate recipe.
+
     // Quark
-    'quark:building/crafting/oak_bookshelf'
+    'quark:building/crafting/oak_bookshelf' // Duplicate recipe.
   ]
 
   idRemove.forEach(function (remove) {
