@@ -13,6 +13,11 @@ events.listen('recipes', function (event) {
     // Create
     'create:milling/sandstone', // Replaced to add output parity with IE.
     'create:crushing/nether_wart_block', // Replaced to add output parity with IE.
+    'create:compat/atmospheric/milling/hot_monkey_brush', // Fix erroring recipe.
+    'create:compat/upgrade_aquatic/milling/searocket_pink', // Fix erroring recipe.
+    'create:compat/upgrade_aquatic/milling/searocket_white', // Fix erroring recipe.
+    'create:compat/atmospheric/cutting/driftwood_log', // Fix erroring recipe.
+    'create:compat/atmospheric/cutting/stripped_driftwood_log', // Fix erroring recipe.
 
     // Decorative Blocks
     'decorative_blocks:chain', // Replaced with a different recipe.

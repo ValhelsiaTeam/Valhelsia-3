@@ -26,6 +26,11 @@ events.listen('recipes', function (event) {
   // Decorative Blocks
   crushAndMill('minecraft:coarse_dirt', 'decorative_blocks:rocky_dirt')
 
+  // The Endergetic Expansion
+  event.recipes.create.cutting('endergetic:stripped_poise_stem', 'endergetic:poise_stem')
+  event.recipes.create.cutting('endergetic:stripped_poise_wood', 'endergetic:poise_wood')
+  event.recipes.create.cutting(Item.of('endergetic:poise_planks', 5), '#endergetic:poise_stems')
+
   // Farmer's Delight
   crushAndMill([Item.of('farmersdelight:rice', 9), Item.of('farmersdelight:straw', 9)], 'farmersdelight:rice_bale')
 
@@ -47,4 +52,9 @@ events.listen('recipes', function (event) {
   event.recipes.create.splashing('upgrade_aquatic:driftwood', 'upgrade_aquatic:river_wood')
   event.recipes.create.splashing('upgrade_aquatic:stripped_driftwood_log', 'upgrade_aquatic:stripped_river_log')
   event.recipes.create.splashing('upgrade_aquatic:stripped_driftwood', 'upgrade_aquatic:stripped_river_wood')
+  event.recipes.create.cutting('upgrade_aquatic:stripped_driftwood_log', 'upgrade_aquatic:driftwood_log')
+  event.recipes.create.cutting('upgrade_aquatic:stripped_driftwood', 'upgrade_aquatic:driftwood')
+  event.recipes.create.cutting(Item.of('upgrade_aquatic:driftwood_planks', 5), '#upgrade_aquatic:driftwood_logs')
+  crushAndMill([Item.of('minecraft:pink_dye', 2), Item.of('minecraft:green_dye').withChance(0.1)], 'upgrade_aquatic:pink_searocket')
+  crushAndMill([Item.of('minecraft:white_dye', 2), Item.of('minecraft:green_dye').withChance(0.1)], 'upgrade_aquatic:white_searocket')
 })
