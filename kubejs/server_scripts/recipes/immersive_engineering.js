@@ -25,7 +25,13 @@ events.listen('recipes', function (event) {
   // Forbidden & Arcanus Compat
   event.recipes.immersiveengineering.crusher(Item.of('forbidden_arcanus:soulless_sand', 2), '#forge:sandstone/soulless')
 
-  // IE -> Minecraft Compat
+  // Industrial Foregoing Compat
+  event.recipes.immersiveengineering.fertilizer('industrialforegoing:fertilizer').growthModifier(1.5)
+
+  // MineColonies Compat
+  event.recipes.immersiveengineering.fertilizer('minecolonies:compost').growthModifier(1.5)
+
+  // Minecraft Tweaks
   event.recipes.immersiveengineering.crusher('minecraft:red_sand', 'minecraft:granite')
   // Blaze Rods are Expensive to prevent exploiting - needs to match the most dust you can get from processing them.
   event.recipes.immersiveengineering.metal_press('minecraft:blaze_rod', Item.of('minecraft:blaze_powder', 6), 'immersiveengineering:mold_rod') 
