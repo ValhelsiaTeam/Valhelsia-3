@@ -89,6 +89,13 @@ events.listen('recipes', function (event) {
     B: 'minecraft:cobblestone'
   })
 
+  // Druidcraft
+  event.shaped(item.of('druidcraft:rope', 1), [
+    'AAA'
+  ], {
+    A: '#forge:fiber_hemp'
+  })
+
   // Immersive Engineering
   event.shaped(item.of('immersiveengineering:treated_wood_horizontal', 8), [
     'AAA',
