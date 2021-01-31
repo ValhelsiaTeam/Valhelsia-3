@@ -1,8 +1,0 @@
-{
-  "type": "druidcraft:woodcutting",
-  "ingredient": {
-    "item": "minecraft:acacia_log"
-  },
-  "result": "valhelsia_structures:acacia_post",
-  "count": 2
-}

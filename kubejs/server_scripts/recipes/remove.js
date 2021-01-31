@@ -24,6 +24,16 @@ events.listen('recipes', function (event) {
     'decorative_blocks:dirt_from_rocky_dirt', // Removed entirely, no neat way to uncraft with the new recipe.
     'decorative_blocks:rocky_dirt', // Replaced with a different recipe.
 
+    // Druidcraft
+    'druidcraft:acacia_pressure_plate_from_acacia_planks_woodcutting', // Replaced with a different recipe.
+    'druidcraft:birch_pressure_plate_from_birch_planks_woodcutting', // Replaced with a different recipe.
+    'druidcraft:dark_oak_pressure_plate_from_dark_oak_planks_woodcutting', // Replaced with a different recipe.
+    'druidcraft:darkwood_pressure_plate_from_darkwood_planks_woodcutting', // Replaced with a different recipe.
+    'druidcraft:elder_pressure_plate_from_elder_planks_woodcutting', // Replaced with a different recipe.
+    'druidcraft:jungle_pressure_plate_from_jungle_planks_woodcutting', // Replaced with a different recipe.
+    'druidcraft:oak_pressure_plate_from_oak_planks_woodcutting', // Replaced with a different recipe.
+    'druidcraft:spruce_pressure_plate_from_spruce_planks_woodcutting', // Replaced with a different recipe.
+
     // Immersive Engineering
     'immersive_engineering:paper_from_sawdust', // Removed since Mekanism method made this redundant.
 
