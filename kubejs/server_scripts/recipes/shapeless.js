@@ -12,6 +12,19 @@ events.listen('recipes', function (event) {
   event.shapeless(Item.of('create:brass_sheet', 1), ['create:brass_ingot', 'immersiveengineering:hammer'])
   event.shapeless(Item.of('create:lapis_sheet', 1), ['minecraft:lapis_block', 'immersiveengineering:hammer'])
 
+  // Farmer's Delight
+  event.shapeless('farmersdelight:organic_compost', [
+    'minecraft:dirt', 
+    'farmersdelight:straw',
+    'farmersdelight:straw',
+    'minecraft:bone_meal',
+    'minecraft:bone_meal',
+    '#forge:dusts/wood',
+    '#forge:dusts/wood',
+    '#forge:dusts/wood',
+    '#forge:dusts/wood'
+  ])
+
   // Immersive Engineering
   event.shapeless(Item.of('immersiveengineering:ingot_silver', 9), '#forge:storage_blocks/silver')
   event.shapeless(Item.of('immersiveengineering:nugget_silver', 9), '#forge:ingots/silver')
