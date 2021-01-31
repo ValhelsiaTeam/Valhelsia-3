@@ -5,70 +5,70 @@ events.listen('recipes', function (event) {
   // Pure Daisy Support Function
   const pureDaisy = (output, input) => {
     event.custom({
-        "type": 'botania:pure_daisy',
-        "input": {
-            "type": "block",
-            "block": input
-        },
-        "output": {
-            "name": output
-        }
+      "type": 'botania:pure_daisy',
+      "input": {
+          "type": "block",
+          "block": input
+      },
+      "output": {
+          "name": output
+      }
     })
   }
 
   // Alchemy Catalyst
   const alchemy = (output, input, mana, group) => {
     event.custom({
-        "type": 'botania:mana_infusion',
-        "input": {
-            "item": input
-        },
-        "output": {
-            "item": output
-        },
-        "mana": mana,
-        "group": group,
-        "catalyst": {
-          "name": "botania:alchemy_catalyst"
-        }
+      "type": 'botania:mana_infusion',
+      "input": {
+          "item": input
+      },
+      "output": {
+          "item": output
+      },
+      "mana": mana,
+      "group": group,
+      "catalyst": {
+        "name": "botania:alchemy_catalyst"
+      }
     })
   }
 
   // Conjuration Catalyst
   const conjuration = (output, input, mana) => {
     event.custom({
-        "type": 'botania:mana_infusion',
-        "input": {
-            "item": input
-        },
-        "output": {
-            "item": output,
-            "count": 2
-        },
-        "mana": mana,
-        "group": group,
-        "catalyst": {
-          "name": "botania:conjuration_catalyst"
-        }
+      "type": 'botania:mana_infusion',
+      "input": {
+          "item": input
+      },
+      "output": {
+          "item": output,
+          "count": 2
+      },
+      "mana": mana,
+      "group": group,
+      "catalyst": {
+        "name": "botania:conjuration_catalyst"
+      }
     })
   }
 
   // Mana Infusion (without catalyst)
   const infusion = (output, input, mana) => {
     event.custom({
-        "type": 'botania:mana_infusion',
-        "input": {
-            "item": input
-        },
-        "output": {
-            "item": output,
-            "count": 2
-        },
-        "mana": mana,
-        "group": group,
-        "catalyst": {
-          "name": "botania:conjuration_catalyst"
-        }
+      "type": 'botania:mana_infusion',
+      "input": {
+          "item": input
+      },
+      "output": {
+          "item": output,
+          "count": 2
+      },
+      "mana": mana,
+      "group": group,
+      "catalyst": {
+        "name": "botania:conjuration_catalyst"
+      }
     })
   }
 
