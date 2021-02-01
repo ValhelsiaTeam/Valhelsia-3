@@ -5,7 +5,7 @@
 	#Range: 0 ~ 100
 	invAlpha = 0
 	#Toggle on by default
-	byDefault = true
+	byDefault = false
 	#Inventory HUD vertical mode
 	invVert = false
 	#Inventory HUD mini mode
