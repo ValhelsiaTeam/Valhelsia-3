@@ -14,14 +14,255 @@ events.listen('recipes', function (event) {
     // TODO: Other woodcutters here as needed (eg. Environmental Sawmill).
   }
 
+  // Wood Types
+  const minecraftOverworldWoodTypes = [
+    'acacia',
+    'birch',
+    'dark_oak',
+    'jungle',
+    'oak',
+    'spruce'
+  ]
+
+  const minecraftNetherWoodTypes = [
+    'crimson',
+    'warped'
+  ]
+
+  const atmosphericWoodTypes = [
+    'rosewood',
+    'morado',
+    'yucca',
+    'kousa',
+    'aspen',
+    'grimwood'
+  ]
+
+  const autumnityWoodTypes = [
+    'maple'
+  ]
+
+  const biomesOPlentyWoodTypes = [
+    'fir',
+    'redwood',
+    'cherry',
+    'mahogany',
+    'jacaranda',
+    'palm',
+    'willow',
+    'dead',
+    'magic',
+    'umbran',
+    'hellbark'
+  ]
+
+  const astralSorceryWoodTypes = [
+    'infused_wood'
+  ]
+
+  const botaniaWoodTypes = [
+    'livingwood',
+    'mossy_livingwood',
+    'dreamwood',
+    'mossy_dreamwood',
+    'shimmerwood'
+  ]
+
+  const druidcraftWoodTypes = [
+    'darkwood',
+    'elder'
+  ]
+  
+  const endergeticExpansionWoodTypes = [
+    'poise'
+  ]
+
+  // Note: This will normally be done manually.
+  const engineersDecorWoodTypes = [
+    'old_industrial_wood'
+  ]
+  
+  const enhancedMushroomsWoodTypes = [
+    'red_mushroom',
+    'brown_mushroom',
+    'glowshroom'
+  ]
+
+  // Sneak previews. ;)
+  const environmentalWoodTypes = [
+    'cherry',
+    'willow',
+    'wisteria'
+  ]
+
+  const forbiddenArcanusWoodTypes = [
+    'arcane_edelwood',
+    'cherrywood',
+    'edelwood',
+    'mysterywood'
+  ]
+
+  // Note: IE has very weird naming conventions. Best to do manually normally.
+  const immersiveEngineeringWoodTypes = [
+    'treated'
+  ]
+  
+  const quarkWoodTypes = [
+    'white_stained',
+    'orange_stained',
+    'magenta_stained',
+    'light_blue_stained',
+    'yellow_stained',
+    'lime_stained',
+    'pink_stained',
+    'gray_stained',
+    'light_gray_stained',
+    'cyan_stained',
+    'purple_stained',
+    'blue_stained',
+    'brown_stained',
+    'green_stained',
+    'red_stained',
+    'black_stained',
+  ]
+
+  const structurizeWoodTypes = [
+    'cactus'
+  ]
+  
+  // Note: Driftwood's Item IDs vary for the Wood variants, ie. it is just 'driftwood', not 'driftwood_wood'.
+  const upgradeAquaticWoodTypes = [
+    'driftwood',
+    'river'
+  ]
+
+
+  // OUTPUT QUANTITIES
+
+  // Vanilla things:
+  const buttons_per_plank = 4
+  const doors_per_plank = 1
+  const fences_per_plank = 1
+  const fence_gates_per_plank = 1
+  const ladders_per_plank = 2
+  const planks_per_log = 4
+  const pressure_plates_per_plank = 2
+  const trapdoors_per_plank = 1
+  const signs_per_plank = 1
+  const slabs_per_plank = 2
+  const stairs_per_plank = 1
+  
+  const buttons_per_log = buttons_per_plank * planks_per_log
+  const doors_per_log = doors_per_plank * planks_per_log
+  const fences_per_log = fences_per_plank * planks_per_log
+  const fence_gates_per_log = fence_gates_per_plank * planks_per_log
+  const ladders_per_log = ladders_per_plank * planks_per_log
+  const pressure_plates_per_log = pressure_plates_per_plank * planks_per_log
+  const signs_per_log = signs_per_plank * planks_per_log
+  const slabs_per_log = slabs_per_plank * planks_per_log
+  const stairs_per_log = stairs_per_plank * planks_per_log
+  const trapdoors_per_log = trapdoors_per_plank * planks_per_log
+
+  // Modded things:
+  const panels_per_plank = 1
+  const seats_per_plank = 1
+  const supports_per_plank = 1
+  const vertical_slabs_per_plank = slabs_per_plank
+  const vertical_planks_per_plank = 1
+  
+  const decorative_blocks_beams_per_log = 1
+  const druidcraft_beams_per_log = 1
+  const panels_per_log = panels_per_plank * planks_per_log
+  const pantries_per_log = 1
+  const palisades_per_log = 3
+  const seats_per_log = seats_per_plank * planks_per_log
+  const sign_posts_per_log = signs_per_log
+  const supports_per_log = supports_per_plank * planks_per_log
+  const vertical_planks_per_log = planks_per_log
+  const vertical_slabs_per_log = slabs_per_log
+  const val_posts_per_log = 2
+
+  const planks_per_panel = 1
+  const vertical_planks_per_panel = 1
+
+
   // Atmospheric
-  // TODO: Planks, Vertical Planks, Slabs, Stairs, Ladders, Signs, Fences, Fence Gates, Buttons, Doors
+  var atmosphericLogsTags = []
+  var atmosphericStrippedLogs = []
+  var atmosphericWoods = []
+  var atmosphericStrippedWoods = []
+  var atmosphericPlanks = []
+  var atmosphericVerticalPlanks = []
+  var atmosphericSlabs = []
+  var atmosphericVerticalSlabs = []
+  var atmosphericStairs = []
+  var atmosphericSigns = []
+  var atmosphericLadders = []
+  var atmosphericFences = []
+  var atmosphericFenceGates = []
+  var atmosphericButtons = []
+  var atmosphericTrapdoors = []
+  var atmosphericDoors = []
+
+  atmosphericWoodTypes.forEach(function(element) {
+    atmosphericLogsTags.push('#atmospheric:'.concat(element).concat('_logs'))
+    atmosphericStrippedLogs.push('atmospheric:stripped_'.concat(element).concat('_log'))
+    atmosphericWoods.push('atmospheric:'.concat(element).concat('_log'))
+    atmosphericStrippedWoods.push('atmospheric:stripped_'.concat(element).concat('_log'))
+    atmosphericPlanks.push('atmospheric:'.concat(element).concat('_planks'))
+    atmosphericVerticalPlanks.push('atmospheric:vertical_'.concat(element).concat('_planks'))
+    atmosphericSlabs.push('atmospheric:'.concat(element).concat('_slab'))
+    atmosphericVerticalSlabs.push('atmospheric:'.concat(element).concat('_vertical_slab'))
+    atmosphericStairs.push('atmospheric:'.concat(element).concat('_stairs'))
+    atmosphericSigns.push('atmospheric:'.concat(element).concat('_sign'))
+    atmosphericLadders.push('atmospheric:'.concat(element).concat('_ladder'))
+    atmosphericFences.push('atmospheric:'.concat(element).concat('_fence'))
+    atmosphericFenceGates.push('atmospheric:'.concat(element).concat('_fence_gate'))
+    atmosphericButtons.push('atmospheric:'.concat(element).concat('_button'))
+    atmosphericTrapdoors.push('atmospheric:'.concat(element).concat('_trapdoor'))
+    atmosphericDoors.push('atmospheric:'.concat(element).concat('_door'))
+  })
+
+  for (let i = 0; i < atmosphericWoodTypes.length; i++) {
+    // Log Woodcutting
+    woodcutting(atmosphericPlanks[i], atmosphericLogsTags[i], planks_per_log)
+    woodcutting(atmosphericVerticalPlanks[i], atmosphericLogsTags[i], vertical_planks_per_log)
+    woodcutting(atmosphericSlabs[i], atmosphericLogsTags[i], slabs_per_log)
+    woodcutting(atmosphericVerticalSlabs[i], atmosphericLogsTags[i], vertical_slabs_per_log)
+    woodcutting(atmosphericStairs[i], atmosphericLogsTags[i], stairs_per_log)
+    woodcutting(atmosphericSigns[i], atmosphericLogsTags[i], signs_per_log)
+    woodcutting(atmosphericLadders[i], atmosphericLogsTags[i], ladders_per_log)
+    woodcutting(atmosphericFences[i], atmosphericLogsTags[i], fences_per_log)
+    woodcutting(atmosphericFenceGates[i], atmosphericLogsTags[i], fence_gates_per_log)
+    woodcutting(atmosphericButtons[i], atmosphericLogsTags[i], buttons_per_log)
+    woodcutting(atmosphericTrapdoors[i], atmosphericLogsTags[i], trapdoors_per_log)
+    woodcutting(atmosphericDoors[i], atmosphericLogsTags[i], doors_per_log)
+
+    // Plank Woodcutting
+    woodcutting(atmosphericVerticalPlanks[i], atmosphericPlanks[i], vertical_planks_per_plank)
+    woodcutting(atmosphericSlabs[i], atmosphericPlanks[i], slabs_per_plank)
+    woodcutting(atmosphericVerticalSlabs[i], atmosphericPlanks[i], vertical_slabs_per_plank)
+    woodcutting(atmosphericStairs[i], atmosphericPlanks[i], stairs_per_plank)
+    woodcutting(atmosphericSigns[i], atmosphericPlanks[i], signs_per_plank)
+    woodcutting(atmosphericLadders[i], atmosphericPlanks[i], ladders_per_plank)
+    woodcutting(atmosphericFences[i], atmosphericPlanks[i], fences_per_plank)
+    woodcutting(atmosphericFenceGates[i], atmosphericPlanks[i], fence_gates_per_plank)
+    woodcutting(atmosphericButtons[i], atmosphericPlanks[i], buttons_per_plank)
+    woodcutting(atmosphericTrapdoors[i], atmosphericPlanks[i], trapdoors_per_plank)
+    woodcutting(atmosphericDoors[i], atmosphericPlanks[i], doors_per_plank)
+
+    // Misc
+    woodcutting(atmosphericPlanks[i], atmosphericVerticalPlanks[i], vertical_planks_per_plank)
+  }
 
   // Autumnity
   // TODO: Planks, Vertical Planks, Slabs, Stairs, Ladders, Signs, Fences, Fence Gates, Buttons, Doors
 
   // Biomes O Plenty
   // TODO: Way too much. :'(
+
+  // Botania
+  // TODO: All of it.
 
   // Decorative Blocks
   woodcutting('decorative_blocks:acacia_palisade', '#minecraft:acacia_logs', 3)
@@ -74,6 +315,8 @@ events.listen('recipes', function (event) {
 
   // Immersive Engineering
   // TODO: A bunch of Treated Wood stuff.
+
+  // Macaw's Stuff
 
   // Minecraft
   woodcutting('minecraft:acacia_sign', '#minecraft:acacia_logs', 2)
