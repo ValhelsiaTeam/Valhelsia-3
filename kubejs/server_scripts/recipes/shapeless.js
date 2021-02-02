@@ -35,4 +35,7 @@ events.listen('recipes', function (event) {
 
   // Powah!
   event.shapeless(Item.of('powah:uraninite_raw_poor', 1), 'mekanism:ingot_uranium')
+
+  // Upgrade Aquatic
+  event.shapeless(Item.of('upgrade_aquatic_driftwood', 4), 'aquaculture:driftwood')
 })

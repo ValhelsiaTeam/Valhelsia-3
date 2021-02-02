@@ -3,6 +3,9 @@
 events.listen('recipes', function (event) {
 
   var idRemove = [
+    // Aquaculture
+    'aquaculture:planks_from_driftwood',
+
     // Botania
     'botania:pure_daisy/sand', // Replaced with a different recipe.
 
