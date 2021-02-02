@@ -203,6 +203,7 @@ events.listen('recipes', function (event) {
   var atmosphericButtons = []
   var atmosphericTrapdoors = []
   var atmosphericDoors = []
+  var atmosphericPressurePlates = []
 
   atmosphericWoodTypes.forEach(function(element) {
     atmosphericLogsTags.push('#atmospheric:'.concat(element).concat('_logs'))
@@ -221,6 +222,7 @@ events.listen('recipes', function (event) {
     atmosphericButtons.push('atmospheric:'.concat(element).concat('_button'))
     atmosphericTrapdoors.push('atmospheric:'.concat(element).concat('_trapdoor'))
     atmosphericDoors.push('atmospheric:'.concat(element).concat('_door'))
+    atmosphericPressurePlates.push('atmospheric:'.concat(element).concat('_pressure_plate'))
   })
 
   for (let i = 0; i < atmosphericWoodTypes.length; i++) {
@@ -237,6 +239,7 @@ events.listen('recipes', function (event) {
     woodcutting(atmosphericButtons[i], atmosphericLogsTags[i], buttons_per_log)
     woodcutting(atmosphericTrapdoors[i], atmosphericLogsTags[i], trapdoors_per_log)
     woodcutting(atmosphericDoors[i], atmosphericLogsTags[i], doors_per_log)
+    woodcutting(atmosphericPressurePlates[i], atmosphericLogsTags[i], pressure_plates_per_log)
 
     // Plank Woodcutting
     woodcutting(atmosphericVerticalPlanks[i], atmosphericPlanks[i], vertical_planks_per_plank)
@@ -250,6 +253,7 @@ events.listen('recipes', function (event) {
     woodcutting(atmosphericButtons[i], atmosphericPlanks[i], buttons_per_plank)
     woodcutting(atmosphericTrapdoors[i], atmosphericPlanks[i], trapdoors_per_plank)
     woodcutting(atmosphericDoors[i], atmosphericPlanks[i], doors_per_plank)
+    woodcutting(atmosphericPressurePlates[i], atmosphericPlanks[i], pressure_plates_per_plank)
 
     // Misc
     woodcutting(atmosphericPlanks[i], atmosphericVerticalPlanks[i], vertical_planks_per_plank)
