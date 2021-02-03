@@ -16,7 +16,7 @@
 	#Show/Hide armor
 	showArmor = true
 	#Show/Hide armor
-	showOff = true
+	showOff = false
 	#Is Armor Damage HUD enabled
 	ArmorDamage = true
 	#Armor HUD durability view (PERCENTAGE, DAMAGE, DAMAGE LEFT)
@@ -34,7 +34,7 @@
 	#Range: 0 ~ 100
 	armAbove = 100
 	#Show/Hide armor
-	showMain = true
+	showMain = false
 	#Show/Hide armor
 	showArrows = false
 
