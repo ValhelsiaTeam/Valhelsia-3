@@ -38,7 +38,7 @@ events.listen('recipes', function (event) {
     'druidcraft:spruce_pressure_plate_from_spruce_planks_woodcutting', // Replaced with a different recipe.
 
     // Immersive Engineering
-    'immersive_engineering:paper_from_sawdust', // Removed since Mekanism method made this redundant.
+    'immersive_engineering:crafting/paper_from_sawdust', // Removed since Mekanism method made this redundant.
 
     // Industrial Foregoing
     'industrialforegoing:infinity_drill',
