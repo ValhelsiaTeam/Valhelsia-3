@@ -24,5 +24,31 @@ events.listen('recipes', function (event) {
   axeCutting('druidcraft:stripped_darkwood_wood', 'druidcraft:darkwood_wood')
   axeCutting('druidcraft:stripped_elder_log', 'druidcraft:elder_log')
   axeCutting('druidcraft:stripped_elder_wood', 'druidcraft:elder_wood')
+  // TODO: All BoP woods.
+
+  const biomesOPlentyWoodTypes = [
+    'fir',
+    'redwood',
+    'cherry',
+    'mahogany',
+    'jacaranda',
+    'palm',
+    'willow',
+    'dead',
+    'magic',
+    'umbran',
+    'hellbark'
+  ]
+
+  biomesOPlentyWoodTypes.forEach(function(element) {
+    axeCutting('biomesoplenty:stripped_'.concat(element).concat('_log'), 'biomesoplenty:'.concat(element).concat('_log'))
+    axeCutting('biomesoplenty:stripped_'.concat(element).concat('_wood'), 'biomesoplenty:'.concat(element).concat('_wood'))
+  })
+
+  // TODO: Make bark optional to do the below.
+  // TODO: Sign to 1 plank (for everything non-vanilla).
+  // TODO: Door to 1 plank (for everything non-vanilla).
+  // TODO: Trapdoor to 1 plank (for everything non-vanilla).
+  
 
 })
