@@ -9,6 +9,16 @@ events.listen('jei.information', function (event) {
     event.add('minecraft:stray_spawn_egg', 'Using a Stray Spawn Egg on a spawner will change the spawner to a stray spawner.')
     event.add('minecraft:skeleton_spawn_egg', 'Using a Skeleton Spawn Egg on a spawner will change the spawner to a skeleton spawner.')
 
+    //Apotheosis - Savage & Ravage: Mob
+    event.add('savageandravage:skeleton_villager_spawn_egg', 'Using a Skeleton Villager Spawn Egg on a spawner will change the spawner to a skeleton villager spawner.')
+
+    //Apotheosis - Quark: Mob
+    event.add('quark:wrapped_spawn_egg', 'Using a Wrapped Spawn Egg on a spawner will change the spawner to a wrapped spawner.')
+
+    //Apotheosis - Neapolitan: Mob
+    event.add('neapolitan:plantain_spider_spawn_egg', 'Using a Plantain Spider Spawn Egg on a spawner will change the spawner to a plantain spider spawner.')
+
+    
     //Apotheosis - Minecraft: Animals
     event.add('minecraft:pig_spawn_egg', ['Using a Pig Spawn Egg on a spawner will change the spawner to a pig spawner.', 'Requires a grass block surface for the spawner to work.'])
     event.add('minecraft:sheep_spawn_egg', ['Using a Sheep Spawn Egg on a spawner will change the spawner to a sheep spawner.', 'Requires a grass block surface for the spawner to work.'])
@@ -17,9 +27,16 @@ events.listen('jei.information', function (event) {
     event.add('minecraft:cow_spawn_egg', ['Using a Cow Spawn Egg on a spawner will change the spawner to a cow spawner.', 'Requires a grass block surface for the spawner to work.'])
     event.add('minecraft:mooshroom_spawn_egg', ['Using a Mooshroom Spawn Egg on a spawner will change the spawner to a mooshroom spawner.', 'Requires a mycelium surface for the spawner to work.'])
 
-    //Apotheosis - Savage & Ravage: Mob
-    event.add('savageandravage:skeleton_villager_spawn_egg', 'Using a Skeleton Villager Spawn Egg on a spawner will change the spawner to a skeleton villager spawner.')
+    //Apotheosis - Quark: Animal
+    event.add('mysticalworld:sprout_spawn_egg', ['Using a Sprout Spawn Egg on a spawner will change the spawner to a sprout spawner.', 'Requires a grass block surface for the spawner to work.'])
 
-    //Apotheosis - Quark: Mob
-    event.add('quark:wrapped_spawn_egg', 'Using a Wrapped Spawn Egg on a spawner will change the spawner to a wrapped spawner.')
+    //Apotheosis - Buzzier Bees: Animal
+    event.add('buzzier_bees:moobloom_spawn_egg', ['Using a Moobloom Spawn Egg on a spawner will change the spawner to a moobloom spawner.', 'Requires a grass block surface for the spawner to work.'])
+
+    //Apotheosis - Autumnity: Animal
+    event.add('autumnity:turkey_spawn_egg', ['Using a Turkey Spawn Egg on a spawner will change the spawner to a turkey spawner.', 'Requires a grass block surface for the spawner to work.'])
+
+    //Apotheosis - Mystical World: Animal
+    event.add('mysticalworld:deer_spawn_egg', ['Using a Deer Spawn Egg on a spawner will change the spawner to a deer spawner.', 'Requires a grass block surface for the spawner to work.'])
+
 })
