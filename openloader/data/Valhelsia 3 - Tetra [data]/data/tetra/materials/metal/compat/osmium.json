@@ -1,0 +1,24 @@
+{
+    "key": "osmium",
+    "category": "metal",
+    "primary": "4",
+    "secondary": "3.8",
+    "tertiary": "1",
+    "durability": "150",
+    "integrityCost": "2",
+    "integrityGain": "5",
+    "magicCapacity": 96,
+    "toolLevel": "2",
+    "toolEfficiency": "7",
+    "tints": {
+        "glyph": "7d91a0",
+        "texture": "7d91a0"
+    },
+    "textures": ["metal", "default"],
+    "material" : {
+        "item": "mekanism:ingot_osmium"
+    },
+    "requiredTools": {
+        "hammer": 2
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "key": "steel",
+    "category": "metal",
+    "primary": "6",
+    "secondary": "4",
+    "tertiary": "2.8",
+    "durability": "875",
+    "integrityCost": "2",
+    "integrityGain": "5",
+    "magicCapacity": 60,
+    "toolLevel": "3",
+    "toolEfficiency": "7",
+    "tints": {
+        "glyph": "steel_glyph",
+        "texture": "steel"
+    },
+    "textures": ["metal", "default"],
+    "material" : {
+        "item": "forge:ingots/steel"
+    },
+    "requiredTools": {
+        "hammer": 3
+    }
+}
