@@ -2,8 +2,8 @@
 
 events.listen('recipes', function (event) {
 
-  // Cutting Board Axe Recipes
-  const axeCutting = (output, input) => {
+  // Cutting Board Axe Stripping
+  const axeStripping = (output, input) => {
     event.custom({
       type: "farmersdelight:cutting",
       ingredients: [
@@ -20,11 +20,26 @@ events.listen('recipes', function (event) {
     })
   }
 
-  axeCutting('druidcraft:stripped_darkwood_log', 'druidcraft:darkwood_log')
-  axeCutting('druidcraft:stripped_darkwood_wood', 'druidcraft:darkwood_wood')
-  axeCutting('druidcraft:stripped_elder_log', 'druidcraft:elder_log')
-  axeCutting('druidcraft:stripped_elder_wood', 'druidcraft:elder_wood')
-  // TODO: All BoP woods.
+  // Cutting Board Axe Chopping
+  const axeChopping = (output, input) => {
+    event.custom({
+      type: "farmersdelight:cutting",
+      ingredients: [
+        Ingredient.of(input).toJson()
+      ],
+      tool: {
+        type: "axe"
+      },
+      result: [
+        Item.of(output).toResultJson()
+      ]
+    })
+  }
+
+  axeStripping('druidcraft:stripped_darkwood_log', 'druidcraft:darkwood_log')
+  axeStripping('druidcraft:stripped_darkwood_wood', 'druidcraft:darkwood_wood')
+  axeStripping('druidcraft:stripped_elder_log', 'druidcraft:elder_log')
+  axeStripping('druidcraft:stripped_elder_wood', 'druidcraft:elder_wood')
 
   const biomesOPlentyWoodTypes = [
     'fir',
@@ -41,14 +56,32 @@ events.listen('recipes', function (event) {
   ]
 
   biomesOPlentyWoodTypes.forEach(function(element) {
-    axeCutting('biomesoplenty:stripped_'.concat(element).concat('_log'), 'biomesoplenty:'.concat(element).concat('_log'))
-    axeCutting('biomesoplenty:stripped_'.concat(element).concat('_wood'), 'biomesoplenty:'.concat(element).concat('_wood'))
+    axeStripping('biomesoplenty:stripped_'.concat(element).concat('_log'), 'biomesoplenty:'.concat(element).concat('_log'))
+    axeStripping('biomesoplenty:stripped_'.concat(element).concat('_wood'), 'biomesoplenty:'.concat(element).concat('_wood'))
   })
 
-  // TODO: Make bark optional to do the below.
-  // TODO: Sign to 1 plank (for everything non-vanilla).
-  // TODO: Door to 1 plank (for everything non-vanilla).
-  // TODO: Trapdoor to 1 plank (for everything non-vanilla).
-  
+  const choppingWoodTypes = [
+    'atmospheric:rosewood',
+    'atmospheric:morado',
+    'atmospheric:yucca',
+    'atmospheric:kousa',
+    'atmospheric:aspen',
+    'atmospheric:grimwood',
+    'autumnity:maple',
+    'enhanced_mushrooms:red_mushroom',
+    'enhanced_mushrooms:brown_mushroom',
+    'enhanced_mushrooms:glowshroom',
+    'forbidden_arcanus:edelwood',
+    'forbidden_arcanus:cherrywood',
+    'forbidden_arcanus:mysterywood',
+    'endergetic:poise',
+    'upgrade_aquatic:driftwood',
+    'upgrade_aquatic:river'
+  ]
 
+  choppingWoodTypes.forEach(function(element) {
+    axeChopping(element.concat('_planks'), element.concat('_sign'))
+    axeChopping(element.concat('_planks'), element.concat('_door'))
+    axeChopping(element.concat('_planks'), element.concat('_trapdoor'))
+  })
 })
