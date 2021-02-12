@@ -213,8 +213,16 @@ events.listen('recipes', function (event) {
     abnormalsLogsTags.push('#atmospheric:'.concat(element).concat('_logs'))
     abnormalsLogs.push('atmospheric:'.concat(element).concat('_log'))
     abnormalsStrippedLogs.push('atmospheric:stripped_'.concat(element).concat('_log'))
-    abnormalsWoods.push('atmospheric:'.concat(element).concat('_wood'))
-    abnormalsStrippedWoods.push('atmospheric:stripped_'.concat(element).concat('_wood'))
+
+    // Special cases: Rosewood and Grimwood have different naming conventions.
+    if (element === 'rosewood' || element === 'grimwood') {
+      abnormalsWoods.push('atmospheric:'.concat(element))
+      abnormalsStrippedWoods.push('atmospheric:stripped_'.concat(element))
+    } else {
+      abnormalsWoods.push('atmospheric:'.concat(element).concat('_wood'))
+      abnormalsStrippedWoods.push('atmospheric:stripped_'.concat(element).concat('_wood'))
+    }
+
     abnormalsPlanks.push('atmospheric:'.concat(element).concat('_planks'))
     abnormalsVerticalPlanks.push('atmospheric:vertical_'.concat(element).concat('_planks'))
     abnormalsSlabs.push('atmospheric:'.concat(element).concat('_slab'))
@@ -274,6 +282,37 @@ events.listen('recipes', function (event) {
     abnormalsTrapdoors.push('endergetic:'.concat(element).concat('_trapdoor'))
     abnormalsDoors.push('endergetic:'.concat(element).concat('_door'))
     abnormalsPressurePlates.push('endergetic:'.concat(element).concat('_pressure_plate'))
+  })
+
+  
+  // Upgrade Aquatic
+  upgradeAquaticWoodTypes.forEach(function(element) {
+    abnormalsLogsTags.push('#upgrade_aquatic:'.concat(element).concat('_logs'))
+    abnormalsLogs.push('upgrade_aquatic:'.concat(element).concat('_log'))
+    abnormalsStrippedLogs.push('upgrade_aquatic:stripped_'.concat(element).concat('_log'))
+
+    // Special cases: Driftwood has a different naming convention.
+    if (element === 'driftwood') {
+      abnormalsWoods.push('upgrade_aquatic:'.concat(element))
+      abnormalsStrippedWoods.push('upgrade_aquatic:stripped_'.concat(element))
+    } else {
+      abnormalsWoods.push('upgrade_aquatic:'.concat(element).concat('_wood'))
+      abnormalsStrippedWoods.push('upgrade_aquatic:stripped_'.concat(element).concat('_wood'))
+    }
+
+    abnormalsPlanks.push('upgrade_aquatic:'.concat(element).concat('_planks'))
+    abnormalsVerticalPlanks.push('upgrade_aquatic:vertical_'.concat(element).concat('_planks'))
+    abnormalsSlabs.push('upgrade_aquatic:'.concat(element).concat('_slab'))
+    abnormalsVerticalSlabs.push('upgrade_aquatic:'.concat(element).concat('_vertical_slab'))
+    abnormalsStairs.push('upgrade_aquatic:'.concat(element).concat('_stairs'))
+    abnormalsSigns.push('upgrade_aquatic:'.concat(element).concat('_sign'))
+    abnormalsLadders.push('upgrade_aquatic:'.concat(element).concat('_ladder'))
+    abnormalsFences.push('upgrade_aquatic:'.concat(element).concat('_fence'))
+    abnormalsFenceGates.push('upgrade_aquatic:'.concat(element).concat('_fence_gate'))
+    abnormalsButtons.push('upgrade_aquatic:'.concat(element).concat('_button'))
+    abnormalsTrapdoors.push('upgrade_aquatic:'.concat(element).concat('_trapdoor'))
+    abnormalsDoors.push('upgrade_aquatic:'.concat(element).concat('_door'))
+    abnormalsPressurePlates.push('upgrade_aquatic:'.concat(element).concat('_pressure_plate'))
   })
 
   for (let i = 0; i < abnormalsLogsTags.length; i++) {
