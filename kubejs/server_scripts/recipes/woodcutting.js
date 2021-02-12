@@ -162,6 +162,9 @@ events.listen('recipes', function (event) {
   const slabs_per_log = slabs_per_plank * planks_per_log
   const stairs_per_log = stairs_per_plank * planks_per_log
   const trapdoors_per_log = trapdoors_per_plank * planks_per_log
+  const wood_per_log = 1
+  const stripped_wood_per_log = 1
+  const stripped_logs_per_log = 1
 
   // Modded things:
   const panels_per_plank = 1
@@ -185,82 +188,131 @@ events.listen('recipes', function (event) {
   const planks_per_panel = 1
   const vertical_planks_per_panel = 1
 
+  // Abnormals
+  var abnormalsLogsTags = []
+  var abnormalsLogs = []
+  var abnormalsStrippedLogs = []
+  var abnormalsWoods = []
+  var abnormalsStrippedWoods = []
+  var abnormalsPlanks = []
+  var abnormalsVerticalPlanks = []
+  var abnormalsSlabs = []
+  var abnormalsVerticalSlabs = []
+  var abnormalsStairs = []
+  var abnormalsSigns = []
+  var abnormalsLadders = []
+  var abnormalsFences = []
+  var abnormalsFenceGates = []
+  var abnormalsButtons = []
+  var abnormalsTrapdoors = []
+  var abnormalsDoors = []
+  var abnormalsPressurePlates = []
 
   // Atmospheric
-  var atmosphericLogsTags = []
-  var atmosphericStrippedLogs = []
-  var atmosphericWoods = []
-  var atmosphericStrippedWoods = []
-  var atmosphericPlanks = []
-  var atmosphericVerticalPlanks = []
-  var atmosphericSlabs = []
-  var atmosphericVerticalSlabs = []
-  var atmosphericStairs = []
-  var atmosphericSigns = []
-  var atmosphericLadders = []
-  var atmosphericFences = []
-  var atmosphericFenceGates = []
-  var atmosphericButtons = []
-  var atmosphericTrapdoors = []
-  var atmosphericDoors = []
-  var atmosphericPressurePlates = []
-
   atmosphericWoodTypes.forEach(function(element) {
-    atmosphericLogsTags.push('#atmospheric:'.concat(element).concat('_logs'))
-    atmosphericStrippedLogs.push('atmospheric:stripped_'.concat(element).concat('_log'))
-    atmosphericWoods.push('atmospheric:'.concat(element).concat('_log'))
-    atmosphericStrippedWoods.push('atmospheric:stripped_'.concat(element).concat('_log'))
-    atmosphericPlanks.push('atmospheric:'.concat(element).concat('_planks'))
-    atmosphericVerticalPlanks.push('atmospheric:vertical_'.concat(element).concat('_planks'))
-    atmosphericSlabs.push('atmospheric:'.concat(element).concat('_slab'))
-    atmosphericVerticalSlabs.push('atmospheric:'.concat(element).concat('_vertical_slab'))
-    atmosphericStairs.push('atmospheric:'.concat(element).concat('_stairs'))
-    atmosphericSigns.push('atmospheric:'.concat(element).concat('_sign'))
-    atmosphericLadders.push('atmospheric:'.concat(element).concat('_ladder'))
-    atmosphericFences.push('atmospheric:'.concat(element).concat('_fence'))
-    atmosphericFenceGates.push('atmospheric:'.concat(element).concat('_fence_gate'))
-    atmosphericButtons.push('atmospheric:'.concat(element).concat('_button'))
-    atmosphericTrapdoors.push('atmospheric:'.concat(element).concat('_trapdoor'))
-    atmosphericDoors.push('atmospheric:'.concat(element).concat('_door'))
-    atmosphericPressurePlates.push('atmospheric:'.concat(element).concat('_pressure_plate'))
+    abnormalsLogsTags.push('#atmospheric:'.concat(element).concat('_logs'))
+    abnormalsLogs.push('atmospheric:'.concat(element).concat('_log'))
+    abnormalsStrippedLogs.push('atmospheric:stripped_'.concat(element).concat('_log'))
+    abnormalsWoods.push('atmospheric:'.concat(element).concat('_wood'))
+    abnormalsStrippedWoods.push('atmospheric:stripped_'.concat(element).concat('_wood'))
+    abnormalsPlanks.push('atmospheric:'.concat(element).concat('_planks'))
+    abnormalsVerticalPlanks.push('atmospheric:vertical_'.concat(element).concat('_planks'))
+    abnormalsSlabs.push('atmospheric:'.concat(element).concat('_slab'))
+    abnormalsVerticalSlabs.push('atmospheric:'.concat(element).concat('_vertical_slab'))
+    abnormalsStairs.push('atmospheric:'.concat(element).concat('_stairs'))
+    abnormalsSigns.push('atmospheric:'.concat(element).concat('_sign'))
+    abnormalsLadders.push('atmospheric:'.concat(element).concat('_ladder'))
+    abnormalsFences.push('atmospheric:'.concat(element).concat('_fence'))
+    abnormalsFenceGates.push('atmospheric:'.concat(element).concat('_fence_gate'))
+    abnormalsButtons.push('atmospheric:'.concat(element).concat('_button'))
+    abnormalsTrapdoors.push('atmospheric:'.concat(element).concat('_trapdoor'))
+    abnormalsDoors.push('atmospheric:'.concat(element).concat('_door'))
+    abnormalsPressurePlates.push('atmospheric:'.concat(element).concat('_pressure_plate'))
   })
 
-  for (let i = 0; i < atmosphericWoodTypes.length; i++) {
+  // Autumnity
+  autumnityWoodTypes.forEach(function(element) {
+    abnormalsLogsTags.push('#autumnity:'.concat(element).concat('_logs'))
+    abnormalsLogs.push('autumnity:'.concat(element).concat('_log'))
+    abnormalsStrippedLogs.push('autumnity:stripped_'.concat(element).concat('_log'))
+    abnormalsWoods.push('autumnity:'.concat(element).concat('_wood'))
+    abnormalsStrippedWoods.push('autumnity:stripped_'.concat(element).concat('_wood'))
+    abnormalsPlanks.push('autumnity:'.concat(element).concat('_planks'))
+    abnormalsVerticalPlanks.push('autumnity:vertical_'.concat(element).concat('_planks'))
+    abnormalsSlabs.push('autumnity:'.concat(element).concat('_slab'))
+    abnormalsVerticalSlabs.push('autumnity:'.concat(element).concat('_vertical_slab'))
+    abnormalsStairs.push('autumnity:'.concat(element).concat('_stairs'))
+    abnormalsSigns.push('autumnity:'.concat(element).concat('_sign'))
+    abnormalsLadders.push('autumnity:'.concat(element).concat('_ladder'))
+    abnormalsFences.push('autumnity:'.concat(element).concat('_fence'))
+    abnormalsFenceGates.push('autumnity:'.concat(element).concat('_fence_gate'))
+    abnormalsButtons.push('autumnity:'.concat(element).concat('_button'))
+    abnormalsTrapdoors.push('autumnity:'.concat(element).concat('_trapdoor'))
+    abnormalsDoors.push('autumnity:'.concat(element).concat('_door'))
+    abnormalsPressurePlates.push('autumnity:'.concat(element).concat('_pressure_plate'))
+  })
+
+  // Endergetic Expansion
+  endergeticExpansionWoodTypes.forEach(function(element) {
+    // Note: This works because we know that the only wood in Endergetic is a mushroom type, so stems is fine to put here.
+    // It will break if they add any regular trees in the future, and will have to be handled differently.
+    abnormalsLogsTags.push('#endergetic:'.concat(element).concat('_stems'))
+    abnormalsLogs.push('endergetic:'.concat(element).concat('_stem'))
+    abnormalsStrippedLogs.push('endergetic:stripped_'.concat(element).concat('_stem'))
+    abnormalsWoods.push('endergetic:'.concat(element).concat('_wood'))
+    abnormalsStrippedWoods.push('endergetic:stripped_'.concat(element).concat('_wood'))
+    abnormalsPlanks.push('endergetic:'.concat(element).concat('_planks'))
+    abnormalsVerticalPlanks.push('endergetic:vertical_'.concat(element).concat('_planks'))
+    abnormalsSlabs.push('endergetic:'.concat(element).concat('_slab'))
+    abnormalsVerticalSlabs.push('endergetic:'.concat(element).concat('_vertical_slab'))
+    abnormalsStairs.push('endergetic:'.concat(element).concat('_stairs'))
+    abnormalsSigns.push('endergetic:'.concat(element).concat('_sign'))
+    abnormalsLadders.push('endergetic:'.concat(element).concat('_ladder'))
+    abnormalsFences.push('endergetic:'.concat(element).concat('_fence'))
+    abnormalsFenceGates.push('endergetic:'.concat(element).concat('_fence_gate'))
+    abnormalsButtons.push('endergetic:'.concat(element).concat('_button'))
+    abnormalsTrapdoors.push('endergetic:'.concat(element).concat('_trapdoor'))
+    abnormalsDoors.push('endergetic:'.concat(element).concat('_door'))
+    abnormalsPressurePlates.push('endergetic:'.concat(element).concat('_pressure_plate'))
+  })
+
+  for (let i = 0; i < abnormalsLogsTags.length; i++) {
     // Log Woodcutting
-    woodcutting(atmosphericPlanks[i], atmosphericLogsTags[i], planks_per_log)
-    woodcutting(atmosphericVerticalPlanks[i], atmosphericLogsTags[i], vertical_planks_per_log)
-    woodcutting(atmosphericSlabs[i], atmosphericLogsTags[i], slabs_per_log)
-    woodcutting(atmosphericVerticalSlabs[i], atmosphericLogsTags[i], vertical_slabs_per_log)
-    woodcutting(atmosphericStairs[i], atmosphericLogsTags[i], stairs_per_log)
-    woodcutting(atmosphericSigns[i], atmosphericLogsTags[i], signs_per_log)
-    woodcutting(atmosphericLadders[i], atmosphericLogsTags[i], ladders_per_log)
-    woodcutting(atmosphericFences[i], atmosphericLogsTags[i], fences_per_log)
-    woodcutting(atmosphericFenceGates[i], atmosphericLogsTags[i], fence_gates_per_log)
-    woodcutting(atmosphericButtons[i], atmosphericLogsTags[i], buttons_per_log)
-    woodcutting(atmosphericTrapdoors[i], atmosphericLogsTags[i], trapdoors_per_log)
-    woodcutting(atmosphericDoors[i], atmosphericLogsTags[i], doors_per_log)
-    woodcutting(atmosphericPressurePlates[i], atmosphericLogsTags[i], pressure_plates_per_log)
+    woodcutting(abnormalsPlanks[i], abnormalsLogsTags[i], planks_per_log)
+    woodcutting(abnormalsVerticalPlanks[i], abnormalsLogsTags[i], vertical_planks_per_log)
+    woodcutting(abnormalsSlabs[i], abnormalsLogsTags[i], slabs_per_log)
+    woodcutting(abnormalsVerticalSlabs[i], abnormalsLogsTags[i], vertical_slabs_per_log)
+    woodcutting(abnormalsStairs[i], abnormalsLogsTags[i], stairs_per_log)
+    woodcutting(abnormalsSigns[i], abnormalsLogsTags[i], signs_per_log)
+    woodcutting(abnormalsLadders[i], abnormalsLogsTags[i], ladders_per_log)
+    woodcutting(abnormalsFences[i], abnormalsLogsTags[i], fences_per_log)
+    woodcutting(abnormalsFenceGates[i], abnormalsLogsTags[i], fence_gates_per_log)
+    woodcutting(abnormalsButtons[i], abnormalsLogsTags[i], buttons_per_log)
+    woodcutting(abnormalsTrapdoors[i], abnormalsLogsTags[i], trapdoors_per_log)
+    woodcutting(abnormalsDoors[i], abnormalsLogsTags[i], doors_per_log)
+    woodcutting(abnormalsPressurePlates[i], abnormalsLogsTags[i], pressure_plates_per_log)
 
     // Plank Woodcutting
-    woodcutting(atmosphericVerticalPlanks[i], atmosphericPlanks[i], vertical_planks_per_plank)
-    woodcutting(atmosphericSlabs[i], atmosphericPlanks[i], slabs_per_plank)
-    woodcutting(atmosphericVerticalSlabs[i], atmosphericPlanks[i], vertical_slabs_per_plank)
-    woodcutting(atmosphericStairs[i], atmosphericPlanks[i], stairs_per_plank)
-    woodcutting(atmosphericSigns[i], atmosphericPlanks[i], signs_per_plank)
-    woodcutting(atmosphericLadders[i], atmosphericPlanks[i], ladders_per_plank)
-    woodcutting(atmosphericFences[i], atmosphericPlanks[i], fences_per_plank)
-    woodcutting(atmosphericFenceGates[i], atmosphericPlanks[i], fence_gates_per_plank)
-    woodcutting(atmosphericButtons[i], atmosphericPlanks[i], buttons_per_plank)
-    woodcutting(atmosphericTrapdoors[i], atmosphericPlanks[i], trapdoors_per_plank)
-    woodcutting(atmosphericDoors[i], atmosphericPlanks[i], doors_per_plank)
-    woodcutting(atmosphericPressurePlates[i], atmosphericPlanks[i], pressure_plates_per_plank)
+    woodcutting(abnormalsVerticalPlanks[i], abnormalsPlanks[i], vertical_planks_per_plank)
+    woodcutting(abnormalsSlabs[i], abnormalsPlanks[i], slabs_per_plank)
+    woodcutting(abnormalsVerticalSlabs[i], abnormalsPlanks[i], vertical_slabs_per_plank)
+    woodcutting(abnormalsStairs[i], abnormalsPlanks[i], stairs_per_plank)
+    woodcutting(abnormalsSigns[i], abnormalsPlanks[i], signs_per_plank)
+    woodcutting(abnormalsLadders[i], abnormalsPlanks[i], ladders_per_plank)
+    woodcutting(abnormalsFences[i], abnormalsPlanks[i], fences_per_plank)
+    woodcutting(abnormalsFenceGates[i], abnormalsPlanks[i], fence_gates_per_plank)
+    woodcutting(abnormalsButtons[i], abnormalsPlanks[i], buttons_per_plank)
+    woodcutting(abnormalsTrapdoors[i], abnormalsPlanks[i], trapdoors_per_plank)
+    woodcutting(abnormalsDoors[i], abnormalsPlanks[i], doors_per_plank)
+    woodcutting(abnormalsPressurePlates[i], abnormalsPlanks[i], pressure_plates_per_plank)
 
     // Misc
-    woodcutting(atmosphericPlanks[i], atmosphericVerticalPlanks[i], vertical_planks_per_plank)
+    woodcutting(abnormalsWoods[i], abnormalsLogs[i], wood_per_log)
+    woodcutting(abnormalsStrippedLogs[i], abnormalsLogs[i], stripped_logs_per_log)
+    woodcutting(abnormalsStrippedWoods[i], abnormalsLogs[i], stripped_wood_per_log)
+    woodcutting(abnormalsStrippedWoods[i], abnormalsWoods[i], wood_per_log)
+    woodcutting(abnormalsPlanks[i], abnormalsVerticalPlanks[i], vertical_planks_per_plank)
   }
-
-  // Autumnity
-  // TODO: Planks, Vertical Planks, Slabs, Stairs, Ladders, Signs, Fences, Fence Gates, Buttons, Doors
 
   // Biomes O Plenty
   // TODO: Way too much. :'(
