@@ -23,8 +23,12 @@
 	#Footstep master volume scale
 	#Range: 0 ~ 100
 	"Footstep Volume Scale" = 30
-	#Enable armor rustle and rain splash accents for footstep acoustics
-	"Enable Footstep Accents" = false
+	#Enable armor rustle accents for footstep acoustics
+	"Enable Armor Accents" = false
+	#Enable rain splash accents for footstep acoustics
+	"Enable Rain Splash Accents" = true
+	#Enable water logged accents for footstep acoustics
+	"Enable Waterlogged Accents" = true
 
 #Options for mob effect generation
 ["Mob Effect Options"]
