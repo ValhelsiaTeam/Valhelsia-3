@@ -16,7 +16,7 @@
     },
     "textures": ["metal", "default"],
     "material" : {
-        "item": "forge:ingots/steel"
+        "tag": "forge:ingots/steel"
     },
     "requiredTools": {
         "hammer": 3
