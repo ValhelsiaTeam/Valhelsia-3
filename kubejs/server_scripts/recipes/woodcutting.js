@@ -284,6 +284,7 @@ events.listen('recipes', function (event) {
     abnormalsPressurePlates.push('endergetic:'.concat(element).concat('_pressure_plate'))
   })
 
+  // TODO: Environmental, when it's out.
   
   // Upgrade Aquatic
   upgradeAquaticWoodTypes.forEach(function(element) {
@@ -291,7 +292,7 @@ events.listen('recipes', function (event) {
     abnormalsLogs.push('upgrade_aquatic:'.concat(element).concat('_log'))
     abnormalsStrippedLogs.push('upgrade_aquatic:stripped_'.concat(element).concat('_log'))
 
-    // Special cases: Driftwood has a different naming convention.
+    // Special case: Driftwood has a different naming convention.
     if (element === 'driftwood') {
       abnormalsWoods.push('upgrade_aquatic:'.concat(element))
       abnormalsStrippedWoods.push('upgrade_aquatic:stripped_'.concat(element))
