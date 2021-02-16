@@ -472,6 +472,19 @@ onEvent('item.tags', event => {
 
   event.add('forge:sandstone/colorless', 'quark:sandstone_bricks')
   event.add('forge:sandstone/red', 'quark:red_sandstone_bricks')
+
+  // Industrial Foregoing Enchantment Extractor Blacklist
+  var enchantmentExtractorBlacklist = [
+    'tetra:modular_sword',
+    'tetra:modular_single',
+    'tetra:modular_double',
+    'tetra:modular_bow',
+    'tetra:modular_crossbow',
+    'tetra:modular_shield'
+  ]
+  
+  event.get('industrialforegoing:enchantment_extractor_blacklist')
+       .add(enchantmentExtractorBlacklist)
   
   // Misc Missing Tags
   event.add('forge:seeds/aubergine', 'mysticalworld:aubergine_seeds')
