@@ -10,7 +10,7 @@
 	"Enable 'q' Button" = false
 	#
 	#A list of screens that don't play well with quark's buttons. Use "Print Screen Classnames" to find the names of any others you'd want to add.
-	"Ignored Screens" = ["com.tfar.craftingstation.client.CraftingStationScreen", "com.raoulvdberge.refinedstorage.screen.grid.GridScreen", "com.raoulvdberge.refinedstorage.screen.DiskManipulatorScreen", "com.raoulvdberge.refinedstorage.screen.InterfaceScreen", "blusunrize.immersiveengineering.client.gui.CraftingTableScreen"]
+	"Ignored Screens" = ["com.tfar.craftingstation.client.CraftingStationScreen", "com.refinedmods.refinedstorage.screen.grid.GridScreen", "com.refinedmods.refinedstorage.screen.DiskManipulatorScreen", "com.refinedmods.refinedstorage.screen.InterfaceScreen", "blusunrize.immersiveengineering.client.gui.CraftingTableScreen"]
 	"Use Anti Overlap" = true
 	#
 	#Quark messes with the Stonecutter to allow any item that can be used in it to be shift clicked in. Set this to false to turn it off.
@@ -1973,6 +1973,7 @@
 	"Matrix Enchanting" = false
 	Magnets = true
 	Pipes = true
+	Crate = false
 
 	[oddities.totem_of_holding]
 		#
@@ -2077,6 +2078,9 @@
 		#
 		#How long it takes for an item to cross a pipe. Bigger = slower.
 		"Pipe Speed" = 5
+
+	[oddities.crate]
+		"Max Items" = 640
 
 [experimental]
 	"Adjustable Chat" = false
