@@ -1,3 +1,48 @@
+# Changelog 2.3.2
+
+**Forge 31.2.49**
+
+### Mod(s) added:
++ BlockCarpentry
++ Carry On
++ Chunk Loaders
++ Health Overlay
++ JAOPCA
++ Joy of Painting
++ Music Maker Mod
++ Supplementaries
++ TableChair
+
+### Mod(s) removed:
+- None
+
+### Updated:
+- Caelus 2.0-beta4
+- CC: Tweaked 1.95.1
+- CodeChickenLib 3.3.5.407
+- Create 0.3e
+- Curios 2.0.2.7
+- Ender Storage 2.5.2.164
+- Inventory HUD+ 3.2.1
+- JEI Enchantment Info 1.2.1
+- Macaw's Bridges 1.0.5
+- Macaw's Doors 1.0.2
+- Macaw's Trapdoors 1.0.1
+- MineColonies 0.13.614
+- Performant 3.16m
+- RFTools Utility 2.1.20
+- Rhino 1.7.13-build.14
+- Structurize 0.13.109
+- Xaero's Minimap 21.4.0
+- Xaero's World Map 1.12.0.2
+
+### Change(s):
+- Blacklist RFTools, Mekanism, Waystones, and CC: Tweaked in Carry On.
+- Rework the Inventory HUD+ Config.
+- Adjust KubeJS Client Properties.
+
+-----------------------------------
+
 # Changelog 2.3.1
 
 **Forge 31.2.47**
