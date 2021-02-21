@@ -122,6 +122,25 @@ events.listen('recipes', function (event) {
     S: '#forge:ingots/silver'
   })
 
+  // Industrial Foregoing
+  // Note: This deliberately can't be turned back into pink slime, to prevent avoiding gating.
+  event.shaped(item.of('quark:magenta_slime_block', 1), [
+    'AAA',
+    'AAA',
+    'AAA'
+  ], {
+    A: 'industrialforegoing:pink_slime'
+  })
+
+  // Minecraft (add back in slime block recipe)
+  event.shaped(item.of('minecraft:slime_block', 1), [
+    'AAA',
+    'AAA',
+    'AAA'
+  ], {
+    A: 'minecraft:slime_ball'
+  })
+
   // Mystical World
   event.shaped(item.of('mysticalworld:silver_block', 1), [
     'SSS',

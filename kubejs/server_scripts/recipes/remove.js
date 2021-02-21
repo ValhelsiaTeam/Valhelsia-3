@@ -3,6 +3,11 @@
 events.listen('recipes', function (event) {
 
   var idRemove = [
+
+    // Autumnity
+    'autumnity:lead_from_snail_slime', // Replaced with a tag recipe.
+    'autumnity:sticky_piston_from_snail_slime', // Replaced with a tag recipe.
+
     // Aquaculture
     'aquaculture:planks_from_driftwood',
 
@@ -76,13 +81,16 @@ events.listen('recipes', function (event) {
     'mekanism:crushing/biofuel/sunflower',
     'mekanism:crushing/biofuel/lilac',
     'mekanism:crushing/biofuel/rose_bush',
-    'mekanism:crushing/biofuel/peony',
+    'mekanism:crushing/biofuel/peony',    
 
     // MineColonies
     'minecolonies:chainmailhelmet',
     'minecolonies:chainmailchestplate',
     'minecolonies:chainmailleggings',
     'minecolonies:chainmailboots',
+
+    // Minecraft
+    'minecraft:slime_block', // Removed but re-added later in another script to avoid being hit by the replaceInput of slime balls.
 
     // Mystical World
     'mysticalworld:ingots_silver_to_storage_block', // Duplicate recipe.
