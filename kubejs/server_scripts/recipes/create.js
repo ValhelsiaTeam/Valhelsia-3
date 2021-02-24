@@ -35,6 +35,10 @@ events.listen('recipes', function (event) {
   // Farmer's Delight
   crushAndMill([Item.of('farmersdelight:rice', 9), Item.of('farmersdelight:straw', 9)], 'farmersdelight:rice_bale')
 
+  // Forbidden and Arcanus
+  event.recipes.create.cutting('forbidden_arcanus:stripped_cherrywood_log', 'forbidden_arcanus:cherrywood_log')
+  event.recipes.create.cutting('forbidden_arcanus:stripped_mysterywood_log', 'forbidden_arcanus:mysterywood_log')
+
   // Mekanism
   event.recipes.create.splashing([Item.of('mekanism:nugget_copper', 10), Item.of('mekanism:nugget_copper', 5).withChance(0.5)], 'create:crushed_copper_ore')
 

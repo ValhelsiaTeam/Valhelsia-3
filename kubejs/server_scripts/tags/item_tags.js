@@ -73,6 +73,12 @@ onEvent('item.tags', event => {
   ]
   event.get('forge:sapling').add(saplings)
 
+  // Missing #minecraft:logs_that_burn item tags.
+  var saplings = [
+    'forbidden_arcanus:cherrywood_log',
+    'forbidden_arcanus:mysterywood_log'
+  ]
+  event.get('minecraft:logs_that_burn').add(saplings)
   
   // Missing Wall Tags
   var woodenWalls = [

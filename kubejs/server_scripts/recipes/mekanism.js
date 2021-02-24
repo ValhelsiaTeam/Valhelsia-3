@@ -24,6 +24,10 @@ events.listen('recipes', function (event) {
   // Decorative Blocks
   event.recipes.mekanism.crushing('minecraft:coarse_dirt', 'decorative_blocks:rocky_dirt')
 
+  // Forbidden and Arcanus
+  // event.recipes.mekanism.sawing([Item.of('forbidden_arcanus:cherrywood_planks', 6), Item.of('mekanism:sawdust').withChance(0.2)], 'forbidden_arcanus:cherrywood_log')
+  // event.recipes.mekanism.sawing([Item.of('forbidden_arcanus:mysterywood_planks', 6), Item.of('mekanism:sawdust').withChance(0.2)], 'forbidden_arcanus:mysterywood_log')
+
   // Mekanism - Bio Fuel
   event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 5), '#minecraft:flowers')
   event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), '#minecraft:saplings')
