@@ -435,7 +435,7 @@ events.listen('recipes', function (event) {
     dbBeams.push("decorative_blocks_abnormals:".concat(element).concat("_beam"))
   })
 
-  endergeticWoodTypes.forEach(function(element) {
+  endergeticExpansionWoodTypes.forEach(function(element) {
     dbLogTypes.push("#endergetic:".concat(element).concat("_stems"))
     dbPlankTypes.push("endergetic:".concat(element).concat("_planks"))
     dbPalisades.push("decorative_blocks_abnormals:".concat(element).concat("_palisade"))
