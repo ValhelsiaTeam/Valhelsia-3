@@ -514,16 +514,55 @@ events.listen('recipes', function (event) {
   // Macaw's Stuff
 
   // Minecraft
-  woodcutting('minecraft:acacia_sign', '#minecraft:acacia_logs', 2)
-  woodcutting('minecraft:acacia_slab', '#minecraft:acacia_logs', 8)
-  woodcutting('minecraft:acacia_stairs', '#minecraft:acacia_logs', 4)
-  woodcutting('minecraft:acacia_fence', '#minecraft:acacia_logs', 3)
-  woodcutting('minecraft:acacia_fence_gate', '#minecraft:acacia_logs', 2)
-  woodcutting('minecraft:acacia_trapdoor', '#minecraft:acacia_logs', 4)
-  woodcutting('minecraft:acacia_pressure_plate', 'minecraft:acacia_planks', 2)
-  woodcutting('minecraft:acacia_pressure_plate', '#minecraft:acacia_logs', 8)
-  woodcutting('minecraft:acacia_door', '#minecraft:acacia_logs', 2)
-  // TODO: Add non-acacia stuff.
+  var mcLogs = []
+  var mcPlanks = []
+  var mcSigns = []
+  var mcSlabs = []
+  var mcStairs = []
+  var mcFences = []
+  var mcFenceGates = []
+  var mcTrapdoors = []
+  var mcPressurePlates = []
+  var mcDoors = []
+
+  minecraftOverworldWoodTypes.forEach(function(element) {
+    mcLogs.push('#minecraft:'.concat(element).concat('_logs'))
+    mcPlanks.push('minecraft:'.concat(element).concat('_planks'))
+    mcSigns.push('minecraft:'.concat(element).concat('_sign'))
+    mcSlabs.push('minecraft:'.concat(element).concat('_slab'))
+    mcStairs.push('minecraft:'.concat(element).concat('_stairs'))
+    mcFences.push('minecraft:'.concat(element).concat('_fence'))
+    mcFenceGates.push('minecraft:'.concat(element).concat('_fence_gate'))
+    mcTrapdoors.push('minecraft:'.concat(element).concat('_trapdoor'))
+    mcPressurePlates.push('minecraft:'.concat(element).concat('_pressure_plate'))
+    mcDoors.push('minecraft:'.concat(element).concat('_door'))
+  })
+  
+  minecraftNetherWoodTypes.forEach(function(element) {
+    mcLogs.push('#minecraft:'.concat(element).concat('_stems'))
+    mcPlanks.push('minecraft:'.concat(element).concat('_planks'))
+    mcSigns.push('minecraft:'.concat(element).concat('_sign'))
+    mcSlabs.push('minecraft:'.concat(element).concat('_slab'))
+    mcStairs.push('minecraft:'.concat(element).concat('_stairs'))
+    mcFences.push('minecraft:'.concat(element).concat('_fence'))
+    mcFenceGates.push('minecraft:'.concat(element).concat('_fence_gate'))
+    mcTrapdoors.push('minecraft:'.concat(element).concat('_trapdoor'))
+    mcPressurePlates.push('minecraft:'.concat(element).concat('_pressure_plate'))
+    mcDoors.push('minecraft:'.concat(element).concat('_door'))
+  })
+  
+  for (let i = 0; i < mcLogs.length; i++) {
+    woodcutting(mcSigns[i], mcLogs[i], signs_per_log)
+    woodcutting(mcSlabs[i], mcLogs[i], slabs_per_log)
+    woodcutting(mcStairs[i], mcLogs[i], stairs_per_log)
+    woodcutting(mcFences[i], mcLogs[i], fences_per_log)
+    woodcutting(mcFenceGates[i], mcLogs[i], fence_gates_per_log)
+    woodcutting(mcTrapdoors[i], mcLogs[i], trapdoors_per_log)
+    woodcutting(mcPressurePlates[i], mcLogs[i], pressure_plates_per_log)
+    woodcutting(mcDoors[i], mcLogs[i], doors_per_log)
+
+    woodcutting(mcPressurePlates[i], mcPlanks[i], pressure_plates_per_plank)
+  }
 
   // Supplementaries - Vanilla
   woodcutting('supplementaries:item_shelf', '#minecraft:wooden_slabs', 1)
