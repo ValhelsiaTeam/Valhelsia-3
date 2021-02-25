@@ -38,4 +38,8 @@ events.listen('recipes', function (event) {
 
   // Upgrade Aquatic
   event.shapeless('upgrade_aquatic:driftwood', 'aquaculture:driftwood')
+  event.shapeless('upgrade_aquatic:ochre_kelp', ['minecraft:kelp', '#forge:dyes/yellow'])
+  event.shapeless('upgrade_aquatic:polar_kelp', ['minecraft:kelp', '#forge:dyes/cyan'])
+  event.shapeless('upgrade_aquatic:thorny_kelp', ['minecraft:kelp', '#forge:dyes/brown'])
+  event.shapeless('upgrade_aquatic:tongue_kelp', ['minecraft:kelp', '#forge:dyes/red'])
 })
