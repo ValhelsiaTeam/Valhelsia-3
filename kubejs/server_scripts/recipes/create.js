@@ -35,6 +35,13 @@ events.listen('recipes', function (event) {
   // Farmer's Delight
   crushAndMill([Item.of('farmersdelight:rice', 9), Item.of('farmersdelight:straw', 9)], 'farmersdelight:rice_bale')
 
+  event.recipes.create.mixing('farmersdelight:pie_crust', [
+    {fluid: 'minecraft:milk', amount: 250},
+    'create:wheat_flour',
+    'create:wheat_flour',
+    'create:wheat_flour'
+  ])
+
   // Forbidden and Arcanus
   event.recipes.create.cutting('forbidden_arcanus:stripped_cherrywood_log', 'forbidden_arcanus:cherrywood_log')
   event.recipes.create.cutting('forbidden_arcanus:stripped_mysterywood_log', 'forbidden_arcanus:mysterywood_log')
