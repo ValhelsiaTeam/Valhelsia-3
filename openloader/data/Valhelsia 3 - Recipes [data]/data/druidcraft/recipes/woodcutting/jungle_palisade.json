@@ -1,8 +1,0 @@
-{
-  "type": "druidcraft:woodcutting",
-  "ingredient": {
-    "tag": "minecraft:jungle_logs"
-  },
-  "result": "decorative_blocks:jungle_palisade",
-  "count": 3
-}

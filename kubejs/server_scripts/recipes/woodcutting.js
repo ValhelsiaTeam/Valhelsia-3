@@ -361,19 +361,99 @@ events.listen('recipes', function (event) {
   // TODO: All of it.
 
   // Decorative Blocks
-  woodcutting('decorative_blocks:acacia_palisade', '#minecraft:acacia_logs', 3)
-  woodcutting('decorative_blocks:acacia_seat', 'minecraft:acacia_planks', 1)
-  woodcutting('decorative_blocks:acacia_seat', '#minecraft:acacia_logs', 4)
-  woodcutting('decorative_blocks:acacia_support', 'minecraft:acacia_planks', 1)
-  woodcutting('decorative_blocks:acacia_support', '#minecraft:acacia_logs', 4)
-  woodcutting('decorative_blocks:acacia_beam', '#minecraft:acacia_logs', 1)
-  // TODO: Add non-acacia stuff.
+  var dbLogTypes = []
+  var dbPlankTypes = []
+  var dbPalisades = []
+  var dbSeats = []
+  var dbSupports = []
+  var dbBeams = []
 
-  // Decorative Blocks - Biomes O Plenty
-  // TODO: All of it. :/
+  minecraftOverworldWoodTypes.forEach(function(element) {
+    dbLogTypes.push("#minecraft:".concat(element).concat("_logs"))
+    dbPlankTypes.push("minecraft:".concat(element).concat("_planks"))
+    dbPalisades.push("decorative_blocks:".concat(element).concat("_palisade"))
+    dbSeats.push("decorative_blocks:".concat(element).concat("_seat"))
+    dbSupports.push("decorative_blocks:".concat(element).concat("_support"))
+    dbBeams.push("decorative_blocks:".concat(element).concat("_beam"))
+  })
 
-  // Decorative Blocks - Abnormals
-  // TODO: All of it. :/
+  minecraftNetherWoodTypes.forEach(function(element) {
+    dbLogTypes.push("#minecraft:".concat(element).concat("_stems"))
+    dbPlankTypes.push("minecraft:".concat(element).concat("_planks"))
+    dbPalisades.push("decorative_blocks:".concat(element).concat("_palisade"))
+    dbSeats.push("decorative_blocks:".concat(element).concat("_seat"))
+    dbSupports.push("decorative_blocks:".concat(element).concat("_support"))
+    dbBeams.push("decorative_blocks:".concat(element).concat("_beam"))
+  })
+
+  biomesOPlentyWoodTypes.forEach(function(element) {
+    dbLogTypes.push("#biomesoplenty:".concat(element).concat("_logs"))
+    dbPlankTypes.push("biomesoplenty:".concat(element).concat("_planks"))
+    dbPalisades.push("decorative_blocks:".concat(element).concat("_palisade"))
+    dbSeats.push("decorative_blocks:".concat(element).concat("_seat"))
+    dbSupports.push("decorative_blocks:".concat(element).concat("_support"))
+    dbBeams.push("decorative_blocks:".concat(element).concat("_beam"))
+  })
+
+  atmosphericWoodTypes.forEach(function(element) {
+    dbLogTypes.push("#atmospheric:".concat(element).concat("_logs"))
+    dbPlankTypes.push("atmospheric:".concat(element).concat("_planks"))
+    dbPalisades.push("decorative_blocks_abnormals:".concat(element).concat("_palisade"))
+    dbSeats.push("decorative_blocks_abnormals:".concat(element).concat("_seat"))
+    dbSupports.push("decorative_blocks_abnormals:".concat(element).concat("_support"))
+    dbBeams.push("decorative_blocks_abnormals:".concat(element).concat("_beam"))
+  })
+
+  autumnityWoodTypes.forEach(function(element) {
+    dbLogTypes.push("#autumnity:".concat(element).concat("_logs"))
+    dbPlankTypes.push("autumnity:".concat(element).concat("_planks"))
+    dbPalisades.push("decorative_blocks_abnormals:".concat(element).concat("_palisade"))
+    dbSeats.push("decorative_blocks_abnormals:".concat(element).concat("_seat"))
+    dbSupports.push("decorative_blocks_abnormals:".concat(element).concat("_support"))
+    dbBeams.push("decorative_blocks_abnormals:".concat(element).concat("_beam"))
+  })
+
+  endergeticWoodTypes.forEach(function(element) {
+    dbLogTypes.push("#endergetic:".concat(element).concat("_stems"))
+    dbPlankTypes.push("endergetic:".concat(element).concat("_planks"))
+    dbPalisades.push("decorative_blocks_abnormals:".concat(element).concat("_palisade"))
+    dbSeats.push("decorative_blocks_abnormals:".concat(element).concat("_seat"))
+    dbSupports.push("decorative_blocks_abnormals:".concat(element).concat("_support"))
+    dbBeams.push("decorative_blocks_abnormals:".concat(element).concat("_beam"))
+  })
+
+  upgradeAquaticWoodTypes.forEach(function(element) {
+    dbLogTypes.push("#upgrade_aquatic:".concat(element).concat("_logs"))
+    dbPlankTypes.push("upgrade_aquatic:".concat(element).concat("_planks"))
+    dbPalisades.push("decorative_blocks_abnormals:".concat(element).concat("_palisade"))
+    dbSeats.push("decorative_blocks_abnormals:".concat(element).concat("_seat"))
+    dbSupports.push("decorative_blocks_abnormals:".concat(element).concat("_support"))
+    dbBeams.push("decorative_blocks_abnormals:".concat(element).concat("_beam"))
+  })
+
+  // Handle Enhanced Mushrooms without array since Decorative Blocks excludes glowshroom for some reason.
+  dbLogTypes.push("#enhanced_mushrooms:brown_mushroom_stems")
+  dbPlankTypes.push("enhanced_mushrooms:brown_mushroom_planks")
+  dbPalisades.push("decorative_blocks_abnormals:brown_mushroom_palisade")
+  dbSeats.push("decorative_blocks_abnormals:brown_mushroom_seat")
+  dbSupports.push("decorative_blocks_abnormals:brown_mushroom_support")
+  dbBeams.push("decorative_blocks_abnormals:brown_mushroom_beam")
+  
+  dbLogTypes.push("#enhanced_mushrooms:red_mushroom_stems")
+  dbPlankTypes.push("enhanced_mushrooms:red_mushroom_planks")
+  dbPalisades.push("decorative_blocks_abnormals:red_mushroom_palisade")
+  dbSeats.push("decorative_blocks_abnormals:red_mushroom_seat")
+  dbSupports.push("decorative_blocks_abnormals:red_mushroom_support")
+  dbBeams.push("decorative_blocks_abnormals:red_mushroom_beam")
+
+  for (let i = 0; i < dbLogTypes.length; i++) {
+    woodcutting(dbPalisades[i], dbLogTypes[i], palisades_per_log)
+    woodcutting(dbSeats[i], dbLogTypes[i], seats_per_log)
+    woodcutting(dbSeats[i], dbPlankTypes[i], seats_per_plank)
+    woodcutting(dbSupports[i], dbLogTypes[i], supports_per_log)
+    woodcutting(dbSupports[i], dbPlankTypes[i], supports_per_plank)
+    woodcutting(dbBeams[i], dbLogTypes[i], decorative_blocks_beams_per_log)
+  }
 
   // Druidcraft
   woodcutting('druidcraft:acacia_panels', '#minecraft:acacia_logs', 4)
@@ -385,9 +465,6 @@ events.listen('recipes', function (event) {
   woodcutting('druidcraft:oak_panels', '#minecraft:oak_logs', 4)
   woodcutting('druidcraft:spruce_panels', '#minecraft:spruce_logs', 4)
   // Make sure to check this again if Druidcraft adds Crimson / Warped panels.
-
-  // Endergetic Expansion
-  // TODO: Planks, Vertical Planks, Slabs, Stairs, Ladders, Signs, Fences, Fence Gates, Buttons, Doors
 
   // Engineer's Decor
   // TODO: A bunch of Treated Wood stuff.
@@ -489,9 +566,6 @@ events.listen('recipes', function (event) {
   woodcutting('quark:acacia_ladder', 'minecraft:acacia_planks', 2)
   woodcutting('quark:acacia_ladder', '#minecraft:acacia_logs', 8)
   // TODO: Add non-acacia stuff.
-
-  // Upgrade Aquatic
-  // TODO: Planks, Vertical PLanks, Slabs, Stairs, Ladders, Signs, Fences, Fence Gates, Buttons, Doors
 
   // Valhelsia Structures
   woodcutting('valhelsia_structures:acacia_post', '#minecraft:acacia_logs', 2)

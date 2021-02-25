@@ -1,8 +1,0 @@
-{
-  "type": "druidcraft:woodcutting",
-  "ingredient": {
-    "tag": "minecraft:oak_logs"
-  },
-  "result": "decorative_blocks:oak_beam",
-  "count": 1
-}

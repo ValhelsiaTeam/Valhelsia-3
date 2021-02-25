@@ -1,8 +1,0 @@
-{
-  "type": "druidcraft:woodcutting",
-  "ingredient": {
-    "item": "minecraft:birch_planks"
-  },
-  "result": "decorative_blocks:birch_support",
-  "count": 1
-}

@@ -1,8 +1,0 @@
-{
-  "type": "druidcraft:woodcutting",
-  "ingredient": {
-    "tag": "minecraft:spruce_logs"
-  },
-  "result": "decorative_blocks:spruce_beam",
-  "count": 1
-}
