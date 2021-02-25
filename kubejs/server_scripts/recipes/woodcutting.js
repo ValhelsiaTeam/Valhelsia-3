@@ -316,6 +316,28 @@ events.listen('recipes', function (event) {
     abnormalsPressurePlates.push('upgrade_aquatic:'.concat(element).concat('_pressure_plate'))
   })
 
+  // Enhanced Mushrooms (technically not Abnormals, but works in the same way)
+  enhancedMushroomsWoodTypes.forEach(function(element) {
+    abnormalsLogsTags.push('#enhanced_mushrooms:'.concat(element).concat('_stems'))
+    abnormalsLogs.push('enhanced_mushrooms:'.concat(element).concat('_stem'))
+    abnormalsStrippedLogs.push('enhanced_mushrooms:stripped_'.concat(element).concat('_stem'))
+    abnormalsWoods.push('enhanced_mushrooms:'.concat(element).concat('_hyphae'))
+    abnormalsStrippedWoods.push('enhanced_mushrooms:stripped_'.concat(element).concat('_hyphae'))
+    abnormalsPlanks.push('enhanced_mushrooms:'.concat(element).concat('_planks'))
+    abnormalsVerticalPlanks.push('enhanced_mushrooms:vertical_'.concat(element).concat('_planks'))
+    abnormalsSlabs.push('enhanced_mushrooms:'.concat(element).concat('_slab'))
+    abnormalsVerticalSlabs.push('enhanced_mushrooms:'.concat(element).concat('_vertical_slab'))
+    abnormalsStairs.push('enhanced_mushrooms:'.concat(element).concat('_stairs'))
+    abnormalsSigns.push('enhanced_mushrooms:'.concat(element).concat('_sign'))
+    abnormalsLadders.push('enhanced_mushrooms:'.concat(element).concat('_ladder'))
+    abnormalsFences.push('enhanced_mushrooms:'.concat(element).concat('_fence'))
+    abnormalsFenceGates.push('enhanced_mushrooms:'.concat(element).concat('_fence_gate'))
+    abnormalsButtons.push('enhanced_mushrooms:'.concat(element).concat('_button'))
+    abnormalsTrapdoors.push('enhanced_mushrooms:'.concat(element).concat('_trapdoor'))
+    abnormalsDoors.push('enhanced_mushrooms:'.concat(element).concat('_door'))
+    abnormalsPressurePlates.push('enhanced_mushrooms:'.concat(element).concat('_pressure_plate'))
+  })
+
   for (let i = 0; i < abnormalsLogsTags.length; i++) {
     // Log Woodcutting
     woodcutting(abnormalsPlanks[i], abnormalsLogsTags[i], planks_per_log)
@@ -456,14 +478,14 @@ events.listen('recipes', function (event) {
   }
 
   // Druidcraft
-  woodcutting('druidcraft:acacia_panels', '#minecraft:acacia_logs', 4)
-  woodcutting('druidcraft:birch_panels', '#minecraft:birch_logs', 4)
-  woodcutting('druidcraft:dark_oak_panels', '#minecraft:dark_oak_logs', 4)
-  woodcutting('druidcraft:darkwood_panels', '#druidcraft:darkwood_logs', 4)
-  woodcutting('druidcraft:elder_panels', '#druidcraft:elder_logs', 4)
-  woodcutting('druidcraft:jungle_panels', '#minecraft:jungle_logs', 4)
-  woodcutting('druidcraft:oak_panels', '#minecraft:oak_logs', 4)
-  woodcutting('druidcraft:spruce_panels', '#minecraft:spruce_logs', 4)
+  woodcutting('druidcraft:acacia_panels', '#minecraft:acacia_logs', panels_per_log)
+  woodcutting('druidcraft:birch_panels', '#minecraft:birch_logs', panels_per_log)
+  woodcutting('druidcraft:dark_oak_panels', '#minecraft:dark_oak_logs', panels_per_log)
+  woodcutting('druidcraft:darkwood_panels', '#druidcraft:darkwood_logs', panels_per_log)
+  woodcutting('druidcraft:elder_panels', '#druidcraft:elder_logs', panels_per_log)
+  woodcutting('druidcraft:jungle_panels', '#minecraft:jungle_logs', panels_per_log)
+  woodcutting('druidcraft:oak_panels', '#minecraft:oak_logs', panels_per_log)
+  woodcutting('druidcraft:spruce_panels', '#minecraft:spruce_logs', panels_per_log)
   // Make sure to check this again if Druidcraft adds Crimson / Warped panels.
 
   // Engineer's Decor
@@ -477,14 +499,14 @@ events.listen('recipes', function (event) {
   // TODO: Planks, Vertical Planks, Slabs, Stairs, Ladders, Signs, Fences, Fence Gates, Buttons, Doors
   
   // Farmer's Delight
-  woodcutting('farmersdelight:acacia_pantry', '#minecraft:acacia_logs', 1)
-  woodcutting('farmersdelight:birch_pantry', '#minecraft:birch_logs', 1)
-  woodcutting('farmersdelight:crimson_pantry', '#minecraft:crimson_stems', 1)
-  woodcutting('farmersdelight:dark_oak_pantry', '#minecraft:dark_oak_logs', 1)
-  woodcutting('farmersdelight:jungle_pantry', '#minecraft:jungle_logs', 1)
-  woodcutting('farmersdelight:oak_pantry', '#minecraft:oak_logs', 1)
-  woodcutting('farmersdelight:spruce_pantry', '#minecraft:spruce_logs', 1)
-  woodcutting('farmersdelight:warped_pantry', '#minecraft:warped_stems', 1)
+  woodcutting('farmersdelight:acacia_pantry', '#minecraft:acacia_logs', pantries_per_log)
+  woodcutting('farmersdelight:birch_pantry', '#minecraft:birch_logs', pantries_per_log)
+  woodcutting('farmersdelight:crimson_pantry', '#minecraft:crimson_stems', pantries_per_log)
+  woodcutting('farmersdelight:dark_oak_pantry', '#minecraft:dark_oak_logs', pantries_per_log)
+  woodcutting('farmersdelight:jungle_pantry', '#minecraft:jungle_logs', pantries_per_log)
+  woodcutting('farmersdelight:oak_pantry', '#minecraft:oak_logs', pantries_per_log)
+  woodcutting('farmersdelight:spruce_pantry', '#minecraft:spruce_logs', pantries_per_log)
+  woodcutting('farmersdelight:warped_pantry', '#minecraft:warped_stems', pantries_per_log)
 
   // Immersive Engineering
   // TODO: A bunch of Treated Wood stuff.
