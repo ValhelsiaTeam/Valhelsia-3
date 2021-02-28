@@ -46,7 +46,6 @@ events.listen('recipes', function (event) {
           "count": 2
       },
       "mana": mana,
-      "group": group,
       "catalyst": {
         "name": "botania:conjuration_catalyst"
       }
@@ -64,11 +63,7 @@ events.listen('recipes', function (event) {
           "item": output,
           "count": 2
       },
-      "mana": mana,
-      "group": group,
-      "catalyst": {
-        "name": "botania:conjuration_catalyst"
-      }
+      "mana": mana
     })
   }
 
