@@ -493,6 +493,5 @@ onEvent('item.tags', event => {
        .add(enchantmentExtractorBlacklist)
   
   // Misc Missing Tags
-  event.add('forge:seeds/aubergine', 'mysticalworld:aubergine_seeds')
   event.add('forge:dusts/obsidian', 'create:powdered_obsidian')
 })
