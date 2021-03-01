@@ -111,9 +111,39 @@
 	[feature_spawns.charred_tree]
 		#Number of charred trees per chunk (set to 0 to disable).
 		#Range: 0.0 ~ 256.0
-		oreChances = 0.04
-		#List of biome types to spawn (default [SAVANNA,DEAD,FOREST,SANDY,WASTELAND,], pass empty list for every dimension
-		biomes = "SAVANNA,DEAD,FOREST,SANDY,WASTELAND,"
+		chance = 0.04
+		#List of biome types to spawn (default [SAVANNA,DEAD,FOREST,SANDY,WASTELAND], pass empty list for every biome
+		biomes = "SAVANNA,DEAD,FOREST,SANDY,WASTELAND"
+		#Which biome types this tree shouldn't spawn in (default END, NETHER)
+		biomeRestrictions = "NETHER,END"
+
+	#Stonepetal Patch Generation
+	[feature_spawns.stone_petal]
+		#Number of tries per chunk to try placing stonepetals on stone (set to 0 to disable).
+		#Range: 0 ~ 256
+		tries = 7
+		#Number of times per chunk to repeat trying to place stonepetals on stone
+		#Range: 1 ~ 256
+		repeats = 1
+		#List of biome types to spawn (default [MOUNTAIN], pass empty list for every biome
+		biomes = "MOUNTAIN"
+		#Which biome types this tree shouldn't spawn in (default END, NETHER)
+		biomeRestrictions = "NETHER,END"
+
+	#Structure Generation
+	[feature_spawns.hut]
+		#List of biome types to spawn (default [SAVANNA,PLAINS], pass empty list for every biome
+		biomes = "SAVANNA,PLAINS"
+		#Which biome types this structure shouldn't spawn in (default END, NETHER)
+		biomeRestrictions = "NETHER,END"
+
+	#Structure Generation
+	[feature_spawns.barrow]
+		#List of biome types to spawn (default [SAVANNA,PLAINS], pass empty list for every biome
+		biomes = "SAVANNA,PLAINS"
+		#Which biome types this structure shouldn't spawn in (default END, NETHER)
+		biomeRestrictions = "NETHER,END"
+
 
 #Hat Configuration
 [hat_config]
@@ -274,7 +304,7 @@
 		#Whether or not silkworm eggs drop from leaves
 		leafDrops = true
 		#Chance to spawn whenever a leaf is broken (1 in X)
-		leafDropChance = 65
+		leafDropChance = 200
 		#Chance for silkworm eggs to spawn a silkworm (1 in X, 1 is guaranteed)
 		successChance = 1
 		#Chance per tick for silkworms to grown (1 in X)
