@@ -491,6 +491,15 @@ onEvent('item.tags', event => {
   
   event.get('industrialforegoing:enchantment_extractor_blacklist')
        .add(enchantmentExtractorBlacklist)
+
+  // Supplementaries Throwable Bricks
+  event.add('supplementaries:throwable_bricks', 'environmental:mud_brick')
+
+  // Missing Mud Brick Tags
+  event.add('forge:ingots/mud_brick', 'environmental:mud_brick')
+  event.add('forge:ingots/mud_brick', 'biomesoplenty:mud_brick')
+  event.add('engineersdecor:brick_ingots', 'environmental:mud_brick')
+  event.add('engineersdecor:brick_ingots', 'biomesoplenty:mud_brick')
   
   // Misc Missing Tags
   event.add('forge:dusts/obsidian', 'create:powdered_obsidian')
