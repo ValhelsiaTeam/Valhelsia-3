@@ -284,7 +284,27 @@ events.listen('recipes', function (event) {
     abnormalsPressurePlates.push('endergetic:'.concat(element).concat('_pressure_plate'))
   })
 
-  // TODO: Environmental, when it's out.
+  // Environmental
+  autumnityWoodTypes.forEach(function(element) {
+    abnormalsLogsTags.push('#environmental:'.concat(element).concat('_logs'))
+    abnormalsLogs.push('environmental:'.concat(element).concat('_log'))
+    abnormalsStrippedLogs.push('environmental:stripped_'.concat(element).concat('_log'))
+    abnormalsWoods.push('environmental:'.concat(element).concat('_wood'))
+    abnormalsStrippedWoods.push('environmental:stripped_'.concat(element).concat('_wood'))
+    abnormalsPlanks.push('environmental:'.concat(element).concat('_planks'))
+    abnormalsVerticalPlanks.push('environmental:vertical_'.concat(element).concat('_planks'))
+    abnormalsSlabs.push('environmental:'.concat(element).concat('_slab'))
+    abnormalsVerticalSlabs.push('environmental:'.concat(element).concat('_vertical_slab'))
+    abnormalsStairs.push('environmental:'.concat(element).concat('_stairs'))
+    abnormalsSigns.push('environmental:'.concat(element).concat('_sign'))
+    abnormalsLadders.push('environmental:'.concat(element).concat('_ladder'))
+    abnormalsFences.push('environmental:'.concat(element).concat('_fence'))
+    abnormalsFenceGates.push('environmental:'.concat(element).concat('_fence_gate'))
+    abnormalsButtons.push('environmental:'.concat(element).concat('_button'))
+    abnormalsTrapdoors.push('environmental:'.concat(element).concat('_trapdoor'))
+    abnormalsDoors.push('environmental:'.concat(element).concat('_door'))
+    abnormalsPressurePlates.push('environmental:'.concat(element).concat('_pressure_plate'))
+  })
   
   // Upgrade Aquatic
   upgradeAquaticWoodTypes.forEach(function(element) {
@@ -490,9 +510,6 @@ events.listen('recipes', function (event) {
 
   // Engineer's Decor
   // TODO: A bunch of Treated Wood stuff.
-
-  // Enhanced Mushrooms
-  // TODO: Planks, Vertical Planks, Slabs, Stairs, Ladders, Signs, Fences, Fence Gates, Buttons, Doors
 
   // Environmental
   // (do this whenever it actually releases)
