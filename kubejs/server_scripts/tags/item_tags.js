@@ -516,6 +516,30 @@ onEvent('item.tags', event => {
   event.add('forge:ingots/mud_brick', 'biomesoplenty:mud_brick')
   event.add('engineersdecor:brick_ingots', 'environmental:mud_brick')
   event.add('engineersdecor:brick_ingots', 'biomesoplenty:mud_brick')
+
+  // Beacon Payment Items
+  var beaconPaymentItems = [
+    'aquaculture:neptunium_ingot',
+    'botania:manasteel_ingot',
+    'botania:terrasteel_ingot',
+    'botania:elementium_ingot',
+    'create:brass_ingot',
+    'create:zinc_ingot',
+    'eidolon:arcane_gold_ingot',
+    'eidolon:lead_ingot',
+    'eidolon:pewter_ingot',
+    'forbidden_arcanus:arcane_gold_ingot',
+    'forbidden_arcanus:obsidian_ingot',
+    'immersiveengineering:ingot_aluminum',
+    'immersiveengineering:ingot_silver',
+    'immersiveengineering:ingot_nickel',
+    'immersiveengineering:ingot_constantan',
+    'immersiveengineering:ingot_electrum',
+    'mysticalworld_quicksilver_ingot'
+  ]
+
+  event.get('minecraft:beacon_payment_items')
+       .add(beaconPaymentItems)
   
   // Misc Missing Tags
   event.add('forge:seeds/aubergine', 'mysticalworld:aubergine_seeds')
