@@ -42,6 +42,9 @@ events.listen('recipes', function (event) {
     'druidcraft:oak_pressure_plate_from_oak_planks_woodcutting', // Replaced with a different recipe.
     'druidcraft:spruce_pressure_plate_from_spruce_planks_woodcutting', // Replaced with a different recipe.
 
+    // Eidolon
+    'eidolon:pewter_blend',
+    
     // Immersive Engineering
     'immersive_engineering:crafting/paper_from_sawdust', // Removed since Mekanism method made this redundant.
 

@@ -492,6 +492,22 @@ onEvent('item.tags', event => {
   event.get('industrialforegoing:enchantment_extractor_blacklist')
        .add(enchantmentExtractorBlacklist)
 
+  // Missing Create Crushed Ore Tags (for JAOPCA compatibility in recipes)
+  event.add('create:crushed_ores/iron', 'create:crushed_iron_ore')
+  event.add('create:crushed_ores/gold', 'create:crushed_gold_ore')
+  event.add('create:crushed_ores/copper', 'create:crushed_copper_ore')
+  event.add('create:crushed_ores/zinc', 'create:crushed_zinc_ore')
+  event.add('create:crushed_ores/brass', 'create:crushed_brass')
+  event.add('create:crushed_ores/osmium', 'create:crushed_osmium_ore')
+  event.add('create:crushed_ores/silver', 'create:crushed_silver_ore')
+  event.add('create:crushed_ores/tin', 'create:crushed_tin_ore')
+  event.add('create:crushed_ores/lead', 'create:crushed_lead_ore')
+  event.add('create:crushed_ores/quicksilver', 'create:crushed_quicksilver_ore')
+  event.add('create:crushed_ores/aluminum', 'create:crushed_aluminum_ore')
+  event.add('create:crushed_ores/bauxite', 'create:crushed_aluminum_ore')
+  event.add('create:crushed_ores/uranium', 'create:crushed_uranium_ore')
+  event.add('create:crushed_ores/nickel', 'create:crushed_nickel_ore')
+
   // Supplementaries Throwable Bricks
   event.add('supplementaries:throwable_bricks', 'environmental:mud_brick')
 
