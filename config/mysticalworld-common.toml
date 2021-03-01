@@ -135,14 +135,14 @@
 		#List of biome types to spawn (default [SAVANNA,PLAINS], pass empty list for every biome
 		biomes = "SAVANNA,PLAINS"
 		#Which biome types this structure shouldn't spawn in (default END, NETHER)
-		biomeRestrictions = "NETHER,END"
+		biomeRestrictions = "NETHER,END,SWAMP"
 
 	#Structure Generation
 	[feature_spawns.barrow]
 		#List of biome types to spawn (default [SAVANNA,PLAINS], pass empty list for every biome
 		biomes = "SAVANNA,PLAINS"
 		#Which biome types this structure shouldn't spawn in (default END, NETHER)
-		biomeRestrictions = "NETHER,END"
+		biomeRestrictions = "NETHER,END,SWAMP"
 
 
 #Hat Configuration
