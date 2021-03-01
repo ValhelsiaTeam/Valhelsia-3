@@ -285,7 +285,7 @@ events.listen('recipes', function (event) {
   })
 
   // Environmental
-  autumnityWoodTypes.forEach(function(element) {
+  environmentalWoodTypes.forEach(function(element) {
     abnormalsLogsTags.push('#environmental:'.concat(element).concat('_logs'))
     abnormalsLogs.push('environmental:'.concat(element).concat('_log'))
     abnormalsStrippedLogs.push('environmental:stripped_'.concat(element).concat('_log'))
