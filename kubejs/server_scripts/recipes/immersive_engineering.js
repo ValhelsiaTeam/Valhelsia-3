@@ -51,6 +51,9 @@ events.listen('recipes', function (event) {
   // Druidcraft Compat
   squeezer('immersiveengineering:plantoil', 'druidcraft:hemp_seeds', 120)
 
+  // Eidolon Compat
+  event.recipes.immersiveengineering.alloy(Item.of('eidolon:pewter_ingot', 4), Item.of('#forge:ingots/tin', 3), Item.of('#forge:ingots/lead', 1))
+
   // Farmer's Delight Compat
   fermenter('immersiveengineering:ethanol', '#forge:seeds/rice', 80) // Also forward compatible with Environmental.
 
