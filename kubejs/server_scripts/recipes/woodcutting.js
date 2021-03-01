@@ -511,10 +511,6 @@ events.listen('recipes', function (event) {
   // Engineer's Decor
   // TODO: A bunch of Treated Wood stuff.
 
-  // Environmental
-  // (do this whenever it actually releases)
-  // TODO: Planks, Vertical Planks, Slabs, Stairs, Ladders, Signs, Fences, Fence Gates, Buttons, Doors
-  
   // Farmer's Delight
   woodcutting('farmersdelight:acacia_pantry', '#minecraft:acacia_logs', pantries_per_log)
   woodcutting('farmersdelight:birch_pantry', '#minecraft:birch_logs', pantries_per_log)
