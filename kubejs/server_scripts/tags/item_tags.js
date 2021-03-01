@@ -502,5 +502,6 @@ onEvent('item.tags', event => {
   event.add('engineersdecor:brick_ingots', 'biomesoplenty:mud_brick')
   
   // Misc Missing Tags
+  event.add('forge:seeds/aubergine', 'mysticalworld:aubergine_seeds')
   event.add('forge:dusts/obsidian', 'create:powdered_obsidian')
 })
