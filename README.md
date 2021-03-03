@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.curseforge.com/minecraft/modpacks/valhelsia-2">
-    <img border="0" alt="CurseForge" src="https://zupimages.net/up/20/53/3wll.png">
+    <img border="0" alt="CurseForge" src="https://zupimages.net/up/21/09/7p6x.png">
   </a>
 </p>
 
