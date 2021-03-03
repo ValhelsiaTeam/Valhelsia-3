@@ -19,7 +19,7 @@ showUpdateNews = true
 #Allows revolvers and other IE items to look properly held in 3rd person. This uses a coremod. Can be disabled in case of conflicts with other animation mods.
 fancyItemHolding = true
 #Set to false to disable the stencil buffer. This may be necessary on older GPUs.
-stencilBufferEnabled = true
+stencilBufferEnabled = false
 #A list of sounds that should not be muffled by the Ear Defenders. Adding to this list requires knowledge of the correct sound resource names.
 earDefenders_SoundBlacklist = []
 #Use VBOs to render certain blocks. This is significantly faster than the usual rendering,
