@@ -438,6 +438,10 @@ events.listen('recipes', function (event) {
   })
 
   atmosphericWoodTypes.forEach(function(element) {
+    if (element === 'kousa' || element === 'aspen' || element === 'grimwood') {
+      // Decorative Blocks Abnormals doesn't support every Atmospheric wood type yet.
+      return
+    }
     dbLogTypes.push("#atmospheric:".concat(element).concat("_logs"))
     dbPlankTypes.push("atmospheric:".concat(element).concat("_planks"))
     dbPalisades.push("decorative_blocks_abnormals:".concat(element).concat("_palisade"))
@@ -463,6 +467,8 @@ events.listen('recipes', function (event) {
     dbSupports.push("decorative_blocks_abnormals:".concat(element).concat("_support"))
     dbBeams.push("decorative_blocks_abnormals:".concat(element).concat("_beam"))
   })
+
+  // TODO: Add Environmental Decorative Blocks compatibility once the "Decorative Blocks Abnormals" mod updates.
 
   upgradeAquaticWoodTypes.forEach(function(element) {
     dbLogTypes.push("#upgrade_aquatic:".concat(element).concat("_logs"))
