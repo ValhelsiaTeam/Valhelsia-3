@@ -29,7 +29,7 @@ maxFps:120
 difficulty:2
 graphicsMode:1
 ao:2
-biomeBlendRadius:2
+biomeBlendRadius:5
 renderClouds:true
 resourcePacks:[]
 incompatibleResourcePacks:[]
