@@ -1,0 +1,165 @@
+{
+  "config": {
+    "feature": {
+      "config": {
+        "feature": {
+          "config": {
+            "features": [
+              {
+                "feature": {
+                  "config": {
+                    "max_water_depth": 3,
+                    "ignore_vines": true,
+                    "heightmap": "OCEAN_FLOOR",
+                    "minimum_size": {
+                      "limit": 0,
+                      "lower_size": 0,
+                      "upper_size": 0,
+                      "type": "minecraft:two_layers_feature_size"
+                    },
+                    "decorators": [
+                      {
+                        "type": "bayou_blues:hanging_cypress_leaves"
+                      },
+                      {
+                        "type": "bayou_blues:cypress_branch"
+                      },
+                      {
+                        "type": "bayou_blues:sparse_leave_vine"
+                      },
+                      {
+                        "type": "bayou_blues:cypress_knees"
+                      },
+                      {
+                        "type": "bayou_blues:beard_moss"
+                      }
+                    ],
+                    "trunk_provider": {
+                      "state": {
+                        "Properties": {
+                          "axis": "y"
+                        },
+                        "Name": "bayou_blues:cypress_log"
+                      },
+                      "type": "minecraft:simple_state_provider"
+                    },
+                    "leaves_provider": {
+                      "state": {
+                        "Properties": {
+                          "persistent": "false",
+                          "distance": "7"
+                        },
+                        "Name": "bayou_blues:cypress_leaves"
+                      },
+                      "type": "minecraft:simple_state_provider"
+                    },
+                    "foliage_placer": {
+                      "radius": 0,
+                      "offset": 0,
+                      "height": 0,
+                      "type": "minecraft:blob_foliage_placer"
+                    },
+                    "trunk_placer": {
+                      "base_height": 0,
+                      "height_rand_a": 0,
+                      "height_rand_b": 0,
+                      "type": "minecraft:straight_trunk_placer"
+                    }
+                  },
+                  "type": "bayou_blues:water_mega_cypress_tree"
+                },
+                "chance": 0.33333334
+              }
+            ],
+            "default": {
+              "config": {
+                "max_water_depth": 3,
+                "ignore_vines": true,
+                "heightmap": "OCEAN_FLOOR",
+                "minimum_size": {
+                  "limit": 0,
+                  "lower_size": 0,
+                  "upper_size": 0,
+                  "type": "minecraft:two_layers_feature_size"
+                },
+                "decorators": [
+                  {
+                    "type": "bayou_blues:hanging_cypress_leaves"
+                  },
+                  {
+                    "type": "bayou_blues:sparse_cypress_knees"
+                  },
+                  {
+                    "type": "bayou_blues:cypress_branch"
+                  },
+                  {
+                    "type": "bayou_blues:sparse_leave_vine"
+                  },
+                  {
+                    "type": "bayou_blues:beard_moss"
+                  }
+                ],
+                "trunk_provider": {
+                  "state": {
+                    "Properties": {
+                      "axis": "y"
+                    },
+                    "Name": "bayou_blues:cypress_log"
+                  },
+                  "type": "minecraft:simple_state_provider"
+                },
+                "leaves_provider": {
+                  "state": {
+                    "Properties": {
+                      "persistent": "false",
+                      "distance": "7"
+                    },
+                    "Name": "bayou_blues:cypress_leaves"
+                  },
+                  "type": "minecraft:simple_state_provider"
+                },
+                "foliage_placer": {
+                  "radius": 0,
+                  "offset": 0,
+                  "height": 0,
+                  "type": "minecraft:blob_foliage_placer"
+                },
+                "trunk_placer": {
+                  "base_height": 0,
+                  "height_rand_a": 0,
+                  "height_rand_b": 0,
+                  "type": "minecraft:straight_trunk_placer"
+                }
+              },
+              "type": "bayou_blues:water_cypress_tree"
+            }
+          },
+          "type": "minecraft:random_selector"
+        },
+        "decorator": {
+          "config": {
+            "outer": {
+              "config": {},
+              "type": "minecraft:square"
+            },
+            "inner": {
+              "config": {},
+              "type": "minecraft:heightmap"
+            }
+          },
+          "type": "minecraft:decorated"
+        }
+      },
+      "type": "minecraft:decorated"
+    },
+    "decorator": {
+      "config": {
+        "count": 4,
+        "extra_chance": 0.1,
+        "extra_count": 1
+      },
+      "type": "minecraft:count_extra"
+    }
+  },
+  "type": "minecraft:decorated"
+}

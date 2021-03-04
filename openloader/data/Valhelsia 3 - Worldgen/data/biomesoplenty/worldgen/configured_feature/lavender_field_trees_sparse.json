@@ -17,7 +17,12 @@
                       "upper_size": 1,
                       "type": "minecraft:two_layers_feature_size"
                     },
-                    "decorators": [],
+                    "decorators": [
+                      {
+                        "probability": 0.05,
+                        "type": "minecraft:beehive"
+                      }
+                    ],
                     "trunk_provider": {
                       "state": {
                         "Properties": {
@@ -50,9 +55,9 @@
                       "type": "minecraft:straight_trunk_placer"
                     }
                   },
-                  "type": "biomesoplenty:jungle_twiglet_tree"
+                  "type": "biomesoplenty:flowering_oak_tree"
                 },
-                "chance": 0.4
+                "chance": 0.2
               },
               {
                 "feature": {
@@ -99,9 +104,58 @@
                       "type": "minecraft:straight_trunk_placer"
                     }
                   },
-                  "type": "biomesoplenty:mahogany_tree"
+                  "type": "biomesoplenty:big_flowering_oak_tree"
                 },
-                "chance": 0.05
+                "chance": 0.1
+              },
+              {
+                "feature": {
+                  "config": {
+                    "max_water_depth": 0,
+                    "ignore_vines": true,
+                    "heightmap": "OCEAN_FLOOR",
+                    "minimum_size": {
+                      "limit": 1,
+                      "lower_size": 0,
+                      "upper_size": 1,
+                      "type": "minecraft:two_layers_feature_size"
+                    },
+                    "decorators": [],
+                    "trunk_provider": {
+                      "state": {
+                        "Properties": {
+                          "axis": "y"
+                        },
+                        "Name": "minecraft:oak_log"
+                      },
+                      "type": "minecraft:simple_state_provider"
+                    },
+                    "leaves_provider": {
+                      "state": {
+                        "Properties": {
+                          "persistent": "false",
+                          "distance": "7"
+                        },
+                        "Name": "minecraft:oak_leaves"
+                      },
+                      "type": "minecraft:simple_state_provider"
+                    },
+                    "foliage_placer": {
+                      "radius": 2,
+                      "offset": 0,
+                      "height": 3,
+                      "type": "minecraft:blob_foliage_placer"
+                    },
+                    "trunk_placer": {
+                      "base_height": 4,
+                      "height_rand_a": 2,
+                      "height_rand_b": 0,
+                      "type": "minecraft:straight_trunk_placer"
+                    }
+                  },
+                  "type": "biomesoplenty:big_jacaranda_tree"
+                },
+                "chance": 0.1
               }
             ],
             "default": {
@@ -115,7 +169,12 @@
                   "upper_size": 1,
                   "type": "minecraft:two_layers_feature_size"
                 },
-                "decorators": [],
+                "decorators": [
+                  {
+                    "probability": 0.002,
+                    "type": "minecraft:beehive"
+                  }
+                ],
                 "trunk_provider": {
                   "state": {
                     "Properties": {
@@ -148,7 +207,7 @@
                   "type": "minecraft:straight_trunk_placer"
                 }
               },
-              "type": "biomesoplenty:bush"
+              "type": "biomesoplenty:jacaranda_tree"
             }
           },
           "type": "minecraft:random_selector"
@@ -171,8 +230,8 @@
     },
     "decorator": {
       "config": {
-        "count": 20,
-        "extra_chance": 0.4,
+        "count": 0,
+        "extra_chance": 0.2,
         "extra_count": 1
       },
       "type": "minecraft:count_extra"

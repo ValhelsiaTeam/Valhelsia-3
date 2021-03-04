@@ -6,10 +6,10 @@
       "block_search_extent": 8,
       "offset": 2.0
     },
-    "sky_color": 7842047,
+    "sky_color": 7972607,
     "fog_color": 12638463,
-    "water_color": 6675400,
-    "water_fog_color": 408635
+    "water_color": 4159204,
+    "water_fog_color": 329011
   },
   "surface_builder": "minecraft:grass",
   "carvers": {
@@ -24,9 +24,7 @@
       "minecraft:lake_water",
       "minecraft:lake_lava"
     ],
-    [
-      "minecraft:forest_rock"
-    ],
+    [],
     [
       "minecraft:monster_room"
     ],
@@ -50,31 +48,17 @@
     ],
     [],
     [
-      "biomesoplenty:rainforest_cliffs_trees_sparse",
-      "minecraft:forest_flower_vegetation",
-      "minecraft:patch_large_fern",
-      "minecraft:flower_default",
-      "minecraft:patch_grass_jungle",
+      "abundance:trees_jacaranda_redbud",
+      "minecraft:flower_plain_decorated",
+      "minecraft:patch_grass_plain",
+      "abundance:lavender",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
       "minecraft:patch_sugar_cane",
-      "minecraft:patch_pumpkin",
       "minecraft:spring_water",
       "minecraft:spring_lava",
-      "minecraft:vines",
-      "minecraft:seagrass_swamp",
-      "minecraft:patch_tall_grass_2",
-      "atmospheric:podzol",
-      "atmospheric:passion_vines",
-      "atmospheric:morado_tree",
-      "atmospheric:rainforest_bush",
-      "atmospheric:oak_tree_rainforest",
-      "atmospheric:patch_waterlilly_rainforest",
-      "atmospheric:patch_water_hyacinth",
-      "atmospheric:patch_warm_monkey_brush",
-      "atmospheric:patch_hot_monkey_brush",
-      "atmospheric:patch_scalding_monkey_brush",
-      "atmospheric:rosewood_tree"
+      "biomesoplenty:lavender_field_trees_sparse",
+      "biomesoplenty:lavender_flowers_sparse"
     ],
     [
       "minecraft:freeze_top_layer"
@@ -83,7 +67,7 @@
   "starts": [
     "minecraft:mineshaft",
     "minecraft:stronghold",
-    "minecraft:ruined_portal_mountain"
+    "minecraft:ruined_portal"
   ],
   "spawners": {
     "monster": [
@@ -134,37 +118,25 @@
         "weight": 5,
         "minCount": 1,
         "maxCount": 1
+      },
+      {
+        "type": "druidcraft:beetle",
+        "weight": 10,
+        "minCount": 1,
+        "maxCount": 2
       }
     ],
     "creature": [
       {
-        "type": "minecraft:pig",
-        "weight": 10,
+        "type": "minecraft:sheep",
+        "weight": 12,
         "minCount": 4,
         "maxCount": 4
       },
       {
-        "type": "minecraft:chicken",
-        "weight": 10,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "minecraft:parrot",
-        "weight": 40,
-        "minCount": 1,
-        "maxCount": 2
-      },
-      {
-        "type": "minecraft:wolf",
+        "type": "minecraft:cow",
         "weight": 8,
         "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "environmental:deer",
-        "weight": 16,
-        "minCount": 1,
         "maxCount": 4
       }
     ],
@@ -182,12 +154,12 @@
     "end_creature": []
   },
   "spawn_costs": {},
-  "player_spawn_friendly": false,
-  "forge:registry_name": "atmospheric:rainforest_mountains",
+  "player_spawn_friendly": true,
+  "forge:registry_name": "abundance:lavender_fields",
   "precipitation": "rain",
-  "temperature": 0.9,
-  "downfall": 0.95,
-  "category": "forest",
-  "depth": 0.3825,
-  "scale": 1.125
+  "temperature": 0.8,
+  "downfall": 0.6,
+  "category": "plains",
+  "depth": -0.05,
+  "scale": 0.0
 }

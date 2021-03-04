@@ -6,12 +6,14 @@
       "block_search_extent": 8,
       "offset": 2.0
     },
-    "sky_color": 7842047,
-    "fog_color": 12638463,
-    "water_color": 6675400,
-    "water_fog_color": 408635
+    "sky_color": 7972607,
+    "foliage_color": 6924847,
+    "grass_color": 7127367,
+    "fog_color": 10543845,
+    "water_color": 8896710,
+    "water_fog_color": 4018518
   },
-  "surface_builder": "minecraft:grass",
+  "surface_builder": "minecraft:swamp",
   "carvers": {
     "air": [
       "minecraft:cave",
@@ -24,9 +26,7 @@
       "minecraft:lake_water",
       "minecraft:lake_lava"
     ],
-    [
-      "minecraft:forest_rock"
-    ],
+    [],
     [
       "minecraft:monster_room"
     ],
@@ -50,40 +50,41 @@
     ],
     [],
     [
-      "biomesoplenty:rainforest_cliffs_trees_sparse",
-      "minecraft:forest_flower_vegetation",
-      "minecraft:patch_large_fern",
-      "minecraft:flower_default",
-      "minecraft:patch_grass_jungle",
+      "bayou_blues:algae",
+      "bayou_blues:trees_bayou_valhelsia",
+      "bayou_blues:trees_bayou_water_valhelsia",
+      "bayou_blues:patch_grass",
+      "bayou_blues:patch_fern",
+      "bayou_blues:patch_giant_fern",
+      "bayou_blues:patch_tall_grass",
+      "bayou_blues:patch_large_fern",
+      "bayou_blues:fallen_cypress_leaves",
+      "minecraft:flower_swamp",
+      "minecraft:patch_waterlilly",
+      "bayou_blues:patch_lily_cool",
+      "bayou_blues:patch_lily_neutral",
+      "bayou_blues:patch_lily_warm",
+      "minecraft:red_mushroom_swamp",
+      "minecraft:brown_mushroom_swamp",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
-      "minecraft:patch_sugar_cane",
+      "minecraft:patch_sugar_cane_swamp",
       "minecraft:patch_pumpkin",
       "minecraft:spring_water",
       "minecraft:spring_lava",
-      "minecraft:vines",
-      "minecraft:seagrass_swamp",
-      "minecraft:patch_tall_grass_2",
-      "atmospheric:podzol",
-      "atmospheric:passion_vines",
-      "atmospheric:morado_tree",
-      "atmospheric:rainforest_bush",
-      "atmospheric:oak_tree_rainforest",
-      "atmospheric:patch_waterlilly_rainforest",
-      "atmospheric:patch_water_hyacinth",
-      "atmospheric:patch_warm_monkey_brush",
-      "atmospheric:patch_hot_monkey_brush",
-      "atmospheric:patch_scalding_monkey_brush",
-      "atmospheric:rosewood_tree"
+      "biomesoplenty:bayou_trees_sparse",
+      "biomesoplenty:deep_bayou_trees_sparse",
+      "biomesoplenty:deep_bayou_vines_sparse"
     ],
     [
-      "minecraft:freeze_top_layer"
+      "minecraft:freeze_top_layer",
+      "abundance:podzol"
     ]
   ],
   "starts": [
     "minecraft:mineshaft",
     "minecraft:stronghold",
-    "minecraft:ruined_portal_mountain"
+    "minecraft:ruined_portal_swamp"
   ],
   "spawners": {
     "monster": [
@@ -134,37 +135,31 @@
         "weight": 5,
         "minCount": 1,
         "maxCount": 1
+      },
+      {
+        "type": "minecraft:slime",
+        "weight": 1,
+        "minCount": 1,
+        "maxCount": 1
       }
     ],
     "creature": [
       {
-        "type": "minecraft:pig",
-        "weight": 10,
-        "minCount": 4,
-        "maxCount": 4
+        "type": "druidcraft:lunar_moth",
+        "weight": 2,
+        "minCount": 2,
+        "maxCount": 5
       },
       {
-        "type": "minecraft:chicken",
-        "weight": 10,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "minecraft:parrot",
-        "weight": 40,
-        "minCount": 1,
-        "maxCount": 2
-      },
-      {
-        "type": "minecraft:wolf",
+        "type": "environmental:slabfish",
         "weight": 8,
-        "minCount": 4,
+        "minCount": 2,
         "maxCount": 4
       },
       {
-        "type": "environmental:deer",
-        "weight": 16,
-        "minCount": 1,
+        "type": "environmental:duck",
+        "weight": 5,
+        "minCount": 2,
         "maxCount": 4
       }
     ],
@@ -183,11 +178,11 @@
   },
   "spawn_costs": {},
   "player_spawn_friendly": false,
-  "forge:registry_name": "atmospheric:rainforest_mountains",
+  "forge:registry_name": "bayou_blues:bayou_hills",
   "precipitation": "rain",
-  "temperature": 0.9,
-  "downfall": 0.95,
-  "category": "forest",
-  "depth": 0.3825,
-  "scale": 1.125
+  "temperature": 0.75,
+  "downfall": 1.0,
+  "category": "swamp",
+  "depth": -0.1,
+  "scale": 0.4
 }

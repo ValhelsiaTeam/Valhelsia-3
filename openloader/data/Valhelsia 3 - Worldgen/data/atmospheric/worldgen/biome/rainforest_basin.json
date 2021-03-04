@@ -12,79 +12,20 @@
     "water_fog_color": 408635
   },
   "surface_builder": "minecraft:grass",
-  "carvers": {
-    "air": [
-      "minecraft:cave",
-      "minecraft:canyon"
-    ]
-  },
+  "carvers": {},
   "features": [
     [],
-    [
-      "minecraft:lake_water",
-      "minecraft:lake_lava"
-    ],
-    [
-      "minecraft:forest_rock"
-    ],
-    [
-      "minecraft:monster_room"
-    ],
     [],
     [],
-    [
-      "minecraft:ore_dirt",
-      "minecraft:ore_gravel",
-      "minecraft:ore_granite",
-      "minecraft:ore_diorite",
-      "minecraft:ore_andesite",
-      "minecraft:ore_coal",
-      "minecraft:ore_iron",
-      "minecraft:ore_gold",
-      "minecraft:ore_redstone",
-      "minecraft:ore_diamond",
-      "minecraft:ore_lapis",
-      "minecraft:disk_sand",
-      "minecraft:disk_clay",
-      "minecraft:disk_gravel"
-    ],
     [],
-    [
-      "biomesoplenty:rainforest_cliffs_trees_sparse",
-      "minecraft:forest_flower_vegetation",
-      "minecraft:patch_large_fern",
-      "minecraft:flower_default",
-      "minecraft:patch_grass_jungle",
-      "minecraft:brown_mushroom_normal",
-      "minecraft:red_mushroom_normal",
-      "minecraft:patch_sugar_cane",
-      "minecraft:patch_pumpkin",
-      "minecraft:spring_water",
-      "minecraft:spring_lava",
-      "minecraft:vines",
-      "minecraft:seagrass_swamp",
-      "minecraft:patch_tall_grass_2",
-      "atmospheric:podzol",
-      "atmospheric:passion_vines",
-      "atmospheric:morado_tree",
-      "atmospheric:rainforest_bush",
-      "atmospheric:oak_tree_rainforest",
-      "atmospheric:patch_waterlilly_rainforest",
-      "atmospheric:patch_water_hyacinth",
-      "atmospheric:patch_warm_monkey_brush",
-      "atmospheric:patch_hot_monkey_brush",
-      "atmospheric:patch_scalding_monkey_brush",
-      "atmospheric:rosewood_tree"
-    ],
-    [
-      "minecraft:freeze_top_layer"
-    ]
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
   ],
-  "starts": [
-    "minecraft:mineshaft",
-    "minecraft:stronghold",
-    "minecraft:ruined_portal_mountain"
-  ],
+  "starts": [],
   "spawners": {
     "monster": [
       {
@@ -183,11 +124,11 @@
   },
   "spawn_costs": {},
   "player_spawn_friendly": false,
-  "forge:registry_name": "atmospheric:rainforest_mountains",
+  "forge:registry_name": "atmospheric:rainforest_basin",
   "precipitation": "rain",
   "temperature": 0.9,
   "downfall": 0.95,
   "category": "forest",
-  "depth": 0.3825,
-  "scale": 1.125
+  "depth": -0.35,
+  "scale": 0.05
 }
