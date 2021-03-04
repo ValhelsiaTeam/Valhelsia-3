@@ -1,0 +1,10 @@
+
+#Common configurations for Abundance
+[common]
+
+	#Values for biome frequencies; lower = more rare. (Requires restart)
+	[common.biome_weights]
+		"Lavender Fields weight" = 1
+		"Lavender Forest weight" = 1
+		"Nemophila Fields weight" = 0
+

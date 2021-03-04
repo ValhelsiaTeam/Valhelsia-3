@@ -17,10 +17,10 @@
 
 		#Dunes biome weights
 		[common.biome_weights.dunes]
-			"Dunes weight" = 5
+			"Dunes weight" = 4
 			"Dunes Hills weight" = 0
 			"Flourishing Dunes weight" = 0
-			"Rocky Dunes weight" = 4
+			"Rocky Dunes weight" = 3
 			"Rocky Dunes Hills weight" = 0
 			"Petrified Dunes weight" = 0
 
