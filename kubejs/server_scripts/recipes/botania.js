@@ -103,6 +103,10 @@ events.listen('recipes', function (event) {
   alchemy('forbidden_arcanus:cherrywood_sapling', 'biomesoplenty:white_cherry_sapling', 120, 'botania:sapling_cycle')
   alchemy('environmental:cherry_sapling', 'forbidden_arcanus:cherrywood_sapling', 120, 'botania:sapling_cycle')
 
+  // Jacaranda Sapling Cycle
+  alchemy('abundance:jacaranda_sapling', 'biomesoplenty:jacaranda_sapling', 120, 'botania:sapling_cycle')
+  alchemy('biomesoplenty:jacaranda_sapling', 'abundance:jacaranda_sapling', 120, 'botania:sapling_cycle')
+
   // Rainforest Sapling Cycle
   alchemy('biomesoplenty:mahogany_sapling', 'atmospheric:morado_sapling', 120, 'botania:sapling_cycle')
   alchemy('atmospheric:morado_sapling', 'biomesoplenty:mahogany_sapling', 120, 'botania:sapling_cycle')
