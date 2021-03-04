@@ -535,7 +535,7 @@ onEvent('item.tags', event => {
     'immersiveengineering:ingot_nickel',
     'immersiveengineering:ingot_constantan',
     'immersiveengineering:ingot_electrum',
-    'mysticalworld_quicksilver_ingot'
+    'mysticalworld:quicksilver_ingot'
   ]
 
   event.get('minecraft:beacon_payment_items')
