@@ -79,6 +79,17 @@ onEvent('item.tags', event => {
     'forbidden_arcanus:mysterywood_log'
   ]
   event.get('minecraft:logs_that_burn').add(logsBurn)
+
+  // Forbidden and Arcanus Enchantment Indestructible Blacklist.
+  var indestructibleBlacklisted = [
+    'tetra:modular_sword',
+    'tetra:modular_single',
+    'tetra:modular_double',
+    'tetra:modular_bow',
+    'tetra:modular_crossbow',
+    'tetra:modular_shield'
+  ]
+  event.get('forbidden_arcanus:indestructible_blacklisted').add(indestructibleBlacklisted)
   
   // Missing Wall Tags
   var woodenWalls = [
