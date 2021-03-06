@@ -1,0 +1,5 @@
+
+[common]
+	#Registers an Injector for every Loot Table specified in this list
+	loot_table_injectors = []
+
