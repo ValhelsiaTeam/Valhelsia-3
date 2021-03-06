@@ -79,7 +79,7 @@
 		# The spawn rate for minecarts holding chests in small shafts.
 		# Default: .00125
 		#Range: 0.0 ~ 1.0
-		"Small Shaft Chest Minecart Spawn Rate" = 0.00150
+		"Small Shaft Chest Minecart Spawn Rate" = 0.0015
 		# The spawn rate for minecarts holding TNT in small shafts.
 		# Default: .0025
 		#Range: 0.0 ~ 1.0
@@ -101,3 +101,4 @@
 		# Default: 9
 		#Range: 0 ~ 1000
 		"Small Shaft Piece Chain Length" = 9
+
