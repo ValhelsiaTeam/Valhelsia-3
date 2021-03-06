@@ -6,4 +6,6 @@
 	#How much RAM is recommended for an optimal experience (in GB) [default: 5.0]
 	#Range: 0.0 ~ 64.0
 	recommended_ram = 5.0
+	#Should the Durability Tooltip be disabled [default: false]
+	disable_durability_tooltip = false
 
