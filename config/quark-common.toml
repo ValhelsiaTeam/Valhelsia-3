@@ -9,8 +9,6 @@
 	#A list of screens that don't play well with quark's buttons. Use "Print Screen Classnames" to find the names of any others you'd want to add.
 	"Ignored Screens" = ["com.tfar.craftingstation.client.CraftingStationScreen", "com.refinedmods.refinedstorage.screen.grid.GridScreen", "com.refinedmods.refinedstorage.screen.DiskManipulatorScreen", "com.refinedmods.refinedstorage.screen.InterfaceScreen", "blusunrize.immersiveengineering.client.gui.CraftingTableScreen"]
 	"Use Anti Overlap" = true
-	#Quark messes with the Stonecutter to allow any item that can be used in it to be shift clicked in. Set this to false to turn it off.
-	"Hack Stonecutter Shift Click" = true
 	#Enables quark network profiling features. Do not enable this unless requested to.
 	"Enable Network Profiling" = false
 	#Quark replaces the Piston logic to allow for its piston features to work. If you're having troubles, try turning this off.
@@ -680,7 +678,7 @@
 
 			[world.new_stone_types.marble.oregen]
 				#Allowed values: [0,255]
-				"Max Height" = 256
+				"Max Height" = 255
 				#Allowed values: [0,)
 				"Cluster Count" = 10
 				#Allowed values: [0,255]
@@ -696,7 +694,7 @@
 
 			[world.new_stone_types.limestone.oregen]
 				#Allowed values: [0,255]
-				"Max Height" = 256
+				"Max Height" = 255
 				#Allowed values: [0,)
 				"Cluster Count" = 10
 				#Allowed values: [0,255]
@@ -712,7 +710,7 @@
 
 			[world.new_stone_types.myalite.oregen]
 				#Allowed values: [0,255]
-				"Max Height" = 256
+				"Max Height" = 255
 				#Allowed values: [0,)
 				"Cluster Count" = 10
 				#Allowed values: [0,255]
@@ -728,7 +726,7 @@
 
 			[world.new_stone_types.voidstone.oregen]
 				#Allowed values: [0,255]
-				"Max Height" = 256
+				"Max Height" = 255
 				#Allowed values: [0,)
 				"Cluster Count" = 10
 				#Allowed values: [0,255]
@@ -744,7 +742,7 @@
 
 			[world.new_stone_types.slate.oregen]
 				#Allowed values: [0,255]
-				"Max Height" = 256
+				"Max Height" = 255
 				#Allowed values: [0,)
 				"Cluster Count" = 10
 				#Allowed values: [0,255]
@@ -760,7 +758,7 @@
 
 			[world.new_stone_types.jasper.oregen]
 				#Allowed values: [0,255]
-				"Max Height" = 256
+				"Max Height" = 255
 				#Allowed values: [0,)
 				"Cluster Count" = 10
 				#Allowed values: [0,255]
