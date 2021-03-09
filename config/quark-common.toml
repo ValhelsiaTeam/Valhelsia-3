@@ -1726,7 +1726,7 @@
 		"Pipe Speed" = 5
 
 	[oddities.crate]
-		"Max Items" = 640
+		"Max Items" = 1280
 
 [experimental]
 	"Adjustable Chat" = false
