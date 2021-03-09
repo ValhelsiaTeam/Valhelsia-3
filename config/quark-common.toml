@@ -1495,7 +1495,7 @@
 
 		[mobs.crabs.spawn_config]
 			#Allowed values: (0,)
-			"Spawn Weight" = 5
+			"Spawn Weight" = 9
 			#Allowed values: [1,)
 			"Min Group Size" = 1
 			#Allowed values: [1,)
