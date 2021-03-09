@@ -15,8 +15,8 @@ events.listen('recipes', function (event) {
     'botania:pure_daisy/sand', // Replaced with a different recipe.
 
     // Charm
-    'charm:extra_recipes/soul_torch',
-    'charm:extra_recipes/trident',
+    //'charm:extra_recipes/soul_torch',
+    //'charm:extra_recipes/trident',
 
     // Create
     'create:milling/sandstone', // Replaced to add output parity with IE.
