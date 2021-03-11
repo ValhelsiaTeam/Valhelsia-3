@@ -35,6 +35,9 @@ events.listen('jei.information', function (event) {
     // Apotheosis - Modded Animals
     addApotheosisEntry('autumnity:turkey_spawn_egg', "Turkey", REQUIRES_GRASS)
     addApotheosisEntry('buzzier_bees:moobloom_spawn_egg', "Moobloom", REQUIRES_GRASS)
+    addApotheosisEntry('environmental:deer_spawn_egg', "Deer", REQUIRES_GRASS)
+    addApotheosisEntry('environmental:duck_spawn_egg', "Duck", REQUIRES_GRASS)
+    addApotheosisEntry('environmental:slabfish_spawn_egg', "Slabfish", REQUIRES_GRASS)
     addApotheosisEntry('mysticalworld:deer_spawn_egg', "Deer", REQUIRES_GRASS)
     addApotheosisEntry('mysticalworld:sprout_spawn_egg', "Sprout", REQUIRES_GRASS)
 
