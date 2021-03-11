@@ -1,4 +1,5 @@
 {
+  "comment.sdrp": "---Simple Discord Rich Presence---",
   "sdrp.logo": "Valhelsia 3",
   "sdrp.overworld.in": "In Overworld",
   "sdrp.overworld": "Overworld",
@@ -7,5 +8,12 @@
   "sdrp.the_end.in": "In The End",
   "sdrp.the_end": "The End",
   "sdrp.yamda_dim.in": "In YAMDA Mining Dim",
-  "sdrp.yamda_dim": "Mining Dim"
+  "sdrp.yamda_dim": "Mining Dim",
+  
+  "comment.items": "---Items with missing language entries---",
+  "item.minecraft.potion.effect.serepdipity": "Potion of Serendipity",
+  "item.minecraft.splash_potion.effect.serepdipity": "Splash Potion of Serendipity",
+  "item.minecraft.tipped_arrow.effect.serepdipity": "Arrow of Serendipity",
+  "item.minecraft.lingering_potion.effect.serepdipity": "Lingering Potion of Serendipity"
+
 }
