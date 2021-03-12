@@ -1,3 +1,4 @@
+// priority: 80
 onEvent('item.tags', event => {
   // Allows Autumnity snail slime to be used in a few recipes.
   event.add('forge:slime', 'autumnity:snail_slime')
@@ -552,7 +553,8 @@ onEvent('item.tags', event => {
   event.get('minecraft:beacon_payment_items')
        .add(beaconPaymentItems)
   
-  // Misc Missing Tags
+  // Misc Missing Item Tags
   event.add('forge:seeds/aubergine', 'mysticalworld:aubergine_seeds')
   event.add('forge:dusts/obsidian', 'create:powdered_obsidian')
+  event.add('forbidden_arcanus:edelwood_logs', 'forbidden_arcanus:edelwood_log')
 })

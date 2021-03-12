@@ -29,6 +29,11 @@ events.listen('recipes', function (event) {
     'warped'
   ]
 
+  const abundanceWoodTypes = [
+    'jacaranda',
+    'redbud'
+  ]
+
   const atmosphericWoodTypes = [
     'rosewood',
     'morado',
@@ -40,6 +45,10 @@ events.listen('recipes', function (event) {
 
   const autumnityWoodTypes = [
     'maple'
+  ]
+
+  const bayouBluesWoodTypes = [
+    'cypress'
   ]
 
   const biomesOPlentyWoodTypes = [
@@ -88,15 +97,14 @@ events.listen('recipes', function (event) {
     'glowshroom'
   ]
 
-  // Sneak previews. ;)
   const environmentalWoodTypes = [
     'cherry',
     'willow',
     'wisteria'
   ]
 
+  // Also has Arcane Edelwood, but only for certain things.
   const forbiddenArcanusWoodTypes = [
-    'arcane_edelwood',
     'cherrywood',
     'edelwood',
     'mysterywood'
@@ -188,6 +196,13 @@ events.listen('recipes', function (event) {
   const planks_per_panel = 1
   const vertical_planks_per_panel = 1
 
+  // Mekanism Sawmill:
+  const planks_per_log_mekanism = 6
+  const sticks_per_plank_mekanism = 6
+  const sawdust_chance_normal = 0.25
+  const sawdust_chance_slab = 0.13
+  const sawdust_chance_stair = 0.38
+
   // Abnormals
   var abnormalsLogsTags = []
   var abnormalsLogs = []
@@ -207,6 +222,7 @@ events.listen('recipes', function (event) {
   var abnormalsTrapdoors = []
   var abnormalsDoors = []
   var abnormalsPressurePlates = []
+  var abnormalsPantries = []
 
   // Atmospheric
   atmosphericWoodTypes.forEach(function(element) {
@@ -236,6 +252,7 @@ events.listen('recipes', function (event) {
     abnormalsTrapdoors.push('atmospheric:'.concat(element).concat('_trapdoor'))
     abnormalsDoors.push('atmospheric:'.concat(element).concat('_door'))
     abnormalsPressurePlates.push('atmospheric:'.concat(element).concat('_pressure_plate'))
+    abnormalsPantries.push('abnormals_delight:'.concat(element).concat('_pantry'))
   })
 
   // Autumnity
@@ -258,6 +275,7 @@ events.listen('recipes', function (event) {
     abnormalsTrapdoors.push('autumnity:'.concat(element).concat('_trapdoor'))
     abnormalsDoors.push('autumnity:'.concat(element).concat('_door'))
     abnormalsPressurePlates.push('autumnity:'.concat(element).concat('_pressure_plate'))
+    abnormalsPantries.push('abnormals_delight:'.concat(element).concat('_pantry'))
   })
 
   // Endergetic Expansion
@@ -282,6 +300,7 @@ events.listen('recipes', function (event) {
     abnormalsTrapdoors.push('endergetic:'.concat(element).concat('_trapdoor'))
     abnormalsDoors.push('endergetic:'.concat(element).concat('_door'))
     abnormalsPressurePlates.push('endergetic:'.concat(element).concat('_pressure_plate'))
+    abnormalsPantries.push('abnormals_delight:'.concat(element).concat('_pantry'))
   })
 
   // Environmental
@@ -304,6 +323,7 @@ events.listen('recipes', function (event) {
     abnormalsTrapdoors.push('environmental:'.concat(element).concat('_trapdoor'))
     abnormalsDoors.push('environmental:'.concat(element).concat('_door'))
     abnormalsPressurePlates.push('environmental:'.concat(element).concat('_pressure_plate'))
+    abnormalsPantries.push('abnormals_delight:'.concat(element).concat('_pantry'))
   })
   
   // Upgrade Aquatic
@@ -334,9 +354,59 @@ events.listen('recipes', function (event) {
     abnormalsTrapdoors.push('upgrade_aquatic:'.concat(element).concat('_trapdoor'))
     abnormalsDoors.push('upgrade_aquatic:'.concat(element).concat('_door'))
     abnormalsPressurePlates.push('upgrade_aquatic:'.concat(element).concat('_pressure_plate'))
+    abnormalsPantries.push('abnormals_delight:'.concat(element).concat('_pantry'))
   })
 
-  // Enhanced Mushrooms (technically not Abnormals, but works in the same way)
+  // Handle Pantries before adding Team Aurora mods, since they don't have pantries.
+  for (let i = 0; i < abnormalsLogsTags.length; i++) {
+    woodcutting(abnormalsPantries[i], abnormalsLogsTags[i], pantries_per_log)
+  }
+
+  // Abundance
+  abundanceWoodTypes.forEach(function(element) {
+    abnormalsLogsTags.push('#abundance:'.concat(element).concat('_logs'))
+    abnormalsLogs.push('abundance:'.concat(element).concat('_log'))
+    abnormalsStrippedLogs.push('abundance:stripped_'.concat(element).concat('_log'))
+    abnormalsWoods.push('abundance:'.concat(element).concat('_wood'))
+    abnormalsStrippedWoods.push('abundance:stripped_'.concat(element).concat('_wood'))
+    abnormalsPlanks.push('abundance:'.concat(element).concat('_planks'))
+    abnormalsVerticalPlanks.push('abundance:vertical_'.concat(element).concat('_planks'))
+    abnormalsSlabs.push('abundance:'.concat(element).concat('_slab'))
+    abnormalsVerticalSlabs.push('abundance:'.concat(element).concat('_vertical_slab'))
+    abnormalsStairs.push('abundance:'.concat(element).concat('_stairs'))
+    abnormalsSigns.push('abundance:'.concat(element).concat('_sign'))
+    abnormalsLadders.push('abundance:'.concat(element).concat('_ladder'))
+    abnormalsFences.push('abundance:'.concat(element).concat('_fence'))
+    abnormalsFenceGates.push('abundance:'.concat(element).concat('_fence_gate'))
+    abnormalsButtons.push('abundance:'.concat(element).concat('_button'))
+    abnormalsTrapdoors.push('abundance:'.concat(element).concat('_trapdoor'))
+    abnormalsDoors.push('abundance:'.concat(element).concat('_door'))
+    abnormalsPressurePlates.push('abundance:'.concat(element).concat('_pressure_plate'))
+  })
+
+  // Bayou Blues
+  bayouBluesWoodTypes.forEach(function(element) {
+    abnormalsLogsTags.push('#bayou_blues:'.concat(element).concat('_logs'))
+    abnormalsLogs.push('bayou_blues:'.concat(element).concat('_log'))
+    abnormalsStrippedLogs.push('bayou_blues:stripped_'.concat(element).concat('_log'))
+    abnormalsWoods.push('bayou_blues:'.concat(element).concat('_wood'))
+    abnormalsStrippedWoods.push('bayou_blues:stripped_'.concat(element).concat('_wood'))
+    abnormalsPlanks.push('bayou_blues:'.concat(element).concat('_planks'))
+    abnormalsVerticalPlanks.push('bayou_blues:vertical_'.concat(element).concat('_planks'))
+    abnormalsSlabs.push('bayou_blues:'.concat(element).concat('_slab'))
+    abnormalsVerticalSlabs.push('bayou_blues:'.concat(element).concat('_vertical_slab'))
+    abnormalsStairs.push('bayou_blues:'.concat(element).concat('_stairs'))
+    abnormalsSigns.push('bayou_blues:'.concat(element).concat('_sign'))
+    abnormalsLadders.push('bayou_blues:'.concat(element).concat('_ladder'))
+    abnormalsFences.push('bayou_blues:'.concat(element).concat('_fence'))
+    abnormalsFenceGates.push('bayou_blues:'.concat(element).concat('_fence_gate'))
+    abnormalsButtons.push('bayou_blues:'.concat(element).concat('_button'))
+    abnormalsTrapdoors.push('bayou_blues:'.concat(element).concat('_trapdoor'))
+    abnormalsDoors.push('bayou_blues:'.concat(element).concat('_door'))
+    abnormalsPressurePlates.push('bayou_blues:'.concat(element).concat('_pressure_plate'))
+  })
+
+  // Enhanced Mushrooms
   enhancedMushroomsWoodTypes.forEach(function(element) {
     abnormalsLogsTags.push('#enhanced_mushrooms:'.concat(element).concat('_stems'))
     abnormalsLogs.push('enhanced_mushrooms:'.concat(element).concat('_stem'))
@@ -357,6 +427,7 @@ events.listen('recipes', function (event) {
     abnormalsDoors.push('enhanced_mushrooms:'.concat(element).concat('_door'))
     abnormalsPressurePlates.push('enhanced_mushrooms:'.concat(element).concat('_pressure_plate'))
   })
+
 
   for (let i = 0; i < abnormalsLogsTags.length; i++) {
     // Log Woodcutting
@@ -398,6 +469,20 @@ events.listen('recipes', function (event) {
 
   // Biomes O Plenty
   // TODO: Way too much. :'(
+
+  // Logs
+  // Woods
+  // Stripped Logs
+  // Stripped Woods
+  // Planks
+  // Stairs
+  // Slabs
+  // Fences
+  // Fence Gates
+  // Doors
+  // Trapdoors
+  // Pressure Plates
+  // Buttons
 
   // Botania
   // TODO: All of it.
@@ -526,6 +611,13 @@ events.listen('recipes', function (event) {
   woodcutting('farmersdelight:oak_pantry', '#minecraft:oak_logs', pantries_per_log)
   woodcutting('farmersdelight:spruce_pantry', '#minecraft:spruce_logs', pantries_per_log)
   woodcutting('farmersdelight:warped_pantry', '#minecraft:warped_stems', pantries_per_log)
+
+  // Forbidden & Arcanus
+  forbiddenArcanusWoodTypes.forEach(function(element) {
+    // TODO: Druidcraft Woodcutting recipes.
+    event.recipes.mekanism.sawing(Item.of('forbidden_arcanus:'.concat(element).concat('_planks'), planks_per_log_mekanism), '#forbidden_arcanus:'.concat(element).concat('_logs'), Item.of('mekanism:sawdust').chance(0.25))
+  })
+  event.recipes.mekanism.sawing(Item.of('forbidden_arcanus:edelwood_stick', sticks_per_plank_mekanism), 'forbidden_arcanus:edelwood_planks', Item.of('mekanism:sawdust').chance(0.25))
 
   // Immersive Engineering
   // TODO: A bunch of Treated Wood stuff.

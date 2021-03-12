@@ -1,3 +1,4 @@
+// priority: 80
 onEvent('block.tags', event => {
 
   // Additional blocks that can be used to build a conduit frame.
@@ -150,4 +151,7 @@ onEvent('block.tags', event => {
 
   event.add('forge:sandstone/colorless', 'quark:sandstone_bricks')
   event.add('forge:sandstone/red', 'quark:red_sandstone_bricks')
+
+  // Misc Missing Block Tags
+  event.add('forbidden_arcanus:edelwood_logs', 'forbidden_arcanus:edelwood_log')
 })

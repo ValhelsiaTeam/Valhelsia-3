@@ -2,6 +2,8 @@
 
 events.listen('recipes', function (event) {
 
+  // NOTE: Mekanism Sawmill recipes can be found in woodcutting.js so that arrays can be reused.
+
   // Infusion Conversion 
   const infusionConversion = (type, ingredient, amount) => {
     event.custom({
@@ -16,17 +18,12 @@ events.listen('recipes', function (event) {
     })
   }
 
-
   // BoP
   event.recipes.mekanism.crushing('biomesoplenty:white_sand', 'quark:marble')
   event.recipes.mekanism.crushing('biomesoplenty:black_sand', 'minecraft:basalt')
 
   // Decorative Blocks
   event.recipes.mekanism.crushing('minecraft:coarse_dirt', 'decorative_blocks:rocky_dirt')
-
-  // Forbidden and Arcanus
-  // event.recipes.mekanism.sawing([Item.of('forbidden_arcanus:cherrywood_planks', 6), Item.of('mekanism:sawdust').withChance(0.2)], 'forbidden_arcanus:cherrywood_log')
-  // event.recipes.mekanism.sawing([Item.of('forbidden_arcanus:mysterywood_planks', 6), Item.of('mekanism:sawdust').withChance(0.2)], 'forbidden_arcanus:mysterywood_log')
 
   // Mekanism - Bio Fuel
   event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 5), '#minecraft:flowers')
@@ -50,5 +47,4 @@ events.listen('recipes', function (event) {
   event.recipes.mekanism.enriching(Item.of('mekanism:enriched_carbon', 2), '#forge:coal_coke')
   infusionConversion('mekanism:carbon', '#forge:coal_coke', 40)
   infusionConversion('mekanism:carbon', '#forge:dusts/coal_coke', 40)
-
 })
