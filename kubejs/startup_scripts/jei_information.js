@@ -41,8 +41,34 @@ events.listen('jei.information', function (event) {
     addApotheosisEntry('mysticalworld:deer_spawn_egg', "Deer", REQUIRES_GRASS)
     addApotheosisEntry('mysticalworld:sprout_spawn_egg', "Sprout", REQUIRES_GRASS)
 
+    // Autumnity Additional Information
+    event.add('autumnity:sappy_maple_log', "Sappy Maple Logs have a 25% chance to be created when stripping Maple Logs. Right-clicking on Sappy Maple Log with a Glass Bottle will fill the bottle with sap.")
+    event.add('autumnity:sappy_maple_wood', "Sappy Maple Wood has a 25% chance to be created when stripping Maple Wood. Right-clicking on Sappy Maple Wood with a Glass Bottle will fill the bottle with sap.")
+
+    event.add('autumnity:snail_slime_block', "Landing on a Snail Slime Block does not cause fall damage unless the player is sneaking.")
+    event.add('autumnity:snail_slime_block', "Snail Slime Blocks cause movement on top of them to slow down unless they are touching water or a wet sponge, in which case they become slippery. Snails are not affected by snail slime blocks.")
+    event.add('autumnity:snail_slime_block', "Entities that are touching the bottom of a non-slippery snail slime block will stick to the block, preventing them from falling. This does not apply to snails or entities that are sneaking.")
+    event.add('autumnity:snail_slime_block', "Snail Slime Blocks act similarly to Slime Blocks and Honey Blocks when moved by a piston, but will also not stick to Mulberry Jam Blocks or Aloe Gel Blocks")
+
+    // Minecraft Changes
+    event.add('minecraft:sweet_berries', "To plant Sweet Berries, craft them into Sweet Berry Pips in order to be able to plant them.")
+
     // Quark Additional Information
-    event.add('minecraft:chain', "When right clicking with Chains onto a boat or minecart, and then onto another, they'll link the two. Linked boats and minecarts will always remain at close distance, which allows you to make trains.")
-    event.add('minecraft:slime_block', ["Slime blocks can be dyed Red and Blue. The primary color blocks (Red, Green, and Blue) can be combined to create secondary colors (Cyan, Magenta, and Yellow).", "While being moved by pistons, two slime blocks will only connect if they're the same color, or if one is made of another (so Red won't connect to Blue, but it'll connect to Magenta). Any color of slime will connect to non-slime blocks around it normally."])
+    event.add('minecraft:chain', "When right-clicking with Chains onto a boat or minecart, and then onto another, they'll link the two. Linked boats and minecarts will always remain at close distance, which allows you to make trains.")
     event.add('quark:iron_rod', "Pistons pushing an Iron Rod will have it work as a drill of sorts, breaking any blocks in front in the direction the rod is facing. These can break anything the piston can push.")
+
+    var quarkSlimeBlocks = [
+      'minecraft:slime_block',
+      'quark:red_slime_block',
+      'quark:blue_slime_block',
+      'quark:cyan_slime_block',
+      'quark:magenta_slime_block',
+      'quark:yellow_slime_block'
+    ]
+
+    quarkSlimeBlocks.forEach(function(element) {
+      event.add(element, "Slime blocks can be dyed Red and Blue. The primary color blocks (Red, Green, and Blue) can be combined to create secondary colors (Cyan, Magenta, and Yellow).")
+      event.add(element, "While being moved by pistons, two slime blocks will only connect if they're the same color, or if one is made of another (so Red won't connect to Blue, but it'll connect to Magenta). Any color of slime will connect to non-slime blocks around it normally.")
+    })
+    
 })
