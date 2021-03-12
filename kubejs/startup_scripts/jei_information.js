@@ -54,6 +54,18 @@ events.listen('jei.information', function (event) {
     // Minecraft Changes
     event.add('minecraft:sweet_berries', "To plant Sweet Berries, craft them into Sweet Berry Pips in order to be able to plant them.")
 
+    // Neapolitan
+    event.add('neapolitan:small_banana_frond', "To grow a Banana Plant from a Small Banana Frond, place the frond onto a block of Sand or Gravel and wait for it to rain. You can also grow them with bone meal while it is raining.")
+    event.add('neapolitan:banana_frond', "To grow a Banana Plant from a Banana Frond, place the frond onto a block of Sand or Gravel and wait for it to rain. You can also grow them with bone meal while it is raining.")
+    event.add('neapolitan:large_banana_frond', "To grow a Banana Plant from a Large Banana Frond, place the frond onto a block of Sand or Gravel and wait for it to rain. You can also grow them with bone meal while it is raining.")
+    // TODO: Neapolitan's Food Effects
+    // Chocolate things give Sugar Rush which gives you a short boost of speed but then slows you down.
+    // Strawberry things heal you.
+    // Banana things give Agility, which lets you climb anything as though it was a ladder.
+    // Mint gives Berserking, which gives a slight boost to armor and attack damage.
+    // Adzuki gives Harmony.
+    // Vanilla gives Vanilla Scent.
+
     // Quark Additional Information
     event.add('minecraft:chain', "When right-clicking with Chains onto a boat or minecart, and then onto another, they'll link the two. Linked boats and minecarts will always remain at close distance, which allows you to make trains.")
     event.add('quark:iron_rod', "Pistons pushing an Iron Rod will have it work as a drill of sorts, breaking any blocks in front in the direction the rod is facing. These can break anything the piston can push.")
