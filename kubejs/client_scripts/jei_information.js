@@ -56,7 +56,7 @@ events.listen('jei.information', function (event) {
     event.add('autumnity:snail_slime_block', "Snail Slime Blocks act similarly to Slime Blocks and Honey Blocks when moved by a piston, but additionally won't stick to either Mulberry Jam Blocks or Aloe Gel Blocks")
 
     // Minecraft Changes
-    event.add('minecraft:sweet_berries', "To plant Sweet Berries, craft them into Sweet Berry Pips in order to be able to plant them.")
+    event.add('minecraft:sweet_berries', "To grow Sweet Berries, craft them into Sweet Berry Pips in order to be able to plant them.")
 
     // Mystical World
     var amethystArmour = [
