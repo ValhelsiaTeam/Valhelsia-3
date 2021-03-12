@@ -58,25 +58,18 @@ events.listen('recipes', function (event) {
   biomesOPlentyWoodTypes.forEach(function(element) {
     axeStripping('biomesoplenty:stripped_'.concat(element).concat('_log'), 'biomesoplenty:'.concat(element).concat('_log'))
     axeStripping('biomesoplenty:stripped_'.concat(element).concat('_wood'), 'biomesoplenty:'.concat(element).concat('_wood'))
+    
+    axeChopping('biomesoplenty:'.concat(element).concat('_planks'), 'biomesoplenty:'.concat(element).concat('_door'))
+    axeChopping('biomesoplenty:'.concat(element).concat('_planks'), 'biomesoplenty:'.concat(element).concat('_trapdoor'))
   })
 
   const choppingWoodTypes = [
-    'atmospheric:rosewood',
-    'atmospheric:morado',
-    'atmospheric:yucca',
-    'atmospheric:kousa',
-    'atmospheric:aspen',
-    'atmospheric:grimwood',
-    'autumnity:maple',
     'enhanced_mushrooms:red_mushroom',
     'enhanced_mushrooms:brown_mushroom',
     'enhanced_mushrooms:glowshroom',
     'forbidden_arcanus:edelwood',
     'forbidden_arcanus:cherrywood',
     'forbidden_arcanus:mysterywood',
-    'endergetic:poise',
-    'upgrade_aquatic:driftwood',
-    'upgrade_aquatic:river'
   ]
 
   choppingWoodTypes.forEach(function(element) {
