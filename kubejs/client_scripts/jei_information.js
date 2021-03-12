@@ -41,6 +41,10 @@ events.listen('jei.information', function (event) {
     addApotheosisEntry('mysticalworld:deer_spawn_egg', "Deer", REQUIRES_GRASS)
     addApotheosisEntry('mysticalworld:sprout_spawn_egg', "Sprout", REQUIRES_GRASS)
 
+    // Atmospheric
+    event.add('atmospheric:aloe_kernels', "Aloe Kernels can be planted on either Arid Sand or Red Arid Sand. When planted on Arid Sand they will grow Yellow Blossoms, and when on Red Arid Sand they instead grow faster.")
+    event.add('atmospheric:yellow_blossoms', "Aloe Kernels that are planted on Red Arid Sand will eventually grow into Tall Aloe Vera, which blooms with Yellow Blossoms.")
+
     // Autumnity Additional Information
     event.add('autumnity:sap_bottle', "Sap Bottles are created by right-clicking with a Glass Bottle on a Sappy Maple block. Sappy Maple blocks have a 25% chance to be created when stripping Autumnity Maple Logs or Wood with an axe.")
     event.add('autumnity:sappy_maple_log', "Sappy Maple Logs have a 25% chance to be created when stripping Autumnity Maple Logs. Right-clicking on Sappy Maple Log with a Glass Bottle will fill the bottle with sap.")
