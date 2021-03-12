@@ -54,6 +54,16 @@ events.listen('jei.information', function (event) {
     // Minecraft Changes
     event.add('minecraft:sweet_berries', "To plant Sweet Berries, craft them into Sweet Berry Pips in order to be able to plant them.")
 
+    // Mystical World
+    var amethystArmour = [
+      'mysticalworld:amethyst_helmet',
+      'mysticalworld:amethyst_chestplate',
+      'mysticalworld:amethyst_leggings',
+      'mysticalworld:amethyst_boots'
+    ]
+
+    event.add(amethystArmour, ["The Serendipity statistic provides a bonus to both Fortune and Looting.", " ", "The Luck statistic provides a bonus while fishing (in the same manner as \"Luck of the Sea\") and a chance to receive better loot in some structures."])
+
     // Neapolitan
     event.add('neapolitan:small_banana_frond', "To grow a Banana Plant from a Small Banana Frond, place the frond onto a block of Sand or Gravel and wait for it to rain. You can also grow them with bone meal while it is raining.")
     event.add('neapolitan:banana_frond', "To grow a Banana Plant from a Banana Frond, place the frond onto a block of Sand or Gravel and wait for it to rain. You can also grow them with bone meal while it is raining.")
@@ -83,9 +93,6 @@ events.listen('jei.information', function (event) {
       'quark:yellow_slime_block'
     ]
 
-    quarkSlimeBlocks.forEach(function(element) {
-      event.add(element, "Slime blocks can be dyed Red and Blue. The primary color blocks (Red, Green, and Blue) can be combined to create secondary colors (Cyan, Magenta, and Yellow).")
-      event.add(element, "While being moved by pistons, two slime blocks will only connect if they're the same color, or if one is made of another (so Red won't connect to Blue, but it'll connect to Magenta). Any color of slime will connect to non-slime blocks around it normally.")
-    })
-    
+    event.add(quarkSlimeBlocks, "Slime blocks can be dyed Red and Blue. The primary color blocks (Red, Green, and Blue) can be combined to create secondary colors (Cyan, Magenta, and Yellow).")
+    event.add(quarkSlimeBlocks, "While being moved by pistons, two slime blocks will only connect if they're the same color, or if one is made of another (so Red won't connect to Blue, but it'll connect to Magenta). Any color of slime will connect to non-slime blocks around it normally.")  
 })
