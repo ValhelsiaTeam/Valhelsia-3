@@ -6,7 +6,7 @@
 	#Enables/Disables all patreon effects.
 	patreonEffects = true
 	#If a dimension is listed here, the skyrender will only render constellations on top of the existing skybox.
-	skyRenderingConstellations = ["minecraft:overworld"]
+	skyRenderingConstellations = []
 	#Sets the amount of particles/effects
 	#Allowed Values: NONE, MINIMAL, LOWERED, ALL
 	particleAmount = "ALL"
