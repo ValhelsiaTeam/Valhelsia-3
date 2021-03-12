@@ -42,13 +42,14 @@ events.listen('jei.information', function (event) {
     addApotheosisEntry('mysticalworld:sprout_spawn_egg', "Sprout", REQUIRES_GRASS)
 
     // Autumnity Additional Information
-    event.add('autumnity:sappy_maple_log', "Sappy Maple Logs have a 25% chance to be created when stripping Maple Logs. Right-clicking on Sappy Maple Log with a Glass Bottle will fill the bottle with sap.")
-    event.add('autumnity:sappy_maple_wood', "Sappy Maple Wood has a 25% chance to be created when stripping Maple Wood. Right-clicking on Sappy Maple Wood with a Glass Bottle will fill the bottle with sap.")
+    event.add('autumnity:sap_bottle', "Sap Bottles are created by right-clicking with a Glass Bottle on a Sappy Maple block. Sappy Maple blocks have a 25% chance to be created when stripping Autumnity Maple Logs or Wood with an axe.")
+    event.add('autumnity:sappy_maple_log', "Sappy Maple Logs have a 25% chance to be created when stripping Autumnity Maple Logs. Right-clicking on Sappy Maple Log with a Glass Bottle will fill the bottle with sap.")
+    event.add('autumnity:sappy_maple_wood', "Sappy Maple Wood has a 25% chance to be created when stripping Autumnity Maple Wood. Right-clicking on Sappy Maple Wood with a Glass Bottle will fill the bottle with sap.")
 
     event.add('autumnity:snail_slime_block', "Landing on a Snail Slime Block does not cause fall damage unless the player is sneaking.")
     event.add('autumnity:snail_slime_block', "Snail Slime Blocks cause movement on top of them to slow down unless they are touching water or a wet sponge, in which case they become slippery. Snails are not affected by snail slime blocks.")
     event.add('autumnity:snail_slime_block', "Entities that are touching the bottom of a non-slippery snail slime block will stick to the block, preventing them from falling. This does not apply to snails or entities that are sneaking.")
-    event.add('autumnity:snail_slime_block', "Snail Slime Blocks act similarly to Slime Blocks and Honey Blocks when moved by a piston, but will also not stick to Mulberry Jam Blocks or Aloe Gel Blocks")
+    event.add('autumnity:snail_slime_block', "Snail Slime Blocks act similarly to Slime Blocks and Honey Blocks when moved by a piston, but additionally won't stick to either Mulberry Jam Blocks or Aloe Gel Blocks")
 
     // Minecraft Changes
     event.add('minecraft:sweet_berries', "To plant Sweet Berries, craft them into Sweet Berry Pips in order to be able to plant them.")
