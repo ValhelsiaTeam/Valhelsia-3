@@ -66,6 +66,10 @@ events.listen('jei.information', function (event) {
     // Adzuki gives Harmony.
     // Vanilla gives Vanilla Scent.
 
+    // Savage and Ravage
+    // Note: Adding NBT doesn't completely work - still shows up when pressing "U" on a white banner.
+    //event.add(Item.of('minecraft:white_banner', {BlockEntityTag:{Patterns:[{Pattern:"mr",Color:9},{Pattern:"bs",Color:8},{Pattern:"cs",Color:7},{Pattern:"bo",Color:8},{Pattern:"ms",Color:15},{Pattern:"hh",Color:8},{Pattern:"mc",Color:8},{Pattern:"bo",Color:15}]},display:{Name:'{"color":"gold","translate":"block.minecraft.ominous_banner"}'}}), "test")
+
     // Quark Additional Information
     event.add('minecraft:chain', "When right-clicking with Chains onto a boat or minecart, and then onto another, they'll link the two. Linked boats and minecarts will always remain at close distance, which allows you to make trains.")
     event.add('quark:iron_rod', "Pistons pushing an Iron Rod will have it work as a drill of sorts, breaking any blocks in front in the direction the rod is facing. These can break anything the piston can push.")
