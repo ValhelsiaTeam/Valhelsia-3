@@ -47,4 +47,11 @@ events.listen('recipes', function (event) {
   event.recipes.mekanism.enriching(Item.of('mekanism:enriched_carbon', 2), '#forge:coal_coke')
   infusionConversion('mekanism:carbon', '#forge:coal_coke', 40)
   infusionConversion('mekanism:carbon', '#forge:dusts/coal_coke', 40)
+
+  // Upgrade Aquatic
+  event.recipes.mekanism.combining(Item.of('upgrade_aquatic:ochre_kelp', 8), Item.of('minecraft:kelp', 8), '#forge:dyes/yellow')
+  event.recipes.mekanism.combining(Item.of('upgrade_aquatic:polar_kelp', 8), Item.of('minecraft:kelp', 8), '#forge:dyes/cyan')
+  event.recipes.mekanism.combining(Item.of('upgrade_aquatic:thorny_kelp', 8), Item.of('minecraft:kelp', 8), '#forge:dyes/brown')
+  event.recipes.mekanism.combining(Item.of('upgrade_aquatic:tongue_kelp', 8), Item.of('minecraft:kelp', 8), '#forge:dyes/red')
+
 })
