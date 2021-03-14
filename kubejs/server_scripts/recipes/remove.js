@@ -93,6 +93,7 @@ events.listen('recipes', function (event) {
     'minecolonies:chainmailboots',
 
     // Minecraft
+    'minecraft:dark_prismarine',
     'minecraft:slime_block', // Removed but re-added later in another script to avoid being hit by the replaceInput of slime balls.
 
     // Mystical World
@@ -188,7 +189,7 @@ events.listen('recipes', function (event) {
 
     // Quark
     'quark:beetroot_crate', // These crates are replaced with Farmer's Delight ones.
-    'quark:carrot_crate',
+    'quark:carrot_crate', // Although they could probably be disabled in the config for Quark instead.
     'quark:potato_crate'
   ]
 
