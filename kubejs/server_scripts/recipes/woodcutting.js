@@ -180,6 +180,7 @@ events.listen('recipes', function (event) {
   const supports_per_plank = 1
   const vertical_slabs_per_plank = slabs_per_plank
   const vertical_planks_per_plank = 1
+  const sign_posts_per_plank = signs_per_plank
   
   const decorative_blocks_beams_per_log = 1
   const druidcraft_beams_per_log = 1
@@ -438,7 +439,6 @@ events.listen('recipes', function (event) {
     abnormalsPressurePlates.push(`${mod}:${element}_pressure_plate`)
   })
 
-
   for (let i = 0; i < abnormalsLogsTags.length; i++) {
     // Log Woodcutting
     woodcutting(abnormalsPlanks[i], abnormalsLogsTags[i], planks_per_log)
@@ -690,56 +690,42 @@ events.listen('recipes', function (event) {
 
   // Supplementaries - Vanilla
   woodcutting('supplementaries:item_shelf', '#minecraft:wooden_slabs', 1)
-  woodcutting('supplementaries:sign_post_acacia', 'minecraft:acacia_planks', 1)
-  woodcutting('supplementaries:sign_post_acacia', '#minecraft:acacia_logs', 4)
-  woodcutting('supplementaries:sign_post_birch', 'minecraft:birch_planks', 1)
-  woodcutting('supplementaries:sign_post_birch', '#minecraft:birch_logs', 4)
-  woodcutting('supplementaries:sign_post_crimson', 'minecraft:crimson_planks', 1)
-  woodcutting('supplementaries:sign_post_crimson', '#minecraft:crimson_stems', 4)
-  woodcutting('supplementaries:sign_post_dark_oak', 'minecraft:dark_oak_planks', 1)
-  woodcutting('supplementaries:sign_post_dark_oak', '#minecraft:dark_oak_logs', 4)
-  woodcutting('supplementaries:sign_post_jungle', 'minecraft:jungle_planks', 1)
-  woodcutting('supplementaries:sign_post_jungle', '#minecraft:jungle_logs', 4)
-  woodcutting('supplementaries:sign_post_oak', 'minecraft:oak_planks', 1)
-  woodcutting('supplementaries:sign_post_oak', '#minecraft:oak_logs', 4)
-  woodcutting('supplementaries:sign_post_spruce', 'minecraft:spruce_planks', 1)
-  woodcutting('supplementaries:sign_post_spruce', '#minecraft:spruce_logs', 4)
-  woodcutting('supplementaries:sign_post_warped', 'minecraft:warped_planks', 1)
-  woodcutting('supplementaries:sign_post_warped', '#minecraft:warped_stems', 4)
+  
+  minecraftOverworldWoodTypes.forEach(function(element) {
+    woodcutting(`supplementaries:sign_post_${element}`, `minecraft:${element}_planks`, sign_posts_per_plank)
+    woodcutting(`supplementaries:sign_post_${element}`, `#minecraft:${element}_logs`, sign_posts_per_log)
+  })
+
+  minecraftNetherWoodTypes.forEach(function(element) {
+    woodcutting(`supplementaries:sign_post_${element}`, `minecraft:${element}_planks`, sign_posts_per_plank)
+    woodcutting(`supplementaries:sign_post_${element}`, `#minecraft:${element}_stems`, sign_posts_per_log)
+  })
 
   // Supplementaries - Atmospheric
-  woodcutting('supplementaries:sign_post_rosewood', 'atmospheric:rosewood_planks', 1)
-  woodcutting('supplementaries:sign_post_rosewood', '#atmospheric:rosewood_logs', 4)
-  woodcutting('supplementaries:sign_post_kousa', 'atmospheric:kousa_planks', 1)
-  woodcutting('supplementaries:sign_post_kousa', '#atmospheric:kousa_logs', 4)
-  woodcutting('supplementaries:sign_post_aspen', 'atmospheric:aspen_planks', 1)
-  woodcutting('supplementaries:sign_post_aspen', '#atmospheric:aspen_logs', 4)
-  woodcutting('supplementaries:sign_post_morado', 'atmospheric:morado_planks', 1)
-  woodcutting('supplementaries:sign_post_morado', '#atmospheric:morado_logs', 4)
-  woodcutting('supplementaries:sign_post_grimwood', 'atmospheric:grimwood_planks', 1)
-  woodcutting('supplementaries:sign_post_grimwood', '#atmospheric:grimwood_logs', 4)
-  woodcutting('supplementaries:sign_post_yucca', 'atmospheric:yucca_planks', 1)
-  woodcutting('supplementaries:sign_post_yucca', '#atmospheric:yucca_logs', 4)
+  atmosphericWoodTypes.forEach(function(element) {
+    woodcutting(`supplementaries:sign_post_${element}`, `atmospheric:${element}_planks`, sign_posts_per_plank)
+    woodcutting(`supplementaries:sign_post_${element}`, `#atmospheric:${element}_logs`, sign_posts_per_log)
+  })
 
   // Supplementaries - Autumnity
-  woodcutting('supplementaries:sign_post_maple', 'autumnity:maple_planks', 1)
-  woodcutting('supplementaries:sign_post_maple', '#autumnity:maple_logs', 4)
+  woodcutting('supplementaries:sign_post_maple', 'autumnity:maple_planks', sign_posts_per_plank)
+  woodcutting('supplementaries:sign_post_maple', '#autumnity:maple_logs', sign_posts_per_log)
   
   // Supplementaries - Endergetic Expansion
-  woodcutting('supplementaries:sign_post_poise', 'endergetic:poise_planks', 1)
-  woodcutting('supplementaries:sign_post_poise', '#endergetic:poise_stems', 4)
+  woodcutting('supplementaries:sign_post_poise', 'endergetic:poise_planks', sign_posts_per_plank)
+  woodcutting('supplementaries:sign_post_poise', '#endergetic:poise_stems', sign_posts_per_log)
 
   // Supplementaries - Enhanced Mushrooms
-  woodcutting('supplementaries:sign_post_red_mushroom', 'enhanced_mushrooms:red_mushroom_planks', 1)
-  woodcutting('supplementaries:sign_post_red_mushroom', '#enhanced_mushrooms:red_mushroom_stems', 4)
-  woodcutting('supplementaries:sign_post_brown_mushroom', 'enhanced_mushrooms:brown_mushroom_planks', 1)
-  woodcutting('supplementaries:sign_post_brown_mushroom', '#enhanced_mushrooms:brown_mushroom_stems', 4)
+  woodcutting('supplementaries:sign_post_red_mushroom', 'enhanced_mushrooms:red_mushroom_planks', sign_posts_per_plank)
+  woodcutting('supplementaries:sign_post_red_mushroom', '#enhanced_mushrooms:red_mushroom_stems', sign_posts_per_log)
+  woodcutting('supplementaries:sign_post_brown_mushroom', 'enhanced_mushrooms:brown_mushroom_planks', sign_posts_per_plank)
+  woodcutting('supplementaries:sign_post_brown_mushroom', '#enhanced_mushrooms:brown_mushroom_stems', sign_posts_per_log)
   
   // Supplementaries - Upgrade Aquatic
-  woodcutting('supplementaries:sign_post_driftwood', 'upgrade_aquatic:driftwood_planks', 1)
-  woodcutting('supplementaries:sign_post_driftwood', '#upgrade_aquatic:driftwood_logs', 4)
-  woodcutting('supplementaries:sign_post_river', 'upgrade_aquatic:river_planks', 1)
-  woodcutting('supplementaries:sign_post_river', '#upgrade_aquatic:river_logs', 4)
+  woodcutting('supplementaries:sign_post_driftwood', 'upgrade_aquatic:driftwood_planks', sign_posts_per_plank)
+  woodcutting('supplementaries:sign_post_driftwood', '#upgrade_aquatic:driftwood_logs', sign_posts_per_log)
+  woodcutting('supplementaries:sign_post_river', 'upgrade_aquatic:river_planks', sign_posts_per_plank)
+  woodcutting('supplementaries:sign_post_river', '#upgrade_aquatic:river_logs', sign_posts_per_log)
 
   // Quark
   minecraftOverworldWoodTypes.forEach(function(element) {
