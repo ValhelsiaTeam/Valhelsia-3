@@ -81,6 +81,26 @@
   },
   {
     "predicate": {
+      "item": "mysticalworld:copper_hoe"
+    },
+    "item": "tetra:modular_double",
+    "modules": {
+      "double/head_left": [
+        "double/hoe_left",
+        "hoe/copper"
+      ],
+      "double/head_right": [
+        "double/butt_right",
+        "butt/copper"
+      ],
+      "double/handle": [
+        "double/basic_handle",
+        "basic_handle/stick"
+      ]
+    }
+  },
+  {
+    "predicate": {
       "item": "mysticalworld:lead_pickaxe"
     },
     "item": "tetra:modular_double",
@@ -156,6 +176,26 @@
       "sword/guard": [
         "sword/makeshift_guard",
         "makeshift_guard/lead"
+      ]
+    }
+  },
+  {
+    "predicate": {
+      "item": "mysticalworld:lead_hoe"
+    },
+    "item": "tetra:modular_double",
+    "modules": {
+      "double/head_left": [
+        "double/hoe_left",
+        "hoe/lead"
+      ],
+      "double/head_right": [
+        "double/butt_right",
+        "butt/lead"
+      ],
+      "double/handle": [
+        "double/basic_handle",
+        "basic_handle/stick"
       ]
     }
   },
@@ -241,6 +281,26 @@
   },
   {
     "predicate": {
+      "item": "mysticalworld:silver_hoe"
+    },
+    "item": "tetra:modular_double",
+    "modules": {
+      "double/head_left": [
+        "double/hoe_left",
+        "hoe/silver"
+      ],
+      "double/head_right": [
+        "double/butt_right",
+        "butt/silver"
+      ],
+      "double/handle": [
+        "double/basic_handle",
+        "basic_handle/stick"
+      ]
+    }
+  },
+  {
+    "predicate": {
       "item": "mysticalworld:tin_pickaxe"
     },
     "item": "tetra:modular_double",
@@ -318,5 +378,26 @@
         "makeshift_guard/tin"
       ]
     }
+  },
+  {
+    "predicate": {
+      "item": "mysticalworld:tin_hoe"
+    },
+    "item": "tetra:modular_double",
+    "modules": {
+      "double/head_left": [
+        "double/hoe_left",
+        "hoe/tin"
+      ],
+      "double/head_right": [
+        "double/butt_right",
+        "butt/tin"
+      ],
+      "double/handle": [
+        "double/basic_handle",
+        "basic_handle/stick"
+      ]
+    }
   }
+
 ]
