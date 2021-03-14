@@ -192,6 +192,7 @@ events.listen('recipes', function (event) {
   const vertical_planks_per_log = planks_per_log
   const vertical_slabs_per_log = slabs_per_log
   const val_posts_per_log = 2
+  const quark_posts_per_log = 3
 
   const planks_per_panel = 1
   const vertical_planks_per_panel = 1
@@ -204,6 +205,7 @@ events.listen('recipes', function (event) {
   const sawdust_chance_stair = 0.38
 
   // Abnormals
+  var mod = ""
   var abnormalsLogsTags = []
   var abnormalsLogs = []
   var abnormalsStrippedLogs = []
@@ -225,136 +227,141 @@ events.listen('recipes', function (event) {
   var abnormalsPantries = []
 
   // Atmospheric
+  mod = "atmospheric"
   atmosphericWoodTypes.forEach(function(element) {
-    abnormalsLogsTags.push('#atmospheric:'.concat(element).concat('_logs'))
-    abnormalsLogs.push('atmospheric:'.concat(element).concat('_log'))
-    abnormalsStrippedLogs.push('atmospheric:stripped_'.concat(element).concat('_log'))
+    abnormalsLogsTags.push(`#${mod}:${element}_logs`)
+    abnormalsLogs.push(`${mod}:${element}_log`)
+    abnormalsStrippedLogs.push(`${mod}:stripped_${element}_log`)
 
     // Special cases: Rosewood and Grimwood have different naming conventions.
     if (element === 'rosewood' || element === 'grimwood') {
-      abnormalsWoods.push('atmospheric:'.concat(element))
-      abnormalsStrippedWoods.push('atmospheric:stripped_'.concat(element))
+      abnormalsWoods.push(`${mod}:${element}`)
+      abnormalsStrippedWoods.push(`${mod}:stripped_${element}`)
     } else {
-      abnormalsWoods.push('atmospheric:'.concat(element).concat('_wood'))
-      abnormalsStrippedWoods.push('atmospheric:stripped_'.concat(element).concat('_wood'))
+      abnormalsWoods.push(`${mod}:${element}_wood`)
+      abnormalsStrippedWoods.push(`${mod}:stripped_${element}_wood`)
     }
 
-    abnormalsPlanks.push('atmospheric:'.concat(element).concat('_planks'))
-    abnormalsVerticalPlanks.push('atmospheric:vertical_'.concat(element).concat('_planks'))
-    abnormalsSlabs.push('atmospheric:'.concat(element).concat('_slab'))
-    abnormalsVerticalSlabs.push('atmospheric:'.concat(element).concat('_vertical_slab'))
-    abnormalsStairs.push('atmospheric:'.concat(element).concat('_stairs'))
-    abnormalsSigns.push('atmospheric:'.concat(element).concat('_sign'))
-    abnormalsLadders.push('atmospheric:'.concat(element).concat('_ladder'))
-    abnormalsFences.push('atmospheric:'.concat(element).concat('_fence'))
-    abnormalsFenceGates.push('atmospheric:'.concat(element).concat('_fence_gate'))
-    abnormalsButtons.push('atmospheric:'.concat(element).concat('_button'))
-    abnormalsTrapdoors.push('atmospheric:'.concat(element).concat('_trapdoor'))
-    abnormalsDoors.push('atmospheric:'.concat(element).concat('_door'))
-    abnormalsPressurePlates.push('atmospheric:'.concat(element).concat('_pressure_plate'))
-    abnormalsPantries.push('abnormals_delight:'.concat(element).concat('_pantry'))
+    abnormalsPlanks.push(`${mod}:${element}_planks`)
+    abnormalsVerticalPlanks.push(`${mod}:vertical_${element}_planks`)
+    abnormalsSlabs.push(`${mod}:${element}_slab`)
+    abnormalsVerticalSlabs.push(`${mod}:${element}_vertical_slab`)
+    abnormalsStairs.push(`${mod}:${element}_stairs`)
+    abnormalsSigns.push(`${mod}:${element}_sign`)
+    abnormalsLadders.push(`${mod}:${element}_ladder`)
+    abnormalsFences.push(`${mod}:${element}_fence`)
+    abnormalsFenceGates.push(`${mod}:${element}_fence_gate`)
+    abnormalsButtons.push(`${mod}:${element}_button`)
+    abnormalsTrapdoors.push(`${mod}:${element}_trapdoor`)
+    abnormalsDoors.push(`${mod}:${element}_door`)
+    abnormalsPressurePlates.push(`${mod}:${element}_pressure_plate`)
+    abnormalsPantries.push(`abnormals_delight:${element}_pantry`)
   })
 
   // Autumnity
+  mod = "autumnity"
   autumnityWoodTypes.forEach(function(element) {
-    abnormalsLogsTags.push('#autumnity:'.concat(element).concat('_logs'))
-    abnormalsLogs.push('autumnity:'.concat(element).concat('_log'))
-    abnormalsStrippedLogs.push('autumnity:stripped_'.concat(element).concat('_log'))
-    abnormalsWoods.push('autumnity:'.concat(element).concat('_wood'))
-    abnormalsStrippedWoods.push('autumnity:stripped_'.concat(element).concat('_wood'))
-    abnormalsPlanks.push('autumnity:'.concat(element).concat('_planks'))
-    abnormalsVerticalPlanks.push('autumnity:vertical_'.concat(element).concat('_planks'))
-    abnormalsSlabs.push('autumnity:'.concat(element).concat('_slab'))
-    abnormalsVerticalSlabs.push('autumnity:'.concat(element).concat('_vertical_slab'))
-    abnormalsStairs.push('autumnity:'.concat(element).concat('_stairs'))
-    abnormalsSigns.push('autumnity:'.concat(element).concat('_sign'))
-    abnormalsLadders.push('autumnity:'.concat(element).concat('_ladder'))
-    abnormalsFences.push('autumnity:'.concat(element).concat('_fence'))
-    abnormalsFenceGates.push('autumnity:'.concat(element).concat('_fence_gate'))
-    abnormalsButtons.push('autumnity:'.concat(element).concat('_button'))
-    abnormalsTrapdoors.push('autumnity:'.concat(element).concat('_trapdoor'))
-    abnormalsDoors.push('autumnity:'.concat(element).concat('_door'))
-    abnormalsPressurePlates.push('autumnity:'.concat(element).concat('_pressure_plate'))
-    abnormalsPantries.push('abnormals_delight:'.concat(element).concat('_pantry'))
+    abnormalsLogsTags.push(`#${mod}:${element}_logs`)
+    abnormalsLogs.push(`${mod}:${element}_log`)
+    abnormalsStrippedLogs.push(`${mod}:stripped_${element}_log`)
+    abnormalsWoods.push(`${mod}:${element}_wood`)
+    abnormalsStrippedWoods.push(`${mod}:stripped_${element}_wood`)
+    abnormalsPlanks.push(`${mod}:${element}_planks`)
+    abnormalsVerticalPlanks.push(`${mod}:vertical_${element}_planks`)
+    abnormalsSlabs.push(`${mod}:${element}_slab`)
+    abnormalsVerticalSlabs.push(`${mod}:${element}_vertical_slab`)
+    abnormalsStairs.push(`${mod}:${element}_stairs`)
+    abnormalsSigns.push(`${mod}:${element}_sign`)
+    abnormalsLadders.push(`${mod}:${element}_ladder`)
+    abnormalsFences.push(`${mod}:${element}_fence`)
+    abnormalsFenceGates.push(`${mod}:${element}_fence_gate`)
+    abnormalsButtons.push(`${mod}:${element}_button`)
+    abnormalsTrapdoors.push(`${mod}:${element}_trapdoor`)
+    abnormalsDoors.push(`${mod}:${element}_door`)
+    abnormalsPressurePlates.push(`${mod}:${element}_pressure_plate`)
+    abnormalsPantries.push(`abnormals_delight:${element}_pantry`)
   })
 
   // Endergetic Expansion
+  mod = "endergetic"
   endergeticExpansionWoodTypes.forEach(function(element) {
     // Note: This works because we know that the only wood in Endergetic is a mushroom type, so stems is fine to put here.
     // It will break if they add any regular trees in the future, and will have to be handled differently.
-    abnormalsLogsTags.push('#endergetic:'.concat(element).concat('_stems'))
-    abnormalsLogs.push('endergetic:'.concat(element).concat('_stem'))
-    abnormalsStrippedLogs.push('endergetic:stripped_'.concat(element).concat('_stem'))
-    abnormalsWoods.push('endergetic:'.concat(element).concat('_wood'))
-    abnormalsStrippedWoods.push('endergetic:stripped_'.concat(element).concat('_wood'))
-    abnormalsPlanks.push('endergetic:'.concat(element).concat('_planks'))
-    abnormalsVerticalPlanks.push('endergetic:vertical_'.concat(element).concat('_planks'))
-    abnormalsSlabs.push('endergetic:'.concat(element).concat('_slab'))
-    abnormalsVerticalSlabs.push('endergetic:'.concat(element).concat('_vertical_slab'))
-    abnormalsStairs.push('endergetic:'.concat(element).concat('_stairs'))
-    abnormalsSigns.push('endergetic:'.concat(element).concat('_sign'))
-    abnormalsLadders.push('endergetic:'.concat(element).concat('_ladder'))
-    abnormalsFences.push('endergetic:'.concat(element).concat('_fence'))
-    abnormalsFenceGates.push('endergetic:'.concat(element).concat('_fence_gate'))
-    abnormalsButtons.push('endergetic:'.concat(element).concat('_button'))
-    abnormalsTrapdoors.push('endergetic:'.concat(element).concat('_trapdoor'))
-    abnormalsDoors.push('endergetic:'.concat(element).concat('_door'))
-    abnormalsPressurePlates.push('endergetic:'.concat(element).concat('_pressure_plate'))
-    abnormalsPantries.push('abnormals_delight:'.concat(element).concat('_pantry'))
+    abnormalsLogsTags.push(`#${mod}:${element}_stems`)
+    abnormalsLogs.push(`${mod}:${element}_stem`)
+    abnormalsStrippedLogs.push(`${mod}:stripped_${element}_stem`)
+    abnormalsWoods.push(`${mod}:${element}_wood`)
+    abnormalsStrippedWoods.push(`${mod}:stripped_${element}_wood`)
+    abnormalsPlanks.push(`${mod}:${element}_planks`)
+    abnormalsVerticalPlanks.push(`${mod}:vertical_${element}_planks`)
+    abnormalsSlabs.push(`${mod}:${element}_slab`)
+    abnormalsVerticalSlabs.push(`${mod}:${element}_vertical_slab`)
+    abnormalsStairs.push(`${mod}:${element}_stairs`)
+    abnormalsSigns.push(`${mod}:${element}_sign`)
+    abnormalsLadders.push(`${mod}:${element}_ladder`)
+    abnormalsFences.push(`${mod}:${element}_fence`)
+    abnormalsFenceGates.push(`${mod}:${element}_fence_gate`)
+    abnormalsButtons.push(`${mod}:${element}_button`)
+    abnormalsTrapdoors.push(`${mod}:${element}_trapdoor`)
+    abnormalsDoors.push(`${mod}:${element}_door`)
+    abnormalsPressurePlates.push(`${mod}:${element}_pressure_plate`)
+    abnormalsPantries.push(`abnormals_delight:${element}_pantry`)
   })
 
   // Environmental
+  mod = "environmental"
   environmentalWoodTypes.forEach(function(element) {
-    abnormalsLogsTags.push('#environmental:'.concat(element).concat('_logs'))
-    abnormalsLogs.push('environmental:'.concat(element).concat('_log'))
-    abnormalsStrippedLogs.push('environmental:stripped_'.concat(element).concat('_log'))
-    abnormalsWoods.push('environmental:'.concat(element).concat('_wood'))
-    abnormalsStrippedWoods.push('environmental:stripped_'.concat(element).concat('_wood'))
-    abnormalsPlanks.push('environmental:'.concat(element).concat('_planks'))
-    abnormalsVerticalPlanks.push('environmental:vertical_'.concat(element).concat('_planks'))
-    abnormalsSlabs.push('environmental:'.concat(element).concat('_slab'))
-    abnormalsVerticalSlabs.push('environmental:'.concat(element).concat('_vertical_slab'))
-    abnormalsStairs.push('environmental:'.concat(element).concat('_stairs'))
-    abnormalsSigns.push('environmental:'.concat(element).concat('_sign'))
-    abnormalsLadders.push('environmental:'.concat(element).concat('_ladder'))
-    abnormalsFences.push('environmental:'.concat(element).concat('_fence'))
-    abnormalsFenceGates.push('environmental:'.concat(element).concat('_fence_gate'))
-    abnormalsButtons.push('environmental:'.concat(element).concat('_button'))
-    abnormalsTrapdoors.push('environmental:'.concat(element).concat('_trapdoor'))
-    abnormalsDoors.push('environmental:'.concat(element).concat('_door'))
-    abnormalsPressurePlates.push('environmental:'.concat(element).concat('_pressure_plate'))
-    abnormalsPantries.push('abnormals_delight:'.concat(element).concat('_pantry'))
+    abnormalsLogsTags.push(`#${mod}:${element}_logs`)
+    abnormalsLogs.push(`${mod}:${element}_log`)
+    abnormalsStrippedLogs.push(`${mod}:stripped_${element}_log`)
+    abnormalsWoods.push(`${mod}:${element}_wood`)
+    abnormalsStrippedWoods.push(`${mod}:stripped_${element}_wood`)
+    abnormalsPlanks.push(`${mod}:${element}_planks`)
+    abnormalsVerticalPlanks.push(`${mod}:vertical_${element}_planks`)
+    abnormalsSlabs.push(`${mod}:${element}_slab`)
+    abnormalsVerticalSlabs.push(`${mod}:${element}_vertical_slab`)
+    abnormalsStairs.push(`${mod}:${element}_stairs`)
+    abnormalsSigns.push(`${mod}:${element}_sign`)
+    abnormalsLadders.push(`${mod}:${element}_ladder`)
+    abnormalsFences.push(`${mod}:${element}_fence`)
+    abnormalsFenceGates.push(`${mod}:${element}_fence_gate`)
+    abnormalsButtons.push(`${mod}:${element}_button`)
+    abnormalsTrapdoors.push(`${mod}:${element}_trapdoor`)
+    abnormalsDoors.push(`${mod}:${element}_door`)
+    abnormalsPressurePlates.push(`${mod}:${element}_pressure_plate`)
+    abnormalsPantries.push(`abnormals_delight:${element}_pantry`)
   })
   
   // Upgrade Aquatic
+  mod = "upgrade_aquatic"
   upgradeAquaticWoodTypes.forEach(function(element) {
-    abnormalsLogsTags.push('#upgrade_aquatic:'.concat(element).concat('_logs'))
-    abnormalsLogs.push('upgrade_aquatic:'.concat(element).concat('_log'))
-    abnormalsStrippedLogs.push('upgrade_aquatic:stripped_'.concat(element).concat('_log'))
+    abnormalsLogsTags.push(`#${mod}:${element}_logs`)
+    abnormalsLogs.push(`${mod}:${element}_log`)
+    abnormalsStrippedLogs.push(`${mod}:stripped_${element}_log`)
 
-    // Special case: Driftwood has a different naming convention.
+    // Special case: Driftwood uses a different naming convention.
     if (element === 'driftwood') {
-      abnormalsWoods.push('upgrade_aquatic:'.concat(element))
-      abnormalsStrippedWoods.push('upgrade_aquatic:stripped_'.concat(element))
+      abnormalsWoods.push(`${mod}:${element}`)
+      abnormalsStrippedWoods.push(`${mod}:stripped_${element}`)
     } else {
-      abnormalsWoods.push('upgrade_aquatic:'.concat(element).concat('_wood'))
-      abnormalsStrippedWoods.push('upgrade_aquatic:stripped_'.concat(element).concat('_wood'))
+      abnormalsWoods.push(`${mod}:${element}_wood`)
+      abnormalsStrippedWoods.push(`${mod}:stripped_${element}_wood`)
     }
 
-    abnormalsPlanks.push('upgrade_aquatic:'.concat(element).concat('_planks'))
-    abnormalsVerticalPlanks.push('upgrade_aquatic:vertical_'.concat(element).concat('_planks'))
-    abnormalsSlabs.push('upgrade_aquatic:'.concat(element).concat('_slab'))
-    abnormalsVerticalSlabs.push('upgrade_aquatic:'.concat(element).concat('_vertical_slab'))
-    abnormalsStairs.push('upgrade_aquatic:'.concat(element).concat('_stairs'))
-    abnormalsSigns.push('upgrade_aquatic:'.concat(element).concat('_sign'))
-    abnormalsLadders.push('upgrade_aquatic:'.concat(element).concat('_ladder'))
-    abnormalsFences.push('upgrade_aquatic:'.concat(element).concat('_fence'))
-    abnormalsFenceGates.push('upgrade_aquatic:'.concat(element).concat('_fence_gate'))
-    abnormalsButtons.push('upgrade_aquatic:'.concat(element).concat('_button'))
-    abnormalsTrapdoors.push('upgrade_aquatic:'.concat(element).concat('_trapdoor'))
-    abnormalsDoors.push('upgrade_aquatic:'.concat(element).concat('_door'))
-    abnormalsPressurePlates.push('upgrade_aquatic:'.concat(element).concat('_pressure_plate'))
-    abnormalsPantries.push('abnormals_delight:'.concat(element).concat('_pantry'))
+    abnormalsPlanks.push(`${mod}:${element}_planks`)
+    abnormalsVerticalPlanks.push(`${mod}:vertical_${element}_planks`)
+    abnormalsSlabs.push(`${mod}:${element}_slab`)
+    abnormalsVerticalSlabs.push(`${mod}:${element}_vertical_slab`)
+    abnormalsStairs.push(`${mod}:${element}_stairs`)
+    abnormalsSigns.push(`${mod}:${element}_sign`)
+    abnormalsLadders.push(`${mod}:${element}_ladder`)
+    abnormalsFences.push(`${mod}:${element}_fence`)
+    abnormalsFenceGates.push(`${mod}:${element}_fence_gate`)
+    abnormalsButtons.push(`${mod}:${element}_button`)
+    abnormalsTrapdoors.push(`${mod}:${element}_trapdoor`)
+    abnormalsDoors.push(`${mod}:${element}_door`)
+    abnormalsPressurePlates.push(`${mod}:${element}_pressure_plate`)
+    abnormalsPantries.push(`abnormals_delight:${element}_pantry`)
   })
 
   // Handle Pantries before adding Team Aurora mods, since they don't have pantries.
@@ -363,69 +370,72 @@ events.listen('recipes', function (event) {
   }
 
   // Abundance
+  mod="abundance"
   abundanceWoodTypes.forEach(function(element) {
-    abnormalsLogsTags.push('#abundance:'.concat(element).concat('_logs'))
-    abnormalsLogs.push('abundance:'.concat(element).concat('_log'))
-    abnormalsStrippedLogs.push('abundance:stripped_'.concat(element).concat('_log'))
-    abnormalsWoods.push('abundance:'.concat(element).concat('_wood'))
-    abnormalsStrippedWoods.push('abundance:stripped_'.concat(element).concat('_wood'))
-    abnormalsPlanks.push('abundance:'.concat(element).concat('_planks'))
-    abnormalsVerticalPlanks.push('abundance:vertical_'.concat(element).concat('_planks'))
-    abnormalsSlabs.push('abundance:'.concat(element).concat('_slab'))
-    abnormalsVerticalSlabs.push('abundance:'.concat(element).concat('_vertical_slab'))
-    abnormalsStairs.push('abundance:'.concat(element).concat('_stairs'))
-    abnormalsSigns.push('abundance:'.concat(element).concat('_sign'))
-    abnormalsLadders.push('abundance:'.concat(element).concat('_ladder'))
-    abnormalsFences.push('abundance:'.concat(element).concat('_fence'))
-    abnormalsFenceGates.push('abundance:'.concat(element).concat('_fence_gate'))
-    abnormalsButtons.push('abundance:'.concat(element).concat('_button'))
-    abnormalsTrapdoors.push('abundance:'.concat(element).concat('_trapdoor'))
-    abnormalsDoors.push('abundance:'.concat(element).concat('_door'))
-    abnormalsPressurePlates.push('abundance:'.concat(element).concat('_pressure_plate'))
+    abnormalsLogsTags.push(`#${mod}:${element}_logs`)
+    abnormalsLogs.push(`${mod}:${element}_log`)
+    abnormalsStrippedLogs.push(`${mod}:stripped_${element}_log`)
+    abnormalsWoods.push(`${mod}:${element}_wood`)
+    abnormalsStrippedWoods.push(`${mod}:stripped_${element}_wood`)
+    abnormalsPlanks.push(`${mod}:${element}_planks`)
+    abnormalsVerticalPlanks.push(`${mod}:vertical_${element}_planks`)
+    abnormalsSlabs.push(`${mod}:${element}_slab`)
+    abnormalsVerticalSlabs.push(`${mod}:${element}_vertical_slab`)
+    abnormalsStairs.push(`${mod}:${element}_stairs`)
+    abnormalsSigns.push(`${mod}:${element}_sign`)
+    abnormalsLadders.push(`${mod}:${element}_ladder`)
+    abnormalsFences.push(`${mod}:${element}_fence`)
+    abnormalsFenceGates.push(`${mod}:${element}_fence_gate`)
+    abnormalsButtons.push(`${mod}:${element}_button`)
+    abnormalsTrapdoors.push(`${mod}:${element}_trapdoor`)
+    abnormalsDoors.push(`${mod}:${element}_door`)
+    abnormalsPressurePlates.push(`${mod}:${element}_pressure_plate`)
   })
 
   // Bayou Blues
+  mod="bayou_blues"
   bayouBluesWoodTypes.forEach(function(element) {
-    abnormalsLogsTags.push('#bayou_blues:'.concat(element).concat('_logs'))
-    abnormalsLogs.push('bayou_blues:'.concat(element).concat('_log'))
-    abnormalsStrippedLogs.push('bayou_blues:stripped_'.concat(element).concat('_log'))
-    abnormalsWoods.push('bayou_blues:'.concat(element).concat('_wood'))
-    abnormalsStrippedWoods.push('bayou_blues:stripped_'.concat(element).concat('_wood'))
-    abnormalsPlanks.push('bayou_blues:'.concat(element).concat('_planks'))
-    abnormalsVerticalPlanks.push('bayou_blues:vertical_'.concat(element).concat('_planks'))
-    abnormalsSlabs.push('bayou_blues:'.concat(element).concat('_slab'))
-    abnormalsVerticalSlabs.push('bayou_blues:'.concat(element).concat('_vertical_slab'))
-    abnormalsStairs.push('bayou_blues:'.concat(element).concat('_stairs'))
-    abnormalsSigns.push('bayou_blues:'.concat(element).concat('_sign'))
-    abnormalsLadders.push('bayou_blues:'.concat(element).concat('_ladder'))
-    abnormalsFences.push('bayou_blues:'.concat(element).concat('_fence'))
-    abnormalsFenceGates.push('bayou_blues:'.concat(element).concat('_fence_gate'))
-    abnormalsButtons.push('bayou_blues:'.concat(element).concat('_button'))
-    abnormalsTrapdoors.push('bayou_blues:'.concat(element).concat('_trapdoor'))
-    abnormalsDoors.push('bayou_blues:'.concat(element).concat('_door'))
-    abnormalsPressurePlates.push('bayou_blues:'.concat(element).concat('_pressure_plate'))
+    abnormalsLogsTags.push(`#${mod}:${element}_logs`)
+    abnormalsLogs.push(`${mod}:${element}_log`)
+    abnormalsStrippedLogs.push(`${mod}:stripped_${element}_log`)
+    abnormalsWoods.push(`${mod}:${element}_wood`)
+    abnormalsStrippedWoods.push(`${mod}:stripped_${element}_wood`)
+    abnormalsPlanks.push(`${mod}:${element}_planks`)
+    abnormalsVerticalPlanks.push(`${mod}:vertical_${element}_planks`)
+    abnormalsSlabs.push(`${mod}:${element}_slab`)
+    abnormalsVerticalSlabs.push(`${mod}:${element}_vertical_slab`)
+    abnormalsStairs.push(`${mod}:${element}_stairs`)
+    abnormalsSigns.push(`${mod}:${element}_sign`)
+    abnormalsLadders.push(`${mod}:${element}_ladder`)
+    abnormalsFences.push(`${mod}:${element}_fence`)
+    abnormalsFenceGates.push(`${mod}:${element}_fence_gate`)
+    abnormalsButtons.push(`${mod}:${element}_button`)
+    abnormalsTrapdoors.push(`${mod}:${element}_trapdoor`)
+    abnormalsDoors.push(`${mod}:${element}_door`)
+    abnormalsPressurePlates.push(`${mod}:${element}_pressure_plate`)
   })
 
   // Enhanced Mushrooms
+  mod="enhanced_mushrooms"
   enhancedMushroomsWoodTypes.forEach(function(element) {
-    abnormalsLogsTags.push('#enhanced_mushrooms:'.concat(element).concat('_stems'))
-    abnormalsLogs.push('enhanced_mushrooms:'.concat(element).concat('_stem'))
-    abnormalsStrippedLogs.push('enhanced_mushrooms:stripped_'.concat(element).concat('_stem'))
-    abnormalsWoods.push('enhanced_mushrooms:'.concat(element).concat('_hyphae'))
-    abnormalsStrippedWoods.push('enhanced_mushrooms:stripped_'.concat(element).concat('_hyphae'))
-    abnormalsPlanks.push('enhanced_mushrooms:'.concat(element).concat('_planks'))
-    abnormalsVerticalPlanks.push('enhanced_mushrooms:vertical_'.concat(element).concat('_planks'))
-    abnormalsSlabs.push('enhanced_mushrooms:'.concat(element).concat('_slab'))
-    abnormalsVerticalSlabs.push('enhanced_mushrooms:'.concat(element).concat('_vertical_slab'))
-    abnormalsStairs.push('enhanced_mushrooms:'.concat(element).concat('_stairs'))
-    abnormalsSigns.push('enhanced_mushrooms:'.concat(element).concat('_sign'))
-    abnormalsLadders.push('enhanced_mushrooms:'.concat(element).concat('_ladder'))
-    abnormalsFences.push('enhanced_mushrooms:'.concat(element).concat('_fence'))
-    abnormalsFenceGates.push('enhanced_mushrooms:'.concat(element).concat('_fence_gate'))
-    abnormalsButtons.push('enhanced_mushrooms:'.concat(element).concat('_button'))
-    abnormalsTrapdoors.push('enhanced_mushrooms:'.concat(element).concat('_trapdoor'))
-    abnormalsDoors.push('enhanced_mushrooms:'.concat(element).concat('_door'))
-    abnormalsPressurePlates.push('enhanced_mushrooms:'.concat(element).concat('_pressure_plate'))
+    abnormalsLogsTags.push(`#${mod}:${element}_stems`)
+    abnormalsLogs.push(`${mod}:${element}_stem`)
+    abnormalsStrippedLogs.push(`${mod}:stripped_${element}_stem`)
+    abnormalsWoods.push(`${mod}:${element}_hyphae`)
+    abnormalsStrippedWoods.push(`${mod}:stripped_${element}_hyphae`)
+    abnormalsPlanks.push(`${mod}:${element}_planks`)
+    abnormalsVerticalPlanks.push(`${mod}:vertical_${element}_planks`)
+    abnormalsSlabs.push(`${mod}:${element}_slab`)
+    abnormalsVerticalSlabs.push(`${mod}:${element}_vertical_slab`)
+    abnormalsStairs.push(`${mod}:${element}_stairs`)
+    abnormalsSigns.push(`${mod}:${element}_sign`)
+    abnormalsLadders.push(`${mod}:${element}_ladder`)
+    abnormalsFences.push(`${mod}:${element}_fence`)
+    abnormalsFenceGates.push(`${mod}:${element}_fence_gate`)
+    abnormalsButtons.push(`${mod}:${element}_button`)
+    abnormalsTrapdoors.push(`${mod}:${element}_trapdoor`)
+    abnormalsDoors.push(`${mod}:${element}_door`)
+    abnormalsPressurePlates.push(`${mod}:${element}_pressure_plate`)
   })
 
 
@@ -496,30 +506,30 @@ events.listen('recipes', function (event) {
   var dbBeams = []
 
   minecraftOverworldWoodTypes.forEach(function(element) {
-    dbLogTypes.push("#minecraft:".concat(element).concat("_logs"))
-    dbPlankTypes.push("minecraft:".concat(element).concat("_planks"))
-    dbPalisades.push("decorative_blocks:".concat(element).concat("_palisade"))
-    dbSeats.push("decorative_blocks:".concat(element).concat("_seat"))
-    dbSupports.push("decorative_blocks:".concat(element).concat("_support"))
-    dbBeams.push("decorative_blocks:".concat(element).concat("_beam"))
+    dbLogTypes.push(`#minecraft:${element}_logs`)
+    dbPlankTypes.push(`minecraft:${element}_planks`)
+    dbPalisades.push(`decorative_blocks:${element}_palisade`)
+    dbSeats.push(`decorative_blocks:${element}_seat`)
+    dbSupports.push(`decorative_blocks:${element}_support`)
+    dbBeams.push(`decorative_blocks:${element}_beam`)
   })
 
   minecraftNetherWoodTypes.forEach(function(element) {
-    dbLogTypes.push("#minecraft:".concat(element).concat("_stems"))
-    dbPlankTypes.push("minecraft:".concat(element).concat("_planks"))
-    dbPalisades.push("decorative_blocks:".concat(element).concat("_palisade"))
-    dbSeats.push("decorative_blocks:".concat(element).concat("_seat"))
-    dbSupports.push("decorative_blocks:".concat(element).concat("_support"))
-    dbBeams.push("decorative_blocks:".concat(element).concat("_beam"))
+    dbLogTypes.push(`#minecraft:${element}_stems`)
+    dbPlankTypes.push(`minecraft:${element}_planks`)
+    dbPalisades.push(`decorative_blocks:${element}_palisade`)
+    dbSeats.push(`decorative_blocks:${element}_seat`)
+    dbSupports.push(`decorative_blocks:${element}_support`)
+    dbBeams.push(`decorative_blocks:${element}_beam`)
   })
 
   biomesOPlentyWoodTypes.forEach(function(element) {
-    dbLogTypes.push("#biomesoplenty:".concat(element).concat("_logs"))
-    dbPlankTypes.push("biomesoplenty:".concat(element).concat("_planks"))
-    dbPalisades.push("decorative_blocks:".concat(element).concat("_palisade"))
-    dbSeats.push("decorative_blocks:".concat(element).concat("_seat"))
-    dbSupports.push("decorative_blocks:".concat(element).concat("_support"))
-    dbBeams.push("decorative_blocks:".concat(element).concat("_beam"))
+    dbLogTypes.push(`#biomesoplenty:${element}_logs`)
+    dbPlankTypes.push(`biomesoplenty:${element}_planks`)
+    dbPalisades.push(`decorative_blocks:${element}_palisade`)
+    dbSeats.push(`decorative_blocks:${element}_seat`)
+    dbSupports.push(`decorative_blocks:${element}_support`)
+    dbBeams.push(`decorative_blocks:${element}_beam`)
   })
 
   atmosphericWoodTypes.forEach(function(element) {
@@ -527,41 +537,42 @@ events.listen('recipes', function (event) {
       // Decorative Blocks Abnormals doesn't support every Atmospheric wood type yet.
       return
     }
-    dbLogTypes.push("#atmospheric:".concat(element).concat("_logs"))
-    dbPlankTypes.push("atmospheric:".concat(element).concat("_planks"))
-    dbPalisades.push("decorative_blocks_abnormals:".concat(element).concat("_palisade"))
-    dbSeats.push("decorative_blocks_abnormals:".concat(element).concat("_seat"))
-    dbSupports.push("decorative_blocks_abnormals:".concat(element).concat("_support"))
-    dbBeams.push("decorative_blocks_abnormals:".concat(element).concat("_beam"))
+    
+    dbLogTypes.push(`#atmospheric:${element}_logs`)
+    dbPlankTypes.push(`atmospheric:${element}_planks`)
+    dbPalisades.push(`decorative_blocks_abnormals:${element}_palisade`)
+    dbSeats.push(`decorative_blocks_abnormals:${element}_seat`)
+    dbSupports.push(`decorative_blocks_abnormals:${element}_support`)
+    dbBeams.push(`decorative_blocks_abnormals:${element}_beam`)
   })
 
   autumnityWoodTypes.forEach(function(element) {
-    dbLogTypes.push("#autumnity:".concat(element).concat("_logs"))
-    dbPlankTypes.push("autumnity:".concat(element).concat("_planks"))
-    dbPalisades.push("decorative_blocks_abnormals:".concat(element).concat("_palisade"))
-    dbSeats.push("decorative_blocks_abnormals:".concat(element).concat("_seat"))
-    dbSupports.push("decorative_blocks_abnormals:".concat(element).concat("_support"))
-    dbBeams.push("decorative_blocks_abnormals:".concat(element).concat("_beam"))
+    dbLogTypes.push(`#autumnity:${element}_logs`)
+    dbPlankTypes.push(`autumnity:${element}_planks`)
+    dbPalisades.push(`decorative_blocks_abnormals:${element}_palisade`)
+    dbSeats.push(`decorative_blocks_abnormals:${element}_seat`)
+    dbSupports.push(`decorative_blocks_abnormals:${element}_support`)
+    dbBeams.push(`decorative_blocks_abnormals:${element}_beam`)
   })
 
   endergeticExpansionWoodTypes.forEach(function(element) {
-    dbLogTypes.push("#endergetic:".concat(element).concat("_stems"))
-    dbPlankTypes.push("endergetic:".concat(element).concat("_planks"))
-    dbPalisades.push("decorative_blocks_abnormals:".concat(element).concat("_palisade"))
-    dbSeats.push("decorative_blocks_abnormals:".concat(element).concat("_seat"))
-    dbSupports.push("decorative_blocks_abnormals:".concat(element).concat("_support"))
-    dbBeams.push("decorative_blocks_abnormals:".concat(element).concat("_beam"))
+    dbLogTypes.push(`#endergetic:${element}_stems`)
+    dbPlankTypes.push(`endergetic:${element}_planks`)
+    dbPalisades.push(`decorative_blocks_abnormals:${element}_palisade`)
+    dbSeats.push(`decorative_blocks_abnormals:${element}_seat`)
+    dbSupports.push(`decorative_blocks_abnormals:${element}_support`)
+    dbBeams.push(`decorative_blocks_abnormals:${element}_beam`)
   })
 
   // TODO: Add Environmental Decorative Blocks compatibility once the "Decorative Blocks Abnormals" mod updates.
 
   upgradeAquaticWoodTypes.forEach(function(element) {
-    dbLogTypes.push("#upgrade_aquatic:".concat(element).concat("_logs"))
-    dbPlankTypes.push("upgrade_aquatic:".concat(element).concat("_planks"))
-    dbPalisades.push("decorative_blocks_abnormals:".concat(element).concat("_palisade"))
-    dbSeats.push("decorative_blocks_abnormals:".concat(element).concat("_seat"))
-    dbSupports.push("decorative_blocks_abnormals:".concat(element).concat("_support"))
-    dbBeams.push("decorative_blocks_abnormals:".concat(element).concat("_beam"))
+    dbLogTypes.push(`#upgrade_aquatic:${element}_logs`)
+    dbPlankTypes.push(`upgrade_aquatic:${element}_planks`)
+    dbPalisades.push(`decorative_blocks_abnormals:${element}_palisade`)
+    dbSeats.push(`decorative_blocks_abnormals:${element}_seat`)
+    dbSupports.push(`decorative_blocks_abnormals:${element}_support`)
+    dbBeams.push(`decorative_blocks_abnormals:${element}_beam`)
   })
 
   // Handle Enhanced Mushrooms without array since Decorative Blocks excludes glowshroom for some reason.
@@ -614,8 +625,8 @@ events.listen('recipes', function (event) {
 
   // Forbidden & Arcanus
   forbiddenArcanusWoodTypes.forEach(function(element) {
-    // TODO: Druidcraft Woodcutting recipes.
-    event.recipes.mekanism.sawing(Item.of('forbidden_arcanus:'.concat(element).concat('_planks'), planks_per_log_mekanism), '#forbidden_arcanus:'.concat(element).concat('_logs'), Item.of('mekanism:sawdust').chance(0.25))
+    // TODO: Druidcraft Woodcutting recipes for Forbidden and Arcanus.
+    event.recipes.mekanism.sawing(Item.of(`forbidden_arcanus:${element}_planks'`, planks_per_log_mekanism), `#forbidden_arcanus:${element}_logs'`, Item.of('mekanism:sawdust').chance(0.25))
   })
   event.recipes.mekanism.sawing(Item.of('forbidden_arcanus:edelwood_stick', sticks_per_plank_mekanism), 'forbidden_arcanus:edelwood_planks', Item.of('mekanism:sawdust').chance(0.25))
 
@@ -637,29 +648,29 @@ events.listen('recipes', function (event) {
   var mcDoors = []
 
   minecraftOverworldWoodTypes.forEach(function(element) {
-    mcLogs.push('#minecraft:'.concat(element).concat('_logs'))
-    mcPlanks.push('minecraft:'.concat(element).concat('_planks'))
-    mcSigns.push('minecraft:'.concat(element).concat('_sign'))
-    mcSlabs.push('minecraft:'.concat(element).concat('_slab'))
-    mcStairs.push('minecraft:'.concat(element).concat('_stairs'))
-    mcFences.push('minecraft:'.concat(element).concat('_fence'))
-    mcFenceGates.push('minecraft:'.concat(element).concat('_fence_gate'))
-    mcTrapdoors.push('minecraft:'.concat(element).concat('_trapdoor'))
-    mcPressurePlates.push('minecraft:'.concat(element).concat('_pressure_plate'))
-    mcDoors.push('minecraft:'.concat(element).concat('_door'))
+    mcLogs.push(`#minecraft:${element}_logs`)
+    mcPlanks.push(`#minecraft:${element}_planks`)
+    mcSigns.push(`#minecraft:${element}_sign`)
+    mcSlabs.push(`#minecraft:${element}_slab`)
+    mcStairs.push(`#minecraft:${element}_stairs`)
+    mcFences.push(`#minecraft:${element}_fence`)
+    mcFenceGates.push(`#minecraft:${element}_fence_gate`)
+    mcTrapdoors.push(`#minecraft:${element}_trapdoor`)
+    mcPressurePlates.push(`#minecraft:${element}_pressure_plate`)
+    mcDoors.push(`#minecraft:${element}_door`)
   })
   
   minecraftNetherWoodTypes.forEach(function(element) {
-    mcLogs.push('#minecraft:'.concat(element).concat('_stems'))
-    mcPlanks.push('minecraft:'.concat(element).concat('_planks'))
-    mcSigns.push('minecraft:'.concat(element).concat('_sign'))
-    mcSlabs.push('minecraft:'.concat(element).concat('_slab'))
-    mcStairs.push('minecraft:'.concat(element).concat('_stairs'))
-    mcFences.push('minecraft:'.concat(element).concat('_fence'))
-    mcFenceGates.push('minecraft:'.concat(element).concat('_fence_gate'))
-    mcTrapdoors.push('minecraft:'.concat(element).concat('_trapdoor'))
-    mcPressurePlates.push('minecraft:'.concat(element).concat('_pressure_plate'))
-    mcDoors.push('minecraft:'.concat(element).concat('_door'))
+    mcLogs.push(`#minecraft:${element}_stems`)
+    mcPlanks.push(`#minecraft:${element}_planks`)
+    mcSigns.push(`#minecraft:${element}_sign`)
+    mcSlabs.push(`#minecraft:${element}_slab`)
+    mcStairs.push(`#minecraft:${element}_stairs`)
+    mcFences.push(`#minecraft:${element}_fence`)
+    mcFenceGates.push(`#minecraft:${element}_fence_gate`)
+    mcTrapdoors.push(`#minecraft:${element}_trapdoor`)
+    mcPressurePlates.push(`#minecraft:${element}_pressure_plate`)
+    mcDoors.push(`#minecraft:${element}_door`)
   })
   
   for (let i = 0; i < mcLogs.length; i++) {
@@ -674,6 +685,8 @@ events.listen('recipes', function (event) {
 
     woodcutting(mcPressurePlates[i], mcPlanks[i], pressure_plates_per_plank)
   }
+
+  // TODO: Change the supplementaries additions to forEach for compactness.
 
   // Supplementaries - Vanilla
   woodcutting('supplementaries:item_shelf', '#minecraft:wooden_slabs', 1)
@@ -729,23 +742,25 @@ events.listen('recipes', function (event) {
   woodcutting('supplementaries:sign_post_river', '#upgrade_aquatic:river_logs', 4)
 
   // Quark
-  woodcutting('quark:vertical_acacia_planks', 'minecraft:acacia_planks', 1)
-  woodcutting('quark:vertical_acacia_planks', '#minecraft:acacia_logs', 4)
-  woodcutting('quark:acacia_post', '#minecraft:acacia_logs', 3)
-  woodcutting('quark:stripped_acacia_post', '#minecraft:acacia_logs', 3)
-  woodcutting('quark:acacia_vertical_slab', 'minecraft:acacia_planks', 2)
-  woodcutting('quark:acacia_vertical_slab', '#minecraft:acacia_logs', 8)
-  woodcutting('quark:acacia_ladder', 'minecraft:acacia_planks', 2)
-  woodcutting('quark:acacia_ladder', '#minecraft:acacia_logs', 8)
-  // TODO: Add non-acacia stuff.
+  minecraftOverworldWoodTypes.forEach(function(element) {
+    woodcutting(`quark:vertical_${element}_planks`, `minecraft:${element}_planks`, vertical_planks_per_plank)
+    woodcutting(`quark:vertical_${element}_planks`, `#minecraft:${element}_logs`, vertical_planks_per_log)
+    woodcutting(`quark:${element}_post`, `#minecraft:${element}_logs`, quark_posts_per_log)
+    woodcutting(`quark:stripped_${element}_post`, `#minecraft:${element}_logs`, quark_posts_per_log)
+    woodcutting(`quark:${element}_vertical_slab`, `minecraft:${element}_planks`, vertical_slabs_per_plank)
+    woodcutting(`quark:${element}_vertical_slab`, `#minecraft:${element}_logs`, vertical_slabs_per_log)
+    woodcutting(`quark:${element}_ladder`, `minecraft:${element}_planks`, ladders_per_plank)
+    woodcutting(`quark:${element}_ladder`, `#minecraft:${element}_logs`, ladders_per_log)
+  })
 
   // Valhelsia Structures
-  woodcutting('valhelsia_structures:acacia_post', '#minecraft:acacia_logs', 2)
-  woodcutting('valhelsia_structures:birch_post', '#minecraft:birch_logs', 2)
-  woodcutting('valhelsia_structures:dark_oak_post', '#minecraft:dark_oak_logs', 2)
-  woodcutting('valhelsia_structures:jungle_post', '#minecraft:jungle_logs', 2)
-  woodcutting('valhelsia_structures:oak_post', '#minecraft:oak_logs', 2)
-  woodcutting('valhelsia_structures:spruce_post', '#minecraft:spruce_logs', 2)
-  // Make sure to check this again after the Valhelsia Structures update to add the new posts.
+  minecraftOverworldWoodTypes.forEach(function(element) {
+    woodcutting(`valhelsia_structures:${element}_post`, `#minecraft:${element}_logs`, 2)
+  })
+
+  // TODO: Uncomment this after the Valhelsia Structures update.
+  //minecraftNetherWoodTypes.forEach(function(element) {
+  //  woodcutting(`valhelsia_structures:${element}_post`, `#minecraft:${element}_stems`, 2)
+  //})
 
 })
