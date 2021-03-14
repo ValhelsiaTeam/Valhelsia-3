@@ -753,6 +753,17 @@ events.listen('recipes', function (event) {
     woodcutting(`quark:${element}_ladder`, `#minecraft:${element}_logs`, ladders_per_log)
   })
 
+  minecraftNetherWoodTypes.forEach(function(element) {
+    woodcutting(`quark:vertical_${element}_planks`, `minecraft:${element}_planks`, vertical_planks_per_plank)
+    woodcutting(`quark:vertical_${element}_planks`, `#minecraft:${element}_stems`, vertical_planks_per_log)
+    woodcutting(`quark:${element}_post`, `#minecraft:${element}_stems`, quark_posts_per_log)
+    woodcutting(`quark:stripped_${element}_post`, `#minecraft:${element}_stems`, quark_posts_per_log)
+    woodcutting(`quark:${element}_vertical_slab`, `minecraft:${element}_planks`, vertical_slabs_per_plank)
+    woodcutting(`quark:${element}_vertical_slab`, `#minecraft:${element}_stems`, vertical_slabs_per_log)
+    woodcutting(`quark:${element}_ladder`, `minecraft:${element}_planks`, ladders_per_plank)
+    woodcutting(`quark:${element}_ladder`, `#minecraft:${element}_stems`, ladders_per_log)
+  })
+
   // Valhelsia Structures
   minecraftOverworldWoodTypes.forEach(function(element) {
     woodcutting(`valhelsia_structures:${element}_post`, `#minecraft:${element}_logs`, 2)
