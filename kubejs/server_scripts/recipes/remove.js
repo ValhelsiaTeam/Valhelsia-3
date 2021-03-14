@@ -84,7 +84,36 @@ events.listen('recipes', function (event) {
     'mekanism:crushing/biofuel/sunflower',
     'mekanism:crushing/biofuel/lilac',
     'mekanism:crushing/biofuel/rose_bush',
-    'mekanism:crushing/biofuel/peony',    
+    'mekanism:crushing/biofuel/peony',
+
+    // Mekanism - Combiner (remove all ore to prevent infinite ore exploits)
+    'jaopca:mekanism.dust_to_ore.aluminum',
+    'jaopca:mekanism.dust_to_ore.nickel',
+    'jaopca:mekanism.dust_to_ore.amber',
+    'jaopca:mekanism.dust_to_ore.silver',
+    'jaopca:mekanism.dust_to_ore.zinc',
+    'jaopca:mekanism.dust_to_ore.amethyst',
+    'jaopca:mekanism.dust_to_ore.moonstone',
+    'jaopca:mekanism.dust_to_ore.arcane_crystal',
+    'jaopca:mekanism.dust_to_ore.quicksilver',
+    'jaopca:mekanism.dust_to_ore.biotite',
+    'jaopca:mekanism.dust_to_ore.fluorite',
+    'mekanism:processing/copper/ore/from_dust',
+    'mekanism:processing/lead/ore/from_dust',
+    'mekanism:processing/gold/ore/from_dust',
+    'mekanism:processing/gold/ore/nether_from_dust',
+    'mekanism:processing/iron/ore/from_dust',
+    'mekanism:processing/osmium/ore/from_dust',
+    'mekanism:processing/tin/ore/from_dust',
+    'mekanism:processing/uranium/ore/from_dust',
+    'mekanism:processing/coal/to_ore',
+    'mekanism:processing/diamond/to_ore',
+    'mekanism:processing/emerald/to_ore',
+    'mekanism:processing/fluorite/to_ore',
+    'mekanism:processing/lapis_lazuli/to_ore',
+    'mekanism:processing/netherite/dust_to_ancient_debris',
+    'mekanism:processing/redstone/to_ore',
+    'mekanism:processing/quartz/to_ore',
 
     // MineColonies
     'minecolonies:chainmailhelmet',
@@ -93,7 +122,7 @@ events.listen('recipes', function (event) {
     'minecolonies:chainmailboots',
 
     // Minecraft
-    'minecraft:dark_prismarine',
+    'minecraft:dark_prismarine', // Replaced with a different recipe.
     'minecraft:slime_block', // Removed but re-added later in another script to avoid being hit by the replaceInput of slime balls.
 
     // Mystical World
