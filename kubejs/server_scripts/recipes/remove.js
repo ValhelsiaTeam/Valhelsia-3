@@ -10,6 +10,8 @@ events.listen('recipes', function (event) {
 
     // Aquaculture
     'aquaculture:planks_from_driftwood',
+    'aquaculture:tin_can_to_iron_nugget',
+    'aquaculture:tin_can_to_iron_nugget_from_blasting',
 
     // Botania
     'botania:pure_daisy/sand', // Replaced with a different recipe.
