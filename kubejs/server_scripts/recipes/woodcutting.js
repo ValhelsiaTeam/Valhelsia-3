@@ -114,25 +114,6 @@ events.listen('recipes', function (event) {
   const immersiveEngineeringWoodTypes = [
     'treated'
   ]
-  
-  const quarkWoodTypes = [
-    'white_stained',
-    'orange_stained',
-    'magenta_stained',
-    'light_blue_stained',
-    'yellow_stained',
-    'lime_stained',
-    'pink_stained',
-    'gray_stained',
-    'light_gray_stained',
-    'cyan_stained',
-    'purple_stained',
-    'blue_stained',
-    'brown_stained',
-    'green_stained',
-    'red_stained',
-    'black_stained',
-  ]
 
   const structurizeWoodTypes = [
     'cactus'
@@ -600,28 +581,25 @@ events.listen('recipes', function (event) {
   }
 
   // Druidcraft
-  woodcutting('druidcraft:acacia_panels', '#minecraft:acacia_logs', panels_per_log)
-  woodcutting('druidcraft:birch_panels', '#minecraft:birch_logs', panels_per_log)
-  woodcutting('druidcraft:dark_oak_panels', '#minecraft:dark_oak_logs', panels_per_log)
-  woodcutting('druidcraft:darkwood_panels', '#druidcraft:darkwood_logs', panels_per_log)
-  woodcutting('druidcraft:elder_panels', '#druidcraft:elder_logs', panels_per_log)
-  woodcutting('druidcraft:jungle_panels', '#minecraft:jungle_logs', panels_per_log)
-  woodcutting('druidcraft:oak_panels', '#minecraft:oak_logs', panels_per_log)
-  woodcutting('druidcraft:spruce_panels', '#minecraft:spruce_logs', panels_per_log)
+  minecraftOverworldWoodTypes.forEach(function(element) {
+    woodcutting(`druidcraft:${element}_panels`, `#minecraft:${element}_logs`, panels_per_log)
+  })
+  druidcraftWoodTypes.forEach(function(element) {
+    woodcutting(`druidcraft:${element}_panels`, `#minecraft:${element}_logs`, panels_per_log)
+  })
   // Make sure to check this again if Druidcraft adds Crimson / Warped panels.
 
   // Engineer's Decor
   // TODO: A bunch of Treated Wood stuff.
 
   // Farmer's Delight
-  woodcutting('farmersdelight:acacia_pantry', '#minecraft:acacia_logs', pantries_per_log)
-  woodcutting('farmersdelight:birch_pantry', '#minecraft:birch_logs', pantries_per_log)
-  woodcutting('farmersdelight:crimson_pantry', '#minecraft:crimson_stems', pantries_per_log)
-  woodcutting('farmersdelight:dark_oak_pantry', '#minecraft:dark_oak_logs', pantries_per_log)
-  woodcutting('farmersdelight:jungle_pantry', '#minecraft:jungle_logs', pantries_per_log)
-  woodcutting('farmersdelight:oak_pantry', '#minecraft:oak_logs', pantries_per_log)
-  woodcutting('farmersdelight:spruce_pantry', '#minecraft:spruce_logs', pantries_per_log)
-  woodcutting('farmersdelight:warped_pantry', '#minecraft:warped_stems', pantries_per_log)
+  minecraftOverworldWoodTypes.forEach(function(element) {
+    woodcutting(`farmersdelight:${element}_pantry`, `#minecraft:${element}_logs`, pantries_per_log)
+  })
+
+  minecraftNetherWoodTypes.forEach(function(element) {
+    woodcutting(`farmersdelight:${element}_pantry`, `#minecraft:${element}_stems`, pantries_per_log)
+  })
 
   // Forbidden & Arcanus
   forbiddenArcanusWoodTypes.forEach(function(element) {
