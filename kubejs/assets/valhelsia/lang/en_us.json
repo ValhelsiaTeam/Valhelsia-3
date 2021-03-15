@@ -22,6 +22,16 @@
 
   "comment.enchantment.descriptions": "---Enchantments with missing descriptions---",
   "enchantment.forbidden_arcanus.permafrost.desc": "Allows an Edelwood Bucket to safely carry lava.",
-  "enchantment.forbidden_arcanus.indestructible.desc": "Prevents the item from losing durability while carried by a player."
+  "enchantment.forbidden_arcanus.indestructible.desc": "Prevents the item from losing durability while carried by a player.",
+
+  "comment.entities": "---Entities with missing or incorrect language entries---",
+  "entity.minecraft.villager.apiarist": "Apiarist",
+  "entity.minecraft.villager.carpenter": "Carpenter",
+  "entity.minecraft.villager.ceramist": "Ceramist",
+  "entity.minecraft.villager.immersiveengineering.engineer": "Engineer",
+  "entity.minecraft.villager.immersiveengineering.machinist": "Machinist",
+  "entity.minecraft.villager.immersiveengineering.electrician": "Electrician",
+  "entity.minecraft.villager.immersiveengineering.outfitter": "Outfitter",
+  "entity.minecraft.villager.immersiveengineering.gunsmith": "Gunsmith"
 
 }
