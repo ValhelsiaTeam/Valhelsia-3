@@ -626,7 +626,7 @@ events.listen('recipes', function (event) {
   // Forbidden & Arcanus
   forbiddenArcanusWoodTypes.forEach(function(element) {
     // TODO: Druidcraft Woodcutting recipes for Forbidden and Arcanus.
-    event.recipes.mekanism.sawing(Item.of(`forbidden_arcanus:${element}_planks'`, planks_per_log_mekanism), `#forbidden_arcanus:${element}_logs'`, Item.of('mekanism:sawdust').chance(0.25))
+    event.recipes.mekanism.sawing(Item.of(`forbidden_arcanus:${element}_planks`, planks_per_log_mekanism), `#forbidden_arcanus:${element}_logs`, Item.of('mekanism:sawdust').chance(0.25))
   })
   event.recipes.mekanism.sawing(Item.of('forbidden_arcanus:edelwood_stick', sticks_per_plank_mekanism), 'forbidden_arcanus:edelwood_planks', Item.of('mekanism:sawdust').chance(0.25))
 
