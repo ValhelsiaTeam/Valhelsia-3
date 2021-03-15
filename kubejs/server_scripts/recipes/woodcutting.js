@@ -459,21 +459,33 @@ events.listen('recipes', function (event) {
   }
 
   // Biomes O Plenty
-  // TODO: Way too much. :'(
+  biomesOPlentyWoodTypes.forEach(function(element) {
+    // Stripping
+    woodcutting(`biomesoplenty:stripped_${element}_log`, `biomesoplenty:${element}_log`, 1)
+    woodcutting(`biomesoplenty:stripped_${element}_wood`, `biomesoplenty:${element}_wood`, 1)
 
-  // Logs
-  // Woods
-  // Stripped Logs
-  // Stripped Woods
-  // Planks
-  // Stairs
-  // Slabs
-  // Fences
-  // Fence Gates
-  // Doors
-  // Trapdoors
-  // Pressure Plates
-  // Buttons
+    // Log Processing
+    woodcutting(`biomesoplenty:${element}_planks`, `#biomesoplenty:${element}_logs`, planks_per_log)
+    woodcutting(`biomesoplenty:${element}_stairs`, `#biomesoplenty:${element}_logs`, stairs_per_log)
+    woodcutting(`biomesoplenty:${element}_slab`, `#biomesoplenty:${element}_logs`, slabs_per_log)
+    woodcutting(`biomesoplenty:${element}_fence`, `#biomesoplenty:${element}_logs`, fences_per_log)
+    woodcutting(`biomesoplenty:${element}_fence_gate`, `#biomesoplenty:${element}_logs`, fence_gates_per_log)
+    woodcutting(`biomesoplenty:${element}_door`, `#biomesoplenty:${element}_logs`, doors_per_log)
+    woodcutting(`biomesoplenty:${element}_trapdoor`, `#biomesoplenty:${element}_logs`, trapdoors_per_log)
+    woodcutting(`biomesoplenty:${element}_pressure_plate`, `#biomesoplenty:${element}_logs`, pressure_plates_per_log)
+    woodcutting(`biomesoplenty:${element}_button`, `#biomesoplenty:${element}_logs`, buttons_per_log)
+    woodcutting(`biomesoplenty:${element}_boat`, `#biomesoplenty:${element}_logs`, 1)
+
+    // Plank Processing
+    woodcutting(`biomesoplenty:${element}_stairs`, `biomesoplenty:${element}_planks`, stairs_per_plank)
+    woodcutting(`biomesoplenty:${element}_slab`, `biomesoplenty:${element}_planks`, slabs_per_plank)
+    woodcutting(`biomesoplenty:${element}_fence`, `biomesoplenty:${element}_planks`, fences_per_plank)
+    woodcutting(`biomesoplenty:${element}_fence_gate`, `biomesoplenty:${element}_planks`, fence_gates_per_plank)
+    woodcutting(`biomesoplenty:${element}_door`, `biomesoplenty:${element}_planks`, doors_per_plank)
+    woodcutting(`biomesoplenty:${element}_trapdoor`, `biomesoplenty:${element}_planks`, trapdoors_per_plank)
+    woodcutting(`biomesoplenty:${element}_pressure_plate`, `biomesoplenty:${element}_planks`, pressure_plates_per_plank)
+    woodcutting(`biomesoplenty:${element}_button`, `biomesoplenty:${element}_planks`, buttons_per_plank)
+  })
 
   // Botania
   // TODO: All of it.
