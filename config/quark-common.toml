@@ -1451,7 +1451,7 @@
 
 		[mobs.stonelings.spawn_config]
 			#Allowed values: (0,)
-			"Spawn Weight" = 80
+			"Spawn Weight" = 70
 			#Allowed values: [1,)
 			"Min Group Size" = 1
 			#Allowed values: [1,)
@@ -1473,7 +1473,7 @@
 
 		[mobs.toretoise.spawn_config]
 			#Allowed values: (0,)
-			"Spawn Weight" = 40
+			"Spawn Weight" = 35
 			#Allowed values: [1,)
 			"Min Group Size" = 1
 			#Allowed values: [1,)
