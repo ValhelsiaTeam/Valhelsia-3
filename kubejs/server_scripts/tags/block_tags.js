@@ -152,6 +152,13 @@ onEvent('block.tags', event => {
   event.add('forge:sandstone/colorless', 'quark:sandstone_bricks')
   event.add('forge:sandstone/red', 'quark:red_sandstone_bricks')
 
+  // Cardboard Box Blacklist
+  event.get('mekanism:cardboard_blacklist').add([
+    'waystones:waystone',
+    'waystones:mossy_waystone',
+    'waystones:sandy_waystone'
+  ])
+
   // Misc Missing Block Tags
   event.add('forbidden_arcanus:edelwood_logs', 'forbidden_arcanus:edelwood_log')
 })
