@@ -233,7 +233,7 @@
 	"Seed Pouch" = true
 	"Pathfinder Maps" = true
 	"Bottled Cloud" = true
-	"Color Runes" = false
+	"Color Runes" = true
 	"Ancient Tomes" = true
 	"Slime In A Bucket" = true
 	Camera = true
