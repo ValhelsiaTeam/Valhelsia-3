@@ -152,11 +152,55 @@ onEvent('block.tags', event => {
   event.add('forge:sandstone/colorless', 'quark:sandstone_bricks')
   event.add('forge:sandstone/red', 'quark:red_sandstone_bricks')
 
+  // Mythic Botany Missing Block Tags
+  event.get('botania:special_flowers').add([
+    'mythicbotany:exoblaze',
+    'mythicbotany:wither_aconite',
+    'mythicbotany:aquapanthus',
+    'mythicbotany:hellebore',
+    'mythicbotany:raindeletia'
+  ])
+
+  event.get('botania:floating_flowers').add([
+    'mythicbotany:exoblaze_floating',
+    'mythicbotany:wither_aconite_floating',
+    'mythicbotany:aquapanthus_floating',
+    'mythicbotany:hellebore_floating',
+    'mythicbotany:raindeletia_floating'
+  ])
+
+  event.get('botania:special_floating_flowers').add([
+    'mythicbotany:exoblaze_floating',
+    'mythicbotany:wither_aconite_floating',
+    'mythicbotany:aquapanthus_floating',
+    'mythicbotany:hellebore_floating',
+    'mythicbotany:raindeletia_floating'
+  ])
+
+  event.get('botania:functional_special_flowers').add([
+    'mythicbotany:exoblaze',
+    'mythicbotany:aquapanthus',
+    'mythicbotany:hellebore'
+  ])
+
+  event.get('botania:generating_special_flowers').add([
+    'mythicbotany:wither_aconite',
+    'mythicbotany:raindeletia'
+  ])
+
   // Cardboard Box Blacklist
   event.get('mekanism:cardboard_blacklist').add([
     'waystones:waystone',
     'waystones:mossy_waystone',
     'waystones:sandy_waystone'
+  ])
+
+  // Buzzier Bees Flower Blacklist
+  event.get('buzzier_bees:flower_blacklist').add([
+    '#botania:special_flowers',
+    '#botania:special_floating_flowers',
+    '#botania:enchanter_flowers',
+    'astralsorcery:glow_flower'
   ])
 
   // Misc Missing Block Tags
