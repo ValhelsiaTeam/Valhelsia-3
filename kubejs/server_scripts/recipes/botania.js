@@ -20,12 +20,8 @@ events.listen('recipes', function (event) {
   const alchemy = (output, input, mana, group) => {
     event.custom({
       "type": 'botania:mana_infusion',
-      "input": {
-          "item": input
-      },
-      "output": {
-          "item": output
-      },
+      "input": Item.of(input).toJson(),
+      "output": Item.of(output).toResultJson(),
       "mana": mana,
       "group": group,
       "catalyst": {
@@ -38,13 +34,8 @@ events.listen('recipes', function (event) {
   const conjuration = (output, input, mana) => {
     event.custom({
       "type": 'botania:mana_infusion',
-      "input": {
-          "item": input
-      },
-      "output": {
-          "item": output,
-          "count": 2
-      },
+      "input": Item.of(input).toJson(),
+      "output": Item.of(output).toResultJson(),
       "mana": mana,
       "catalyst": {
         "name": "botania:conjuration_catalyst"
@@ -56,13 +47,8 @@ events.listen('recipes', function (event) {
   const infusion = (output, input, mana) => {
     event.custom({
       "type": 'botania:mana_infusion',
-      "input": {
-          "item": input
-      },
-      "output": {
-          "item": output,
-          "count": 2
-      },
+      "input": Item.of(input).toJson(),
+      "output": Item.of(output).toResultJson(),
       "mana": mana
     })
   }
