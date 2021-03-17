@@ -597,7 +597,7 @@ events.listen('recipes', function (event) {
     woodcutting(`druidcraft:${element}_panels`, `#minecraft:${element}_logs`, panels_per_log)
   })
   druidcraftWoodTypes.forEach(function(element) {
-    woodcutting(`druidcraft:${element}_panels`, `#minecraft:${element}_logs`, panels_per_log)
+    woodcutting(`druidcraft:${element}_panels`, `#druidcraft:${element}_logs`, panels_per_log)
   })
   // Make sure to check this again if Druidcraft adds Crimson / Warped panels.
 
@@ -639,28 +639,28 @@ events.listen('recipes', function (event) {
 
   minecraftOverworldWoodTypes.forEach(function(element) {
     mcLogs.push(`#minecraft:${element}_logs`)
-    mcPlanks.push(`#minecraft:${element}_planks`)
-    mcSigns.push(`#minecraft:${element}_sign`)
-    mcSlabs.push(`#minecraft:${element}_slab`)
-    mcStairs.push(`#minecraft:${element}_stairs`)
-    mcFences.push(`#minecraft:${element}_fence`)
-    mcFenceGates.push(`#minecraft:${element}_fence_gate`)
-    mcTrapdoors.push(`#minecraft:${element}_trapdoor`)
-    mcPressurePlates.push(`#minecraft:${element}_pressure_plate`)
-    mcDoors.push(`#minecraft:${element}_door`)
+    mcPlanks.push(`minecraft:${element}_planks`)
+    mcSigns.push(`minecraft:${element}_sign`)
+    mcSlabs.push(`minecraft:${element}_slab`)
+    mcStairs.push(`minecraft:${element}_stairs`)
+    mcFences.push(`minecraft:${element}_fence`)
+    mcFenceGates.push(`minecraft:${element}_fence_gate`)
+    mcTrapdoors.push(`minecraft:${element}_trapdoor`)
+    mcPressurePlates.push(`minecraft:${element}_pressure_plate`)
+    mcDoors.push(`minecraft:${element}_door`)
   })
   
   minecraftNetherWoodTypes.forEach(function(element) {
     mcLogs.push(`#minecraft:${element}_stems`)
-    mcPlanks.push(`#minecraft:${element}_planks`)
-    mcSigns.push(`#minecraft:${element}_sign`)
-    mcSlabs.push(`#minecraft:${element}_slab`)
-    mcStairs.push(`#minecraft:${element}_stairs`)
-    mcFences.push(`#minecraft:${element}_fence`)
-    mcFenceGates.push(`#minecraft:${element}_fence_gate`)
-    mcTrapdoors.push(`#minecraft:${element}_trapdoor`)
-    mcPressurePlates.push(`#minecraft:${element}_pressure_plate`)
-    mcDoors.push(`#minecraft:${element}_door`)
+    mcPlanks.push(`minecraft:${element}_planks`)
+    mcSigns.push(`minecraft:${element}_sign`)
+    mcSlabs.push(`minecraft:${element}_slab`)
+    mcStairs.push(`minecraft:${element}_stairs`)
+    mcFences.push(`minecraft:${element}_fence`)
+    mcFenceGates.push(`minecraft:${element}_fence_gate`)
+    mcTrapdoors.push(`minecraft:${element}_trapdoor`)
+    mcPressurePlates.push(`minecraft:${element}_pressure_plate`)
+    mcDoors.push(`minecraft:${element}_door`)
   })
   
   for (let i = 0; i < mcLogs.length; i++) {
