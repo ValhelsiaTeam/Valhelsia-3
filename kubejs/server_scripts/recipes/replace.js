@@ -11,4 +11,7 @@ events.listen('recipes', function (event) {
   // Replace slime balls with the slime tag to allow any type of slime to be used.
   event.replaceInput({}, 'minecraft:slime_ball', '#forge:slimeballs')
 
+  // Allow Mekanism's Obsidian Dust to be used to make Chromatic Compound.
+  event.replaceInput({}, 'create:powdered_obsidian', '#forge:dusts/obsidian')
+
 })
