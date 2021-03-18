@@ -264,31 +264,6 @@ events.listen('recipes', function (event) {
     abnormalsPantries.push(`abnormals_delight:${element}_pantry`)
   })
 
-  // Endergetic Expansion
-  mod = "endergetic"
-  endergeticExpansionWoodTypes.forEach(function(element) {
-    // Note: This works because we know that the only wood in Endergetic is a mushroom type, so stems is fine to put here.
-    // It will break if they add any regular trees in the future, and will have to be handled differently.
-    abnormalsLogsTags.push(`#${mod}:${element}_stems`)
-    abnormalsLogs.push(`${mod}:${element}_stem`)
-    abnormalsStrippedLogs.push(`${mod}:stripped_${element}_stem`)
-    abnormalsWoods.push(`${mod}:${element}_wood`)
-    abnormalsStrippedWoods.push(`${mod}:stripped_${element}_wood`)
-    abnormalsPlanks.push(`${mod}:${element}_planks`)
-    abnormalsVerticalPlanks.push(`${mod}:vertical_${element}_planks`)
-    abnormalsSlabs.push(`${mod}:${element}_slab`)
-    abnormalsVerticalSlabs.push(`${mod}:${element}_vertical_slab`)
-    abnormalsStairs.push(`${mod}:${element}_stairs`)
-    abnormalsSigns.push(`${mod}:${element}_sign`)
-    abnormalsLadders.push(`${mod}:${element}_ladder`)
-    abnormalsFences.push(`${mod}:${element}_fence`)
-    abnormalsFenceGates.push(`${mod}:${element}_fence_gate`)
-    abnormalsButtons.push(`${mod}:${element}_button`)
-    abnormalsTrapdoors.push(`${mod}:${element}_trapdoor`)
-    abnormalsDoors.push(`${mod}:${element}_door`)
-    abnormalsPressurePlates.push(`${mod}:${element}_pressure_plate`)
-    abnormalsPantries.push(`abnormals_delight:${element}_pantry`)
-  })
 
   // Environmental
   mod = "environmental"
@@ -346,10 +321,36 @@ events.listen('recipes', function (event) {
     abnormalsPantries.push(`abnormals_delight:${element}_pantry`)
   })
 
-  // Handle Pantries before adding Team Aurora mods, since they don't have pantries.
+  // Handle Pantries before adding Team Aurora mods (+ Endergetic Expansion), since they don't have pantries.
   for (let i = 0; i < abnormalsLogsTags.length; i++) {
     woodcutting(abnormalsPantries[i], abnormalsLogsTags[i], pantries_per_log)
   }
+
+  // Endergetic Expansion
+  mod = "endergetic"
+  endergeticExpansionWoodTypes.forEach(function(element) {
+    // Note: This works because we know that the only wood in Endergetic is a mushroom type, so stems is fine to put here.
+    // It will break if they add any regular trees in the future, and will have to be handled differently.
+    abnormalsLogsTags.push(`#${mod}:${element}_stems`)
+    abnormalsLogs.push(`${mod}:${element}_stem`)
+    abnormalsStrippedLogs.push(`${mod}:stripped_${element}_stem`)
+    abnormalsWoods.push(`${mod}:${element}_wood`)
+    abnormalsStrippedWoods.push(`${mod}:stripped_${element}_wood`)
+    abnormalsPlanks.push(`${mod}:${element}_planks`)
+    abnormalsVerticalPlanks.push(`${mod}:vertical_${element}_planks`)
+    abnormalsSlabs.push(`${mod}:${element}_slab`)
+    abnormalsVerticalSlabs.push(`${mod}:${element}_vertical_slab`)
+    abnormalsStairs.push(`${mod}:${element}_stairs`)
+    abnormalsSigns.push(`${mod}:${element}_sign`)
+    abnormalsLadders.push(`${mod}:${element}_ladder`)
+    abnormalsFences.push(`${mod}:${element}_fence`)
+    abnormalsFenceGates.push(`${mod}:${element}_fence_gate`)
+    abnormalsButtons.push(`${mod}:${element}_button`)
+    abnormalsTrapdoors.push(`${mod}:${element}_trapdoor`)
+    abnormalsDoors.push(`${mod}:${element}_door`)
+    abnormalsPressurePlates.push(`${mod}:${element}_pressure_plate`)
+    abnormalsPantries.push(`abnormals_delight:${element}_pantry`)
+  })
 
   // Abundance
   mod="abundance"
@@ -454,7 +455,7 @@ events.listen('recipes', function (event) {
     woodcutting(abnormalsWoods[i], abnormalsLogs[i], wood_per_log)
     woodcutting(abnormalsStrippedLogs[i], abnormalsLogs[i], stripped_logs_per_log)
     woodcutting(abnormalsStrippedWoods[i], abnormalsLogs[i], stripped_wood_per_log)
-    woodcutting(abnormalsStrippedWoods[i], abnormalsWoods[i], wood_per_log)
+    woodcutting(abnormalsStrippedWoods[i], abnormalsWoods[i], 1)
     woodcutting(abnormalsPlanks[i], abnormalsVerticalPlanks[i], vertical_planks_per_plank)
   }
 
@@ -676,8 +677,6 @@ events.listen('recipes', function (event) {
     woodcutting(mcPressurePlates[i], mcPlanks[i], pressure_plates_per_plank)
   }
 
-  // TODO: Change the supplementaries additions to forEach for compactness.
-
   // Supplementaries - Vanilla
   woodcutting('supplementaries:item_shelf', '#minecraft:wooden_slabs', 1)
   
@@ -725,8 +724,13 @@ events.listen('recipes', function (event) {
     woodcutting(`quark:stripped_${element}_post`, `#minecraft:${element}_logs`, quark_posts_per_log)
     woodcutting(`quark:${element}_vertical_slab`, `minecraft:${element}_planks`, vertical_slabs_per_plank)
     woodcutting(`quark:${element}_vertical_slab`, `#minecraft:${element}_logs`, vertical_slabs_per_log)
-    woodcutting(`quark:${element}_ladder`, `minecraft:${element}_planks`, ladders_per_plank)
-    woodcutting(`quark:${element}_ladder`, `#minecraft:${element}_logs`, ladders_per_log)
+    if (element === "oak") {
+      woodcutting(`minecraft:ladder`, `minecraft:${element}_planks`, ladders_per_plank)
+      woodcutting(`minecraft:ladder`, `#minecraft:${element}_logs`, ladders_per_log)
+    } else {
+      woodcutting(`quark:${element}_ladder`, `minecraft:${element}_planks`, ladders_per_plank)
+      woodcutting(`quark:${element}_ladder`, `#minecraft:${element}_logs`, ladders_per_log)
+    }
   })
 
   minecraftNetherWoodTypes.forEach(function(element) {
