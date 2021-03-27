@@ -10,7 +10,8 @@ events.listen('recipes', function (event) {
         Ingredient.of(input).toJson()
       ],
       tool: {
-        type: "axe"
+        type: "farmersdelight:tool",
+        tool: "axe"
       },
       result: [
         Item.of(output).toResultJson(),
@@ -28,7 +29,8 @@ events.listen('recipes', function (event) {
         Ingredient.of(input).toJson()
       ],
       tool: {
-        type: "axe"
+        type: "farmersdelight:tool",
+        tool: "axe"
       },
       result: [
         Item.of(output).toResultJson()
