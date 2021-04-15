@@ -49,7 +49,7 @@ events.listen('recipes', function (event) {
   infusionConversion('mekanism:carbon', '#forge:dusts/coal_coke', 40)
 
   // Quark
-  colors.forEach(function (element) {
+  colors.forEach(function(element) {
     // Stained Planks - get double the planks for the same amount of dye.
     event.recipes.mekanism.combining(Item.of(`quark:${element}_stained_planks`, 16), Item.of(`#minecraft:planks`, 16), `#forge:dyes/${element}`)
   })
