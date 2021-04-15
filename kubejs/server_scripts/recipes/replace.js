@@ -14,4 +14,8 @@ events.listen('recipes', function (event) {
   // Allow Mekanism's Obsidian Dust to be used to make Chromatic Compound.
   event.replaceInput({}, 'create:powdered_obsidian', '#forge:dusts/obsidian')
 
+  // Dragon Scale
+  event.replaceInput({}, 'forbidden_arcanus:dragon_scale', '#forge:dragon_scales')
+  event.replaceInput({}, 'quark:dragon_scale', '#forge:dragon_scales')
+
 })

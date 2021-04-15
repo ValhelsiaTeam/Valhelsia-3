@@ -91,7 +91,7 @@ onEvent('item.tags', event => {
     'tetra:modular_shield'
   ]
   event.get('forbidden_arcanus:indestructible_blacklisted').add(indestructibleBlacklisted)
-  
+
   // Missing Wall Tags
   var woodenWalls = [
     'absentbydesign:wall_stripped_acacia_log',
@@ -171,10 +171,10 @@ onEvent('item.tags', event => {
   ]
 
   event.get('minecraft:walls')
-       .add(woodenWalls)
-       .add(stoneWalls)
-       .add(glassWalls)
-       .add(miscWalls)
+    .add(woodenWalls)
+    .add(stoneWalls)
+    .add(glassWalls)
+    .add(miscWalls)
 
   // Missing Stair Tags
   var woodenStairs = [
@@ -236,7 +236,7 @@ onEvent('item.tags', event => {
     'absentbydesign:stairs_wool_white',
     'absentbydesign:stairs_wool_yellow'
   ]
-  
+
   var terracottaStairs = [
     'absentbydesign:stairs_terracotta_black',
     'absentbydesign:stairs_terracotta_blue',
@@ -285,13 +285,13 @@ onEvent('item.tags', event => {
   ]
 
   event.get('minecraft:stairs')
-       .add(woodenStairs)
-       .add(stoneStairs)
-       .add(concreteStairs)
-       .add(woolStairs)
-       .add(terracottaStairs)
-       .add(glassStairs)
-       .add(miscStairs)
+    .add(woodenStairs)
+    .add(stoneStairs)
+    .add(concreteStairs)
+    .add(woolStairs)
+    .add(terracottaStairs)
+    .add(glassStairs)
+    .add(miscStairs)
 
   // Missing Slab Tags
   var woodenSlabs = [
@@ -402,18 +402,18 @@ onEvent('item.tags', event => {
   ]
 
   event.get('minecraft:slabs')
-       .add(woodenSlabs)
-       .add(stoneSlabs)
-       .add(concreteSlabs)
-       .add(woolSlabs)
-       .add(terracottaSlabs)
-       .add(glassSlabs)
-       .add(miscSlabs)
+    .add(woodenSlabs)
+    .add(stoneSlabs)
+    .add(concreteSlabs)
+    .add(woolSlabs)
+    .add(terracottaSlabs)
+    .add(glassSlabs)
+    .add(miscSlabs)
 
   event.get('minecraft:wooden_slabs')
-       .add(woodenSlabs)
+    .add(woodenSlabs)
 
-       
+
   // Sandstone Tags
   var aridSandstones = [
     'atmospheric:arid_sandstone',
@@ -424,7 +424,7 @@ onEvent('item.tags', event => {
   ]
 
   event.get('forge:sandstone/arid')
-       .add(aridSandstones)
+    .add(aridSandstones)
 
   var redAridSandstones = [
     'atmospheric:red_arid_sandstone',
@@ -435,7 +435,7 @@ onEvent('item.tags', event => {
   ]
 
   event.get('forge:sandstone/red_arid')
-       .add(redAridSandstones)
+    .add(redAridSandstones)
 
   var orangeSandstones = [
     'biomesoplenty:orange_sandstone',
@@ -445,7 +445,7 @@ onEvent('item.tags', event => {
   ]
 
   event.get('forge:sandstone/orange')
-       .add(orangeSandstones)
+    .add(orangeSandstones)
 
   var whiteSandstones = [
     'biomesoplenty:white_sandstone',
@@ -455,7 +455,7 @@ onEvent('item.tags', event => {
   ]
 
   event.get('forge:sandstone/white')
-       .add(whiteSandstones)
+    .add(whiteSandstones)
 
   var blackSandstones = [
     'biomesoplenty:black_sandstone',
@@ -465,7 +465,7 @@ onEvent('item.tags', event => {
   ]
 
   event.get('forge:sandstone/black')
-       .add(blackSandstones)
+    .add(blackSandstones)
 
   var soulSandstones = [
     'quark:soul_sandstone',
@@ -476,9 +476,9 @@ onEvent('item.tags', event => {
   ]
 
   event.get('forge:sandstone/soul')
-       .add(soulSandstones)
+    .add(soulSandstones)
 
-     
+
   var soullessSandstones = [
     'forbidden_arcanus:soulless_sandstone',
     'forbidden_arcanus:cut_soulless_sandstone',
@@ -486,7 +486,7 @@ onEvent('item.tags', event => {
   ]
 
   event.get('forge:sandstone/soulless')
-       .add(soullessSandstones)
+    .add(soullessSandstones)
 
   event.add('forge:sandstone/colorless', 'quark:sandstone_bricks')
   event.add('forge:sandstone/red', 'quark:red_sandstone_bricks')
@@ -500,9 +500,9 @@ onEvent('item.tags', event => {
     'tetra:modular_crossbow',
     'tetra:modular_shield'
   ]
-  
+
   event.get('industrialforegoing:enchantment_extractor_blacklist')
-       .add(enchantmentExtractorBlacklist)
+    .add(enchantmentExtractorBlacklist)
 
   // Missing Create Crushed Ore Tags (for JAOPCA compatibility in recipes)
   event.add('create:crushed_ores/iron', 'create:crushed_iron_ore')
@@ -551,10 +551,11 @@ onEvent('item.tags', event => {
   ]
 
   event.get('minecraft:beacon_payment_items')
-       .add(beaconPaymentItems)
-  
+    .add(beaconPaymentItems)
+
   // Misc Missing Item Tags
   event.add('forge:seeds/aubergine', 'mysticalworld:aubergine_seeds')
   event.add('forge:dusts/obsidian', 'create:powdered_obsidian')
   event.add('forbidden_arcanus:edelwood_logs', 'forbidden_arcanus:edelwood_log')
+  event.add('forge:dragon_scales', 'quark:dragon_scales')
 })
