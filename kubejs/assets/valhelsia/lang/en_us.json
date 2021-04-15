@@ -9,7 +9,7 @@
   "sdrp.the_end": "The End",
   "sdrp.yamda_dim.in": "In YAMDA Mining Dim",
   "sdrp.yamda_dim": "Mining Dim",
-  
+
   "comment.items": "---Items with missing or incorrect language entries---",
   "item.minecraft.potion.effect.serepdipity": "Potion of Serendipity",
   "item.minecraft.splash_potion.effect.serepdipity": "Splash Potion of Serendipity",
@@ -23,6 +23,7 @@
   "comment.enchantment.descriptions": "---Enchantments with missing descriptions---",
   "enchantment.forbidden_arcanus.permafrost.desc": "Allows an Edelwood Bucket to safely carry lava.",
   "enchantment.forbidden_arcanus.indestructible.desc": "Prevents the item from losing durability while carried by a player.",
+  "enchantment.minecolonies.raider_damage_enchant.desc": "Increases damage dealt to Raider mobs",
 
   "comment.entities": "---Entities with missing or incorrect language entries---",
   "entity.minecraft.villager.apiarist": "Apiarist",
@@ -33,5 +34,4 @@
   "entity.minecraft.villager.immersiveengineering.electrician": "Electrician",
   "entity.minecraft.villager.immersiveengineering.outfitter": "Outfitter",
   "entity.minecraft.villager.immersiveengineering.gunsmith": "Gunsmith"
-
 }
