@@ -49,7 +49,7 @@ events.listen('recipes', function (event) {
   infusionConversion('mekanism:carbon', '#forge:dusts/coal_coke', 40)
 
   // Quark
-  colors.forEach(function(element) {
+  colors.forEach(function (element) {
     // Stained Planks - get double the planks for the same amount of dye.
     event.recipes.mekanism.combining(Item.of(`quark:${element}_stained_planks`, 16), Item.of(`#minecraft:planks`, 16), `#forge:dyes/${element}`)
   })
@@ -60,4 +60,7 @@ events.listen('recipes', function (event) {
   event.recipes.mekanism.combining(Item.of('upgrade_aquatic:thorny_kelp', 8), Item.of('minecraft:kelp', 8), '#forge:dyes/brown')
   event.recipes.mekanism.combining(Item.of('upgrade_aquatic:tongue_kelp', 8), Item.of('minecraft:kelp', 8), '#forge:dyes/red')
 
+  // Create
+  event.recipes.mekanism.metallurgic_infusing('create:rose_quartz', 'minecraft:nether_quartz', 'mekanism:redstone', 80) // 1 redstone = 10. Keeping in line w/ manual recipe
+  event.recipes.mekanism.combining(Item.of('create:polished_redstone_quartz', 8), Item.of('create:rose_quartz', 8), '#forge:sandstone')
 })
