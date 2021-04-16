@@ -61,6 +61,6 @@ events.listen('recipes', function (event) {
   event.recipes.mekanism.combining(Item.of('upgrade_aquatic:tongue_kelp', 8), Item.of('minecraft:kelp', 8), '#forge:dyes/red')
 
   // Create
-  event.recipes.mekanism.metallurgic_infusing('create:rose_quartz', 'minecraft:nether_quartz', 'mekanism:redstone', 80) // 1 redstone = 10. Keeping in line w/ manual recipe
-  event.recipes.mekanism.combining(Item.of('create:polished_redstone_quartz', 8), Item.of('create:rose_quartz', 8), '#forge:sandstone')
+  event.recipes.mekanism.metallurgic_infusing('create:rose_quartz', 'minecraft:quartz', 'mekanism:redstone', 80) // 1 redstone = 10. Keeping in line w/ manual recipe
+  event.recipes.mekanism.combining(Item.of('create:polished_rose_quartz', 8), Item.of('create:rose_quartz', 8), '#forge:sandstone')
 })
