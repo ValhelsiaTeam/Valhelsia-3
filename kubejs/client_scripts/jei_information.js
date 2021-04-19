@@ -23,6 +23,10 @@ events.listen('jei.information', function (event) {
     addApotheosisEntry('savageandravage:skeleton_villager_spawn_egg', "Skeleton Villager")
     addApotheosisEntry('quark:wrapped_spawn_egg', "Wrapped")
     addApotheosisEntry('neapolitan:plantain_spider_spawn_egg', "Plantain Spider")
+    addApotheosisEntry('twilightforest:tower_broodling_spawn_egg', "Carminite Broodling")
+    addApotheosisEntry('twilightforest:skeleton_druid_spawn_egg', "Skeleton Druid")
+    addApotheosisEntry('twilightforest:swarm_spider_spawn_egg', "Swarm Spider")
+    addApotheosisEntry('twilightforest:hedge_spider_spawn_egg', "Hedge Spider")
 
     // Apotheosis - Minecraft Animals
     addApotheosisEntry('minecraft:pig_spawn_egg', "Pig", REQUIRES_GRASS)
@@ -40,6 +44,9 @@ events.listen('jei.information', function (event) {
     addApotheosisEntry('environmental:slabfish_spawn_egg', "Slabfish", REQUIRES_GRASS)
     addApotheosisEntry('mysticalworld:deer_spawn_egg', "Deer", REQUIRES_GRASS)
     addApotheosisEntry('mysticalworld:sprout_spawn_egg', "Sprout", REQUIRES_GRASS)
+    addApotheosisEntry('twilightforest:deer_spawn_egg', "Wild Deer", REQUIRES_GRASS)
+    addApotheosisEntry('twilightforest:bighorn_sheep_spawn_egg', "Bighorn Sheep", REQUIRES_GRASS)
+    addApotheosisEntry('twilightforest:wild_boar_spawn_egg', "Wild Boar", REQUIRES_GRASS)
 
     // Atmospheric
     event.add('atmospheric:aloe_kernels', "Aloe Kernels can be planted on either Arid Sand or Red Arid Sand. When planted on Arid Sand they will grow Yellow Blossoms, and when on Red Arid Sand they instead grow faster.")
