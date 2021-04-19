@@ -557,4 +557,5 @@ onEvent('item.tags', event => {
   event.add('forge:seeds/aubergine', 'mysticalworld:aubergine_seeds')
   event.add('forge:dusts/obsidian', 'create:powdered_obsidian')
   event.add('forbidden_arcanus:edelwood_logs', 'forbidden_arcanus:edelwood_log')
+  event.add('forge:dragon_scales', 'quark:dragon_scales')
 })
