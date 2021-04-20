@@ -70,8 +70,19 @@ onEvent('item.tags', event => {
     'druidcraft:darkwood_sapling',
     'druidcraft:elder_sapling',
     'forbidden_arcanus:cherrywood_sapling',
-    'forbidden_arcanus:mysterywood_sapling'
+    'forbidden_arcanus:mysterywood_sapling',
+    'twilightforest:rainbow_oak_sapling',
+    'twilightforest:twilight_oak_sapling',
+    'twilightforest:canopy_sapling',
+    'twilightforest:mangrove_sapling',
+    'twilightforest:darkwood_sapling',
+    'twilightforest:hollow_oak_sapling',
+    'twilightforest:time_sapling',
+    'twilightforest:transformation_sapling',
+    'twilightforest:mining_sapling',
+    'twilightforest:sorting_sapling'
   ]
+
   event.get('forge:sapling').add(saplings)
 
   // Missing #minecraft:logs_that_burn item tags.
@@ -88,7 +99,8 @@ onEvent('item.tags', event => {
     'tetra:modular_double',
     'tetra:modular_bow',
     'tetra:modular_crossbow',
-    'tetra:modular_shield'
+    'tetra:modular_shield',
+    'twilightforest:glass_sword' // Has one durability, meant to be a one use item
   ]
   event.get('forbidden_arcanus:indestructible_blacklisted').add(indestructibleBlacklisted)
   
@@ -547,12 +559,27 @@ onEvent('item.tags', event => {
     'immersiveengineering:ingot_nickel',
     'immersiveengineering:ingot_constantan',
     'immersiveengineering:ingot_electrum',
-    'mysticalworld:quicksilver_ingot'
+    'mysticalworld:quicksilver_ingot',
+    'twilightforest:ironwood_ingot',
+    'twilightforest:fiery_ingot',
+    'twilightforest:knightmetal_ingot'
   ]
 
   event.get('minecraft:beacon_payment_items')
        .add(beaconPaymentItems)
   
+  // Missing curios charm tags
+  var curioCharmItems = [
+    "twilightforest:charm_of_life_1",
+    "twilightforest:charm_of_life_2",
+    "twilightforest:charm_of_keeping_1",
+    "twilightforest:charm_of_keeping_2",
+    "twilightforest:charm_of_keeping_3"
+  ]
+
+  event.get('curios:charm')
+       .add(curioCharmItems);
+
   // Misc Missing Item Tags
   event.add('forge:seeds/aubergine', 'mysticalworld:aubergine_seeds')
   event.add('forge:dusts/obsidian', 'create:powdered_obsidian')

@@ -24,6 +24,8 @@
   "enchantment.forbidden_arcanus.permafrost.desc": "Allows an Edelwood Bucket to safely carry lava.",
   "enchantment.forbidden_arcanus.indestructible.desc": "Prevents the item from losing durability while carried by a player.",
   "enchantment.minecolonies.raider_damage_enchant.desc": "Increases damage dealt to Raider mobs",
+  "enchantment.twilightforest.chill_aura.desc": "Slows attackers",
+  "enchantment.twilightforest.fiery_react": "Burns attackers",
 
   "comment.entities": "---Entities with missing or incorrect language entries---",
   "entity.minecraft.villager.apiarist": "Apiarist",
