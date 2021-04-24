@@ -71,7 +71,7 @@ onEvent('item.tags', event => {
     'druidcraft:elder_sapling',
     'forbidden_arcanus:cherrywood_sapling',
     'forbidden_arcanus:mysterywood_sapling',
-    'twilightforest:rainbow_oak_sapling',
+    'twilightforest:rainboak_sapling',
     'twilightforest:twilight_oak_sapling',
     'twilightforest:canopy_sapling',
     'twilightforest:mangrove_sapling',
@@ -584,5 +584,5 @@ onEvent('item.tags', event => {
   event.add('forge:seeds/aubergine', 'mysticalworld:aubergine_seeds')
   event.add('forge:dusts/obsidian', 'create:powdered_obsidian')
   event.add('forbidden_arcanus:edelwood_logs', 'forbidden_arcanus:edelwood_log')
-  event.add('forge:dragon_scales', 'quark:dragon_scales')
+  event.add('forge:dragon_scales', 'quark:dragon_scale')
 })
