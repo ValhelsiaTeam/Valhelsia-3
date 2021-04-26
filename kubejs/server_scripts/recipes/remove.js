@@ -16,10 +16,6 @@ events.listen('recipes', function (event) {
     // Botania
     'botania:pure_daisy/sand', // Replaced with a different recipe.
 
-    // Charm
-    //'charm:extra_recipes/soul_torch',
-    //'charm:extra_recipes/trident',
-
     // Create
     'create:milling/sandstone', // Replaced to add output parity with IE.
     'create:crushing/nether_wart_block', // Replaced to add output parity with IE.
@@ -139,9 +135,6 @@ events.listen('recipes', function (event) {
   })
 
   var outputRemove = [
-    // Charm
-    'charm:woodcutter', // Replaced with Druidcraft Woodcutter (and soon Environmental Sawmill)
-
     // Comforts
     'comforts:sleeping_bag_white', // This and below are replaced with bedrolls from Upgrade Aquatic / Druidcraft
     'comforts:sleeping_bag_orange',
