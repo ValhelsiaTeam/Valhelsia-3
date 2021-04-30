@@ -160,12 +160,6 @@
         "weight": 8,
         "minCount": 4,
         "maxCount": 4
-      },
-      {
-        "type": "environmental:deer",
-        "weight": 16,
-        "minCount": 1,
-        "maxCount": 4
       }
     ],
     "ambient": [

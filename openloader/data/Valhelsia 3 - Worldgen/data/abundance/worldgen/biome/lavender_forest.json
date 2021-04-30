@@ -118,12 +118,6 @@
         "weight": 5,
         "minCount": 1,
         "maxCount": 1
-      },
-      {
-        "type": "druidcraft:beetle",
-        "weight": 10,
-        "minCount": 1,
-        "maxCount": 2
       }
     ],
     "creature": [
@@ -138,12 +132,6 @@
         "weight": 8,
         "minCount": 4,
         "maxCount": 4
-      },
-      {
-        "type": "druidcraft:lunar_moth",
-        "weight": 2,
-        "minCount": 2,
-        "maxCount": 5
       }
     ],
     "ambient": [
