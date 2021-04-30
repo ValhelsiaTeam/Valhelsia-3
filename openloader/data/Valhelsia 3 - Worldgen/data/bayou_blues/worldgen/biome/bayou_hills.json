@@ -143,26 +143,7 @@
         "maxCount": 1
       }
     ],
-    "creature": [
-      {
-        "type": "druidcraft:lunar_moth",
-        "weight": 2,
-        "minCount": 2,
-        "maxCount": 5
-      },
-      {
-        "type": "environmental:slabfish",
-        "weight": 8,
-        "minCount": 2,
-        "maxCount": 4
-      },
-      {
-        "type": "environmental:duck",
-        "weight": 5,
-        "minCount": 2,
-        "maxCount": 4
-      }
-    ],
+    "creature": [],
     "ambient": [
       {
         "type": "minecraft:bat",

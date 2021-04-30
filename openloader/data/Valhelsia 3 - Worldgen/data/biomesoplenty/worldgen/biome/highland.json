@@ -122,12 +122,6 @@
         "weight": 5,
         "minCount": 4,
         "maxCount": 6
-      },
-      {
-        "type": "environmental:yak",
-        "weight": 20,
-        "minCount": 2,
-        "maxCount": 4
       }
     ],
     "ambient": [
