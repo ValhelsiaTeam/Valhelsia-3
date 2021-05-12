@@ -20,6 +20,9 @@
   "item.eidolon.spawn_necromancer": "Necromancer Spawn Egg",
   "item.forbidden_arcanus.pixie_spawn_egg": "Pixie Spawn Egg",
 
+  "comment.blocks": "--- Blocks with missing or incorrect language entries---",
+  "block.tetra.forged_platform_slab": "Forged Platform Slab",
+
   "comment.enchantment.descriptions": "---Enchantments with missing descriptions---",
   "enchantment.forbidden_arcanus.permafrost.desc": "Allows an Edelwood Bucket to safely carry lava.",
   "enchantment.forbidden_arcanus.indestructible.desc": "Prevents the item from losing durability while carried by a player.",
