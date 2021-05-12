@@ -27,6 +27,8 @@ events.listen('jei.information', function (event) {
     addApotheosisEntry('twilightforest:skeleton_druid_spawn_egg', "Skeleton Druid")
     addApotheosisEntry('twilightforest:swarm_spider_spawn_egg', "Swarm Spider")
     addApotheosisEntry('twilightforest:hedge_spider_spawn_egg', "Hedge Spider")
+    addApotheosisEntry('atum:forsaken_spawn_egg', "Forsaken")
+    addApotheosisEntry('atum:mummy_spawn_egg', "Mummy")
 
     // Apotheosis - Minecraft Animals
     addApotheosisEntry('minecraft:pig_spawn_egg', "Pig", REQUIRES_GRASS)
@@ -46,6 +48,9 @@ events.listen('jei.information', function (event) {
     addApotheosisEntry('twilightforest:deer_spawn_egg', "Wild Deer", REQUIRES_GRASS)
     addApotheosisEntry('twilightforest:bighorn_sheep_spawn_egg', "Bighorn Sheep", REQUIRES_GRASS)
     addApotheosisEntry('twilightforest:wild_boar_spawn_egg', "Wild Boar", REQUIRES_GRASS)
+    addApotheosisEntry('twilightforest:bunny_spawn_egg', "Forest Rabbit", REQUIRES_GRASS)
+    addApotheosisEntry('atum:desert_rabbit_spawn_egg', "Desert Rabbit", REQUIRES_GRASS)
+    addApotheosisEntry('atum:quail_spawn_egg', "Quail", REQUIRES_GRASS)
 
     // Atmospheric
     event.add('atmospheric:aloe_kernels', "Aloe Kernels can be planted on either Arid Sand or Red Arid Sand. When planted on Arid Sand they will grow Yellow Blossoms, and when on Red Arid Sand they instead grow faster.")
