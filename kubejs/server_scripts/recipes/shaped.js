@@ -159,7 +159,15 @@ events.listen('recipes', function (event) {
     S: '#forge:ingots/silver'
   })
 
-  //Quark
+  // Powah!
+  event.shaped(Item.of('powah:uraninite', 1), [
+    'NN',
+    'NN'
+  ], {
+    N: 'mekanism:nugget_uranium'
+  })
+
+  // Quark
   event.shaped(Item.of('quark:ravager_hide', 1), [
     'ABA',
     'BCB',
