@@ -1,5 +1,14 @@
-# The below option makes Vaelzan very sad. :(
-"Creeper explosions destroy blocks" = true
-"Creeper explosions spawn creepies" = true
-"Creepers drop Creeper Spores after they die from an explosion" = true
+
+[entities]
+
+	[entities.creepers]
+		"Creeper explosions destroy blocks" = true
+		"Creeper explosions spawn creepies" = true
+		"Creepers drop Creeper Spores after they die from an explosion" = true
+		"Creepie explosions destroy blocks" = false
+
+	[entities.illagers]
+		#Illagers with banners will no longer give Bad Omen when you kill them
+		#Instead, you will have to place and burn the banner that they drop with flint and steel or a fire charge
+		"Illagers no longer give Bad Omen when killed" = false
 
