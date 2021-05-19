@@ -198,4 +198,25 @@ events.listen('recipes', function (event) {
     B: 'minecraft:book'
   })
 
+  // Valhelsia Structures
+  event.shaped(Item.of('valhelsia_structures:bone_pile', 3), [
+    'BBB'
+  ], {
+    B: 'aquaculture:fish_bones'
+  })
+
+  event.shaped(Item.of('valhelsia_structures:bone_pile', 3), [
+    'BBB'
+  ], {
+    B: 'atum:dusty_bone'
+  })
+
+  event.shaped(Item.of('valhelsia_structures:bone_pile_block', 1), [
+    'BBB',
+    'BBB',
+    'BBB'
+  ], {
+    B: 'aquaculture:fish_bones'
+  })
+
 })
