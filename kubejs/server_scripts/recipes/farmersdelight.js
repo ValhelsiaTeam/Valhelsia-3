@@ -52,6 +52,17 @@ events.listen('recipes', function (event) {
     })
   }
 
+  // Cooking Pot Recipes
+  const cookingPot = (output, input, container) => {
+    event.custom({
+      type: "farmersdelight:cooking",
+      ingredients: input,
+      result: output,
+      container: container,
+      cookingtime: 200
+    })
+  }
+
   // Druidcraft Stripping
   axeStripping('druidcraft:stripped_darkwood_log', 'druidcraft:darkwood_log')
   axeStripping('druidcraft:stripped_darkwood_wood', 'druidcraft:darkwood_wood')
@@ -107,8 +118,16 @@ events.listen('recipes', function (event) {
   knifeCutting([Item.of('quark:cooked_frog_leg', 2)], Ingredient.of('aquaculture:frog_legs_cooked'))
 
   // Environmental
-  knifeCutting([Item.of('environmental:cattail_seeds', 1), Item.of('farmersdelight:straw', 1)], Ingredient.of('biomesoplenty:cattail'))
-  knifeCutting([Item.of('environmental:cattail_seeds', 1), Item.of('farmersdelight:straw', 1)], Ingredient.of('environmental:cattail'))
-  knifeCutting([Item.of('environmental:cattail_seeds', 2), Item.of('farmersdelight:straw', 1)], Ingredient.of('environmental:tall_cattail'))
+  knifeCutting([Item.of('environmental:cattail_seeds'), Item.of('farmersdelight:straw')], Ingredient.of('biomesoplenty:cattail'))
+  knifeCutting([Item.of('environmental:cattail_seeds'), Item.of('farmersdelight:straw')], Ingredient.of('environmental:cattail'))
+  knifeCutting([Item.of('environmental:cattail_seeds', 2), Item.of('farmersdelight:straw')], Ingredient.of('environmental:tall_cattail'))
+
+  // Mystical World
+  knifeCutting([Item.of('mysticalworld:sliced_carrot', 4)], Ingredient.of('#forge:crops/carrot'))
+
+  // ----- Cooking Pot Recipes -----
+  cookingPot(Item.of('aquaculture:turtle_soup'), [Ingredient.of('#aquaculture:turtle'), Ingredient.of('#forge:vegetables/onion')], Item.of('minecraft:bowl'))
+  cookingPot(Item.of('forbidden_arcanus:bat_soup'), [Ingredient.of('#forge:mushrooms'), Ingredient.of('#forge:crops/nether_wart'), Ingredient.of('forbidden_arcanus:bat_wing')], Item.of('minecraft:bowl'))
+  cookingPot(Item.of('mysticalworld:stewed_eggplant'), [Ingredient.of('#forge:crops/eggplant'), Ingredient.of('#forge:mushrooms'), Ingredient.of('#forge:vegetables/onion')], Item.of('minecraft:bowl'))
 
 })
