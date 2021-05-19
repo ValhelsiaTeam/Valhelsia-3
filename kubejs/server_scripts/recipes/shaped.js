@@ -114,6 +114,15 @@ events.listen('recipes', function (event) {
     A: '#forge:fiber_hemp'
   })
 
+  // Environmental
+  // Allow Cattail Thatch to be crafted from BoP Cattail too.
+  event.shaped(Item.of('environmental:cattail_thatch', 4), [
+    'CC',
+    'CC'
+  ], {
+    C: 'biomesoplenty:cattail'
+  })
+
   // Immersive Engineering
   event.shaped(Item.of('immersiveengineering:treated_wood_horizontal', 8), [
     'AAA',
@@ -176,6 +185,17 @@ events.listen('recipes', function (event) {
     A: 'minecraft:rabbit_hide',
     B: 'forbidden_arcanus:rotten_leather',
     C: 'quark:bonded_leather'
+  })
+
+  // Valhelsia
+  // For players who have lost their starting tome.
+  event.shaped({item: 'akashictome:tome', nbt: {"akashictome:is_morphing":true,"akashictome:data":{industrialforegoing:{id:"patchouli:guide_book",Count:1,tag:{"akashictome:displayName":{text:"Industrial Foregoing's Manual"},"patchouli:book":"industrialforegoing:industrial_foregoing","akashictome:is_morphing":true,display:{Name:'{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Industrial Foregoing\'s Manual"}]}'}}},powah:{id:"powah:book",Count:1,tag:{"akashictome:displayName":{text:"Manual (Powah!)"},"akashictome:is_morphing":true,display:{Name:'{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Manual (Powah!)"}]}'}}},botania:{id:"botania:lexicon",Count:1,tag:{"akashictome:displayName":{text:"Lexica Botania"},"akashictome:is_morphing":true,display:{Name:'{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Lexica Botania"}]}'}}},mysticalworld:{id:"mysticalworld:encyclopedia",Count:1,tag:{"akashictome:displayName":{text:"Encyclopædia Mysticum"},"akashictome:is_morphing":true,display:{Name:'{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Encyclopædia Mysticum"}]}'}}},astralsorcery:{id:"astralsorcery:tome",Count:1,tag:{"akashictome:displayName":{text:"Astral Tome"},"akashictome:is_morphing":true,display:{Name:'{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Astral Tome"}]}'}}},immersiveengineering:{id:"immersiveengineering:manual",Count:1,tag:{"akashictome:displayName":{text:"Engineer's Manual"},"akashictome:is_morphing":true,display:{Name:'{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Engineer\'s Manual"}]}'}}},psi:{id:"patchouli:guide_book",Count:1,tag:{"akashictome:displayName":{text:"Encyclopaedia Psionica"},"patchouli:book":"psi:encyclopaedia_psionica","akashictome:is_morphing":true,display:{Name:'{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Encyclopaedia Psionica"}]}'}}},alexsmobs:{id:"alexsmobs:animal_dictionary",Count:1,tag:{"akashictome:displayName":{text:"Animal Dictionary"},"akashictome:is_morphing":true,display:{Name:'{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Animal Dictionary"}]}'}}},bloodmagic:{id:"patchouli:guide_book",Count:1,tag:{"akashictome:displayName":{text:"Sanguine Scientiem"},"patchouli:book":"bloodmagic:guide","akashictome:is_morphing":true,display:{Name:'{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Sanguine Scientiem"}]}'}}},eidolon:{id:"eidolon:codex",Count:1,tag:{"akashictome:displayName":{text:"Ars Ecclesia"},"akashictome:is_morphing":true,display:{Name:'{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Ars Ecclesia"}]}'}}},transport:{id:"patchouli:guide_book",Count:1,tag:{"akashictome:displayName":{text:"Advanced Transport"},"patchouli:book":"transport:guide","akashictome:is_morphing":true,display:{Name:'{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Advanced Transport"}]}'}}},engineersdecor:{id:"patchouli:guide_book",Count:1,tag:{"akashictome:displayName":{text:"Engineer's Decor"},"patchouli:book":"engineersdecor:engineersdecor_manual","akashictome:is_morphing":true,display:{Name:'{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Engineer\'s Decor"}]}'}}}}}}, [
+    ' S ',
+    'SBS',
+    ' S ',
+  ], {
+    S: '#forge:bookshelves',
+    B: 'minecraft:book'
   })
 
 })
