@@ -38,11 +38,27 @@ events.listen('recipes', function (event) {
     })
   }
 
+  // Cutting Board Knife Cutting
+  const knifeCutting = (output, input) => {
+    event.custom({
+      type: "farmersdelight:cutting",
+      ingredients: [
+        input
+      ],
+      tool: {
+        "tag": "forge:tools/knives"
+      },
+      result: output
+    })
+  }
+
+  // Druidcraft Stripping
   axeStripping('druidcraft:stripped_darkwood_log', 'druidcraft:darkwood_log')
   axeStripping('druidcraft:stripped_darkwood_wood', 'druidcraft:darkwood_wood')
   axeStripping('druidcraft:stripped_elder_log', 'druidcraft:elder_log')
   axeStripping('druidcraft:stripped_elder_wood', 'druidcraft:elder_wood')
 
+  // Biomes 'o' Plenty Stripping
   const biomesOPlentyWoodTypes = [
     'fir',
     'redwood',
@@ -65,10 +81,13 @@ events.listen('recipes', function (event) {
     axeChopping('biomesoplenty:'.concat(element).concat('_planks'), 'biomesoplenty:'.concat(element).concat('_trapdoor'))
   })
 
+  // Forbidden and Arcanus
+  axeStripping('forbidden_arcanus:stripped_cherrywood_log', 'forbidden_arcanus:cherrywood_log')
+  axeStripping('forbidden_arcanus:stripped_cherrywood_wood', 'forbidden_arcanus:cherrywood_wood')
+  axeStripping('forbidden_arcanus:stripped_mysterywood_log', 'forbidden_arcanus:mysterywood_log')
+  axeStripping('forbidden_arcanus:stripped_mysterywood_wood', 'forbidden_arcanus:mysterywood_wood')
+
   const choppingWoodTypes = [
-    'enhanced_mushrooms:red_mushroom',
-    'enhanced_mushrooms:brown_mushroom',
-    'enhanced_mushrooms:glowshroom',
     'forbidden_arcanus:edelwood',
     'forbidden_arcanus:cherrywood',
     'forbidden_arcanus:mysterywood',
@@ -79,4 +98,9 @@ events.listen('recipes', function (event) {
     axeChopping(element.concat('_planks'), element.concat('_door'))
     axeChopping(element.concat('_planks'), element.concat('_trapdoor'))
   })
+
+  // Knife Recipes
+  knifeCutting([Item.of('environmental:cattail_seeds', 1), Item.of('farmersdelight:straw', 1)], Ingredient.of('biomesoplenty:cattail'))
+  knifeCutting([Item.of('environmental:cattail_seeds', 1), Item.of('farmersdelight:straw', 1)], Ingredient.of('environmental:cattail'))
+  knifeCutting([Item.of('environmental:cattail_seeds', 2), Item.of('farmersdelight:straw', 1)], Ingredient.of('environmental:tall_cattail'))
 })
