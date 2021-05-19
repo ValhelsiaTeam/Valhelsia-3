@@ -128,6 +128,9 @@ events.listen('recipes', function (event) {
 
     // Quark
     'quark:building/crafting/oak_bookshelf' // Duplicate recipe.
+
+    // Atum 2
+    'atum:pumpkin_pie' // Duplicate recipe.
   ]
 
   idRemove.forEach(function (remove) {
