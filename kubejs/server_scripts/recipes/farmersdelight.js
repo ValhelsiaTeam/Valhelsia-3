@@ -99,8 +99,16 @@ events.listen('recipes', function (event) {
     axeChopping(element.concat('_planks'), element.concat('_trapdoor'))
   })
 
-  // Knife Recipes
+  // ----- Knife Recipes -----
+
+  // Aquaculture
+  knifeCutting([Item.of('aquaculture:frog_legs_raw'), Item.of('minecraft:bone_meal')], Ingredient.of('aquaculture:frog'))
+  knifeCutting([Item.of('quark:frog_leg', 2)], Ingredient.of('aquaculture:frog_legs_raw'))
+  knifeCutting([Item.of('quark:cooked_frog_leg', 2)], Ingredient.of('aquaculture:frog_legs_cooked'))
+
+  // Environmental
   knifeCutting([Item.of('environmental:cattail_seeds', 1), Item.of('farmersdelight:straw', 1)], Ingredient.of('biomesoplenty:cattail'))
   knifeCutting([Item.of('environmental:cattail_seeds', 1), Item.of('farmersdelight:straw', 1)], Ingredient.of('environmental:cattail'))
   knifeCutting([Item.of('environmental:cattail_seeds', 2), Item.of('farmersdelight:straw', 1)], Ingredient.of('environmental:tall_cattail'))
+
 })
