@@ -581,6 +581,7 @@ onEvent('item.tags', event => {
        .add(curioCharmItems);
 
   // Misc Missing Item Tags
+  event.add('forge:seeds/cattail', 'environmental:cattail_seeds')
   event.add('forge:seeds/aubergine', 'mysticalworld:aubergine_seeds')
   event.add('forge:dusts/obsidian', 'create:powdered_obsidian')
   event.add('forbidden_arcanus:edelwood_logs', 'forbidden_arcanus:edelwood_log')

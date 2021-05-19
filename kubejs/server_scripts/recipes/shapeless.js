@@ -28,6 +28,9 @@ events.listen('recipes', function (event) {
   event.shapeless(Item.of('eidolon:pewter_blend', 4), ['#forge:dusts/tin', '#forge:dusts/tin', '#forge:dusts/tin', '#forge:dusts/lead'])
   event.shapeless(Item.of('eidolon:pewter_blend', 4), ['#create:crushed_ores/tin', '#create:crushed_ores/tin', '#create:crushed_ores/tin', '#create:crushed_ores/lead'])
 
+  // Environmental
+  shapelessDamage(Item.of('minecraft:string', 3), [Ingredient.of('#forge:seeds/cattail').toJson(), Ingredient.of('#forge:seeds/cattail').toJson(),Ingredient.of('#forge:seeds/cattail').toJson(), Ingredient.of('mysticalworld:spindle').toJson()], Ingredient.of('mysticalworld:spindle').toJson())
+
   // Farmer's Delight
   event.shapeless('farmersdelight:organic_compost', [
     'minecraft:dirt', 
