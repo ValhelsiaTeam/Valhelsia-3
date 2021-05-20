@@ -1,9 +1,0 @@
-{
-  "type": "immersiveengineering:hammer_crushing",
-  "result": {
-    "item": "mekanism:dirty_dust_uranium"
-  },
-  "input": {
-    "tag": "forge:ores/uranium"
-  }
-}

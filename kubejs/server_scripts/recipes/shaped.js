@@ -140,13 +140,45 @@ events.listen('recipes', function (event) {
   ], {
     S: '#forge:nuggets/silver'
   })
-  
+
   event.shaped(Item.of('immersiveengineering:storage_silver', 1), [
     'SSS',
     'SSS',
     'SSS'
   ], {
     S: '#forge:ingots/silver'
+  })
+
+  event.shaped(Item.of('immersiveengineering:storage_uranium', 1), [
+    'SSS',
+    'SSS',
+    'SSS'
+  ], {
+    S: '#forge:ingots/uranium'
+  })
+
+  event.shaped(Item.of('immersiveengineering:storage_steel', 1), [
+    'SSS',
+    'SSS',
+    'SSS'
+  ], {
+    S: '#forge:ingots/steel'
+  })
+
+  event.shaped(Item.of('immersiveengineering:storage_copper', 1), [
+    'SSS',
+    'SSS',
+    'SSS'
+  ], {
+    S: '#forge:ingots/copper'
+  })
+
+  event.shaped(Item.of('immersiveengineering:storage_lead', 1), [
+    'SSS',
+    'SSS',
+    'SSS'
+  ], {
+    S: '#forge:ingots/lead'
   })
 
   // Industrial Foregoing

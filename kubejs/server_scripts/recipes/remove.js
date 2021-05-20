@@ -130,7 +130,19 @@ events.listen('recipes', function (event) {
     'quark:building/crafting/oak_bookshelf', // Duplicate recipe.
 
     // Atum 2
-    'atum:pumpkin_pie' // Duplicate recipe.
+    'atum:pumpkin_pie', // Duplicate recipe.
+
+    // Immersive Engineering
+    'immersiveengineering:crusher/nether_gold',
+    'immersiveengineering:crafting/nugget_silver_to_ingot_silver',
+    'immersiveengineering:crafting/ingot_silver_to_storage_silver',
+    'immersiveengineering:crafting/storage_silver_to_ingot_silver',
+    'immersiveengineering:crafting/ingot_silver_from_dust',
+    'immersiveengineering:crafting/ingot_silver_from_dust_from_blasting',
+    'immersiveengineering:crafting/ingot_uranium_to_storage_uranium',
+    'immersiveengineering:crafting/ingot_steel_to_storage_steel',
+    'immersiveengineering:crafting/ingot_copper_to_storage_copper',
+    'immersiveengineering:crafting/ingot_lead_to_storage_lead'
   ]
 
   idRemove.forEach(function (remove) {

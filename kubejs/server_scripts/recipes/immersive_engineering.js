@@ -31,9 +31,11 @@ events.listen('recipes', function (event) {
   event.recipes.immersiveengineering.metal_press(Item.of('atmospheric:aloe_leaves', 9), 'atmospheric:aloe_bundle', 'immersiveengineering:mold_unpacking')
   event.recipes.immersiveengineering.metal_press(Item.of('atmospheric:barrel_cactus', 9), 'atmospheric:barrel_cactus_batch', 'immersiveengineering:mold_unpacking')
   event.recipes.immersiveengineering.metal_press(Item.of('atmospheric:passion_vine', 9), 'atmospheric:passion_vine_bundle', 'immersiveengineering:mold_unpacking')
+  event.recipes.immersiveengineering.cloche([Item.of('atmospheric:aloe_leaves', 2), Item.of('minecraft:yellow_dye', 2), 'atmospheric:aloe_kernels'], 'atmospheric:aloe_kernels', 'atmospheric:arid_sand', {type: 'crop', block: 'atmospheric:aloe_vera'}).time(800)
 
   // Autumnity Compat
   event.recipes.immersiveengineering.metal_press(Item.of('autumnity:snail_slime', 9), 'autumnity:snail_slime_block', 'immersiveengineering:mold_unpacking')
+  event.recipes.immersiveengineering.cloche([Item.of('autumnity:foul_berries', 2)], 'autumnity:foul_berry_pips', 'minecraft:dirt', {type: 'crop', block: 'autumnity:foul_berry_bush_pips'}).time(560)
 
   // BoP Compat
   event.recipes.immersiveengineering.crusher('biomesoplenty:white_sand', 'quark:marble')
@@ -50,6 +52,7 @@ events.listen('recipes', function (event) {
 
   // Druidcraft Compat
   squeezer('immersiveengineering:plantoil', 'druidcraft:hemp_seeds', 120)
+  event.recipes.immersiveengineering.cloche(['druidcraft:hemp', 'druidcraft:hemp_seeds'], 'druidcraft:hemp_seeds', 'minecraft:dirt', {type: 'crop', block: 'druidcraft:hemp_crop'}).time(800)
 
   // Eidolon Compat
   event.recipes.immersiveengineering.alloy(Item.of('eidolon:pewter_ingot', 4), Item.of('#forge:ingots/tin', 3), Item.of('#forge:ingots/lead', 1))
@@ -60,6 +63,10 @@ events.listen('recipes', function (event) {
   // Forbidden & Arcanus Compat
   event.recipes.immersiveengineering.crusher(Item.of('forbidden_arcanus:soulless_sand', 2), '#forge:sandstone/soulless')
   squeezer('immersiveengineering:plantoil', 'forbidden_arcanus:golden_orchid_seeds', 40)
+  event.recipes.immersiveengineering.cloche(['forbidden_arcanus:arcane_gold_nugget', 'forbidden_arcanus:golden_orchid_seeds'], 'forbidden_arcanus:golden_orchid_seeds', 'minecraft:dirt', {type: 'crop', block: 'forbidden_arcanus:golden_orchid'}).time(800)
+
+  // Immersive Engineering Compat
+  event.recipes.immersiveengineering.cloche([Item.of('immersiveengineering:hemp_fiber', 2), 'immersiveengineering:seed'], 'immersiveengineering:seed', 'minecraft:dirt', {type: 'crop', block: 'immersiveengineering:hemp'}).time(560)
 
   // Industrial Foregoing Compat
   event.recipes.immersiveengineering.fertilizer('industrialforegoing:fertilizer').growthModifier(1.5)
@@ -79,6 +86,10 @@ events.listen('recipes', function (event) {
 
   // Mystical World Compat
   squeezer('immersiveengineering:plantoil', '#forge:seeds/aubergine', 60)
+  event.recipes.immersiveengineering.cloche([Item.of('mysticalworld:aubergine', 2), 'mysticalworld:aubergine_seeds'], 'mysticalworld:aubergine_seeds', 'minecraft:dirt', {type: 'crop', block: 'mysticalworld:aubergine_crop'}).time(800)
+
+  // Neapolitan Compat
+  event.recipes.immersiveengineering.cloche([Item.of('neapolitan:strawberries', 2)], 'neapolitan:strawberry_pips', 'minecraft:dirt', {type: 'crop', block: 'neapolitan:strawberry_bush'}).time(800)
 
   // Quark Compat
   event.recipes.immersiveengineering.crusher(Item.of('minecraft:soul_sand', 2), '#forge:sandstone/soul')

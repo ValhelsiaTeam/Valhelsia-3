@@ -1,9 +1,0 @@
-{
-  "type": "immersiveengineering:hammer_crushing",
-  "result": {
-    "item": "mekanism:dirty_dust_lead"
-  },
-  "input": {
-    "tag": "forge:ores/lead"
-  }
-}
