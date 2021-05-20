@@ -127,7 +127,7 @@ events.listen('recipes', function (event) {
     'mysticalworld:ingots_silver_to_storage_block', // Duplicate recipe.
 
     // Quark
-    'quark:building/crafting/oak_bookshelf' // Duplicate recipe.
+    'quark:building/crafting/oak_bookshelf', // Duplicate recipe.
 
     // Atum 2
     'atum:pumpkin_pie' // Duplicate recipe.
