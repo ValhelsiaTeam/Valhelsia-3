@@ -35,7 +35,7 @@ events.listen('recipes', function (event) {
 
   // Autumnity Compat
   event.recipes.immersiveengineering.metal_press(Item.of('autumnity:snail_slime', 9), 'autumnity:snail_slime_block', 'immersiveengineering:mold_unpacking')
-  event.recipes.immersiveengineering.cloche([Item.of('autumnity:foul_berries', 2)], 'autumnity:foul_berry_pips', 'minecraft:dirt', {type: 'crop', block: 'autumnity:foul_berry_bush_pips'}).time(560)
+  event.recipes.immersiveengineering.cloche([Item.of('autumnity:foul_berries', 2)], 'autumnity:foul_berry_pips', 'minecraft:dirt', {type: 'crop', block: 'autumnity:foul_berry_bush'}).time(560)
 
   // BoP Compat
   event.recipes.immersiveengineering.crusher('biomesoplenty:white_sand', 'quark:marble')
@@ -66,7 +66,7 @@ events.listen('recipes', function (event) {
   event.recipes.immersiveengineering.cloche(['forbidden_arcanus:arcane_gold_nugget', 'forbidden_arcanus:golden_orchid_seeds'], 'forbidden_arcanus:golden_orchid_seeds', 'minecraft:dirt', {type: 'crop', block: 'forbidden_arcanus:golden_orchid'}).time(800)
 
   // Immersive Engineering Compat
-  event.recipes.immersiveengineering.cloche([Item.of('immersiveengineering:hemp_fiber', 2), 'immersiveengineering:seed'], 'immersiveengineering:seed', 'minecraft:dirt', {type: 'crop', block: 'immersiveengineering:hemp'}).time(560)
+  event.recipes.immersiveengineering.cloche([Item.of('immersiveengineering:hemp_fiber', 2), 'immersiveengineering:seed'], 'immersiveengineering:seed', 'minecraft:dirt', {type: 'hemp', block: 'immersiveengineering:hemp'}).time(560)
 
   // Industrial Foregoing Compat
   event.recipes.immersiveengineering.fertilizer('industrialforegoing:fertilizer').growthModifier(1.5)
