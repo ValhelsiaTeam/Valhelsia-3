@@ -38,6 +38,9 @@
   "entity.minecraft.villager.immersiveengineering.machinist": "Machinist",
   "entity.minecraft.villager.immersiveengineering.electrician": "Electrician",
   "entity.minecraft.villager.immersiveengineering.outfitter": "Outfitter",
-  "entity.minecraft.villager.immersiveengineering.gunsmith": "Gunsmith"
+  "entity.minecraft.villager.immersiveengineering.gunsmith": "Gunsmith",
+
+  "comment.misc": "---Miscellaneous missing language entries---",
+  "tetra.stats.blocking_reflect": "Attack Reflection"
 
 }
