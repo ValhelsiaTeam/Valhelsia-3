@@ -94,9 +94,9 @@ events.listen('recipes', function (event) {
 
   // Forbidden and Arcanus
   axeStripping('forbidden_arcanus:stripped_cherrywood_log', 'forbidden_arcanus:cherrywood_log')
-  axeStripping('forbidden_arcanus:stripped_cherrywood_wood', 'forbidden_arcanus:cherrywood_wood')
+  axeStripping('forbidden_arcanus:stripped_cherrywood', 'forbidden_arcanus:cherrywood')
   axeStripping('forbidden_arcanus:stripped_mysterywood_log', 'forbidden_arcanus:mysterywood_log')
-  axeStripping('forbidden_arcanus:stripped_mysterywood_wood', 'forbidden_arcanus:mysterywood_wood')
+  axeStripping('forbidden_arcanus:stripped_mysterywood', 'forbidden_arcanus:mysterywood')
 
   const choppingWoodTypes = [
     'forbidden_arcanus:edelwood',
