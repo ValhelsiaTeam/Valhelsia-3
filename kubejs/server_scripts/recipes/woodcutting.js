@@ -756,10 +756,12 @@ events.listen('recipes', function (event) {
   // Valhelsia Structures
   minecraftOverworldWoodTypes.forEach(function(element) {
     woodcutting(`valhelsia_structures:${element}_post`, `#minecraft:${element}_logs`, 2)
+    woodcutting(`valhelsia_structures:cut_${element}_post`, `#minecraft:${element}_logs`, 8)
   })
 
   minecraftNetherWoodTypes.forEach(function(element) {
     woodcutting(`valhelsia_structures:${element}_post`, `#minecraft:${element}_stems`, 2)
+    woodcutting(`valhelsia_structures:cut_${element}_post`, `#minecraft:${element}_stems`, 8)
   })
 
 })
