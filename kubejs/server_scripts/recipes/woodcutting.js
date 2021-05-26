@@ -606,6 +606,9 @@ events.listen('recipes', function (event) {
   })
   // Make sure to check this again if Druidcraft adds Crimson / Warped panels.
 
+  // Eidolon
+  woodcutting("eidolon:wooden_altar", "#minecraft:logs", 2)
+
   // Engineer's Decor
   // TODO: A bunch of Treated Wood stuff.
 
@@ -618,12 +621,14 @@ events.listen('recipes', function (event) {
     woodcutting(`farmersdelight:${element}_pantry`, `#minecraft:${element}_stems`, pantries_per_log)
   })
 
+  woodcutting("farmersdelight:cutting_board", "#minecraft:logs", 1)
+
   // Forbidden & Arcanus
   forbiddenArcanusWoodTypes.forEach(function(element) {
     // TODO: Druidcraft Woodcutting recipes for Forbidden and Arcanus.
-    event.recipes.mekanism.sawing(Item.of(`forbidden_arcanus:${element}_planks`, planks_per_log_mekanism), `#forbidden_arcanus:${element}_logs`, Item.of('mekanism:sawdust').chance(0.25))
+    event.recipes.mekanism.sawing(Item.of(`forbidden_arcanus:${element}_planks`, planks_per_log_mekanism), `#forbidden_arcanus:${element}_logs`, Item.of('mekanism:sawdust').chance(sawdust_chance_normal))
   })
-  event.recipes.mekanism.sawing(Item.of('forbidden_arcanus:edelwood_stick', sticks_per_plank_mekanism), 'forbidden_arcanus:edelwood_planks', Item.of('mekanism:sawdust').chance(0.25))
+  event.recipes.mekanism.sawing(Item.of('forbidden_arcanus:edelwood_stick', sticks_per_plank_mekanism), 'forbidden_arcanus:edelwood_planks', Item.of('mekanism:sawdust').chance(sawdust_chance_normal))
 
   // Immersive Engineering
   // TODO: A bunch of Treated Wood stuff.
