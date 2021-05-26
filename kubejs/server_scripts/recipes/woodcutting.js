@@ -690,6 +690,7 @@ events.listen('recipes', function (event) {
   woodcutting("minecraft:bowl", "#minecraft:logs", bowls_per_log)
   woodcutting("minecraft:stick", "#minecraft:logs", sticks_per_log)
   woodcutting("minecraft:stick", "#minecraft:planks", sticks_per_plank)
+  woodcutting("minecraft:composter", "#minecraft:logs", 1)
 
   // Structurize
   woodcutting("structurize:barreldeco_standing", "#minecraft:logs", 1)
@@ -770,6 +771,8 @@ events.listen('recipes', function (event) {
     woodcutting(`quark:${element}_stained_planks_vertical_slab`, `quark:${element}_stained_planks_slab`, 1)
     woodcutting(`quark:${element}_stained_planks_slab`, `quark:${element}_stained_planks_vertical_slab`, 1)
   })
+
+  woodcutting("quark:chute", "#minecraft:logs", 1)
 
   // Valhelsia Structures
   minecraftOverworldWoodTypes.forEach(function(element) {
