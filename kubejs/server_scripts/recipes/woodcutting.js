@@ -758,9 +758,8 @@ events.listen('recipes', function (event) {
     woodcutting(`valhelsia_structures:${element}_post`, `#minecraft:${element}_logs`, 2)
   })
 
-  // TODO: Uncomment this after the Valhelsia Structures update.
-  //minecraftNetherWoodTypes.forEach(function(element) {
-  //  woodcutting(`valhelsia_structures:${element}_post`, `#minecraft:${element}_stems`, 2)
-  //})
+  minecraftNetherWoodTypes.forEach(function(element) {
+    woodcutting(`valhelsia_structures:${element}_post`, `#minecraft:${element}_stems`, 2)
+  })
 
 })
