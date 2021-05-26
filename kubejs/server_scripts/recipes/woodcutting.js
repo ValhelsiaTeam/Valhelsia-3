@@ -140,6 +140,7 @@ events.listen('recipes', function (event) {
   const signs_per_plank = 1
   const slabs_per_plank = 2
   const stairs_per_plank = 1
+  const sticks_per_plank = 2
   
   const buttons_per_log = buttons_per_plank * planks_per_log
   const doors_per_log = doors_per_plank * planks_per_log
@@ -151,6 +152,8 @@ events.listen('recipes', function (event) {
   const slabs_per_log = slabs_per_plank * planks_per_log
   const stairs_per_log = stairs_per_plank * planks_per_log
   const trapdoors_per_log = trapdoors_per_plank * planks_per_log
+  const sticks_per_log = sticks_per_plank * planks_per_log
+  const bowls_per_log = 6
   const wood_per_log = 1
   const stripped_wood_per_log = 1
   const stripped_logs_per_log = 1
@@ -174,6 +177,7 @@ events.listen('recipes', function (event) {
   const vertical_planks_per_log = planks_per_log
   const vertical_slabs_per_log = slabs_per_log
   const val_posts_per_log = 2
+  const val_cut_posts_per_log = val_posts_per_log * 4
   const quark_posts_per_log = 3
 
   const planks_per_panel = 1
@@ -677,6 +681,11 @@ events.listen('recipes', function (event) {
     woodcutting(mcPressurePlates[i], mcPlanks[i], pressure_plates_per_plank)
   }
 
+  woodcutting("minecraft:crafting_table", "#minecraft:logs", 1)
+  woodcutting("minecraft:bowl", "#minecraft:logs", bowls_per_log)
+  woodcutting("minecraft:stick", "#minecraft:logs", sticks_per_log)
+  woodcutting("minecraft:stick", "#minecraft:planks", sticks_per_plank)
+
   // Supplementaries - Vanilla
   woodcutting('supplementaries:item_shelf', '#minecraft:wooden_slabs', 1)
   
@@ -755,13 +764,13 @@ events.listen('recipes', function (event) {
 
   // Valhelsia Structures
   minecraftOverworldWoodTypes.forEach(function(element) {
-    woodcutting(`valhelsia_structures:${element}_post`, `#minecraft:${element}_logs`, 2)
-    woodcutting(`valhelsia_structures:cut_${element}_post`, `#minecraft:${element}_logs`, 8)
+    woodcutting(`valhelsia_structures:${element}_post`, `#minecraft:${element}_logs`, val_posts_per_log)
+    woodcutting(`valhelsia_structures:cut_${element}_post`, `#minecraft:${element}_logs`, val_cut_posts_per_log)
   })
 
   minecraftNetherWoodTypes.forEach(function(element) {
-    woodcutting(`valhelsia_structures:${element}_post`, `#minecraft:${element}_stems`, 2)
-    woodcutting(`valhelsia_structures:cut_${element}_post`, `#minecraft:${element}_stems`, 8)
+    woodcutting(`valhelsia_structures:${element}_post`, `#minecraft:${element}_stems`, val_posts_per_log)
+    woodcutting(`valhelsia_structures:cut_${element}_post`, `#minecraft:${element}_stems`, val_cut_posts_per_log)
   })
 
 })
