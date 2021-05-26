@@ -686,6 +686,10 @@ events.listen('recipes', function (event) {
   woodcutting("minecraft:stick", "#minecraft:logs", sticks_per_log)
   woodcutting("minecraft:stick", "#minecraft:planks", sticks_per_plank)
 
+  // Structurize
+  woodcutting("structurize:barreldeco_standing", "#minecraft:logs", 1)
+  woodcutting("structurize:barreldeco_onside", "#minecraft:logs", 1)
+
   // Supplementaries - Vanilla
   woodcutting('supplementaries:item_shelf', '#minecraft:wooden_slabs', 1)
   
