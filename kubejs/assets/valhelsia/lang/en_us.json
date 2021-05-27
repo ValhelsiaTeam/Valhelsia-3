@@ -22,6 +22,7 @@
 
   "comment.blocks": "--- Blocks with missing or incorrect language entries---",
   "block.tetra.forged_platform_slab": "Forged Platform Slab",
+  "block.tetra.scroll_wall": "Wall-mounted Scroll",
 
   "comment.enchantment.descriptions": "---Enchantments with missing descriptions---",
   "enchantment.forbidden_arcanus.permafrost.desc": "Allows an Edelwood Bucket to safely carry lava.",
