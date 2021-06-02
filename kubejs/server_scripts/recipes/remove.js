@@ -13,6 +13,9 @@ events.listen('recipes', function (event) {
     'aquaculture:tin_can_to_iron_nugget',
     'aquaculture:tin_can_to_iron_nugget_from_blasting',
 
+    // Atum 2
+    'atum:pumpkin_pie', // Duplicate recipe.
+
     // Botania
     'botania:pure_daisy/sand', // Replaced with a different recipe.
 
@@ -44,7 +47,17 @@ events.listen('recipes', function (event) {
     'eidolon:pewter_blend',
     
     // Immersive Engineering
-    'immersive_engineering:crafting/paper_from_sawdust', // Removed since Mekanism method made this redundant.
+    'immersiveengineering:crafting/paper_from_sawdust', // Removed since Mekanism method made this redundant.
+    'immersiveengineering:crusher/nether_gold',
+    'immersiveengineering:crafting/nugget_silver_to_ingot_silver',
+    'immersiveengineering:crafting/ingot_silver_to_storage_silver',
+    'immersiveengineering:crafting/storage_silver_to_ingot_silver',
+    'immersiveengineering:crafting/ingot_silver_from_dust',
+    'immersiveengineering:crafting/ingot_silver_from_dust_from_blasting',
+    'immersiveengineering:crafting/ingot_uranium_to_storage_uranium',
+    'immersiveengineering:crafting/ingot_steel_to_storage_steel',
+    'immersiveengineering:crafting/ingot_copper_to_storage_copper',
+    'immersiveengineering:crafting/ingot_lead_to_storage_lead',
 
     // Industrial Foregoing
     'industrialforegoing:infinity_drill',
@@ -127,22 +140,7 @@ events.listen('recipes', function (event) {
     'mysticalworld:ingots_silver_to_storage_block', // Duplicate recipe.
 
     // Quark
-    'quark:building/crafting/oak_bookshelf', // Duplicate recipe.
-
-    // Atum 2
-    'atum:pumpkin_pie', // Duplicate recipe.
-
-    // Immersive Engineering
-    'immersiveengineering:crusher/nether_gold',
-    'immersiveengineering:crafting/nugget_silver_to_ingot_silver',
-    'immersiveengineering:crafting/ingot_silver_to_storage_silver',
-    'immersiveengineering:crafting/storage_silver_to_ingot_silver',
-    'immersiveengineering:crafting/ingot_silver_from_dust',
-    'immersiveengineering:crafting/ingot_silver_from_dust_from_blasting',
-    'immersiveengineering:crafting/ingot_uranium_to_storage_uranium',
-    'immersiveengineering:crafting/ingot_steel_to_storage_steel',
-    'immersiveengineering:crafting/ingot_copper_to_storage_copper',
-    'immersiveengineering:crafting/ingot_lead_to_storage_lead'
+    'quark:building/crafting/oak_bookshelf' // Duplicate recipe.
   ]
 
   idRemove.forEach(function (remove) {
