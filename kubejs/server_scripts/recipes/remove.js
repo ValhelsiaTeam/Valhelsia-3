@@ -15,9 +15,19 @@ events.listen('recipes', function (event) {
 
     // Atum 2
     'atum:pumpkin_pie', // Duplicate recipe.
+    'atum:gold_ingot', // Duplicate recipe.
+    'atum:gold_ingot_from_blasting', // Duplicate recipe.
+    'atum:iron_ingot', // Duplicate recipe.
+    'atum:iron_ingot_from_blasting', // Duplicate recipe.
 
     // Botania
     'botania:pure_daisy/sand', // Replaced with a different recipe.
+
+    // Blood Magic
+    'bloodmagic:smelting/ingot_gold', // Duplicate recipe.
+    'bloodmagic:arc/ore/dustgold', // Duplicate recipe.
+    'bloodmagic:smelting/ingot_iron', // Duplicate recipe.
+    'bloodmagic:arc/ore/dustiron', // Duplicate recipe.
 
     // Create
     'create:milling/sandstone', // Replaced to add output parity with IE.
@@ -48,6 +58,10 @@ events.listen('recipes', function (event) {
     
     // Immersive Engineering
     'immersiveengineering:crafting/paper_from_sawdust', // Removed since Mekanism method made this redundant.
+    'immersiveengineering:crafting/gold_ingot_from_dust_from_blasting', // Duplicate recipe.
+    'immersiveengineering:crafting/gold_ingot_from_dust', // Duplicate recipe.
+    'immersiveengineering:crafting/iron_ingot_from_dust_from_blasting', // Duplicate recipe.
+    'immersiveengineering:crafting/iron_ingot_from_dust', // Duplicate recipe.
     'immersiveengineering:crusher/nether_gold',
     'immersiveengineering:crafting/nugget_silver_to_ingot_silver',
     'immersiveengineering:crafting/ingot_silver_to_storage_silver',
@@ -138,6 +152,10 @@ events.listen('recipes', function (event) {
 
     // Mystical World
     'mysticalworld:ingots_silver_to_storage_block', // Duplicate recipe.
+    'mysticalworld:gold_ingot_from_smelting_dust', // Duplicate recipe.
+    'mysticalworld:gold_ingot_from_blasting_dust', // Duplicate recipe.
+    'mysticalworld:iron_ingot_from_smelting_dust', // Duplicate recipe.
+    'mysticalworld:iron_ingot_from_blasting_dust', // Duplicate recipe.
 
     // Quark
     'quark:building/crafting/oak_bookshelf' // Duplicate recipe.
