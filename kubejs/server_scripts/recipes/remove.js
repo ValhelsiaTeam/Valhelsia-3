@@ -38,6 +38,9 @@ events.listen('recipes', function (event) {
     'create:compat/atmospheric/cutting/driftwood_log', // Fix erroring recipe.
     'create:compat/atmospheric/cutting/stripped_driftwood_log', // Fix erroring recipe.
 
+    // Create Crafts & Additions
+    'createaddition:compat/immersiveengineering/lapis_sheet_metal_press', // Duplicate recipe.
+
     // Decorative Blocks
     'decorative_blocks:chain', // Replaced with a different recipe.
     'decorative_blocks:dirt_from_rocky_dirt', // Removed entirely, no neat way to uncraft with the new recipe.
