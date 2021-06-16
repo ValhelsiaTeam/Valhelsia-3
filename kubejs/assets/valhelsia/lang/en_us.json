@@ -19,6 +19,8 @@
   "item.eidolon.spawn_zombie_brute": "Zombie Brute Spawn Egg",
   "item.eidolon.spawn_necromancer": "Necromancer Spawn Egg",
   "item.forbidden_arcanus.pixie_spawn_egg": "Pixie Spawn Egg",
+  "item.bloodmagic.ingot_hellforged": "Hellforged Ingot",
+  "item.bloodmagic.sand_hellforged": "Hellforged Sand",
 
   "comment.blocks": "--- Blocks with missing or incorrect language entries---",
   "block.tetra.forged_platform_slab": "Forged Platform Slab",
