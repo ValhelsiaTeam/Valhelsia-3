@@ -1,6 +1,6 @@
 // priority: 80
 onEvent('item.tags', event => {
-  // Allows Autumnity snail slime to be used in a few recipes.
+  // Allows Autumnity snail slime to be used in a few more recipes.
   event.add('forge:slime', 'autumnity:snail_slime')
   event.add('forge:slimeballs', 'autumnity:snail_slime')
   event.add('forge:storageblocks/slime', 'autumnity:snail_slime_block')
@@ -25,10 +25,18 @@ onEvent('item.tags', event => {
   event.get('forge:tools/knives').add(knives)
 
   // Missing #forge:seed item tags.
-  var seeds = [
+  event.get('forge:seeds').add([
+    'environmental:cattail_seeds',
     'mysticalworld:aubergine_seeds'
-  ]
-  event.get('forge:seeds').add(seeds)
+  ])
+
+  // Missing #forge:fruits item tags.
+  event.get('forge:fruits').add([
+    'atmospheric:passionfruit',
+    'autumnity:foul_berries',
+    'minecraft:sweet_berries',
+    'neapolitan:white_strawberries'
+  ])
 
   // Missing #forge:sapling item tags.
   var saplings = [
@@ -86,11 +94,12 @@ onEvent('item.tags', event => {
   event.get('forge:sapling').add(saplings)
 
   // Missing #minecraft:logs_that_burn item tags.
-  var logsBurn = [
+  event.get('minecraft:logs_that_burn').add([
     'forbidden_arcanus:cherrywood_log',
-    'forbidden_arcanus:mysterywood_log'
-  ]
-  event.get('minecraft:logs_that_burn').add(logsBurn)
+    'forbidden_arcanus:mysterywood_log',
+    'forbidden_arcanus:stripped_cherrywood_log',
+    'forbidden_arcanus:stripped_mysterywood_log'
+  ])
 
   // Forbidden and Arcanus Enchantment Indestructible Blacklist.
   var indestructibleBlacklisted = [
@@ -100,7 +109,7 @@ onEvent('item.tags', event => {
     'tetra:modular_bow',
     'tetra:modular_crossbow',
     'tetra:modular_shield',
-    'twilightforest:glass_sword' // Has one durability, meant to be a one use item
+    'twilightforest:glass_sword' // Has one durability, meant to be a one use item.
   ]
   event.get('forbidden_arcanus:indestructible_blacklisted').add(indestructibleBlacklisted)
   
@@ -580,9 +589,20 @@ onEvent('item.tags', event => {
   event.get('curios:charm')
        .add(curioCharmItems);
 
+  // Hanging Leaves
+  event.get('valhelsia:hanging_leaves').add([
+    'bayou_blues:hanging_cypress_leaves',
+    'environmental:hanging_willow_leaves',
+    'environmental:pink_hanging_wisteria_leaves',
+    'environmental:blue_hanging_wisteria_leaves',
+    'environmental:purple_hanging_wisteria_leaves',
+    'environmental:white_hanging_wisteria_leaves'
+  ])
+
   // Misc Missing Item Tags
   event.add('forge:seeds/cattail', 'environmental:cattail_seeds')
   event.add('forge:seeds/aubergine', 'mysticalworld:aubergine_seeds')
+  event.add('forge:fruits/strawberry', 'neapolitan:white_strawberries')
   event.add('forge:dusts/obsidian', 'create:powdered_obsidian')
   event.add('forbidden_arcanus:edelwood_logs', 'forbidden_arcanus:edelwood_log')
   event.add('forge:dragon_scales', 'quark:dragon_scale')
