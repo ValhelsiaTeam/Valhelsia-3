@@ -95,10 +95,20 @@ onEvent('item.tags', event => {
 
   // Missing #minecraft:logs_that_burn item tags.
   event.get('minecraft:logs_that_burn').add([
+    'druidcraft:darkwood_log',
+    'druidcraft_stripped_darkwood_log',
+    'druidcraft:darkwood_wood',
+    'druidcraft_stripped_darkwood_wood',
+    'druidcraft:elder_log',
+    'druidcraft:stripped_elder_log',
+    'druidcraft:elder_wood',
+    'druidcraft:stripped_elder_wood',
     'forbidden_arcanus:cherrywood_log',
-    'forbidden_arcanus:mysterywood_log',
     'forbidden_arcanus:stripped_cherrywood_log',
-    'forbidden_arcanus:stripped_mysterywood_log'
+    'forbidden_arcanus:cherrywood',
+    'forbidden_arcanus:stripped_cherrywood',
+    'forbidden_arcanus:mysterywood',
+    'forbidden_arcanus:stripped_mysterywood'
   ])
 
   // Forbidden and Arcanus Enchantment Indestructible Blacklist.
