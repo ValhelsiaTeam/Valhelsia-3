@@ -96,9 +96,9 @@ onEvent('item.tags', event => {
   // Missing #minecraft:logs_that_burn item tags.
   event.get('minecraft:logs_that_burn').add([
     'druidcraft:darkwood_log',
-    'druidcraft_stripped_darkwood_log',
+    'druidcraft:stripped_darkwood_log',
     'druidcraft:darkwood_wood',
-    'druidcraft_stripped_darkwood_wood',
+    'druidcraft:stripped_darkwood_wood',
     'druidcraft:elder_log',
     'druidcraft:stripped_elder_log',
     'druidcraft:elder_wood',
