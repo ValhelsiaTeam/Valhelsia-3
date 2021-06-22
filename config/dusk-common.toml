@@ -1,0 +1,14 @@
+
+["Dusk settings"]
+	#Percentage of how many more monster can appear at night, default: 30
+	#Range: 1 ~ 5000
+	nightSpawnMod = 30
+	#Base monster cap to act upon, this is the value it'll increase from/reduce to at the start/end of the night. Increase this to see more monsters in the world, default(Vanilla): 70
+	#Range: 1 ~ 5000
+	baseMonsterCap = 100
+	#Min time required to sleep, vanilla min time:12500, Midnight is 18000
+	#Range: 1 ~ 23000
+	minSleepTime = 12500
+	#Disable sleeping?, default: false
+	disableSleep = false
+
