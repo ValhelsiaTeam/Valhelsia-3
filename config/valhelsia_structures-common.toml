@@ -6,14 +6,14 @@
 		#Range: 0 ~ 64
 		flatness_delta = 4
 		#Biomes in which Structures can NOT generate in
-		blacklisted_biomes = ["minecraft:ocean", "minecraft:river", "minecraft:frozen_ocean", "minecraft:frozen_river", "minecraft:beach", "minecraft:deep_ocean", "minecraft:snowy_beach", "minecraft:warm_ocean", "minecraft:lukewarm_ocean", "minecraft:cold_ocean", "minecraft:deep_warm_ocean", "minecraft:deep_lukewarm_ocean", "minecraft:deep_cold_ocean", "minecraft:deep_frozen_ocean"]
+		blacklisted_biomes = ["minecraft:ocean", "minecraft:river", "minecraft:frozen_ocean", "minecraft:frozen_river", "minecraft:beach", "minecraft:deep_ocean", "minecraft:snowy_beach", "minecraft:warm_ocean", "minecraft:lukewarm_ocean", "minecraft:cold_ocean", "minecraft:deep_warm_ocean", "minecraft:deep_lukewarm_ocean", "minecraft:deep_cold_ocean", "minecraft:deep_frozen_ocean", "*ocean", "*lakes", "twilightforest*"]
 
 	[structures.castle]
 		#Generate? [default: true]
 		generate = true
 		#Spawn Chance [default: 0.5]
 		#Range: 0.0 ~ 1.0
-		spawn_chance = 0.5
+		spawn_chance = 0.7
 		#Spacing (in chunks) [default: 40]
 		#Range: 0 ~ 200
 		spacing = 40
@@ -31,7 +31,7 @@
 		generate = true
 		#Spawn Chance [default: 0.6]
 		#Range: 0.0 ~ 1.0
-		spawn_chance = 0.6
+		spawn_chance = 0.8
 		#Spacing (in chunks) [default: 35]
 		#Range: 0 ~ 200
 		spacing = 35
@@ -49,7 +49,7 @@
 		generate = true
 		#Spawn Chance [default: 0.7]
 		#Range: 0.0 ~ 1.0
-		spawn_chance = 0.7
+		spawn_chance = 0.9
 		#Spacing (in chunks) [default: 30]
 		#Range: 0 ~ 200
 		spacing = 30
@@ -67,7 +67,7 @@
 		generate = true
 		#Spawn Chance [default: 0.7]
 		#Range: 0.0 ~ 1.0
-		spawn_chance = 0.7
+		spawn_chance = 0.9
 		#Spacing (in chunks) [default: 30]
 		#Range: 0 ~ 200
 		spacing = 30
@@ -85,7 +85,7 @@
 		generate = true
 		#Spawn Chance [default: 0.7]
 		#Range: 0.0 ~ 1.0
-		spawn_chance = 0.7
+		spawn_chance = 0.9
 		#Spacing (in chunks) [default: 30]
 		#Range: 0 ~ 200
 		spacing = 30
@@ -103,7 +103,7 @@
 		generate = true
 		#Spawn Chance [default: 0.7]
 		#Range: 0.0 ~ 1.0
-		spawn_chance = 0.7
+		spawn_chance = 0.9
 		#Spacing (in chunks) [default: 30]
 		#Range: 0 ~ 200
 		spacing = 30
@@ -121,7 +121,7 @@
 		generate = true
 		#Spawn Chance [default: 0.8]
 		#Range: 0.0 ~ 1.0
-		spawn_chance = 0.8
+		spawn_chance = 1.0
 		#Spacing (in chunks) [default: 25]
 		#Range: 0 ~ 200
 		spacing = 25
@@ -139,7 +139,7 @@
 		generate = true
 		#Spawn Chance [default: 0.85]
 		#Range: 0.0 ~ 1.0
-		spawn_chance = 0.85
+		spawn_chance = 0.95
 		#Spacing (in chunks) [default: 25]
 		#Range: 0 ~ 200
 		spacing = 25
@@ -157,7 +157,7 @@
 		generate = true
 		#Spawn Chance [default: 0.7]
 		#Range: 0.0 ~ 1.0
-		spawn_chance = 0.7
+		spawn_chance = 0.9
 		#Spacing (in chunks) [default: 30]
 		#Range: 0 ~ 200
 		spacing = 30
