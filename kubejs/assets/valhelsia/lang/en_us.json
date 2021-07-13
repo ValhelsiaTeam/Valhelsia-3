@@ -21,10 +21,12 @@
   "item.forbidden_arcanus.pixie_spawn_egg": "Pixie Spawn Egg",
   "item.bloodmagic.ingot_hellforged": "Hellforged Ingot",
   "item.bloodmagic.sand_hellforged": "Hellforged Sand",
+  "item.tetra.scroll.unknown.name": "Scroll",
 
   "comment.blocks": "--- Blocks with missing or incorrect language entries---",
   "block.tetra.forged_platform_slab": "Forged Platform Slab",
   "block.tetra.scroll_wall": "Wall-mounted Scroll",
+  "block.twilightforest.twilight_portal": "Twilight Portal",
 
   "comment.enchantment.descriptions": "---Enchantments with missing descriptions---",
   "enchantment.forbidden_arcanus.permafrost.desc": "Allows an Edelwood Bucket to safely carry lava.",
