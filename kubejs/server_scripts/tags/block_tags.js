@@ -309,8 +309,8 @@ onEvent('block.tags', event => {
     'valhelsia_structures:paper_wall'
   ])
 
-  //event.get('windowlogging:windowable').add([
-  //  'stuff'
-  //])
+  event.get('windowlogging:windowable').add([
+    '#quark:vertical_slabs'
+  ])
 
 })
