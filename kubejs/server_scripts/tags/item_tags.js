@@ -661,6 +661,11 @@ onEvent('item.tags', event => {
   event.get('minecraft:beacon_payment_items')
        .add(beaconPaymentItems)
 
+  // Curios Glasses
+  event.get('curios:glasses').add([
+    'artifacts:night_vision_goggles'
+  ])
+
   // Curios Charms
   event.get('curios:charm').add([
     'twilightforest:charm_of_life_1',
