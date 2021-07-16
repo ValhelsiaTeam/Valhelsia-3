@@ -1,0 +1,26 @@
+{
+  "add_loot": "forbidden_arcanus:blocks/additions/spawner_additions",
+  "conditions": [
+    {
+      "condition": "minecraft:inverted",
+      "term": {
+        "condition": "minecraft:match_tool",
+        "predicate": {
+          "enchantments": [
+            {
+              "enchantment": "minecraft:silk_touch",
+              "levels": {
+                "min": 2
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:blocks/spawner"
+    }
+  ],
+  "type": "valhelsia_core:append_loot"
+}
