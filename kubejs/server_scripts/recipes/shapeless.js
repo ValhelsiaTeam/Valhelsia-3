@@ -22,7 +22,6 @@ events.listen('recipes', function (event) {
 
   // Create
   event.shapeless(Item.of('create:brass_sheet', 1), ['create:brass_ingot', 'immersiveengineering:hammer'])
-  event.shapeless(Item.of('create:lapis_sheet', 1), ['minecraft:lapis_block', 'immersiveengineering:hammer'])
   event.shapeless(Item.of('create:iron_sheet', 1), ['minecraft:iron_ingot', 'immersiveengineering:hammer'])
   event.shapeless(Item.of('create:golden_sheet', 1), ['minecraft:gold_ingot', 'immersiveengineering:hammer'])
   event.shapeless(Item.of('create:copper_sheet', 1), ['#forge:ingots/copper', 'immersiveengineering:hammer'])
