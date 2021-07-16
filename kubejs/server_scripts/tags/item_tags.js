@@ -213,7 +213,10 @@ onEvent('item.tags', event => {
     'absentbydesign:stairs_brown_mushroom',
     'absentbydesign:stairs_mushroom_stem',
     'absentbydesign:stairs_mushroom_polished',
-    'astralsorcery:infused_wood_stairs'
+    'astralsorcery:infused_wood_stairs',
+    'immersiveengineering:stairs_treated_wood_horizontal',
+    'immersiveengineering:stairs_treated_wood_vertical',
+    'immersiveengineering:stairs_treated_wood_packaged'
   ]
 
   var stoneStairs = [
@@ -246,7 +249,10 @@ onEvent('item.tags', event => {
     'absentbydesign:stairs_concrete_red',
     'absentbydesign:stairs_concrete_silver',
     'absentbydesign:stairs_concrete_white',
-    'absentbydesign:stairs_concrete_yellow'
+    'absentbydesign:stairs_concrete_yellow',
+    'immersiveengineering:stairs_concrete',
+    'immersiveengineering:stairs_concrete_tile',
+    'immersiveengineering:stairs_concrete_leaded'
   ]
 
   var woolStairs = [
@@ -312,7 +318,8 @@ onEvent('item.tags', event => {
     'absentbydesign:stairs_snow',
     'absentbydesign:stairs_magma',
     'absentbydesign:stairs_glowstone',
-    'absentbydesign:stairs_sea_lantern'
+    'absentbydesign:stairs_sea_lantern',
+    'immersivepetroleum:asphalt_stairs'
   ]
 
   event.get('minecraft:stairs')
@@ -324,13 +331,19 @@ onEvent('item.tags', event => {
        .add(glassStairs)
        .add(miscStairs)
 
+  event.get('minecraft:wooden_stairs')
+       .add(woodenStairs)
+
   // Missing Slab Tags
   var woodenSlabs = [
     'absentbydesign:slab_mushroom_stem',
     'absentbydesign:slab_red_mushroom',
     'absentbydesign:slab_brown_mushroom',
     'absentbydesign:slab_mushroom_polished',
-    'astralsorcery:infused_wood_slab'
+    'astralsorcery:infused_wood_slab',
+    'immersiveengineering:slab_treated_wood_horizontal',
+    'immersiveengineering:slab_treated_wood_vertical',
+    'immersiveengineering:slab_treated_wood_packaged'
   ]
 
   var stoneSlabs = [
@@ -363,7 +376,11 @@ onEvent('item.tags', event => {
     'absentbydesign:slab_concrete_red',
     'absentbydesign:slab_concrete_silver',
     'absentbydesign:slab_concrete_white',
-    'absentbydesign:slab_concrete_yellow'
+    'absentbydesign:slab_concrete_yellow',
+    'immersiveengineering:slab_hempcrete',
+    'immersiveengineering:slab_concrete',
+    'immersiveengineering:slab_concrete_tile',
+    'immersiveengineering:slab_concrete_leaded',
   ]
 
   var woolSlabs = [
@@ -421,7 +438,8 @@ onEvent('item.tags', event => {
     'absentbydesign:slab_glass_red',
     'absentbydesign:slab_glass_light_gray',
     'absentbydesign:slab_glass_white',
-    'absentbydesign:slab_glass_yellow'
+    'absentbydesign:slab_glass_yellow',
+    'immersiveengineering:slab_insulating_glass'
   ]
 
   var miscSlabs = [
@@ -430,6 +448,7 @@ onEvent('item.tags', event => {
     'absentbydesign:slab_magma',
     'absentbydesign:slab_glowstone',
     'absentbydesign:slab_sea_lantern',
+    'immersivepetroleum:asphalt_slab'
   ]
 
   event.get('minecraft:slabs')
@@ -560,6 +579,61 @@ onEvent('item.tags', event => {
   event.add('engineersdecor:brick_ingots', 'environmental:mud_brick')
   event.add('engineersdecor:brick_ingots', 'biomesoplenty:mud_brick')
 
+  // Missing Glass Panes Tags
+  event.get('forge:glass_panes').add([
+    'atum:white_stained_crystal_glass_pane',
+    'atum:orange_stained_crystal_glass_pane',
+    'atum:magenta_stained_crystal_glass_pane',
+    'atum:light_blue_stained_crystal_glass_pane',
+    'atum:yellow_stained_crystal_glass_pane',
+    'atum:lime_stained_crystal_glass_pane',
+    'atum:pink_stained_crystal_glass_pane',
+    'atum:pink_stained_crystal_glass_pane',
+    'atum:gray_stained_crystal_glass_pane',
+    'atum:light_gray_stained_crystal_glass_pane',
+    'atum:cyan_stained_crystal_glass_pane',
+    'atum:purple_stained_crystal_glass_pane',
+    'atum:blue_stained_crystal_glass_pane',
+    'atum:brown_stained_crystal_glass_pane',
+    'atum:green_stained_crystal_glass_pane',
+    'atum:red_stained_crystal_glass_pane',
+    'atum:black_stained_crystal_glass_pane',
+    'atum:white_stained_palm_framed_crystal_glass_pane',
+    'atum:orange_stained_palm_framed_crystal_glass_pane',
+    'atum:magenta_stained_palm_framed_crystal_glass_pane',
+    'atum:light_blue_stained_palm_framed_crystal_glass_pane',
+    'atum:yellow_stained_palm_framed_crystal_glass_pane',
+    'atum:lime_stained_palm_framed_crystal_glass_pane',
+    'atum:pink_stained_palm_framed_crystal_glass_pane',
+    'atum:pink_stained_palm_framed_crystal_glass_pane',
+    'atum:gray_stained_palm_framed_crystal_glass_pane',
+    'atum:light_gray_stained_palm_framed_crystal_glass_pane',
+    'atum:cyan_stained_palm_framed_crystal_glass_pane',
+    'atum:purple_stained_palm_framed_crystal_glass_pane',
+    'atum:blue_stained_palm_framed_crystal_glass_pane',
+    'atum:brown_stained_palm_framed_crystal_glass_pane',
+    'atum:green_stained_palm_framed_crystal_glass_pane',
+    'atum:red_stained_palm_framed_crystal_glass_pane',
+    'atum:black_stained_palm_framed_crystal_glass_pane',
+    'atum:white_stained_deadwood_framed_crystal_glass_pane',
+    'atum:orange_stained_deadwood_framed_crystal_glass_pane',
+    'atum:magenta_stained_deadwood_framed_crystal_glass_pane',
+    'atum:light_blue_stained_deadwood_framed_crystal_glass_pane',
+    'atum:yellow_stained_deadwood_framed_crystal_glass_pane',
+    'atum:lime_stained_deadwood_framed_crystal_glass_pane',
+    'atum:pink_stained_deadwood_framed_crystal_glass_pane',
+    'atum:pink_stained_deadwood_framed_crystal_glass_pane',
+    'atum:gray_stained_deadwood_framed_crystal_glass_pane',
+    'atum:light_gray_stained_deadwood_framed_crystal_glass_pane',
+    'atum:cyan_stained_deadwood_framed_crystal_glass_pane',
+    'atum:purple_stained_deadwood_framed_crystal_glass_pane',
+    'atum:blue_stained_deadwood_framed_crystal_glass_pane',
+    'atum:brown_stained_deadwood_framed_crystal_glass_pane',
+    'atum:green_stained_deadwood_framed_crystal_glass_pane',
+    'atum:red_stained_deadwood_framed_crystal_glass_pane',
+    'atum:black_stained_deadwood_framed_crystal_glass_pane'
+  ])
+
   // Beacon Payment Items
   var beaconPaymentItems = [
     'aquaculture:neptunium_ingot',
@@ -586,18 +660,15 @@ onEvent('item.tags', event => {
 
   event.get('minecraft:beacon_payment_items')
        .add(beaconPaymentItems)
-  
-  // Missing curios charm tags
-  var curioCharmItems = [
-    "twilightforest:charm_of_life_1",
-    "twilightforest:charm_of_life_2",
-    "twilightforest:charm_of_keeping_1",
-    "twilightforest:charm_of_keeping_2",
-    "twilightforest:charm_of_keeping_3"
-  ]
 
-  event.get('curios:charm')
-       .add(curioCharmItems);
+  // Curios Charms
+  event.get('curios:charm').add([
+    'twilightforest:charm_of_life_1',
+    'twilightforest:charm_of_life_2',
+    'twilightforest:charm_of_keeping_1',
+    'twilightforest:charm_of_keeping_2',
+    'twilightforest:charm_of_keeping_3'
+  ]);
 
   // Hanging Leaves
   event.get('valhelsia:hanging_leaves').add([

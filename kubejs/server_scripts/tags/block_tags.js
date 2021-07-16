@@ -46,21 +46,37 @@ onEvent('block.tags', event => {
 
   // Missing Stair Tags
   var woodenStairs = [
-    'astralsorcery:infused_wood_stairs'
+    'astralsorcery:infused_wood_stairs',
+    'immersiveengineering:stairs_treated_wood_horizontal',
+    'immersiveengineering:stairs_treated_wood_vertical',
+    'immersiveengineering:stairs_treated_wood_packaged'
   ]
 
   var stoneStairs = [
     'astralsorcery:marble_stairs',
-    'astralsorcery:black_marble_stairs'
+    'astralsorcery:black_marble_stairs',
   ]
 
   event.get('minecraft:stairs')
        .add(woodenStairs)
        .add(stoneStairs)
+       .add([
+        'immersiveengineering:stairs_hempcrete',
+        'immersiveengineering:stairs_concrete',
+        'immersiveengineering:stairs_concrete_tile',
+        'immersiveengineering:stairs_concrete_leaded',
+        'immersivepetroleum:asphalt_stairs'
+       ])
+
+  event.get('minecraft:wooden_stairs')
+       .add(woodenStairs)
 
   // Missing Slab Tags
   var woodenSlabs = [
-    'astralsorcery:infused_wood_slab'
+    'astralsorcery:infused_wood_slab',
+    'immersiveengineering:slab_treated_wood_horizontal',
+    'immersiveengineering:slab_treated_wood_vertical',
+    'immersiveengineering:slab_treated_wood_packaged'
   ]
 
   var stoneSlabs = [
@@ -71,6 +87,14 @@ onEvent('block.tags', event => {
   event.get('minecraft:slabs')
        .add(woodenSlabs)
        .add(stoneSlabs)
+       .add([
+        'immersiveengineering:slab_hempcrete',
+        'immersiveengineering:slab_concrete',
+        'immersiveengineering:slab_concrete_tile',
+        'immersiveengineering:slab_concrete_leaded',
+        'immersiveengineering:slab_insulating_glass',
+        'immersivepetroleum:asphalt_slab'
+       ])
 
   event.get('minecraft:wooden_slabs')
        .add(woodenSlabs)
@@ -205,4 +229,88 @@ onEvent('block.tags', event => {
 
   // Misc Missing Block Tags
   event.add('forbidden_arcanus:edelwood_logs', 'forbidden_arcanus:edelwood_log')
+
+  // Missing Glass Panes Tags
+  event.get('forge:glass_panes').add([
+    'atum:white_stained_crystal_glass_pane',
+    'atum:orange_stained_crystal_glass_pane',
+    'atum:magenta_stained_crystal_glass_pane',
+    'atum:light_blue_stained_crystal_glass_pane',
+    'atum:yellow_stained_crystal_glass_pane',
+    'atum:lime_stained_crystal_glass_pane',
+    'atum:pink_stained_crystal_glass_pane',
+    'atum:pink_stained_crystal_glass_pane',
+    'atum:gray_stained_crystal_glass_pane',
+    'atum:light_gray_stained_crystal_glass_pane',
+    'atum:cyan_stained_crystal_glass_pane',
+    'atum:purple_stained_crystal_glass_pane',
+    'atum:blue_stained_crystal_glass_pane',
+    'atum:brown_stained_crystal_glass_pane',
+    'atum:green_stained_crystal_glass_pane',
+    'atum:red_stained_crystal_glass_pane',
+    'atum:black_stained_crystal_glass_pane',
+    'atum:white_stained_palm_framed_crystal_glass_pane',
+    'atum:orange_stained_palm_framed_crystal_glass_pane',
+    'atum:magenta_stained_palm_framed_crystal_glass_pane',
+    'atum:light_blue_stained_palm_framed_crystal_glass_pane',
+    'atum:yellow_stained_palm_framed_crystal_glass_pane',
+    'atum:lime_stained_palm_framed_crystal_glass_pane',
+    'atum:pink_stained_palm_framed_crystal_glass_pane',
+    'atum:pink_stained_palm_framed_crystal_glass_pane',
+    'atum:gray_stained_palm_framed_crystal_glass_pane',
+    'atum:light_gray_stained_palm_framed_crystal_glass_pane',
+    'atum:cyan_stained_palm_framed_crystal_glass_pane',
+    'atum:purple_stained_palm_framed_crystal_glass_pane',
+    'atum:blue_stained_palm_framed_crystal_glass_pane',
+    'atum:brown_stained_palm_framed_crystal_glass_pane',
+    'atum:green_stained_palm_framed_crystal_glass_pane',
+    'atum:red_stained_palm_framed_crystal_glass_pane',
+    'atum:black_stained_palm_framed_crystal_glass_pane',
+    'atum:white_stained_deadwood_framed_crystal_glass_pane',
+    'atum:orange_stained_deadwood_framed_crystal_glass_pane',
+    'atum:magenta_stained_deadwood_framed_crystal_glass_pane',
+    'atum:light_blue_stained_deadwood_framed_crystal_glass_pane',
+    'atum:yellow_stained_deadwood_framed_crystal_glass_pane',
+    'atum:lime_stained_deadwood_framed_crystal_glass_pane',
+    'atum:pink_stained_deadwood_framed_crystal_glass_pane',
+    'atum:pink_stained_deadwood_framed_crystal_glass_pane',
+    'atum:gray_stained_deadwood_framed_crystal_glass_pane',
+    'atum:light_gray_stained_deadwood_framed_crystal_glass_pane',
+    'atum:cyan_stained_deadwood_framed_crystal_glass_pane',
+    'atum:purple_stained_deadwood_framed_crystal_glass_pane',
+    'atum:blue_stained_deadwood_framed_crystal_glass_pane',
+    'atum:brown_stained_deadwood_framed_crystal_glass_pane',
+    'atum:green_stained_deadwood_framed_crystal_glass_pane',
+    'atum:red_stained_deadwood_framed_crystal_glass_pane',
+    'atum:black_stained_deadwood_framed_crystal_glass_pane'
+  ])
+
+  // Windowlogging Support (for things that aren't glass panes)
+  event.get('windowlogging:window').add([
+    'betterendforge:thallasium_bars',
+    'betterendforge:terminite_bars',
+    'botania:mana_glass_pane',
+    'botania:elf_glass_pane',
+    'botania:bifrost_pane',
+    'quark:paper_wall',
+    'quark:paper_wall_big',
+    'quark:paper_wall_sakura',
+    'quark:gold_bars',
+    'quark:red_crystal_pane',
+    'quark:orange_crystal_pane',
+    'quark:yellow_crystal_pane',
+    'quark:green_crystal_pane',
+    'quark:blue_crystal_pane',
+    'quark:indigo_crystal_pane',
+    'quark:violet_crystal_pane',
+    'quark:white_crystal_pane',
+    'quark:black_crystal_pane',
+    '#structurize:paper_walls',
+    'valhelsia_structures:paper_wall'
+  ])
+
+  //event.get('windowlogging:windowable').add([
+  //  'stuff'
+  //])
+
 })
