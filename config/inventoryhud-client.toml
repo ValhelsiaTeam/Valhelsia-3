@@ -88,7 +88,7 @@
 	xPotionPos = 5
 	#Potion HUD position (Y)
 	#Range: -9999 ~ 9999
-	yPotionPos = 5
+	yPotionPos = 24
 	#Helmet position (X)
 	#Range: -9999 ~ 9999
 	helmPosX = 103
