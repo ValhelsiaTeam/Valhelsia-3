@@ -30,6 +30,49 @@ events.listen('recipes', function (event) {
   // Decorative Blocks
   event.recipes.mekanism.crushing('minecraft:coarse_dirt', 'decorative_blocks:rocky_dirt')
 
+  // Mekanism Combiner
+  colors.forEach(function(element) {
+    // Minecraft Dying
+    event.recipes.mekanism.combining(Item.of(`minecraft:${element}_stained_glass`, 16), Item.of('minecraft:glass', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`minecraft:${element}_stained_glass_pane`, 16), Item.of('minecraft:glass_pane', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`minecraft:${element}_wool`, 8), Item.of('#minecraft:wool', 8), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`minecraft:${element}_carpet`, 16), Item.of('#minecraft:carpets', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`minecraft:${element}_terracotta`, 16), Item.of('#forge:terracotta', 16), `#forge:dyes/${element}`)
+
+    // Environmental Terracotta Bricks Dying
+    event.recipes.mekanism.combining(Item.of(`environmental:${element}_terracotta_bricks`, 16), Item.of('environmental:terracotta_bricks', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`environmental:${element}_terracotta_brick_stairs`, 16), Item.of('environmental:terracotta_brick_stairs', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`environmental:${element}_terracotta_brick_slab`, 16), Item.of('environmental:terracotta_brick_slab', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`environmental:${element}_terracotta_brick_vertical_slab`, 16), Item.of('environmental:terracotta_brick_vertical_slab', 16), `#forge:dyes/${element}`)
+
+    // Atum Crystal Glass Dying
+    event.recipes.mekanism.combining(Item.of(`atum:${element}_stained_crystal_glass`, 16), Item.of('atum:crystal_glass', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`atum:${element}_stained_deadwood_framed_crystal_glass`, 16), Item.of('atum:deadwood_framed_crystal_glass', 16), `#forge:dyes/${element}`)
+
+    // BetterEnd Hydralux Petal Block Dying
+    event.recipes.mekanism.combining(Item.of(`betterendforge:hydralux_petal_block_${element}`, 16), Item.of('betterendforge:hydralux_petal_block', 16), `#forge:dyes/${element}`)
+
+    // Kitchen Floor Dying
+    event.recipes.mekanism.combining(Item.of(`cookingforblockheads:${element}_kitchen_floor`, 16), Item.of('cookingforblockheads:white_kitchen_floor', 16), `#forge:dyes/${element}`)
+
+    // Mekanism Plastic Dying
+    event.recipes.mekanism.combining(Item.of(`mekanismadditions:${element}_plastic`, 16), Item.of('#mekanismadditions:plastic_blocks/plastic', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`mekanismadditions:${element}_plastic`, 8), Item.of('mekanism:hdpe_sheet', 8), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`mekanismadditions:${element}_plastic_road`, 16), Item.of('#mekanismadditions:plastic_blocks/road', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`mekanismadditions:${element}_reinforced_plastic`, 16), Item.of('#mekanismadditions:plastic_blocks/reinforced', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`mekanismadditions:${element}_plastic_fence`, 16), Item.of('#forge:fences/plastic', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`mekanismadditions:${element}_plastic_fence_gate`, 16), Item.of('#forge:fence_gates/plastic', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`mekanismadditions:${element}_plastic_transparent_stairs`, 16), Item.of('#forge:stairs/plastic/transparent', 16), `#forge:dyes/${element}`)
+
+    // IE Sheetmetal Dying
+    event.recipes.mekanism.combining(Item.of(`immersiveengineering:sheetmetal_colored_${element}`, 16), Item.of('#forge:sheetmetals', 16), `#forge:dyes/${element}`)
+
+    // Quark Dying
+    event.recipes.mekanism.combining(Item.of(`quark:${element}_framed_glass`, 16), Item.of('quark:framed_glass', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`quark:${element}_stained_planks`, 16), Item.of('#minecraft:planks', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`quark:${element}_shingles`, 16), Item.of('quark:shingles', 16), `#forge:dyes/${element}`)
+  })
+
   // Mekanism - Bio Fuel
   event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 5), '#minecraft:flowers')
   event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), '#minecraft:saplings')
@@ -77,12 +120,6 @@ events.listen('recipes', function (event) {
   event.recipes.mekanism.enriching(Item.of('mekanism:enriched_carbon', 2), '#forge:coal_coke')
   infusionConversion('mekanism:carbon', '#forge:coal_coke', 40)
   infusionConversion('mekanism:carbon', '#forge:dusts/coal_coke', 40)
-
-  // Quark
-  colors.forEach(function(element) {
-    // Stained Planks - get double the planks for the same amount of dye.
-    event.recipes.mekanism.combining(Item.of(`quark:${element}_stained_planks`, 16), Item.of(`#minecraft:planks`, 16), `#forge:dyes/${element}`)
-  })
 
   // Upgrade Aquatic - converts more kelp per dye.
   event.recipes.mekanism.combining(Item.of('upgrade_aquatic:ochre_kelp', 8), Item.of('minecraft:kelp', 8), '#forge:dyes/yellow')

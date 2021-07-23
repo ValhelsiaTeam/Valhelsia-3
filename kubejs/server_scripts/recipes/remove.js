@@ -126,6 +126,8 @@ events.listen('recipes', function (event) {
     'jaopca:mekanism.dust_to_ore.quicksilver',
     'jaopca:mekanism.dust_to_ore.biotite',
     'jaopca:mekanism.dust_to_ore.fluorite',
+    'jaopca:mekanism.dust_to_ore.nebu',
+    'jaopca:mekanism.dust_to_ore.thallasium',
     'mekanism:processing/copper/ore/from_dust',
     'mekanism:processing/lead/ore/from_dust',
     'mekanism:processing/gold/ore/from_dust',
