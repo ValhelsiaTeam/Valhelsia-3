@@ -115,6 +115,9 @@ events.listen('recipes', function (event) {
 
   alchemy(Item.of('biomesoplenty:sprout'), Ingredient.of('mysticalworld:assorted_seeds'), 120, 'botania:shrub_cycle')
 
+  // A method to obtain Druidcraft Blueberries (they don't generate in the current version of Druidcraft)
+  alchemy(Item.of('druidcraft:blueberries'), Ingredient.of('minecraft:sweet_berries'), 120, 'botania:shrub_cycle')
+
   // Conjuration Infusion Recipes
   // ----------------------------
 
