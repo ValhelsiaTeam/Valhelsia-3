@@ -42,6 +42,13 @@
         "negate": false,
         "value": "biomesoplenty:tropic_beach"
       }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": true,
+        "value": "biomesoplenty:cold_desert"
+      }
     ]
   ]
 }
