@@ -47,6 +47,10 @@ events.listen('recipes', function (event) {
 
     // Atum Crystal Glass Dying
     event.recipes.mekanism.combining(Item.of(`atum:${element}_stained_crystal_glass`, 16), Item.of('atum:crystal_glass', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`atum:${element}_stained_crystal_glass_pane`, 16), Item.of('atum:crystal_glass_pane', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`atum:${element}_stained_palm_framed_crystal_glass_pane`, 16), Item.of('atum:palm_framed_crystal_glass_pane', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`atum:${element}_stained_palm_framed_crystal_glass`, 16), Item.of('atum:palm_framed_crystal_glass', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`atum:${element}_stained_deadwood_framed_crystal_glass_pane`, 16), Item.of('atum:deadwood_framed_crystal_glass_pane', 16), `#forge:dyes/${element}`)
     event.recipes.mekanism.combining(Item.of(`atum:${element}_stained_deadwood_framed_crystal_glass`, 16), Item.of('atum:deadwood_framed_crystal_glass', 16), `#forge:dyes/${element}`)
 
     // BetterEnd Hydralux Petal Block Dying
@@ -67,8 +71,12 @@ events.listen('recipes', function (event) {
     // IE Sheetmetal Dying
     event.recipes.mekanism.combining(Item.of(`immersiveengineering:sheetmetal_colored_${element}`, 16), Item.of('#forge:sheetmetals', 16), `#forge:dyes/${element}`)
 
+    // IE Concrete -> Vanilla Concrete
+    event.recipes.mekanism.combining(Item.of(`minecraft:${element}_concrete`, 16), Item.of('immersiveengineering:concrete', 16), `#forge:dyes/${element}`)
+
     // Quark Dying
     event.recipes.mekanism.combining(Item.of(`quark:${element}_framed_glass`, 16), Item.of('quark:framed_glass', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`quark:${element}_framed_glass_pane`, 16), Item.of('quark:framed_glass_pane', 16), `#forge:dyes/${element}`)
     event.recipes.mekanism.combining(Item.of(`quark:${element}_stained_planks`, 16), Item.of('#minecraft:planks', 16), `#forge:dyes/${element}`)
     event.recipes.mekanism.combining(Item.of(`quark:${element}_shingles`, 16), Item.of('quark:shingles', 16), `#forge:dyes/${element}`)
   })
