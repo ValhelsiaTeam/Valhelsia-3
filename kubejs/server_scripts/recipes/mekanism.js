@@ -41,8 +41,10 @@ events.listen('recipes', function (event) {
 
     // Environmental Terracotta Bricks Dying
     event.recipes.mekanism.combining(Item.of(`environmental:${element}_terracotta_bricks`, 16), Item.of('environmental:terracotta_bricks', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`environmental:chiseled_${element}_terracotta_bricks`, 16), Item.of('environmental:chiseled_terracotta_bricks', 16), `#forge:dyes/${element}`)
     event.recipes.mekanism.combining(Item.of(`environmental:${element}_terracotta_brick_stairs`, 16), Item.of('environmental:terracotta_brick_stairs', 16), `#forge:dyes/${element}`)
     event.recipes.mekanism.combining(Item.of(`environmental:${element}_terracotta_brick_slab`, 16), Item.of('environmental:terracotta_brick_slab', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`environmental:${element}_terracotta_brick_wall`, 16), Item.of('environmental:terracotta_brick_wall', 16), `#forge:dyes/${element}`)
     event.recipes.mekanism.combining(Item.of(`environmental:${element}_terracotta_brick_vertical_slab`, 16), Item.of('environmental:terracotta_brick_vertical_slab', 16), `#forge:dyes/${element}`)
 
     // Atum Crystal Glass Dying
@@ -56,8 +58,11 @@ events.listen('recipes', function (event) {
     // BetterEnd Hydralux Petal Block Dying
     event.recipes.mekanism.combining(Item.of(`betterendforge:hydralux_petal_block_${element}`, 16), Item.of('betterendforge:hydralux_petal_block', 16), `#forge:dyes/${element}`)
 
-    // Kitchen Floor Dying
+    // Cooking For Blockheads Kitchen Floor Dying
     event.recipes.mekanism.combining(Item.of(`cookingforblockheads:${element}_kitchen_floor`, 16), Item.of('cookingforblockheads:white_kitchen_floor', 16), `#forge:dyes/${element}`)
+
+    // Druidcraft Soulfire Dying
+    event.recipes.mekanism.combining(Item.of(`druidcraft:${element}_soulfire`, 8), Item.of('#druidcraft:soulfire', 8), `#forge:dyes/${element}`)
 
     // Mekanism Plastic Dying
     event.recipes.mekanism.combining(Item.of(`mekanismadditions:${element}_plastic`, 16), Item.of('#mekanismadditions:plastic_blocks/plastic', 16), `#forge:dyes/${element}`)
