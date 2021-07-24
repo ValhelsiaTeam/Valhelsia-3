@@ -55,6 +55,9 @@ events.listen('recipes', function (event) {
   // No idea why this recipe was gone, guessing some mod removed it in error.
   event.shapeless(Item.of('minecraft:trapped_chest', 1), ['#forge:chests/wooden', 'minecraft:tripwire_hook'])
 
+  // Quark
+  event.shapeless(Item.of('quark:cobbled_deepslate', 2), ['minecraft:basalt', 'minecraft:cobblestone'])
+
   // Upgrade Aquatic
   event.shapeless('upgrade_aquatic:driftwood', 'aquaculture:driftwood')
   event.shapeless('upgrade_aquatic:ochre_kelp', ['minecraft:kelp', '#forge:dyes/yellow'])
