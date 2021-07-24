@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_side",
+  "textures": {
+    "texture": "immersiveposts:block/constantan_fence_side"
+  }
+}

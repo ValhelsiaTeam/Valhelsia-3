@@ -1,0 +1,6 @@
+{
+	"parent": "block/fence_post",
+	"textures": {
+		"texture": "immersiveposts:block/uranium_fence"
+	}
+}

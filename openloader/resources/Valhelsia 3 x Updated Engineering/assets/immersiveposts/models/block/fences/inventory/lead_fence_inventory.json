@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_inventory",
+  "textures": {
+    "texture": "immersiveposts:block/lead_fence_item"
+  }
+}
