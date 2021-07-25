@@ -10,6 +10,16 @@
         "type": "BIOME_DICT",
         "negate": false,
         "value": "swamp"
+      },
+      {
+        "type": "REGISTRY_NAME",
+        "negate": true,
+        "value": "biomesoplenty:tundra_bog"
+      },
+      {
+        "type": "BIOME_DICT",
+        "negate": true,
+        "value": "cold"
       }
     ],
     [
@@ -32,22 +42,8 @@
     [
       {
         "type": "REGISTRY_NAME",
-        "negate": true,
-        "value": "biomesoplenty:tundra_bog"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
         "negate": false,
         "value": "biomesoplenty:tropic_beach"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": true,
-        "value": "biomesoplenty:cold_desert"
       }
     ]
   ]
