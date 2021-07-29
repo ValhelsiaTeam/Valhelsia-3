@@ -21,6 +21,12 @@ events.listen('recipes', function (event) {
   // Aquaculture
   event.recipes.mekanism.crushing(Item.of('minecraft:bone_meal', 5), 'aquaculture:fish_bones')
 
+  // Atmospheric
+  event.recipes.mekanism.crushing(Item.of('atmospheric:arid_sand', 2), '#forge:sandstone/arid')
+  event.recipes.mekanism.crushing(Item.of('atmospheric:red_arid_sand', 2), '#forge:sandstone/red_arid')
+  event.recipes.mekanism.crushing(Item.of('atmospheric:arid_sand', 1), 'create:gabbro')
+  event.recipes.mekanism.crushing(Item.of('atmospheric:red_arid_sand', 1), 'quark:jasper')
+
   // Atum
   event.recipes.mekanism.crushing(Item.of('minecraft:bone_meal', 9), 'atum:dirty_bone_block')
 
@@ -40,6 +46,9 @@ events.listen('recipes', function (event) {
 
   // Decorative Blocks
   event.recipes.mekanism.crushing('minecraft:coarse_dirt', 'decorative_blocks:rocky_dirt')
+
+  // Forbidden and Arcanus
+  event.recipes.mekanism.crushing(Item.of('forbidden_arcanus:soulless_sand', 2), '#forge:sandstone/soulless')
 
   // Mekanism Combiner
   colors.forEach(function(element) {

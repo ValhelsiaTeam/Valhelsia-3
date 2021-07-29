@@ -35,6 +35,8 @@ events.listen('recipes', function (event) {
   event.recipes.immersiveengineering.metal_press(Item.of('atmospheric:barrel_cactus', 9), 'atmospheric:barrel_cactus_batch', 'immersiveengineering:mold_unpacking')
   event.recipes.immersiveengineering.metal_press(Item.of('atmospheric:passion_vine', 9), 'atmospheric:passion_vine_bundle', 'immersiveengineering:mold_unpacking')
   event.recipes.immersiveengineering.cloche([Item.of('atmospheric:aloe_leaves', 2), Item.of('minecraft:yellow_dye', 2), 'atmospheric:aloe_kernels'], 'atmospheric:aloe_kernels', 'atmospheric:arid_sand', {type: 'crop', block: 'atmospheric:aloe_vera'}).time(800)
+  event.recipes.immersiveengineering.crusher('atmospheric:arid_sand', 'create:gabbro')
+  event.recipes.immersiveengineering.crusher('atmospheric:red_arid_sand', 'quark:jasper')
 
   // Atum Compat
   event.recipes.immersiveengineering.crusher(Item.of('minecraft:bone_meal', 9), 'atum:dirty_bone_block')
@@ -64,7 +66,7 @@ events.listen('recipes', function (event) {
   fermenter('immersiveengineering:ethanol', '#forge:seeds/rice', 80) // Also forward compatible with Environmental.
 
   // Forbidden & Arcanus Compat
-  event.recipes.immersiveengineering.crusher(Item.of('forbidden_arcanus:soulless_sand', 2), '#forge:sandstone/soulless')
+  event.recipes.immersiveengineering.crusher(Item.of('forbidden_arcanus:soulless_sand', 2), '#forge:sandstone/soulless', Item.of('bloodmagic:saltpeter').withChance(0.5))
   squeezer('immersiveengineering:plantoil', 'forbidden_arcanus:golden_orchid_seeds', 40)
   event.recipes.immersiveengineering.cloche(['forbidden_arcanus:arcane_gold_nugget', 'forbidden_arcanus:golden_orchid_seeds'], 'forbidden_arcanus:golden_orchid_seeds', 'minecraft:dirt', {type: 'crop', block: 'forbidden_arcanus:golden_orchid'}).time(800)
 
@@ -97,7 +99,7 @@ events.listen('recipes', function (event) {
   event.recipes.immersiveengineering.cloche([Item.of('neapolitan:strawberries', 2)], 'neapolitan:strawberry_pips', 'minecraft:dirt', {type: 'crop', block: 'neapolitan:strawberry_bush'}).time(800)
 
   // Quark Compat
-  event.recipes.immersiveengineering.crusher(Item.of('minecraft:soul_sand', 2), '#forge:sandstone/soul')
+  event.recipes.immersiveengineering.crusher(Item.of('minecraft:soul_sand', 2), '#forge:sandstone/soul', Item.of('bloodmagic:saltpeter').withChance(0.5))
   
   // Titanium Compat (Industrial Foregoing)
   event.recipes.immersiveengineering.metal_press('titanium:diamond_gear', Item.of('minecraft:diamond', 4), 'immersiveengineering:mold_gear')

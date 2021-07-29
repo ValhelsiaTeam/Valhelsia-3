@@ -41,6 +41,7 @@ events.listen('recipes', function (event) {
   event.recipes.create.cutting('forbidden_arcanus:stripped_mysterywood_log', 'forbidden_arcanus:mysterywood_log')
   event.recipes.create.cutting(Item.of('forbidden_arcanus:cherrywood_planks', 6), 'forbidden_arcanus:stripped_cherrywood_log')
   event.recipes.create.cutting(Item.of('forbidden_arcanus:mysterywood_planks', 6), 'forbidden_arcanus:stripped_mysterywood_log')
+  crushAndMill([Item.of('forbidden_arcanus:soulless', 2), Item.of('bloodmagic:saltpeter').withChance(0.5)], '#forge:sandstone/soulless')
 
   // Mekanism
   event.recipes.create.splashing([Item.of('mekanism:nugget_copper', 10), Item.of('mekanism:nugget_copper', 5).withChance(0.5)], 'create:crushed_copper_ore')
