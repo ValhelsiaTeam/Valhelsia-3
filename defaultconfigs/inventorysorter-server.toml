@@ -1,8 +1,0 @@
-
-#Inventory sorter blacklists
-[blacklists]
-	#Container blacklist
-	containerBlacklist = ["botania:flower_bag"]
-	#Slot type blacklist
-	slotBlacklist = []
-
