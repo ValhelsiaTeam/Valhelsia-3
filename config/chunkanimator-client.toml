@@ -1,0 +1,20 @@
+#Defines how the chunks should be animated.
+# BELOW: Chunks always appear from below.
+# ABOVE: Chunks always appear from above.
+# HYBRID: Chunks appear from below if they are lower than the horizon and from above if they are higher than the horizon.
+# HORIZONTAL_SLIDE: Chunks "slide in" from their respective cardinal direction (relative to the player).
+# HORIZONTAL_SLIDE_ALTERNATE: Same as HORIZONTAL_SLIDE, but the cardinal direction of a chunk is determined slightly different (just try both :D).
+#
+#Allowed Values: BELOW, ABOVE, HYBRID, HORIZONTAL_SLIDE, HORIZONTAL_SLIDE_ALTERNATE
+mode = "BELOW"
+#Defines the function that should be used to control the movement of chunks.
+#If you want a visual comparison there is a link on the CurseForge page.
+#
+#Allowed Values: LINEAR, QUAD, CUBIC, QUART, QUINT, EXPO, SINE, CIRC, BACK, BOUNCE, ELASTIC
+easingFunction = "CUBIC"
+#Defines how long the animation should last (in milliseconds).
+#Range: > 0
+animationDuration = 1350
+#If enabled, chunks that are next to the player will not animate.
+disableAroundPlayer = true
+
