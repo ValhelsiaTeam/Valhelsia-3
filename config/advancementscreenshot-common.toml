@@ -1,0 +1,7 @@
+
+[General]
+	#If enabled, shows the normal screenshot taken (same as F2) message when a screenshot is taken after an advancement.
+	showScreenshotTakenMessage = false
+	#If enabled, also takes screenshots when new recipes are unlocked.
+	countNewRecipeAdvancements = false
+
