@@ -29,8 +29,8 @@ chunkGrid:-5
 slimeChunks:false
 playersColor:15
 mobsColor:14
-hostileColor:14
-itemsColor:12
+hostileColor:12
+itemsColor:9
 otherColor:5
 otherTeamColor:-1
 mapSafeMode:false
@@ -41,7 +41,7 @@ blockColours:0
 lighting:true
 dotsScale:1.0
 compassOverWaypoints:false
-showBiome:false
+showBiome:true
 showEntityHeight:true
 showFlowers:true
 keepWaypointNames:false
