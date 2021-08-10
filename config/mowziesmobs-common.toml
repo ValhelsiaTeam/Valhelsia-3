@@ -327,7 +327,7 @@
 			#A blank entry means all biomes. No entries means no biomes.
 			#For example, 'FOREST,MAGICAL,!SNOWY' would mean all biomes that are magical forests but not snowy
 			#'!MOUNTAIN' would mean all non-mountain biomes
-			biome_type = ["FOREST,MAGICAL,!SNOWY"]
+			biome_type = ["FOREST,MAGICAL,!SNOWY", "PLAINS,MAGICAL,!SNOWY"]
 			#Allow spawns in these biomes regardless of the biome type settings
 			biome_whitelist = ["minecraft:dark_forest", "minecraft:dark_forest_hills"]
 			#Prevent spawns in these biomes regardless of the biome type settings
