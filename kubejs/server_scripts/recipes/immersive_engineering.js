@@ -11,7 +11,6 @@ events.listen('recipes', function (event) {
         },
         input: Ingredient.of(input).toJson(),
         energy: 6400
-      
     })
   }
 
@@ -60,7 +59,7 @@ events.listen('recipes', function (event) {
   event.recipes.immersiveengineering.cloche(['druidcraft:hemp', 'druidcraft:hemp_seeds'], 'druidcraft:hemp_seeds', 'minecraft:dirt', {type: 'crop', block: 'druidcraft:hemp_crop'}).time(800)
 
   // Eidolon Compat
-  event.recipes.immersiveengineering.alloy(Item.of('eidolon:pewter_ingot', 4), Item.of('#forge:ingots/tin', 3), Item.of('#forge:ingots/lead', 1))
+  event.recipes.immersiveengineering.alloy(Item.of('eidolon:pewter_ingot', 4), Ingredient.of('#forge:ingots/tin', 3), Ingredient.of('#forge:ingots/lead', 1))
 
   // Farmer's Delight Compat
   fermenter('immersiveengineering:ethanol', '#forge:seeds/rice', 80) // Also forward compatible with Environmental.
@@ -85,7 +84,7 @@ events.listen('recipes', function (event) {
   // Minecraft Tweaks
   event.recipes.immersiveengineering.crusher('minecraft:red_sand', 'minecraft:granite')
   // Blaze Rods are Expensive to prevent exploiting - needs to match the most dust you can get from processing them.
-  event.recipes.immersiveengineering.metal_press('minecraft:blaze_rod', Item.of('minecraft:blaze_powder', 6), 'immersiveengineering:mold_rod') 
+  event.recipes.immersiveengineering.metal_press('minecraft:blaze_rod', Item.of('minecraft:blaze_powder', 6), 'immersiveengineering:mold_rod')
   event.recipes.immersiveengineering.metal_press(Item.of('minecraft:dried_kelp', 9), 'minecraft:dried_kelp_block', 'immersiveengineering:mold_unpacking')
   event.recipes.immersiveengineering.metal_press(Item.of('minecraft:nether_wart', 4), 'minecraft:nether_wart_block', 'immersiveengineering:mold_unpacking')
   event.recipes.immersiveengineering.crusher(Item.of('minecraft:bone_meal', 9), 'minecraft:bone_block')
@@ -93,19 +92,19 @@ events.listen('recipes', function (event) {
   // Mystical World Compat
   squeezer('immersiveengineering:plantoil', '#forge:seeds/aubergine', 60)
   event.recipes.immersiveengineering.cloche([Item.of('mysticalworld:aubergine', 2), 'mysticalworld:aubergine_seeds'], 'mysticalworld:aubergine_seeds', 'minecraft:dirt', {type: 'crop', block: 'mysticalworld:aubergine_crop'}).time(800)
-  event.recipes.immersiveengineering.crusher(Item.of('minecraft:bone_meal', 15), 'mysticalworld:antler')
+  event.recipes.immersiveengineering.crusher(Item.of('minecraft:bone_meal', 15), 'mysticalworld:antlers')
 
   // Neapolitan Compat
   event.recipes.immersiveengineering.cloche([Item.of('neapolitan:strawberries', 2)], 'neapolitan:strawberry_pips', 'minecraft:dirt', {type: 'crop', block: 'neapolitan:strawberry_bush'}).time(800)
 
   // Quark Compat
   event.recipes.immersiveengineering.crusher(Item.of('minecraft:soul_sand', 2), '#forge:sandstone/soul', Item.of('bloodmagic:saltpeter').withChance(0.5))
-  
+
   // Titanium Compat (Industrial Foregoing)
   event.recipes.immersiveengineering.metal_press('titanium:diamond_gear', Item.of('minecraft:diamond', 4), 'immersiveengineering:mold_gear')
 
   // Upgrade Aquatic Compat
   event.recipes.immersiveengineering.metal_press('upgrade_aquatic:prismarine_rod', Item.of('minecraft:prismarine_shard', 2), 'immersiveengineering:mold_rod')
   event.recipes.immersiveengineering.crusher(Item.of('minecraft:bone_meal', 10), 'upgrade_aquatic:thrasher_tooth')
-  
+
 })
