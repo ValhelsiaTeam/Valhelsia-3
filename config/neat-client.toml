@@ -23,4 +23,4 @@
 	"Show entities with full health" = true
 	"Show Debug Info with F3" = true
 	#Blacklist uses entity IDs, not their display names. Use F3 to see them in the Neat bar.
-	Blacklist = ["minecraft:shulker", "minecraft:armor_stand", "minecraft:cod", "minecraft:salmon", "minecraft:pufferfish", "minecraft:tropical_fish"]
+	Blacklist = ["minecraft:shulker", "minecraft:armor_stand", "minecraft:cod", "minecraft:salmon", "minecraft:pufferfish", "minecraft:tropical_fish", "supplementaries:firefly", "upgrade_aquatic:perch", "upgrade_aquatic:lionfish", "upgrade_aquatic:pike"]
