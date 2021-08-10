@@ -1931,7 +1931,7 @@
 	"Matrix Enchanting" = false
 	Magnets = true
 	Pipes = true
-	Crate = false
+	Crate = true
 
 	[oddities.totem_of_holding]
 		#Set this to false to remove the behaviour where totems destroy themselves if the player dies again.
@@ -2000,7 +2000,7 @@
 		"Base Ravager Hide Drop" = 1
 		"Extra Chance Per Looting" = 0.5
 		#Set this to true to allow the backpacks to be unequipped even with items in them
-		"Super Op Mode" = false
+		"Super Op Mode" = true
 
 	[oddities.pipes]
 		#Set to 0 if you don't want pipes to have a max amount of items
