@@ -103,12 +103,22 @@
 		#Generate Petrified Roots? [default: true]
 		generate = true
 
+	[world_gen.nipa]
+		#Generate Nipas? [default: true]
+		generate = true
+		#Nipa Structure Spacing [default: 35]
+		#Range: > 0
+		spacing = 35
+		#Nipa Structure Separation [default: 8]
+		#Range: > 0
+		separation = 8
+
 [items]
 
 	[items.orb_of_temporary_flight]
 		#Flight Time the Orb grants (in ticks) [default: 6000]
 		#Range: 20 ~ 120000
-		time = 6000
+		time = 12000
 
 	[items.edelwood_bucket]
 		#How many Water Blocks the Edelwood Bucket can store [default: 4]
