@@ -45,6 +45,13 @@
         "negate": false,
         "value": "biomesoplenty:tropic_beach"
       }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "atum:oasis"
+      }
     ]
   ]
 }
