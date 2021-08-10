@@ -4,7 +4,7 @@ events.listen('recipes', function (event) {
 
   // NOTE: Mekanism Sawmill recipes can be found in woodcutting.js so that arrays can be reused.
 
-  // Infusion Conversion 
+  // Infusion Conversion
   const infusionConversion = (type, ingredient, amount) => {
     event.custom({
       type: 'mekanism:infusion_conversion',
@@ -42,7 +42,7 @@ events.listen('recipes', function (event) {
 
   // Create
   event.recipes.mekanism.metallurgic_infusing('create:rose_quartz', 'minecraft:quartz', 'mekanism:redstone', 80) // 1 redstone = 10. Keeping in line w/ manual recipe
-  event.recipes.mekanism.combining(Item.of('create:polished_rose_quartz', 8), Item.of('create:rose_quartz', 8), '#forge:sandstone')
+  event.recipes.mekanism.combining(Item.of('create:polished_rose_quartz', 8), Ingredient.of('create:rose_quartz', 8), '#forge:sandstone')
 
   // Decorative Blocks
   event.recipes.mekanism.crushing('minecraft:coarse_dirt', 'decorative_blocks:rocky_dirt')
@@ -53,57 +53,57 @@ events.listen('recipes', function (event) {
   // Mekanism Combiner
   colors.forEach(function(element) {
     // Minecraft Dying
-    event.recipes.mekanism.combining(Item.of(`minecraft:${element}_stained_glass`, 16), Item.of('minecraft:glass', 16), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`minecraft:${element}_stained_glass_pane`, 16), Item.of('minecraft:glass_pane', 16), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`minecraft:${element}_wool`, 8), Item.of('#minecraft:wool', 8), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`minecraft:${element}_carpet`, 16), Item.of('#minecraft:carpets', 16), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`minecraft:${element}_terracotta`, 16), Item.of('#forge:terracotta', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`minecraft:${element}_stained_glass`, 16), Ingredient.of('minecraft:glass', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`minecraft:${element}_stained_glass_pane`, 16), Ingredient.of('minecraft:glass_pane', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`minecraft:${element}_wool`, 8), Ingredient.of('#minecraft:wool', 8), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`minecraft:${element}_carpet`, 16), Ingredient.of('#minecraft:carpets', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`minecraft:${element}_terracotta`, 16), Ingredient.of('#forge:terracotta', 16), `#forge:dyes/${element}`)
 
     // Environmental Terracotta Bricks Dying
-    event.recipes.mekanism.combining(Item.of(`environmental:${element}_terracotta_bricks`, 16), Item.of('environmental:terracotta_bricks', 16), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`environmental:chiseled_${element}_terracotta_bricks`, 16), Item.of('environmental:chiseled_terracotta_bricks', 16), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`environmental:${element}_terracotta_brick_stairs`, 16), Item.of('environmental:terracotta_brick_stairs', 16), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`environmental:${element}_terracotta_brick_slab`, 16), Item.of('environmental:terracotta_brick_slab', 16), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`environmental:${element}_terracotta_brick_wall`, 16), Item.of('environmental:terracotta_brick_wall', 16), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`environmental:${element}_terracotta_brick_vertical_slab`, 16), Item.of('environmental:terracotta_brick_vertical_slab', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`environmental:${element}_terracotta_bricks`, 16), Ingredient.of('environmental:terracotta_bricks', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`environmental:chiseled_${element}_terracotta_bricks`, 16), Ingredient.of('environmental:chiseled_terracotta_bricks', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`environmental:${element}_terracotta_brick_stairs`, 16), Ingredient.of('environmental:terracotta_brick_stairs', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`environmental:${element}_terracotta_brick_slab`, 16), Ingredient.of('environmental:terracotta_brick_slab', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`environmental:${element}_terracotta_brick_wall`, 16), Ingredient.of('environmental:terracotta_brick_wall', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`environmental:${element}_terracotta_brick_vertical_slab`, 16), Ingredient.of('environmental:terracotta_brick_vertical_slab', 16), `#forge:dyes/${element}`)
 
     // Atum Crystal Glass Dying
-    event.recipes.mekanism.combining(Item.of(`atum:${element}_stained_crystal_glass`, 16), Item.of('atum:crystal_glass', 16), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`atum:${element}_stained_crystal_glass_pane`, 16), Item.of('atum:crystal_glass_pane', 16), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`atum:${element}_stained_palm_framed_crystal_glass_pane`, 16), Item.of('atum:palm_framed_crystal_glass_pane', 16), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`atum:${element}_stained_palm_framed_crystal_glass`, 16), Item.of('atum:palm_framed_crystal_glass', 16), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`atum:${element}_stained_deadwood_framed_crystal_glass_pane`, 16), Item.of('atum:deadwood_framed_crystal_glass_pane', 16), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`atum:${element}_stained_deadwood_framed_crystal_glass`, 16), Item.of('atum:deadwood_framed_crystal_glass', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`atum:${element}_stained_crystal_glass`, 16), Ingredient.of('atum:crystal_glass', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`atum:${element}_stained_crystal_glass_pane`, 16), Ingredient.of('atum:crystal_glass_pane', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`atum:${element}_stained_palm_framed_crystal_glass_pane`, 16), Ingredient.of('atum:palm_framed_crystal_glass_pane', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`atum:${element}_stained_palm_framed_crystal_glass`, 16), Ingredient.of('atum:palm_framed_crystal_glass', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`atum:${element}_stained_deadwood_framed_crystal_glass_pane`, 16), Ingredient.of('atum:deadwood_framed_crystal_glass_pane', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`atum:${element}_stained_deadwood_framed_crystal_glass`, 16), Ingredient.of('atum:deadwood_framed_crystal_glass', 16), `#forge:dyes/${element}`)
 
     // BetterEnd Hydralux Petal Block Dying
-    event.recipes.mekanism.combining(Item.of(`betterendforge:hydralux_petal_block_${element}`, 16), Item.of('betterendforge:hydralux_petal_block', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`betterendforge:hydralux_petal_block_${element}`, 16), Ingredient.of('betterendforge:hydralux_petal_block', 16), `#forge:dyes/${element}`)
 
     // Cooking For Blockheads Kitchen Floor Dying
-    event.recipes.mekanism.combining(Item.of(`cookingforblockheads:${element}_kitchen_floor`, 16), Item.of('cookingforblockheads:white_kitchen_floor', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`cookingforblockheads:${element}_kitchen_floor`, 16), Ingredient.of('cookingforblockheads:white_kitchen_floor', 16), `#forge:dyes/${element}`)
 
     // Druidcraft Soulfire Dying
-    event.recipes.mekanism.combining(Item.of(`druidcraft:${element}_soulfire`, 8), Item.of('#druidcraft:soulfire', 8), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`druidcraft:${element}_soulfire`, 8), Ingredient.of('#druidcraft:soulfire', 8), `#forge:dyes/${element}`)
 
     // Mekanism Plastic Dying
-    event.recipes.mekanism.combining(Item.of(`mekanismadditions:${element}_plastic`, 16), Item.of('#mekanismadditions:plastic_blocks/plastic', 16), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`mekanismadditions:${element}_plastic`, 8), Item.of('mekanism:hdpe_sheet', 8), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`mekanismadditions:${element}_plastic_road`, 16), Item.of('#mekanismadditions:plastic_blocks/road', 16), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`mekanismadditions:${element}_reinforced_plastic`, 16), Item.of('#mekanismadditions:plastic_blocks/reinforced', 16), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`mekanismadditions:${element}_plastic_fence`, 16), Item.of('#forge:fences/plastic', 16), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`mekanismadditions:${element}_plastic_fence_gate`, 16), Item.of('#forge:fence_gates/plastic', 16), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`mekanismadditions:${element}_plastic_transparent_stairs`, 16), Item.of('#forge:stairs/plastic/transparent', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`mekanismadditions:${element}_plastic`, 16), Ingredient.of('#mekanismadditions:plastic_blocks/plastic', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`mekanismadditions:${element}_plastic`, 8), Ingredient.of('mekanism:hdpe_sheet', 8), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`mekanismadditions:${element}_plastic_road`, 16), Ingredient.of('#mekanismadditions:plastic_blocks/road', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`mekanismadditions:${element}_reinforced_plastic`, 16), Ingredient.of('#mekanismadditions:plastic_blocks/reinforced', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`mekanismadditions:${element}_plastic_fence`, 16), Ingredient.of('#forge:fences/plastic', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`mekanismadditions:${element}_plastic_fence_gate`, 16), Ingredient.of('#forge:fence_gates/plastic', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`mekanismadditions:${element}_plastic_transparent_stairs`, 16), Ingredient.of('#forge:stairs/plastic/transparent', 16), `#forge:dyes/${element}`)
 
     // IE Sheetmetal Dying
-    event.recipes.mekanism.combining(Item.of(`immersiveengineering:sheetmetal_colored_${element}`, 16), Item.of('#forge:sheetmetals', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`immersiveengineering:sheetmetal_colored_${element}`, 16), Ingredient.of('#forge:sheetmetals', 16), `#forge:dyes/${element}`)
 
     // IE Concrete -> Vanilla Concrete
-    event.recipes.mekanism.combining(Item.of(`minecraft:${element}_concrete`, 16), Item.of('immersiveengineering:concrete', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`minecraft:${element}_concrete`, 16), Ingredient.of('immersiveengineering:concrete', 16), `#forge:dyes/${element}`)
 
     // Quark Dying
-    event.recipes.mekanism.combining(Item.of(`quark:${element}_framed_glass`, 16), Item.of('quark:framed_glass', 16), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`quark:${element}_framed_glass_pane`, 16), Item.of('quark:framed_glass_pane', 16), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`quark:${element}_stained_planks`, 16), Item.of('#minecraft:planks', 16), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`quark:${element}_shingles`, 16), Item.of('quark:shingles', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`quark:${element}_framed_glass`, 16), Ingredient.of('quark:framed_glass', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`quark:${element}_framed_glass_pane`, 16), Ingredient.of('quark:framed_glass_pane', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`quark:${element}_stained_planks`, 16), Ingredient.of('#minecraft:planks', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(Item.of(`quark:${element}_shingles`, 16), Ingredient.of('quark:shingles', 16), `#forge:dyes/${element}`)
   })
 
   // Mekanism - Bio Fuel
@@ -145,7 +145,7 @@ events.listen('recipes', function (event) {
   event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'biomesoplenty:dune_grass')
   event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'biomesoplenty:huge_clover_petal')
   event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'biomesoplenty:mangrove_root')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'biomesoplenty:reeds')
+  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'biomesoplenty:reed')
   event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 4), 'biomesoplenty:spanish_moss')
   event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'biomesoplenty:sprout')
   event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'biomesoplenty:watergrass')
@@ -202,9 +202,9 @@ events.listen('recipes', function (event) {
   infusionConversion('mekanism:carbon', '#forge:dusts/coal_coke', 40)
 
   // Upgrade Aquatic - converts more kelp per dye.
-  event.recipes.mekanism.combining(Item.of('upgrade_aquatic:ochre_kelp', 8), Item.of('minecraft:kelp', 8), '#forge:dyes/yellow')
-  event.recipes.mekanism.combining(Item.of('upgrade_aquatic:polar_kelp', 8), Item.of('minecraft:kelp', 8), '#forge:dyes/cyan')
-  event.recipes.mekanism.combining(Item.of('upgrade_aquatic:thorny_kelp', 8), Item.of('minecraft:kelp', 8), '#forge:dyes/brown')
-  event.recipes.mekanism.combining(Item.of('upgrade_aquatic:tongue_kelp', 8), Item.of('minecraft:kelp', 8), '#forge:dyes/red')
+  event.recipes.mekanism.combining(Item.of('upgrade_aquatic:ochre_kelp', 8), Ingredient.of('minecraft:kelp', 8), '#forge:dyes/yellow')
+  event.recipes.mekanism.combining(Item.of('upgrade_aquatic:polar_kelp', 8), Ingredient.of('minecraft:kelp', 8), '#forge:dyes/cyan')
+  event.recipes.mekanism.combining(Item.of('upgrade_aquatic:thorny_kelp', 8), Ingredient.of('minecraft:kelp', 8), '#forge:dyes/brown')
+  event.recipes.mekanism.combining(Item.of('upgrade_aquatic:tongue_kelp', 8), Ingredient.of('minecraft:kelp', 8), '#forge:dyes/red')
   event.recipes.mekanism.crushing(Item.of('minecraft:bone_meal', 10), 'upgrade_aquatic:thrasher_tooth')
 })
