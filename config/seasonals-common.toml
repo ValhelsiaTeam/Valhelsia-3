@@ -1,0 +1,5 @@
+#If items from other mods (Sweet Berry meatballs from Berry Good, pumpkin foods from Autumnity) give the effects from this mod; defaults to false
+outsideEffects = true
+#If pumpkin foods from other mods (Autumnity) use Roasted Pumpkin instead of vanilla pumpkin; defaults to false
+outsideRecipes = true
+
