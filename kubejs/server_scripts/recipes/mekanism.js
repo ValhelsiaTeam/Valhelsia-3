@@ -151,6 +151,8 @@ events.listen('recipes', function (event) {
   event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'biomesoplenty:watergrass')
   event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 4), 'biomesoplenty:willow_vine')
 
+  // TODO: Blue Skies compatibility.
+
   event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'druidcraft:blueberries')
   event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'druidcraft:elderberries')
 
@@ -170,6 +172,8 @@ events.listen('recipes', function (event) {
   event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 5), 'farmersdelight:cabbage')
   event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 5), 'farmersdelight:tomato')
   event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 5), 'farmersdelight:onion')
+
+  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'minecraft:melon_slice') // #blameurmet
 
   event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'neapolitan:banana')
   event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'neapolitan:strawberries')

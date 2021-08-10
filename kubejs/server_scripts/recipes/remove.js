@@ -113,6 +113,7 @@ events.listen('recipes', function (event) {
     'mekanism:crushing/biofuel/lilac',
     'mekanism:crushing/biofuel/rose_bush',
     'mekanism:crushing/biofuel/peony',
+    'mekanism:crushing/biofuel/melon_slice', // #blameurmet
 
     // Mekanism - Combiner (remove all ore to prevent infinite ore exploits)
     'jaopca:mekanism.dust_to_ore.aluminum',
