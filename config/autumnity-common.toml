@@ -4,10 +4,10 @@
 
 	[common.entities]
 		#A list of biomes where snails can spawn. The list doesn't include biomes from this mod.
-		"Snail Spawn Biomes" = []
+		"Snail Spawn Biomes" = ["biomesoplenty:seasonal_forest", "biomesoplenty:seasonal_orchard", "biomesoplenty:seasonal_pumpkin_patch"]
 		#A list of biomes where turkeys can spawn. The list doesn't include biomes from this mod.
 		#Chickens will not spawn in these biomes.
-		"Turkey Spawn Biomes" = []
+		"Turkey Spawn Biomes" = ["biomesoplenty:seasonal_forest", "biomesoplenty:seasonal_orchard", "biomesoplenty:seasonal_pumpkin_patch"]
 
 	#Values for biome frequencies; lower = more rare. (Requires restart)
 	#If a biome has a default weight of 0, it generates as a sub-biome and not on its own.
@@ -19,7 +19,7 @@
 	[common.misc]
 		#A list of biomes where green maple trees can generate naturally.
 		#The list does not include biomes from this mod.
-		"Maple Tree Biomes" = ["minecraft:forest", "minecraft:wooded_hills", "minecraft:flower_forest"]
+		"Maple Tree Biomes" = ["minecraft:forest", "minecraft:wooded_hills", "minecraft:flower_forest", "biomesoplenty:snowy_maple_forest"]
 		"Yellow Spotted Forest" = true
 		"Orange Spotted Dark Forest" = true
 		"Red Spotted Taiga" = true
