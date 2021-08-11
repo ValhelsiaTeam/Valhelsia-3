@@ -4,6 +4,9 @@ events.listen('recipes', function (event) {
 
   var idRemove = [
 
+    // Abnormals Delight
+    'abnormals_delight:environmental/cooking/squid_ink_risotto', // Squid Ink Risotto has been removed from Environmental.
+
     // Autumnity
     'autumnity:lead_from_snail_slime', // Replaced with a tag recipe.
     'autumnity:sticky_piston_from_snail_slime', // Replaced with a tag recipe.
