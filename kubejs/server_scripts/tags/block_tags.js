@@ -47,6 +47,7 @@ onEvent('block.tags', event => {
   // Missing Stair Tags
   var woodenStairs = [
     'astralsorcery:infused_wood_stairs',
+    'betterendforge:neon_cactus_stairs',
     'immersiveengineering:stairs_treated_wood_horizontal',
     'immersiveengineering:stairs_treated_wood_vertical',
     'immersiveengineering:stairs_treated_wood_packaged'
@@ -55,6 +56,13 @@ onEvent('block.tags', event => {
   var stoneStairs = [
     'astralsorcery:marble_stairs',
     'astralsorcery:black_marble_stairs',
+    'betterendforge:dragon_bone_stairs',
+    'betterendforge:flavolite_stairs',
+    'betterendforge:flavolite_bricks_stairs',
+    'betterendforge:violecite_stairs',
+    'betterendforge:violecite_bricks_stairs',
+    'betterendforge:sulphuric_rock_stairs',
+    'betterendforge:sulphuric_rock_bricks_stairs'
   ]
 
   event.get('minecraft:stairs')
@@ -74,6 +82,7 @@ onEvent('block.tags', event => {
   // Missing Slab Tags
   var woodenSlabs = [
     'astralsorcery:infused_wood_slab',
+    'betterendforge:neon_cactus_slab',
     'immersiveengineering:slab_treated_wood_horizontal',
     'immersiveengineering:slab_treated_wood_vertical',
     'immersiveengineering:slab_treated_wood_packaged'
@@ -81,7 +90,8 @@ onEvent('block.tags', event => {
 
   var stoneSlabs = [
     'astralsorcery:marble_slab',
-    'astralsorcery:black_marble_slab'
+    'astralsorcery:black_marble_slab',
+    'betterendforge:dragon_bone_slab'
   ]
 
   event.get('minecraft:slabs')

@@ -59,6 +59,8 @@ events.listen('recipes', function (event) {
   // ------------------
   pureDaisy('forbidden_arcanus:soulless_sand', 'minecraft:soul_sand')
   pureDaisy('minecraft:sand', 'forbidden_arcanus:soulless_sand')
+  pureDaisy('betterendforge:dense_emerald_ice', 'betterendforge:emerald_ice')
+  pureDaisy('betterendforge:ancient_emerald_ice', 'betterendforge:dense_emerald_ice')
 
   // Alchemy Infusion Recipes
   // ------------------------
@@ -67,6 +69,20 @@ events.listen('recipes', function (event) {
   // TODO: This should be expanded a bit.
   alchemy(Item.of('atmospheric:grimwood_log'), Ingredient.of('druidcraft:darkwood_log'), 40, 'botania:log_cycle')
   alchemy(Item.of('upgrade_aquatic:driftwood_log'), Ingredient.of('upgrade_aquatic:river_log'), 40, 'botania:log_cycle')
+  
+  // End Log Cycle (BetterEnd and Endergetic Expansion)
+  // Some of these logs, at least Lucernia, are not otherwise obtainable because the trees generate with only bark blocks.
+  alchemy(Item.of('betterendforge:end_lotus_log'), Ingredient.of('betterendforge:lacugrove_log'), 40, 'botania:log_cycle')
+  alchemy(Item.of('betterendforge:lacugrove_log'), Ingredient.of('betterendforge:mossy_glowshroom_log'), 40, 'botania:log_cycle')
+  alchemy(Item.of('betterendforge:mossy_glowshroom_log'), Ingredient.of('betterendforge:jellyshroom_log'), 40, 'botania:log_cycle')
+  alchemy(Item.of('betterendforge:jellyshroom_log'), Ingredient.of('betterendforge:umbrella_tree_log'), 40, 'botania:log_cycle')
+  alchemy(Item.of('betterendforge:umbrella_tree_log'), Ingredient.of('endergetic:poise_stem'), 40, 'botania:log_cycle')
+  alchemy(Item.of('endergetic:poise_stem'), Ingredient.of('betterendforge:pythadendron_log'), 40, 'botania:log_cycle')
+  alchemy(Item.of('betterendforge:pythadendron_log'), Ingredient.of('betterendforge:dragon_tree_log'), 40, 'botania:log_cycle')
+  alchemy(Item.of('betterendforge:dragon_tree_log'), Ingredient.of('betterendforge:tenanea_log'), 40, 'botania:log_cycle')
+  alchemy(Item.of('betterendforge:tenanea_log'), Ingredient.of('betterendforge:helix_tree_log'), 40, 'botania:log_cycle')
+  alchemy(Item.of('betterendforge:helix_tree_log'), Ingredient.of('betterendforge:lucernia_log'), 40, 'botania:log_cycle')
+  alchemy(Item.of('betterendforge:lucernia_log'), Ingredient.of('betterendforge:end_lotus_log'), 40, 'botania:log_cycle')
 
   // Method to obtain non-spawning Atmospheric Saplings
   alchemy(Item.of('atmospheric:grimwood_sapling'), Ingredient.of('druidcraft:darkwood_sapling'), 120, 'botania:sapling_cycle')
@@ -112,6 +128,19 @@ events.listen('recipes', function (event) {
   // Coastal Sapling Cycle
   alchemy(Item.of('upgrade_aquatic:river_sapling'), Ingredient.of('biomesoplenty:palm_sapling'), 120, 'botania:sapling_cycle')
   alchemy(Item.of('biomesoplenty:palm_sapling'), Ingredient.of('upgrade_aquatic:river_sapling'), 120, 'botania:sapling_cycle')
+  
+  // End Sapling Cycle (BetterEnd and Endergetic Expansion)
+  alchemy(Item.of('betterendforge:end_lotus_seed'), Ingredient.of('betterendforge:lacugrove_sapling'), 120, 'botania:sapling_cycle')
+  alchemy(Item.of('betterendforge:lacugrove_sapling'), Ingredient.of('betterendforge:mossy_glowshroom_sapling'), 120, 'botania:sapling_cycle')
+  alchemy(Item.of('betterendforge:mossy_glowshroom_sapling'), Ingredient.of('betterendforge:small_jellyshroom'), 120, 'botania:sapling_cycle')
+  alchemy(Item.of('betterendforge:small_jellyshroom'), Ingredient.of('betterendforge:umbrella_tree_sapling'), 120, 'botania:sapling_cycle')
+  alchemy(Item.of('betterendforge:umbrella_tree_sapling'), Ingredient.of('endergetic:tall_poise_bush'), 120, 'botania:sapling_cycle')
+  alchemy(Item.of('endergetic:tall_poise_bush'), Ingredient.of('betterendforge:pythadendron_sapling'), 120, 'botania:sapling_cycle')
+  alchemy(Item.of('betterendforge:pythadendron_sapling'), Ingredient.of('betterendforge:dragon_tree_sapling'), 120, 'botania:sapling_cycle')
+  alchemy(Item.of('betterendforge:dragon_tree_sapling'), Ingredient.of('betterendforge:tenanea_sapling'), 120, 'botania:sapling_cycle')
+  alchemy(Item.of('betterendforge:tenanea_sapling'), Ingredient.of('betterendforge:helix_tree_sapling'), 120, 'botania:sapling_cycle')
+  alchemy(Item.of('betterendforge:helix_tree_sapling'), Ingredient.of('betterendforge:lucernia_sapling'), 120, 'botania:sapling_cycle')
+  alchemy(Item.of('betterendforge:lucernia_sapling'), Ingredient.of('betterendforge:end_lotus_seed'), 120, 'botania:sapling_cycle')
 
   alchemy(Item.of('biomesoplenty:sprout'), Ingredient.of('mysticalworld:assorted_seeds'), 120, 'botania:shrub_cycle')
 
@@ -135,6 +164,36 @@ events.listen('recipes', function (event) {
 
   // Bayou Blues Plants:
   conjuration(Item.of('bayou_blues:algae', 2), Ingredient.of('bayou_blues:algae'), 800)
+  
+  // BetterEnd Plants:
+  // Excludes water plants, bushes, sky plants, wall plants, vines and ceiling plants.
+  // Excludes Shadow Berry and Blossom Berry from the mod's "plants" category because they are edible.
+  conjuration(Item.of('betterendforge:umbrella_moss', 2), Ingredient.of('betterendforge:umbrella_moss'), 800)
+  conjuration(Item.of('betterendforge:umbrella_moss_tall', 2), Ingredient.of('betterendforge:umbrella_moss_tall'), 800)
+  conjuration(Item.of('betterendforge:creeping_moss', 2), Ingredient.of('betterendforge:creeping_moss'), 800)
+  conjuration(Item.of('betterendforge:chorus_grass', 2), Ingredient.of('betterendforge:chorus_grass'), 800)
+  conjuration(Item.of('betterendforge:crystal_grass', 2), Ingredient.of('betterendforge:crystal_grass'), 800)
+  conjuration(Item.of('betterendforge:amber_grass', 2), Ingredient.of('betterendforge:amber_grass'), 800)
+  conjuration(Item.of('betterendforge:shadow_plant', 2), Ingredient.of('betterendforge:shadow_plant'), 800)
+  conjuration(Item.of('betterendforge:murkweed', 2), Ingredient.of('betterendforge:murkweed'), 800)
+  conjuration(Item.of('betterendforge:needlegrass', 2), Ingredient.of('betterendforge:needlegrass'), 800)
+  conjuration(Item.of('betterendforge:bushy_grass', 2), Ingredient.of('betterendforge:bushy_grass'), 800)
+  conjuration(Item.of('betterendforge:twisted_umbrella_moss', 2), Ingredient.of('betterendforge:twisted_umbrella_moss'), 800)
+  conjuration(Item.of('betterendforge:twisted_umbrella_moss_tall', 2), Ingredient.of('betterendforge:twisted_umbrella_moss_tall'), 800)
+  conjuration(Item.of('betterendforge:jungle_grass', 2), Ingredient.of('betterendforge:jungle_grass'), 800)
+  conjuration(Item.of('betterendforge:blooming_cooksonia', 2), Ingredient.of('betterendforge:blooming_cooksonia'), 800)
+  conjuration(Item.of('betterendforge:salteago', 2), Ingredient.of('betterendforge:salteago'), 800)
+  conjuration(Item.of('betterendforge:vaiolush_fern', 2), Ingredient.of('betterendforge:vaiolush_fern'), 800)
+  conjuration(Item.of('betterendforge:fracturn', 2), Ingredient.of('betterendforge:fracturn'), 800)
+  conjuration(Item.of('betterendforge:small_amaranita_mushroom', 2), Ingredient.of('betterendforge:small_amaranita_mushroom'), 800)
+  conjuration(Item.of('betterendforge:globulagus', 2), Ingredient.of('betterendforge:globulagus'), 800)
+  conjuration(Item.of('betterendforge:clawfern', 2), Ingredient.of('betterendforge:clawfern'), 800)
+  conjuration(Item.of('betterendforge:aeridium', 2), Ingredient.of('betterendforge:aeridium'), 800)
+  conjuration(Item.of('betterendforge:lamellarium', 2), Ingredient.of('betterendforge:lamellarium'), 800)
+  conjuration(Item.of('betterendforge:bolux_mushroom', 2), Ingredient.of('betterendforge:bolux_mushroom'), 800)
+  conjuration(Item.of('betterendforge:orango', 2), Ingredient.of('betterendforge:orango'), 800)
+  conjuration(Item.of('betterendforge:lutebus', 2), Ingredient.of('betterendforge:lutebus'), 800)
+  conjuration(Item.of('betterendforge:cave_grass', 2), Ingredient.of('betterendforge:cave_grass'), 800)
 
   // BoP Plants:
   conjuration(Item.of('biomesoplenty:sprout', 2), Ingredient.of('biomesoplenty:sprout'), 800)

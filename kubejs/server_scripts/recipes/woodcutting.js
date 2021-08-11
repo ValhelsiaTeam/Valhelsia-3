@@ -69,6 +69,19 @@ events.listen('recipes', function (event) {
     'infused_wood'
   ]
 
+  const betterEndWoodTypes = [
+    'dragon_tree',
+    'end_lotus',
+    'helix_tree',
+    'jellyshroom',
+    'lacugrove',
+    'lucernia',
+    'mossy_glowshroom',
+    'pythadendron',
+    'tenanea',
+    'umbrella_tree'
+  ]
+
   const botaniaWoodTypes = [
     'livingwood',
     'mossy_livingwood',
@@ -325,11 +338,6 @@ events.listen('recipes', function (event) {
     abnormalsPantries.push(`abnormals_delight:${element}_pantry`)
   })
 
-  // Handle Pantries before adding Team Aurora mods (+ Endergetic Expansion), since they don't have pantries.
-  for (let i = 0; i < abnormalsLogsTags.length; i++) {
-    woodcutting(abnormalsPantries[i], abnormalsLogsTags[i], pantries_per_log)
-  }
-
   // Endergetic Expansion
   mod = "endergetic"
   endergeticExpansionWoodTypes.forEach(function(element) {
@@ -355,6 +363,11 @@ events.listen('recipes', function (event) {
     abnormalsPressurePlates.push(`${mod}:${element}_pressure_plate`)
     abnormalsPantries.push(`abnormals_delight:${element}_pantry`)
   })
+
+  // Handle Pantries before adding Team Aurora mods and BetterEnd, since they don't have pantries.
+  for (let i = 0; i < abnormalsLogsTags.length; i++) {
+    woodcutting(abnormalsPantries[i], abnormalsLogsTags[i], pantries_per_log)
+  }
 
   // Abundance
   mod="abundance"
@@ -424,13 +437,43 @@ events.listen('recipes', function (event) {
     abnormalsDoors.push(`${mod}:${element}_door`)
     abnormalsPressurePlates.push(`${mod}:${element}_pressure_plate`)
   })
+  
+  // Handle Vertical Planks and Vertical Slabs before adding BetterEnd, since it doesn't have verticals.
+  for (let i = 0; i < abnormalsLogsTags.length; i++) {
+    woodcutting(abnormalsVerticalPlanks[i], abnormalsLogsTags[i], vertical_planks_per_log)
+    woodcutting(abnormalsVerticalSlabs[i], abnormalsLogsTags[i], vertical_slabs_per_log)
+
+    woodcutting(abnormalsVerticalPlanks[i], abnormalsPlanks[i], vertical_planks_per_plank)
+    woodcutting(abnormalsVerticalSlabs[i], abnormalsPlanks[i], vertical_slabs_per_plank)
+
+    woodcutting(abnormalsPlanks[i], abnormalsVerticalPlanks[i], vertical_planks_per_plank)
+  }
+
+  // BetterEnd
+  mod = "betterendforge"
+  betterEndWoodTypes.forEach(function(element) {
+    abnormalsLogsTags.push(`#${mod}:${element}_logs`)
+    abnormalsLogs.push(`${mod}:${element}_log`)
+    abnormalsStrippedLogs.push(`${mod}:${element}_stripped_log`)
+    abnormalsWoods.push(`${mod}:${element}_bark`)
+    abnormalsStrippedWoods.push(`${mod}:${element}_stripped_bark`)
+    abnormalsPlanks.push(`${mod}:${element}_planks`)
+    abnormalsSlabs.push(`${mod}:${element}_slab`)
+    abnormalsStairs.push(`${mod}:${element}_stairs`)
+    abnormalsSigns.push(`${mod}:${element}_sign`)
+    abnormalsLadders.push(`${mod}:${element}_ladder`)
+    abnormalsFences.push(`${mod}:${element}_fence`)
+    abnormalsFenceGates.push(`${mod}:${element}_gate`)
+    abnormalsButtons.push(`${mod}:${element}_button`)
+    abnormalsTrapdoors.push(`${mod}:${element}_trapdoor`)
+    abnormalsDoors.push(`${mod}:${element}_door`)
+    abnormalsPressurePlates.push(`${mod}:${element}_pressure_plate`)
+  })
 
   for (let i = 0; i < abnormalsLogsTags.length; i++) {
     // Log Woodcutting
     woodcutting(abnormalsPlanks[i], abnormalsLogsTags[i], planks_per_log)
-    woodcutting(abnormalsVerticalPlanks[i], abnormalsLogsTags[i], vertical_planks_per_log)
     woodcutting(abnormalsSlabs[i], abnormalsLogsTags[i], slabs_per_log)
-    woodcutting(abnormalsVerticalSlabs[i], abnormalsLogsTags[i], vertical_slabs_per_log)
     woodcutting(abnormalsStairs[i], abnormalsLogsTags[i], stairs_per_log)
     woodcutting(abnormalsSigns[i], abnormalsLogsTags[i], signs_per_log)
     woodcutting(abnormalsLadders[i], abnormalsLogsTags[i], ladders_per_log)
@@ -442,9 +485,7 @@ events.listen('recipes', function (event) {
     woodcutting(abnormalsPressurePlates[i], abnormalsLogsTags[i], pressure_plates_per_log)
 
     // Plank Woodcutting
-    woodcutting(abnormalsVerticalPlanks[i], abnormalsPlanks[i], vertical_planks_per_plank)
     woodcutting(abnormalsSlabs[i], abnormalsPlanks[i], slabs_per_plank)
-    woodcutting(abnormalsVerticalSlabs[i], abnormalsPlanks[i], vertical_slabs_per_plank)
     woodcutting(abnormalsStairs[i], abnormalsPlanks[i], stairs_per_plank)
     woodcutting(abnormalsSigns[i], abnormalsPlanks[i], signs_per_plank)
     woodcutting(abnormalsLadders[i], abnormalsPlanks[i], ladders_per_plank)
@@ -460,8 +501,22 @@ events.listen('recipes', function (event) {
     woodcutting(abnormalsStrippedLogs[i], abnormalsLogs[i], stripped_logs_per_log)
     woodcutting(abnormalsStrippedWoods[i], abnormalsLogs[i], stripped_wood_per_log)
     woodcutting(abnormalsStrippedWoods[i], abnormalsWoods[i], 1)
-    woodcutting(abnormalsPlanks[i], abnormalsVerticalPlanks[i], vertical_planks_per_plank)
   }
+
+  // BetterEnd
+  betterEndWoodTypes.forEach(function(element) {
+    woodcutting(`betterendforge:${element}_crafting_table`, `#betterendforge:${element}_logs`, 1)
+    woodcutting(`betterendforge:${element}_composter`, `#betterendforge:${element}_logs`, 1)
+    
+    event.recipes.mekanism.sawing(Item.of(`betterendforge:${element}_planks`, planks_per_log_mekanism), `#betterendforge:${element}_logs`, Item.of('mekanism:sawdust').chance(sawdust_chance_normal))
+    event.recipes.mekanism.sawing(Item.of(`betterendforge:${element}_planks`, 2), `betterendforge:${element}_door`)
+    event.recipes.mekanism.sawing(Item.of(`betterendforge:${element}_planks`, 2), `betterendforge:${element}_gate`, Item.of('minecraft:stick', 4).chance(1))
+    event.recipes.mekanism.sawing(Item.of(`betterendforge:${element}_planks`, 2), `betterendforge:${element}_pressure_plate`)
+    event.recipes.mekanism.sawing(Item.of(`betterendforge:${element}_planks`, 3), `betterendforge:${element}_trapdoor`)
+  })
+  
+  woodcutting('betterendforge:neon_cactus_stairs', 'betterendforge:neon_cactus_block', stairs_per_plank)
+  woodcutting('betterendforge:neon_cactus_slab', 'betterendforge:neon_cactus_block', slabs_per_plank)
 
   // Biomes O Plenty
   biomesOPlentyWoodTypes.forEach(function(element) {
@@ -718,6 +773,12 @@ events.listen('recipes', function (event) {
   // Supplementaries - Autumnity
   woodcutting('supplementaries:sign_post_maple', 'autumnity:maple_planks', sign_posts_per_plank)
   woodcutting('supplementaries:sign_post_maple', '#autumnity:maple_logs', sign_posts_per_log)
+  
+  // Supplementaries - BetterEnd
+  betterEndWoodTypes.forEach(function(element) {
+    woodcutting(`supplementaries:sign_post_${element}`, `betterendforge:${element}_planks`, sign_posts_per_plank)
+    woodcutting(`supplementaries:sign_post_${element}`, `#betterendforge:${element}_logs`, sign_posts_per_log)
+  })
   
   // Supplementaries - Endergetic Expansion
   woodcutting('supplementaries:sign_post_poise', 'endergetic:poise_planks', sign_posts_per_plank)
