@@ -68,6 +68,29 @@ events.listen('recipes', function (event) {
   axeStripping('druidcraft:stripped_darkwood_wood', 'druidcraft:darkwood_wood')
   axeStripping('druidcraft:stripped_elder_log', 'druidcraft:elder_log')
   axeStripping('druidcraft:stripped_elder_wood', 'druidcraft:elder_wood')
+  
+  // BetterEnd Stripping
+  const betterEndWoodTypes = [
+    'dragon_tree',
+    'end_lotus',
+    'helix_tree',
+    'jellyshroom',
+    'lacugrove',
+    'lucernia',
+    'mossy_glowshroom',
+    'pythadendron',
+    'tenanea',
+    'umbrella_tree'
+  ]
+
+  betterEndWoodTypes.forEach(function(element) {
+    axeStripping(`betterendforge:${element}_stripped_log`, `betterendforge:${element}_log`)
+    axeStripping(`betterendforge:${element}_stripped_bark`, `betterendforge:${element}_bark`)
+
+    axeChopping(`betterendforge:${element}_planks`, `betterendforge:${element}_door`)
+    axeChopping(`betterendforge:${element}_planks`, `betterendforge:${element}_sign`)
+    axeChopping(`betterendforge:${element}_planks`, `betterendforge:${element}_trapdoor`)
+  })
 
   // Biomes 'o' Plenty Stripping
   const biomesOPlentyWoodTypes = [

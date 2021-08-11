@@ -26,6 +26,17 @@ onEvent('item.tags', event => {
 
   // Missing #forge:seed item tags.
   event.get('forge:seeds').add([
+    'betterendforge:amber_root_seed',
+    'betterendforge:blossom_berry_seed',
+    'betterendforge:blue_vine_seed',
+    'betterendforge:bulb_vine_seed',
+    'betterendforge:chorus_mushroom_seed',
+    'betterendforge:end_lily_seed',
+    'betterendforge:end_lotus_seed',
+    'betterendforge:glowing_pillar_seed',
+    'betterendforge:lanceleaf_seed',
+    'betterendforge:lumecorn_seed',
+    'betterendforge:shadow_berry', // This is the seed item, despite the ID.
     'environmental:cattail_seeds',
     'mysticalworld:aubergine_seeds'
   ])
@@ -34,8 +45,23 @@ onEvent('item.tags', event => {
   event.get('forge:fruits').add([
     'atmospheric:passionfruit',
     'autumnity:foul_berries',
+    'betterendforge:blossom_berry',
+    'betterendforge:shadow_berry_raw',
     'minecraft:sweet_berries',
     'neapolitan:white_strawberries'
+  ])
+
+  // Missing #forge:ice item tags.
+  event.get('forge:ice').add([
+    'betterendforge:emerald_ice',
+    'betterendforge:dense_emerald_ice',
+    'betterendforge:ancient_emerald_ice'
+  ])
+
+  // Missing #forge:mushrooms item tags.
+  event.get('forge:mushrooms').add([
+    'betterendforge:bolux_mushroom',
+    'betterendforge:chorus_mushroom_raw'
   ])
 
   // Missing #forge:sapling item tags.
@@ -57,6 +83,14 @@ onEvent('item.tags', event => {
     'atmospheric:kousa_sapling',
     'atmospheric:aspen_sapling',
     'atmospheric:grimwood_sapling',
+    'betterendforge:dragon_tree_sapling',
+    'betterendforge:helix_tree_sapling',
+    'betterendforge:lacugrove_sapling',
+    'betterendforge:lucernia_sapling',
+    'betterendforge:mossy_glowshroom_sapling',
+    'betterendforge:pythadendron_sapling',
+    'betterendforge:tenanea_sapling',
+    'betterendforge:umbrella_tree_sapling',
     'biomesoplenty:origin_sapling',
     'biomesoplenty:flowering_oak_sapling',
     'biomesoplenty:rainbow_birch_sapling',
@@ -170,6 +204,12 @@ onEvent('item.tags', event => {
     'absentbydesign:wall_polished_basalt',
     'absentbydesign:wall_quartz_bricks',
     'absentbydesign:wall_lodestone',
+    'betterendforge:flavolite_wall',
+    'betterendforge:flavolite_bricks_wall',
+    'betterendforge:violecite_wall',
+    'betterendforge:violecite_bricks_wall',
+    'betterendforge:sulphuric_rock_wall',
+    'betterendforge:sulphuric_rock_bricks_wall',
     'bloodmagic:dungeon_brick_wall',
     'bloodmagic:dungeon_polished_wall',
     'eidolon:smooth_stone_bricks_wall'
@@ -230,7 +270,14 @@ onEvent('item.tags', event => {
     'absentbydesign:stairs_lodestone',
     'absentbydesign:stairs_quartz_bricks',
     'astralsorcery:marble_stairs',
-    'astralsorcery:black_marble_stairs'
+    'astralsorcery:black_marble_stairs',
+    'betterendforge:dragon_bone_stairs',
+    'betterendforge:flavolite_stairs',
+    'betterendforge:flavolite_bricks_stairs',
+    'betterendforge:violecite_stairs',
+    'betterendforge:violecite_bricks_stairs',
+    'betterendforge:sulphuric_rock_stairs',
+    'betterendforge:sulphuric_rock_bricks_stairs'
   ]
 
   var concreteStairs = [
@@ -341,6 +388,7 @@ onEvent('item.tags', event => {
     'absentbydesign:slab_brown_mushroom',
     'absentbydesign:slab_mushroom_polished',
     'astralsorcery:infused_wood_slab',
+    'betterendforge:neon_cactus_slab',
     'immersiveengineering:slab_treated_wood_horizontal',
     'immersiveengineering:slab_treated_wood_vertical',
     'immersiveengineering:slab_treated_wood_packaged'
@@ -448,6 +496,7 @@ onEvent('item.tags', event => {
     'absentbydesign:slab_magma',
     'absentbydesign:slab_glowstone',
     'absentbydesign:slab_sea_lantern',
+    'betterendforge:dragon_bone_slab',
     'immersivepetroleum:asphalt_slab'
   ]
 
@@ -637,6 +686,9 @@ onEvent('item.tags', event => {
   // Beacon Payment Items
   var beaconPaymentItems = [
     'aquaculture:neptunium_ingot',
+    'betterendforge:thallasium_ingot',
+    'betterendforge:terminite_ingot',
+    'betterendforge:aeternium_ingot',
     'botania:manasteel_ingot',
     'botania:terrasteel_ingot',
     'botania:elementium_ingot',
@@ -692,4 +744,7 @@ onEvent('item.tags', event => {
   event.add('forge:dusts/obsidian', 'create:powdered_obsidian')
   event.add('forbidden_arcanus:edelwood_logs', 'forbidden_arcanus:edelwood_log')
   event.add('forge:dragon_scales', 'quark:dragon_scale')
+  event.add('forge:raw_fishes', 'betterendforge:end_fish_raw')
+  event.add('forge:cooked_fishes', 'betterendforge:end_fish_cooked')
+  event.add('forge:vegetables', 'betterendforge:amber_root_raw')
 })

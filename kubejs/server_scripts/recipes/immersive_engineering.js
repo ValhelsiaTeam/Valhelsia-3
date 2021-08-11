@@ -44,6 +44,17 @@ events.listen('recipes', function (event) {
   event.recipes.immersiveengineering.metal_press(Item.of('autumnity:snail_slime', 9), 'autumnity:snail_slime_block', 'immersiveengineering:mold_unpacking')
   event.recipes.immersiveengineering.cloche([Item.of('autumnity:foul_berries', 2)], 'autumnity:foul_berry_pips', 'minecraft:dirt', {type: 'crop', block: 'autumnity:foul_berry_bush'}).time(560)
 
+  // BetterEnd Compat
+  event.recipes.immersiveengineering.alloy('betterendforge:aeternium_ingot', '#forge:ingots/terminite', '#forge:ingots/netherite')
+  event.recipes.immersiveengineering.alloy('betterendforge:terminite_ingot', '#forge:ingots/iron', 'betterendforge:ender_dust')
+  event.recipes.immersiveengineering.alloy('betterendforge:terminite_ingot', '#forge:ingots/thallasium', 'betterendforge:ender_dust')
+  event.recipes.immersiveengineering.cloche(['betterendforge:amber_root_raw', 'betterendforge:amber_root_seed'], 'betterendforge:amber_root_seed', 'betterendforge:amber_moss', {type: 'crop', block: 'betterendforge:amber_root_seed'}).time(800)
+  event.recipes.immersiveengineering.cloche(['betterendforge:blossom_berry', 'betterendforge:blossom_berry_seed'], 'betterendforge:blossom_berry_seed', 'betterendforge:pink_moss', {type: 'crop', block: 'betterendforge:blossom_berry_seed'}).time(800)
+  event.recipes.immersiveengineering.cloche(['betterendforge:chorus_mushroom_raw', 'betterendforge:chorus_mushroom_seed'], 'betterendforge:chorus_mushroom_seed', 'betterendforge:chorus_nylium', {type: 'crop', block: 'betterendforge:chorus_mushroom_seed'}).time(800)
+  event.recipes.immersiveengineering.cloche(['betterendforge:shadow_berry_raw', 'betterendforge:shadow_berry'], 'betterendforge:shadow_berry', 'betterendforge:shadow_grass', {type: 'crop', block: 'betterendforge:shadow_berry'}).time(800)
+  event.recipes.immersiveengineering.crusher(Item.of('betterendforge:endstone_dust', 2), '#forge:end_stones', Item.of('bloodmagic:saltpeter').withChance(0.5))
+  event.recipes.immersiveengineering.crusher(Item.of('betterendforge:ender_shard', 2), '#forge:ores/ender')
+
   // BoP Compat
   event.recipes.immersiveengineering.crusher('biomesoplenty:white_sand', 'quark:marble')
   event.recipes.immersiveengineering.crusher('biomesoplenty:black_sand', 'minecraft:basalt')
