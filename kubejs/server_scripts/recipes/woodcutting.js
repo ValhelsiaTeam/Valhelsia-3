@@ -693,8 +693,8 @@ events.listen('recipes', function (event) {
   woodcutting("minecraft:composter", "#minecraft:logs", 1)
 
   // Structurize
-  woodcutting("structurize:barreldeco_standing", "#minecraft:logs", 1)
-  woodcutting("structurize:barreldeco_onside", "#minecraft:logs", 1)
+  woodcutting("structurize:blockbarreldeco_standing", "#minecraft:logs", 1)
+  woodcutting("structurize:blockbarreldeco_onside", "#minecraft:logs", 1)
 
   // Supplementaries - Vanilla
   woodcutting('supplementaries:item_shelf', '#minecraft:wooden_slabs', 1)
