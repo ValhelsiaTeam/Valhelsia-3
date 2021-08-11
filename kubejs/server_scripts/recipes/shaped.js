@@ -89,6 +89,16 @@ events.listen('recipes', function (event) {
     A: 'minecraft:slime_ball'
   })
 
+  // Bayou Blues
+  // Replacement for a currently broken recipe (remove me if Team Aurora accepts the PR).
+  event.shaped(Item.of('bayou_blues:gooseberry_jam_cookie', 8), [
+    'AB',
+    'B '
+  ], {
+    A: 'bayou_blues:gooseberry_jam',
+    B: 'minecraft:wheat'
+  })
+
   // Decorative Blocks
   event.shaped(Item.of('decorative_blocks:chain', 2), [
     'A',

@@ -23,6 +23,9 @@ events.listen('recipes', function (event) {
     'atum:iron_ingot', // Duplicate recipe.
     'atum:iron_ingot_from_blasting', // Duplicate recipe.
 
+    // Bayou Blues
+    'bayou_blues:crafting/gooseberry_jam_cookie_bent', // Broken recipe (remove me if Team Aurora accept the PR).
+
     // Botania
     'botania:pure_daisy/sand', // Replaced with a different recipe.
 
