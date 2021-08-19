@@ -66,7 +66,6 @@ events.listen('recipes', function (event) {
   event.recipes.mekanism.crushing('biomesoplenty:black_sand', 'minecraft:basalt')
 
   // Create
-  event.recipes.mekanism.metallurgic_infusing('create:rose_quartz', 'minecraft:quartz', 'mekanism:redstone', 80) // 1 redstone = 10. Keeping in line w/ manual recipe
   event.recipes.mekanism.combining(Item.of('create:polished_rose_quartz', 8), Ingredient.of('create:rose_quartz', 8), '#forge:sandstone')
 
   // Decorative Blocks
