@@ -68,8 +68,8 @@ hideMatchedNames:true
 joinedFirstServer:false
 hideBundleTutorial:false
 syncChunkWrites:true
-soundCategory_master:0.75
-soundCategory_music:0.50
+soundCategory_master:0.50
+soundCategory_music:0.25
 soundCategory_record:1.0
 soundCategory_weather:1.0
 soundCategory_block:1.0
