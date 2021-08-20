@@ -1,0 +1,16 @@
+
+[General]
+	#Prevents too many entities from hatching. A despawning egg will only hatch if there are less chickens than defined here in a radius of 'radiusEntityLimiterCheck' blocks around.
+	#Range: 0 ~ 1000
+	onlyHatchIfLessChickensAroundThan = 50
+	#The chance an egg will hatch just before despawning if the entity limiter is not active.
+	#Range: 0.0 ~ 1.0
+	eggWillHatchChance = 0.5
+	#The radius around the despawned egg for 'onlyHatchIfLessChickensAroundThan'.
+	#Range: 1 ~ 256
+	radiusEntityLimiterCheck = 32
+	#If enabled, the newly hatched chicken is a small chick.
+	newHatchlingIsBaby = true
+	#When enabled, an egg will only hatch when it is laid on top a hay block. This prevents wild chicken colonies from expanding without your knowledge.
+	eggOnlyHatchesWhenOnTopOfHayBlock = true
+
