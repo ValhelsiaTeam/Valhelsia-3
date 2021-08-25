@@ -11,7 +11,7 @@
 	GiveMode = "MOUSE_PICKUP"
 	#Max number of columns shown
 	#Range: 4 ~ 100
-	MaxColumns = 12
+	MaxColumns = 18
 	#Max. recipe gui height
 	#Range: > 175
 	RecipeGuiHeight = 350
