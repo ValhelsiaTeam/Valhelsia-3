@@ -1,0 +1,89 @@
+{
+  "replace": false,
+  "trades": [
+    {
+      "type": "goblintraders:basic",
+      "offer_item": {
+        "item": "mekanism:ingot_copper",
+        "count": 5
+      },
+      "payment_item": {
+        "item": "mekanism:copper_ore",
+        "count": 3
+      },
+      "price_multiplier": 0.0,
+      "max_trades": 30,
+      "experience": 25
+    },
+    {
+      "type": "goblintraders:basic",
+      "offer_item": {
+        "item": "mekanism:ingot_tin",
+        "count": 5
+      },
+      "payment_item": {
+        "item": "mekanism:tin_ore",
+        "count": 3
+      },
+      "price_multiplier": 0.0,
+      "max_trades": 30,
+      "experience": 25
+    },
+    {
+      "type": "goblintraders:basic",
+      "offer_item": {
+        "item": "immersiveengineering:ingot_silver",
+        "count": 3
+      },
+      "payment_item": {
+        "item": "immersiveengineering:ore_silver",
+        "count": 2
+      },
+      "price_multiplier": 0.0,
+      "max_trades": 30,
+      "experience": 30
+    },
+    {
+      "type": "goblintraders:basic",
+      "offer_item": {
+        "item": "mekanism:ingot_osmium",
+        "count": 2
+      },
+      "payment_item": {
+        "item": "mekanism:osmium_ore",
+        "count": 1
+      },
+      "price_multiplier": 0.0,
+      "max_trades": 30,
+      "experience": 20
+    },
+    {
+      "type": "goblintraders:basic",
+      "offer_item": {
+        "item": "create:zinc_ingot",
+        "count": 5
+      },
+      "payment_item": {
+        "item": "create:zinc_ore",
+        "count": 3
+      },
+      "price_multiplier": 0.0,
+      "max_trades": 30,
+      "experience": 25
+    },
+    {
+      "type": "goblintraders:basic",
+      "offer_item": {
+        "item": "immersiveengineering:ingot_nickel",
+        "count": 5
+      },
+      "payment_item": {
+        "item": "immersiveengineering:ore_nickel",
+        "count": 3
+      },
+      "price_multiplier": 0.0,
+      "max_trades": 30,
+      "experience": 25
+    }
+  ]
+}
