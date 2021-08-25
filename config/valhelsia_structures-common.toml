@@ -106,7 +106,7 @@
 		spawn_chance = 0.9
 		#Spacing (in chunks) [default: 30]
 		#Range: 0 ~ 200
-		spacing = 30
+		spacing = 25
 		#Minimum Separation (in chunks) [default: 8]
 		#Range: 0 ~ 200
 		separation = 8
