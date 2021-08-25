@@ -10,7 +10,7 @@ artifact_rarity = 1.0
 [campsite]
 	#Whether to use wooden chests from other mods when generating campsites
 	#(keeping this enabled may make it easier to distinguish them from mimics)
-	use_modded_chests = false
+	use_modded_chests = true
 	#List of biome IDs in which campsites are not allowed to generate
 	#End and nether biomes are excluded by default
 	#To blacklist all biomes from a single mod, use "modid:*"
