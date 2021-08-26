@@ -5,7 +5,7 @@
     "displayEntities": true,
     "displayMode": "TOGGLE",
     "hideFromDebug": true,
-    "showIcon": true,
+    "iconMode": "TOP",
     "enableTextToSpeech": false,
     "maxHealthForRender": 40,
     "maxHeartsPerLine": 10,
@@ -61,14 +61,14 @@
           "textShadow": true
         }
       },
-      "activeTheme": "jade:waila"
+      "activeTheme": "jade:dark"
     },
     "autoScaleThreshold": 0.5
   },
   "formatting": {
-    "modName": "�9�o%s",
+    "modName": "§9§o%s",
     "blockName": "%s",
     "entityName": "%s",
-    "registryName": "�7[%s]"
+    "registryName": "§7[%s]"
   }
 }
