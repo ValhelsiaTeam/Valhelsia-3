@@ -170,7 +170,8 @@ events.listen('recipes', function (event) {
     'mysticalworld:iron_ingot_from_blasting_dust', // Duplicate recipe.
 
     // Quark
-    'quark:building/crafting/oak_bookshelf' // Duplicate recipe.
+    'quark:building/crafting/oak_bookshelf', // Duplicate recipe.
+    'quark:building/crafting/oak_ladder' // Duplicate recipe.
   ]
 
   idRemove.forEach(function (remove) {

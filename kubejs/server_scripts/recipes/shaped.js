@@ -18,6 +18,14 @@ events.listen('recipes', function (event) {
   ], {
     A: '#minecraft:planks'
   })
+  event.shaped(Item.of('minecraft:ladder', 4), [
+    'A A',
+    'ABA',
+    'A A'
+  ], {
+    A: '#forge:rods/wooden',
+    B: '#minecraft:planks'
+  })
   event.shaped(Item.of('minecraft:chainmail_helmet', 1), [
     'AAA',
     'A A'
