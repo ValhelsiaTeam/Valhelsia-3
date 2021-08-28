@@ -47,9 +47,12 @@
   "entity.minecraft.villager.immersiveengineering.gunsmith": "Gunsmith",
   "entity.minecraft.villager.summoner": "Summoner",
 
-
   "comment.misc": "---Miscellaneous missing language entries---",
   "tetra.stats.blocking_reflect": "Attack Reflection",
-  "tetra.stats.tool.sweeping": "Sweeping"
+  "tetra.stats.tool.sweeping": "Sweeping",
+  "fml.menu.multiplayer.incompatible":"Forge Modded Server",
+  "fml.menu.multiplayer.incompatible.extra":"Forge Modded Server\n{0}",
+  "fml.menu.multiplayer.modsincompatible":"Server mod list cannot be confirmed as compatible.",
+  "fml.menu.multiplayer.truncated":"This is due to protocol size limits. Please try connecting anyway."
 
 }
