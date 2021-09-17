@@ -1114,7 +1114,7 @@
 			"Min Y Level" = 20
 			#Allowed values: [0,)
 			"Horizontal Variation" = 9
-			Enabled = false
+			Enabled = true
 			#Allowed values: [0,255]
 			"Max Y Level" = 80
 			#Allowed values: [0,)
@@ -1130,7 +1130,7 @@
 					# plateau, modified, ocean, river, water, mesa, forest,
 					# plains, mountain, hills, swamp, sandy, snowy, wasteland,
 					# beach, void, overworld, nether, end]
-					"Biome Types" = ["plains"]
+					"Biome Types" = ["plains", "snowy", "mountain", "cold"]
 					"Is Blacklist" = false
 
 				[world.big_stone_clusters.marble.biomes.biomes]
@@ -1331,7 +1331,7 @@
 			"Min Y Level" = 20
 			#Allowed values: [0,)
 			"Horizontal Variation" = 9
-			Enabled = false
+			Enabled = true
 			#Allowed values: [0,255]
 			"Max Y Level" = 80
 			#Allowed values: [0,)
@@ -1403,7 +1403,7 @@
 			"Min Y Level" = 20
 			#Allowed values: [0,)
 			"Horizontal Variation" = 9
-			Enabled = false
+			Enabled = true
 			#Allowed values: [0,255]
 			"Max Y Level" = 80
 			#Allowed values: [0,)
