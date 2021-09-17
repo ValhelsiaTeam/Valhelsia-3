@@ -18,4 +18,7 @@ events.listen('recipes', function (event) {
   event.replaceInput({}, 'forbidden_arcanus:dragon_scale', '#forge:dragon_scales')
   event.replaceInput({}, 'quark:dragon_scale', '#forge:dragon_scales')
 
+  // Prevent recipes from using Ender Chests or Personal Chests when they don't need to.
+  event.replaceInput({}, '#forge:chests', '#forge:chests/wooden')
+
 })

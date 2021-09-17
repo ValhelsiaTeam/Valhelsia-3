@@ -30,6 +30,7 @@ events.listen('recipes', function (event) {
 
     // Botania
     'botania:pure_daisy/sand', // Replaced with a different recipe.
+    'botania:ender_hand', // Replaced with a different recipe to fix Ender Chest issues.
 
     // Blood Magic
     'bloodmagic:smelting/ingot_gold', // Duplicate recipe.
@@ -85,7 +86,7 @@ events.listen('recipes', function (event) {
     'immersiveengineering:crafting/ingot_lead_to_storage_lead',
 
     // Industrial Foregoing
-    'industrialforegoing:infinity_drill',
+    'industrialforegoing:black_hole_controller', // Replaced with a different recipe to fix Ender Chest issues.
 
     // Mekanism
     'mekanism:crushing/biofuel/oak_sapling',

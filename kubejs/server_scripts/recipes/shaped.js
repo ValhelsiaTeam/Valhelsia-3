@@ -89,6 +89,7 @@ events.listen('recipes', function (event) {
     B: '#forge:dyes/black'
   })
 
+  // Adding this back in as it gets removed earlier in the loading process.
   event.shaped(Item.of('minecraft:slime_block', 1), [
     'AAA',
     'AAA',
@@ -104,7 +105,19 @@ events.listen('recipes', function (event) {
     'B '
   ], {
     A: 'bayou_blues:gooseberry_jam',
-    B: 'minecraft:wheat'
+    B: '#forge:crops/wheat'
+  })
+
+  // Botania
+  event.shaped(Item.of('botania:ender_hand', 1), [
+    'PLO',
+    'LEL',
+    'OL '
+  ], {
+    P: 'botania:mana_pearl',
+    E: '#forge:chests/ender',
+    L: 'minecraft:leather',
+    O: '#forge:obsidian'
   })
 
   // Decorative Blocks
@@ -142,6 +155,7 @@ events.listen('recipes', function (event) {
   })
 
   // Immersive Engineering
+  /* May be no longer needed - testing.
   event.shaped(Item.of('immersiveengineering:treated_wood_horizontal', 8), [
     'AAA',
     'ABA',
@@ -150,6 +164,7 @@ events.listen('recipes', function (event) {
     A: '#minecraft:planks',
     B: 'immersiveengineering:creosote_bucket'
   })
+  */
 
   event.shaped(Item.of('immersiveengineering:ingot_silver', 1), [
     'SSS',
@@ -207,6 +222,19 @@ events.listen('recipes', function (event) {
     'AAA'
   ], {
     A: 'industrialforegoing:pink_slime'
+  })
+
+  // Adding this back in (removed earlier in the loading process).
+  event.shaped(Item.of('industrialforegoing:black_hole_controller', 1), [
+    'PGP',
+    'NEN',
+    'PMP'
+  ], {
+    P: '#forge:plastic',
+    G: '#forge:gears/diamond',
+    N: 'minecraft:ender_eye',
+    E: '#forge:chests/ender',
+    M: '#industrialforegoing:machine_frame/supreme'
   })
 
   // Mystical World

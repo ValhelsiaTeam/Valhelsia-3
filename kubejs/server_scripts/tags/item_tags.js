@@ -747,4 +747,5 @@ onEvent('item.tags', event => {
   event.add('forge:raw_fishes', 'betterendforge:end_fish_raw')
   event.add('forge:cooked_fishes', 'betterendforge:end_fish_cooked')
   event.add('forge:vegetables', 'betterendforge:amber_root_raw')
+  event.add('forge:chests/ender', 'enderstorage:ender_chest')
 })
