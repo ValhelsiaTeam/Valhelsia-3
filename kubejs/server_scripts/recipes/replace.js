@@ -21,4 +21,6 @@ events.listen('recipes', function (event) {
   // Prevent recipes from using Ender Chests or Personal Chests when they don't need to.
   event.replaceInput({}, '#forge:chests', '#forge:chests/wooden')
 
+  // Allow Bone Piles to be made with any bones.
+  event.replaceInput({output:'valhelsia_structures:bone_pile'}, 'minecraft:bone', '#forge:bones')
 })

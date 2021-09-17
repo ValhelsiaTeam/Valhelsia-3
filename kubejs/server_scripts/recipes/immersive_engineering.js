@@ -38,6 +38,7 @@ events.listen('recipes', function (event) {
   event.recipes.immersiveengineering.crusher('atmospheric:red_arid_sand', 'quark:jasper')
 
   // Atum Compat
+  event.recipes.immersiveengineering.crusher(Item.of('minecraft:bone_meal', 6), 'atum:dusty_bone')
   event.recipes.immersiveengineering.crusher(Item.of('minecraft:bone_meal', 9), 'atum:dirty_bone_block')
 
   // Autumnity Compat
@@ -54,6 +55,9 @@ events.listen('recipes', function (event) {
   event.recipes.immersiveengineering.cloche(['betterendforge:shadow_berry_raw', 'betterendforge:shadow_berry'], 'betterendforge:shadow_berry', 'betterendforge:shadow_grass', {type: 'crop', block: 'betterendforge:shadow_berry'}).time(800)
   event.recipes.immersiveengineering.crusher(Item.of('betterendforge:endstone_dust', 2), '#forge:end_stones', Item.of('bloodmagic:saltpeter').withChance(0.5))
   event.recipes.immersiveengineering.crusher(Item.of('betterendforge:ender_shard', 2), '#forge:ores/ender')
+
+  // Blue Skies Compat
+  event.recipes.immersiveengineering.crusher(Item.of('minecraft:bone_meal', 9), 'blue_skies:azulfo_horn')
 
   // BoP Compat
   event.recipes.immersiveengineering.crusher('biomesoplenty:white_sand', 'quark:marble')
