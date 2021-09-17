@@ -1,0 +1,28 @@
+{
+  "key": "myalite",
+  "category": "stone",
+  "primary": "5.5",
+  "secondary": "5.5",
+  "tertiary": "0",
+  "durability": "750",
+  "integrityCost": "3",
+  "integrityGain": "5",
+  "magicCapacity": "110",
+  "toolLevel": "4",
+  "toolEfficiency": "7",
+  "tints": {
+    "glyph": "7851b8",
+    "texture": "7851b8"
+  },
+  "textures": [
+    "grainy",
+    "crude",
+    "default"
+  ],
+  "material": {
+    "item": "quark:myalite"
+  },
+  "requiredTools": {
+    "hammer": 3
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "key": "pewter",
+  "category": "metal",
+  "primary": "6",
+  "secondary": "4.6",
+  "tertiary": "1.5",
+  "durability": "325",
+  "integrityCost": "2",
+  "integrityGain": "5",
+  "magicCapacity": "72",
+  "toolLevel": "3",
+  "toolEfficiency": "6.5",
+  "tints": {
+    "glyph": "9f9e95",
+    "texture": "9f9e95"
+  },
+  "textures": [
+    "metal",
+    "default"
+  ],
+  "material": {
+    "tag": "forge:ingots/pewter"
+  },
+  "requiredTools": {
+    "hammer": 2
+  }
+}

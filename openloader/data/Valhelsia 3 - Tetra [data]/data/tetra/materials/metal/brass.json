@@ -1,0 +1,31 @@
+{
+  "replace": true,
+  "key": "brass",
+  "category": "metal",
+  "primary": "5.5",
+  "secondary": "4",
+  "tertiary": "3.0",
+  "durability": "400",
+  "integrityCost": "2",
+  "integrityGain": "5",
+  "magicCapacity": "80",
+  "toolLevel": "3",
+  "toolEfficiency": "7",
+  "tints": {
+    "glyph":"b39c54",
+    "texture":"b39c54"
+  },
+  "textures": [
+    "metal",
+    "default"
+  ],
+  "material": {
+    "tag":"forge:ingots/brass"
+  },
+  "improvements": {
+    "workable": 1
+  },
+  "requiredTools":{
+    "hammer":2
+  }
+}

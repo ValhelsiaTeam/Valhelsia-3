@@ -1,0 +1,30 @@
+{
+  "key": "booflo_hide",
+  "category": "skin",
+  "primary": "3",
+  "secondary": "0.2",
+  "tertiary": "5.5",
+  "durability": "400",
+  "integrityCost": "1",
+  "integrityGain": "5",
+  "magicCapacity": "60",
+  "toolLevel": "0",
+  "toolEfficiency": "0",
+  "effects": {
+    "enderReverb": [2, 0.15]
+  },
+  "tints": {
+    "glyph": "efdd90",
+    "texture": "efdd90"
+  },
+  "textures": [
+    "crude",
+    "default"
+  ],
+  "material": {
+    "item": "endergetic:booflo_hide"
+  },
+  "requiredTools": {
+    "cut": 3
+  }
+}

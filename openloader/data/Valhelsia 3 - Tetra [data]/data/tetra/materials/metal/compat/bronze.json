@@ -7,7 +7,7 @@
     "durability": "192",
     "integrityCost": "1",
     "integrityGain": "5",
-    "magicCapacity": 72,
+    "magicCapacity": "72",
     "toolLevel": "2",
     "toolEfficiency": "5",
     "tints": {
@@ -16,7 +16,7 @@
     },
     "textures": ["metal", "default"],
     "material" : {
-        "item": "mekanism:ingot_bronze"
+        "tag": "forge:ingots/bronze"
     },
     "improvements": {
         "workable":1

@@ -1,0 +1,27 @@
+{
+  "key": "thrasher_tooth",
+  "category": "bone",
+  "primary": "6.1",
+  "secondary": "3.5",
+  "tertiary": "2.2",
+  "durability": "105",
+  "integrityCost": "1",
+  "integrityGain": "6",
+  "magicCapacity": "120",
+  "toolLevel": "2",
+  "toolEfficiency": "6",
+  "tints": {
+    "glyph": "e5f1ed",
+    "texture": "e5f1ed"
+  },
+  "textures": [
+    "bone",
+    "crude"
+  ],
+  "material": {
+    "item": "upgrade_aquatic:thrasher_tooth"
+  },
+  "requiredTools": {
+    "hammer": 2
+  }
+}

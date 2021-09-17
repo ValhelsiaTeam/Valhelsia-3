@@ -1,0 +1,30 @@
+{
+  "key": "arcane_gold",
+  "category": "metal",
+  "primary": "4",
+  "secondary": "5",
+  "tertiary": "1",
+  "durability": "96",
+  "integrityCost": "2",
+  "integrityGain": "4",
+  "magicCapacity": "160",
+  "toolLevel": "2",
+  "toolEfficiency": "13",
+  "tints": {
+    "glyph": "edae66",
+    "texture": "edae66"
+  },
+  "textures": [
+    "metal",
+    "shiny"
+  ],
+  "material": {
+    "tag": "forge:ingots/arcane_gold"
+  },
+  "effects": {
+    "stabilizing": 25
+  },
+  "requiredTools": {
+    "hammer": 2
+  }
+}
