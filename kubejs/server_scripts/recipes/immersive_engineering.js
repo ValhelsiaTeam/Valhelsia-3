@@ -103,6 +103,8 @@ events.listen('recipes', function (event) {
   event.recipes.immersiveengineering.metal_press(Item.of('minecraft:dried_kelp', 9), 'minecraft:dried_kelp_block', 'immersiveengineering:mold_unpacking')
   event.recipes.immersiveengineering.metal_press(Item.of('minecraft:nether_wart', 4), 'minecraft:nether_wart_block', 'immersiveengineering:mold_unpacking')
   event.recipes.immersiveengineering.crusher(Item.of('minecraft:bone_meal', 9), 'minecraft:bone_block')
+  // Adjusted Nether Wart crushing to prevent duplicating nether wart.
+  event.recipes.immersiveengineering.crusher(Item.of('minecraft:nether_wart', 4), 'minecraft:nether_wart')
 
   // Mystical World Compat
   squeezer('immersiveengineering:plantoil', '#forge:seeds/aubergine', 60)

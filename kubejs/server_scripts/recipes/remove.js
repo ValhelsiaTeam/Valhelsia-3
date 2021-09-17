@@ -84,6 +84,7 @@ events.listen('recipes', function (event) {
     'immersiveengineering:crafting/ingot_steel_to_storage_steel',
     'immersiveengineering:crafting/ingot_copper_to_storage_copper',
     'immersiveengineering:crafting/ingot_lead_to_storage_lead',
+    'immersiveengineering:crusher/nether_wart', // Default recipe leads to dupe exploit.
 
     // Industrial Foregoing
     'industrialforegoing:black_hole_controller', // Replaced with a different recipe to fix Ender Chest issues.
