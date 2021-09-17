@@ -41,27 +41,26 @@ onEvent('item.tags', event => {
     'mysticalworld:aubergine_seeds'
   ])
 
-  // Missing #forge:fruits item tags.
-  event.get('forge:fruits').add([
-    'atmospheric:passionfruit',
-    'autumnity:foul_berries',
-    'betterendforge:blossom_berry',
-    'betterendforge:shadow_berry_raw',
-    'minecraft:sweet_berries',
-    'neapolitan:white_strawberries'
-  ])
-
-  // Missing #forge:ice item tags.
-  event.get('forge:ice').add([
-    'betterendforge:emerald_ice',
-    'betterendforge:dense_emerald_ice',
-    'betterendforge:ancient_emerald_ice'
-  ])
-
-  // Missing #forge:mushrooms item tags.
-  event.get('forge:mushrooms').add([
+  // Additional Autumnity Snail Foods
+  event.get('autumnity:snail_foods').add([
     'betterendforge:bolux_mushroom',
-    'betterendforge:chorus_mushroom_raw'
+    'betterendforge:chorus_mushroom_raw',
+    'betterendforge:small_amaranita_mushroom',
+    'betterendforge:small_jellyshroom',
+    'biomesoplenty:glowshroom',
+    'biomesoplenty:toadstool',
+    'blue_skies:snowcap_mushroom',
+    'darkerdepths:glowshroom'
+  ])
+
+  // Additional Autumnity Snail Glowing Foods
+  event.get('autumnity:snail_glowing_foods').add([
+    'biomesoplenty:glowshroom',
+    'darkerdepths:glowshroom'
+  ])
+  
+  event.get('autumnity:snail_temptation_items').add([
+    '#forge:mushrooms'
   ])
 
   // Missing #forge:sapling item tags.
@@ -737,15 +736,39 @@ onEvent('item.tags', event => {
     'environmental:white_hanging_wisteria_leaves'
   ])
 
+  // Aquaculture Tackle Box Green (ideally this shouldn't even exist)
+  event.get('aquaculture:tackle_box_green').add([
+    'bayou_blues:algae',
+    '#forge:dyes/green'
+  ])
+
+  // Gems
+  event.get('forge:gems').add([
+    'blue_skies:moonstone_shard',
+    'blue_skies:moonstone',
+    'blue_skies:pearl'
+  ])
+
+  // Ingots
+  event.get('forge:ingots').add([
+    'biomesoplenty:mud_brick',
+    'environmental:mud_brick'
+  ])
+
+  // Blue Skies Missing Tags (more in food_tags.js)
+  event.add('forge:gems/moonstone_shard', '#blue_skies:gems/moonstone_shard')
+  event.add('forge:gems/moonstone', '#blue_skies:gems/moonstone')
+  event.add('forge:gems/pearl', 'blue_skies:pearl')
+  event.add('forge:ingots/falsite', '#blue_skies:ingots/falsite')
+  event.add('forge:ingots/horizonite', '#blue_skies:ingots/horizonite')
+  event.add('forge:ingots/ventium', '#blue_skies:ingots/ventium')
+
   // Misc Missing Item Tags
   event.add('forge:seeds/cattail', 'environmental:cattail_seeds')
   event.add('forge:seeds/aubergine', 'mysticalworld:aubergine_seeds')
-  event.add('forge:fruits/strawberry', 'neapolitan:white_strawberries')
   event.add('forge:dusts/obsidian', 'create:powdered_obsidian')
   event.add('forbidden_arcanus:edelwood_logs', 'forbidden_arcanus:edelwood_log')
   event.add('forge:dragon_scales', 'quark:dragon_scale')
-  event.add('forge:raw_fishes', 'betterendforge:end_fish_raw')
-  event.add('forge:cooked_fishes', 'betterendforge:end_fish_cooked')
-  event.add('forge:vegetables', 'betterendforge:amber_root_raw')
   event.add('forge:chests/ender', 'enderstorage:ender_chest')
+  event.add('forge:bones', 'aquaculture:fish_bones')
 })

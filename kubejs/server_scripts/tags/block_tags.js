@@ -295,6 +295,20 @@ onEvent('block.tags', event => {
     'atum:black_stained_deadwood_framed_crystal_glass_pane'
   ])
 
+  // Missing Mushroom Block Tags (which mod adds this tag?)
+  event.get('forge:mushroom_blocks').add([
+    'betterendforge:bolux_mushroom',
+    'betterendforge:chorus_mushroom_raw',
+    'betterendforge:small_amaranita_mushroom',
+    'betterendforge:small_jellyshroom',
+    'biomesoplenty:glowshroom',
+    'biomesoplenty:toadstool',
+    'blue_skies:snowcap_mushroom',
+    'darkerdepths:glowshroom',
+    'minecraft:red_mushroom',
+    'quark:glowshroom'
+  ])
+
   // Windowlogging Support (for things that aren't glass panes)
   event.get('windowlogging:window').add([
     'betterendforge:thallasium_bars',
