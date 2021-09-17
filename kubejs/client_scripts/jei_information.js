@@ -110,4 +110,7 @@ events.listen('jei.information', function (event) {
 
     event.add(quarkSlimeBlocks, "Slime blocks can be dyed Red and Blue. The primary color blocks (Red, Green, and Blue) can be combined to create secondary colors (Cyan, Magenta, and Yellow).")
     event.add(quarkSlimeBlocks, "While being moved by pistons, two slime blocks will only connect if they're the same color, or if one is made of another (so Red won't connect to Blue, but it'll connect to Magenta). Any color of slime will connect to non-slime blocks around it normally.")  
+
+    // Valhelsia Additional Information
+    event.add('akashictome:tome', "When crafting an Akashic Tome, the recipe with four bookshelves will be filled with the starting manuals and the recipe with one bookshelf will be empty.")
 })
