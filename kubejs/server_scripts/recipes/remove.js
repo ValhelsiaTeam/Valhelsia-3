@@ -7,6 +7,9 @@ events.listen('recipes', function (event) {
     // Abnormals Delight
     'abnormals_delight:environmental/cooking/squid_ink_risotto', // Squid Ink Risotto has been removed from Environmental.
 
+    // Abundance
+    'abundance:crafting/lavender_basket', // Removed but re-added later.
+
     // Autumnity
     'autumnity:lead_from_snail_slime', // Replaced with a tag recipe.
     'autumnity:sticky_piston_from_snail_slime', // Replaced with a tag recipe.
@@ -28,6 +31,9 @@ events.listen('recipes', function (event) {
     // Bayou Blues
     'bayou_blues:crafting/gooseberry_jam_cookie_bent', // Broken recipe (remove me if Team Aurora accept the PR).
 
+    // Biomes 'o' Plenty
+    'biomesoplenty:purple_dye_from_lavender', // Redundant.
+
     // Botania
     'botania:pure_daisy/sand', // Replaced with a different recipe.
     'botania:ender_hand', // Replaced with a different recipe to fix Ender Chest issues.
@@ -46,6 +52,7 @@ events.listen('recipes', function (event) {
     'create:compat/upgrade_aquatic/milling/searocket_white', // Fix erroring recipe.
     'create:compat/atmospheric/cutting/driftwood_log', // Fix erroring recipe.
     'create:compat/atmospheric/cutting/stripped_driftwood_log', // Fix erroring recipe.
+    'create:compat/bop/milling/lavender', // Redundant.
 
     // Create Crafts & Additions
     'createaddition:compat/immersiveengineering/lapis_sheet_metal_press', // Duplicate recipe.

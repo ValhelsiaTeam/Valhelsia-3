@@ -32,6 +32,9 @@ events.listen('recipes', function (event) {
   event.replaceInput({}, 'blue_skies:cherry', '#forge:fruits/cherry')
   event.replaceInput({}, 'environmental:cherry', '#forge:fruits/cherry')
   event.replaceInput({}, 'minecraft:wheat', '#forge:grain/wheat')
+  event.replaceInput({}, 'abundance:lavender', '#valhelsia:flowers/lavender')
+  event.replaceInput({}, 'biomesoplenty:lavender', '#valhelsia:flowers/lavender')
+  event.replaceInput({}, 'druidcraft:lavender', '#valhelsia:flowers/lavender')
 
   // Specific Item Compatibility:
   event.replaceInput({output:'minecraft:writable_book'}, 'minecraft:feather', '#forge:feathers')

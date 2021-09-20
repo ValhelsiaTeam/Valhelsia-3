@@ -775,6 +775,13 @@ onEvent('item.tags', event => {
     'alexsmobs:roadrunner_feather'
   ])
 
+  // Lavenders
+  event.get('valhelsia:flowers/lavender').add([
+    'abundance:lavender',
+    'biomesoplenty:lavender',
+    'druidcraft:lavender'
+  ])
+
   // Blue Skies Missing Tags (more in food_tags.js)
   event.add('forge:gems/moonstone_shard', '#blue_skies:gems/moonstone_shard')
   //event.add('forge:gems/moonstone', '#blue_skies:gems/moonstone') // Not added for balancing reasons.

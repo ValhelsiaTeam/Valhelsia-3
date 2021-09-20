@@ -98,6 +98,16 @@ events.listen('recipes', function (event) {
     A: 'minecraft:slime_ball'
   })
 
+  // Abundance
+  // Adding this back in as it gets removed earlier in the loading process.
+  event.shaped(Item.of('abundance:lavender_basket', 1), [
+    'AAA',
+    'AAA',
+    'AAA'
+  ], {
+    A: 'abundance:lavender'
+  })
+
   // Bayou Blues
   // Replacement for a currently broken recipe (remove me if Team Aurora accepts the PR).
   event.shaped(Item.of('bayou_blues:gooseberry_jam_cookie', 8), [
