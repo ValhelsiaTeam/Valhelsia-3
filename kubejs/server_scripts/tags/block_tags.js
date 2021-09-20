@@ -298,7 +298,6 @@ onEvent('block.tags', event => {
   // Missing Mushroom Block Tags (which mod adds this tag?)
   event.get('forge:mushroom_blocks').add([
     'betterendforge:bolux_mushroom',
-    'betterendforge:chorus_mushroom_raw',
     'betterendforge:small_amaranita_mushroom',
     'betterendforge:small_jellyshroom',
     'biomesoplenty:glowshroom',

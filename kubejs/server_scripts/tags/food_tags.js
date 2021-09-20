@@ -67,7 +67,7 @@ onEvent('item.tags', event => {
   // Raw Fishes
   event.get('forge:raw_fishes').add([
     'betterendforge:end_fish_raw',
-    'blue_skies:grittle_catfish',
+    'blue_skies:grittle_flatfish',
     'blue_skies:municipal_monkfish',
     'blue_skies:charscale_moki',
     'blue_skies:horizofin_tunid'
@@ -76,7 +76,7 @@ onEvent('item.tags', event => {
   // Cooked Fishes
   event.get('forge:cooked_fishes').add([
     'betterendforge:end_fish_cooked',
-    'blue_skies:cooked_grittle_catfish',
+    'blue_skies:cooked_grittle_flatfish',
     'blue_skies:cooked_municipal_monkfish',
     'blue_skies:cooked_charscale_moki',
     'blue_skies:cooked_horizofin_tunid'
@@ -107,10 +107,11 @@ onEvent('item.tags', event => {
     'alexsmobs:cooked_kangaroo_meat',
     'alexsmobs:moose_ribs',
     'alexsmobs:cooked_moose_ribs',
-    'blue_skies:raw_carabeef',
+    'blue_skies:carabeef',
     'blue_skies:cooked_carabeef',
     'blue_skies:monitor_tail',
     'blue_skies:cooked_monitor_tail',
+    'blue_skies:bug_guts',
     'environmental:scrambled_eggs',
     '#forge:raw_duck',
     '#forge:cooked_duck',

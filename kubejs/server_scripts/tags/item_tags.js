@@ -757,7 +757,7 @@ onEvent('item.tags', event => {
 
   // Blue Skies Missing Tags (more in food_tags.js)
   event.add('forge:gems/moonstone_shard', '#blue_skies:gems/moonstone_shard')
-  event.add('forge:gems/moonstone', '#blue_skies:gems/moonstone')
+  //event.add('forge:gems/moonstone', '#blue_skies:gems/moonstone') // Not added for balancing reasons.
   event.add('forge:gems/pearl', 'blue_skies:pearl')
   event.add('forge:ingots/falsite', '#blue_skies:ingots/falsite')
   event.add('forge:ingots/horizonite', '#blue_skies:ingots/horizonite')
