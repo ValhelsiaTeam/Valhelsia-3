@@ -1,4 +1,11 @@
 {
-		"tetra.material.neptunium": "Neptunium",
-    "tetra.material.neptunium.prefix": "Neptunium"
+	"tetra.material.neptunium": "Neptunium",
+  "tetra.material.neptunium.prefix": "Neptunium",
+    
+  "tetra.material.thrasher_tooth": "Thrasher Tooth",
+  "tetra.material.thrasher_tooth.prefix": "Thrasher Tooth",
+  "tetra.material.booflo_hide": "Booflo Hide",
+  "tetra.material.booflo_hide.prefix": "Booflo Hide",
+  "tetra.material.poise": "Poise",
+  "tetra.material.poise.prefix": "Poise"
 }
