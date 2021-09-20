@@ -23,4 +23,20 @@ events.listen('recipes', function (event) {
 
   // Allow Bone Piles to be made with any bones.
   event.replaceInput({output:'valhelsia_structures:bone_pile'}, 'minecraft:bone', '#forge:bones')
+
+  // Allow any feathers or sticks to be used to craft arrows:
+  event.replaceInput({output:'#minecraft:arrows'}, 'minecraft:feather', '#forge:feathers')
+  event.replaceInput({output:'#minecraft:arrows'}, 'minecraft:stick', '#forge:rods/wooden')
+
+  // Misc Compatibility:
+  event.replaceInput({}, 'blue_skies:cherry', '#forge:fruits/cherry')
+  event.replaceInput({}, 'environmental:cherry', '#forge:fruits/cherry')
+  event.replaceInput({}, 'minecraft:wheat', '#forge:grain/wheat')
+
+  // Specific Item Compatibility:
+  event.replaceInput({output:'minecraft:writable_book'}, 'minecraft:feather', '#forge:feathers')
+  event.replaceInput({output:'xercamusic:music_sheet'}, 'minecraft:feather', '#forge:feathers')
+  event.replaceInput({output:'botania:tornado_rod'}, 'minecraft:feather', '#forge:feathers')
+  event.replaceInput({output:'botania:flight_tiara'}, 'minecraft:feather', '#forge:feathers')
+  //event.replaceInput({output:'patchouli:guide_book'}, 'minecraft:feather', '#forge:feathers') // Doesn't work, presumably due to NBT data.
 })

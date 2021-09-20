@@ -725,6 +725,12 @@ onEvent('item.tags', event => {
     'twilightforest:charm_of_keeping_2',
     'twilightforest:charm_of_keeping_3'
   ]);
+  
+  // Curios Back
+  event.get('curios:back').add([
+    // This is functional but does not render in this slot. I think this is still preferable to not having it though.
+    'alexsmobs:tarantula_hawk_elytra' 
+  ]);
 
   // Hanging Leaves
   event.get('valhelsia:hanging_leaves').add([
@@ -755,6 +761,20 @@ onEvent('item.tags', event => {
     'environmental:mud_brick'
   ])
 
+  // Leathers
+  event.get('forge:leather').add([
+    'blue_skies:fox_pelt',
+    'mysticalworld:pelt',
+    'nethers_delight:hoglin_hide',
+    'alexsmobs:kangaroo_hide'
+  ])
+
+  // Feathers
+  event.get('forge:feathers').add([
+    'alexsmobs:emu_feather',
+    'alexsmobs:roadrunner_feather'
+  ])
+
   // Blue Skies Missing Tags (more in food_tags.js)
   event.add('forge:gems/moonstone_shard', '#blue_skies:gems/moonstone_shard')
   //event.add('forge:gems/moonstone', '#blue_skies:gems/moonstone') // Not added for balancing reasons.
@@ -771,4 +791,5 @@ onEvent('item.tags', event => {
   event.add('forge:dragon_scales', 'quark:dragon_scale')
   event.add('forge:chests/ender', 'enderstorage:ender_chest')
   event.add('forge:bones', 'aquaculture:fish_bones')
+
 })

@@ -123,6 +123,10 @@ onEvent('item.tags', event => {
     '#forge:cooked_eggs',
   ])
 
+  event.get('mysticalworld:sugars').add([
+    'abnormals_delight:vanilla_cake_slice' // Example - many more are missing here (TODO).
+  ])
+
   // Wolf Prey
   event.get('farmersdelight:wolf_prey').add([
     'mysticalworld:venison'
