@@ -44,10 +44,23 @@ onEvent('block.tags', event => {
 
   event.get('forge:supports_conduit').add(supportsConduit)
 
+  // Missing Wall Tags
+  event.get('minecraft:walls').add([
+    'darkerdepths:shale_wall',
+    'darkerdepths:shale_bricks_wall',
+    'darkerdepths:aridrock_wall',
+    'darkerdepths:aridrock_bricks_wall',
+    'darkerdepths:limestone_wall',
+    'darkerdepths:limestone_bricks_wall',
+    'darkerdepths:grimestone_wall',
+    'darkerdepths:grimestone_bricks_wall'
+  ])
+
   // Missing Stair Tags
   var woodenStairs = [
     'astralsorcery:infused_wood_stairs',
     'betterendforge:neon_cactus_stairs',
+    'darkerdepths:petrified_stairs',
     'immersiveengineering:stairs_treated_wood_horizontal',
     'immersiveengineering:stairs_treated_wood_vertical',
     'immersiveengineering:stairs_treated_wood_packaged'
@@ -62,7 +75,21 @@ onEvent('block.tags', event => {
     'betterendforge:violecite_stairs',
     'betterendforge:violecite_bricks_stairs',
     'betterendforge:sulphuric_rock_stairs',
-    'betterendforge:sulphuric_rock_bricks_stairs'
+    'betterendforge:sulphuric_rock_bricks_stairs',
+    'darkerdepths:cobbled_sandstone_stairs',
+    'darkerdepths:cobbled_red_sandstone_stairs',
+    'darkerdepths:shale_stairs',
+    'darkerdepths:polished_shale_stairs',
+    'darkerdepths:shale_bricks_stairs',
+    'darkerdepths:aridrock_stairs',
+    'darkerdepths:polished_aridrock_stairs',
+    'darkerdepths:aridrock_bricks_stairs',
+    'darkerdepths:limestone_stairs',
+    'darkerdepths:polished_limestone_stairs',
+    'darkerdepths:limestone_bricks_stairs',
+    'darkerdepths:grimestone_stairs',
+    'darkerdepths:polished_grimestone_stairs',
+    'darkerdepths:grimestone_bricks_stairs'
   ]
 
   event.get('minecraft:stairs')
@@ -83,6 +110,7 @@ onEvent('block.tags', event => {
   var woodenSlabs = [
     'astralsorcery:infused_wood_slab',
     'betterendforge:neon_cactus_slab',
+    'darkerdepths:petrified_slab',
     'immersiveengineering:slab_treated_wood_horizontal',
     'immersiveengineering:slab_treated_wood_vertical',
     'immersiveengineering:slab_treated_wood_packaged'
@@ -91,7 +119,21 @@ onEvent('block.tags', event => {
   var stoneSlabs = [
     'astralsorcery:marble_slab',
     'astralsorcery:black_marble_slab',
-    'betterendforge:dragon_bone_slab'
+    'betterendforge:dragon_bone_slab',
+    'darkerdepths:cobbled_sandstone_slab',
+    'darkerdepths:cobbled_red_sandstone_slab',
+    'darkerdepths:shale_slab',
+    'darkerdepths:polished_shale_slab',
+    'darkerdepths:shale_bricks_slab',
+    'darkerdepths:aridrock_slab',
+    'darkerdepths:polished_aridrock_slab',
+    'darkerdepths:aridrock_bricks_slab',
+    'darkerdepths:limestone_slab',
+    'darkerdepths:polished_limestone_slab',
+    'darkerdepths:limestone_bricks_slab',
+    'darkerdepths:grimestone_slab',
+    'darkerdepths:polished_grimestone_slab',
+    'darkerdepths:grimestone_bricks_slab'
   ]
 
   event.get('minecraft:slabs')
@@ -108,6 +150,31 @@ onEvent('block.tags', event => {
 
   event.get('minecraft:wooden_slabs')
        .add(woodenSlabs)
+
+  // Vertical Slabs
+  var woodenVerticalSlabs = [
+    'darkerdepths:petrified_vertical_slab'
+  ]
+
+  var miscVerticalSlabs = [
+    'darkerdepths:cobbled_sandstone_vertical_slab',
+    'darkerdepths:cobbled_red_sandstone_vertical_slab',
+    'darkerdepths:shale_vertical_slab',
+    'darkerdepths:polished_shale_vertical_slab',
+    'darkerdepths:shale_bricks_vertical_slab',
+    'darkerdepths:aridrock_vertical_slab',
+    'darkerdepths:polished_aridrock_vertical_slab',
+    'darkerdepths:aridrock_bricks_vertical_slab',
+    'darkerdepths:limestone_vertical_slab',
+    'darkerdepths:polished_limestone_vertical_slab',
+    'darkerdepths:limestone_bricks_vertical_slab',
+    'darkerdepths:grimestone_vertical_slab',
+    'darkerdepths:polished_grimestone_vertical_slab',
+    'darkerdepths:grimestone_bricks_vertical_slab'
+  ]
+
+  event.get('quark:vertical_slabs').add(miscVerticalSlabs).add(woodenVerticalSlabs)
+  event.get('quark:wooden_vertical_slabs').add(woodenVerticalSlabs)
 
   // Sandstone Tags
   var aridSandstones = [
@@ -173,7 +240,6 @@ onEvent('block.tags', event => {
   event.get('forge:sandstone/soul')
        .add(soulSandstones)
 
-     
   var soullessSandstones = [
     'forbidden_arcanus:soulless_sandstone',
     'forbidden_arcanus:cut_soulless_sandstone',
@@ -183,7 +249,9 @@ onEvent('block.tags', event => {
   event.get('forge:sandstone/soulless')
        .add(soullessSandstones)
 
+  event.add('forge:sandstone/colorless', 'darkerdepths:cobbled_sandstone')
   event.add('forge:sandstone/colorless', 'quark:sandstone_bricks')
+  event.add('forge:sandstone/red', 'darkerdepths:cobbled_red_sandstone')
   event.add('forge:sandstone/red', 'quark:red_sandstone_bricks')
 
   // Mythic Botany Missing Block Tags
@@ -335,5 +403,13 @@ onEvent('block.tags', event => {
   event.get('windowlogging:windowable').add([
     '#quark:vertical_slabs'
   ])
+
+  // Darker Depths Misc Missing Tags:
+  event.add('minecraft:planks', 'darkerdepths:petrified_planks')
+  event.add('minecraft:planks', 'darkerdepths:vertical_petrified_planks')
+  event.add('minecraft:logs', 'darkerdepths:petrified_log')
+  event.add('minecraft:logs', 'darkerdepths:stripped_petrified_log')
+  event.add('minecraft:logs', 'darkerdepths:porous_petrified_log')
+
 
 })
