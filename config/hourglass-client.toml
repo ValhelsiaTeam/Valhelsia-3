@@ -1,0 +1,17 @@
+
+[gui]
+	#Sets the screen alignment of the bed clock.
+	#Allowed Values: TOP_LEFT, TOP_CENTER, TOP_RIGHT, CENTER_LEFT, CENTER_CENTER, CENTER_RIGHT, BOTTOM_LEFT, BOTTOM_CENTER, BOTTOM_RIGHT
+	clockAlignment = "TOP_CENTER"
+	#Sets the scale of the bed clock.
+	#Range: > 1
+	clockScale = 64
+	#Sets the distance between the clock and the edge of the screen.
+	#Unused if clockAlignment is CENTER_CENTER.
+	#Range: > 0
+	clockMargin = 32
+	#This setting prevents clock wobble when getting in bed by updating the clock's position every tick.
+	#As a side-effect, the clock won't wobble when first viewed as it does in vanilla. This setting is
+	#unused if displayBedClock is false.
+	preventClockWobble = true
+
