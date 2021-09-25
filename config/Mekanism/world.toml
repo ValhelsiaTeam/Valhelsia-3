@@ -16,7 +16,7 @@
 		perChunk = 18
 		#Maximum number of blocks in a vein of copper.
 		#Range: 1 ~ 512
-		maxVeinSize = 16
+		maxVeinSize = 12
 		#Maximum height (exclusive) that veins of copper can spawn. Height is calculated by: random.nextInt(maxHeight - topOffset) + bottomOffset
 		#Range: 1 ~ 256
 		maxHeight = 90
