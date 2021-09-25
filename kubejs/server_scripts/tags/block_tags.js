@@ -400,6 +400,8 @@ onEvent('block.tags', event => {
     'valhelsia_structures:paper_wall'
   ])
 
+  // Windowlogging
+  // Additional Blocks that can have windows added to them:
   event.get('windowlogging:windowable').add([
     '#quark:vertical_slabs'
   ])

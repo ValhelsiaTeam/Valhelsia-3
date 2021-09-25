@@ -2,6 +2,7 @@
 	"tetra.material.neptunium": "Neptunium",
   "tetra.material.neptunium.prefix": "Neptunium",
     
+  "comment.tetra.materials": "This can be removed once Tetra Pak updates.",
   "tetra.material.thrasher_tooth": "Thrasher Tooth",
   "tetra.material.thrasher_tooth.prefix": "Thrasher Tooth",
   "tetra.material.booflo_hide": "Booflo Hide",
