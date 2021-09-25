@@ -20,7 +20,7 @@
 	[world.biomes]
 
 		[world.biomes.marsh]
-			"Marsh weight" = 4
+			"Marsh weight" = 3
 			"Mushroom Marsh weight" = 0
 
 		[world.biomes.blossom]
