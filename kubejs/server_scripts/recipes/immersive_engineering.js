@@ -55,6 +55,7 @@ events.listen('recipes', function (event) {
   event.recipes.immersiveengineering.cloche(['betterendforge:shadow_berry_raw', 'betterendforge:shadow_berry'], 'betterendforge:shadow_berry', 'betterendforge:shadow_grass', {type: 'crop', block: 'betterendforge:shadow_berry'}).time(800)
   event.recipes.immersiveengineering.crusher(Item.of('betterendforge:endstone_dust', 2), '#forge:end_stones', Item.of('bloodmagic:saltpeter').withChance(0.5))
   event.recipes.immersiveengineering.crusher(Item.of('betterendforge:ender_shard', 2), '#forge:ores/ender')
+  event.recipes.immersiveengineering.crusher(Item.of('betterendforge:crystalline_sulphur', 2), 'betterendforge:sulphur_crystal')
 
   // Blue Skies Compat
   event.recipes.immersiveengineering.crusher(Item.of('minecraft:bone_meal', 9), 'blue_skies:azulfo_horn')
