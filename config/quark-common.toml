@@ -638,7 +638,7 @@
 				"Is Blacklist" = true
 
 			[world.spiral_spires.biomes.biomes]
-				Biomes = ["minecraft:end_highlands"]
+        Biomes = ["minecraft:end_highlands", "endergetic:poise_forest", "betterendforge:crystal_mountains", "betterendforge:dust_wastelands", "betterendforge:painted_mountains"]
 				"Is Blacklist" = false
 
 		[world.spiral_spires.dimensions]
@@ -1243,7 +1243,7 @@
 					"Is Blacklist" = true
 
 				[world.big_stone_clusters.myalite.biomes.biomes]
-					Biomes = ["minecraft:end_highlands"]
+					Biomes = ["minecraft:end_highlands", "endergetic:poise_forest", "betterendforge:crystal_mountains", "betterendforge:dust_wastelands", "betterendforge:painted_mountains"]
 					"Is Blacklist" = false
 
 			[world.big_stone_clusters.myalite.dimensions]
@@ -1279,7 +1279,7 @@
 					"Is Blacklist" = true
 
 				[world.big_stone_clusters.voidstone.biomes.biomes]
-					Biomes = ["minecraft:end_highlands", "minecraft:end_midlands", "minecraft:end_barrens"]
+					Biomes = ["minecraft:end_highlands", "minecraft:end_midlands", "minecraft:end_barrens", "endergetic:poise_forest", "betterendforge:chorus_forest", "betterendforge:dust_wastelands", "betterendforge:shadow_forest", "betterendforge:painted_mountains"]
 					"Is Blacklist" = false
 
 			[world.big_stone_clusters.voidstone.dimensions]
@@ -1573,7 +1573,7 @@
 				"Is Blacklist" = true
 
 			[world.big_dungeon.biome_config.biomes]
-				Biomes = []
+				Biomes = ["betterendforge:sulphur_springs", "betterendforge:dust_wastelands", "betterendforge:chorus_forest", "betterendforge:shadow_forest", "betterendforge:dry_shrubland", "betterendforge:amber_land", "betterendforge:lantern_woods", "betterendforge:crystal_mountains", "betterendforge:megalake_grove", "betterendforge:ice_starfield", "betterendforge:painted_mountains", "betterendforge:umbrella_jungle", "betterendforge:glowing_grasslands", "betterendforge:blossoming_spires"]
 				"Is Blacklist" = true
 
 	[world.chorus_vegetation]
@@ -1585,7 +1585,7 @@
 		"Midlands Chance" = 0.2
 		"Endermite Spawn Chance" = 0.01
 		"Passive Teleport Chance" = 0.2
-		"Other End Biomes Chance" = 0.0
+		"Other End Biomes Chance" = 0.1
 
 	[world.fairy_rings]
 		"Forest Chance" = 0.00625
