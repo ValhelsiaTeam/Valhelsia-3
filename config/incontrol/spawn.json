@@ -1,11 +1,7 @@
- [
-    {
-      "biome": ["minecraft:end_highlands", "minecraft:end_midlands", "minecraft:small_end_islands", "minecraft:end_barrens", "endergetic:poise_forest"],
-      "mob": "mysticalworld:endermini",
-      "result": "allow"
-    },
-    {
-      "mob": "mysticalworld:endermini",
-      "result": "deny"
-    }
-  ]  
+[
+  {
+    "biome": ["minecraft:the_end"],
+    "mob": "mysticalworld:endermini",
+    "result": "deny"
+  }
+]
