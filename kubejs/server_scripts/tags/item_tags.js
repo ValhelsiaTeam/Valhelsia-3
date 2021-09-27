@@ -872,5 +872,6 @@ onEvent('item.tags', event => {
   event.add('forge:bones', 'aquaculture:fish_bones')
   event.add('forge:dusts/sulfur', 'betterendforge:crystalline_sulphur')
   event.add('forge:furnace', '#betterendforge:furnaces')
+  event.add('forge:dusts/ender', 'betterendforge:ender_dust')
 
 })

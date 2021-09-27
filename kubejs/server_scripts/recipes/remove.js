@@ -11,8 +11,8 @@ events.listen('recipes', function (event) {
     'abundance:crafting/lavender_basket', // Removed but re-added later.
 
     // Autumnity
-    'autumnity:lead_from_snail_slime', // Replaced with a tag recipe.
-    'autumnity:sticky_piston_from_snail_slime', // Replaced with a tag recipe.
+    'autumnity:lead_from_snail_slime', // Redundant.
+    'autumnity:sticky_piston_from_snail_slime', // Redundant.
 
     // Aquaculture
     'aquaculture:planks_from_driftwood',
