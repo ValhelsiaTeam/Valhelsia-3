@@ -54,8 +54,8 @@ events.listen('recipes', function (event) {
   alloy(Item.of('immersiveengineering:ingot_electrum', 2), '#forge:dusts/gold', '#forge:dusts/silver')
 
   // Mekanism
-  alloy(Item.of('mekanism:ingot_bronze', 4), Ingredient.of('#forge:ingots/copper'), '#forge:ingots/tin')
-  alloy(Item.of('mekanism:ingot_bronze', 4), Ingredient.of('#forge:dusts/copper'), '#forge:dusts/tin')
+  alloy(Item.of('mekanism:ingot_bronze', 4), Ingredient.of('#forge:ingots/copper', 3), '#forge:ingots/tin')
+  alloy(Item.of('mekanism:ingot_bronze', 4), Ingredient.of('#forge:dusts/copper', 3), '#forge:dusts/tin')
   alloy('mekanism:alloy_infused', '#forge:ingots/iron', '#forge:dusts/redstone')
   alloy('mekanism:alloy_reinforced', '#forge:alloys/advanced', Ingredient.of('#forge:dusts/diamond', 2))
   alloy('mekanism:alloy_atomic', '#forge:alloys/reinforced', Ingredient.of('#forge:dusts/refined_obsidian', 4))
