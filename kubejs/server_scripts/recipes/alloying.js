@@ -3,28 +3,21 @@
 events.listen('recipes', function (event) {
   
   // Add an alloying recipe to multiple mods.
-  const alloy = (output, input0, input1) => {
+  let alloy = (output, input0, input1) => {
+    event.recipes.immersiveengineering.alloy(output, input0, input1)
 
-    var ing0 = Ingredient.of(input0)
-    var ing1 = Ingredient.of(input1)
-    
-    if (ing0.count == 1 && ing1.count == 1) {
-      // BetterEnd End Stone Smelter
-      // Only uses up one of each input when alloying, so don't add if count > 1.
+    if (Ingredient.of(input0).count == 1 && Ingredient.of(input1).count == 1) {
       event.custom({
         "type": "betterendforge:alloying",
         "ingredients": [
-          ing0.toJson(),
-          ing1.toJson()
+          Ingredient.of(input0).toJson(),
+          Ingredient.of(input1).toJson()
         ],
-        "result": output.toResultJson(),
+        "result": Item.of(output).toResultJson(),
         "experience": 3.0,
         "smelttime": 450
       })
     }
-
-    // Immersive Engineering Alloy Kiln
-    event.recipes.immersiveengineering.alloy(output, ing0, ing1)
   }
 
   // Remove Old Alloying Recipes:
@@ -72,7 +65,7 @@ events.listen('recipes', function (event) {
   alloy('psi:ebony_psimetal', 'psi:psimetal', Ingredient.of('psi:ebony_substance', 8))
 
   // Twilight Forest
-  alloy('twilightforest:fiery_ingot', '#forge:ingots/iron', 'twilightforest:fiery_vial')
-  alloy('twilightforest:fiery_ingot', '#forge:dusts/iron', 'twilightforest:fiery_vial')
+  alloy('twilightforest:fiery_ingot', '#forge:ingots/iron', '#twilightforest:fiery_vial')
+  alloy('twilightforest:fiery_ingot', '#forge:dusts/iron', '#twilightforest:fiery_vial')
 
 })
