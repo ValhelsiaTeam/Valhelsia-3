@@ -6,7 +6,16 @@ onEvent('jei.hide.items', event => {
     /refinedstorage:(white|orange|magenta|yellow|lime|pink|gray|light_gray|cyan|purple|blue|brown|green|red|black)_(controller|creative_controller|grid|crafting_grid|pattern_grid|fluid_grid|network_receiver|network_transmitter|relay|wireless_transmitter|disk_manipulator|crafter|crafter_manager|crafting_monitor|security_manager|detector)/
   ])
 
+  // Hide Comforts Sleeping Bags (unused in the pack)
+  event.hide([
+    /comforts:sleeping_bag_(white|orange|magenta|yellow|lime|pink|gray|light_gray|cyan|purple|blue|brown|green|red|black)/
+  ])
+
   // Hide unused items.
   event.hide('ftblibrary:fluid_container')
 
+})
+
+onEvent('jei.hide.fluids', event => {
+  // Empty for now.  
 })
