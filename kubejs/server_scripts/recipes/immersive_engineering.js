@@ -56,7 +56,7 @@ events.listen('recipes', function (event) {
 
   // Blue Skies Compat
   event.recipes.immersiveengineering.crusher(Item.of('minecraft:bone_meal', 9), 'blue_skies:azulfo_horn')
-  event.recipes.immersiveengineering.crusher(Item.of('blue_skies:moonstone_shard', 4), '#blueskies:gems/moonstone')
+  event.recipes.immersiveengineering.crusher(Item.of('blue_skies:moonstone_shard', 4), '#blue_skies:gems/moonstone')
 
   // BoP Compat
   event.recipes.immersiveengineering.crusher('biomesoplenty:white_sand', 'quark:marble')
