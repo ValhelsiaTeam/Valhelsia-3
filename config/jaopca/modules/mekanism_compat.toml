@@ -8,5 +8,5 @@
 	#The materials that should not have enriching recipes added.
 	toCrystalMaterialBlacklist = []
 	#The materials that should not have combining recipes added.
-	toOreMaterialBlacklist = ["aluminum", "nickel", "amber", "silver", "zinc", "amethyst", "moonstone", "arcane_crystal", "quicksilver", "biotite", "fluorite"]
+	toOreMaterialBlacklist = ["aluminum", "nickel", "amber", "silver", "zinc", "amethyst", "moonstone", "arcane_crystal", "quicksilver", "biotite", "fluorite", "thallasium", "knightmetal", "ironwood", "nebu"]
 
