@@ -63,13 +63,7 @@ events.listen('recipes', function (event) {
     })
   }
 
-  // Druidcraft Stripping
-  axeStripping('druidcraft:stripped_darkwood_log', 'druidcraft:darkwood_log')
-  axeStripping('druidcraft:stripped_darkwood_wood', 'druidcraft:darkwood_wood')
-  axeStripping('druidcraft:stripped_elder_log', 'druidcraft:elder_log')
-  axeStripping('druidcraft:stripped_elder_wood', 'druidcraft:elder_wood')
-  
-  // BetterEnd Stripping
+  // BetterEnd - Log Stripping
   const betterEndWoodTypes = [
     'dragon_tree',
     'end_lotus',
@@ -92,7 +86,7 @@ events.listen('recipes', function (event) {
     axeChopping(`betterendforge:${element}_planks`, `betterendforge:${element}_trapdoor`)
   })
 
-  // Biomes 'o' Plenty Stripping
+  // Biomes 'o' Plenty - Log Stripping
   const biomesOPlentyWoodTypes = [
     'fir',
     'redwood',
@@ -114,13 +108,20 @@ events.listen('recipes', function (event) {
     axeChopping('biomesoplenty:'.concat(element).concat('_planks'), 'biomesoplenty:'.concat(element).concat('_door'))
     axeChopping('biomesoplenty:'.concat(element).concat('_planks'), 'biomesoplenty:'.concat(element).concat('_trapdoor'))
   })
+  
+  // Druidcraft - Log Stripping
+  axeStripping('druidcraft:stripped_darkwood_log', 'druidcraft:darkwood_log')
+  axeStripping('druidcraft:stripped_darkwood_wood', 'druidcraft:darkwood_wood')
+  axeStripping('druidcraft:stripped_elder_log', 'druidcraft:elder_log')
+  axeStripping('druidcraft:stripped_elder_wood', 'druidcraft:elder_wood')
 
-  // Forbidden and Arcanus
+  // Forbidden and Arcanus - Log Stripping
   axeStripping('forbidden_arcanus:stripped_cherrywood_log', 'forbidden_arcanus:cherrywood_log')
   axeStripping('forbidden_arcanus:stripped_cherrywood', 'forbidden_arcanus:cherrywood')
   axeStripping('forbidden_arcanus:stripped_mysterywood_log', 'forbidden_arcanus:mysterywood_log')
   axeStripping('forbidden_arcanus:stripped_mysterywood', 'forbidden_arcanus:mysterywood')
 
+  // Forbidden and Arcanus - Signs / Doors / Trapdoors -> Planks.
   const choppingWoodTypes = [
     'forbidden_arcanus:edelwood',
     'forbidden_arcanus:cherrywood',

@@ -72,10 +72,8 @@ events.listen('recipes', function (event) {
   squeezer('immersiveengineering:plantoil', 'druidcraft:hemp_seeds', 120)
   event.recipes.immersiveengineering.cloche(['druidcraft:hemp', 'druidcraft:hemp_seeds'], 'druidcraft:hemp_seeds', 'minecraft:dirt', {type: 'crop', block: 'druidcraft:hemp_crop'}).time(800)
 
-  
-
   // Farmer's Delight Compat
-  fermenter('immersiveengineering:ethanol', '#forge:seeds/rice', 80) // Also forward compatible with Environmental.
+  fermenter('immersiveengineering:ethanol', '#forge:seeds/rice', 80)
 
   // Forbidden & Arcanus Compat
   event.recipes.immersiveengineering.crusher(Item.of('forbidden_arcanus:soulless_sand', 2), '#forge:sandstone/soulless', Item.of('bloodmagic:saltpeter').withChance(0.5))
