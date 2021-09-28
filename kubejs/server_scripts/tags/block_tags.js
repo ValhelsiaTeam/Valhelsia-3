@@ -405,13 +405,66 @@ onEvent('block.tags', event => {
   event.get('windowlogging:windowable').add([
     '#quark:vertical_slabs'
   ])
+  
+  // Ores
+  event.get('forge:ores').add([
+    'darkerdepths:aridrock_gold_ore',
+    'darkerdepths:aridrock_iron_ore',
+    'darkerdepths:aridrock_coal_ore',
+    'darkerdepths:aridrock_lapis_ore',
+    'darkerdepths:aridrock_diamond_ore',
+    'darkerdepths:aridrock_redstone_ore',
+    'darkerdepths:limestone_gold_ore',
+    'darkerdepths:limestone_iron_ore',
+    'darkerdepths:limestone_coal_ore',
+    'darkerdepths:limestone_lapis_ore',
+    'darkerdepths:limestone_diamond_ore',
+    'darkerdepths:limestone_redstone_ore',
+  ])
 
-  // Darker Depths Misc Missing Tags:
+  // Stones
+  event.get('forge:stones').add([
+    'darkerdepths:aridrock',
+    'darkerdepths:limestone',
+    'darkerdepths:grimestone',
+  ])
+
+  // Storage Blocks
+  event.get('forge:storage_blocks').add([
+    'darkerdepths:amber_block',
+    'darkerdepths:celestine_crystal_block'
+  ])
+
+  // BetterEnd Missing Tags:
+  event.add('forge:gems/amber', 'betterendforge:amber_gem')
+  event.add('forge:storage_blocks/amber', 'betterendforge:amber_block')
+
+  // Darker Depths Missing Tags:
   event.add('minecraft:planks', 'darkerdepths:petrified_planks')
   event.add('minecraft:planks', 'darkerdepths:vertical_petrified_planks')
   event.add('minecraft:logs', 'darkerdepths:petrified_log')
   event.add('minecraft:logs', 'darkerdepths:stripped_petrified_log')
   event.add('minecraft:logs', 'darkerdepths:porous_petrified_log')
+  event.add('minecraft:wooden_pressure_plates', 'darkerdepths:petrified_pressure_plate')
+  event.add('forge:fence_gates', 'darkerdepths:petrified_fence_gate')
+  event.add('forge:fence_gates/wooden', 'darkerdepths:petrified_fence_gate')
+  event.add('forge:gems/amber', 'darkerdepths:amber')
+  event.add('forge:storage_blocks/amber', 'darkerdepths:amber_block')
+  event.add('forge:gems/celestine', 'darkerdepths:celestine_crystal')
+  event.add('forge:storage_blocks/celestine', 'darkerdepths:celestine_crystal_block')
+
+  event.add('forge:ores/gold', 'darkerdepths:aridrock_gold_ore')
+  event.add('forge:ores/gold', 'darkerdepths:limestone_gold_ore')
+  event.add('forge:ores/iron', 'darkerdepths:aridrock_iron_ore')
+  event.add('forge:ores/iron', 'darkerdepths:limestone_iron_ore')
+  event.add('forge:ores/coal', 'darkerdepths:aridrock_coal_ore')
+  event.add('forge:ores/coal', 'darkerdepths:limestone_coal_ore')
+  event.add('forge:ores/lapis', 'darkerdepths:aridrock_lapis_ore')
+  event.add('forge:ores/lapis', 'darkerdepths:limestone_lapis_ore')
+  event.add('forge:ores/diamond', 'darkerdepths:aridrock_diamond_ore')
+  event.add('forge:ores/diamond', 'darkerdepths:limestone_diamond_ore')
+  event.add('forge:ores/redstone', 'darkerdepths:aridrock_redstone_ore')
+  event.add('forge:ores/redstone', 'darkerdepths:limestone_redstone_ore')
 
 
 })

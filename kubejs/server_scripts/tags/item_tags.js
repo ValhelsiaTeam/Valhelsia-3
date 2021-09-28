@@ -813,11 +813,43 @@ onEvent('item.tags', event => {
     '#forge:dyes/green'
   ])
 
+  // Ores
+  event.get('forge:ores').add([
+    'darkerdepths:aridrock_gold_ore',
+    'darkerdepths:aridrock_iron_ore',
+    'darkerdepths:aridrock_coal_ore',
+    'darkerdepths:aridrock_lapis_ore',
+    'darkerdepths:aridrock_diamond_ore',
+    'darkerdepths:aridrock_redstone_ore',
+    'darkerdepths:limestone_gold_ore',
+    'darkerdepths:limestone_iron_ore',
+    'darkerdepths:limestone_coal_ore',
+    'darkerdepths:limestone_lapis_ore',
+    'darkerdepths:limestone_diamond_ore',
+    'darkerdepths:limestone_redstone_ore',
+  ])
+
+  // Stones
+  event.get('forge:stones').add([
+    'darkerdepths:aridrock',
+    'darkerdepths:limestone',
+    'darkerdepths:grimestone',
+  ])
+
   // Gems
   event.get('forge:gems').add([
+    'betterendforge:amber_gem',
     'blue_skies:moonstone_shard',
     'blue_skies:moonstone',
-    'blue_skies:pearl'
+    'blue_skies:pearl',
+    'darkerdepths:amber',
+    'darkerdepths:celestine_crystal'
+  ])
+
+  // Storage Blocks
+  event.get('forge:storage_blocks').add([
+    'darkerdepths:amber_block',
+    'darkerdepths:celestine_crystal_block'
   ])
 
   // Ingots
@@ -847,6 +879,10 @@ onEvent('item.tags', event => {
     'druidcraft:lavender'
   ])
 
+  // BetterEnd Missing Tags:
+  event.add('forge:gems/amber', 'betterendforge:amber_gem')
+  event.add('forge:storage_blocks/amber', 'betterendforge:amber_block')
+
   // Blue Skies Missing Tags (more in food_tags.js)
   event.add('forge:gems/moonstone_shard', '#blue_skies:gems/moonstone_shard')
   //event.add('forge:gems/moonstone', '#blue_skies:gems/moonstone') // Not added for balancing reasons.
@@ -855,12 +891,33 @@ onEvent('item.tags', event => {
   event.add('forge:ingots/horizonite', '#blue_skies:ingots/horizonite')
   event.add('forge:ingots/ventium', '#blue_skies:ingots/ventium')
   
-  // Darker Depths Misc Missing Tags:
+  // Darker Depths Missing Tags:
   event.add('minecraft:planks', 'darkerdepths:petrified_planks')
   event.add('minecraft:planks', 'darkerdepths:vertical_petrified_planks')
   event.add('minecraft:logs', 'darkerdepths:petrified_log')
   event.add('minecraft:logs', 'darkerdepths:stripped_petrified_log')
   event.add('minecraft:logs', 'darkerdepths:porous_petrified_log')
+  event.add('minecraft:wooden_pressure_plates', 'darkerdepths:petrified_pressure_plate')
+  event.add('forge:fence_gates', 'darkerdepths:petrified_fence_gate')
+  event.add('forge:fence_gates/wooden', 'darkerdepths:petrified_fence_gate')
+  event.add('forge:gems/amber', 'darkerdepths:amber')
+  event.add('forge:storage_blocks/amber', 'darkerdepths:amber_block')
+  event.add('forge:gems/celestine', 'darkerdepths:celestine_crystal')
+  event.add('forge:storage_blocks/celestine', 'darkerdepths:celestine_crystal_block')
+
+  event.add('forge:ores/gold', 'darkerdepths:aridrock_gold_ore')
+  event.add('forge:ores/gold', 'darkerdepths:limestone_gold_ore')
+  event.add('forge:ores/iron', 'darkerdepths:aridrock_iron_ore')
+  event.add('forge:ores/iron', 'darkerdepths:limestone_iron_ore')
+  event.add('forge:ores/coal', 'darkerdepths:aridrock_coal_ore')
+  event.add('forge:ores/coal', 'darkerdepths:limestone_coal_ore')
+  event.add('forge:ores/lapis', 'darkerdepths:aridrock_lapis_ore')
+  event.add('forge:ores/lapis', 'darkerdepths:limestone_lapis_ore')
+  event.add('forge:ores/diamond', 'darkerdepths:aridrock_diamond_ore')
+  event.add('forge:ores/diamond', 'darkerdepths:limestone_diamond_ore')
+  event.add('forge:ores/redstone', 'darkerdepths:aridrock_redstone_ore')
+  event.add('forge:ores/redstone', 'darkerdepths:limestone_redstone_ore')
+
 
   // Misc Missing Item Tags
   event.add('forge:seeds/cattail', 'environmental:cattail_seeds')
