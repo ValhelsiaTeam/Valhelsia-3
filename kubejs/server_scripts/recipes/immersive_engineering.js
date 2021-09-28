@@ -109,6 +109,8 @@ events.listen('recipes', function (event) {
 
   // Neapolitan Compat
   event.recipes.immersiveengineering.cloche([Item.of('neapolitan:strawberries', 2)], 'neapolitan:strawberry_pips', 'minecraft:dirt', {type: 'crop', block: 'neapolitan:strawberry_bush'}).time(800)
+  event.recipes.immersiveengineering.metal_press(Item.of('neapolitan:banana', 3), 'neapolitan:banana_bunch', 'immersiveengineering:mold_unpacking')
+  event.recipes.immersiveengineering.metal_press(Item.of('neapolitan:banana_bunch', 9), 'neapolitan:banana_crate', 'immersiveengineering:mold_unpacking')
 
   // Quark Compat
   event.recipes.immersiveengineering.crusher(Item.of('minecraft:soul_sand', 2), '#forge:sandstone/soul', Item.of('bloodmagic:saltpeter').withChance(0.5))
