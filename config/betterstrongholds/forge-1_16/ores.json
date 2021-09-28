@@ -1,0 +1,24 @@
+{
+  "oreChances": {
+    "entries": {
+      "minecraft:coal_ore": 0.1,
+      "minecraft:gold_ore": 0.1,
+      "minecraft:emerald_ore": 0.05,
+      "minecraft:redstone_ore[lit=false]": 0.05,
+      "minecraft:iron_ore": 0.2,
+      "minecraft:lapis_ore": 0.1,
+      "minecraft:diamond_ore": 0.05,
+      "druidcraft:fiery_glass_ore": 0.1,
+      "druidcraft:moonstone_ore": 0.05,
+      "create:zinc_ore": 0.025,
+      "mekanism:copper_ore": 0.025,
+      "mekanism:tin_ore": 0.025,
+      "mekanism:osmium_ore": 0.025,
+      "mekanism:lead_ore": 0.025,
+      "immersiveengineering:ore_nickel": 0.025,
+      "immersiveengineering:ore_silver": 0.025,
+      "immersiveengineering:ore_aluminum": 0.025
+    },
+    "defaultBlock": "minecraft:coal_ore"
+  }
+}

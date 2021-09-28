@@ -1,0 +1,13 @@
+{
+  "blockChances": {
+    "entries": {
+      "minecraft:diamond_block": 0.1,
+      "minecraft:iron_block": 0.3,
+      "minecraft:quartz_block": 0.2,
+      "minecraft:gold_block": 0.3,
+      "druidcraft:moonstone_block": 0.05,
+      "botania:manasteel_block": 0.05
+    },
+    "defaultBlock": "minecraft:iron_block"
+  }
+}
