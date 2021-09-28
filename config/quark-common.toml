@@ -1826,7 +1826,7 @@
 					"Is Blacklist" = false
 
 				[mobs.frogs.spawn_config.biomes.biomes]
-					Biomes = []
+					Biomes = ["biomesoplenty:muskeg"]
 					"Is Blacklist" = true
 
 	[mobs.forgotten]

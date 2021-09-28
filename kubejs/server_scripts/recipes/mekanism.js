@@ -131,6 +131,7 @@ events.listen('recipes', function (event) {
   })
 
   // Mekanism - Bio Fuel
+  // TODO: Add several new tags to simplify this - perhaps #valhelsia:grasses and #valhelsia:small_plants?
   event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 5), '#minecraft:flowers')
   event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), '#minecraft:saplings')
   event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), '#minecraft:leaves')

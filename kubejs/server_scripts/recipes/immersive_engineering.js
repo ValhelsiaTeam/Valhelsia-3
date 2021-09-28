@@ -72,10 +72,8 @@ events.listen('recipes', function (event) {
   squeezer('immersiveengineering:plantoil', 'druidcraft:hemp_seeds', 120)
   event.recipes.immersiveengineering.cloche(['druidcraft:hemp', 'druidcraft:hemp_seeds'], 'druidcraft:hemp_seeds', 'minecraft:dirt', {type: 'crop', block: 'druidcraft:hemp_crop'}).time(800)
 
-  
-
   // Farmer's Delight Compat
-  fermenter('immersiveengineering:ethanol', '#forge:seeds/rice', 80) // Also forward compatible with Environmental.
+  fermenter('immersiveengineering:ethanol', '#forge:seeds/rice', 80)
 
   // Forbidden & Arcanus Compat
   event.recipes.immersiveengineering.crusher(Item.of('forbidden_arcanus:soulless_sand', 2), '#forge:sandstone/soulless', Item.of('bloodmagic:saltpeter').withChance(0.5))
@@ -111,6 +109,8 @@ events.listen('recipes', function (event) {
 
   // Neapolitan Compat
   event.recipes.immersiveengineering.cloche([Item.of('neapolitan:strawberries', 2)], 'neapolitan:strawberry_pips', 'minecraft:dirt', {type: 'crop', block: 'neapolitan:strawberry_bush'}).time(800)
+  event.recipes.immersiveengineering.metal_press(Item.of('neapolitan:banana', 3), 'neapolitan:banana_bunch', 'immersiveengineering:mold_unpacking')
+  event.recipes.immersiveengineering.metal_press(Item.of('neapolitan:banana_bunch', 9), 'neapolitan:banana_crate', 'immersiveengineering:mold_unpacking')
 
   // Quark Compat
   event.recipes.immersiveengineering.crusher(Item.of('minecraft:soul_sand', 2), '#forge:sandstone/soul', Item.of('bloodmagic:saltpeter').withChance(0.5))
