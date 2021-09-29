@@ -58,7 +58,7 @@ events.listen('recipes', function (event) {
   alloy(Item.of('mekanism:ingot_bronze', 4), Ingredient.of('#forge:dusts/copper', 3), '#forge:dusts/tin')
   alloy('mekanism:alloy_infused', '#forge:ingots/iron', '#forge:dusts/redstone')
   alloy('mekanism:alloy_reinforced', '#forge:alloys/advanced', Ingredient.of('#forge:dusts/diamond', 2))
-  alloy('mekanism:alloy_atomic', '#forge:alloys/reinforced', Ingredient.of('#forge:dusts/refined_obsidian', 4))
+  alloy('mekanism:alloy_atomic', '#forge:alloys/elite', Ingredient.of('#forge:dusts/refined_obsidian', 4))
 
   // Psi
   alloy('psi:ivory_psimetal', 'psi:psimetal', Ingredient.of('psi:ivory_substance', 8))

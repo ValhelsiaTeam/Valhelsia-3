@@ -436,7 +436,6 @@ onEvent('block.tags', event => {
   ])
 
   // BetterEnd Missing Tags:
-  event.add('forge:gems/amber', 'betterendforge:amber_gem')
   event.add('forge:storage_blocks/amber', 'betterendforge:amber_block')
 
   // Darker Depths Missing Tags:
