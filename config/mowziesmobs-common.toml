@@ -440,7 +440,7 @@
 			#'!MOUNTAIN' would mean all non-mountain biomes
 			biome_type = ["BEACH,MOUNTAIN", "BEACH,HILLS"]
 			#Allow spawns in these biomes regardless of the biome type settings
-			biome_whitelist = ["minecraft:stone_shore", "biomesoplenty:gravel_beach"]
+			biome_whitelist = ["minecraft:stone_shore"]
 			#Prevent spawns in these biomes regardless of the biome type settings
 			biome_blacklist = []
 
@@ -448,13 +448,13 @@
 		[mobs.naga.spawn_config]
 			#Smaller number causes less spawning, 0 to disable spawning
 			#Range: > 0
-			spawn_rate = 30
+			spawn_rate = 20
 			#Minimum number of mobs that appear in a spawn group
 			#Range: > 1
-			min_group_size = 2
+			min_group_size = 1
 			#Maximum number of mobs that appear in a spawn group
 			#Range: > 1
-			max_group_size = 4
+			max_group_size = 2
 			#Probability of a spawn attempt succeeding. 1 for normal spawning, 0 will prevent spawning. Used to make mobs extra rare.
 			#Range: 0.0 ~ 1.0
 			extra_rarity = 1.0
