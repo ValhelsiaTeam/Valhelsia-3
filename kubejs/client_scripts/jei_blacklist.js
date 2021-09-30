@@ -13,6 +13,7 @@ onEvent('jei.hide.items', event => {
 
   // Hide unused items.
   event.hide('immersiveengineering:dust_wood') // Replaced with Mekanism's Sawdust
+  event.hide(Item.of('ftblibrary:fluid_container').ignoreNBT())
 
 })
 
