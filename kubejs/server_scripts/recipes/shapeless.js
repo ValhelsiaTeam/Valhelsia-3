@@ -7,8 +7,8 @@ events.listen('recipes', function (event) {
     event.custom({
       type: 'mysticalworld:shapeless_damage_recipe',
       ingredients: ingredients,
-      result: result.toResultJson(),
-      damage_item: damageItem,
+      result: Item.of(result).toResultJson(),
+      damage_item: Ingredient.of(damageItem).toJson(),
       damage_amount: 1
     })
   }
@@ -21,17 +21,17 @@ events.listen('recipes', function (event) {
   event.shapeless(Item.of('biomesoplenty:orange_sand', 2), ['#forge:sand/colorless', '#forge:sand/red'])
 
   // Create
-  event.shapeless(Item.of('create:brass_sheet', 1), ['create:brass_ingot', 'immersiveengineering:hammer'])
-  event.shapeless(Item.of('create:iron_sheet', 1), ['minecraft:iron_ingot', 'immersiveengineering:hammer'])
-  event.shapeless(Item.of('create:golden_sheet', 1), ['minecraft:gold_ingot', 'immersiveengineering:hammer'])
-  event.shapeless(Item.of('create:copper_sheet', 1), ['#forge:ingots/copper', 'immersiveengineering:hammer'])
+  event.shapeless(Item.of('create:brass_sheet', 1), ['create:brass_ingot', '#forge:tools/hammer'])
+  event.shapeless(Item.of('create:iron_sheet', 1), ['minecraft:iron_ingot', '#forge:tools/hammer'])
+  event.shapeless(Item.of('create:golden_sheet', 1), ['minecraft:gold_ingot', '#forge:tools/hammer'])
+  event.shapeless(Item.of('create:copper_sheet', 1), ['#forge:ingots/copper', '#forge:tools/hammer'])
 
   // Eidolon
   event.shapeless(Item.of('eidolon:pewter_blend', 4), ['#forge:dusts/tin', '#forge:dusts/tin', '#forge:dusts/tin', '#forge:dusts/lead'])
   event.shapeless(Item.of('eidolon:pewter_blend', 4), ['#create:crushed_ores/tin', '#create:crushed_ores/tin', '#create:crushed_ores/tin', '#create:crushed_ores/lead'])
 
   // Environmental
-  shapelessDamage(Item.of('minecraft:string', 3), [Ingredient.of('#forge:seeds/cattail').toJson(), Ingredient.of('#forge:seeds/cattail').toJson(),Ingredient.of('#forge:seeds/cattail').toJson(), Ingredient.of('mysticalworld:spindle').toJson()], Ingredient.of('mysticalworld:spindle').toJson())
+  shapelessDamage(Item.of('minecraft:string', 3), [Ingredient.of('#forge:seeds/cattail').toJson(), Ingredient.of('#forge:seeds/cattail').toJson(),Ingredient.of('#forge:seeds/cattail').toJson(), Ingredient.of('#forge:tools/spindle').toJson()], 'mysticalworld:spindle')
 
   // Farmer's Delight
   event.shapeless('farmersdelight:organic_compost', [
@@ -47,7 +47,7 @@ events.listen('recipes', function (event) {
   ])
 
   // Immersive Engineering
-  shapelessDamage(Item.of('immersiveengineering:hemp_fiber', 2), [Ingredient.of('#forge:crops/hemp').toJson(), Ingredient.of('mysticalworld:spindle').toJson()], Ingredient.of('mysticalworld:spindle').toJson())
+  shapelessDamage(Item.of('immersiveengineering:hemp_fiber', 2), [Ingredient.of('#forge:crops/hemp').toJson(), Ingredient.of('#forge:tools/spindle').toJson()], 'mysticalworld:spindle')
   event.shapeless(Item.of('immersiveengineering:ingot_silver', 9), '#forge:storage_blocks/silver')
   event.shapeless(Item.of('immersiveengineering:nugget_silver', 9), '#forge:ingots/silver')
 

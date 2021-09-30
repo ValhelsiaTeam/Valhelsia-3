@@ -24,6 +24,13 @@ onEvent('item.tags', event => {
   event.get('farmersdelight:tools/knives').add(knives)
   event.get('forge:tools/knives').add(knives)
 
+  // Other Tools
+  event.get('forge:tools/hammer').add([
+    'immersiveengineering:hammer',
+    '#betterendforge:hammers'
+  ])
+  event.add('forge:tools/spindle', 'mysticalworld:spindle')
+
   // Missing #forge:seed item tags.
   event.get('forge:seeds').add([
     'betterendforge:amber_root_seed',
