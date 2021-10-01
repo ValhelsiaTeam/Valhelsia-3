@@ -67,6 +67,19 @@ events.listen('recipes', function (event) {
 
   // Create
   event.recipes.mekanism.combining(Item.of('create:polished_rose_quartz', 8), Ingredient.of('create:rose_quartz', 8), '#forge:sandstone')
+  event.recipes.mekanism.metallurgic_infusing('create:mossy_granite', 'minecraft:granite', 'mekanism:bio', 10)
+  event.recipes.mekanism.metallurgic_infusing('create:mossy_diorite', 'minecraft:diorite', 'mekanism:bio', 10)
+  event.recipes.mekanism.metallurgic_infusing('create:mossy_andesite', 'minecraft:andesite', 'mekanism:bio', 10)
+  event.recipes.mekanism.metallurgic_infusing('create:mossy_limestone', 'create:limestone', 'mekanism:bio', 10)
+  event.recipes.mekanism.metallurgic_infusing('create:mossy_weathered_limestone', 'create:weathered_limestone', 'mekanism:bio', 10)
+  event.recipes.mekanism.metallurgic_infusing('create:mossy_dolomite', 'create:dolomite', 'mekanism:bio', 10)
+  event.recipes.mekanism.metallurgic_infusing('create:mossy_gabbro', 'create:gabbro', 'mekanism:bio', 10)
+  event.recipes.mekanism.metallurgic_infusing('create:mossy_scoria', 'create:scoria', 'mekanism:bio', 10)
+  event.recipes.mekanism.metallurgic_infusing('create:mossy_dark_scoria', 'create:dark_scoria', 'mekanism:bio', 10)
+
+  // Darker Depths
+  event.recipes.mekanism.metallurgic_infusing('darkerdepths:lush_aridrock', 'darkerdepths:aridrock', 'mekanism:bio', 10)
+  event.recipes.mekanism.metallurgic_infusing('darkerdepths:mossy_grimestone', 'darkerdepths:grimestone', 'mekanism:bio', 10)
 
   // Decorative Blocks
   event.recipes.mekanism.crushing('minecraft:coarse_dirt', 'decorative_blocks:rocky_dirt')
