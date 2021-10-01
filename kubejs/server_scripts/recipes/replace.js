@@ -31,5 +31,6 @@ events.listen('recipes', function (event) {
   event.replaceInput({output:'botania:flight_tiara'}, 'minecraft:feather', '#forge:feathers')
   event.replaceInput({output:'betterendforge:end_stone_smelter'}, '#betterendforge:furnaces', '#forge:furnace')
   event.replaceInput({output:'valhelsia_structures:bone_pile'}, 'minecraft:bone', '#forge:bones')
+  event.replaceInput({output:'minecraft:mossy_cobblestone'}, 'minecraft:vine', '#valhelsia:vines/green')
   //event.replaceInput({output:'patchouli:guide_book'}, 'minecraft:feather', '#forge:feathers') // Doesn't work, presumably due to NBT data.
 })

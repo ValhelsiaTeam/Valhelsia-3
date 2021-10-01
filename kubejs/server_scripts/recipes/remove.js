@@ -33,6 +33,7 @@ events.listen('recipes', function (event) {
 
     // Biomes 'o' Plenty
     'biomesoplenty:purple_dye_from_lavender', // Redundant.
+    'biomesoplenty:mossy_cobblestone_from_willow_vine', // Redundant.
 
     // Botania
     'botania:pure_daisy/sand', // Replaced with a different recipe.

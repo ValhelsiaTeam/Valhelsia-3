@@ -814,6 +814,16 @@ onEvent('item.tags', event => {
     'environmental:white_hanging_wisteria_leaves'
   ])
 
+  // Vines
+  event.get('valhelsia:vines/green').add([
+    'minecraft:vine',
+    'atmospheric:passion_vine',
+    'atum:ophidian_tongue',
+    'valhelsia_structures:hanging_vines',
+    'biomesoplenty:willow_vine'
+  ])
+  event.add('valhelsia:vines', '#valhelsia:vines/green')
+
   // Aquaculture Tackle Box Green (ideally this shouldn't even exist)
   event.get('aquaculture:tackle_box_green').add([
     'bayou_blues:algae',
