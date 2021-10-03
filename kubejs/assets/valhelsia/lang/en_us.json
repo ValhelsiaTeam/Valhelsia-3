@@ -43,46 +43,7 @@
   "effect.tetra.suspended": "Suspended",
 
   "comment.effects.description": "---Effects with missing descriptions---",
-  "effect.abundance.succumbing.description": "No description yet.",
-  "effect.abundance.supportive.description": "No description yet.",
-
-  "effect.alexsmobs.knockback_resistance.description": "No description yet.",
-  "effect.alexsmobs.lava_vision.description": "No description yet.",
-  "effect.alexsmobs.sunbird_blessing.description": "No description yet.",
-  "effect.alexsmobs.sunbird_curse.description": "No description yet.",
-  "effect.alexsmobs.poison_resistance.description": "No description yet.",
-  "effect.alexsmobs.oiled.description": "No description yet.",
-  "effect.alexsmobs.orcas_might.description": "No description yet.",
-  "effect.alexsmobs.bug_pheromones.description": "No description yet.",
-  "effect.alexsmobs.soulsteal.description": "No description yet.",
-  "effect.alexsmobs.clinging.description": "No description yet.",
-  "effect.alexsmobs.ender_flu.description": "No description yet.",
-  "effect.alexsmobs.fear.description": "No description yet.",
-  "effect.alexsmobs.tigers_blessing.description": "No description yet.",
-  "effect.alexsmobs.debilitating_sting.description": "No description yet.",
-  "effect.alexsmobs.exsanguination.description": "No description yet.",
-
-  "effect.archers_paradox.challenge_complete.description": "No description yet.",
-  "effect.archers_paradox.challenge_miss.description": "No description yet.",
-  "effect.archers_paradox.challenge_streak.description": "No description yet.",
-  "effect.archers_paradox.training_miss.description": "No description yet.",
-  "effect.archers_paradox.training_streak.description": "No description yet.",
-
-  "effect.astralsorcery.bleed.description": "No description yet.",
-  "effect.astralsorcery.cheat_death.description": "No description yet.",
-  "effect.astralsorcery.drop_modifier.description": "No description yet.",
-
-  "effect.atmospheric.relief.description": "No description yet.",
-  "effect.atmospheric.worsening.description": "No description yet.",
-  "effect.atmospheric.spitting.description": "Causes the player to spit seeds everywhere!",
-  "effect.atmospheric.persistence.description": "No description yet.",
-  "effect.atmospheric.gelled.description": "No description yet.",
-
   "effect.atum.marked_for_death.description": "No description yet.",
-
-  "effect.autumnity.extension.description": "No description yet.",
-  "effect.autumnity.foul_taste.description": "No description yet.",
-
   "effect.betterendforge.end_veil.description": "No description yet.",
   
   "effect.blood_magic.firefuse.description": "No description yet.",
@@ -92,15 +53,6 @@
   "effect.blood_magic.soulsnare.description": "No description yet.",
 
   "effect.blue_skies.deadly_venom.description": "No description yet.",
-
-  "effect.botania.soul_cross.description": "No description yet.",
-  "effect.botania.feather_feet.description": "No description yet.",
-  "effect.botania.emptiness.description": "No description yet.",
-  "effect.botania.bloodthirst.description": "No description yet.",
-  "effect.botania.allure.description": "No description yet.",
-  "effect.botania.clear.description": "No description yet.",
-  
-  "effect.buzzier_bees.sunny.description": "No description yet.",
 
   "effect.cofh_core.explosion_resistance.description": "No description yet.",
   "effect.cofh_core.lightning_resistance.description": "No description yet.",
@@ -120,25 +72,9 @@
   "effect.eidolon.chilled.description": "No description yet.",
   "effect.eidolon.anchored.description": "No description yet.",
 
-  "effect.environmental.panic.description": "No description yet.",
-  "effect.environmental.serenity.description": "The presence of Koi prevents hostile mobs from spawning in the area.",
-
-  "effect.farmersdelight.nourished.description": "No description yet.",
-  "effect.farmersdelight.comfort.description": "No description yet.",
-
   "effect.forbidden_arcanus.fly.description": "Allows the player to fly as though in Creative Mode.",
   "effect.forbidden_arcanus.spectral_vision.description": "Highlights nearby entities in the same way as a Spectral Arrow.",
   "effect.forbidden_arcanus.darkened.description": "Causes the player to have darker vision.",
-
-  "effect.fruitful.sustaining.description": "No description yet.",
-  
-  "effect.immersiveengineering.flammable.description": "No description yet.",
-  "effect.immersiveengineering.slippery.description": "No description yet.",
-  "effect.immersiveengineering.conductive.description": "No description yet.",
-  "effect.immersiveengineering.sticky.description": "No description yet.",
-  "effect.immersiveengineering.stunned.description": "No description yet.",
-  "effect.immersiveengineering.concrete_feet.description": "No description yet.",
-  "effect.immersiveengineering.flashed.description": "No description yet.",
 
   "effect.immersivepetroleum.anti_fire.description": "No description yet.",
 
@@ -151,44 +87,6 @@
   "effect.mysticalworld.serendipity.description": "No description yet.",
   "effect.mysticalworld.wakeful.description": "No description yet.",
   "effect.mysticalworld.slow_regeneration.description": "No description yet.",
-
-  "effect.neapolitan.sugar_rush.description": "No description yet.",
-  "effect.neapolitan.vanilla_scent.description": "No description yet.",
-  "effect.neapolitan.agility.description": "Allows a player to climb up blocks as though they were ladders.",
-  "effect.neapolitan.slipping.description": "Causes an entity to slip around all over the place!",
-  "effect.neapolitan.berserking.description": "No description yet.",
-  "effect.neapolitan.harmony.description": "No description yet.",
-
-  "effect.quark.resilience.description": "No description yet.",
-  "effect.quark.danger_sight.description": "No description yet.",
-
-  "effect.savageandravage.frostbite.description": "No description yet.",
-
-  "effect.seasonals.fall_flavor.description": "No description yet.",
-  "effect.seasonals.thorn_resistance.description": "Causes Sweet Berry bushes to no longer cause harm.",
-  "effect.seasonals.puppeteering.description": "No description yet.",
-  
-  "effect.tetra.bleeding.description": "No description yet.",
-  "effect.tetra.earthbound.description": "No description yet.",
-  "effect.tetra.stun.description": "No description yet.",
-  "effect.tetra.howling.description": "No description yet.",
-  "effect.tetra.severed.description": "No description yet.",
-  "effect.tetra.punctured.description": "No description yet.",
-  "effect.tetra.pried.description": "No description yet.",
-  "effect.tetra.exhausted.description": "No description yet.",
-  "effect.tetra.steeled.description": "No description yet.",
-  "effect.tetra.determined.description": "No description yet.",
-  "effect.tetra.unwavering.description": "No description yet.",
-  "effect.tetra.small_health.description": "No description yet.",
-  "effect.tetra.small_absorb.description": "No description yet.",
-  "effect.tetra.suspended.description": "No description yet.",
-
-  "effect.twilightforest.frosted.description": "No description yet.",
-
-  "effect.upgrade_aquatic.insomnia.description": "Causes a player to become tired enough for Phantoms to spawn.",
-  "effect.upgrade_aquatic.restfulness.description": "Causes a player to become rested, preventing Phantoms from spawning.",
-  "effect.upgrade_aquatic.repellence.description": "No description yet.",
-  "effect.upgrade_aquatic.vibing.description": "No description yet.",
 
   "effect.xaerominimap.no_minimap.description": "No description yet.",
   "effect.xaerominimap.no_minimap_beneficial.description": "No description yet.",
