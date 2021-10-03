@@ -33,11 +33,11 @@
   "block.jaopca.storage_blocks.wood": "Block of Sawdust",
 
   "comment.effects": "---Effects with missing titles---",
-  "effect.blood_magic.firefuse": "Firefuse",
-  "effect.blood_magic.plantleech": "Plant Leech",
-  "effect.blood_magic.sacrificiallamb": "Sacrificial Lamb",
-  "effect.blood_magic.soulfray": "Soulfray",
-  "effect.blood_magic.soulsnare": "Soulsnare",
+  "effect.bloodmagic.firefuse": "Firefuse",
+  "effect.bloodmagic.plantleech": "Plant Leech",
+  "effect.bloodmagic.sacrificiallamb": "Sacrificial Lamb",
+  "effect.bloodmagic.soulfray": "Soulfray",
+  "effect.bloodmagic.soulsnare": "Soulsnare",
   "effect.tetra.bleeding": "Bleeding",
   "effect.tetra.stun": "Stun",
   "effect.tetra.suspended": "Suspended",
@@ -46,11 +46,11 @@
   "effect.atum.marked_for_death.description": "No description yet.",
   "effect.betterendforge.end_veil.description": "No description yet.",
   
-  "effect.blood_magic.firefuse.description": "No description yet.",
-  "effect.blood_magic.plantleech.description": "No description yet.",
-  "effect.blood_magic.sacrificiallamb.description": "No description yet.",
-  "effect.blood_magic.soulfray.description": "No description yet.",
-  "effect.blood_magic.soulsnare.description": "No description yet.",
+  "effect.bloodmagic.firefuse.description": "No description yet.",
+  "effect.bloodmagic.plantleech.description": "No description yet.",
+  "effect.bloodmagic.sacrificiallamb.description": "No description yet.",
+  "effect.bloodmagic.soulfray.description": "No description yet.",
+  "effect.bloodmagic.soulsnare.description": "No description yet.",
 
   "effect.blue_skies.deadly_venom.description": "No description yet.",
 
