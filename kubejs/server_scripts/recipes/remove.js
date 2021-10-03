@@ -59,6 +59,17 @@ events.listen('recipes', function (event) {
     // Create Crafts & Additions
     'createaddition:compat/immersiveengineering/lapis_sheet_metal_press', // Duplicate recipe.
 
+    // Darker Depths
+    'darkerdepths:aridrock_silver_ore_from_blasting',
+    'darkerdepths:limestone_silver_ore_from_blasting',
+    'darkerdepths:silver_ingot_from_blasting',
+    'darkerdepths:silver_ingot_from_blasting_raw_silver',
+    'darkerdepths:aridrock_silver_ore',
+    'darkerdepths:limestone_silver_ore',
+    'darkerdepths:silver_ingot',
+    'darkerdepths:silver_ingot_from_smelting_raw_silver',
+    'darkerdepths:silver_ingot_from_silver_block',
+
     // Decorative Blocks
     'decorative_blocks:chain', // Replaced with a different recipe.
     'decorative_blocks:dirt_from_rocky_dirt', // Removed entirely, no neat way to uncraft with the new recipe.
