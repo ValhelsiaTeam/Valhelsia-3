@@ -20,6 +20,9 @@ events.listen('recipes', function (event) {
   event.replaceInput({}, 'quark:dragon_scale', '#forge:dragon_scales')
   event.replaceInput({}, 'create:powdered_obsidian', '#forge:dusts/obsidian')
 
+  // Replace specific item inputs by recipe type:
+  event.replaceInput({type: 'minecraft:crafting_shapeless'}, 'minecraft:vine', '#valhelsia:vines/green')
+
   // Replace specific item inputs with tags for any outputs that match the tag.
   event.replaceInput({output:'#minecraft:arrows'}, 'minecraft:feather', '#forge:feathers')
   event.replaceInput({output:'#minecraft:arrows'}, 'minecraft:stick', '#forge:rods/wooden')
@@ -31,8 +34,7 @@ events.listen('recipes', function (event) {
   event.replaceInput({output:'botania:flight_tiara'}, 'minecraft:feather', '#forge:feathers')
   event.replaceInput({output:'betterendforge:end_stone_smelter'}, '#betterendforge:furnaces', '#forge:furnace')
   event.replaceInput({output:'valhelsia_structures:bone_pile'}, 'minecraft:bone', '#forge:bones')
-  event.replaceInput({output:'minecraft:mossy_cobblestone'}, 'minecraft:vine', '#valhelsia:vines/green')
-  event.replaceInput({output:'minecraft:mossy_stone_bricks'}, 'minecraft:vine', '#valhelsia:vines/green')
-  event.replaceInput({output:'twilightforest:castle_brick_mossy'}, 'minecraft:vine', '#valhelsia:vines/green')
+  event.replaceInput({output:'botania:vine_ball'}, 'minecraft:vine', '#valhelsia:vines/green')
+  event.replaceInput({output:'botania:thorn_chakram'}, 'minecraft:vine', '#valhelsia:vines/green')
   //event.replaceInput({output:'patchouli:guide_book'}, 'minecraft:feather', '#forge:feathers') // Doesn't work, presumably due to NBT data.
 })
