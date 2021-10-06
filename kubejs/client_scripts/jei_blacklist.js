@@ -12,8 +12,11 @@ onEvent('jei.hide.items', event => {
   ])
 
   // Hide unused items.
-  event.hide('immersiveengineering:dust_wood') // Replaced with Mekanism's Sawdust
-  event.hide('darkerdepths:silver_ingot') // Replaced with IE Silver Ingot
+  event.hide([
+    'immersiveengineering:dust_wood',  // Replaced with Mekanism's Sawdust
+    'darkerdepths:silver_ingot', // Replaced with IE Silver Ingot
+    'twilightforest:uncrafting_table' // Disabled to prevent exploits.
+  ])
   event.hide(Item.of('ftblibrary:fluid_container').ignoreNBT())
 
 })
