@@ -9,6 +9,7 @@ events.listen('recipes', function (event) {
   event.replaceInput({}, 'forbidden_arcanus:arcane_gold_nugget', '#forge:nuggets/arcane_gold')
   event.replaceInput({}, 'eidolon:arcane_gold_ingot', '#forge:ingots/arcane_gold')
   event.replaceInput({}, 'forbidden_arcanus:arcane_gold_ingot', '#forge:ingots/arcane_gold')
+  event.replaceInput({}, 'darkerdepths:silver_ingot', '#forge:ingots/silver')
   event.replaceInput({}, 'minecraft:slime_ball', '#forge:slimeballs')
   event.replaceInput({}, 'blue_skies:cherry', '#forge:fruits/cherry')
   event.replaceInput({}, 'environmental:cherry', '#forge:fruits/cherry')
