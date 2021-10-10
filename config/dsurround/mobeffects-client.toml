@@ -41,9 +41,9 @@
 	#Enable toolbar item sound effects
 	"Enable Toolbar Sound Effects" = false
 	#Enable bow/crossbow sound effects
-	"Enable Bow Sound Effects" = true
+	"Enable Bow Sound Effects" = false
 	#Enable item swing sound effects
-	"Enable Item Swing Sound Effects" = true
+	"Enable Item Swing Sound Effects" = false
 	#Toolbar master volume scale
 	#Range: 0 ~ 100
 	"Toolbar Volume Scale" = 30
