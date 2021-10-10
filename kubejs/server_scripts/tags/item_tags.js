@@ -947,5 +947,7 @@ onEvent('item.tags', event => {
   event.add('forge:dusts/sulfur', 'betterendforge:crystalline_sulphur')
   event.add('forge:furnace', '#betterendforge:furnaces')
   event.add('forge:dusts/ender', 'betterendforge:ender_dust')
+  event.add('minecraft:planks', 'forbidden_arcanus:cherrywood_planks')
+  event.add('minecraft:planks', 'forbidden_arcanus:carved_cherrywood_planks')
 
 })
