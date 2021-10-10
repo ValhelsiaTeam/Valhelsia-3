@@ -113,4 +113,7 @@ events.listen('jei.information', function (event) {
 
     // Valhelsia Additional Information
     event.add('akashictome:tome', "When crafting an Akashic Tome, the recipe with four bookshelves will be filled with the starting manuals and the recipe with one bookshelf will be empty.")
+
+    // Misc Information
+    event.add('#forge:gems/amber', "Amber can be socketed into Tetra weapons at a Workbench, causing enemies to occasionally get the Earthbound effect, slowing them and preventing them from jumping.")
 })
