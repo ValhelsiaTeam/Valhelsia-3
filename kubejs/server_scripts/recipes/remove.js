@@ -87,6 +87,7 @@ events.listen('recipes', function (event) {
 
     // Eidolon
     'eidolon:pewter_blend',
+    'eidolon:smelt_stone_brick', // Conflicts with vanilla recipe.
     
     // Immersive Engineering
     'immersiveengineering:crafting/paper_from_sawdust', // Removed since Mekanism method made this redundant.
