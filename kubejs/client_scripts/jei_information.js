@@ -66,6 +66,9 @@ events.listen('jei.information', function (event) {
     event.add('autumnity:snail_slime_block', "Entities that are touching the bottom of a non-slippery snail slime block will stick to the block, preventing them from falling. This does not apply to snails or entities that are sneaking.")
     event.add('autumnity:snail_slime_block', "Snail Slime Blocks act similarly to Slime Blocks and Honey Blocks when moved by a piston, but additionally won't stick to either Mulberry Jam Blocks or Aloe Gel Blocks")
 
+    // Farmer's Delight
+    event.add('farmersdelight:rice', "Rice can be grown by planting it on dirt that is in shallow water, rather than regular farmland.")
+
     // Minecraft Changes
     event.add('minecraft:sweet_berries', "To grow Sweet Berries, craft them into Sweet Berry Pips in order to be able to plant them.")
 
