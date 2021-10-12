@@ -137,6 +137,7 @@
   "tetra.stats.blocking_reflect": "Attack Reflection",
   "tetra.stats.tool.sweeping": "Sweeping",
   "text.betterf3.line.endergetic:end_creature": "End Creatures:",
+  "neat.keybind.toggle": "Toggle Mob Nameplates",
   "fml.menu.multiplayer.incompatible":"Forge Modded Server",
   "fml.menu.multiplayer.incompatible.extra":"Forge Modded Server\n{0}",
   "fml.menu.multiplayer.modsincompatible":"Server mod list cannot be confirmed as compatible.",
