@@ -5,8 +5,9 @@ onEvent('item.tags', event => {
   event.add('forge:slimeballs', 'autumnity:snail_slime')
   event.add('forge:storageblocks/slime', 'autumnity:snail_slime_block')
 
-  // Farmer's Delight Knife Compat
-  var knives = [
+  // Add Compatibility between all of the mods that use knives (excluding Druidcraft's one, which has no durability).
+  // Mystical World Knives
+  var mwKnives = [
     'mysticalworld:amethyst_knife',
     'mysticalworld:cactus_knife',
     'mysticalworld:copper_knife',
@@ -21,8 +22,37 @@ onEvent('item.tags', event => {
     'mysticalworld:iron_knife'
   ]
 
-  event.get('farmersdelight:tools/knives').add(knives)
-  event.get('forge:tools/knives').add(knives)
+  event.get('farmersdelight:tools/knives').add(mwKnives)
+  event.get('forge:tools/knives').add(mwKnives)
+  event.get('forge:fillet_knife').add(mwKnives)
+
+  // Farmer's Delight Knives
+  var fdKnives = [
+    'farmersdelight:flint_knife',
+    'farmersdelight:iron_knife',
+    'farmersdelight:diamond_knife',
+    'farmersdelight:netherite_knife',
+    'farmersdelight:golden_knife'
+  ]
+  event.get('forge:tools/knife').add(fdKnives)
+  event.get('forge:fillet_knife').add(fdKnives)
+
+  // Aquaculture Knives
+  var aqKnives = [
+    'aquaculture:wooden_fillet_knife',
+    'aquaculture:stone_fillet_knife',
+    'aquaculture:iron_fillet_knife',
+    'aquaculture:gold_fillet_knife',
+    'aquaculture:diamond_fillet_knife',
+    'aquaculture:neptunium_fillet_knife'
+  ]
+  event.get('farmersdelight:tools/knives').add(aqKnives)
+  event.get('forge:tools/knives').add(aqKnives)
+  event.get('forge:tools/knife').add(aqKnives)
+  event.get('forge:tools').add(aqKnives)
+  
+
+
 
   // Other Tools
   event.get('forge:tools/hammer').add([
