@@ -92,3 +92,4 @@ key_key.immersivepetroleum.projector.flip:key.keyboard.unknown:NONE
 key_psimisc.keybind:key.keyboard.unknown:NONE
 key_key.mekanismadditions.voice:key.keyboard.unknown:NONE
 key_key.immersiveengineering.railgunZoom:key.keyboard.unknown:NONE
+key_quark.keybind.sort_container:key.mouse.middle

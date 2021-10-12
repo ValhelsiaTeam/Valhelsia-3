@@ -226,7 +226,7 @@
 
 [management]
 	"Chests In Boats" = true
-	"Inventory Sorting" = false
+	"Inventory Sorting" = true
 	"Shulker Box Right Click" = true
 	"Hotbar Changer" = true
 	"Item Sharing" = true
@@ -234,7 +234,7 @@
 	"Easy Transfering" = true
 
 	[management.inventory_sorting]
-		"Enable Chests" = false
+		"Enable Chests" = true
 		"Enable Player Inventory In Chests" = false
 		"Enable Player Inventory" = false
 		#Play a click when sorting inventories using keybindings
