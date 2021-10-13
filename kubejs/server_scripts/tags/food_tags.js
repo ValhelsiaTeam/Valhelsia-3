@@ -42,6 +42,11 @@ onEvent('item.tags', event => {
   event.add('forge:vegetables/fiery_beans', 'blue_skies:fiery_beans')
   event.add('forge:vegetables/winter_leaves', 'blue_skies:winter_leaves')
 
+  // Cooked Vegetables
+  event.get('forge:cooked_vegetables').add([
+    'seasonals:roasted_pumpkin'
+  ])
+
   // Eggs
   event.get('forge:eggs').add([
     'atum:quail_egg'
