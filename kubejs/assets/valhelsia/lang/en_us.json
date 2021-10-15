@@ -133,6 +133,9 @@
   "entity.minecraft.villager.shoveler": "Shoveler",
   "entity.minecraft.villager.nightwatcher": "Nightwatcher",
 
+  "comment.biomes": "---Biomes with missing or incorrect language entries---",
+  "biome.cavebiomeapi.caves": "Caves",
+
   "comment.misc": "---Miscellaneous missing language entries---",
   "tetra.stats.blocking_reflect": "Attack Reflection",
   "tetra.stats.tool.sweeping": "Sweeping",
@@ -142,5 +145,4 @@
   "fml.menu.multiplayer.incompatible.extra":"Forge Modded Server\n{0}",
   "fml.menu.multiplayer.modsincompatible":"Server mod list cannot be confirmed as compatible.",
   "fml.menu.multiplayer.truncated":"This is due to protocol size limits and is normal.\nPlease try to connect before reporting issues."
-
 }
