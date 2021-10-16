@@ -874,13 +874,15 @@ onEvent('item.tags', event => {
     'darkerdepths:limestone_lapis_ore',
     'darkerdepths:limestone_diamond_ore',
     'darkerdepths:limestone_redstone_ore',
+    'druidcraft:fiery_glass_ore',
+    'druidcraft:rockroot_ore'
   ])
 
   // Stones
   event.get('forge:stones').add([
     'darkerdepths:aridrock',
     'darkerdepths:limestone',
-    'darkerdepths:grimestone',
+    'darkerdepths:grimestone'
   ])
 
   // Gems
@@ -965,7 +967,6 @@ onEvent('item.tags', event => {
   event.add('forge:ores/redstone', 'darkerdepths:aridrock_redstone_ore')
   event.add('forge:ores/redstone', 'darkerdepths:limestone_redstone_ore')
 
-
   // Misc Missing Item Tags
   event.add('forge:seeds/cattail', 'environmental:cattail_seeds')
   event.add('forge:seeds/aubergine', 'mysticalworld:aubergine_seeds')
@@ -979,5 +980,7 @@ onEvent('item.tags', event => {
   event.add('forge:dusts/ender', 'betterendforge:ender_dust')
   event.add('minecraft:planks', 'forbidden_arcanus:cherrywood_planks')
   event.add('minecraft:planks', 'forbidden_arcanus:carved_cherrywood_planks')
+  event.add('forge:ores/fiery_glass', 'druidcraft:fiery_glass_ore')
+  event.add('forge:ores/rockroot', 'druidcraft:rockroot_ore')
 
 })

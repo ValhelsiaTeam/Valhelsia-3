@@ -420,13 +420,15 @@ onEvent('block.tags', event => {
     'darkerdepths:limestone_lapis_ore',
     'darkerdepths:limestone_diamond_ore',
     'darkerdepths:limestone_redstone_ore',
+    'druidcraft:fiery_glass_ore',
+    'druidcraft:rockroot_ore'
   ])
 
   // Stones
   event.get('forge:stones').add([
     'darkerdepths:aridrock',
     'darkerdepths:limestone',
-    'darkerdepths:grimestone',
+    'darkerdepths:grimestone'
   ])
 
   // Storage Blocks
@@ -464,6 +466,10 @@ onEvent('block.tags', event => {
   event.add('forge:ores/diamond', 'darkerdepths:limestone_diamond_ore')
   event.add('forge:ores/redstone', 'darkerdepths:aridrock_redstone_ore')
   event.add('forge:ores/redstone', 'darkerdepths:limestone_redstone_ore')
+
+  // Misc Missing Block Tags:
+  event.add('forge:ores/fiery_glass', 'druidcraft:fiery_glass_ore')
+  event.add('forge:ores/rockroot', 'druidcraft:rockroot_ore')
 
 
 })
