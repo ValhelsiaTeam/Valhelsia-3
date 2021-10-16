@@ -56,7 +56,7 @@ events.listen('jei.information', function (event) {
     event.add('atmospheric:aloe_kernels', "Aloe Kernels can be planted on either Arid Sand or Red Arid Sand. When planted on Arid Sand they will grow Yellow Blossoms, and when on Red Arid Sand they instead grow faster.")
     event.add('atmospheric:yellow_blossoms', "Aloe Kernels that are planted on Red Arid Sand will eventually grow into Tall Aloe Vera, which blooms with Yellow Blossoms.")
 
-    // Autumnity Additional Information
+    // Autumnity
     event.add('autumnity:sap_bottle', "Sap Bottles are created by right-clicking with a Glass Bottle on a Sappy Maple block. Sappy Maple blocks have a 25% chance to be created when stripping Autumnity Maple Logs or Wood with an axe.")
     event.add('autumnity:sappy_maple_log', "Sappy Maple Logs have a 25% chance to be created when stripping Autumnity Maple Logs. Right-clicking on Sappy Maple Log with a Glass Bottle will fill the bottle with sap.")
     event.add('autumnity:sappy_maple_wood', "Sappy Maple Wood has a 25% chance to be created when stripping Autumnity Maple Wood. Right-clicking on Sappy Maple Wood with a Glass Bottle will fill the bottle with sap.")
@@ -69,8 +69,11 @@ events.listen('jei.information', function (event) {
     // Farmer's Delight
     event.add('farmersdelight:rice', "Rice can be grown by planting it on dirt that is in shallow water, rather than regular farmland.")
 
+    // Forbidden and Arcanus
+    event.add('forbidden_arcanus:fungyss', "Can be planted on top of Diorite and grown with bone meal.")
+
     // Minecraft Changes
-    event.add('minecraft:sweet_berries', "To grow Sweet Berries, craft them into Sweet Berry Pips in order to be able to plant them.")
+    event.add('minecraft:sweet_berries', "Craft Sweet Berries into Sweet Berry Pips in order to be able to plant them.")
 
     // Mystical World
     var amethystArmour = [
@@ -98,7 +101,7 @@ events.listen('jei.information', function (event) {
     // Note: Adding NBT doesn't completely work - still shows up when pressing "U" on a white banner.
     //event.add(Item.of('minecraft:white_banner', {BlockEntityTag:{Patterns:[{Pattern:"mr",Color:9},{Pattern:"bs",Color:8},{Pattern:"cs",Color:7},{Pattern:"bo",Color:8},{Pattern:"ms",Color:15},{Pattern:"hh",Color:8},{Pattern:"mc",Color:8},{Pattern:"bo",Color:15}]},display:{Name:'{"color":"gold","translate":"block.minecraft.ominous_banner"}'}}), "test")
 
-    // Quark Additional Information
+    // Quark
     event.add('minecraft:chain', "When right-clicking with Chains onto a boat or minecart, and then onto another, they'll link the two. Linked boats and minecarts will always remain at close distance, which allows you to make trains.")
     event.add('quark:iron_rod', "Pistons pushing an Iron Rod will have it work as a drill of sorts, breaking any blocks in front in the direction the rod is facing. These can break anything the piston can push.")
 
@@ -114,7 +117,7 @@ events.listen('jei.information', function (event) {
     event.add(quarkSlimeBlocks, "Slime blocks can be dyed Red and Blue. The primary color blocks (Red, Green, and Blue) can be combined to create secondary colors (Cyan, Magenta, and Yellow).")
     event.add(quarkSlimeBlocks, "While being moved by pistons, two slime blocks will only connect if they're the same color, or if one is made of another (so Red won't connect to Blue, but it'll connect to Magenta). Any color of slime will connect to non-slime blocks around it normally.")  
 
-    // Valhelsia Additional Information
+    // Valhelsia
     event.add('akashictome:tome', "When crafting an Akashic Tome, the recipe with four bookshelves will be filled with the starting manuals and the recipe with one bookshelf will be empty.")
 
     // Misc Information
