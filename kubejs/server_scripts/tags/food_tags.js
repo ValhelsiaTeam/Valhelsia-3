@@ -66,7 +66,8 @@ onEvent('item.tags', event => {
     'betterendforge:small_amaranita_mushroom',
     'betterendforge:small_jellyshroom',
     'blue_skies:snowcap_mushroom',
-    'darkerdepths:glowshroom'
+    'darkerdepths:glowshroom',
+    'forbidden_arcanus:fungyss'
   ])
 
   // Raw Fishes
