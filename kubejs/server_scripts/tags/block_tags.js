@@ -425,7 +425,7 @@ onEvent('block.tags', event => {
   ])
 
   // Stones
-  event.get('forge:stones').add([
+  event.get('forge:stone').add([
     'darkerdepths:aridrock',
     'darkerdepths:limestone',
     'darkerdepths:grimestone'
