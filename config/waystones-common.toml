@@ -1,0 +1,87 @@
+
+[xpCost]
+	#Range: > 0
+	blocksPerXpLevel = 750
+	#Range: 0.0 ~ 1.7976931348623157E308
+	globalWaystoneXpCostMultiplier = 1.0
+	#Range: 0.0 ~ 1.7976931348623157E308
+	waystoneXpCostMultiplier = 1.0
+	#Range: 0.0 ~ 1.7976931348623157E308
+	maximumBaseXpCost = 3.0
+	#Range: > 0
+	xpCostPerLeashed = 1
+	#Range: 0.0 ~ 1.7976931348623157E308
+	portstoneXpCostMultiplier = 0.0
+	#Range: > 0
+	dimensionalWarpXpCost = 3
+	#Range: 0.0 ~ 1.7976931348623157E308
+	warpStoneXpCostMultiplier = 1.0
+	#Range: 0.0 ~ 1.7976931348623157E308
+	minimumBaseXpCost = 0.0
+	inverseXpCost = false
+	#Range: 0.0 ~ 1.7976931348623157E308
+	sharestoneXpCostMultiplier = 1.0
+	#Range: 0.0 ~ 1.7976931348623157E308
+	warpPlateXpCostMultiplier = 1.0
+	#Range: 0.0 ~ 1.7976931348623157E308
+	inventoryButtonXpCostMultiplier = 2.0
+
+[restrictions]
+	restrictToCreative = false
+	generatedWaystonesUnbreakable = false
+	dimensionalWarpAllowList = []
+	globalWaystoneSetupRequiresCreativeMode = true
+	restrictRenameToOwner = false
+	transportLeashed = true
+	transportLeashedDimensional = true
+	#Allowed Values: ALLOW, GLOBAL_ONLY, DENY
+	dimensionalWarp = "ALLOW"
+	dimensionalWarpDenyList = []
+	allowWaystoneToWaystoneTeleport = true
+	leashedDenyList = ["minecraft:wither"]
+
+[cooldowns]
+	#Range: > 0
+	warpStoneCooldown = 300
+	#Range: > 0
+	scrollUseTime = 32
+	#Range: 0.0 ~ 1.7976931348623157E308
+	globalWaystoneCooldownMultiplier = 1.0
+	#Range: > 0
+	warpStoneUseTime = 32
+	#Range: > 0
+	warpPlateUseTime = 20
+	#Range: > 0
+	inventoryButtonCooldown = 1200
+
+[inventoryButton]
+	inventoryButton = ""
+	#Range: > 0
+	warpButtonY = 60
+	#Range: > 0
+	warpButtonX = 58
+	#Range: > 0
+	creativeWarpButtonX = 88
+	#Range: > 0
+	creativeWarpButtonY = 33
+
+[worldGen]
+	#Allowed Values: DEFAULT, MOSSY, SANDY, BIOME
+	worldGenStyle = "BIOME"
+	#Allowed Values: PRESET_FIRST, RANDOM_ONLY, PRESET_ONLY, MIXED
+	nameGenerationMode = "PRESET_FIRST"
+	spawnInVillages = true
+	dimensionDenyList = []
+	customWaystoneNames = []
+	dimensionAllowList = ["minecraft:overworld", "minecraft:the_nether", "minecraft:the_end"]
+	forceSpawnInVillages = false
+	#Range: > 0
+	frequency = 10
+
+[client]
+	disableTextGlow = false
+	disableParticles = false
+
+[compatibility]
+	displayWaystonesOnJourneyMap = true
+
