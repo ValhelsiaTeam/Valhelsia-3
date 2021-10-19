@@ -892,13 +892,16 @@ onEvent('item.tags', event => {
     'blue_skies:moonstone',
     'blue_skies:pearl',
     'darkerdepths:amber',
-    'darkerdepths:celestine_crystal'
+    'darkerdepths:celestine_crystal',
+    'druidcraft:brightstone'
   ])
 
   // Storage Blocks
   event.get('forge:storage_blocks').add([
     'darkerdepths:amber_block',
-    'darkerdepths:celestine_crystal_block'
+    'darkerdepths:celestine_crystal_block',
+    'druidcraft:fiery_glass_block',
+    'druidcraft:rockroot_block'
   ])
 
   // Ingots
@@ -982,5 +985,9 @@ onEvent('item.tags', event => {
   event.add('minecraft:planks', 'forbidden_arcanus:carved_cherrywood_planks')
   event.add('forge:ores/fiery_glass', 'druidcraft:fiery_glass_ore')
   event.add('forge:ores/rockroot', 'druidcraft:rockroot_ore')
+  event.add('forge:gems/fiery_glass', 'druidcraft:fiery_glass')
+  event.add('forge:gems/brightstone', 'druidcraft:brightstone')
+  event.add('forge:storage_blocks/fiery_glass', 'druidcraft:fiery_glass_block')
+  event.add('forge:storage_blocks/rockroot', 'druidcraft:rockroot_block')
 
 })
