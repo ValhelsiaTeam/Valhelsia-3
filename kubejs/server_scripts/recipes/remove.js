@@ -196,7 +196,8 @@ events.listen('recipes', function (event) {
 
     // Quark
     'quark:building/crafting/oak_bookshelf', // Duplicate recipe.
-    'quark:building/crafting/oak_ladder' // Duplicate recipe.
+    'quark:building/crafting/oak_ladder', // Duplicate recipe.
+    'quark:building/crafting/charcoal_block_uncompress' // Duplicate recipe.
   ]
 
   idRemove.forEach(function (remove) {
