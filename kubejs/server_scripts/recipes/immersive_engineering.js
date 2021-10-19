@@ -71,6 +71,7 @@ events.listen('recipes', function (event) {
   // Druidcraft Compat
   squeezer('immersiveengineering:plantoil', 'druidcraft:hemp_seeds', 120)
   event.recipes.immersiveengineering.cloche(['druidcraft:hemp', 'druidcraft:hemp_seeds'], 'druidcraft:hemp_seeds', 'minecraft:dirt', {type: 'crop', block: 'druidcraft:hemp_crop'}).time(800)
+  event.recipes.immersiveengineering.crusher(Item.of('druidcraft:crushed_fiery_glass', 1), '#forge:gems/fiery_glass')
 
   // Farmer's Delight Compat
   fermenter('immersiveengineering:ethanol', '#forge:seeds/rice', 80)
@@ -114,6 +115,9 @@ events.listen('recipes', function (event) {
 
   // Quark Compat
   event.recipes.immersiveengineering.crusher(Item.of('minecraft:soul_sand', 2), '#forge:sandstone/soul', Item.of('bloodmagic:saltpeter').withChance(0.5))
+
+  // Supplementaries Compat
+  squeezer('immersiveengineering:plantoil', '#forge:seeds/flax', 120)
 
   // Titanium Compat (Industrial Foregoing)
   event.recipes.immersiveengineering.metal_press('titanium:diamond_gear', Item.of('minecraft:diamond', 4), 'immersiveengineering:mold_gear')
