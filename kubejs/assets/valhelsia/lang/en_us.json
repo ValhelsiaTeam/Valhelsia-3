@@ -22,6 +22,11 @@
   "item.bloodmagic.ingot_hellforged": "Hellforged Ingot",
   "item.bloodmagic.sand_hellforged": "Hellforged Sand",
   "item.tetra.scroll.unknown.name": "Scroll",
+  "item.druidcraft.crushed_fiery_glass": "Crushed Fiery Glass",
+  "item.druidcraft.tempered_fiery_glass": "Tempered Fiery Glass",
+  "item.druidcraft.brightstone": "Brightstone",
+  "item.druidcraft.blazing_steel": "Blazing Steel",
+  "item.druidcraft.heart_of_blaze": "Heart of Blaze",
 
   "comment.blocks": "--- Blocks with missing or incorrect language entries---",
   "block.tetra.forged_platform_slab": "Forged Platform Slab",
@@ -31,6 +36,10 @@
   "block.astralsorcery.flare_light": "Flare Light",
   "block.betterendforge.hydralux": "Hydralux",
   "block.jaopca.storage_blocks.wood": "Block of Sawdust",
+  "block.druidcraft.hellkiln": "Hellkiln",
+  "block.druidcraft.hellkiln_igniter": "Hellkiln Igniter",
+  "block.structurize.barreldeco_onside": "Horizontal Barrel",
+  "block.structurize.barreldeco_standing": "Vertical Barrel",
 
   "comment.effects": "---Effects with missing titles---",
   "effect.bloodmagic.firefuse": "Firefuse",
