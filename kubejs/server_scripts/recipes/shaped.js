@@ -164,6 +164,15 @@ events.listen('recipes', function (event) {
     C: 'biomesoplenty:cattail'
   })
 
+  // Farmer's Delight
+  event.shaped('farmersdelight:organic_compost', [
+    'CCC',
+    'CCC',
+    'CCC'
+  ], {
+    C: 'minecolonies:compost'
+  })
+
   // Immersive Engineering
   /* May be no longer needed - testing.
   event.shaped(Item.of('immersiveengineering:treated_wood_horizontal', 8), [
