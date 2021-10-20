@@ -901,7 +901,8 @@ onEvent('item.tags', event => {
     'darkerdepths:amber_block',
     'darkerdepths:celestine_crystal_block',
     'druidcraft:fiery_glass_block',
-    'druidcraft:rockroot_block'
+    'druidcraft:rockroot_block',
+    'quark:gunpowder_sack'
   ])
 
   // Ingots
@@ -909,6 +910,40 @@ onEvent('item.tags', event => {
     'biomesoplenty:mud_brick',
     'environmental:mud_brick'
   ])
+
+  // Dusts
+  event.get('forge:dusts').add([
+    'astralsorcery:illumination_powder',
+    'astralsorcery:nocturnal_powder',
+    'astralsorcery:stardust',
+    'bloodmagic:corrupted_dust',
+    'botania:mana_powder',
+    'botania:pixie_dust',
+    'druidcraft:crushed_fiery_glass',
+    'fluxnetworks:flux_dust',
+    'immersiveengineering:dust_coke',
+    'immersiveengineering:dust_hop_graphite',
+    'immersiveengineering:dust_saltpeter',
+    'immersivepetroleum:petcoke_dust',
+    'minecraft:blaze_powder',
+    'twilightforest:transformation_powder',
+    'waystones:warp_dust'
+  ])
+  
+  // Specific Dusts
+  event.add('forge:dusts/illumination', 'astralsorcery:illumination_powder')
+  event.add('forge:dusts/nocturnal', 'astralsorcery:nocturnal_powder')
+  event.add('forge:dusts/star', 'astralsorcery:stardust')
+  event.add('forge:dusts/sulfur', 'betterendforge:crystalline_sulphur')
+  event.add('forge:dusts/ender', 'betterendforge:ender_dust')
+  event.add('forge:dusts/corrupted', 'bloodmagic:corrupted_dust')
+  event.add('forge:dusts/mana', 'botania:mana_powder')
+  event.add('forge:dusts/pixie', 'botania:pixie_dust')
+  event.add('forge:dusts/obsidian', 'create:powdered_obsidian')
+  event.add('forge:dusts/flux', 'fluxnetworks:flux_dust')
+  event.add('forge:dusts/psi', 'psi:psidust')
+  event.add('forge:dusts/transformation', 'twilightforest:transformation_powder')
+  event.add('forge:dusts/warp', 'waystones:warp_dust')
 
   // Leathers
   event.get('forge:leather').add([
@@ -970,24 +1005,24 @@ onEvent('item.tags', event => {
   event.add('forge:ores/redstone', 'darkerdepths:aridrock_redstone_ore')
   event.add('forge:ores/redstone', 'darkerdepths:limestone_redstone_ore')
 
-  // Misc Missing Item Tags
-  event.add('forge:seeds/cattail', 'environmental:cattail_seeds')
-  event.add('forge:seeds/aubergine', 'mysticalworld:aubergine_seeds')
-  event.add('forge:dusts/obsidian', 'create:powdered_obsidian')
-  event.add('forbidden_arcanus:edelwood_logs', 'forbidden_arcanus:edelwood_log')
-  event.add('forge:dragon_scales', 'quark:dragon_scale')
-  event.add('forge:chests/ender', 'enderstorage:ender_chest')
-  event.add('forge:bones', 'aquaculture:fish_bones')
-  event.add('forge:dusts/sulfur', 'betterendforge:crystalline_sulphur')
-  event.add('forge:furnace', '#betterendforge:furnaces')
-  event.add('forge:dusts/ender', 'betterendforge:ender_dust')
-  event.add('minecraft:planks', 'forbidden_arcanus:cherrywood_planks')
-  event.add('minecraft:planks', 'forbidden_arcanus:carved_cherrywood_planks')
+  // Druidcraft Missing Item Tags
   event.add('forge:ores/fiery_glass', 'druidcraft:fiery_glass_ore')
   event.add('forge:ores/rockroot', 'druidcraft:rockroot_ore')
   event.add('forge:gems/fiery_glass', 'druidcraft:fiery_glass')
   event.add('forge:gems/brightstone', 'druidcraft:brightstone')
   event.add('forge:storage_blocks/fiery_glass', 'druidcraft:fiery_glass_block')
   event.add('forge:storage_blocks/rockroot', 'druidcraft:rockroot_block')
+  event.add('forge:dusts/fiery_glass', 'druidcraft:crushed_fiery_glass')
 
+  // Misc Missing Item Tags
+  event.add('forge:seeds/cattail', 'environmental:cattail_seeds')
+  event.add('forge:seeds/aubergine', 'mysticalworld:aubergine_seeds')
+  event.add('forbidden_arcanus:edelwood_logs', 'forbidden_arcanus:edelwood_log')
+  event.add('forge:dragon_scales', 'quark:dragon_scale')
+  event.add('forge:chests/ender', 'enderstorage:ender_chest')
+  event.add('forge:bones', 'aquaculture:fish_bones')
+  event.add('forge:furnace', '#betterendforge:furnaces')
+  event.add('minecraft:planks', 'forbidden_arcanus:cherrywood_planks')
+  event.add('minecraft:planks', 'forbidden_arcanus:carved_cherrywood_planks')
+  event.add('forge:storage_blocks/gunpowder', 'quark:gunpowder_sack')
 })

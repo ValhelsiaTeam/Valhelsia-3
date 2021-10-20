@@ -436,7 +436,8 @@ onEvent('block.tags', event => {
     'darkerdepths:amber_block',
     'darkerdepths:celestine_crystal_block',
     'druidcraft:fiery_glass_block',
-    'druidcraft:rockroot_block'
+    'druidcraft:rockroot_block',
+    'quark:gunpowder_sack'
   ])
 
   // BetterEnd Missing Tags:
@@ -474,4 +475,5 @@ onEvent('block.tags', event => {
   event.add('forge:ores/rockroot', 'druidcraft:rockroot_ore')
   event.add('forge:storage_blocks/fiery_glass', 'druidcraft:fiery_glass_block')
   event.add('forge:storage_blocks/rockroot', 'druidcraft:rockroot_block')
+  event.add('forge:storage_blocks/gunpowder', 'quark:gunpowder_sack')
 })
