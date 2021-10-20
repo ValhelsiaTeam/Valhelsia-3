@@ -476,4 +476,6 @@ onEvent('block.tags', event => {
   event.add('forge:storage_blocks/fiery_glass', 'druidcraft:fiery_glass_block')
   event.add('forge:storage_blocks/rockroot', 'druidcraft:rockroot_block')
   event.add('forge:storage_blocks/gunpowder', 'quark:gunpowder_sack')
+  event.add('forge:sand/arid', 'atmospheric:arid_sand')
+  event.add('forge:sand/red_arid', 'atmospheric:red_arid_sand')
 })

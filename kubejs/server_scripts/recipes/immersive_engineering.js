@@ -65,6 +65,9 @@ events.listen('recipes', function (event) {
   event.recipes.immersiveengineering.crusher(Item.of('biomesoplenty:black_sand', 2), '#forge:sandstone/black', Item.of('bloodmagic:saltpeter').withChance(0.5))
   event.recipes.immersiveengineering.crusher(Item.of('biomesoplenty:orange_sand', 2), '#forge:sandstone/orange', Item.of('bloodmagic:saltpeter').withChance(0.5))
 
+  // Darker Depths Compat
+  event.recipes.immersiveengineering.crusher('atmospheric:arid_sand', 'darkerdepths:aridrock')
+
   // Decorative Blocks Compat
   event.recipes.immersiveengineering.crusher('minecraft:coarse_dirt', 'decorative_blocks:rocky_dirt')
 

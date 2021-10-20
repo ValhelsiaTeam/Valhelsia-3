@@ -80,9 +80,13 @@ events.listen('recipes', function (event) {
   // Darker Depths
   event.recipes.mekanism.metallurgic_infusing('darkerdepths:lush_aridrock', 'darkerdepths:aridrock', 'mekanism:bio', 10)
   event.recipes.mekanism.metallurgic_infusing('darkerdepths:mossy_grimestone', 'darkerdepths:grimestone', 'mekanism:bio', 10)
+  event.recipes.mekanism.crushing('atmospheric:arid_sand', 'darkerdepths:aridrock')
 
   // Decorative Blocks
   event.recipes.mekanism.crushing('minecraft:coarse_dirt', 'decorative_blocks:rocky_dirt')
+
+  // Druidcraft
+  event.recipes.mekanism.crushing('druidcraft:crushed_fiery_glass', '#forge:gems/fiery_glass')
 
   // Forbidden and Arcanus
   event.recipes.mekanism.crushing(Item.of('forbidden_arcanus:soulless_sand', 2), '#forge:sandstone/soulless')

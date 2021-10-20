@@ -51,9 +51,6 @@ onEvent('item.tags', event => {
   event.get('forge:tools/knife').add(aqKnives)
   event.get('forge:tools').add(aqKnives)
   
-
-
-
   // Other Tools
   event.get('forge:tools/hammer').add([
     'immersiveengineering:hammer',
@@ -1025,4 +1022,6 @@ onEvent('item.tags', event => {
   event.add('minecraft:planks', 'forbidden_arcanus:cherrywood_planks')
   event.add('minecraft:planks', 'forbidden_arcanus:carved_cherrywood_planks')
   event.add('forge:storage_blocks/gunpowder', 'quark:gunpowder_sack')
+  event.add('forge:sand/arid', 'atmospheric:arid_sand')
+  event.add('forge:sand/red_arid', 'atmospheric:red_arid_sand')
 })

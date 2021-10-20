@@ -14,11 +14,15 @@ events.listen('recipes', function (event) {
   }
 
   // Temporary fix to allow players to convert between Mekanism and Eidolon Lead Ingots, since Eidolon has hard-coded its own Lead Ingots into some recipes.
-  event.shapeless(Item.of('eidolon:lead_ingot', 1), 'mekanism:ingot_lead')
-  event.shapeless(Item.of('mekanism:ingot_lead', 1), 'eidolon:lead_ingot')
+  // This is getting less temporary, since Eidolon hasn't had any updates. :(
+  event.shapeless('eidolon:lead_ingot', 'mekanism:ingot_lead')
+  event.shapeless('mekanism:ingot_lead', 'eidolon:lead_ingot')
+
+  // Atmospheric
+  event.shapeless(Item.of('atmospheric:red_arid_sand', 2), ['atmospheric:arid_sand', 'minecraft:red_sand'])
 
   // BoP
-  event.shapeless(Item.of('biomesoplenty:orange_sand', 2), ['#forge:sand/colorless', '#forge:sand/red'])
+  event.shapeless(Item.of('biomesoplenty:orange_sand', 2), ['minecraft:sand', 'minecraft:red_sand']) // Not using a tag since arid sand shouldn't work in this recipe.
 
   // Create
   event.shapeless(Item.of('create:brass_sheet', 1), ['create:brass_ingot', '#forge:tools/hammer'])
