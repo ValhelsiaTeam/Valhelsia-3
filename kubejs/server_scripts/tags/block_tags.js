@@ -177,82 +177,82 @@ onEvent('block.tags', event => {
   event.get('quark:wooden_vertical_slabs').add(woodenVerticalSlabs)
 
   // Sandstone Tags
-  var aridSandstones = [
+  event.get('forge:sandstone/colorless').add([
+    'darkerdepths:cobbled_sandstone',
+    'quark:sandstone_bricks'
+  ])
+
+  event.get('forge:sandstone/red').add([
+    'darkerdepths:cobbled_red_sandstone',
+    'quark:red_sandstone_bricks'
+  ])
+
+  event.get('forge:sandstone/arid').add([
     'atmospheric:arid_sandstone',
     'atmospheric:smooth_arid_sandstone',
     'atmospheric:cut_arid_sandstone',
     'atmospheric:chiseled_arid_sandstone',
     'atmospheric:arid_sandstone_bricks'
-  ]
+  ])
 
-  event.get('forge:sandstone/arid')
-       .add(aridSandstones)
-
-  var redAridSandstones = [
+  event.get('forge:sandstone/red_arid').add([
     'atmospheric:red_arid_sandstone',
     'atmospheric:smooth_red_arid_sandstone',
     'atmospheric:cut_red_arid_sandstone',
     'atmospheric:chiseled_red_arid_sandstone',
     'atmospheric:red_arid_sandstone_bricks'
-  ]
+  ])
 
-  event.get('forge:sandstone/red_arid')
-       .add(redAridSandstones)
-
-  var orangeSandstones = [
+  event.get('forge:sandstone/orange').add([
     'biomesoplenty:orange_sandstone',
     'biomesoplenty:smooth_orange_sandstone',
     'biomesoplenty:cut_orange_sandstone',
     'biomesoplenty:chiseled_orange_sandstone'
-  ]
+  ])
 
-  event.get('forge:sandstone/orange')
-       .add(orangeSandstones)
-
-  var whiteSandstones = [
+  event.get('forge:sandstone/white').add([
     'biomesoplenty:white_sandstone',
     'biomesoplenty:smooth_white_sandstone',
     'biomesoplenty:cut_white_sandstone',
     'biomesoplenty:chiseled_white_sandstone'
-  ]
+  ])
 
-  event.get('forge:sandstone/white')
-       .add(whiteSandstones)
-
-  var blackSandstones = [
+  event.get('forge:sandstone/black').add([
     'biomesoplenty:black_sandstone',
     'biomesoplenty:smooth_black_sandstone',
     'biomesoplenty:cut_black_sandstone',
     'biomesoplenty:chiseled_black_sandstone'
-  ]
+  ])
 
-  event.get('forge:sandstone/black')
-       .add(blackSandstones)
-
-  var soulSandstones = [
+  event.get('forge:sandstone/soul').add([
     'quark:soul_sandstone',
     'quark:soul_sandstone_bricks',
     'quark:smooth_soul_sandstone',
     'quark:cut_soul_sandstone',
     'quark:chiseled_soul_sandstone'
-  ]
+  ])
 
-  event.get('forge:sandstone/soul')
-       .add(soulSandstones)
-
-  var soullessSandstones = [
+  event.get('forge:sandstone/soulless').add([
     'forbidden_arcanus:soulless_sandstone',
     'forbidden_arcanus:cut_soulless_sandstone',
     'forbidden_arcanus:polished_soulless_sandstone'
-  ]
+  ])
 
-  event.get('forge:sandstone/soulless')
-       .add(soullessSandstones)
-
-  event.add('forge:sandstone/colorless', 'darkerdepths:cobbled_sandstone')
-  event.add('forge:sandstone/colorless', 'quark:sandstone_bricks')
-  event.add('forge:sandstone/red', 'darkerdepths:cobbled_red_sandstone')
-  event.add('forge:sandstone/red', 'quark:red_sandstone_bricks')
+  event.get('forge:sandstone/crystal').add([
+    'blue_skies:crystal_sandstone',
+    'blue_skies:chiseled_crystal_sandstone',
+    'blue_skies:cut_crystal_sandstone',
+    'blue_skies:smooth_crystal_sandstone',
+    'blue_skies:crystal_sandstone_pillar'
+  ])
+  
+  event.get('forge:sandstone/midnight').add([
+    'blue_skies:midnight_sandstone',
+    'blue_skies:chiseled_midnight_sandstone',
+    'blue_skies:cut_midnight_sandstone',
+    'blue_skies:smooth_midnight_sandstone',
+    'blue_skies:midnight_sandstone_pillar'
+  ])
 
   // Mythic Botany Missing Block Tags
   event.get('botania:special_flowers').add([
