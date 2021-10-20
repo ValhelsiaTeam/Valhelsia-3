@@ -68,12 +68,19 @@ events.listen('recipes', function (event) {
   event.recipes.create.pressing('betterendforge:rutiscus_path', 'betterendforge:rutiscus')
   event.recipes.create.pressing('betterendforge:sangnum_path', 'betterendforge:sangnum')
 
+  // Blue Skies
+  crushAndMill('blue_skies:crystal_sand', 'create:dolomite')
+  crushAndMill('blue_skies:midnight_sand', 'quark:cobbled_deepslate')
+
   // BoP
   crushAndMill('biomesoplenty:white_sand', 'quark:marble')
   crushAndMill('biomesoplenty:black_sand', 'minecraft:basalt')
   crushAndMill([Item.of('biomesoplenty:white_sand', 2), Item.of('bloodmagic:saltpeter').withChance(0.5)], '#forge:sandstone/white')
   crushAndMill([Item.of('biomesoplenty:black_sand', 2), Item.of('bloodmagic:saltpeter').withChance(0.5)], '#forge:sandstone/black')
   crushAndMill([Item.of('biomesoplenty:orange_sand', 2), Item.of('bloodmagic:saltpeter').withChance(0.5)], '#forge:sandstone/orange')
+
+  // Darker Depths
+  crushAndMill('atmospheric:arid_sand', 'darkerdepths:aridrock')
 
   // Decorative Blocks
   crushAndMill('minecraft:coarse_dirt', 'decorative_blocks:rocky_dirt')
