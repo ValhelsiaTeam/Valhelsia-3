@@ -57,6 +57,8 @@ events.listen('recipes', function (event) {
   // Blue Skies Compat
   event.recipes.immersiveengineering.crusher(Item.of('minecraft:bone_meal', 9), 'blue_skies:azulfo_horn')
   event.recipes.immersiveengineering.crusher(Item.of('blue_skies:moonstone_shard', 4), '#blue_skies:gems/moonstone')
+  event.recipes.immersiveengineering.crusher('blue_skies:crystal_sand', 'create:dolomite')
+  event.recipes.immersiveengineering.crusher('blue_skies:midnight_sand', 'quark:cobbled_deepslate')
 
   // BoP Compat
   event.recipes.immersiveengineering.crusher('biomesoplenty:white_sand', 'quark:marble')
@@ -74,7 +76,7 @@ events.listen('recipes', function (event) {
   // Druidcraft Compat
   squeezer('immersiveengineering:plantoil', 'druidcraft:hemp_seeds', 120)
   event.recipes.immersiveengineering.cloche(['druidcraft:hemp', 'druidcraft:hemp_seeds'], 'druidcraft:hemp_seeds', 'minecraft:dirt', {type: 'crop', block: 'druidcraft:hemp_crop'}).time(800)
-  event.recipes.immersiveengineering.crusher(Item.of('druidcraft:crushed_fiery_glass', 1), '#forge:gems/fiery_glass')
+  event.recipes.immersiveengineering.crusher('druidcraft:crushed_fiery_glass', '#forge:gems/fiery_glass')
 
   // Farmer's Delight Compat
   fermenter('immersiveengineering:ethanol', '#forge:seeds/rice', 80)
