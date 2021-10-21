@@ -18,6 +18,8 @@ events.listen('recipes', function (event) {
         "smelttime": 450
       })
     }
+
+    // TODO: Add Create Mixing w/ heat here.
   }
 
   // Remove Old Alloying Recipes:
@@ -29,6 +31,7 @@ events.listen('recipes', function (event) {
     'immersiveengineering:alloysmelter/bronze',
     'immersiveengineering:alloysmelter/constantan',
     'immersiveengineering:alloysmelter/electrum'
+    // TODO: Remove Create's recipes once above TODO is done.
   ].forEach(function (remove) {
     event.remove({id: remove})
   })
@@ -43,9 +46,11 @@ events.listen('recipes', function (event) {
 
   // Create
   alloy(Item.of('create:brass_ingot', 2), '#forge:ingots/copper', '#forge:ingots/zinc')
+  // TODO: Add in Create's heated mixing recipes (+ some non-heated ones too).
 
   // Eidolon
   alloy(Item.of('eidolon:pewter_ingot', 4), Ingredient.of('#forge:ingots/tin', 3), '#forge:ingots/lead')
+  alloy(Item.of('eidolon:pewter_ingot', 4), Ingredient.of('#forge:dusts/tin', 3), '#forge:dusts/lead')
 
   // Immersive Engineering
   alloy(Item.of('immersiveengineering:ingot_constantan', 2), '#forge:ingots/copper', '#forge:ingots/nickel')
