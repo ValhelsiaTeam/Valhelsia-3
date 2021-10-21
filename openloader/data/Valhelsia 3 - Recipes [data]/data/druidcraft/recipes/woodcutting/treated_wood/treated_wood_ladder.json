@@ -1,8 +1,0 @@
-{
-  "type": "druidcraft:woodcutting",
-  "ingredient": {
-    "tag": "forge:treated_wood"
-  },
-  "result": "engineersdecor:treated_wood_ladder",
-  "count": 1
-}
