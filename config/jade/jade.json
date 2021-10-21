@@ -5,7 +5,7 @@
     "displayEntities": true,
     "displayMode": "TOGGLE",
     "hideFromDebug": true,
-    "iconMode": "TOP",
+    "iconMode": "CENTERED",
     "enableTextToSpeech": false,
     "maxHealthForRender": 40,
     "maxHeartsPerLine": 10,
@@ -15,7 +15,7 @@
   },
   "overlay": {
     "overlayPosX": 0.5,
-    "overlayPosY": 3.0,
+    "overlayPosY": 0.955,
     "overlayScale": 1.0,
     "overlayAnchorX": 0.5,
     "overlayAnchorY": 0.0,
