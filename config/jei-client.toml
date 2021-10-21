@@ -30,16 +30,16 @@
 	ModNameSearchMode = "REQUIRE_PREFIX"
 	#Search mode for Tooltips (prefix: #)
 	#Allowed Values: ENABLED, REQUIRE_PREFIX, DISABLED
-	TooltipSearchMode = "ENABLED"
+	TooltipSearchMode = "REQUIRE_PREFIX"
 	#Search mode for Tag Names (prefix: $)
 	#Allowed Values: ENABLED, REQUIRE_PREFIX, DISABLED
-	TagSearchMode = "ENABLED"
+	TagSearchMode = "REQUIRE_PREFIX"
 	#Search mode for Creative Tab Names (prefix: %)
 	#Allowed Values: ENABLED, REQUIRE_PREFIX, DISABLED
 	CreativeTabSearchMode = "REQUIRE_PREFIX"
 	#Search mode for Colors (prefix: ^)
 	#Allowed Values: ENABLED, REQUIRE_PREFIX, DISABLED
-	ColorSearchMode = "ENABLED"
+	ColorSearchMode = "REQUIRE_PREFIX"
 	#Search mode for resources IDs (prefix: &)
 	#Allowed Values: ENABLED, REQUIRE_PREFIX, DISABLED
 	ResourceIdSearchMode = "REQUIRE_PREFIX"
