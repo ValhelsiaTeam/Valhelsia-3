@@ -3,15 +3,21 @@
 [client]
 
 	[client.functionality_options]
+		#If challenge sounds should be muted.
+		mute_challenges = false
 		#Whitelist of advancements to show plaques for.  Leave empty to display for all.
 		whitelist = []
+		#If task sounds should be muted.
+		mute_tasks = false
+		#If goal sounds should be muted.
+		mute_goals = false
 
 	[client.visual_options]
 		#If plaques should show on the top of the screen.
 		on_top = true
 		#The distance from the top or bottom of the screen, in pixels.
 		#Range: 8 ~ 256
-		distance = 16
+		distance = 32
 		#If plaques should show for challenge advancements (high-difficulty advancements).
 		challenges = true
 		#Hide waila/hwyla/jade popups while plaques are showing.

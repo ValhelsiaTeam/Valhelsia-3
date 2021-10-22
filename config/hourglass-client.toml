@@ -10,7 +10,7 @@
 	#Sets the distance between the clock and the edge of the screen.
 	#Unused if clockAlignment is CENTER_CENTER.
 	#Range: > 0
-	clockMargin = 64
+	clockMargin = 80
 	#Sets the scale of the bed clock.
 	#Range: > 1
 	clockScale = 64
