@@ -629,6 +629,7 @@ onEvent('item.tags', event => {
 
   // Gems
   event.get('forge:gems').add([
+    'astralsorcery:aquamarine',
     'betterendforge:amber_gem',
     'blue_skies:moonstone_shard',
     'blue_skies:moonstone',
