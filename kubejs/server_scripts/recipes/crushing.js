@@ -18,8 +18,8 @@ events.listen('recipes', function (event) {
 
   // Add a milling and crushing recipe to multiple mods.
   let millAndCrush = (output, input) => {
-    crush(output, input, secondary)
-    mill(output, input, secondary)
+    crush(output, input)
+    mill(output, input)
   }
 
   // Remove Old Crushing Recipes:
@@ -31,7 +31,7 @@ events.listen('recipes', function (event) {
 
   // BetterEnd
   // Ender Dust
-  
+
   // Create
   millAndCrush('create:andesite_cobblestone', 'minecraft:andesite')
 

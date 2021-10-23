@@ -36,10 +36,11 @@
   "block.astralsorcery.flare_light": "Flare Light",
   "block.betterendforge.hydralux": "Hydralux",
   "block.jaopca.storage_blocks.wood": "Block of Sawdust",
+  "block.jaopca.storage_blocks.blaze": "Block of Blaze Powder",
   "block.druidcraft.hellkiln": "Hellkiln",
   "block.druidcraft.hellkiln_igniter": "Hellkiln Igniter",
-  "block.structurize.barreldeco_onside": "Horizontal Barrel",
-  "block.structurize.barreldeco_standing": "Vertical Barrel",
+  "block.structurize.blockbarreldeco_onside": "Horizontal Barrel",
+  "block.structurize.blockbarreldeco_standing": "Vertical Barrel",
 
   "comment.effects": "---Effects with missing titles---",
   "effect.bloodmagic.firefuse": "Firefuse",
