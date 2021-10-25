@@ -119,16 +119,6 @@ events.listen('recipes', function (event) {
   })
 
   // Botania
-  event.shaped(Item.of('botania:ender_hand', 1), [
-    'PLO',
-    'LEL',
-    'OL '
-  ], {
-    P: 'botania:mana_pearl',
-    E: '#forge:chests/ender',
-    L: 'minecraft:leather',
-    O: '#forge:obsidian'
-  })
 
   // Decorative Blocks
   event.shaped(Item.of('decorative_blocks:chain', 2), [
@@ -174,17 +164,6 @@ events.listen('recipes', function (event) {
   })
 
   // Immersive Engineering
-  /* May be no longer needed - testing.
-  event.shaped(Item.of('immersiveengineering:treated_wood_horizontal', 8), [
-    'AAA',
-    'ABA',
-    'AAA'
-  ], {
-    A: '#minecraft:planks',
-    B: 'immersiveengineering:creosote_bucket'
-  })
-  */
-
   event.shaped(Item.of('immersiveengineering:ingot_silver', 1), [
     'SSS',
     'SSS',
@@ -241,19 +220,6 @@ events.listen('recipes', function (event) {
     'AAA'
   ], {
     A: 'industrialforegoing:pink_slime'
-  })
-
-  // Adding this back in (removed earlier in the loading process).
-  event.shaped(Item.of('industrialforegoing:black_hole_controller', 1), [
-    'PGP',
-    'NEN',
-    'PMP'
-  ], {
-    P: '#forge:plastic',
-    G: '#forge:gears/diamond',
-    N: 'minecraft:ender_eye',
-    E: '#forge:chests/ender',
-    M: '#industrialforegoing:machine_frame/supreme'
   })
 
   // Mystical World
