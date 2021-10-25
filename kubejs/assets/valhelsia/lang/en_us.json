@@ -151,8 +151,8 @@
   "tetra.stats.tool.sweeping": "Sweeping",
   "text.betterf3.line.endergetic:end_creature": "End Creatures:",
   "neat.keybind.toggle": "Toggle Mob Nameplates",
-  "fml.menu.multiplayer.incompatible":"Forge Modded Server",
-  "fml.menu.multiplayer.incompatible.extra":"Forge Modded Server\n{0}",
-  "fml.menu.multiplayer.modsincompatible":"Server mod list cannot be confirmed as compatible.",
-  "fml.menu.multiplayer.truncated":"This is due to protocol size limits and is normal.\nPlease try to connect before reporting issues."
+  "fml.menu.multiplayer.incompatible": "Forge Modded Server",
+  "fml.menu.multiplayer.incompatible.extra": "Forge Modded Server\n{0}",
+  "fml.menu.multiplayer.modsincompatible": "Server mod list cannot be confirmed as compatible.",
+  "fml.menu.multiplayer.truncated": "This is due to protocol size limits and is normal.\nPlease try to connect before reporting issues."
 }
