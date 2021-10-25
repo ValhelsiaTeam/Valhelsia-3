@@ -54,6 +54,9 @@ events.listen('recipes', function (event) {
   alloy(Item.of('eidolon:pewter_ingot', 4), Ingredient.of('#forge:ingots/tin', 3), '#forge:ingots/lead')
   alloy(Item.of('eidolon:pewter_ingot', 4), Ingredient.of('#forge:dusts/tin', 3), '#forge:dusts/lead')
 
+  // Forbidden and Arcanus
+  alloy('forbidden_arcanus:obsidian_ingot', Ingredient.of('#forge:dusts/obsidian', 4), Ingredient.of('#forge:nuggets/iron', 4))
+
   // Immersive Engineering
   alloy(Item.of('immersiveengineering:ingot_constantan', 2), '#forge:ingots/copper', '#forge:ingots/nickel')
   alloy(Item.of('immersiveengineering:ingot_constantan', 2), '#forge:dusts/copper', '#forge:dusts/nickel')
