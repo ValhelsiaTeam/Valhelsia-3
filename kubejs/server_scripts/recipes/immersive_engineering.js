@@ -100,13 +100,11 @@ events.listen('recipes', function (event) {
 
   // Minecraft Tweaks
   event.recipes.immersiveengineering.crusher('minecraft:red_sand', 'minecraft:granite')
-  // Blaze Rods are Expensive to prevent exploiting - needs to match the most dust you can get from processing them.
   event.recipes.immersiveengineering.metal_press('minecraft:blaze_rod', Item.of('minecraft:blaze_powder', 6), 'immersiveengineering:mold_rod')
   event.recipes.immersiveengineering.metal_press(Item.of('minecraft:dried_kelp', 9), 'minecraft:dried_kelp_block', 'immersiveengineering:mold_unpacking')
   event.recipes.immersiveengineering.metal_press(Item.of('minecraft:nether_wart', 4), 'minecraft:nether_wart_block', 'immersiveengineering:mold_unpacking')
   event.recipes.immersiveengineering.crusher(Item.of('minecraft:bone_meal', 9), 'minecraft:bone_block')
-  // Adjusted Nether Wart crushing to prevent duplicating nether wart.
-  event.recipes.immersiveengineering.crusher(Item.of('minecraft:nether_wart', 4), 'minecraft:nether_wart')
+  event.recipes.immersiveengineering.crusher(Item.of('minecraft:nether_wart', 4), 'minecraft:nether_wart_block')
 
   // Mystical World Compat
   squeezer('immersiveengineering:plantoil', '#forge:seeds/aubergine', 60)
