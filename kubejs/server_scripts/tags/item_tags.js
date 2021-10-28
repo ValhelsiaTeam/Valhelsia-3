@@ -53,8 +53,8 @@ onEvent('item.tags', event => {
   
   // Other Tools
   event.get('forge:tools/hammer').add([
-    'immersiveengineering:hammer',
-    '#betterendforge:hammers'
+    'immersiveengineering:hammer'
+    //'#betterendforge:hammers' // Not adding right now - they use durability differently to IE's hammer.
   ])
   event.add('forge:tools/spindle', 'mysticalworld:spindle')
 
@@ -720,6 +720,7 @@ onEvent('item.tags', event => {
   event.add('forge:ingots/falsite', '#blue_skies:ingots/falsite')
   event.add('forge:ingots/horizonite', '#blue_skies:ingots/horizonite')
   event.add('forge:ingots/ventium', '#blue_skies:ingots/ventium')
+  event.add('forge:buckets/water', 'blue_skies:ventium_water_bucket')
   
   // Darker Depths Missing Tags:
   event.add('minecraft:planks', 'darkerdepths:petrified_planks')
