@@ -25,17 +25,17 @@ events.listen('recipes', function (event) {
   event.shapeless(Item.of('biomesoplenty:orange_sand', 2), ['minecraft:sand', 'minecraft:red_sand']) // Not using a tag since arid sand shouldn't work in this recipe.
 
   // Create
-  event.shapeless(Item.of('create:brass_sheet', 1), ['create:brass_ingot', '#forge:tools/hammer'])
-  event.shapeless(Item.of('create:iron_sheet', 1), ['minecraft:iron_ingot', '#forge:tools/hammer'])
-  event.shapeless(Item.of('create:golden_sheet', 1), ['minecraft:gold_ingot', '#forge:tools/hammer'])
-  event.shapeless(Item.of('create:copper_sheet', 1), ['#forge:ingots/copper', '#forge:tools/hammer'])
+  event.shapeless('create:brass_sheet', ['#forge:ingots/brass', '#forge:tools/hammer'])
+  event.shapeless('create:iron_sheet', ['#forge:ingots/iron', '#forge:tools/hammer'])
+  event.shapeless('create:golden_sheet', ['#forge:ingots/gold', '#forge:tools/hammer'])
+  event.shapeless('create:copper_sheet', ['#forge:ingots/copper', '#forge:tools/hammer'])
 
   // Eidolon
   event.shapeless(Item.of('eidolon:pewter_blend', 4), ['#forge:dusts/tin', '#forge:dusts/tin', '#forge:dusts/tin', '#forge:dusts/lead'])
   event.shapeless(Item.of('eidolon:pewter_blend', 4), ['#create:crushed_ores/tin', '#create:crushed_ores/tin', '#create:crushed_ores/tin', '#create:crushed_ores/lead'])
 
   // Environmental
-  shapelessDamage(Item.of('minecraft:string', 3), [Ingredient.of('#forge:seeds/cattail').toJson(), Ingredient.of('#forge:seeds/cattail').toJson(),Ingredient.of('#forge:seeds/cattail').toJson(), Ingredient.of('#forge:tools/spindle').toJson()], 'mysticalworld:spindle')
+  shapelessDamage(Item.of('minecraft:string', 3), [Ingredient.of('#forge:seeds/cattail'), Ingredient.of('#forge:seeds/cattail'), Ingredient.of('#forge:seeds/cattail'), Ingredient.of('#forge:tools/spindle')], 'mysticalworld:spindle')
 
   // Farmer's Delight
   event.shapeless('farmersdelight:organic_compost', [
@@ -51,13 +51,13 @@ events.listen('recipes', function (event) {
   ])
 
   // Immersive Engineering
-  shapelessDamage(Item.of('immersiveengineering:hemp_fiber', 2), [Ingredient.of('#forge:crops/hemp').toJson(), Ingredient.of('#forge:tools/spindle').toJson()], 'mysticalworld:spindle')
+  shapelessDamage(Item.of('immersiveengineering:hemp_fiber', 2), [Ingredient.of('#forge:crops/hemp'), Ingredient.of('#forge:tools/spindle')], 'mysticalworld:spindle')
   event.shapeless(Item.of('immersiveengineering:ingot_silver', 9), '#forge:storage_blocks/silver')
   event.shapeless(Item.of('immersiveengineering:nugget_silver', 9), '#forge:ingots/silver')
 
   // Minecraft
   // No idea why this recipe was gone, guessing some mod removed it in error.
-  event.shapeless(Item.of('minecraft:trapped_chest', 1), ['#forge:chests/wooden', 'minecraft:tripwire_hook'])
+  event.shapeless('minecraft:trapped_chest', ['#forge:chests/wooden', 'minecraft:tripwire_hook'])
 
   // Quark
   event.shapeless(Item.of('quark:cobbled_deepslate', 2), ['minecraft:basalt', 'minecraft:cobblestone'])

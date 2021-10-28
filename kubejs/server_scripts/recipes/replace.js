@@ -41,5 +41,6 @@ events.listen('recipes', function (event) {
   event.replaceInput({output:'valhelsia_structures:bone_pile'}, 'minecraft:bone', '#forge:bones', true)
   event.replaceInput({output:'botania:vine_ball'}, 'minecraft:vine', '#valhelsia:vines/green', true)
   event.replaceInput({output:'botania:thorn_chakram'}, 'minecraft:vine', '#valhelsia:vines/green', true)
+  event.replaceInput({output:'supplementaries:jar'}, 'minecraft:glass', '#forge:glass/colorless', true)
   //event.replaceInput({output:'patchouli:guide_book'}, 'minecraft:feather', '#forge:feathers') // Doesn't work, presumably due to NBT data.
 })

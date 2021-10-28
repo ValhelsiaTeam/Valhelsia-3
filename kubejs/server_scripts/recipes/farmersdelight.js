@@ -43,12 +43,13 @@ events.listen('recipes', function (event) {
     event.custom({
       type: "farmersdelight:cutting",
       ingredients: [
-        input
+        Ingredient.of(input).toJson()
       ],
       tool: {
-        "tag": "forge:tools/knives"
+        tag: "forge:tools/knives"
       },
       result: output
+      
     })
   }
 
@@ -57,12 +58,14 @@ events.listen('recipes', function (event) {
     event.custom({
       type: "farmersdelight:cooking",
       ingredients: input,
-      result: output,
-      container: container,
+      result: Item.of(output).toResultJson(),
+      container: Item.of(container).toJson(),
+      experience: 0.2,
       cookingtime: 200
     })
   }
 
+  // ----- Axe Recipes -----
   // BetterEnd - Log Stripping
   const betterEndWoodTypes = [
     'dragon_tree',
@@ -135,23 +138,25 @@ events.listen('recipes', function (event) {
   })
 
   // ----- Knife Recipes -----
-
   // Aquaculture
-  knifeCutting([Item.of('aquaculture:frog_legs_raw'), Item.of('minecraft:bone_meal')], Ingredient.of('aquaculture:frog'))
-  knifeCutting([Item.of('quark:frog_leg', 2)], Ingredient.of('aquaculture:frog_legs_raw'))
-  knifeCutting([Item.of('quark:cooked_frog_leg', 2)], Ingredient.of('aquaculture:frog_legs_cooked'))
+  knifeCutting([Item.of('aquaculture:frog_legs_raw'), Item.of('minecraft:bone_meal')], 'aquaculture:frog')
+  knifeCutting([Item.of('quark:frog_leg', 2)], 'aquaculture:frog_legs_raw')
+  knifeCutting([Item.of('quark:cooked_frog_leg', 2)], 'aquaculture:frog_legs_cooked')
 
   // Environmental
-  knifeCutting([Item.of('environmental:cattail_seeds'), Item.of('farmersdelight:straw')], Ingredient.of('biomesoplenty:cattail'))
-  knifeCutting([Item.of('environmental:cattail_seeds'), Item.of('farmersdelight:straw')], Ingredient.of('environmental:cattail'))
-  knifeCutting([Item.of('environmental:cattail_seeds', 2), Item.of('farmersdelight:straw')], Ingredient.of('environmental:tall_cattail'))
+  knifeCutting([Item.of('environmental:cattail_seeds'), Item.of('farmersdelight:straw')], 'biomesoplenty:cattail')
+  knifeCutting([Item.of('environmental:cattail_seeds'), Item.of('farmersdelight:straw')], 'environmental:cattail')
+  knifeCutting([Item.of('environmental:cattail_seeds', 2), Item.of('farmersdelight:straw')], 'environmental:tall_cattail')
+
+  // Farmer's Delight
+  knifeCutting([Item.of('farmersdelight:raw_pasta')], '#forge:food/dough')
 
   // Mystical World
   knifeCutting([Item.of('mysticalworld:sliced_carrot', 4)], Ingredient.of('#forge:crops/carrot'))
 
   // ----- Cooking Pot Recipes -----
-  cookingPot(Item.of('aquaculture:turtle_soup'), [Ingredient.of('#aquaculture:turtle'), Ingredient.of('#forge:vegetables/onion')], Item.of('minecraft:bowl'))
-  cookingPot(Item.of('forbidden_arcanus:bat_soup'), [Ingredient.of('#forge:mushrooms'), Ingredient.of('#forge:crops/nether_wart'), Ingredient.of('forbidden_arcanus:bat_wing')], Item.of('minecraft:bowl'))
-  cookingPot(Item.of('mysticalworld:stewed_eggplant'), [Ingredient.of('#forge:crops/eggplant'), Ingredient.of('#forge:mushrooms'), Ingredient.of('#forge:vegetables/onion')], Item.of('minecraft:bowl'))
+  cookingPot('aquaculture:turtle_soup', [Ingredient.of('#aquaculture:turtle'), Ingredient.of('#forge:vegetables/onion')], 'minecraft:bowl')
+  cookingPot('forbidden_arcanus:bat_soup', [Ingredient.of('#forge:mushrooms'), Ingredient.of('#forge:crops/nether_wart'), Ingredient.of('forbidden_arcanus:bat_wing')], 'minecraft:bowl')
+  cookingPot('mysticalworld:stewed_eggplant', [Ingredient.of('#forge:crops/eggplant'), Ingredient.of('#forge:mushrooms'), Ingredient.of('#forge:vegetables/onion')], 'minecraft:bowl')
 
 })

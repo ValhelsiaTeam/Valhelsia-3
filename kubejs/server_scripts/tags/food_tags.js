@@ -47,6 +47,25 @@ onEvent('item.tags', event => {
     'seasonals:roasted_pumpkin'
   ])
 
+  // Cookies (mainly so that they can be added to Jars)
+  event.get('supplementaries:cookies').add([
+    'abnormals_delight:cherry_cookie',
+    'abnormals_delight:mulberry_cookie',
+    'abnormals_delight:maple_cookie',
+    'cookielicious:chocolate_cookie',
+    'cookielicious:banana_cookie',
+    'cookielicious:mint_cookie',
+    'cookielicious:adzuki_cookie'
+  ])
+
+  // Dough
+  event.get('forge:food/dough').add([ // Using the tag that Atum already uses.
+    'create:dough',
+    'farmersdelight:wheat_dough',
+    'minecolonies:bread_dough'
+    // Deliberately excluding Cookie Dough here - this is intended to be fairly neutral doughs.
+  ])
+
   // Eggs
   event.get('forge:eggs').add([
     'atum:quail_egg'
