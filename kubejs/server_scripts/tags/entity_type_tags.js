@@ -16,7 +16,6 @@ onEvent('entity_type.tags', event => {
     'dungeons_mobs:armored_zombie',
     'dungeons_mobs:jungle_zombie',
     'dungeons_mobs:frozen_zombie',
-    'dungeons_mobs:armored_zombie',
     'dungeons_mobs:armored_skeleton',
     'dungeons_mobs:mossy_skeleton',
     'dungeons_mobs:skeleton_vanguard',
