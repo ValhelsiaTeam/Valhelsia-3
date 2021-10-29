@@ -1,0 +1,15 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:zombie",
+    "minecraft:husk",
+    "minecraft:skeleton",
+    "minecraft:stray",
+    "minecraft:witch",
+    "minecraft:spider",
+    "minecraft:phantom",
+    "minecraft:cave_spider",
+    "blue_skies:venom_spider",
+    "blue_skies:nested_spider"
+  ]
+}
