@@ -236,7 +236,7 @@
 		cockroachSpawnWeight = 4
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 		#Range: 0 ~ 1000
-		gazelleSpawnWeight = 30
+		gazelleSpawnWeight = 20
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 		#Range: 0 ~ 1000
 		gorillaSpawnWeight = 40
@@ -296,7 +296,7 @@
 		endergradeSpawnRolls = 0
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 		#Range: 0 ~ 1000
-		elephantSpawnWeight = 30
+		elephantSpawnWeight = 15
 		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 		#Range: > 0
 		tasmanianDevilSpawnRolls = 0
