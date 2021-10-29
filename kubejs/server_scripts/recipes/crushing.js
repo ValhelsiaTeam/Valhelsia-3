@@ -30,9 +30,10 @@ events.listen('recipes', function (event) {
   })
 
   // BetterEnd
-  // Ender Dust
+  crush('betterendforge:ender_dust', 'betterendforge:ender_shard')
 
   // Create
   millAndCrush('create:andesite_cobblestone', 'minecraft:andesite')
+  
 
 })
