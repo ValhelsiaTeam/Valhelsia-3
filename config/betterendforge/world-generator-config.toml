@@ -58,5 +58,5 @@
 	#
 	#Set the chance for end city generation to fail. Higher values means lower chance of spawning
 	#Default value: 5
-	endCityGenerationFailChance = 3
+	endCityGenerationFailChance = 1
 
