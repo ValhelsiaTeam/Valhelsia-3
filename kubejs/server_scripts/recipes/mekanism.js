@@ -63,13 +63,6 @@ events.listen('recipes', function (event) {
   // Blue Skies
   event.recipes.mekanism.crushing(Item.of('minecraft:bone_meal', 9), 'blue_skies:azulfo_horn')
   event.recipes.mekanism.crushing(Item.of('blue_skies:moonstone_shard', 4), '#blue_skies:gems/moonstone')
-  event.recipes.mekanism.crushing('blue_skies:crystal_sand', 'create:dolomite')
-  event.recipes.mekanism.crushing('blue_skies:midnight_sand', 'quark:cobbled_deepslate')
-
-  // BoP
-  event.recipes.mekanism.crushing(Item.of('mekanism:sawdust', 1), 'biomesoplenty:dead_branch')
-  event.recipes.mekanism.crushing('biomesoplenty:white_sand', 'quark:marble')
-  event.recipes.mekanism.crushing('biomesoplenty:black_sand', 'minecraft:basalt')
 
   // Create
   event.recipes.mekanism.combining(Item.of('create:polished_rose_quartz', 8), Ingredient.of('create:rose_quartz', 8), '#forge:sandstone')
@@ -86,13 +79,6 @@ events.listen('recipes', function (event) {
   // Darker Depths
   event.recipes.mekanism.metallurgic_infusing('darkerdepths:lush_aridrock', 'darkerdepths:aridrock', 'mekanism:bio', 10)
   event.recipes.mekanism.metallurgic_infusing('darkerdepths:mossy_grimestone', 'darkerdepths:grimestone', 'mekanism:bio', 10)
-  event.recipes.mekanism.crushing('atmospheric:arid_sand', 'darkerdepths:aridrock')
-
-  // Decorative Blocks
-  event.recipes.mekanism.crushing('minecraft:coarse_dirt', 'decorative_blocks:rocky_dirt')
-
-  // Druidcraft
-  event.recipes.mekanism.crushing('druidcraft:crushed_fiery_glass', '#forge:gems/fiery_glass')
 
   // Forbidden and Arcanus
   event.recipes.mekanism.crushing(Item.of('forbidden_arcanus:soulless_sand', 2), '#forge:sandstone/soulless')

@@ -57,26 +57,15 @@ events.listen('recipes', function (event) {
   // Blue Skies Compat
   event.recipes.immersiveengineering.crusher(Item.of('minecraft:bone_meal', 9), 'blue_skies:azulfo_horn')
   event.recipes.immersiveengineering.crusher(Item.of('blue_skies:moonstone_shard', 4), '#blue_skies:gems/moonstone')
-  event.recipes.immersiveengineering.crusher('blue_skies:crystal_sand', 'create:dolomite')
-  event.recipes.immersiveengineering.crusher('blue_skies:midnight_sand', 'quark:cobbled_deepslate')
 
   // BoP Compat
-  event.recipes.immersiveengineering.crusher('biomesoplenty:white_sand', 'quark:marble')
-  event.recipes.immersiveengineering.crusher('biomesoplenty:black_sand', 'minecraft:basalt')
   event.recipes.immersiveengineering.crusher(Item.of('biomesoplenty:white_sand', 2), '#forge:sandstone/white', Item.of('bloodmagic:saltpeter').withChance(0.5))
   event.recipes.immersiveengineering.crusher(Item.of('biomesoplenty:black_sand', 2), '#forge:sandstone/black', Item.of('bloodmagic:saltpeter').withChance(0.5))
   event.recipes.immersiveengineering.crusher(Item.of('biomesoplenty:orange_sand', 2), '#forge:sandstone/orange', Item.of('bloodmagic:saltpeter').withChance(0.5))
 
-  // Darker Depths Compat
-  event.recipes.immersiveengineering.crusher('atmospheric:arid_sand', 'darkerdepths:aridrock')
-
-  // Decorative Blocks Compat
-  event.recipes.immersiveengineering.crusher('minecraft:coarse_dirt', 'decorative_blocks:rocky_dirt')
-
   // Druidcraft Compat
   squeezer('immersiveengineering:plantoil', 'druidcraft:hemp_seeds', 120)
   event.recipes.immersiveengineering.cloche(['druidcraft:hemp', 'druidcraft:hemp_seeds'], 'druidcraft:hemp_seeds', 'minecraft:dirt', {type: 'crop', block: 'druidcraft:hemp_crop'}).time(800)
-  event.recipes.immersiveengineering.crusher('druidcraft:crushed_fiery_glass', '#forge:gems/fiery_glass')
 
   // Farmer's Delight Compat
   fermenter('immersiveengineering:ethanol', '#forge:seeds/rice', 80)
@@ -99,7 +88,6 @@ events.listen('recipes', function (event) {
   event.recipes.immersiveengineering.fertilizer('minecolonies:compost').growthModifier(1.5)
 
   // Minecraft Tweaks
-  event.recipes.immersiveengineering.crusher('minecraft:red_sand', 'minecraft:granite')
   event.recipes.immersiveengineering.metal_press('minecraft:blaze_rod', Item.of('minecraft:blaze_powder', 6), 'immersiveengineering:mold_rod')
   event.recipes.immersiveengineering.metal_press(Item.of('minecraft:dried_kelp', 9), 'minecraft:dried_kelp_block', 'immersiveengineering:mold_unpacking')
   event.recipes.immersiveengineering.metal_press(Item.of('minecraft:nether_wart', 4), 'minecraft:nether_wart_block', 'immersiveengineering:mold_unpacking')
