@@ -235,8 +235,8 @@
 
 	[management.inventory_sorting]
 		"Enable Chests" = true
-		"Enable Player Inventory In Chests" = false
-		"Enable Player Inventory" = false
+		"Enable Player Inventory In Chests" = true
+		"Enable Player Inventory" = true
 		#Play a click when sorting inventories using keybindings
 		"Satisfying Click" = true
 
