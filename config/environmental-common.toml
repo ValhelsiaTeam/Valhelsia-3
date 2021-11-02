@@ -40,5 +40,5 @@
 
 	[items.healers_pouch]
 		#Structures that can spawn mobs wearing a Healer's Pouch
-		"Healer's Pouch structures" = ["minecraft:mineshaft", "minecraft:stronghold", "bettermineshafts:mineshaft", "betterstrongholds:stronghold","valhelsia_structures:spawner_dungeon", "quark:big_dungeon", "eidolon:catacomb"]
+		"Healer's Pouch structures" = ["minecraft:mineshaft", "minecraft:stronghold", "bettermineshafts:mineshaft", "betterstrongholds:stronghold", "valhelsia_structures:spawner_dungeon", "quark:big_dungeon", "eidolon:catacomb"]
 
