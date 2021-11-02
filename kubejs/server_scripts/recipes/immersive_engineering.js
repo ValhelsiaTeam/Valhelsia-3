@@ -34,8 +34,6 @@ events.listen('recipes', function (event) {
   event.recipes.immersiveengineering.metal_press(Item.of('atmospheric:barrel_cactus', 9), 'atmospheric:barrel_cactus_batch', 'immersiveengineering:mold_unpacking')
   event.recipes.immersiveengineering.metal_press(Item.of('atmospheric:passion_vine', 9), 'atmospheric:passion_vine_bundle', 'immersiveengineering:mold_unpacking')
   event.recipes.immersiveengineering.cloche([Item.of('atmospheric:aloe_leaves', 2), Item.of('minecraft:yellow_dye', 2), 'atmospheric:aloe_kernels'], 'atmospheric:aloe_kernels', 'atmospheric:arid_sand', {type: 'crop', block: 'atmospheric:aloe_vera'}).time(800)
-  event.recipes.immersiveengineering.crusher('atmospheric:arid_sand', 'create:gabbro')
-  event.recipes.immersiveengineering.crusher('atmospheric:red_arid_sand', 'quark:jasper')
 
   // Atum Compat
   event.recipes.immersiveengineering.crusher(Item.of('minecraft:bone_meal', 6), 'atum:dusty_bone')

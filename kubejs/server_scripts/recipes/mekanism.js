@@ -24,8 +24,6 @@ events.listen('recipes', function (event) {
   // Atmospheric
   event.recipes.mekanism.crushing(Item.of('atmospheric:arid_sand', 2), '#forge:sandstone/arid')
   event.recipes.mekanism.crushing(Item.of('atmospheric:red_arid_sand', 2), '#forge:sandstone/red_arid')
-  event.recipes.mekanism.crushing(Item.of('atmospheric:arid_sand', 1), 'create:gabbro')
-  event.recipes.mekanism.crushing(Item.of('atmospheric:red_arid_sand', 1), 'quark:jasper')
 
   // Atum
   event.recipes.mekanism.crushing(Item.of('minecraft:bone_meal', 9), 'atum:dirty_bone_block')
@@ -284,7 +282,6 @@ events.listen('recipes', function (event) {
   event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 4), 'valhelsia_structures:hanging_vines')
 
   // Minecraft
-  event.recipes.mekanism.crushing('minecraft:red_sand', 'minecraft:granite')
   event.recipes.mekanism.crushing(Item.of('minecraft:bone_meal', 5), 'minecraft:bone')
   event.recipes.mekanism.crushing(Item.of('minecraft:bone_meal', 9), 'minecraft:bone_block')
 

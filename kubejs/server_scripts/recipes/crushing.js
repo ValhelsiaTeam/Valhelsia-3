@@ -26,6 +26,7 @@ events.listen('recipes', function (event) {
   [
     'create:milling/andesite'
     // TODO: Check Create's recipe for granite crushing, I think it needs to be removed.
+    // TODO: Also check Gabbro crushing.
   ].forEach(function (remove) {
     event.remove({id: remove})
   })
@@ -34,6 +35,8 @@ events.listen('recipes', function (event) {
 
   // Rock to Sand Crushing
   millAndCrush('atmospheric:arid_sand', 'darkerdepths:aridrock')
+  millAndCrush('atmospheric:arid_sand', 'create:gabbro')
+  millAndCrush('atmospheric:red_arid_sand', 'quark:jasper')
   millAndCrush('biomesoplenty:white_sand', 'quark:marble')
   millAndCrush('biomesoplenty:black_sand', 'minecraft:basalt')
   millAndCrush('blue_skies:crystal_sand', 'create:dolomite')
