@@ -709,6 +709,53 @@ onEvent('item.tags', event => {
     'druidcraft:lavender'
   ])
 
+  // Leaf Carpets
+  event.get('valhelsia:leaf_carpets').add([
+    'abundance:jacaranda_leaf_carpet',
+    'abundance:budding_jacaranda_leaf_carpet',
+    'abundance:flowering_jacaranda_leaf_carpet',
+    'abundance:redbud_leaf_carpet',
+    'abundance:budding_redbud_leaf_carpet',
+    'abundance:flowering_redbud_leaf_carpet',
+    'atmospheric:rosewood_leaf_carpet',
+    'atmospheric:morado_leaf_carpet',
+    'atmospheric:flowering_morado_leaf_carpet',
+    'atmospheric:yucca_leaf_carpet',
+    'atmospheric:kousa_leaf_carpet',
+    'atmospheric:aspen_leaf_carpet',
+    'atmospheric:grimwood_leaf_carpet',
+    'autumnity:maple_leaf_carpet',
+    'autumnity:orange_maple_leaf_carpet',
+    'autumnity:red_maple_leaf_carpet',
+    'bayou_blues:cypress_leaf_carpet',
+    'environmental:willow_leaf_carpet',
+    'environmental:cherry_leaf_carpet',
+    'environmental:pink_wisteria_leaf_carpet',
+    'environmental:blue_wisteria_leaf_carpet',
+    'environmental:purple_wisteria_leaf_carpet',
+    'environmental:white_wisteria_leaf_carpet',
+    'fruitful:flowering_oak_leaf_carpet',
+    'fruitful:budding_oak_leaf_carpet',
+    'fruitful:blossoming_oak_leaf_carpet',
+    'fruitful:apple_oak_leaf_carpet',
+    'quark:oak_leaf_carpet',
+    'quark:spruce_leaf_carpet',
+    'quark:birch_leaf_carpet',
+    'quark:jungle_leaf_carpet',
+    'quark:acacia_leaf_carpet',
+    'quark:dark_oak_leaf_carpet',
+    'quark:yellow_blossom_leaf_carpet',
+    'quark:pink_blossom_leaf_carpet',
+    'quark:red_blossom_leaf_carpet',
+    'quark:orange_blossom_leaf_carpet',
+    'quark:blue_blossom_leaf_carpet',
+    'quark:lavender_blossom_leaf_carpet',
+    'upgrade_aquatic:river_leaf_carpet'
+  ])
+
+  // All leaf carpets should be compostable in MineColonies.
+  event.add('minecolonies:compostables_poor', '#valhelsia:leaf_carpets')
+
   // BetterEnd Missing Tags:
   event.add('forge:gems/amber', 'betterendforge:amber_gem')
   event.add('forge:storage_blocks/amber', 'betterendforge:amber_block')
