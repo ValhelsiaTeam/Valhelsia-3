@@ -103,7 +103,7 @@
 		boneSeprentSpawnRolls = 30
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 		#Range: 0 ~ 1000
-		gazelleSpawnWeight = 10
+		gazelleSpawnWeight = 7
 		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 		#Range: > 0
 		gazelleSpawnRolls = 0
@@ -139,7 +139,7 @@
 		sunbirdSpawnRolls = 15
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 		#Range: 0 ~ 1000
-		gorillaSpawnWeight = 15
+		gorillaSpawnWeight = 12
 		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 		#Range: > 0
 		gorillaSpawnRolls = 0
@@ -181,7 +181,7 @@
 		komodoDragonSpawnRolls = 1
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 		#Range: 0 ~ 1000
-		capuchinMonkeySpawnWeight = 15
+		capuchinMonkeySpawnWeight = 12
 		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 		#Range: > 0
 		capuchinMonkeySpawnRolls = 0
@@ -289,7 +289,7 @@
 		mantisShrimpSpawnRolls = 0
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 		#Range: 0 ~ 1000
-		gusterSpawnWeight = 17.5
+		gusterSpawnWeight = 20
 		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 		#Range: > 0
 		gusterSpawnRolls = 0
