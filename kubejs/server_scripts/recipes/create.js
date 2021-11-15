@@ -101,7 +101,7 @@ events.listen('recipes', function (event) {
   event.recipes.create.crushing(['2x minecraft:quartz', Item.of('minecraft:quartz', 4).withChance(0.5), Item.of('minecraft:granite', 1).withChance(0.125)], 'mysticalworld:granite_quartz_ore')
 
   // Quark
-  crushAndMill([Item.of('minecraft:sugar', 18), Item.of('minecraft:sugar', 2).withChance(0.5), Item.of('minecraft:sugar', 2).withChance(0.25), Item.of('minecraft:sugar', 2).withChance(0.1)], 'quark:sugar_cane_block')
+  crushAndMill(['18x minecraft:sugar', Item.of('minecraft:sugar', 2).withChance(0.5), Item.of('minecraft:sugar', 2).withChance(0.25), Item.of('minecraft:sugar', 2).withChance(0.1)], 'quark:sugar_cane_block')
 
   // Upgrade Aquatic
   event.recipes.create.splashing('upgrade_aquatic:driftwood_log', 'upgrade_aquatic:river_log')

@@ -43,6 +43,13 @@ events.listen('recipes', function (event) {
   millAndCrush('blue_skies:midnight_sand', 'quark:cobbled_deepslate')
   millAndCrush('minecraft:red_sand', 'minecraft:granite')
 
+  // Aquaculture
+  millAndCrush('5x minecraft:bone_meal', 'aquaculture:fish_bones')
+
+  // Atum
+  millAndCrush('6x minecraft:bone_meal', 'atum:dusty_bone')
+  millAndCrush('9x minecraft:bone_meal', 'atum:dirty_bone_block')
+
   // BetterEnd
   millAndCrush('betterendforge:ender_dust', 'betterendforge:ender_shard')
 
@@ -58,4 +65,9 @@ events.listen('recipes', function (event) {
   // Mekanism
   millAndCrush('mekanism:sawdust', 'biomesoplenty:dead_branch')
 
+  // Mystical World
+  millAndCrush('15x minecraft:bone_meal', 'mysticalworld:antlers')
+
+  // Upgrade Aquatic
+  millAndCrush('10x minecraft:bone_meal', 'upgrade_aquatic:thrasher_tooth')
 })

@@ -18,9 +18,6 @@ events.listen('recipes', function (event) {
     })
   }
 
-  // Aquaculture
-  event.recipes.mekanism.crushing(Item.of('minecraft:bone_meal', 5), 'aquaculture:fish_bones')
-
   // Atmospheric
   event.recipes.mekanism.crushing(Item.of('atmospheric:arid_sand', 2), '#forge:sandstone/arid')
   event.recipes.mekanism.crushing(Item.of('atmospheric:red_arid_sand', 2), '#forge:sandstone/red_arid')
@@ -279,11 +276,11 @@ events.listen('recipes', function (event) {
   event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 4), 'upgrade_aquatic:tall_beachgrass')
   event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'upgrade_aquatic:mulberry')
 
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 4), 'valhelsia_structures:hanging_vines')
+  event.recipes.mekanism.crushing('4x mekanism:bio_fuel', 'valhelsia_structures:hanging_vines')
 
   // Minecraft
-  event.recipes.mekanism.crushing(Item.of('minecraft:bone_meal', 5), 'minecraft:bone')
-  event.recipes.mekanism.crushing(Item.of('minecraft:bone_meal', 9), 'minecraft:bone_block')
+  event.recipes.mekanism.crushing('5x minecraft:bone_meal', 'minecraft:bone')
+  event.recipes.mekanism.crushing('9x minecraft:bone_meal', 'minecraft:bone_block')
 
   // Mystical World
   event.recipes.mekanism.crushing('15x minecraft:bone_meal', 'mysticalworld:antlers')
