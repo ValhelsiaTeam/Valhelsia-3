@@ -60,10 +60,6 @@ events.listen('recipes', function (event) {
     event.recipes.create.cutting(Item.of(`betterendforge:${element}_planks`, 6), `betterendforge:${element}_stripped_bark`)
   })
 
-  event.recipes.create.mixing('betterendforge:aeternium_ingot', ['#forge:ingots/terminite', '#forge:ingots/netherite']).heated()
-  event.recipes.create.mixing('betterendforge:terminite_ingot', ['#forge:ingots/iron', 'betterendforge:ender_dust']).heated()
-  event.recipes.create.mixing('betterendforge:terminite_ingot', ['#forge:ingots/thallasium', 'betterendforge:ender_dust']).heated()
-
   // These two are currently missing from the Create integration for BetterEnd. TODO: Remove here once added there.
   event.recipes.create.pressing('betterendforge:rutiscus_path', 'betterendforge:rutiscus')
   event.recipes.create.pressing('betterendforge:sangnum_path', 'betterendforge:sangnum')
@@ -100,6 +96,9 @@ events.listen('recipes', function (event) {
   crushAndMill([Item.of('minecraft:red_sand', 2), Item.of('bloodmagic:saltpeter').withChance(0.5)], '#forge:sandstone/red')
   // The original Nether Wart block crushing was terribly underpowered. Now gives back exactly what was put in.
   crushAndMill(Item.of('minecraft:nether_wart', 4), 'minecraft:nether_wart_block')
+
+  // Mystical World
+  event.recipes.create.crushing(['2x minecraft:quartz', Item.of('minecraft:quartz', 4).withChance(0.5), Item.of('minecraft:granite', 1).withChance(0.125)], 'mysticalworld:granite_quartz_ore')
 
   // Quark
   crushAndMill([Item.of('minecraft:sugar', 18), Item.of('minecraft:sugar', 2).withChance(0.5), Item.of('minecraft:sugar', 2).withChance(0.25), Item.of('minecraft:sugar', 2).withChance(0.1)], 'quark:sugar_cane_block')
