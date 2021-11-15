@@ -43,7 +43,7 @@ displayTooLargePackets = true
 ["Entity settings"]
 	#Entity density setting, determines how many entities are spawned overall. 1 = Vanilla default, 0.1 e.g 10x less than vanilla. 10 = 10x more than vanilla, default = 1
 	#Range: 0.01 ~ 100.0
-	entityDensity = 1.5
+	entityDensity = 1.25
 	#Adapt entity speed to tps, makes entities struggle less with lag. default = true
 	adaptiveSpeed = true
 	#Entity spawn interval setting, determines how frequently entities are spawned overall. 1 = Vanilla default, default = 10
