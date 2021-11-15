@@ -19,7 +19,7 @@ events.listen('recipes', function (event) {
       })
     }
 
-    // TODO: Add Create Mixing w/ heat here.
+    event.recipes.create.mixing(output, [input0, input1]).heated()
   }
 
   // Remove Old Alloying Recipes:
@@ -73,6 +73,10 @@ events.listen('recipes', function (event) {
   // Psi
   alloy('psi:ivory_psimetal', 'psi:psimetal', Ingredient.of('psi:ivory_substance', 8))
   alloy('psi:ebony_psimetal', 'psi:psimetal', Ingredient.of('psi:ebony_substance', 8))
+
+  // Refined Storage
+  alloy('4x refinedstorage:quartz_enriched_iron', '3x #forge:ingots/iron', '#forge:gems/quartz')
+  alloy('4x refinedstorage:quartz_enriched_iron', '3x #forge:dusts/iron', '#forge:gems/quartz')
 
   // Twilight Forest
   alloy('twilightforest:fiery_ingot', '#forge:ingots/iron', '#twilightforest:fiery_vial')
