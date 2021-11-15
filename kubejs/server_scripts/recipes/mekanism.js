@@ -286,17 +286,20 @@ events.listen('recipes', function (event) {
   event.recipes.mekanism.crushing(Item.of('minecraft:bone_meal', 9), 'minecraft:bone_block')
 
   // Mystical World
-  event.recipes.mekanism.crushing(Item.of('minecraft:bone_meal', 15), 'mysticalworld:antlers')
+  event.recipes.mekanism.crushing('15x minecraft:bone_meal', 'mysticalworld:antlers')
 
   // Immersive Engineering Compat
-  event.recipes.mekanism.enriching(Item.of('mekanism:enriched_carbon', 2), '#forge:coal_coke')
+  event.recipes.mekanism.enriching('2x mekanism:enriched_carbon', '#forge:coal_coke')
   infusionConversion('mekanism:carbon', '#forge:coal_coke', 40)
   infusionConversion('mekanism:carbon', '#forge:dusts/coal_coke', 40)
 
+  // Powah
+  event.recipes.mekanism.enriching('4x mekanism:nugget_uranium', 'powah:uraninite')
+
   // Upgrade Aquatic - converts more kelp per dye.
-  event.recipes.mekanism.combining(Item.of('upgrade_aquatic:ochre_kelp', 8), Ingredient.of('minecraft:kelp', 8), '#forge:dyes/yellow')
-  event.recipes.mekanism.combining(Item.of('upgrade_aquatic:polar_kelp', 8), Ingredient.of('minecraft:kelp', 8), '#forge:dyes/cyan')
-  event.recipes.mekanism.combining(Item.of('upgrade_aquatic:thorny_kelp', 8), Ingredient.of('minecraft:kelp', 8), '#forge:dyes/brown')
-  event.recipes.mekanism.combining(Item.of('upgrade_aquatic:tongue_kelp', 8), Ingredient.of('minecraft:kelp', 8), '#forge:dyes/red')
-  event.recipes.mekanism.crushing(Item.of('minecraft:bone_meal', 10), 'upgrade_aquatic:thrasher_tooth')
+  event.recipes.mekanism.combining('8x upgrade_aquatic:ochre_kelp', '8x minecraft:kelp', '#forge:dyes/yellow')
+  event.recipes.mekanism.combining('8x upgrade_aquatic:polar_kelp', '8x minecraft:kelp', '#forge:dyes/cyan')
+  event.recipes.mekanism.combining('8x upgrade_aquatic:thorny_kelp', '8x minecraft:kelp', '#forge:dyes/brown')
+  event.recipes.mekanism.combining('8x upgrade_aquatic:tongue_kelp', '8x minecraft:kelp', '#forge:dyes/red')
+  
 })
