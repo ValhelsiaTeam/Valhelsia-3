@@ -19,4 +19,7 @@ events.listen('recipes', function (event) {
 
   // Immersive Engineering
   smeltAndBlast(Item.of('immersiveengineering:ingot_silver', 1), '#forge:dusts/silver', 0.35)
+
+  // Mekanism
+  event.smelting('biomesoplenty:dried_salt', 'mekanism:block_salt')
 })
