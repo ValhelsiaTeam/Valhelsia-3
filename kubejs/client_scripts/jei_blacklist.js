@@ -16,7 +16,9 @@ onEvent('jei.hide.items', event => {
     'immersiveengineering:dust_wood',  // Replaced with Mekanism's Sawdust
     'darkerdepths:silver_ingot', // Replaced with IE Silver Ingot
     'twilightforest:uncrafting_table', // Disabled to prevent exploits.
-    'druidcraft:debug' // Rarely needed by players.
+    'druidcraft:debug', // Rarely needed by players.
+    'valhelsia_tweaks:birthday_cake', // Keep it a surprise.
+    'valhelsia_tweaks:valhelsia_firework_rocket' // Keep it a surprise.
   ])
   event.hide(Item.of('ftblibrary:fluid_container').ignoreNBT())
 

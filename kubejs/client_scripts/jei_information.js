@@ -119,6 +119,10 @@ events.listen('jei.information', function (event) {
 
     // Valhelsia
     event.add('akashictome:tome', "When crafting an Akashic Tome, the recipe with four bookshelves will be filled with the starting manuals and the recipe with one bookshelf will be empty.")
+    event.add('valhelsia_tweaks:candy_corn', "Obtainable around Halloween each year.")
+    event.add('valhelsia_tweaks:lemon_candy', "Obtainable around Halloween each year.")
+    event.add('valhelsia_tweaks:cherry_lollipop', "Obtainable around Halloween each year.")
+    event.add('valhelsia_tweaks:spicy_mango_lollipop', "Obtainable around Halloween each year.")
 
     // Misc Information
     event.add('#forge:gems/amber', "Amber can be socketed into Tetra weapons at a Workbench, causing enemies to occasionally get the Earthbound effect, slowing them and preventing them from jumping.")
