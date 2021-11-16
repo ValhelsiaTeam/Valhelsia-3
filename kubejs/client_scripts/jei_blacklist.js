@@ -15,6 +15,9 @@ onEvent('jei.hide.items', event => {
   event.hide([
     'immersiveengineering:dust_wood',  // Replaced with Mekanism's Sawdust
     'darkerdepths:silver_ingot', // Replaced with IE Silver Ingot
+    'blue_skies:blue_fire', // Buggy display in JEI.
+    'blue_skies:dark_fire', // Buggy display in JEI.
+    'dungeons_mobs:wraith_fire', // Buggy display in JEI.
     'endergetic:ender_fire', // Buggy display in JEI.
     'minecraft:fire', // Buggy display in JEI.
     'minecraft:soul_fire', // Buggy display in JEI.
