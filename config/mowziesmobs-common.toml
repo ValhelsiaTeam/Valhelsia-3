@@ -500,7 +500,7 @@
 			#Allow spawns in these biomes regardless of the biome type settings
 			biome_whitelist = []
 			#Prevent spawns in these biomes regardless of the biome type settings
-			biome_blacklist = ["biomesoplenty:fungal_field", "biomesoplenty:fungal_jungle"]
+			biome_blacklist = ["biomesoplenty:fungal_field", "biomesoplenty:fungal_jungle", "biomesoplenty:tropics"]
 
 		#Controls for vanilla-style mob spawning
 		[mobs.foliaath.spawn_config]
