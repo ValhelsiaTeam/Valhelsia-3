@@ -1,0 +1,5 @@
+#Draw a black box behind effect icons
+effect_box = true
+#A list of effects that should not be registered nor shown on JEI
+hidden_effects = ["xaerominimap:no_minimap", "xaerominimap:no_minimap_beneficial", "xaerominimap:no_minimap_harmful", "xaerominimap:no_entity_radar", "xaerominimap:no_entity_radar_beneficial", "xaerominimap:no_entity_radar_harmful", "xaerominimap:no_waypoints", "xaerominimap:no_waypoints_beneficial", "xaerominimap:no_waypoints_harmful", "xaerominimap:no_cave_maps", "xaerominimap:no_cave_maps_beneficial", "xaerominimap:no_cave_maps_harmful", "xaeroworldmap:no_world_map", "xaeroworldmap:no_world_map_beneficial", "xaeroworldmap:no_world_map_harmful"]
+
