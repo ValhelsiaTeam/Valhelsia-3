@@ -15,6 +15,9 @@ onEvent('jei.hide.items', event => {
   event.hide([
     'immersiveengineering:dust_wood',  // Replaced with Mekanism's Sawdust
     'darkerdepths:silver_ingot', // Replaced with IE Silver Ingot
+    'endergetic:ender_fire', // Buggy display in JEI.
+    'minecraft:fire', // Buggy display in JEI.
+    'minecraft:soul_fire', // Buggy display in JEI.
     'twilightforest:uncrafting_table', // Disabled to prevent exploits.
     'druidcraft:debug', // Rarely needed by players.
     'valhelsia_tweaks:birthday_cake', // Keep it a surprise.
