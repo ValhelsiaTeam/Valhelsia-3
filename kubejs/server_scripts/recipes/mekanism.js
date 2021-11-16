@@ -22,9 +22,6 @@ events.listen('recipes', function (event) {
   event.recipes.mekanism.crushing(Item.of('atmospheric:arid_sand', 2), '#forge:sandstone/arid')
   event.recipes.mekanism.crushing(Item.of('atmospheric:red_arid_sand', 2), '#forge:sandstone/red_arid')
 
-  // Atum
-  event.recipes.mekanism.crushing(Item.of('minecraft:bone_meal', 9), 'atum:dirty_bone_block')
-
   // Bayou Blues
   event.recipes.mekanism.sawing(Item.of('mekanism:sawdust', 1), 'bayou_blues:cypress_branch')
   event.recipes.mekanism.sawing(Item.of('mekanism:sawdust', 2), 'bayou_blues:cypress_knee')
