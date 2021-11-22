@@ -58,5 +58,15 @@
 	#
 	#Set the chance for end city generation to fail. Higher values means lower chance of spawning
 	#Default value: 5
-	endCityGenerationFailChance = 1
+	endCityGenerationFailChance = 3
+
+[Other]
+	#
+	#Should the guide book be given to players when using an end gateway for the first time?
+	#Default value: true
+	giveGuideBook = true
+	#
+	#Should natural enderman spawn rate be reduced?
+	#Default value: true
+	reduceEndermanSpawn = false
 

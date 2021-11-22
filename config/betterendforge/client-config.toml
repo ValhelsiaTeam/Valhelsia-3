@@ -1,0 +1,15 @@
+
+["Client settings"]
+	#
+	#Enable/disable BetterEnd custom sky, set this to false if you are experiencing graphical issues with shaders.
+	#Default value: true
+	customSkyEnabled = true
+	#
+	#Enable/disable biome fog density, set this to false if you don't want thick fog in certain biomes.
+	#Default value: true
+	fogDensityEnabled = true
+	#
+	#Enable/disable background music blending between biomes.
+	#Default value: true
+	biomeMusicBlendEnabled = true
+
