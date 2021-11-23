@@ -7,7 +7,7 @@
 	"Use Fast Worldgen" = false
 	"Enable 'q' Button" = false
 	#A list of screens that don't play well with quark's buttons. Use "Print Screen Classnames" to find the names of any others you'd want to add.
-	"Ignored Screens" = ["com.tfar.craftingstation.client.CraftingStationScreen", "com.refinedmods.refinedstorage.screen.grid.GridScreen", "com.refinedmods.refinedstorage.screen.DiskManipulatorScreen", "com.refinedmods.refinedstorage.screen.InterfaceScreen", "blusunrize.immersiveengineering.client.gui.CraftingTableScreen"]
+	"Ignored Screens" = ["com.tfar.craftingstation.client.CraftingStationScreen", "com.refinedmods.refinedstorage.screen.grid.GridScreen", "com.refinedmods.refinedstorage.screen.DiskManipulatorScreen", "com.refinedmods.refinedstorage.screen.InterfaceScreen", "blusunrize.immersiveengineering.client.gui.CraftingTableScreen", "com.simibubi.create.content.curiosities.toolbox.ToolboxScreen"]
 	"Use Anti Overlap" = true
 	#Enables quark network profiling features. Do not enable this unless requested to.
 	"Enable Network Profiling" = false
