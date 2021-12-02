@@ -93,7 +93,7 @@
 
 	[blocks.blackboard]
 		#Enable to draw directly on a blackboard using any dye. Gui still only works in black and white
-		colored_blackboard = false
+		colored_blackboard = true
 
 	[blocks.candle_holder]
 		#Candle holder light level
