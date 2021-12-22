@@ -8,7 +8,7 @@ onEvent('item.tags', event => {
   // Add Compatibility between all of the mods that use knives (excluding Druidcraft's one, which has no durability).
   // Mystical World Knives
   var mwKnives = [
-    'mysticalworld:amethyst_knife',
+    'mysticalworld:sapphire_knife',
     'mysticalworld:cactus_knife',
     'mysticalworld:copper_knife',
     'mysticalworld:lead_knife',
