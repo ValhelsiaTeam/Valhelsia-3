@@ -19,7 +19,7 @@
 		#The amount of damage the Atomic Disassembler does when it is out of power. (Value is in number of half hearts)
 		minDamage = 4
 		#The amount of damage the Atomic Disassembler does when it has at least energyUsageWeapon power stored. (Value is in number of half hearts)
-		maxDamage = 20
+		maxDamage = 10
 		#Maximum amount (joules) of energy the Atomic Disassembler can contain.
 		maxEnergy = "1000000"
 		#Amount (joules) of energy the Atomic Disassembler can accept per tick.
