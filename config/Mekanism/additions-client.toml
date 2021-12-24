@@ -1,0 +1,6 @@
+
+#Mekanism Additions Client Config. This config only exists on the client.
+[additions-client]
+	#If the voice server is enabled and voiceKeyIsToggle is also enabled, the voice key will act as a toggle instead of requiring to be held while talking.
+	voiceKeyIsToggle = false
+
