@@ -24,6 +24,7 @@ events.listen('recipes', function (event) {
   replaceInput('forbidden_arcanus:dragon_scale', '#forge:dragon_scales')
   replaceInput('quark:dragon_scale', '#forge:dragon_scales')
   replaceInput('create:powdered_obsidian', '#forge:dusts/obsidian')
+  replaceInput('immersiveengineering:ore_silver', '#forge:ores/silver')
 
   // Replace specific item inputs by recipe type:
   event.replaceInput({type: 'minecraft:crafting_shapeless'}, 'minecraft:vine', '#valhelsia:vines/green', true)
