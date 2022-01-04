@@ -17,6 +17,8 @@ onEvent('jei.hide.items', event => {
     'darkerdepths:silver_ingot', // Replaced with IE Silver Ingot
     'blue_skies:blue_fire', // Buggy display in JEI.
     'blue_skies:dark_fire', // Buggy display in JEI.
+    'darker_depths:raw_silver', // Unused.
+    'darker_depths:raw_silver_block', // Unused.
     'dungeons_mobs:wraith_fire', // Buggy display in JEI.
     'endergetic:ender_fire', // Buggy display in JEI.
     'minecraft:fire', // Buggy display in JEI.
