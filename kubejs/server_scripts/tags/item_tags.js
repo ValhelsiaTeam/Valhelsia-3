@@ -757,6 +757,9 @@ onEvent('item.tags', event => {
   // All leaf carpets should be compostable in MineColonies.
   event.add('minecolonies:compostables_poor', '#valhelsia:leaf_carpets')
 
+  // Other MineColonies Compostables:
+  event.add('minecolonies:compostables_poor', 'minecraft:poisonous_potato') // Yes, I know Mojang wants it to be useless. Don't care.
+
   // BetterEnd Missing Tags:
   event.add('forge:gems/amber', 'betterendforge:amber_gem')
   event.add('forge:storage_blocks/amber', 'betterendforge:amber_block')
