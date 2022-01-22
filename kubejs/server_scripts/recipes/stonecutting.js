@@ -100,11 +100,14 @@ events.listen('recipes', function (event) {
   event.stonecutting(item.of('absentbydesign:slab_quartz_bricks', 2), 'minecraft:quartz_bricks')
   event.stonecutting(item.of('absentbydesign:stairs_quartz_bricks', 1), 'minecraft:quartz_bricks')
 
+  // Sandstone
+  event.stonecutting('darkerdepths:cobbled_sandstone', 'minecraft:sandstone')
+
   // Smooth Red Sandstone
-  event.stonecutting(item.of('absentbydesign:wall_sandstone_red_smooth', 1), 'minecraft:smooth_red_sandstone')
+  event.stonecutting('absentbydesign:wall_sandstone_red_smooth', 'minecraft:smooth_red_sandstone')
 
   // Smooth Sandstone
-  event.stonecutting(item.of('absentbydesign:wall_sandstone_smooth', 1), 'minecraft:smooth_sandstone')
+  event.stonecutting('absentbydesign:wall_sandstone_smooth', 'minecraft:smooth_sandstone')
 
   // Obsidian
   event.stonecutting(item.of('absentbydesign:wall_obsidian', 1), 'minecraft:obsidian')
