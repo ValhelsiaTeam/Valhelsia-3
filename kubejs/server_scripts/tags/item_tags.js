@@ -727,6 +727,7 @@ onEvent('item.tags', event => {
     'autumnity:maple_leaf_carpet',
     'autumnity:orange_maple_leaf_carpet',
     'autumnity:red_maple_leaf_carpet',
+    'autumnity:yellow_maple_leaf_carpet',
     'bayou_blues:cypress_leaf_carpet',
     'environmental:willow_leaf_carpet',
     'environmental:cherry_leaf_carpet',
