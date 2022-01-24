@@ -116,6 +116,9 @@ events.listen('recipes', function (event) {
     R: '#forge:rods/prismarine'
   })
 
+  // Aquaculture
+  storage2x2('bayou_blues:algae_thatch', 'aquaculture:algae')
+
   // Bayou Blues
   // Replacement for a currently broken recipe (remove me if Team Aurora accepts the PR).
   event.shaped('8x bayou_blues:gooseberry_jam_cookie', [
