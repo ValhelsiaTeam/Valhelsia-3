@@ -30,6 +30,9 @@ events.listen('recipes', function (event) {
   event.shapeless('create:golden_sheet', ['#forge:ingots/gold', '#forge:tools/hammer'])
   event.shapeless('create:copper_sheet', ['#forge:ingots/copper', '#forge:tools/hammer'])
 
+  // Darker Depths
+  event.shapeless('darkerdepths:mossy_grimestone', ['darkerdepths:grimestone', 'darkerdepths:glowspire'])
+
   // Eidolon
   event.shapeless(Item.of('eidolon:pewter_blend', 4), ['#forge:dusts/tin', '#forge:dusts/tin', '#forge:dusts/tin', '#forge:dusts/lead'])
   event.shapeless(Item.of('eidolon:pewter_blend', 4), ['#create:crushed_ores/tin', '#create:crushed_ores/tin', '#create:crushed_ores/tin', '#create:crushed_ores/lead'])
