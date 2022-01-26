@@ -1,0 +1,52 @@
+
+[Extraction]
+	#The chance that a chunk contains a fluid reservoir
+	#Default: 0.5
+	reservoir_chance = 0.5
+	#The Flux the Pumpjack requires each tick to pump
+	#Default: 1024
+	pumpjack_consumption = 1024
+	#The amount of mB of oil a Pumpjack extracts per tick
+	#Default: 15
+	pumpjack_speed = 15
+	#Require a pumpjack to have pipes built down to Bedrock
+	#Default: false
+	req_pipes = false
+	#Number of ticks between checking for pipes below pumpjack if required
+	#Default: 100
+	pipe_check_ticks = 100
+
+[Refining]
+	#A modifier to apply to the energy costs of every Distillation Tower recipe
+	#Default: 1.0
+	distillationTower_energyModifier = 1.0
+	#A modifier to apply to the time of every Distillation recipe. Can't be lower than 1
+	#Default: 1.0
+	distillationTower_timeModifier = 1.0
+	#A modifier to apply to the energy costs of every Coker Tower recipe
+	#Default: 1.0
+	cokerUnit_energyModifier = 1.0
+	#A modifier to apply to the time of every Coker recipe. Can't be lower than 1
+	#Default: 1.0
+	cokerUnit_timeModifier = 1.0
+	#A modifier to apply to the energy costs of every Sulfur Recovery Unit recipe
+	#Default: 1.0
+	hydrotreater_energyModifier = 1.0
+	#A modifier to apply to the time of every Sulfur Recovery Unit recipe. Can't be lower than 1
+	#Default: 1.0
+	hydrotreater_timeModifier = 1.0
+
+[Generation]
+	#List of Portable Generator fuels. Format: fluid_name, mb_used_per_tick, flux_produced_per_tick
+	fuels = ["immersivepetroleum:gasoline, 5, 256", "immersiveengineering:creosote, 10, 128"]
+
+[Miscellaneous]
+	#List of Motorboat fuels. Format: fluid_name, mb_used_per_tick
+	boat_fuels = ["immersivepetroleum:gasoline, 1"]
+	#Automatically unlock IP recipes for new players
+	#Default: true
+	autounlock_recipes = true
+	#Set to false to disable the asphalt block boosting player speed
+	#Default: true
+	asphalt_speed = true
+
