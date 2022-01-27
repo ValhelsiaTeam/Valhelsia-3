@@ -1,7 +1,7 @@
 
 #Options for defining sound behavior
 ["Sound Options"]
-	"Waterfall Volume" = 15
+	"Waterfall Volume" = 10
 	"Spot Sound Volume" = 30
 	"Biome Sound Volume" = 30
 
