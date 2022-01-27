@@ -787,6 +787,8 @@ onEvent('item.tags', event => {
   event.add('forge:gems/celestine', 'darkerdepths:celestine_crystal')
   event.add('forge:storage_blocks/celestine', 'darkerdepths:celestine_crystal_block')
 
+  event.add('minecraft:gold_ores', 'darkerdepths:aridrock_gold_ore')
+  event.add('minecraft:gold_ores', 'darkerdepths:limestone_gold_ore')
   event.add('forge:ores/gold', 'darkerdepths:aridrock_gold_ore')
   event.add('forge:ores/gold', 'darkerdepths:limestone_gold_ore')
   event.add('forge:ores/iron', 'darkerdepths:aridrock_iron_ore')

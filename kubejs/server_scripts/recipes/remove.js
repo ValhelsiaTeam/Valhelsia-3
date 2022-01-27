@@ -68,6 +68,14 @@ events.listen('recipes', function (event) {
     'darkerdepths:silver_ingot',
     'darkerdepths:silver_ingot_from_smelting_raw_silver',
     'darkerdepths:silver_ingot_from_silver_block',
+    'darkerdepths:aridrock_gold_ore_from_blasting',
+    'darkerdepths:limestone_gold_ore_from_blasting',
+    'darkerdepths:aridrock_gold_ore',
+    'darkerdepths:limestone_gold_ore',
+    'darkerdepths:aridrock_iron_ore_from_blasting',
+    'darkerdepths:limestone_iron_ore_from_blasting',
+    'darkerdepths:aridrock_iron_ore',
+    'darkerdepths:limestone_iron_ore',
 
     // Decorative Blocks
     'decorative_blocks:chain', // Replaced with a different recipe.
