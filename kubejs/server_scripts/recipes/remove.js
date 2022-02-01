@@ -15,9 +15,9 @@ events.listen('recipes', function (event) {
     'autumnity:sticky_piston_from_snail_slime', // Redundant.
 
     // Aquaculture
-    'aquaculture:planks_from_driftwood',
-    'aquaculture:tin_can_to_iron_nugget',
-    'aquaculture:tin_can_to_iron_nugget_from_blasting',
+    'aquaculture:planks_from_driftwood', // Replaced with Upgrade Aquatic Driftwood.
+    'aquaculture:tin_can_to_iron_nugget', // Replaced with tin nuggets.
+    'aquaculture:tin_can_to_iron_nugget_from_blasting', // Replaced with tin nuggets.
 
     // Atum 2
     'atum:pumpkin_pie', // Duplicate recipe.

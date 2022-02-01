@@ -299,7 +299,7 @@
 			#Names of blocks this mob is allowed to spawn on. Leave blank to ignore block names.
 			allowed_blocks = []
 			#Tags of blocks this mob is allowed to spawn on. Leave blank to ignore block tags.
-			allowed_block_tags = ["minecraft:base_stone_overworld"]
+			allowed_block_tags = ["minecraft:base_stone_overworld", "supplementaries:deepslate"]
 			#Maximum height for this spawn. -1 to ignore.
 			#Range: -1 ~ 256
 			height_max = 25
