@@ -17,7 +17,7 @@
       "mekanism:lead_ore": 0.025,
       "immersiveengineering:ore_nickel": 0.025,
       "immersiveengineering:ore_silver": 0.025,
-      "immersiveengineering:ore_aluminum": 0.025
+      "immersiveengineering:ore_aluminum": 0.024
     },
     "defaultBlock": "minecraft:coal_ore"
   }
