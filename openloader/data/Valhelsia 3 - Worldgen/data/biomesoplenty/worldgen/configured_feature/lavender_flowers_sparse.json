@@ -3,8 +3,36 @@
     "feature": {
       "config": {
         "feature": {
-          "config": {},
-          "type": "biomesoplenty:lavender_flowers"
+          "config": {
+            "feature": {
+              "config": {
+                "can_replace": false,
+                "project": true,
+                "need_water": false,
+                "xspread": 7,
+                "yspread": 3,
+                "zspread": 7,
+                "whitelist": [],
+                "blacklist": [],
+                "tries": 64,
+                "state_provider": {
+                  "state": {
+                    "Name": "biomesoplenty:lavender"
+                  },
+                  "type": "minecraft:simple_state_provider"
+                },
+                "block_placer": {
+                  "type": "minecraft:simple_block_placer"
+                }
+              },
+              "type": "minecraft:flower"
+            },
+            "decorator": {
+              "config": {},
+              "type": "minecraft:spread_32_above"
+            }
+          },
+          "type": "minecraft:decorated"
         },
         "decorator": {
           "config": {
