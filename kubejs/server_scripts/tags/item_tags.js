@@ -824,4 +824,5 @@ onEvent('item.tags', event => {
   event.add('forge:storage_blocks/gunpowder', 'quark:gunpowder_sack')
   event.add('forge:sand/arid', 'atmospheric:arid_sand')
   event.add('forge:sand/red_arid', 'atmospheric:red_arid_sand')
+  event.add('forge:dusts/ender_pearl', 'betterendforge:ender_dust')
 })
