@@ -1,0 +1,67 @@
+{
+  "config": {
+    "feature": {
+      "config": {
+        "feature": {
+          "config": {
+            "feature": {
+              "config": {
+                "rock_count": 4,
+                "hole_count": 1,
+                "valid_blocks": [
+                  "minecraft:stone",
+                  "minecraft:granite",
+                  "minecraft:diorite",
+                  "minecraft:andesite",
+                  "minecraft:dirt",
+                  "quark:brimstone",
+                  "quark:cobbedstone",
+                  "quark:deepslate",
+                  "quark:jasper",
+                  "quark:marble",
+                  "quark:slate",
+                  "darkerdepths:aridrock",
+                  "darkerdepths:limestone",
+                  "darkerdepths:grimestone",
+                  "create:dolomite",
+                  "create:gabbro",
+                  "create:limestone",
+                  "create:weathered_limestone"
+                ],
+                "state": {
+                  "Properties": {
+                    "falling": "true"
+                  },
+                  "Name": "minecraft:lava"
+                },
+                "requires_block_below": true
+              },
+              "name": "minecraft:spring_feature"
+            },
+            "decorator": {
+              "config": {
+                "bottom_offset": 8,
+                "top_offset": 16,
+                "maximum": 256
+              },
+              "name": "minecraft:range_very_biased"
+            }
+          },
+          "name": "minecraft:decorated"
+        },
+        "decorator": {
+          "config": {},
+          "name": "minecraft:square"
+        }
+      },
+      "name": "minecraft:decorated"
+    },
+    "decorator": {
+      "config": {
+        "count": 20
+      },
+      "name": "minecraft:count"
+    }
+  },
+  "name": "minecraft:decorated"
+}

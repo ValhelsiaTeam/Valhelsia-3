@@ -78,7 +78,7 @@
     ],
     [
       "minecraft:freeze_top_layer",
-      "abundance:podzol"
+      "bayou_blues:podzol"
     ]
   ],
   "starts": [

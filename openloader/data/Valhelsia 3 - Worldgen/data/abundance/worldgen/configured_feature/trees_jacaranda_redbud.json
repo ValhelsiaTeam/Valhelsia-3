@@ -1,0 +1,234 @@
+{
+  "config": {
+    "feature": {
+      "config": {
+        "feature": {
+          "config": {
+            "features": [
+              {
+                "feature": {
+                  "config": {
+                    "max_water_depth": 0,
+                    "ignore_vines": true,
+                    "heightmap": "OCEAN_FLOOR",
+                    "minimum_size": {
+                      "limit": 0,
+                      "lower_size": 0,
+                      "upper_size": 0,
+                      "type": "minecraft:two_layers_feature_size"
+                    },
+                    "decorators": [],
+                    "trunk_provider": {
+                      "entries": [
+                        {
+                          "weight": 1,
+                          "data": {
+                            "Properties": {
+                              "axis": "y"
+                            },
+                            "Name": "abundance:redbud_log"
+                          }
+                        },
+                        {
+                          "weight": 1,
+                          "data": {
+                            "Properties": {
+                              "axis": "y"
+                            },
+                            "Name": "abundance:flowering_redbud_log"
+                          }
+                        }
+                      ],
+                      "type": "minecraft:weighted_state_provider"
+                    },
+                    "leaves_provider": {
+                      "entries": [
+                        {
+                          "weight": 4,
+                          "data": {
+                            "Properties": {
+                              "persistent": "false",
+                              "distance": "7"
+                            },
+                            "Name": "abundance:budding_redbud_leaves"
+                          }
+                        },
+                        {
+                          "weight": 1,
+                          "data": {
+                            "Properties": {
+                              "persistent": "false",
+                              "distance": "7"
+                            },
+                            "Name": "abundance:flowering_redbud_leaves"
+                          }
+                        }
+                      ],
+                      "type": "minecraft:weighted_state_provider"
+                    },
+                    "foliage_placer": {
+                      "radius": 0,
+                      "offset": 0,
+                      "height": 0,
+                      "type": "minecraft:blob_foliage_placer"
+                    },
+                    "trunk_placer": {
+                      "base_height": 0,
+                      "height_rand_a": 0,
+                      "height_rand_b": 0,
+                      "type": "minecraft:straight_trunk_placer"
+                    }
+                  },
+                  "type": "abundance:redbud_tree"
+                },
+                "chance": 0.1
+              },
+              {
+                "feature": {
+                  "config": {
+                    "max_water_depth": 0,
+                    "ignore_vines": true,
+                    "heightmap": "OCEAN_FLOOR",
+                    "minimum_size": {
+                      "limit": 0,
+                      "lower_size": 0,
+                      "upper_size": 0,
+                      "type": "minecraft:two_layers_feature_size"
+                    },
+                    "decorators": [
+                      {
+                        "probability": 0.002,
+                        "type": "minecraft:beehive"
+                      }
+                    ],
+                    "trunk_provider": {
+                      "state": {
+                        "Properties": {
+                          "axis": "y"
+                        },
+                        "Name": "abundance:jacaranda_log"
+                      },
+                      "type": "minecraft:simple_state_provider"
+                    },
+                    "leaves_provider": {
+                      "state": {
+                        "Properties": {
+                          "persistent": "false",
+                          "distance": "7"
+                        },
+                        "Name": "abundance:jacaranda_leaves"
+                      },
+                      "type": "minecraft:simple_state_provider"
+                    },
+                    "foliage_placer": {
+                      "radius": 0,
+                      "offset": 0,
+                      "height": 0,
+                      "type": "minecraft:blob_foliage_placer"
+                    },
+                    "trunk_placer": {
+                      "base_height": 0,
+                      "height_rand_a": 0,
+                      "height_rand_b": 0,
+                      "type": "minecraft:straight_trunk_placer"
+                    }
+                  },
+                  "type": "abundance:jacaranda_tree"
+                },
+                "chance": 0.5
+              }
+            ],
+            "default": {
+              "config": {
+                "max_water_depth": 0,
+                "ignore_vines": true,
+                "heightmap": "OCEAN_FLOOR",
+                "minimum_size": {
+                  "limit": 0,
+                  "lower_size": 0,
+                  "upper_size": 0,
+                  "type": "minecraft:two_layers_feature_size"
+                },
+                "decorators": [
+                  {
+                    "probability": 0.002,
+                    "type": "minecraft:beehive"
+                  }
+                ],
+                "trunk_provider": {
+                  "state": {
+                    "Properties": {
+                      "axis": "y"
+                    },
+                    "Name": "abundance:jacaranda_log"
+                  },
+                  "type": "minecraft:simple_state_provider"
+                },
+                "leaves_provider": {
+                  "entries": [
+                    {
+                      "weight": 3,
+                      "data": {
+                        "Properties": {
+                          "persistent": "false",
+                          "distance": "7"
+                        },
+                        "Name": "abundance:budding_jacaranda_leaves"
+                      }
+                    },
+                    {
+                      "weight": 2,
+                      "data": {
+                        "Properties": {
+                          "persistent": "false",
+                          "distance": "7"
+                        },
+                        "Name": "abundance:flowering_jacaranda_leaves"
+                      }
+                    }
+                  ],
+                  "type": "minecraft:weighted_state_provider"
+                },
+                "foliage_placer": {
+                  "radius": 0,
+                  "offset": 0,
+                  "height": 0,
+                  "type": "minecraft:blob_foliage_placer"
+                },
+                "trunk_placer": {
+                  "base_height": 0,
+                  "height_rand_a": 0,
+                  "height_rand_b": 0,
+                  "type": "minecraft:straight_trunk_placer"
+                }
+              },
+              "type": "abundance:jacaranda_tree"
+            }
+          },
+          "type": "minecraft:random_selector"
+        },
+        "decorator": {
+          "config": {
+            "outer": {
+              "config": {},
+              "type": "minecraft:square"
+            },
+            "inner": {
+              "config": {},
+              "type": "minecraft:heightmap"
+            }
+          },
+          "type": "minecraft:decorated"
+        }
+      },
+      "type": "minecraft:decorated"
+    },
+    "decorator": {
+      "config": {
+        "chance": 8
+      },
+      "type": "minecraft:chance"
+    }
+  },
+  "type": "minecraft:decorated"
+}
