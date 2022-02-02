@@ -52,6 +52,7 @@ events.listen('recipes', function (event) {
 
   // BetterEnd
   millAndCrush('betterendforge:ender_dust', 'betterendforge:ender_shard')
+  millAndCrush('betterendforge:ender_dust', 'minecraft:ender_pearl')
 
   // Biomes 'o' Plenty
   millAndCrush('4x minecraft:rotten_flesh', 'biomesoplenty:flesh')
