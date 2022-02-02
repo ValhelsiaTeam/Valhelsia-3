@@ -1,6 +1,19 @@
 {
   "config": {
-    "patch_size": 10
+    "feature": {
+      "config": {
+        "patch_size": 10
+      },
+      "type": "botania:mystical_mushrooms"
+    },
+    "decorator": {
+      "config": {
+        "count": 0,
+        "extra_chance": 0.5,
+        "extra_count": 1
+      },
+      "type": "minecraft:count_extra"
+    }
   },
-  "type": "botania:mystical_mushrooms"
+  "type": "minecraft:decorated"
 }
