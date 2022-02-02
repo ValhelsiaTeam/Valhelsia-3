@@ -11,7 +11,7 @@ minimap:true
 caveMaps:2
 caveZoom:1
 showWaypoints:true
-showIngameWaypoints:true
+showIngameWaypoints:false
 displayRedstone:true
 deathpoints:true
 oldDeathpoints:true
@@ -39,7 +39,8 @@ showFlowers:true
 keepWaypointNames:true
 waypointsDistanceExp:0
 waypointsDistanceMin:0.0
-waypointTPCommand:/tp @s
+defaultWaypointTPCommandFormat:/tp @s {x} {y} {z}
+defaultWaypointTPCommandRotationFormat:/tp @s {x} {y} {z} {yaw} ~
 arrowScale:1.5
 arrowColour:0
 smoothDots:true
@@ -88,9 +89,11 @@ entityRadar:false
 adjustHeightForCarpetLikeBlocks:true
 autoConvertWaypointDistanceToKmThreshold:10000
 waypointDistancePrecision:1
-interface:dummy:0:36:true:false:false:false
-interface:dummy:0:10000:true:false:false:false
+mainDotSize:2
+partialYTeleportation:true
 interface:dummy:0:0:false:false:true:false
-interface:dummy:0:36:true:false:false:false
+interface:dummy:0:135:false:false:false:false
+interface:dummy:120:0:true:false:false:false
+interface:dummy:0:50:true:false:false:false
 interface:gui.xaero_minimap:0:0:false:false:true:false
 #WAYPOINTS HAVE BEEN MOVED TO /XaeroWaypoints
