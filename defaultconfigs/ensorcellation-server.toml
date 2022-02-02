@@ -12,7 +12,6 @@
 
 	[Enchantments.Displacement]
 		#If TRUE, the Displacement Enchantment is available for Armor, Shields, and Horse Armor.
-		#NOTE: Disabled to prevent crash regarding Endermites and Silverfish
 		Enable = false
 		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
 		Treasure = false
@@ -97,7 +96,7 @@
 		#This option adjusts the maximum allowable level for the Enchantment.
 		#Range: 1 ~ 10
 		"Max Level" = 3
-		#Adjust this value to set the health granted level of the Enchantment. (There are 2 health per heart icon.)
+		#Adjust this value to set the health granted per level of the Enchantment. (There are 2 health per heart icon.)
 		#Range: 1 ~ 10
 		"Health / Level" = 4
 
@@ -175,19 +174,19 @@
 		#Range: 1 ~ 10
 		"Max Level" = 3
 		#Adjust this value to set the base critical hit chance of the Enchantment (in percentage).
-		#Range: 1 ~ 100
+		#Range: 0 ~ 100
 		"Base Critical Chance" = 5
 		#Adjust this value to set the additional critical hit chance per level of the Enchantment (in percentage).
-		#Range: 1 ~ 100
+		#Range: 0 ~ 100
 		"Critical Chance / Level" = 5
 		#Adjust this value to set the critical hit damage multiplier.
-		#Range: 2 ~ 1000
+		#Range: 0 ~ 1000
 		"Critical Damage Multiplier" = 5
-		#Adjust this value to set the base critical hit chance for the Enchantment (in percentage).
-		#Range: 1 ~ 100
+		#Adjust this value to set the base head drop chance for the Enchantment (in percentage).
+		#Range: 0 ~ 100
 		"Base Head Drop Chance" = 10
-		#Adjust this value to set the critical hit chance per level of the Enchantment (in percentage).
-		#Range: 1 ~ 100
+		#Adjust this value to set the head drop chance per level of the Enchantment (in percentage).
+		#Range: 0 ~ 100
 		"Head Drop Chance / Level" = 10
 
 	[Enchantments.Excavating]
@@ -195,9 +194,6 @@
 		Enable = true
 		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
 		Treasure = true
-		#This option adjusts the maximum allowable level for the Enchantment.
-		#Range: 1 ~ 10
-		"Max Level" = 2
 
 	[Enchantments."Hunter's Bounty"]
 		#If TRUE, the Hunter's Bounty Enchantment is available for Bows.
@@ -306,12 +302,18 @@
 		Permanent = true
 
 	[Enchantments."Curse of Foolishness"]
-		#If TRUE, the Curse of Foolishness Enchantment is available for various Tools and Weapons.
+		#If TRUE, the Curse of Foolishness Enchantment is available for Helmets.
 		Enable = true
 
 	[Enchantments."Curse of Mercy"]
 		#If TRUE, the Curse of Mercy Enchantment is available for various Weapons.
 		Enable = true
+
+	[Enchantments.Instigating]
+		#If TRUE, the Instigating Enchantment is available for various Weapons.
+		Enable = true
+		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
+		Treasure = true
 
 [Overrides]
 
