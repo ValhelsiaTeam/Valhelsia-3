@@ -763,6 +763,7 @@ onEvent('item.tags', event => {
   // BetterEnd Missing Tags:
   event.add('forge:gems/amber', 'betterendforge:amber_gem')
   event.add('forge:storage_blocks/amber', 'betterendforge:amber_block')
+  event.add('forge:dusts/ender_pearl', 'betterendforge:ender_dust')
 
   // Blue Skies Missing Tags (more in food_tags.js)
   event.add('forge:gems/moonstone_shard', '#blue_skies:gems/moonstone_shard')
@@ -824,5 +825,4 @@ onEvent('item.tags', event => {
   event.add('forge:storage_blocks/gunpowder', 'quark:gunpowder_sack')
   event.add('forge:sand/arid', 'atmospheric:arid_sand')
   event.add('forge:sand/red_arid', 'atmospheric:red_arid_sand')
-  event.add('forge:dusts/ender_pearl', 'betterendforge:ender_dust')
 })
