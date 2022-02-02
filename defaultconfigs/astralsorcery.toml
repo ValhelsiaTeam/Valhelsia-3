@@ -16,14 +16,6 @@
 	#Sets the amount of damage reduction a player gets when being hit by a DE chaos-damage-related damagetype.
 	#Range: 0.0 ~ 1.0
 	capeChaosResistance = 0.8
-	#If this is set to true, charged crystals tools can revert back to their inert state.
-	chargedToolsRevert = true
-	#Defines the minimum uses a user at least gets before it's trying to revert to an inert crystal tool.
-	#Range: 0 ~ 2147483646
-	chargedToolsRevertStart = 40
-	#After 'chargedCrystalToolsRevertStart' uses, it will random.nextInt(chance) == 0 try and see if the tool gets reverted to its inert crystal tool.
-	#Range: 1 ~ 1073741823
-	chargedToolsRevertChance = 80
 
 	[tools.wands]
 		#Sets the quick-charge cost for one usage of the illumination wand
@@ -68,6 +60,8 @@
 	liquidStarlightDropInfusedWood = true
 	#Set this to false to disable the functionality that two crystals can merge and combine stats when thrown into liquid starlight.
 	liquidStarlightMergeCrystals = true
+	#Defines the state the starmetal ore will revert into when used up by a celestial crystal cluster. Obtain a valid state-string via '/astralsorcery serialize look' and look at the block you want to get. (Chat-Message can be copied)
+	starmetalRevertState = "minecraft:iron_ore"
 
 [lightnetwork]
 	#NOTE: ONLY run this once and set it to false again afterwards, nothing will be gained by setting this to true permanently, just longer loading times. When set to true and the server started, this will perform an integrity check over all nodes of the starlight network whenever a world gets loaded, removing invalid ones in the process. This might, depending on network sizes, take a while. It'll leave a message in the console when it's done. After this check has been run, you might need to tear down and rebuild your starlight network in case something doesn't work anymore.
@@ -268,7 +262,7 @@
 		[perks.type.miningsize]
 			#Defines the amount of starlight charge consumed per additional block break through this attribute.
 			#Range: 1 ~ 500
-			chargeCost = 4
+			chargeCostPerBreak = 2
 
 		[perks.type.dodge]
 			#Defines the amount of starlight charge consumed per dodged damage.

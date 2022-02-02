@@ -1,0 +1,9 @@
+
+[torchslabmodconfig]
+	#Allow the user to place lanterns on the lower sections of blocks. Does not effect the placement of lower slabs sides, or the sides/front of stairs. [True / False]
+	LanternLowerBlockCheck = true
+	#Allow the placemnet of torchs on upper half of wall blocks. Does not effect the placement on upper slabs sides, or the sides/front of stairs. [True / False]
+	TorchUpperBlockCheck = true
+	#List of interactive blocks that require the player be shift clicked when placing a block. To add additional blocks, just use the formot of "ModID:Block_RegistryName"
+	interactiveCheckList = ["minecraft:crafting_table", "minecraft:furnace", "minecraft:loom", "minecraft:barrel", "minecraft:smoker", "minecraft:blast_furnace", "minecraft:cartography_table", "minecraft:fletching_table", "minecraft:smithing_table", "minecraft:jigsaw", "minecraft:structure_block", "minecraft:iron_door", "minecraft:oak_door", "minecraft:dark_oak_door", "minecraft:spruce_door", "minecraft:birch_door", "minecraft:jungle_door", "minecraft:acacia_door", "minecraft:jukebox", "minecraft:note_block", "minecraft:shulker_box", "minecraft:white_shulker_box", "minecraft:orange_shulker_box", "minecraft:magenta_shulker_box", "minecraft:light_blue_shulker_box", "minecraft:yellow_shulker_box", "minecraft:lime_shulker_box", "minecraft:pink_shulker_box", "minecraft:gray_shulker_box", "minecraft:light_gray_shulker_box", "minecraft:cyan_shulker_box", "minecraft:purple_shulker_box", "minecraft:blue_shulker_box", "minecraft:brown_shulker_box", "minecraft:green_shulker_box", "minecraft:red_shulker_box", "minecraft:black_shulker_box", "minecraft:beacon"]
+

@@ -1,0 +1,13 @@
+
+#Server configuration settings
+[server]
+	#The minimum follow range for hostile mobs
+	#Only overridden if the original mob's follow range was lower
+	#Default value: 32. Vanilla behaviour: 16
+	#Range: 0.0 ~ 2048.0
+	minHostileFollowRange = 32.0
+	#A list of follow range overrides. Entry format: "mod:entity_id,range"
+	#Example: ["minecraft:creeper,32","minecraft:zombie,16"]
+	#Default value: []
+	mobFollowRangeOverrides = []
+

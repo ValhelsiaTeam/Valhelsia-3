@@ -1,0 +1,9 @@
+
+[general]
+	#Pick true to only use the vanilla paintings and skip loading any other paintings
+	use_vanilla_only = false
+	#Pick true to enable the Painting Selection Gui tot pop up when placing a painting
+	use_selection_gui = true
+	#Pick True to enable painting cycling on right click with a painting item
+	cycle_paintings = false
+

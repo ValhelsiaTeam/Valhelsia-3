@@ -1,0 +1,92 @@
+
+[oregeneration]
+	#Determines the size of an amber vein.
+	#Range: 1 ~ 32
+	amber_size = 4
+	#Determines the rarity of amber veins.
+	#Range: 0 ~ 200
+	amber_weight = 2
+	#Determines the size of a moonstone vein.
+	#Range: 1 ~ 32
+	moonstone_size = 4
+	#Determines the rarity of moonstone veins.
+	#Range: 0 ~ 200
+	moonstone_weight = 3
+	#Determines the size of a fiery glass vein.
+	#Range: 1 ~ 32
+	fiery_glass_size = 7
+	#Determines the rarity of fiery glass veins.
+	#Range: 0 ~ 200
+	fiery_glass_weight = 5
+	#Determines the size of a rockroot vein.
+	#Range: 1 ~ 32
+	rockroot_size = 3
+	#Determines the rarity of rockroot veins.
+	#Range: 0 ~ 200
+	rockroot_weight = 16
+	#Whether to have ores from this mod spawn at all.
+	generate_ores = true
+
+[worldgeneration]
+	#Whether to spawn WIP features, some of which may be buggy or not work at all. Mainly here for dev use, leave off.
+	generate_wip = false
+
+[droprate]
+	#Rate of hemp seed drops from grass blocks.
+	#Range: 0 ~ 100
+	hemp_seed_rate = 8
+	#Whether to have seeds from this mod drop from grass at all.
+	drop_seeds = true
+
+[toolcontrollers]
+	#Decides what blocks are allowed and not allowed to be affected by the sickle.
+	#Adding '+' to the start of the block will add it, and '-' will remove it.
+	sickle_block_list = []
+
+[entityspawning]
+	#Allow dreadfish to spawn?
+	dreadfish_spawn = true
+	#Determines the rarity of the dreadfish.
+	#Range: 1 ~ 100
+	dreadfish_weight = 40
+	#Minimum size of the group when spawned.
+	#Range: 1 ~ 5
+	dreadfish_min_group_size = 1
+	#Maximum size of the group when spawned.
+	#Range: 1 ~ 10
+	dreadfish_max_group_size = 3
+	#List of biome types from the biome dictionary that the dreadfish can spawn in. Define as strings with "s and separate with a comma.
+	dreadfish_biomes = "SNOWY, COLD"
+	#List of biome types from the biome dictionary that the dreadfish cannot spawn in. Separate with commas.
+	dreadfish_exclusions = "NETHER, END"
+	#Allow beetles to spawn?
+	beetle_spawn = true
+	#Determines the rarity of the beetle.
+	#Range: 1 ~ 200
+	beetle_weight = 10
+	#Minimum size of the group when spawned.
+	#Range: 1 ~ 200
+	beetle_min_group_size = 1
+	#Maximum size of the group when spawned.
+	#Range: 1 ~ 200
+	beetle_max_group_size = 2
+	#List of biome types from the biome dictionary that the beetle can spawn in. Define as strings with "s and separate with a comma.
+	beetle_biomes = "CONIFEROUS, FOREST, JUNGLE, DENSE"
+	#List of biome types from the biome dictionary that beetles cannot spawn in. Separate with commas.
+	beetle_exclusions = ""
+	#Allow lunar moths to spawn?
+	lunar_moth_spawn = true
+	#Determines the rarity of the lunar moth.
+	#Range: 1 ~ 200
+	lunar_moth_weight = 2
+	#Minimum size of the group when spawned.
+	#Range: 1 ~ 200
+	lunar_moth_min_group_size = 2
+	#Maximum size of the group when spawned.
+	#Range: 1 ~ 200
+	lunar_moth_max_group_size = 5
+	#List of biome types from the biome dictionary that the lunar moth can spawn in. Define as strings with "s and separate with a comma.
+	lunar_moth_biomes = "FOREST, PLAINS, MOUNTAIN, HILLS"
+	#List of biome types from the biome dictionary that lunar moths cannot spawn in. Separate with commas.
+	lunar_moth_exclusions = "DENSE"
+

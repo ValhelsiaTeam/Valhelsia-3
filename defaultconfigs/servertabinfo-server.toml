@@ -1,0 +1,16 @@
+
+#General settings
+[general]
+	#How often should the server send tps updates to clients
+	#Range: 100 ~ 600
+	refreshTicks = 100
+	#Only ops can see tps information, this is to stop tps hunters
+	opOnlyMode = false
+	#List of dimensions not shown on the TPS list
+	#In the following forms "mod:dimension" or "mod:*" to block all dimension for that mod
+	#Examples include
+	# - "minecraft:overworld"
+	# - "minecraft:the_nether"
+	# - "minecraft:the_end"
+	dimensionBlockList = ["servertabinfo:example"]
+

@@ -1,0 +1,20 @@
+
+#Config options related to balancing the mod.
+[balancing]
+	#Disallow blocks which tick randomly from being chiseled.
+	blacklist-random-ticking-blocks = false
+	#Enables the compatibility mode of the chiselability checked.
+	enable-compatibility-mode = false
+	#The max size of the stacks of bits in the bit bag.
+	#Range: > -2147483648
+	bit-bag-stack-size = 512
+	#The amount of changes that are being held in the change track.
+	#Range: 20 ~ 40
+	change-tracker-size = 10
+
+#Configures the different gameplay style options.
+[style]
+	#Configures the size of a single bit, relative to one block.
+	#Allowed Values: ONE_SIXTEENTH, ONE_EIGHT, ONE_QUARTER, ONE_HALF, ONE
+	bit-size = "ONE_SIXTEENTH"
+
