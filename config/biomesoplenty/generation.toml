@@ -3,7 +3,7 @@
 [overworld]
 	#The size of generated biomes.
 	#Allowed Values: TINY, SMALL, MEDIUM, LARGE, HUGE
-	biome_size = "SMALL"
+	biome_size = "MEDIUM"
 	#The size of generated rivers.
 	#Allowed Values: TINY, SMALL, MEDIUM, LARGE, HUGE
 	river_size = "MEDIUM"
