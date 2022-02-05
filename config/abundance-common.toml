@@ -6,5 +6,5 @@
 	[common.biome_weights]
 		"Lavender Fields weight" = 1
 		"Lavender Forest weight" = 1
-		"Nemophila Fields weight" = 0
+		"Nemophila Fields weight" = 1
 

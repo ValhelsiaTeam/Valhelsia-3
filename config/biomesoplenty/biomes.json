@@ -1,13 +1,13 @@
 {
   "standard_weights": {
     "biomesoplenty:alps": {
-      "weight": 4
+      "weight": 3
     },
     "biomesoplenty:bayou": {
-      "weight": 0
+      "weight": 1
     },
     "biomesoplenty:cherry_blossom_grove": {
-      "weight": 0
+      "weight": 1
     },
     "biomesoplenty:cold_desert": {
       "weight": 4
@@ -37,16 +37,16 @@
       "weight": 5
     },
     "biomesoplenty:jade_cliffs": {
-      "weight": 1
+      "weight": 2
     },
     "biomesoplenty:lavender_field": {
-      "weight": 0
+      "weight": 1
     },
     "biomesoplenty:lush_desert": {
       "weight": 1
     },
     "biomesoplenty:marsh": {
-      "weight": 2
+      "weight": 1
     },
     "biomesoplenty:meadow": {
       "weight": 7
@@ -61,19 +61,19 @@
       "weight": 1
     },
     "biomesoplenty:prairie": {
-      "weight": 5
+      "weight": 4
     },
     "biomesoplenty:rainforest": {
-      "weight": 2
+      "weight": 1
     },
     "biomesoplenty:redwood_forest": {
-      "weight": 6
+      "weight": 5
     },
     "biomesoplenty:scrubland": {
-      "weight": 6
+      "weight": 5
     },
     "biomesoplenty:seasonal_forest": {
-      "weight": 2
+      "weight": 1
     },
     "biomesoplenty:shrubland": {
       "weight": 6
@@ -82,7 +82,7 @@
       "weight": 5
     },
     "biomesoplenty:tundra": {
-      "weight": 3
+      "weight": 2
     },
     "biomesoplenty:undergrowth": {
       "weight": 10
@@ -91,10 +91,10 @@
       "weight": 7
     },
     "biomesoplenty:wasteland": {
-      "weight": 1
+      "weight": 2
     },
     "biomesoplenty:wetland": {
-      "weight": 5
+      "weight": 3
     },
     "biomesoplenty:withered_abyss": {
       "weight": 3

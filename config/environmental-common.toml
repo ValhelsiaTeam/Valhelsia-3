@@ -21,13 +21,13 @@
 
 		[world.biomes.marsh]
 			"Marsh weight" = 3
-			"Mushroom Marsh weight" = 0
+			"Mushroom Marsh weight" = 1
 
 		[world.biomes.blossom]
 			"Blossom Woods weight" = 2
-			"Blossom Hills weight" = 0
+			"Blossom Hills weight" = 1
 			"Blossom Highlands weight" = 1
-			"Blossom Valleys weight" = 0
+			"Blossom Valleys weight" = 1
 
 	[world.generation]
 		"Giant Mushroom generation in Swamps" = true

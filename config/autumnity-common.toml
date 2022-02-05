@@ -13,7 +13,7 @@
 	#If a biome has a default weight of 0, it generates as a sub-biome and not on its own.
 	[common.biome_weights]
 		"Maple Forest weight" = 3
-		"Maple Forest Hills weight" = 0
+		"Maple Forest Hills weight" = 1
 		"Pumpkin Fields weight" = 1
 
 	[common.misc]
