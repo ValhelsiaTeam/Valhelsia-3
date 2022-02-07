@@ -24,7 +24,7 @@
 		#Allowed Values: [none, taiga, extreme_hills, jungle, mesa, plains, savanna, icy, theend, beach, forest, ocean, desert, river, swamp, mushroom, nether]
 		biome_categories = ["plains", "forest", "taiga"]
 		#Biomes the structure can NOT generate in
-		blacklisted_biomes = []
+		blacklisted_biomes = ["atmospheric:rainforest_basin"]
 
 	[structures.castle_ruin]
 		#Generate? [default: true]
@@ -42,7 +42,7 @@
 		#Allowed Values: [none, taiga, extreme_hills, jungle, mesa, plains, savanna, icy, theend, beach, forest, ocean, desert, river, swamp, mushroom, nether]
 		biome_categories = ["plains", "forest", "taiga"]
 		#Biomes the structure can NOT generate in
-		blacklisted_biomes = []
+		blacklisted_biomes = ["atmospheric:rainforest_basin"]
 
 	[structures.desert_house]
 		#Generate? [default: true]
@@ -78,7 +78,7 @@
 		#Allowed Values: [none, taiga, extreme_hills, jungle, mesa, plains, savanna, icy, theend, beach, forest, ocean, desert, river, swamp, mushroom, nether]
 		biome_categories = ["plains", "forest", "extreme_hills", "taiga"]
 		#Biomes the structure can NOT generate in
-		blacklisted_biomes = []
+		blacklisted_biomes = ["atmospheric:rainforest_basin"]
 
 	[structures.player_house]
 		#Generate? [default: true]
@@ -96,7 +96,7 @@
 		#Allowed Values: [none, taiga, extreme_hills, jungle, mesa, plains, savanna, icy, theend, beach, forest, ocean, desert, river, swamp, mushroom, nether]
 		biome_categories = ["plains", "forest", "extreme_hills", "taiga"]
 		#Biomes the structure can NOT generate in
-		blacklisted_biomes = []
+		blacklisted_biomes = ["atmospheric:rainforest_basin"]
 
 	[structures.spawner_dungeon]
 		#Generate? [default: true]
@@ -132,7 +132,7 @@
 		#Allowed Values: [none, taiga, extreme_hills, jungle, mesa, plains, savanna, icy, theend, beach, forest, ocean, desert, river, swamp, mushroom, nether]
 		biome_categories = ["plains", "forest", "extreme_hills", "taiga"]
 		#Biomes the structure can NOT generate in
-		blacklisted_biomes = []
+		blacklisted_biomes = ["atmospheric:rainforest_basin"]
 
 	[structures.witch_hut]
 		#Generate? [default: true]
@@ -150,7 +150,7 @@
 		#Allowed Values: [none, taiga, extreme_hills, jungle, mesa, plains, savanna, icy, theend, beach, forest, ocean, desert, river, swamp, mushroom, nether]
 		biome_categories = ["swamp"]
 		#Biomes the structure can NOT generate in
-		blacklisted_biomes = []
+		blacklisted_biomes = ["atmospheric:rainforest_basin"]
 
 	[structures.big_tree]
 		#Generate? [default: true]
@@ -168,5 +168,5 @@
 		#Allowed Values: [none, taiga, extreme_hills, jungle, mesa, plains, savanna, icy, theend, beach, forest, ocean, desert, river, swamp, mushroom, nether]
 		biome_categories = ["plains", "forest"]
 		#Biomes the structure can NOT generate in
-		blacklisted_biomes = []
+		blacklisted_biomes = ["atmospheric:rainforest_basin"]
 
