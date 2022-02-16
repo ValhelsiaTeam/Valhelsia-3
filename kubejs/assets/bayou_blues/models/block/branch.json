@@ -1,0 +1,16 @@
+{
+  "ambientocclusion": false,
+  "textures": {
+    "particle": "#branch"
+  },
+  "elements": [
+    { "from": [ 8, 0, 0 ],
+      "to": [ 8, 16, 16 ],
+      "shade": false,
+      "faces": {
+        "east": { "uv": [ 0, 0, 16, 16 ], "texture": "#branch" },
+        "west": { "uv": [ 16, 0, 0, 16 ], "texture": "#branch" }
+      }
+    }
+  ]
+}
