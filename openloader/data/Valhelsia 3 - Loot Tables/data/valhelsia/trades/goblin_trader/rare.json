@@ -1,4 +1,39 @@
 {
   "replace": false,
-  "trades": []
+  "trades": [
+    {
+      "type": "goblintraders:basic",
+      "offer_item": {
+        "item": "twilightforest:ore_magnet",
+        "count": 1
+      },
+      "payment_item": {
+        "item": "minecraft:emerald",
+        "count": 16
+      },
+      "secondary_payment_item": {
+        "item": "minecraft:enchanted_golden_apple",
+        "count": 1
+      },
+      "price_multiplier": 0.0,
+      "experience": 100
+    },
+    {
+      "type": "goblintraders:basic",
+      "offer_item": {
+        "item": "artifacts:digging_claws",
+        "count": 1
+      },
+      "payment_item": {
+        "item": "minecraft:diamond",
+        "count": 8
+      },
+      "secondary_payment_item": {
+        "item": "minecraft:enchanted_golden_apple",
+        "count": 1
+      },
+      "price_multiplier": 0.0,
+      "experience": 100
+    }
+  ]
 }

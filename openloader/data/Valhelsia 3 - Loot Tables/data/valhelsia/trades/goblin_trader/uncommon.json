@@ -1,4 +1,108 @@
 {
   "replace": false,
-  "trades": []
+  "trades": [
+    {
+      "type": "goblintraders:basic",
+      "offer_item": {
+        "item": "tetra:pristine_emerald",
+        "count": 1
+      },
+      "payment_item": {
+        "item": "minecraft:emerald",
+        "count": 8
+      },
+      "secondary_payment_item": {
+        "item": "farmersdelight:apple_cider",
+        "count": 1
+      },
+      "price_multiplier": 0.0,
+      "max_trades": 4,
+      "experience": 40
+    },
+    {
+      "type": "goblintraders:basic",
+      "offer_item": {
+        "item": "tetra:pristine_lapis",
+        "count": 1
+      },
+      "payment_item": {
+        "item": "minecraft:lapis_lazuli",
+        "count": 8
+      },
+      "secondary_payment_item": {
+        "item": "farmersdelight:apple_cider",
+        "count": 1
+      },
+      "price_multiplier": 0.0,
+      "max_trades": 4,
+      "experience": 40
+    },
+    {
+      "type": "goblintraders:basic",
+      "offer_item": {
+        "item": "tetra:pristine_diamond",
+        "count": 1
+      },
+      "payment_item": {
+        "item": "minecraft:diamond",
+        "count": 8
+      },
+      "secondary_payment_item": {
+        "item": "farmersdelight:apple_cider",
+        "count": 1
+      },
+      "price_multiplier": 0.0,
+      "max_trades": 4,
+      "experience": 40
+    },
+    {
+      "type": "goblintraders:basic",
+      "offer_item": {
+        "item": "mining_helmet:mining_helmet",
+        "count": 1
+      },
+      "payment_item": {
+        "item": "minecraft:iron_ingot",
+        "count": 4
+      },
+      "secondary_payment_item": {
+        "item": "minecraft:apple",
+        "count": 1
+      },
+      "price_multiplier": 0.0,
+      "experience": 40
+    },
+    {
+      "type": "goblintraders:basic",
+      "offer_item": {
+        "item": "supplementaries:bomb",
+        "count": 4
+      },
+      "payment_item": {
+        "item": "minecraft:iron_ingot",
+        "count": 4
+      },
+      "secondary_payment_item": {
+        "item": "minecraft:gunpowder",
+        "count": 5
+      },
+      "price_multiplier": 0.0,
+      "max_trades": 4,
+      "experience": 20
+    },
+    {
+      "type": "goblintraders:basic",
+      "offer_item": {
+        "item": "darkerdepths:rope",
+        "count": 8
+      },
+      "payment_item": {
+        "item": "minecraft:emerald",
+        "count": 4
+      },
+      "price_multiplier": 0.0,
+      "max_trades": 8,
+      "experience": 20
+    }
+  ]
 }
