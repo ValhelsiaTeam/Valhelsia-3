@@ -1,6 +1,6 @@
 // priority: 10
 
-events.listen('recipes', function (event) {
+onEvent('recipes', event => {
 
   const fermenter = (fluid, input, amount) => {
     event.custom({
@@ -106,4 +106,4 @@ events.listen('recipes', function (event) {
   // Upgrade Aquatic Compat
   event.recipes.immersiveengineering.metal_press('upgrade_aquatic:prismarine_rod', Item.of('minecraft:prismarine_shard', 2), 'immersiveengineering:mold_rod')
 
-})
+});

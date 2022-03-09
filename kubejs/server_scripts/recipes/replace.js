@@ -1,6 +1,6 @@
 // priority: 15
 
-events.listen('recipes', function (event) {
+onEvent('recipes', event => {
   let replaceInput = (from, to) => {
     event.replaceInput({}, from, to, true)
   }
@@ -46,4 +46,4 @@ events.listen('recipes', function (event) {
   event.replaceInput({output:'botania:thorn_chakram'}, 'minecraft:vine', '#valhelsia:vines/green', true)
   event.replaceInput({output:'supplementaries:jar'}, 'minecraft:glass', '#forge:glass/colorless', true)
   //event.replaceInput({output:'patchouli:guide_book'}, 'minecraft:feather', '#forge:feathers') // Doesn't work, presumably due to NBT data.
-})
+});

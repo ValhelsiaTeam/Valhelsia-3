@@ -1,6 +1,6 @@
 // priority: 10
 
-events.listen('recipes', function (event) {
+onEvent('recipes', event => {
 
   // Shapeless Damage Recipe (returns a selected ingredient with 1 durability less, such as with a Spindle)
   const shapelessDamage = (result, ingredients, damageItem) => {
@@ -71,4 +71,4 @@ events.listen('recipes', function (event) {
   event.shapeless('upgrade_aquatic:polar_kelp', ['minecraft:kelp', '#forge:dyes/cyan'])
   event.shapeless('upgrade_aquatic:thorny_kelp', ['minecraft:kelp', '#forge:dyes/brown'])
   event.shapeless('upgrade_aquatic:tongue_kelp', ['minecraft:kelp', '#forge:dyes/red'])
-})
+});

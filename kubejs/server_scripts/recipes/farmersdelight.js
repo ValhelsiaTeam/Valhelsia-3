@@ -1,6 +1,6 @@
 // priority: 10
 
-events.listen('recipes', function (event) {
+onEvent('recipes', event => {
 
   // Cutting Board Axe Stripping
   const axeStripping = (output, input) => {
@@ -159,4 +159,4 @@ events.listen('recipes', function (event) {
   cookingPot('forbidden_arcanus:bat_soup', [Ingredient.of('#forge:mushrooms'), Ingredient.of('#forge:crops/nether_wart'), Ingredient.of('forbidden_arcanus:bat_wing')], 'minecraft:bowl')
   cookingPot('mysticalworld:stewed_eggplant', [Ingredient.of('#forge:crops/eggplant'), Ingredient.of('#forge:mushrooms'), Ingredient.of('#forge:vegetables/onion')], 'minecraft:bowl')
 
-})
+});

@@ -1,6 +1,6 @@
 // priority: 100
 
-events.listen('recipes', function (event) {
+onEvent('recipes', event => {
 
   var idRemove = [
 
@@ -297,4 +297,4 @@ events.listen('recipes', function (event) {
     event.remove({output: remove})
   })
 
-})
+});

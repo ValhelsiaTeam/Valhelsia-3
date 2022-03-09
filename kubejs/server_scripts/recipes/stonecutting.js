@@ -1,6 +1,6 @@
 // priority: 10
 
-events.listen('recipes', function (event) {
+onEvent('recipes', event => {
   // Astral Sorcery
   event.stonecutting(item.of('astralsorcery:marble_raw', 1), 'quark:marble')
   
@@ -50,4 +50,4 @@ events.listen('recipes', function (event) {
   // Sandstone
   event.stonecutting('darkerdepths:cobbled_sandstone', 'minecraft:sandstone')
 
-})
+});

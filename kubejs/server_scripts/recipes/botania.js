@@ -1,6 +1,6 @@
 // priority: 10
 
-events.listen('recipes', function (event) {
+onEvent('recipes', event => {
 
   // Pure Daisy Support Function
   const pureDaisy = (output, input) => {
@@ -214,4 +214,4 @@ events.listen('recipes', function (event) {
   // ---------------------
 
   
-})
+});

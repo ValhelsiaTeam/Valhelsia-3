@@ -1,6 +1,6 @@
 // priority: 10
 
-events.listen('recipes', function (event) {
+onEvent('recipes', event => {
 
   // To simplify creation of 2x2 and 3x3 storage recipes:
   let storage2x2 = (output, input) => {
@@ -205,4 +205,4 @@ events.listen('recipes', function (event) {
     S: '#forge:bookshelves',
     B: 'minecraft:book'
   })
-})
+});

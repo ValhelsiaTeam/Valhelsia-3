@@ -1,6 +1,6 @@
 // priority: 10
 
-events.listen('recipes', function (event) {
+onEvent('recipes', event => {
 
   // NOTE: Mekanism Sawmill recipes can be found in woodcutting.js so that arrays can be reused.
 
@@ -296,4 +296,4 @@ events.listen('recipes', function (event) {
   event.recipes.mekanism.combining('8x upgrade_aquatic:thorny_kelp', '8x minecraft:kelp', '#forge:dyes/brown')
   event.recipes.mekanism.combining('8x upgrade_aquatic:tongue_kelp', '8x minecraft:kelp', '#forge:dyes/red')
   
-})
+});

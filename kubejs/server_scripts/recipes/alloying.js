@@ -1,6 +1,6 @@
 // priority: 10
 
-events.listen('recipes', function (event) {
+onEvent('recipes', event => {
   
   // Add an alloying recipe to multiple mods.
   let alloy = (output, input0, input1) => {
@@ -82,4 +82,4 @@ events.listen('recipes', function (event) {
   alloy('twilightforest:fiery_ingot', '#forge:ingots/iron', '#twilightforest:fiery_vial')
   alloy('twilightforest:fiery_ingot', '#forge:dusts/iron', '#twilightforest:fiery_vial')
 
-})
+});

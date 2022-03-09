@@ -17,4 +17,4 @@ const colors = [
   'green',
   'red',
   'black'
-]
+];

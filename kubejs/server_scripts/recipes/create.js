@@ -1,6 +1,6 @@
 // priority: 10
 
-events.listen('recipes', function (event) {
+onEvent('recipes', event => {
 
   // Add a recipe to both crushing wheels and millstone.
   const crushAndMill = (output, input) => {
@@ -108,4 +108,4 @@ events.listen('recipes', function (event) {
   event.recipes.create.splashing('upgrade_aquatic:driftwood', 'upgrade_aquatic:river_wood')
   event.recipes.create.splashing('upgrade_aquatic:stripped_driftwood_log', 'upgrade_aquatic:stripped_river_log')
   event.recipes.create.splashing('upgrade_aquatic:stripped_driftwood', 'upgrade_aquatic:stripped_river_wood')
-})
+});

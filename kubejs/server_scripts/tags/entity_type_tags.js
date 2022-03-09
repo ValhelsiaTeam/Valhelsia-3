@@ -1,4 +1,5 @@
 // priority: 80
+
 onEvent('entity_type.tags', event => {
 
   // Halloween Event Candy
@@ -24,5 +25,6 @@ onEvent('entity_type.tags', event => {
     'twilightforest:swarm_spider',
     'twilightforest:hedge_spider',
     'eidolon:zombie_brute'
-  ])
-})
+  ]);
+
+});

@@ -1,6 +1,6 @@
 // priority: 10
 
-events.listen('recipes', function (event) {
+onEvent('recipes', event => {
 
   // Add a recipe to both furnace and blast furnace.
   const smeltAndBlast = (output, input, xp) => {
@@ -22,4 +22,4 @@ events.listen('recipes', function (event) {
 
   // Mekanism
   event.smelting('biomesoplenty:dried_salt', 'mekanism:block_salt')
-})
+});

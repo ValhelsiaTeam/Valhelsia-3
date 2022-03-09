@@ -1,4 +1,5 @@
 // priority: 90
+
 onEvent('item.tags', event => {
 
   // Fruits
@@ -157,4 +158,4 @@ onEvent('item.tags', event => {
     'mysticalworld:venison'
   ])
 
-})
+});

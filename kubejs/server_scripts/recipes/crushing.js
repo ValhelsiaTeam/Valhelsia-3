@@ -1,5 +1,6 @@
 // priority: 10
-events.listen('recipes', function (event) {
+
+onEvent('recipes', event => {
   
   // Add a crushing recipe to multiple mods.
   let crush = (output, input) => {
@@ -74,4 +75,4 @@ events.listen('recipes', function (event) {
 
   // Upgrade Aquatic
   millAndCrush('10x minecraft:bone_meal', 'upgrade_aquatic:thrasher_tooth')
-})
+});

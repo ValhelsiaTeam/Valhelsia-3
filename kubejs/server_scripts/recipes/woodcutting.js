@@ -1,6 +1,6 @@
 // priority: 10
 
-events.listen('recipes', function (event) {
+onEvent('recipes', event => {
 
   // Woodcutting
   const woodcutting = (output, input, count) => {
@@ -846,4 +846,4 @@ events.listen('recipes', function (event) {
     woodcutting(`valhelsia_structures:cut_${element}_post`, `#minecraft:${element}_stems`, val_cut_posts_per_log)
   })
 
-})
+});

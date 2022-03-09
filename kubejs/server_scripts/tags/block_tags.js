@@ -1,4 +1,5 @@
 // priority: 80
+
 onEvent('block.tags', event => {
 
   // Additional blocks that can be used to build a conduit frame.
@@ -479,4 +480,4 @@ onEvent('block.tags', event => {
   event.add('forge:sand/arid', 'atmospheric:arid_sand')
   event.add('forge:sand/red_arid', 'atmospheric:red_arid_sand')
   event.add('valhelsia:deepslate', 'quark:deepslate')
-})
+});

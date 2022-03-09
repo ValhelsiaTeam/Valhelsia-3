@@ -1,4 +1,5 @@
 // priority: 80
+
 onEvent('item.tags', event => {
   // Allows Autumnity snail slime to be used in a few more recipes.
   event.add('forge:slime', 'autumnity:snail_slime')
@@ -825,4 +826,4 @@ onEvent('item.tags', event => {
   event.add('forge:storage_blocks/gunpowder', 'quark:gunpowder_sack')
   event.add('forge:sand/arid', 'atmospheric:arid_sand')
   event.add('forge:sand/red_arid', 'atmospheric:red_arid_sand')
-})
+});
