@@ -1,0 +1,12 @@
+#The title to display at the top of the entry.
+title = "Need a server to play with your friends?"
+#The description to display below the title.
+description = "§9      ➥§9 Click here to rent your own server.§r\n§7Save 25% on your order with the§6§l VALHELSIA§7 code!"
+#Your partner ID to use in during the ordering process.
+#Without this you will not be credited for the purchases.
+#(Your partner id is not the same as your referral link, please check your client area to find your partner id at https://www.bisecthosting.com/partners/console.php).
+partnerId = "2511"
+#The id of this modpack.
+#(This is BH internal pack id; Find the id here: https://www.bisecthosting.com/partners/console.php)
+pack_id = "16815"
+
