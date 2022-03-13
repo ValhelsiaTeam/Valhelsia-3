@@ -1,5 +1,5 @@
 #Enables logging the too large packets causing disconnects. , default = true
-displayTooLargePackets = true
+displayTooLargePackets = false
 
 ["Load balancing settings"]
 
@@ -116,7 +116,7 @@ displayTooLargePackets = true
 	forbiddenMobs = []
 	#Set the max login timeout during connection in ticks. 20 ticks = 1 sec, default = 120 seconds
 	#Range: 600 ~ 20000
-	logintimeout = 2400
+	logintimeout = 4800
 	#Set the watchdog timeout for the integrated server in miliseconds, -1 Disables it. 1 second = 1000 miliseconds, default = 180000
 	#Range: -1 ~ 500000
 	singlePlayerWatchDogTimeout = 180000
@@ -125,7 +125,7 @@ displayTooLargePackets = true
 	maxItems = 100
 	#Set the ingame disconnect timeout for disconnecting players. Default = 60sec
 	#Range: 15 ~ 400
-	disconnectTimeout = 60
+	disconnectTimeout = 180
 	#Set the maximum allowed amount of same sounds playing at the same time. Lowers e.g. lag of flowing water and other cases where a sound is repeated a lot at once. Default = 10
 	#Range: 1 ~ 4000
 	maxSameSounds = 10
