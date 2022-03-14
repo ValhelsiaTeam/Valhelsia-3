@@ -23,7 +23,7 @@ fov:0.0
 gamma:0.0
 renderDistance:12
 entityDistanceScaling:1.0
-guiScale:2
+guiScale:3
 particles:0
 maxFps:120
 difficulty:2
@@ -51,7 +51,7 @@ chatDelay: 0.0
 chatHeightUnfocused:0.44366195797920227
 chatScale:1.0
 chatWidth:1.0
-mipmapLevels:4
+mipmapLevels:0
 useNativeTransport:true
 mainHand:right
 attackIndicator:1
@@ -62,8 +62,8 @@ rawMouseInput:true
 glDebugVerbosity:1
 skipMultiplayerWarning:false
 syncChunkWrites:true
-soundCategory_master:0.7566225
-soundCategory_music:0.5
+soundCategory_master:0.75
+soundCategory_music:0.25
 soundCategory_record:1.0
 soundCategory_weather:1.0
 soundCategory_block:1.0
