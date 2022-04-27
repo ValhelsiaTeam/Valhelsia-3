@@ -16,7 +16,7 @@
 /**
  * Stonecutting Recipe Event Handler
  */
-onEvent('recipes', function (event) {
+onEvent('recipes', event => {
 
   /**
    * Creates stonecutting recipes to convert items between each other.

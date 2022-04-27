@@ -1,12 +1,19 @@
 // priority: 10
 
+//             _ _          _     _         _____ 
+// /\   /\__ _| | |__   ___| |___(_) __ _  |___ / 
+// \ \ / / _` | | '_ \ / _ \ / __| |/ _` |   |_ \ 
+//  \ V / (_| | | | | |  __/ \__ \ | (_| |  ___) |
+//   \_/ \__,_|_|_| |_|\___|_|___/_|\__,_| |____/ 
+//
+
 onEvent('recipes', event => {
 
   // Add a recipe to both crushing wheels and millstone.
   const crushAndMill = (output, input) => {
-    event.recipes.create.crushing(output, input)
-    event.recipes.create.milling(output, input)
-  }
+    event.recipes.create.crushing(output, input);
+    event.recipes.create.milling(output, input);
+  };
 
   // Atmospheric
   crushAndMill([Item.of('atmospheric:arid_sand', 2), Item.of('bloodmagic:saltpeter').withChance(0.5)], '#forge:sandstone/arid')
@@ -50,25 +57,25 @@ onEvent('recipes', event => {
     'pythadendron',
     'tenanea',
     'umbrella_tree'
-  ]
+  ];
 
   betterEndWoodTypes.forEach(function(element) {
-    event.recipes.create.cutting(`betterendforge:${element}_stripped_log`, `betterendforge:${element}_log`)
-    event.recipes.create.cutting(`betterendforge:${element}_stripped_bark`, `betterendforge:${element}_bark`)
-    event.recipes.create.cutting(`betterendforge:${element}_log`, `betterendforge:${element}_bark`)
-    event.recipes.create.cutting(Item.of(`betterendforge:${element}_planks`, 6), `betterendforge:${element}_stripped_log`)
-    event.recipes.create.cutting(Item.of(`betterendforge:${element}_planks`, 6), `betterendforge:${element}_stripped_bark`)
-  })
+    event.recipes.create.cutting(`betterendforge:${element}_stripped_log`, `betterendforge:${element}_log`);
+    event.recipes.create.cutting(`betterendforge:${element}_stripped_bark`, `betterendforge:${element}_bark`);
+    event.recipes.create.cutting(`betterendforge:${element}_log`, `betterendforge:${element}_bark`);
+    event.recipes.create.cutting(Item.of(`betterendforge:${element}_planks`, 6), `betterendforge:${element}_stripped_log`);
+    event.recipes.create.cutting(Item.of(`betterendforge:${element}_planks`, 6), `betterendforge:${element}_stripped_bark`);
+  });
 
   // These two are currently missing from the Create integration for BetterEnd. TODO: Remove here once added there.
-  event.recipes.create.pressing('betterendforge:rutiscus_path', 'betterendforge:rutiscus')
-  event.recipes.create.pressing('betterendforge:sangnum_path', 'betterendforge:sangnum')
+  event.recipes.create.pressing('betterendforge:rutiscus_path', 'betterendforge:rutiscus');
+  event.recipes.create.pressing('betterendforge:sangnum_path', 'betterendforge:sangnum');
 
   // BoP
-  crushAndMill([Item.of('biomesoplenty:white_sand', 2), Item.of('bloodmagic:saltpeter').withChance(0.5)], '#forge:sandstone/white')
-  crushAndMill([Item.of('biomesoplenty:black_sand', 2), Item.of('bloodmagic:saltpeter').withChance(0.5)], '#forge:sandstone/black')
-  crushAndMill([Item.of('biomesoplenty:orange_sand', 2), Item.of('bloodmagic:saltpeter').withChance(0.5)], '#forge:sandstone/orange')
-  event.recipes.create.splashing('mekanism:block_salt', 'biomesoplenty:dried_salt')
+  crushAndMill([Item.of('biomesoplenty:white_sand', 2), Item.of('bloodmagic:saltpeter').withChance(0.5)], '#forge:sandstone/white');
+  crushAndMill([Item.of('biomesoplenty:black_sand', 2), Item.of('bloodmagic:saltpeter').withChance(0.5)], '#forge:sandstone/black');
+  crushAndMill([Item.of('biomesoplenty:orange_sand', 2), Item.of('bloodmagic:saltpeter').withChance(0.5)], '#forge:sandstone/orange');
+  event.recipes.create.splashing('mekanism:block_salt', 'biomesoplenty:dried_salt');
   
   // Farmer's Delight
   crushAndMill([Item.of('farmersdelight:rice', 9), Item.of('farmersdelight:straw', 9)], 'farmersdelight:rice_bale')

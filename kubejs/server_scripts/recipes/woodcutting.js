@@ -20,7 +20,7 @@
 /**
  * Woodcutting Recipe Event Handler
  */
-onEvent('recipes', function (event) {
+onEvent('recipes', event => {
 
   /**
    * Creates a woodcutting recipe (currently only for Druidcraft).

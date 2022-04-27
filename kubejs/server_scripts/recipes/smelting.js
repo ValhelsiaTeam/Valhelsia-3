@@ -12,7 +12,7 @@
  * 
  * Includes functions for frequently used recipe templates.
  */
-onEvent('recipes', function (event) {
+onEvent('recipes', event => {
 
   /**
    * Adds a recipe to both the furnace and blast furnace.
