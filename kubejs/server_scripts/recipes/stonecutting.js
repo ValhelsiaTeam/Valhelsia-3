@@ -1,53 +1,85 @@
 // priority: 10
 
-onEvent('recipes', event => {
-  // Astral Sorcery
-  event.stonecutting(item.of('astralsorcery:marble_raw', 1), 'quark:marble')
-  
+//             _ _          _     _         _____ 
+// /\   /\__ _| | |__   ___| |___(_) __ _  |___ / 
+// \ \ / / _` | | '_ \ / _ \ / __| |/ _` |   |_ \ 
+//  \ V / (_| | | | | |  __/ \__ \ | (_| |  ___) |
+//   \_/ \__,_|_|_| |_|\___|_|___/_|\__,_| |____/ 
+//
+
+/**
+ * @file Stonecutter recipe additions for Valhelsia 3.
+ * 
+ * Includes functions for frequently used recipe templates.
+ */
+
+/**
+ * Stonecutting Recipe Event Handler
+ */
+onEvent('recipes', function (event) {
+
+  /**
+   * Creates stonecutting recipes to convert items between each other.
+   * Typically used to convert between equivalent stones from different mods (such as Create Limestone and Quark Limestone).
+   * @param {(string|Item)} itemA An item, usually a type of raw stone.
+   * @param {(string|Item)} itemB Another item, usually a type of raw stone.
+   */
+  const scReversible = (itemA, itemB) => {
+    event.stonecutting(itemA, itemB);
+    event.stonecutting(itemB, itemA);
+  };
+
+  // Inter-mod Raw Stone Conversions
+  scReversible('astralsorcery:marble_raw', 'quark:marble');
+  scReversible('betterendforge:brimstone', 'quark:brimstone');
+  scReversible('create:limestone', 'quark:limestone');
+
   // BetterEnd
-  const betterEndStoneTypes = [
-    'flavolite',
-    'violecite',
-    'sulphuric_rock' // spelled "Sulfuric" in display names
-  ]
-  betterEndStoneTypes.forEach(function(element) {
-    event.stonecutting(item.of(`betterendforge:${element}_polished`, 1), `betterendforge:${element}`)
-    event.stonecutting(item.of(`betterendforge:${element}_tiles`, 1), `betterendforge:${element}`)
-    event.stonecutting(item.of(`betterendforge:${element}_pillar`, 1), `betterendforge:${element}`)
-    event.stonecutting(item.of(`betterendforge:${element}_stairs`, 1), `betterendforge:${element}`)
-    event.stonecutting(item.of(`betterendforge:${element}_slab`, 2), `betterendforge:${element}`)
-    event.stonecutting(item.of(`betterendforge:${element}_wall`, 1), `betterendforge:${element}`)
-    event.stonecutting(item.of(`betterendforge:${element}_button`, 1), `betterendforge:${element}`)
-    event.stonecutting(item.of(`betterendforge:${element}_bricks`, 1), `betterendforge:${element}`)
-    event.stonecutting(item.of(`betterendforge:${element}_bricks_stairs`, 1), `betterendforge:${element}`)
-    event.stonecutting(item.of(`betterendforge:${element}_bricks_slab`, 2), `betterendforge:${element}`)
-    event.stonecutting(item.of(`betterendforge:${element}_bricks_wall`, 1), `betterendforge:${element}`)
-    event.stonecutting(item.of(`betterendforge:${element}_bricks_stairs`, 1), `betterendforge:${element}_bricks`)
-    event.stonecutting(item.of(`betterendforge:${element}_bricks_slab`, 2), `betterendforge:${element}_bricks`)
-    event.stonecutting(item.of(`betterendforge:${element}_bricks_wall`, 1), `betterendforge:${element}_bricks`)
-  })
-  event.stonecutting(item.of('betterendforge:brimstone', 1), 'quark:brimstone')
-
-  // Create
-  event.stonecutting(item.of('create:limestone', 1), 'quark:limestone')
-
+  for (stone of BETTER_END_STONES) {
+    event.stonecutting(`betterendforge:${stone}_polished`, `betterendforge:${stone}`);
+    event.stonecutting(`betterendforge:${stone}_tiles`, `betterendforge:${stone}`);
+    event.stonecutting(`betterendforge:${stone}_pillar`, `betterendforge:${stone}`);
+    event.stonecutting(`betterendforge:${stone}_stairs`, `betterendforge:${stone}`);
+    event.stonecutting(`2x betterendforge:${stone}_slab`, `betterendforge:${stone}`);
+    event.stonecutting(`betterendforge:${stone}_wall`, `betterendforge:${stone}`);
+    event.stonecutting(`betterendforge:${stone}_button`, `betterendforge:${stone}`);
+    event.stonecutting(`betterendforge:${stone}_bricks`, `betterendforge:${stone}`);
+    event.stonecutting(`betterendforge:${stone}_bricks_stairs`, `betterendforge:${stone}`);
+    event.stonecutting(`2x betterendforge:${stone}_bricks_slab`, `betterendforge:${stone}`);
+    event.stonecutting(`betterendforge:${stone}_bricks_wall`, `betterendforge:${stone}`);
+    event.stonecutting(`betterendforge:${stone}_bricks_stairs`, `betterendforge:${stone}_bricks`);
+    event.stonecutting(`2x betterendforge:${stone}_bricks_slab`, `betterendforge:${stone}_bricks`);
+    event.stonecutting(`betterendforge:${stone}_bricks_wall`, `betterendforge:${stone}_bricks`);
+  };
+  
   // Quark
-  event.stonecutting(item.of('quark:brimstone', 1), 'betterendforge:brimstone')
-  event.stonecutting(item.of('quark:chiseled_limestone_bricks', 1), 'quark:limestone')
-  event.stonecutting(item.of('quark:limestone_bricks', 1), 'quark:limestone')
-  event.stonecutting(item.of('quark:limestone_pavement', 1), 'quark:limestone')
-  event.stonecutting(item.of('quark:limestone_pillar', 1), 'quark:limestone')
-  event.stonecutting(item.of('quark:limestone_slab', 2), 'quark:limestone')
-  event.stonecutting(item.of('quark:limestone_speleothem', 2), 'quark:limestone')
-  event.stonecutting(item.of('quark:limestone_stairs', 1), 'quark:limestone')
-  event.stonecutting(item.of('quark:limestone_wall', 1), 'quark:limestone')
-  event.stonecutting(item.of('quark:polished_limestone', 1), 'quark:limestone')
-  event.stonecutting(item.of('quark:polished_limestone_slab', 2), 'quark:limestone')
-  event.stonecutting(item.of('quark:polished_limestone_stairs', 1), 'quark:limestone')
-  event.stonecutting(item.of('quark:limestone', 1), 'create:limestone')
-  event.stonecutting(item.of('quark:marble', 1), 'astralsorcery:marble_raw')
+  event.stonecutting('quark:chiseled_limestone_bricks', 'quark:limestone');
+  event.stonecutting('quark:limestone_bricks', 'quark:limestone');
+  event.stonecutting('quark:limestone_pavement', 'quark:limestone');
+  event.stonecutting('quark:limestone_pillar', 'quark:limestone');
+  event.stonecutting('2x quark:limestone_slab', 'quark:limestone');
+  event.stonecutting('2x quark:limestone_speleothem', 'quark:limestone');
+  event.stonecutting('quark:limestone_stairs', 'quark:limestone');
+  event.stonecutting('quark:limestone_wall', 'quark:limestone');
+  event.stonecutting('quark:polished_limestone', 'quark:limestone');
+  event.stonecutting('2x quark:polished_limestone_slab', 'quark:limestone');
+  event.stonecutting('quark:polished_limestone_stairs', 'quark:limestone');
 
   // Sandstone
-  event.stonecutting('darkerdepths:cobbled_sandstone', 'minecraft:sandstone')
+  event.stonecutting('darkerdepths:cobbled_sandstone', 'minecraft:sandstone');
+
+  // Structurize - Stone Timber Frames
+  for (pattern of STRUCTURIZE_PATTERNS) {
+    for (wood of STRUCTURIZE_WOODS) {
+      for (material of STRUCURIZE_STONE_MATERIALS) {
+        for (altPattern of STRUCTURIZE_PATTERNS) {
+          if (pattern === altPattern) {
+            continue;
+          }
+          event.stonecutting(`structurize:${altPattern}_${wood}_${material}_timber_frame`, `structurize:${pattern}_${wood}_${material}_timber_frame`);
+        }
+      }
+    }
+  }
 
 });
