@@ -22,285 +22,283 @@ onEvent('recipes', event => {
         infuse_type: type,
         amount: amount
       }
-    })
-  }
+    });
+  };
+
+  // Turn a block into a mossy version of it.
+  const mossify = (output, input) => {
+    event.recipes.mekanism.metallurgic_infusing(output, input, 'mekanism:bio', 10);
+  };
+
+  // Turn a block into a fungal version if it.
+  const fungify = (output, input) => {
+    event.recipes.mekanism.metallurgic_infusing(output, input, 'mekanism:fungi', 10);
+  };
+
+  // Biofuel Creation Shortcut Template
+  const bioCrush = (input, quantity) => {
+    event.recipes.mekanism.crushing(`${quantity}x mekanism:bio_fuel`, input);
+  };
 
   // Atmospheric
-  event.recipes.mekanism.crushing(Item.of('atmospheric:arid_sand', 2), '#forge:sandstone/arid')
-  event.recipes.mekanism.crushing(Item.of('atmospheric:red_arid_sand', 2), '#forge:sandstone/red_arid')
+  event.recipes.mekanism.crushing('2x atmospheric:arid_sand', '#forge:sandstone/arid');
+  event.recipes.mekanism.crushing('2x atmospheric:red_arid_sand', '#forge:sandstone/red_arid');
 
   // Bayou Blues
-  event.recipes.mekanism.sawing(Item.of('mekanism:sawdust', 1), 'bayou_blues:cypress_branch')
-  event.recipes.mekanism.sawing(Item.of('mekanism:sawdust', 2), 'bayou_blues:cypress_knee')
-  event.recipes.mekanism.sawing(Item.of('mekanism:sawdust', 4), 'bayou_blues:large_cypress_knee')
+  event.recipes.mekanism.sawing('mekanism:sawdust', 'bayou_blues:cypress_branch');
+  event.recipes.mekanism.sawing('2x mekanism:sawdust', 'bayou_blues:cypress_knee');
+  event.recipes.mekanism.sawing('4x mekanism:sawdust', 'bayou_blues:large_cypress_knee');
 
   // BetterEnd
-  event.recipes.mekanism.crushing(Item.of('betterendforge:endstone_dust', 2), '#forge:end_stones')
-  event.recipes.mekanism.enriching(Item.of('betterendforge:ender_shard', 2), '#forge:ores/ender')
-  event.recipes.mekanism.enriching(Item.of('minecraft:blue_dye', 2), 'betterendforge:blue_vine_seed')
-  event.recipes.mekanism.enriching(Item.of('minecraft:cyan_dye', 2), 'betterendforge:creeping_moss')
-  event.recipes.mekanism.enriching(Item.of('minecraft:cyan_dye', 2), 'betterendforge:cyan_moss')
-  event.recipes.mekanism.enriching(Item.of('minecraft:yellow_dye', 2), 'betterendforge:umbrella_moss')
-  event.recipes.mekanism.enriching(Item.of('minecraft:yellow_dye', 4), 'betterendforge:umbrella_moss_tall')
-  event.recipes.mekanism.enriching(Item.of('minecraft:black_dye', 2), 'betterendforge:shadow_plant')
-  event.recipes.mekanism.enriching(Item.of('minecraft:purple_dye', 2), 'betterendforge:purple_polypore')
-  event.recipes.mekanism.enriching(Item.of('minecraft:gray_dye', 2), 'betterendforge:tail_moss')
-  event.recipes.mekanism.enriching(Item.of('minecraft:magenta_dye', 2), 'betterendforge:bushy_grass')
-  event.recipes.mekanism.enriching(Item.of('minecraft:pink_dye', 2), 'betterendforge:twisted_moss')
-  event.recipes.mekanism.enriching(Item.of('minecraft:white_dye', 2), 'betterendforge:hydralux_petal')
-  event.recipes.mekanism.enriching(Item.of('minecraft:purple_dye', 2), 'betterendforge:twisted_umbrella_moss')
-  event.recipes.mekanism.enriching(Item.of('minecraft:purple_dye', 4), 'betterendforge:twisted_umbrella_moss_tall')
-  event.recipes.mekanism.enriching(Item.of('minecraft:red_dye', 2), 'betterendforge:charnia_red')
-  event.recipes.mekanism.enriching(Item.of('minecraft:purple_dye', 2), 'betterendforge:charnia_purple')
-  event.recipes.mekanism.enriching(Item.of('minecraft:orange_dye', 2), 'betterendforge:charnia_orange')
-  event.recipes.mekanism.enriching(Item.of('minecraft:light_blue_dye', 2), 'betterendforge:charnia_light_blue')
-  event.recipes.mekanism.enriching(Item.of('minecraft:cyan_dye', 2), 'betterendforge:charnia_cyan')
-  event.recipes.mekanism.enriching(Item.of('minecraft:green_dye', 2), 'betterendforge:charnia_green')
-  event.recipes.mekanism.metallurgic_infusing('betterendforge:end_moss', 'minecraft:end_stone', 'mekanism:bio', 10)
-  event.recipes.mekanism.metallurgic_infusing('betterendforge:end_mycelium', 'minecraft:end_stone', 'mekanism:fungi', 10)
+  event.recipes.mekanism.crushing('2x betterendforge:endstone_dust', '#forge:end_stones');
+  event.recipes.mekanism.enriching('2x betterendforge:ender_shard', '#forge:ores/ender');
+  event.recipes.mekanism.enriching('2x minecraft:blue_dye', 'betterendforge:blue_vine_seed');
+  event.recipes.mekanism.enriching('2x minecraft:cyan_dye', 'betterendforge:creeping_moss');
+  event.recipes.mekanism.enriching('2x minecraft:cyan_dye', 'betterendforge:cyan_moss');
+  event.recipes.mekanism.enriching('2x minecraft:yellow_dye', 'betterendforge:umbrella_moss');
+  event.recipes.mekanism.enriching('4x minecraft:yellow_dye', 'betterendforge:umbrella_moss_tall');
+  event.recipes.mekanism.enriching('2x minecraft:black_dye', 'betterendforge:shadow_plant');
+  event.recipes.mekanism.enriching('2x minecraft:purple_dye', 'betterendforge:purple_polypore');
+  event.recipes.mekanism.enriching('2x minecraft:gray_dye', 'betterendforge:tail_moss');
+  event.recipes.mekanism.enriching('2x minecraft:magenta_dye', 'betterendforge:bushy_grass');
+  event.recipes.mekanism.enriching('2x minecraft:pink_dye', 'betterendforge:twisted_moss');
+  event.recipes.mekanism.enriching('2x minecraft:white_dye', 'betterendforge:hydralux_petal');
+  event.recipes.mekanism.enriching('2x minecraft:purple_dye', 'betterendforge:twisted_umbrella_moss');
+  event.recipes.mekanism.enriching('4x minecraft:purple_dye', 'betterendforge:twisted_umbrella_moss_tall');
+  event.recipes.mekanism.enriching('2x minecraft:red_dye', 'betterendforge:charnia_red');
+  event.recipes.mekanism.enriching('2x minecraft:purple_dye', 'betterendforge:charnia_purple');
+  event.recipes.mekanism.enriching('2x minecraft:orange_dye', 'betterendforge:charnia_orange');
+  event.recipes.mekanism.enriching('2x minecraft:light_blue_dye', 'betterendforge:charnia_light_blue');
+  event.recipes.mekanism.enriching('2x minecraft:cyan_dye', 'betterendforge:charnia_cyan');
+  event.recipes.mekanism.enriching('2x minecraft:green_dye', 'betterendforge:charnia_green');
+  mossify('betterendforge:end_moss', 'minecraft:end_stone');
+  fungify('betterendforge:end_mycelium', 'minecraft:end_stone');
 
   // Blue Skies
-  event.recipes.mekanism.crushing(Item.of('minecraft:bone_meal', 9), 'blue_skies:azulfo_horn')
-  event.recipes.mekanism.crushing(Item.of('blue_skies:moonstone_shard', 4), '#blue_skies:gems/moonstone')
+  event.recipes.mekanism.crushing('9x minecraft:bone_meal', 'blue_skies:azulfo_horn');
+  event.recipes.mekanism.crushing('4x blue_skies:moonstone_shard', '#blue_skies:gems/moonstone');
 
   // Create
-  event.recipes.mekanism.combining(Item.of('create:polished_rose_quartz', 8), Ingredient.of('create:rose_quartz', 8), '#forge:sandstone')
-  event.recipes.mekanism.metallurgic_infusing('create:mossy_granite', 'minecraft:granite', 'mekanism:bio', 10)
-  event.recipes.mekanism.metallurgic_infusing('create:mossy_diorite', 'minecraft:diorite', 'mekanism:bio', 10)
-  event.recipes.mekanism.metallurgic_infusing('create:mossy_andesite', 'minecraft:andesite', 'mekanism:bio', 10)
-  event.recipes.mekanism.metallurgic_infusing('create:mossy_limestone', 'create:limestone', 'mekanism:bio', 10)
-  event.recipes.mekanism.metallurgic_infusing('create:mossy_weathered_limestone', 'create:weathered_limestone', 'mekanism:bio', 10)
-  event.recipes.mekanism.metallurgic_infusing('create:mossy_dolomite', 'create:dolomite', 'mekanism:bio', 10)
-  event.recipes.mekanism.metallurgic_infusing('create:mossy_gabbro', 'create:gabbro', 'mekanism:bio', 10)
-  event.recipes.mekanism.metallurgic_infusing('create:mossy_scoria', 'create:scoria', 'mekanism:bio', 10)
-  event.recipes.mekanism.metallurgic_infusing('create:mossy_dark_scoria', 'create:dark_scoria', 'mekanism:bio', 10)
+  event.recipes.mekanism.combining('8x create:polished_rose_quartz', '8x create:rose_quartz', '#forge:sandstone');
+  mossify('create:mossy_granite', 'minecraft:granite');
+  mossify('create:mossy_diorite', 'minecraft:diorite');
+  mossify('create:mossy_andesite', 'minecraft:andesite');
+  mossify('create:mossy_limestone', 'create:limestone');
+  mossify('create:mossy_granite', 'create:weathered_limestone');
+  mossify('create:mossy_dolomite', 'create:dolomite');
+  mossify('create:mossy_gabbro', 'create:gabbro');
+  mossify('create:mossy_scoria', 'create:scoria');
+  mossify('create:mossy_dark_scoria', 'create:dark_scoria');
 
   // Darker Depths
-  event.recipes.mekanism.metallurgic_infusing('darkerdepths:lush_aridrock', 'darkerdepths:aridrock', 'mekanism:bio', 10)
-  event.recipes.mekanism.metallurgic_infusing('darkerdepths:mossy_grimestone', 'darkerdepths:grimestone', 'mekanism:bio', 10)
+  mossify('darkerdepths:lush_aridrock', 'darkerdepths:aridrock');
+  mossify('darkerdepths:mossy_grimestone', 'darkerdepths:grimestone');
 
   // Forbidden and Arcanus
-  event.recipes.mekanism.crushing(Item.of('forbidden_arcanus:soulless_sand', 2), '#forge:sandstone/soulless')
+  event.recipes.mekanism.crushing('2x forbidden_arcanus:soulless_sand', '#forge:sandstone/soulless');
 
   // Mekanism Combiner
   colors.forEach(function(element) {
+    let dye = `#forge:dyes/${element}`;
+
     // Minecraft Dying
-    event.recipes.mekanism.combining(Item.of(`minecraft:${element}_stained_glass`, 16), Ingredient.of('minecraft:glass', 16), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`minecraft:${element}_stained_glass_pane`, 16), Ingredient.of('minecraft:glass_pane', 16), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`minecraft:${element}_wool`, 8), Ingredient.of('#minecraft:wool', 8), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`minecraft:${element}_carpet`, 16), Ingredient.of('#minecraft:carpets', 16), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`minecraft:${element}_terracotta`, 16), Ingredient.of('#forge:terracotta', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(`16x minecraft:${element}_stained_glass`, '16x minecraft:glass', dye);
+    event.recipes.mekanism.combining(`16x minecraft:${element}_stained_glass_pane`, '16x minecraft:glass_pane', dye);
+    event.recipes.mekanism.combining(`8x minecraft:${element}_wool`, '8x #minecraft:wool', dye);
+    event.recipes.mekanism.combining(`16x minecraft:${element}_carpet`, '16x #minecraft:carpets', dye);
+    event.recipes.mekanism.combining(`16x minecraft:${element}_terracotta`, '16x #forge:terracotta', dye);
 
     // Environmental Terracotta Bricks Dying
-    event.recipes.mekanism.combining(Item.of(`environmental:${element}_terracotta_bricks`, 16), Ingredient.of('environmental:terracotta_bricks', 16), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`environmental:chiseled_${element}_terracotta_bricks`, 16), Ingredient.of('environmental:chiseled_terracotta_bricks', 16), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`environmental:${element}_terracotta_brick_stairs`, 16), Ingredient.of('environmental:terracotta_brick_stairs', 16), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`environmental:${element}_terracotta_brick_slab`, 16), Ingredient.of('environmental:terracotta_brick_slab', 16), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`environmental:${element}_terracotta_brick_wall`, 16), Ingredient.of('environmental:terracotta_brick_wall', 16), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`environmental:${element}_terracotta_brick_vertical_slab`, 16), Ingredient.of('environmental:terracotta_brick_vertical_slab', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(`16x environmental:${element}_terracotta_bricks`, '16x environmental:terracotta_bricks', dye);
+    event.recipes.mekanism.combining(`16x environmental:chiseled_${element}_terracotta_bricks`, '16x environmental:chiseled_terracotta_bricks', dye);
+    event.recipes.mekanism.combining(`16x environmental:${element}_terracotta_brick_stairs`, '16x environmental:terracotta_brick_stairs', dye);
+    event.recipes.mekanism.combining(`16x environmental:${element}_terracotta_brick_slab`, '16x environmental:terracotta_brick_slab', dye);
+    event.recipes.mekanism.combining(`16x environmental:${element}_terracotta_brick_wall`, '16x environmental:terracotta_brick_wall', dye);
+    event.recipes.mekanism.combining(`16x environmental:${element}_terracotta_brick_vertical_slab`, '16x environmental:terracotta_brick_vertical_slab', dye);
 
     // Atum Crystal Glass Dying
-    event.recipes.mekanism.combining(Item.of(`atum:${element}_stained_crystal_glass`, 16), Ingredient.of('atum:crystal_glass', 16), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`atum:${element}_stained_crystal_glass_pane`, 16), Ingredient.of('atum:crystal_glass_pane', 16), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`atum:${element}_stained_palm_framed_crystal_glass_pane`, 16), Ingredient.of('atum:palm_framed_crystal_glass_pane', 16), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`atum:${element}_stained_palm_framed_crystal_glass`, 16), Ingredient.of('atum:palm_framed_crystal_glass', 16), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`atum:${element}_stained_deadwood_framed_crystal_glass_pane`, 16), Ingredient.of('atum:deadwood_framed_crystal_glass_pane', 16), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`atum:${element}_stained_deadwood_framed_crystal_glass`, 16), Ingredient.of('atum:deadwood_framed_crystal_glass', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(`16x atum:${element}_stained_crystal_glass`, '16x atum:crystal_glass', dye);
+    event.recipes.mekanism.combining(`16x atum:${element}_stained_crystal_glass_pane`, '16x atum:crystal_glass_pane', dye);
+    event.recipes.mekanism.combining(`16x atum:${element}_stained_palm_framed_crystal_glass_pane`, '16x atum:palm_framed_crystal_glass_pane', dye);
+    event.recipes.mekanism.combining(`16x atum:${element}_stained_palm_framed_crystal_glass`, '16x atum:palm_framed_crystal_glass', dye);
+    event.recipes.mekanism.combining(`16x atum:${element}_stained_deadwood_framed_crystal_glass_pane`, '16x atum:deadwood_framed_crystal_glass_pane', dye);
+    event.recipes.mekanism.combining(`16x atum:${element}_stained_deadwood_framed_crystal_glass`, '16x atum:deadwood_framed_crystal_glass', dye);
 
     // BetterEnd Hydralux Petal Block Dying
-    event.recipes.mekanism.combining(Item.of(`betterendforge:hydralux_petal_block_${element}`, 16), Ingredient.of('betterendforge:hydralux_petal_block', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(`16x betterendforge:hydralux_petal_block_${element}`, '16x betterendforge:hydralux_petal_block', dye);
 
     // Cooking For Blockheads Kitchen Floor Dying
-    event.recipes.mekanism.combining(Item.of(`cookingforblockheads:${element}_kitchen_floor`, 16), Ingredient.of('cookingforblockheads:white_kitchen_floor', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(`16x cookingforblockheads:${element}_kitchen_floor`, '16x cookingforblockheads:white_kitchen_floor', dye);
 
     // Druidcraft Soulfire Dying
-    event.recipes.mekanism.combining(Item.of(`druidcraft:${element}_soulfire`, 8), Ingredient.of('#druidcraft:soulfire', 8), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(`8x druidcraft:${element}_soulfire`, '8x #druidcraft:soulfire', dye);
 
     // Mekanism Plastic Dying
-    event.recipes.mekanism.combining(Item.of(`mekanismadditions:${element}_plastic`, 16), Ingredient.of('#mekanismadditions:plastic_blocks/plastic', 16), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`mekanismadditions:${element}_plastic`, 8), Ingredient.of('mekanism:hdpe_sheet', 8), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`mekanismadditions:${element}_plastic_road`, 16), Ingredient.of('#mekanismadditions:plastic_blocks/road', 16), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`mekanismadditions:${element}_reinforced_plastic`, 16), Ingredient.of('#mekanismadditions:plastic_blocks/reinforced', 16), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`mekanismadditions:${element}_plastic_fence`, 16), Ingredient.of('#forge:fences/plastic', 16), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`mekanismadditions:${element}_plastic_fence_gate`, 16), Ingredient.of('#forge:fence_gates/plastic', 16), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`mekanismadditions:${element}_plastic_transparent_stairs`, 16), Ingredient.of('#forge:stairs/plastic/transparent', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(`16x mekanismadditions:${element}_plastic`, '16x #mekanismadditions:plastic_blocks/plastic', dye);
+    event.recipes.mekanism.combining(`8x mekanismadditions:${element}_plastic`, '8x mekanism:hdpe_sheet', dye);
+    event.recipes.mekanism.combining(`16x mekanismadditions:${element}_plastic_road`, '16x #mekanismadditions:plastic_blocks/road', dye);
+    event.recipes.mekanism.combining(`16x mekanismadditions:${element}_reinforced_plastic`, '16x #mekanismadditions:plastic_blocks/reinforced', dye);
+    event.recipes.mekanism.combining(`16x mekanismadditions:${element}_plastic_fence`, '16x #forge:fences/plastic', dye);
+    event.recipes.mekanism.combining(`16x mekanismadditions:${element}_plastic_fence_gate`, '16x #forge:fence_gates/plastic', dye);
+    event.recipes.mekanism.combining(`16x mekanismadditions:${element}_plastic_transparent_stairs`, '16x #forge:stairs/plastic/transparent', dye);
 
     // IE Sheetmetal Dying
-    event.recipes.mekanism.combining(Item.of(`immersiveengineering:sheetmetal_colored_${element}`, 16), Ingredient.of('#forge:sheetmetals', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(`16x immersiveengineering:sheetmetal_colored_${element}`, '16x #forge:sheetmetals', dye);
 
     // IE Concrete -> Vanilla Concrete
-    event.recipes.mekanism.combining(Item.of(`minecraft:${element}_concrete`, 16), Ingredient.of('immersiveengineering:concrete', 16), `#forge:dyes/${element}`)
+    event.recipes.mekanism.combining(`16x minecraft:${element}_concrete`, '16x immersiveengineering:concrete', dye);
 
     // Quark Dying
-    event.recipes.mekanism.combining(Item.of(`quark:${element}_framed_glass`, 16), Ingredient.of('quark:framed_glass', 16), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`quark:${element}_framed_glass_pane`, 16), Ingredient.of('quark:framed_glass_pane', 16), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`quark:${element}_stained_planks`, 16), Ingredient.of('#minecraft:planks', 16), `#forge:dyes/${element}`)
-    event.recipes.mekanism.combining(Item.of(`quark:${element}_shingles`, 16), Ingredient.of('quark:shingles', 16), `#forge:dyes/${element}`)
-  })
+    event.recipes.mekanism.combining(`16x quark:${element}_framed_glass`, '16x quark:framed_glass', dye);
+    event.recipes.mekanism.combining(`16x quark:${element}_framed_glass_pane`, '16x quark:framed_glass_pane', dye);
+    event.recipes.mekanism.combining(`16x quark:${element}_stained_planks`, '16x #minecraft:planks', dye);
+    event.recipes.mekanism.combining(`16x quark:${element}_shingles`, '16x quark:shingles', dye);
+  });
 
   // Mekanism - Bio Fuel
   // TODO: Add several new tags to simplify this - perhaps #valhelsia:grasses and #valhelsia:small_plants?
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 5), '#minecraft:flowers')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), '#minecraft:saplings')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), '#minecraft:leaves')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), '#forge:seeds')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), '#valhelsia:hanging_leaves')
+  bioCrush('#minecraft:flowers', 5);
+  bioCrush('#minecraft:saplings', 2);
+  bioCrush('#forge:seeds', 2);
+  bioCrush('#valhelsia:hanging_leaves', 2);
+  // TODO: Convert others to shortcut template as tags are made.
 
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'atmospheric:yucca_fruit')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'atmospheric:aloe_leaves')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 5), 'atmospheric:passionfruit')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 4), 'atmospheric:passion_vine')
-
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 4), 'atum:ophidian_tongue')
-
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'autumnity:foul_berries')
-
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'bayou_blues:algae')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 5), 'bayou_blues:beard_moss')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 7), 'bayou_blues:beard_moss_block')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 5), 'bayou_blues:giant_fern')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'bayou_blues:gooseberries')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 5), 'bayou_blues:gooseberry_sack')
-
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'betterendforge:umbrella_moss')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 4), 'betterendforge:umbrella_moss_tall')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'betterendforge:creeping_moss')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'betterendforge:chorus_grass')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'betterendforge:cave_grass')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'betterendforge:crystal_grass')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'betterendforge:amber_grass')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'betterendforge:shadow_plant')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'betterendforge:bushy_grass')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'betterendforge:jungle_grass')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'betterendforge:blooming_cooksonia')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'betterendforge:salteago')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'betterendforge:vaiolush_fern')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'betterendforge:fracturn')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'betterendforge:globulagus')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'betterendforge:clawfern')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'betterendforge:aeridium')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'betterendforge:orango')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'betterendforge:lutebus')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'betterendforge:lamellarium')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 5), 'betterendforge:bolux_mushroom')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 5), 'betterendforge:blue_vine_lantern')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 4), 'betterendforge:blue_vine_fur')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'betterendforge:cave_bush')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 5), 'betterendforge:end_lily_leaf')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 4), 'betterendforge:end_lotus_stem')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'betterendforge:murkweed')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'betterendforge:needlegrass')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'betterendforge:charnia_red')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'betterendforge:charnia_purple')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'betterendforge:charnia_orange')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'betterendforge:charnia_light_blue')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'betterendforge:charnia_cyan')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'betterendforge:charnia_green')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'betterendforge:hydralux_sapling')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 4), 'betterendforge:hydralux_petal_block')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 4), 'betterendforge:lumecorn_rod')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 5), 'betterendforge:glowing_pillar_luminophor')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'betterendforge:glowing_pillar_leaves')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'betterendforge:twisted_umbrella_moss')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 4), 'betterendforge:twisted_umbrella_moss_tall')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'betterendforge:small_jellyshroom')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 4), 'betterendforge:neon_cactus')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 4), 'betterendforge:purple_polypore')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 4), 'betterendforge:aurant_polypore')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 4), 'betterendforge:tail_moss')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 4), 'betterendforge:cyan_moss')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 4), 'betterendforge:twisted_moss')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 4), 'betterendforge:bulb_moss')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 4), 'betterendforge:tube_worm')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 4), 'betterendforge:jungle_fern')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 4), 'betterendforge:ruscus')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 4), 'betterendforge:pond_anemone')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 4), 'betterendforge:dense_vine')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 4), 'betterendforge:twisted_vine')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 4), 'betterendforge:bulb_vine')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 4), 'betterendforge:jungle_vine')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 4), 'betterendforge:rubinea')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'betterendforge:shadow_berry_raw')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'betterendforge:blossom_berry')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 5), 'betterendforge:amber_root_raw')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 5), 'betterendforge:chorus_mushroom_raw')
-
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'biomesoplenty:barley')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 4), 'biomesoplenty:bramble')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'biomesoplenty:bush')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'biomesoplenty:cattail')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'biomesoplenty:clover')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'biomesoplenty:dead_grass')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'biomesoplenty:desert_grass')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'biomesoplenty:dune_grass')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'biomesoplenty:huge_clover_petal')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'biomesoplenty:mangrove_root')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'biomesoplenty:reed')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 4), 'biomesoplenty:spanish_moss')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'biomesoplenty:sprout')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'biomesoplenty:watergrass')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 4), 'biomesoplenty:willow_vine')
-
-  // TODO: Blue Skies compatibility.
-
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'druidcraft:blueberries')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'druidcraft:elderberries')
-
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 5), 'endergetic:poise_bush')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 5), 'endergetic:tall_poise_bush')
-
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'environmental:cattail')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 7), 'environmental:cattail_seed_sack')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'environmental:cherries')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'environmental:duckweed')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 4), 'environmental:tall_cattail')
-
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 7), 'farmersdelight:rice_bale')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 7), 'farmersdelight:straw_bale')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'farmersdelight:straw')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 5), 'farmersdelight:rice_panicle')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 5), 'farmersdelight:cabbage')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 5), 'farmersdelight:tomato')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 5), 'farmersdelight:onion')
-
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'minecraft:melon_slice') // #blameurmet
-
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'neapolitan:banana')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'neapolitan:strawberries')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'neapolitan:white_strawberries')
-
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 7), 'quark:sugar_cane_block')
-
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 5), 'supplementaries:flax')
-
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'twilightforest:torchberries')
-  // TODO: Add more Twilight Forest items here.
-
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'upgrade_aquatic:beachgrass')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 4), 'upgrade_aquatic:tall_beachgrass')
-  event.recipes.mekanism.crushing(Item.of('mekanism:bio_fuel', 2), 'upgrade_aquatic:mulberry')
-
-  event.recipes.mekanism.crushing('4x mekanism:bio_fuel', 'valhelsia_structures:hanging_vines')
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'atmospheric:yucca_fruit');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'atmospheric:aloe_leaves');
+  event.recipes.mekanism.crushing('5x mekanism:bio_fuel', 'atmospheric:passionfruit');
+  event.recipes.mekanism.crushing('4x mekanism:bio_fuel', 'atmospheric:passion_vine');
+  event.recipes.mekanism.crushing('4x mekanism:bio_fuel', 'atum:ophidian_tongue');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'autumnity:foul_berries');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'bayou_blues:algae');
+  event.recipes.mekanism.crushing('5x mekanism:bio_fuel', 'bayou_blues:beard_moss');
+  event.recipes.mekanism.crushing('7x mekanism:bio_fuel', 'bayou_blues:beard_moss_block');
+  event.recipes.mekanism.crushing('5x mekanism:bio_fuel', 'bayou_blues:giant_fern');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'bayou_blues:gooseberries');
+  event.recipes.mekanism.crushing('5x mekanism:bio_fuel', 'bayou_blues:gooseberry_sack');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'betterendforge:umbrella_moss');
+  event.recipes.mekanism.crushing('4x mekanism:bio_fuel', 'betterendforge:umbrella_moss_tall');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'betterendforge:creeping_moss');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'betterendforge:chorus_grass');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'betterendforge:cave_grass');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'betterendforge:crystal_grass');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'betterendforge:amber_grass');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'betterendforge:shadow_plant');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'betterendforge:bushy_grass');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'betterendforge:jungle_grass');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'betterendforge:blooming_cooksonia');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'betterendforge:salteago');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'betterendforge:vaiolush_fern');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'betterendforge:fracturn');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'betterendforge:globulagus');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'betterendforge:clawfern');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'betterendforge:aeridium');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'betterendforge:orango');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'betterendforge:lutebus');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'betterendforge:lamellarium');
+  event.recipes.mekanism.crushing('5x mekanism:bio_fuel', 'betterendforge:bolux_mushroom');
+  event.recipes.mekanism.crushing('5x mekanism:bio_fuel', 'betterendforge:blue_vine_lantern');
+  event.recipes.mekanism.crushing('4x mekanism:bio_fuel', 'betterendforge:blue_vine_fur');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'betterendforge:cave_bush');
+  event.recipes.mekanism.crushing('5x mekanism:bio_fuel', 'betterendforge:end_lily_leaf');
+  event.recipes.mekanism.crushing('4x mekanism:bio_fuel', 'betterendforge:end_lotus_stem');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'betterendforge:murkweed');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'betterendforge:needlegrass');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'betterendforge:charnia_red');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'betterendforge:charnia_purple');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'betterendforge:charnia_orange');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'betterendforge:charnia_light_blue');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'betterendforge:charnia_cyan');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'betterendforge:charnia_green');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'betterendforge:hydralux_sapling');
+  event.recipes.mekanism.crushing('4x mekanism:bio_fuel', 'betterendforge:hydralux_petal_block');
+  event.recipes.mekanism.crushing('4x mekanism:bio_fuel', 'betterendforge:lumecorn_rod');
+  event.recipes.mekanism.crushing('5x mekanism:bio_fuel', 'betterendforge:glowing_pillar_luminophor');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'betterendforge:glowing_pillar_leaves');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'betterendforge:twisted_umbrella_moss');
+  event.recipes.mekanism.crushing('4x mekanism:bio_fuel', 'betterendforge:twisted_umbrella_moss_tall');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'betterendforge:small_jellyshroom');
+  event.recipes.mekanism.crushing('4x mekanism:bio_fuel', 'betterendforge:neon_cactus');
+  event.recipes.mekanism.crushing('4x mekanism:bio_fuel', 'betterendforge:purple_polypore');
+  event.recipes.mekanism.crushing('4x mekanism:bio_fuel', 'betterendforge:aurant_polypore');
+  event.recipes.mekanism.crushing('4x mekanism:bio_fuel', 'betterendforge:tail_moss');
+  event.recipes.mekanism.crushing('4x mekanism:bio_fuel', 'betterendforge:cyan_moss');
+  event.recipes.mekanism.crushing('4x mekanism:bio_fuel', 'betterendforge:twisted_moss');
+  event.recipes.mekanism.crushing('4x mekanism:bio_fuel', 'betterendforge:bulb_moss');
+  event.recipes.mekanism.crushing('4x mekanism:bio_fuel', 'betterendforge:tube_worm');
+  event.recipes.mekanism.crushing('4x mekanism:bio_fuel', 'betterendforge:jungle_fern');
+  event.recipes.mekanism.crushing('4x mekanism:bio_fuel', 'betterendforge:ruscus');
+  event.recipes.mekanism.crushing('4x mekanism:bio_fuel', 'betterendforge:pond_anemone');
+  event.recipes.mekanism.crushing('4x mekanism:bio_fuel', 'betterendforge:dense_vine');
+  event.recipes.mekanism.crushing('4x mekanism:bio_fuel', 'betterendforge:twisted_vine');
+  event.recipes.mekanism.crushing('4x mekanism:bio_fuel', 'betterendforge:bulb_vine');
+  event.recipes.mekanism.crushing('4x mekanism:bio_fuel', 'betterendforge:jungle_vine');
+  event.recipes.mekanism.crushing('4x mekanism:bio_fuel', 'betterendforge:rubinea');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'betterendforge:shadow_berry_raw');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'betterendforge:blossom_berry');
+  event.recipes.mekanism.crushing('5x mekanism:bio_fuel', 'betterendforge:amber_root_raw');
+  event.recipes.mekanism.crushing('5x mekanism:bio_fuel', 'betterendforge:chorus_mushroom_raw');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'biomesoplenty:barley');
+  event.recipes.mekanism.crushing('4x mekanism:bio_fuel', 'biomesoplenty:bramble');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'biomesoplenty:bush');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'biomesoplenty:cattail');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'biomesoplenty:clover');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'biomesoplenty:dead_grass');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'biomesoplenty:desert_grass');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'biomesoplenty:dune_grass');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'biomesoplenty:huge_clover_petal');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'biomesoplenty:mangrove_root');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'biomesoplenty:reed');
+  event.recipes.mekanism.crushing('4x mekanism:bio_fuel', 'biomesoplenty:spanish_moss');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'biomesoplenty:sprout');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'biomesoplenty:watergrass');
+  event.recipes.mekanism.crushing('4x mekanism:bio_fuel', 'biomesoplenty:willow_vine');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'druidcraft:blueberries');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'druidcraft:elderberries');
+  event.recipes.mekanism.crushing('5x mekanism:bio_fuel', 'endergetic:poise_bush');
+  event.recipes.mekanism.crushing('5x mekanism:bio_fuel', 'endergetic:tall_poise_bush');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'environmental:cattail');
+  event.recipes.mekanism.crushing('7x mekanism:bio_fuel', 'environmental:cattail_seed_sack');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'environmental:cherries');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'environmental:duckweed');
+  event.recipes.mekanism.crushing('4x mekanism:bio_fuel', 'environmental:tall_cattail');
+  event.recipes.mekanism.crushing('7x mekanism:bio_fuel', 'farmersdelight:rice_bale');
+  event.recipes.mekanism.crushing('7x mekanism:bio_fuel', 'farmersdelight:straw_bale');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'farmersdelight:straw');
+  event.recipes.mekanism.crushing('5x mekanism:bio_fuel', 'farmersdelight:rice_panicle');
+  event.recipes.mekanism.crushing('5x mekanism:bio_fuel', 'farmersdelight:cabbage');
+  event.recipes.mekanism.crushing('5x mekanism:bio_fuel', 'farmersdelight:tomato');
+  event.recipes.mekanism.crushing('5x mekanism:bio_fuel', 'farmersdelight:onion');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'minecraft:melon_slice'); // #blameurmet
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'neapolitan:banana');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'neapolitan:strawberries');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'neapolitan:white_strawberries');
+  event.recipes.mekanism.crushing('7x mekanism:bio_fuel', 'quark:sugar_cane_block');
+  event.recipes.mekanism.crushing('5x mekanism:bio_fuel', 'supplementaries:flax');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'twilightforest:torchberries');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'upgrade_aquatic:beachgrass');
+  event.recipes.mekanism.crushing('4x mekanism:bio_fuel', 'upgrade_aquatic:tall_beachgrass');
+  event.recipes.mekanism.crushing('2x mekanism:bio_fuel', 'upgrade_aquatic:mulberry');
+  event.recipes.mekanism.crushing('4x mekanism:bio_fuel', 'valhelsia_structures:hanging_vines');
 
   // Minecraft
-  event.recipes.mekanism.crushing('5x minecraft:bone_meal', 'minecraft:bone')
-  event.recipes.mekanism.crushing('9x minecraft:bone_meal', 'minecraft:bone_block')
+  event.recipes.mekanism.crushing('5x minecraft:bone_meal', 'minecraft:bone');
+  event.recipes.mekanism.crushing('9x minecraft:bone_meal', 'minecraft:bone_block');
 
   // Mystical World
-  event.recipes.mekanism.crushing('15x minecraft:bone_meal', 'mysticalworld:antlers')
+  event.recipes.mekanism.crushing('15x minecraft:bone_meal', 'mysticalworld:antlers');
 
   // Immersive Engineering Compat
-  event.recipes.mekanism.enriching('2x mekanism:enriched_carbon', '#forge:coal_coke')
-  infusionConversion('mekanism:carbon', '#forge:coal_coke', 40)
-  infusionConversion('mekanism:carbon', '#forge:dusts/coal_coke', 40)
+  event.recipes.mekanism.enriching('2x mekanism:enriched_carbon', '#forge:coal_coke');
+  infusionConversion('mekanism:carbon', '#forge:coal_coke', 40);
+  infusionConversion('mekanism:carbon', '#forge:dusts/coal_coke', 40);
 
   // Powah
-  event.recipes.mekanism.enriching('4x mekanism:nugget_uranium', 'powah:uraninite')
+  event.recipes.mekanism.enriching('4x mekanism:nugget_uranium', 'powah:uraninite');
 
   // Upgrade Aquatic - converts more kelp per dye.
-  event.recipes.mekanism.combining('8x upgrade_aquatic:ochre_kelp', '8x minecraft:kelp', '#forge:dyes/yellow')
-  event.recipes.mekanism.combining('8x upgrade_aquatic:polar_kelp', '8x minecraft:kelp', '#forge:dyes/cyan')
-  event.recipes.mekanism.combining('8x upgrade_aquatic:thorny_kelp', '8x minecraft:kelp', '#forge:dyes/brown')
-  event.recipes.mekanism.combining('8x upgrade_aquatic:tongue_kelp', '8x minecraft:kelp', '#forge:dyes/red')
+  event.recipes.mekanism.combining('8x upgrade_aquatic:ochre_kelp', '8x minecraft:kelp', '#forge:dyes/yellow');
+  event.recipes.mekanism.combining('8x upgrade_aquatic:polar_kelp', '8x minecraft:kelp', '#forge:dyes/cyan');
+  event.recipes.mekanism.combining('8x upgrade_aquatic:thorny_kelp', '8x minecraft:kelp', '#forge:dyes/brown');
+  event.recipes.mekanism.combining('8x upgrade_aquatic:tongue_kelp', '8x minecraft:kelp', '#forge:dyes/red');
   
 });
