@@ -10,15 +10,15 @@
 onEvent('jei.information', event => {
   // TODO: Change things here to use language entries.
 
+  const REQUIRES_GRASS = " Requires a Grass Block surface for the spawner to work.";
+  const REQUIRES_MYCELIUM = " Requires a Mycelium surface for the spawner to work.";
+
   // Apotheosis
   const addApotheosisEntry = (id, mob, extra) => {
     extra = (typeof extra !== 'undefined') ? extra : "";
 
     event.add(id, `Using a ${mob} Spawn Egg on a spawner will convert the spawner into a ${mob} spawner.${extra}`);
-  }
-
-  const REQUIRES_GRASS = " Requires a Grass Block surface for the spawner to work.";
-  const REQUIRES_MYCELIUM = " Requires a Mycelium surface for the spawner to work.";
+  };
 
   // Apotheosis - Minecraft Mobs
   addApotheosisEntry('minecraft:creeper_spawn_egg', "Creeper");
@@ -86,14 +86,16 @@ onEvent('jei.information', event => {
   event.add('minecraft:sweet_berries', "Craft Sweet Berries into Sweet Berry Pips in order to be able to plant them.");
 
   // Mystical World
-  var amethystArmour = [
-    'mysticalworld:amethyst_helmet',
-    'mysticalworld:amethyst_chestplate',
-    'mysticalworld:amethyst_leggings',
-    'mysticalworld:amethyst_boots'
-  ];
-
-  event.add(amethystArmour, ["The Serendipity statistic provides a bonus to both Fortune and Looting.", " ", "The Luck statistic provides a bonus while fishing (in the same manner as \"Luck of the Sea\") and a chance to receive better loot in some structures."]);
+  event.add([
+    'mysticalworld:sapphire_helmet',
+    'mysticalworld:sapphire_chestplate',
+    'mysticalworld:sapphire_leggings',
+    'mysticalworld:sapphire_boots'
+  ], [
+    "The Serendipity statistic provides a bonus to both Fortune and Looting.", 
+    " ", 
+    "The Luck statistic provides a bonus while fishing (in the same manner as \"Luck of the Sea\") and a chance to receive better loot in some structures."
+  ]);
 
   // Neapolitan
   event.add('neapolitan:small_banana_frond', "To grow a Banana Plant from a Small Banana Frond, place the frond onto a block of Sand or Gravel and wait for it to rain. You can also grow them with bone meal while it is raining.");
