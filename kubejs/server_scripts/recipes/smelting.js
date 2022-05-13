@@ -12,6 +12,10 @@
  * 
  * Includes functions for frequently used recipe templates.
  */
+
+/**
+ * Smelting Recipe Event Handler
+ */
 onEvent('recipes', event => {
 
   /**
@@ -26,16 +30,16 @@ onEvent('recipes', event => {
   };
 
   // Aquaculture (tin cans smelt into tin instead of iron)
-  smeltAndBlast(Item.of('mekanism:nugget_tin', 7), 'aquaculture:tin_can', 0.1);
+  smeltAndBlast('7x mekanism:nugget_tin', 'aquaculture:tin_can', 0.1);
 
   // Biomes 'o' Plenty
   event.smelting('mysticalworld:mud_block', 'biomesoplenty:mud').xp(0.1);
 
   // Create
-  smeltAndBlast(Item.of('mekanism:ingot_copper', 1), '#create:crushed_ores/copper', 0.35);
+  smeltAndBlast('mekanism:ingot_copper', '#create:crushed_ores/copper', 0.35);
 
   // Immersive Engineering
-  smeltAndBlast(Item.of('immersiveengineering:ingot_silver', 1), '#forge:dusts/silver', 0.35);
+  smeltAndBlast('immersiveengineering:ingot_silver', '#forge:dusts/silver', 0.35);
 
   // Mekanism
   event.smelting('biomesoplenty:dried_salt', 'mekanism:block_salt').xp(0.1);
