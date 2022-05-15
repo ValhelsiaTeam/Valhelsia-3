@@ -8,15 +8,13 @@
 //
 
 onEvent('recipes', event => {
-
-  // To simplify creation of 2x2 and 3x3 storage recipes:
-  let storage2x2 = (output, input) => {
-    event.shaped(output, ['AA', 'AA'], {A: input})
-  }
-
-  let storage3x3 = (output, input) => {
-    event.shaped(output, ['AAA', 'AAA', 'AAA'], {A: input})
-  }
+  
+  // Convenience Functions:
+  const shaped2x2 = (output, input) => {event.shaped(output, ['AA', 'AA'], {A: input})};
+  const shaped3x3 = (output, input) => {event.shaped(output, ['AAA', 'AAA', 'AAA'], {A: input})};
+  const donut = (output, input) => {event.shaped(output, ['AAA', 'A A', 'AAA'], {A: input})};
+  const wrapped = (output, core, wrap) => {event.shaped(output, ['AAA', 'ABA', 'AAA'], {A: wrap, B: core})};
+  const barrel = (output, plank, slab) => {event.shaped(output, ['ABA', 'A A', 'ABA'], {A: plank, B: slab})};
 
   // Minecraft
   event.shaped('minecraft:bookshelf', [
@@ -26,14 +24,16 @@ onEvent('recipes', event => {
   ], {
     A: '#minecraft:planks',
     B: 'minecraft:book'
-  })
+  });
+
   event.shaped('minecraft:chest', [
     'AAA',
     'A A',
     'AAA'
   ], {
     A: '#minecraft:planks'
-  })
+  });
+
   event.shaped('4x minecraft:ladder', [
     'A A',
     'ABA',
@@ -41,59 +41,66 @@ onEvent('recipes', event => {
   ], {
     A: '#forge:rods/wooden',
     B: '#minecraft:planks'
-  })
+  });
+
   event.shaped('minecraft:chainmail_helmet', [
     'AAA',
     'A A'
   ], {
     A: 'forbidden_arcanus:iron_chain'
-  })
+  });
   event.shaped('minecraft:chainmail_chestplate', [
     'A A',
     'AAA',
     'AAA'
   ], {
     A: 'forbidden_arcanus:iron_chain'
-  })
+  });
+
   event.shaped('minecraft:chainmail_leggings', [
     'AAA',
     'A A',
     'A A'
   ], {
     A: 'forbidden_arcanus:iron_chain'
-  })
+  });
+
   event.shaped('minecraft:chainmail_boots', [
     'A A',
     'A A'
   ], {
     A: 'forbidden_arcanus:iron_chain'
-  })
+  });
+
   event.shaped('minecraft:chainmail_helmet', [
     'AAA',
     'A A'
   ], {
     A: 'minecraft:chain'
-  })
+  });
+
   event.shaped('minecraft:chainmail_chestplate', [
     'A A',
     'AAA',
     'AAA'
   ], {
     A: 'minecraft:chain'
-  })
+  });
+
   event.shaped('minecraft:chainmail_leggings', [
     'AAA',
     'A A',
     'A A'
   ], {
     A: 'minecraft:chain'
-  })
+  });
+  
   event.shaped('minecraft:chainmail_boots', [
     'A A',
     'A A'
   ], {
     A: 'minecraft:chain'
-  })
+  });
 
   // Alternate recipe for Dark Prismarine: Uses any black dye instead of ink sacs.
   event.shaped('minecraft:dark_prismarine', [
@@ -103,14 +110,14 @@ onEvent('recipes', event => {
   ], {
     S: 'minecraft:prismarine_shard',
     B: '#forge:dyes/black'
-  })
+  });
 
   // Adding this back in as it gets removed earlier in the loading process.
-  storage3x3('minecraft:slime_block', 'minecraft:slime_ball')
+  shaped3x3('minecraft:slime_block', 'minecraft:slime_ball');
 
   // Abundance
   // Adding this back in as it gets removed earlier in the loading process.
-  storage3x3('abundance:lavender_basket', 'abundance:lavender')
+  shaped3x3('abundance:lavender_basket', 'abundance:lavender');
 
   // Alex's Mobs
   // Alternate Trident Recipe using Shark Teeth instead of Thrasher Teeth.
@@ -121,10 +128,10 @@ onEvent('recipes', event => {
   ], {
     T: 'alexsmobs:shark_tooth',
     R: '#forge:rods/prismarine'
-  })
+  });
 
   // Aquaculture
-  storage2x2('bayou_blues:algae_thatch', 'aquaculture:algae')
+  shaped2x2('bayou_blues:algae_thatch', 'aquaculture:algae');
 
   // Bayou Blues
   // Replacement for a currently broken recipe (remove me if Team Aurora accepts the PR).
@@ -134,7 +141,7 @@ onEvent('recipes', event => {
   ], {
     A: 'bayou_blues:gooseberry_jam',
     B: '#forge:crops/wheat'
-  })
+  });
 
   // Botania
 
@@ -146,7 +153,7 @@ onEvent('recipes', event => {
   ], {
     A: 'minecraft:iron_ingot',
     B: 'minecraft:iron_nugget'
-  })
+  });
 
   event.shaped('4x decorative_blocks:rocky_dirt', [
     'AB',
@@ -154,39 +161,39 @@ onEvent('recipes', event => {
   ], {
     A: 'minecraft:dirt',
     B: 'minecraft:cobblestone'
-  })
+  });
 
   // Druidcraft
   event.shaped('druidcraft:rope', [
     'AAA'
   ], {
     A: '#forge:fiber_hemp'
-  })
+  });
 
   // Environmental
   // Allow Cattail Thatch to be crafted from BoP Cattail too.
-  storage2x2('4x environmental:cattail_thatch', 'biomesoplenty:cattail')
+  shaped2x2('4x environmental:cattail_thatch', 'biomesoplenty:cattail');
 
   // Farmer's Delight
-  storage3x3('farmersdelight:organic_compost', 'minecolonies:compost')
+  shaped3x3('farmersdelight:organic_compost', 'minecolonies:compost');
 
   // Immersive Engineering
-  storage3x3('immersiveengineering:ingot_silver', '#forge:nuggets/silver')
-  storage3x3('immersiveengineering:storage_silver', '#forge:ingots/silver')
-  storage3x3('immersiveengineering:storage_uranium', '#forge:ingots/uranium')
-  storage3x3('immersiveengineering:storage_steel', '#forge:ingots/steel')
-  storage3x3('immersiveengineering:storage_copper', '#forge:ingots/copper')
-  storage3x3('immersiveengineering:storage_lead', '#forge:ingots/lead')
+  shaped3x3('immersiveengineering:ingot_silver', '#forge:nuggets/silver');
+  shaped3x3('immersiveengineering:storage_silver', '#forge:ingots/silver');
+  shaped3x3('immersiveengineering:storage_uranium', '#forge:ingots/uranium');
+  shaped3x3('immersiveengineering:storage_steel', '#forge:ingots/steel');
+  shaped3x3('immersiveengineering:storage_copper', '#forge:ingots/copper');
+  shaped3x3('immersiveengineering:storage_lead', '#forge:ingots/lead');
 
   // Industrial Foregoing
   // Note: This deliberately can't be turned back into pink slime, to prevent avoiding gating.
-  storage3x3('quark:magenta_slime_block', 'industrialforegoing:pink_slime')
+  shaped3x3('quark:magenta_slime_block', 'industrialforegoing:pink_slime');
 
   // Mystical World
-  storage3x3('mysticalworld:silver_block', '#forge:ingots/silver')
+  shaped3x3('mysticalworld:silver_block', '#forge:ingots/silver');
 
   // Powah!
-  storage2x2('powah:uraninite', 'mekanism:nugget_uranium')
+  shaped2x2('powah:uraninite', 'mekanism:nugget_uranium');
 
   // Quark
   event.shaped('quark:ravager_hide', [
@@ -197,7 +204,7 @@ onEvent('recipes', event => {
     A: 'minecraft:rabbit_hide',
     B: 'forbidden_arcanus:rotten_leather',
     C: 'quark:bonded_leather'
-  })
+  });
 
   // Supplementaries
   // TODO: Allow the sack to be created using materials other than flax.
@@ -211,5 +218,5 @@ onEvent('recipes', event => {
   ], {
     S: '#forge:bookshelves',
     B: 'minecraft:book'
-  })
+  });
 });
