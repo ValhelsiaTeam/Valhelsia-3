@@ -10,76 +10,78 @@
 onEvent('recipes', event => {
   
   // Add a crushing recipe to multiple mods.
-  let crush = (output, input) => {
+  const crush = (output, input) => {
     // Note: Output needs to be divided into primary + secondary for certain crushing types.
     // Until this is done, don't include any secondary output recipes here.
-    event.recipes.immersiveengineering.crusher(output, input)
-    event.recipes.mekanism.crushing(output, input)
-    event.recipes.create.crushing(output, input)
-  }
+    event.recipes.immersiveengineering.crusher(output, input);
+    event.recipes.mekanism.crushing(output, input);
+    event.recipes.create.crushing(output, input);
+  };
 
   // Add a milling recipe to multiple mods.
-  let mill = (output, input) => {
-    event.recipes.create.milling(output, input)
-    // TODO: Add Atum Quern here.
-  }
+  // All milling recipes are also automatically made into crushing recipes.
+  // Note: Currently doesn't accept secondary outputs.
+  const mill = (output, input) => {
+    event.recipes.create.milling(output, input);
 
-  // Add a milling and crushing recipe to multiple mods.
-  let millAndCrush = (output, input) => {
-    crush(output, input)
-    mill(output, input)
-  }
+    // Atum Quern Milling
+    event.custom({
+      type: 'atum:quern',
+      ingredient: Ingredient.of(input).toJson(),
+      result: Item.of(output).toResultJson(),
+      rotations: 2 // 2 is a reasonable default for most milling here.
+    });
 
-  // ----- Remove Old Crushing Recipes -----
+    crush(output, input);
+  };
+
+  // ----- Remove Old Crushing and Milling Recipes -----
   [
-    'create:milling/andesite'
-    // TODO: Check Create's recipe for granite crushing, I think it needs to be removed.
-    // TODO: Also check Gabbro crushing.
-  ].forEach(function (remove) {
-    event.remove({id: remove})
-  })
+    'create:milling/andesite',
+    'create:milling/granite'
+  ].forEach((recipeID) => event.remove({id: recipeID}));
 
   // ----- Add New Crushing Recipes -----
 
   // Rock to Sand Crushing
-  millAndCrush('atmospheric:arid_sand', 'darkerdepths:aridrock')
-  millAndCrush('atmospheric:arid_sand', 'create:gabbro')
-  millAndCrush('atmospheric:red_arid_sand', 'quark:jasper')
-  millAndCrush('biomesoplenty:white_sand', 'quark:marble')
-  millAndCrush('biomesoplenty:black_sand', 'minecraft:basalt')
-  millAndCrush('blue_skies:crystal_sand', 'create:dolomite')
-  millAndCrush('blue_skies:midnight_sand', 'quark:cobbled_deepslate')
-  millAndCrush('minecraft:red_sand', 'minecraft:granite')
+  mill('atmospheric:arid_sand', 'darkerdepths:aridrock');
+  mill('atmospheric:arid_sand', 'create:gabbro');
+  mill('atmospheric:red_arid_sand', 'quark:jasper');
+  mill('biomesoplenty:white_sand', 'quark:marble');
+  mill('biomesoplenty:black_sand', 'minecraft:basalt');
+  mill('blue_skies:crystal_sand', 'create:dolomite');
+  mill('blue_skies:midnight_sand', 'quark:cobbled_deepslate');
+  mill('minecraft:red_sand', 'minecraft:granite');
 
   // Aquaculture
-  millAndCrush('5x minecraft:bone_meal', 'aquaculture:fish_bones')
+  mill('5x minecraft:bone_meal', 'aquaculture:fish_bones');
 
   // Atum
-  millAndCrush('6x minecraft:bone_meal', 'atum:dusty_bone')
-  millAndCrush('9x minecraft:bone_meal', 'atum:dirty_bone_block')
+  mill('6x minecraft:bone_meal', 'atum:dusty_bone');
+  mill('9x minecraft:bone_meal', 'atum:dirty_bone_block');
 
   // BetterEnd
-  millAndCrush('betterendforge:ender_dust', 'betterendforge:ender_shard')
-  millAndCrush('betterendforge:ender_dust', 'minecraft:ender_pearl')
+  mill('betterendforge:ender_dust', 'betterendforge:ender_shard');
+  mill('betterendforge:ender_dust', 'minecraft:ender_pearl');
 
   // Biomes 'o' Plenty
-  millAndCrush('4x minecraft:rotten_flesh', 'biomesoplenty:flesh')
+  mill('4x minecraft:rotten_flesh', 'biomesoplenty:flesh');
 
   // Create
-  millAndCrush('create:andesite_cobblestone', 'minecraft:andesite')
+  mill('create:andesite_cobblestone', 'minecraft:andesite');
   
   // Decorative Blocks
-  millAndCrush('minecraft:coarse_dirt', 'decorative_blocks:rocky_dirt')
+  mill('minecraft:coarse_dirt', 'decorative_blocks:rocky_dirt');
   
   // Druidcraft
-  millAndCrush('druidcraft:crushed_fiery_glass', '#forge:gems/fiery_glass')
+  mill('druidcraft:crushed_fiery_glass', '#forge:gems/fiery_glass');
 
   // Mekanism
-  millAndCrush('mekanism:sawdust', 'biomesoplenty:dead_branch')
+  mill('mekanism:sawdust', 'biomesoplenty:dead_branch');
 
   // Mystical World
-  millAndCrush('15x minecraft:bone_meal', 'mysticalworld:antlers')
+  mill('15x minecraft:bone_meal', 'mysticalworld:antlers');
 
   // Upgrade Aquatic
-  millAndCrush('10x minecraft:bone_meal', 'upgrade_aquatic:thrasher_tooth')
+  mill('10x minecraft:bone_meal', 'upgrade_aquatic:thrasher_tooth');
 });
