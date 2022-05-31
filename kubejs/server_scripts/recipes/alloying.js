@@ -7,22 +7,31 @@
 //   \_/ \__,_|_|_| |_|\___|_|___/_|\__,_| |____/ 
 //
 
+/**
+ * Alloying recipe event handler.
+ * Used to add and remove alloying recipes to the pack.
+ */
 onEvent('recipes', event => {
   
-  // Add an alloying recipe to multiple mods.
-  let alloy = (output, input0, input1) => {
+  /**
+   * Adds an alloying recipe to multiple mods.
+   * @param {(string|Item)} output Resulting alloy.
+   * @param {(string|Ingredient)} input0 First ingredient.
+   * @param {(string|Ingredient)} input1 Second ingredient.
+   */
+  const alloy = (output, input0, input1) => {
     event.recipes.immersiveengineering.alloy(output, input0, input1);
 
     if (Ingredient.of(input0).count == 1 && Ingredient.of(input1).count == 1) {
       event.custom({
-        "type": "betterendforge:alloying",
-        "ingredients": [
+        type: 'betterendforge:alloying',
+        ingredients: [
           Ingredient.of(input0).toJson(),
           Ingredient.of(input1).toJson()
         ],
-        "result": Item.of(output).toResultJson(),
-        "experience": 3.0,
-        "smelttime": 450
+        result: Item.of(output).toResultJson(),
+        experience: 3.0,
+        smelttime: 450
       });
     };
 
@@ -39,9 +48,7 @@ onEvent('recipes', event => {
     'immersiveengineering:alloysmelter/constantan',
     'immersiveengineering:alloysmelter/electrum',
     // TODO: Remove Create's recipes once added below.
-  ].forEach(function (remove) {
-    event.remove({id: remove});
-  });
+  ].forEach((recipeID) => event.remove({id: recipeID}));
 
   // BetterEnd
   alloy('betterendforge:aeternium_ingot', '#forge:ingots/terminite', '#forge:ingots/netherite');
