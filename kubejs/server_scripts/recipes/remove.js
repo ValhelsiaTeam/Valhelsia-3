@@ -9,8 +9,8 @@
 
 onEvent('recipes', event => {
 
-  var idRemove = [
-
+  // Remove recipes by recipe ID.
+  [
     // Abnormals Delight
     'abnormals_delight:environmental/cooking/squid_ink_risotto', // Squid Ink Risotto has been removed from Environmental.
 
@@ -210,14 +210,17 @@ onEvent('recipes', event => {
     // Quark
     'quark:building/crafting/oak_bookshelf', // Duplicate recipe.
     'quark:building/crafting/oak_ladder', // Duplicate recipe.
-    'quark:building/crafting/charcoal_block_uncompress' // Duplicate recipe.
-  ]
+    'quark:building/crafting/charcoal_block_uncompress', // Duplicate recipe.
+  ].forEach((recipeID) => event.remove({id: recipeID}));
 
-  idRemove.forEach(function (remove) {
-    event.remove({id: remove})
-  })
+  
+  // Remove recipes by input.
+  [
+    // None yet.
+  ].forEach((ingredientID) => event.remove({input: ingredientID}));
 
-  var outputRemove = [
+  // Remove recipes by output.
+  [
     // Comforts
     'comforts:sleeping_bag_white', // This and below are replaced with bedrolls from Upgrade Aquatic / Druidcraft
     'comforts:sleeping_bag_orange',
@@ -297,11 +300,7 @@ onEvent('recipes', event => {
     // Quark
     'quark:beetroot_crate', // These crates are replaced with Farmer's Delight ones.
     'quark:carrot_crate', // Although they could probably be disabled in the config for Quark instead.
-    'quark:potato_crate'
-  ]
-
-  outputRemove.forEach(function (remove) {
-    event.remove({output: remove})
-  })
+    'quark:potato_crate',
+  ].forEach((itemID) => event.remove({output: itemID}));
 
 });

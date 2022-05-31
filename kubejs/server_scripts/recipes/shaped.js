@@ -49,6 +49,7 @@ onEvent('recipes', event => {
   ], {
     A: 'forbidden_arcanus:iron_chain'
   });
+  
   event.shaped('minecraft:chainmail_chestplate', [
     'A A',
     'AAA',
@@ -94,7 +95,7 @@ onEvent('recipes', event => {
   ], {
     A: 'minecraft:chain'
   });
-  
+
   event.shaped('minecraft:chainmail_boots', [
     'A A',
     'A A'

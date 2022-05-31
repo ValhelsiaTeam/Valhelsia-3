@@ -8,5 +8,5 @@
 //
 
 onEvent('block.modification', event => {
-
-})
+  // Placeholder event.
+});
