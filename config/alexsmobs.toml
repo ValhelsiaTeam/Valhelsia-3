@@ -85,19 +85,19 @@
 	[general.spawning]
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 		#Range: 0 ~ 1000
-		grizzlyBearSpawnWeight = 3
+		grizzlyBearSpawnWeight = 4
 		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 		#Range: > 0
 		grizzlyBearSpawnRolls = 0
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 		#Range: 0 ~ 1000
-		roadrunnerSpawnWeight = 6
+		roadrunnerSpawnWeight = 5
 		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 		#Range: > 0
 		roadrunnerSpawnRolls = 1
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 		#Range: 0 ~ 1000
-		boneSerpentSpawnWeight = 0
+		boneSerpentSpawnWeight = 2
 		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 		#Range: > 0
 		boneSeprentSpawnRolls = 30
@@ -121,7 +121,7 @@
 		flySpawnRolls = 2
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 		#Range: 0 ~ 1000
-		hummingbirdSpawnWeight = 19.5
+		hummingbirdSpawnWeight = 20
 		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 		#Range: > 0
 		hummingbirdSpawnRolls = 1
@@ -145,7 +145,7 @@
 		gorillaSpawnRolls = 0
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 		#Range: 0 ~ 1000
-		crimsonMosquitoSpawnWeight = 7.5
+		crimsonMosquitoSpawnWeight = 8
 		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 		#Range: > 0
 		crimsonMosquitoSpawnRolls = 0
@@ -154,28 +154,28 @@
 		rattlesnakeSpawnWeight = 4
 		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 		#Range: > 0
-		rattlesnakeSpawnRolls = 0
+		rattlesnakeSpawnRolls = 1
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 		#Range: 0 ~ 1000
-		endergradeSpawnWeight = 5
+		endergradeSpawnWeight = 6
 		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 		#Range: > 0
 		endergradeSpawnRolls = 0
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 		#Range: 0 ~ 1000
-		hammerheadSharkSpawnWeight = 4
+		hammerheadSharkSpawnWeight = 5
 		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 		#Range: > 0
 		hammerheadSharkSpawnRolls = 1
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 		#Range: 0 ~ 1000
-		lobsterSpawnWeight = 3.5
+		lobsterSpawnWeight = 5
 		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 		#Range: > 0
 		lobsterSpawnRolls = 0
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 		#Range: 0 ~ 1000
-		komodoDragonSpawnWeight = 2
+		komodoDragonSpawnWeight = 3
 		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 		#Range: > 0
 		komodoDragonSpawnRolls = 1
@@ -199,7 +199,7 @@
 		warpedToadSpawnRolls = 0
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 		#Range: 0 ~ 1000
-		mooseSpawnWeight = 5.5
+		mooseSpawnWeight = 6
 		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 		#Range: > 0
 		mooseSpawnRolls = 0
@@ -223,7 +223,7 @@
 		blobfishSpawnRolls = 0
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 		#Range: 0 ~ 1000
-		sealSpawnWeight = 12.5
+		sealSpawnWeight = 13
 		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 		#Range: > 0
 		sealSpawnRolls = 0
@@ -265,7 +265,7 @@
 		spectreSpawnRolls = 5
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 		#Range: 0 ~ 1000
-		crowSpawnWeight = 2.5
+		crowSpawnWeight = 3
 		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 		#Range: > 0
 		crowSpawnRolls = 0
@@ -277,13 +277,13 @@
 		alligatorSnappingTurtleSpawnRolls = 1
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 		#Range: 0 ~ 1000
-		mungusSpawnWeight = 2
+		mungusSpawnWeight = 3
 		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 		#Range: > 0
 		mungusSpawnRolls = 1
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 		#Range: 0 ~ 1000
-		mantisShrimpSpawnWeight = 7.5
+		mantisShrimpSpawnWeight = 8
 		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 		#Range: > 0
 		mantisShrimpSpawnRolls = 0
@@ -325,7 +325,7 @@
 		platypusSpawnRolls = 0
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 		#Range: 0 ~ 1000
-		dropbearSpawnWeight = 3.5
+		dropbearSpawnWeight = 4
 		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 		#Range: > 0
 		dropbearSpawnRolls = 1
@@ -349,10 +349,10 @@
 		cachalotWhaleSpawnRolls = 0
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 		#Range: 0 ~ 1000
-		enderiophageSpawnWeight = 2
+		enderiophageSpawnWeight = 4
 		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 		#Range: > 0
-		enderiophageSpawnRolls = 3
+		enderiophageSpawnRolls = 2
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 		#Range: 0 ~ 1000
 		baldEagleSpawnWeight = 8
