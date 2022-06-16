@@ -19,21 +19,53 @@
 onEvent('recipes', event => {
 
   /**
-   * Adds a recipe to both the furnace and blast furnace.
+   * Adds a smelting recipe for the furnace.
    * @param {(string|Item)} output Resulting smelted item.
    * @param {(string|Ingredient)} input Ingredient to be smelted.
-   * @param {number} xp Experience given by smelting the item.
+   * @param {number} [xp] Experience given by smelting the item.
+   */
+  const smelt = (output, input, xp) => {
+    if (typeof xp == 'undefined') {
+      xp = 0.1;
+    }
+
+    event.smelting(output, input).xp(xp);
+  };
+
+  /**
+   * Adds a blasting recipe to the vanilla blast furnace.
+   * @param {(string|Item)} output Resulting blasted item.
+   * @param {(string|Ingredient)} input Ingredient to be blasted.
+   * @param {number} [xp] Experience given by blasting the item.
+   */
+  const blast = (output, input, xp) => {
+    if (typeof xp == 'undefined') {
+      xp = 0.1;
+    }
+
+    event.blasting(output, input).xp(xp);
+  };
+
+  /**
+   * Adds a smelting recipe to both the furnace and blast furnace.
+   * @param {(string|Item)} output Resulting smelted item.
+   * @param {(string|Ingredient)} input Ingredient to be smelted.
+   * @param {number} [xp] Experience given by smelting the item.
    */
   const smeltAndBlast = (output, input, xp) => {
+    if (typeof xp == 'undefined') {
+      xp = 0.1;
+    }
+
     event.smelting(output, input).xp(xp);
     event.blasting(output, input).xp(xp);
   };
 
   // Aquaculture (tin cans smelt into tin instead of iron)
-  smeltAndBlast('7x mekanism:nugget_tin', 'aquaculture:tin_can', 0.1);
+  smeltAndBlast('7x mekanism:nugget_tin', 'aquaculture:tin_can');
 
   // Biomes 'o' Plenty
-  event.smelting('mysticalworld:mud_block', 'biomesoplenty:mud').xp(0.1);
+  smelt('mysticalworld:mud_block', 'biomesoplenty:mud');
 
   // Create
   smeltAndBlast('mekanism:ingot_copper', '#create:crushed_ores/copper', 0.35);
@@ -42,5 +74,5 @@ onEvent('recipes', event => {
   smeltAndBlast('immersiveengineering:ingot_silver', '#forge:dusts/silver', 0.35);
 
   // Mekanism
-  event.smelting('biomesoplenty:dried_salt', 'mekanism:block_salt').xp(0.1);
+  smelt('biomesoplenty:dried_salt', 'mekanism:block_salt');
 });
