@@ -15,7 +15,7 @@ onEvent('item.tags', event => {
 
   // Add Compatibility between all of the mods that use knives (excluding Druidcraft's one, which has no durability).
   // Mystical World Knives
-  var mwKnives = [
+  let mwKnives = [
     'mysticalworld:sapphire_knife',
     'mysticalworld:cactus_knife',
     'mysticalworld:copper_knife',
@@ -34,7 +34,7 @@ onEvent('item.tags', event => {
   event.add('forge:fillet_knife', mwKnives);
 
   // Farmer's Delight Knives
-  var fdKnives = [
+  let fdKnives = [
     'farmersdelight:flint_knife',
     'farmersdelight:iron_knife',
     'farmersdelight:diamond_knife',
@@ -45,7 +45,7 @@ onEvent('item.tags', event => {
   event.add('forge:fillet_knife', fdKnives);
 
   // Aquaculture Knives
-  var aqKnives = [
+  let aqKnives = [
     'aquaculture:wooden_fillet_knife',
     'aquaculture:stone_fillet_knife',
     'aquaculture:iron_fillet_knife',
@@ -104,8 +104,8 @@ onEvent('item.tags', event => {
     '#forge:mushrooms',
   ]);
 
-  // Missing #forge:sapling item tags.
-  var saplings = [
+  // Missing #forge:sapling item tags (which mod even uses this?).
+  event.add('forge:sapling', [
     'quark:yellow_blossom_sapling',
     'quark:lavender_blossom_sapling',
     'quark:pink_blossom_sapling',
@@ -163,9 +163,7 @@ onEvent('item.tags', event => {
     'twilightforest:transformation_sapling',
     'twilightforest:mining_sapling',
     'twilightforest:sorting_sapling',
-  ];
-
-  event.add('forge:sapling', saplings);
+  ]);
 
   // Missing #minecraft:logs_that_burn item tags.
   event.add('minecraft:logs_that_burn', [
@@ -197,12 +195,12 @@ onEvent('item.tags', event => {
   ]);
   
   // Missing Wall Tags
-  var woodenWalls = [
+  let woodenWalls = [
     'blockcarpentry:frame_wall',
     'blockcarpentry:illusion_wall',
   ];
 
-  var stoneWalls = [
+  let stoneWalls = [
     'betterendforge:flavolite_wall',
     'betterendforge:flavolite_bricks_wall',
     'betterendforge:violecite_wall',
@@ -227,7 +225,7 @@ onEvent('item.tags', event => {
        .add(stoneWalls);
 
   // Missing Stair Tags
-  var woodenStairs = [
+  let woodenStairs = [
     'absentbydesign:stairs_red_mushroom',
     'absentbydesign:stairs_brown_mushroom',
     'absentbydesign:stairs_mushroom_stem',
@@ -239,7 +237,7 @@ onEvent('item.tags', event => {
     'immersiveengineering:stairs_treated_wood_packaged',
   ];
 
-  var stoneStairs = [
+  let stoneStairs = [
     'astralsorcery:marble_stairs',
     'astralsorcery:black_marble_stairs',
     'betterendforge:dragon_bone_stairs',
@@ -265,7 +263,7 @@ onEvent('item.tags', event => {
     'darkerdepths:grimestone_bricks_stairs'
   ];
 
-  var miscStairs = [
+  let miscStairs = [
     'immersiveengineering:stairs_concrete',
     'immersiveengineering:stairs_concrete_tile',
     'immersiveengineering:stairs_concrete_leaded',
@@ -277,11 +275,10 @@ onEvent('item.tags', event => {
        .add(stoneStairs)
        .add(miscStairs);
 
-  event.get('minecraft:wooden_stairs')
-       .add(woodenStairs);
+  event.add('minecraft:wooden_stairs', woodenStairs);
 
   // Missing Slab Tags
-  var woodenSlabs = [
+  let woodenSlabs = [
     'absentbydesign:slab_mushroom_stem',
     'absentbydesign:slab_red_mushroom',
     'absentbydesign:slab_brown_mushroom',
@@ -294,7 +291,7 @@ onEvent('item.tags', event => {
     'immersiveengineering:slab_treated_wood_packaged',
   ];
 
-  var stoneSlabs = [
+  let stoneSlabs = [
     'astralsorcery:marble_slab',
     'astralsorcery:black_marble_slab',
     'darkerdepths:cobbled_sandstone_slab',
@@ -313,14 +310,14 @@ onEvent('item.tags', event => {
     'darkerdepths:grimestone_bricks_slab',
   ];
 
-  var concreteSlabs = [
+  let concreteSlabs = [
     'immersiveengineering:slab_hempcrete',
     'immersiveengineering:slab_concrete',
     'immersiveengineering:slab_concrete_tile',
     'immersiveengineering:slab_concrete_leaded',
   ];
 
-  var miscSlabs = [
+  let miscSlabs = [
     'immersiveengineering:slab_insulating_glass',
     'betterendforge:dragon_bone_slab',
     'immersivepetroleum:asphalt_slab',
@@ -332,16 +329,14 @@ onEvent('item.tags', event => {
        .add(concreteSlabs)
        .add(miscSlabs);
 
-  event.get('minecraft:wooden_slabs')
-       .add(woodenSlabs);
-
+  event.add('minecraft:wooden_slabs', woodenSlabs);
        
   // Vertical Slabs
-  var woodenVerticalSlabs = [
+  let woodenVerticalSlabs = [
     'darkerdepths:petrified_vertical_slab',
   ];
 
-  var miscVerticalSlabs = [
+  let miscVerticalSlabs = [
     'darkerdepths:cobbled_sandstone_vertical_slab',
     'darkerdepths:cobbled_red_sandstone_vertical_slab',
     'darkerdepths:shale_vertical_slab',
@@ -359,7 +354,7 @@ onEvent('item.tags', event => {
   ];
 
   event.get('quark:vertical_slabs').add(miscVerticalSlabs).add(woodenVerticalSlabs);
-  event.get('quark:wooden_vertical_slabs').add(woodenVerticalSlabs);
+  event.add('quark:wooden_vertical_slabs', woodenVerticalSlabs);
        
   // Sandstone Tags
   event.add('forge:sandstone/colorless', [
@@ -469,10 +464,8 @@ onEvent('item.tags', event => {
   event.add('supplementaries:throwable_bricks', 'environmental:mud_brick');
 
   // Missing Mud Brick Tags
-  event.add('forge:ingots/mud_brick', 'environmental:mud_brick');
-  event.add('forge:ingots/mud_brick', 'biomesoplenty:mud_brick');
-  event.add('engineersdecor:brick_ingots', 'environmental:mud_brick');
-  event.add('engineersdecor:brick_ingots', 'biomesoplenty:mud_brick');
+  event.add('forge:ingots/mud_brick', ['environmental:mud_brick', 'biomesoplenty:mud_brick']);
+  event.add('engineersdecor:brick_ingots', 'environmental:mud_brick', 'biomesoplenty:mud_brick');
 
   // Missing Glass Panes Tags
   event.get('forge:glass_panes').add([
@@ -557,12 +550,12 @@ onEvent('item.tags', event => {
   ]);
 
   // Curios Glasses
-  event.get('curios:glasses').add([
+  event.add('curios:glasses', [
     'artifacts:night_vision_goggles',
   ]);
 
   // Curios Charms
-  event.get('curios:charm').add([
+  event.add('curios:charm', [
     'twilightforest:charm_of_life_1',
     'twilightforest:charm_of_life_2',
     'twilightforest:charm_of_keeping_1',
@@ -571,13 +564,13 @@ onEvent('item.tags', event => {
   ]);
   
   // Curios Back
-  event.get('curios:back').add([
+  event.add('curios:back', [
     // This is functional but does not render in this slot. I think this is still preferable to not having it though.
     'alexsmobs:tarantula_hawk_elytra',
   ]);
 
   // Hanging Leaves
-  event.get('valhelsia:hanging_leaves').add([
+  event.add('valhelsia:hanging_leaves', [
     'bayou_blues:hanging_cypress_leaves',
     'environmental:hanging_willow_leaves',
     'environmental:pink_hanging_wisteria_leaves',
@@ -587,7 +580,7 @@ onEvent('item.tags', event => {
   ]);
 
   // Vines
-  event.get('valhelsia:vines/green').add([
+  event.add('valhelsia:vines/green', [
     'minecraft:vine',
     'atmospheric:passion_vine',
     'atum:ophidian_tongue',
@@ -597,13 +590,13 @@ onEvent('item.tags', event => {
   event.add('valhelsia:vines', '#valhelsia:vines/green');
 
   // Aquaculture Tackle Box Green (ideally this shouldn't even exist)
-  event.get('aquaculture:tackle_box_green').add([
+  event.add('aquaculture:tackle_box_green', [
     'bayou_blues:algae',
     '#forge:dyes/green',
   ]);
 
   // Ores
-  event.get('forge:ores').add([
+  event.add('forge:ores', [
     'darkerdepths:aridrock_gold_ore',
     'darkerdepths:aridrock_iron_ore',
     'darkerdepths:aridrock_coal_ore',
@@ -621,14 +614,14 @@ onEvent('item.tags', event => {
   ]);
 
   // Stones
-  event.get('forge:stone').add([
+  event.add('forge:stone', [
     'darkerdepths:aridrock',
     'darkerdepths:limestone',
     'darkerdepths:grimestone',
   ]);
 
   // Gems
-  event.get('forge:gems').add([
+  event.add('forge:gems', [
     'astralsorcery:aquamarine',
     'betterendforge:amber_gem',
     'blue_skies:moonstone_shard',
@@ -640,7 +633,7 @@ onEvent('item.tags', event => {
   ]);
 
   // Storage Blocks
-  event.get('forge:storage_blocks').add([
+  event.add('forge:storage_blocks', [
     'darkerdepths:amber_block',
     'darkerdepths:celestine_crystal_block',
     'druidcraft:fiery_glass_block',
@@ -649,13 +642,13 @@ onEvent('item.tags', event => {
   ]);
 
   // Ingots
-  event.get('forge:ingots').add([
+  event.add('forge:ingots', [
     'biomesoplenty:mud_brick',
     'environmental:mud_brick',
   ]);
 
   // Dusts
-  event.get('forge:dusts').add([
+  event.add('forge:dusts', [
     'astralsorcery:illumination_powder',
     'astralsorcery:nocturnal_powder',
     'astralsorcery:stardust',
@@ -689,7 +682,7 @@ onEvent('item.tags', event => {
   event.add('forge:dusts/warp', 'waystones:warp_dust');
 
   // Leathers
-  event.get('forge:leather').add([
+  event.add('forge:leather', [
     'blue_skies:fox_pelt',
     'mysticalworld:pelt',
     'nethers_delight:hoglin_hide',
@@ -697,20 +690,20 @@ onEvent('item.tags', event => {
   ]);
 
   // Feathers
-  event.get('forge:feathers').add([
+  event.add('forge:feathers', [
     'alexsmobs:emu_feather',
     'alexsmobs:roadrunner_feather',
   ]);
 
   // Lavenders
-  event.get('valhelsia:flowers/lavender').add([
+  event.add('valhelsia:flowers/lavender', [
     'abundance:lavender',
     'biomesoplenty:lavender',
     'druidcraft:lavender',
   ]);
 
   // Leaf Carpets
-  event.get('valhelsia:leaf_carpets').add([
+  event.add('valhelsia:leaf_carpets', [
     'abundance:jacaranda_leaf_carpet',
     'abundance:budding_jacaranda_leaf_carpet',
     'abundance:flowering_jacaranda_leaf_carpet',
@@ -775,11 +768,12 @@ onEvent('item.tags', event => {
   event.add('forge:buckets/water', 'blue_skies:ventium_water_bucket');
   
   // Darker Depths Missing Tags:
-  event.add('minecraft:planks', 'darkerdepths:petrified_planks');
-  event.add('minecraft:planks', 'darkerdepths:vertical_petrified_planks');
-  event.add('minecraft:logs', 'darkerdepths:petrified_log');
-  event.add('minecraft:logs', 'darkerdepths:stripped_petrified_log');
-  event.add('minecraft:logs', 'darkerdepths:porous_petrified_log');
+  event.add('minecraft:planks', ['darkerdepths:petrified_planks', 'darkerdepths:vertical_petrified_planks']);
+  event.add('minecraft:logs', [
+    'darkerdepths:petrified_log', 
+    'darkerdepths:stripped_petrified_log', 
+    'darkerdepths:porous_petrified_log'
+  ]);
   event.add('minecraft:wooden_pressure_plates', 'darkerdepths:petrified_pressure_plate');
   event.add('forge:fence_gates', 'darkerdepths:petrified_fence_gate');
   event.add('forge:fence_gates/wooden', 'darkerdepths:petrified_fence_gate');
@@ -788,20 +782,13 @@ onEvent('item.tags', event => {
   event.add('forge:gems/celestine', 'darkerdepths:celestine_crystal');
   event.add('forge:storage_blocks/celestine', 'darkerdepths:celestine_crystal_block');
 
-  event.add('minecraft:gold_ores', 'darkerdepths:aridrock_gold_ore');
-  event.add('minecraft:gold_ores', 'darkerdepths:limestone_gold_ore');
-  event.add('forge:ores/gold', 'darkerdepths:aridrock_gold_ore');
-  event.add('forge:ores/gold', 'darkerdepths:limestone_gold_ore');
-  event.add('forge:ores/iron', 'darkerdepths:aridrock_iron_ore');
-  event.add('forge:ores/iron', 'darkerdepths:limestone_iron_ore');
-  event.add('forge:ores/coal', 'darkerdepths:aridrock_coal_ore');
-  event.add('forge:ores/coal', 'darkerdepths:limestone_coal_ore');
-  event.add('forge:ores/lapis', 'darkerdepths:aridrock_lapis_ore');
-  event.add('forge:ores/lapis', 'darkerdepths:limestone_lapis_ore');
-  event.add('forge:ores/diamond', 'darkerdepths:aridrock_diamond_ore');
-  event.add('forge:ores/diamond', 'darkerdepths:limestone_diamond_ore');
-  event.add('forge:ores/redstone', 'darkerdepths:aridrock_redstone_ore');
-  event.add('forge:ores/redstone', 'darkerdepths:limestone_redstone_ore');
+  event.add('minecraft:gold_ores', ['darkerdepths:aridrock_gold_ore', 'darkerdepths:limestone_gold_ore']);
+  event.add('forge:ores/gold', ['darkerdepths:aridrock_gold_ore', 'darkerdepths:limestone_gold_ore']);
+  event.add('forge:ores/iron', ['darkerdepths:aridrock_iron_ore', 'darkerdepths:limestone_iron_ore']);
+  event.add('forge:ores/coal', ['darkerdepths:aridrock_coal_ore', 'darkerdepths:limestone_coal_ore']);
+  event.add('forge:ores/lapis', ['darkerdepths:aridrock_lapis_ore', 'darkerdepths:limestone_lapis_ore']);
+  event.add('forge:ores/diamond', ['darkerdepths:aridrock_diamond_ore', 'darkerdepths:limestone_diamond_ore']);
+  event.add('forge:ores/redstone', ['darkerdepths:aridrock_redstone_ore', 'darkerdepths:limestone_redstone_ore']);
 
   // Druidcraft Missing Item Tags
   event.add('forge:ores/fiery_glass', 'druidcraft:fiery_glass_ore');

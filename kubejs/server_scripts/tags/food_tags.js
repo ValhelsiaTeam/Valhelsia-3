@@ -41,7 +41,7 @@ onEvent('item.tags', event => {
     'betterendforge:amber_root_raw',
     'blue_skies:cryo_root',
     'blue_skies:fiery_beans',
-    'blue_skies:winter_leaves'
+    'blue_skies:winter_leaves',
   ]);
 
   // Specific Vegetables

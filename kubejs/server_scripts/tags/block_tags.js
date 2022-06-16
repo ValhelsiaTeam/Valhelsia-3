@@ -63,7 +63,7 @@ onEvent('block.tags', event => {
   ]);
 
   // Missing Stair Tags
-  var woodenStairs = [
+  let woodenStairs = [
     'astralsorcery:infused_wood_stairs',
     'betterendforge:neon_cactus_stairs',
     'darkerdepths:petrified_stairs',
@@ -72,7 +72,7 @@ onEvent('block.tags', event => {
     'immersiveengineering:stairs_treated_wood_packaged'
   ];
 
-  var stoneStairs = [
+  let stoneStairs = [
     'astralsorcery:marble_stairs',
     'astralsorcery:black_marble_stairs',
     'betterendforge:dragon_bone_stairs',
@@ -109,11 +109,10 @@ onEvent('block.tags', event => {
         'immersivepetroleum:asphalt_stairs'
        ]);
 
-  event.get('minecraft:wooden_stairs')
-       .add(woodenStairs);
+  event.add('minecraft:wooden_stairs', woodenStairs);
 
   // Missing Slab Tags
-  var woodenSlabs = [
+  let woodenSlabs = [
     'astralsorcery:infused_wood_slab',
     'betterendforge:neon_cactus_slab',
     'darkerdepths:petrified_slab',
@@ -122,7 +121,7 @@ onEvent('block.tags', event => {
     'immersiveengineering:slab_treated_wood_packaged'
   ];
 
-  var stoneSlabs = [
+  let stoneSlabs = [
     'astralsorcery:marble_slab',
     'astralsorcery:black_marble_slab',
     'betterendforge:dragon_bone_slab',
@@ -154,15 +153,14 @@ onEvent('block.tags', event => {
         'immersivepetroleum:asphalt_slab'
        ]);
 
-  event.get('minecraft:wooden_slabs')
-       .add(woodenSlabs);
+  event.add('minecraft:wooden_slabs', woodenSlabs);
 
   // Vertical Slabs
-  var woodenVerticalSlabs = [
+  let woodenVerticalSlabs = [
     'darkerdepths:petrified_vertical_slab'
   ];
 
-  var miscVerticalSlabs = [
+  let miscVerticalSlabs = [
     'darkerdepths:cobbled_sandstone_vertical_slab',
     'darkerdepths:cobbled_red_sandstone_vertical_slab',
     'darkerdepths:shale_vertical_slab',
@@ -180,7 +178,7 @@ onEvent('block.tags', event => {
   ];
 
   event.get('quark:vertical_slabs').add(miscVerticalSlabs).add(woodenVerticalSlabs);
-  event.get('quark:wooden_vertical_slabs').add(woodenVerticalSlabs);
+  event.add('quark:wooden_vertical_slabs', woodenVerticalSlabs);
 
   // Sandstone Tags
   event.add('forge:sandstone/colorless', [
@@ -447,11 +445,12 @@ onEvent('block.tags', event => {
   event.add('forge:storage_blocks/amber', 'betterendforge:amber_block');
 
   // Darker Depths Missing Tags:
-  event.add('minecraft:planks', 'darkerdepths:petrified_planks');
-  event.add('minecraft:planks', 'darkerdepths:vertical_petrified_planks');
-  event.add('minecraft:logs', 'darkerdepths:petrified_log');
-  event.add('minecraft:logs', 'darkerdepths:stripped_petrified_log');
-  event.add('minecraft:logs', 'darkerdepths:porous_petrified_log');
+  event.add('minecraft:planks', ['darkerdepths:petrified_planks', 'darkerdepths:vertical_petrified_planks']);
+  event.add('minecraft:logs', [
+    'darkerdepths:petrified_log', 
+    'darkerdepths:stripped_petrified_log', 
+    'darkerdepths:porous_petrified_log'
+  ]);
   event.add('minecraft:wooden_pressure_plates', 'darkerdepths:petrified_pressure_plate');
   event.add('forge:fence_gates', 'darkerdepths:petrified_fence_gate');
   event.add('forge:fence_gates/wooden', 'darkerdepths:petrified_fence_gate');
@@ -460,18 +459,12 @@ onEvent('block.tags', event => {
   event.add('forge:gems/celestine', 'darkerdepths:celestine_crystal');
   event.add('forge:storage_blocks/celestine', 'darkerdepths:celestine_crystal_block');
 
-  event.add('forge:ores/gold', 'darkerdepths:aridrock_gold_ore');
-  event.add('forge:ores/gold', 'darkerdepths:limestone_gold_ore');
-  event.add('forge:ores/iron', 'darkerdepths:aridrock_iron_ore');
-  event.add('forge:ores/iron', 'darkerdepths:limestone_iron_ore');
-  event.add('forge:ores/coal', 'darkerdepths:aridrock_coal_ore');
-  event.add('forge:ores/coal', 'darkerdepths:limestone_coal_ore');
-  event.add('forge:ores/lapis', 'darkerdepths:aridrock_lapis_ore');
-  event.add('forge:ores/lapis', 'darkerdepths:limestone_lapis_ore');
-  event.add('forge:ores/diamond', 'darkerdepths:aridrock_diamond_ore');
-  event.add('forge:ores/diamond', 'darkerdepths:limestone_diamond_ore');
-  event.add('forge:ores/redstone', 'darkerdepths:aridrock_redstone_ore');
-  event.add('forge:ores/redstone', 'darkerdepths:limestone_redstone_ore');
+  event.add('forge:ores/gold', ['darkerdepths:aridrock_gold_ore', 'darkerdepths:limestone_gold_ore']);
+  event.add('forge:ores/iron', ['darkerdepths:aridrock_iron_ore', 'darkerdepths:limestone_iron_ore']);
+  event.add('forge:ores/coal', ['darkerdepths:aridrock_coal_ore', 'darkerdepths:limestone_coal_ore']);
+  event.add('forge:ores/lapis', ['darkerdepths:aridrock_lapis_ore', 'darkerdepths:limestone_lapis_ore']);
+  event.add('forge:ores/diamond', ['darkerdepths:aridrock_diamond_ore', 'darkerdepths:limestone_diamond_ore']);
+  event.add('forge:ores/redstone', ['darkerdepths:aridrock_redstone_ore', 'darkerdepths:limestone_redstone_ore']);
 
   // Misc Missing Block Tags:
   event.add('forge:ores/fiery_glass', 'druidcraft:fiery_glass_ore');
