@@ -33,6 +33,32 @@
     {
       "name": "creeper_face",
       "square": 16
+    },
+    {
+      "name": "duck",
+      "square": 32
+    },
+    {
+      "name": "feesh",
+      "x": 16,
+      "y": 32
+    },
+    {
+      "name": "frog",
+      "square": 32
+    },
+    {
+      "name": "parrot",
+      "square": 16
+    },
+    {
+      "name": "puffer",
+      "square": 16
+    },
+    {
+      "name": "sunflower",
+      "x": 16,
+      "y": 32
     }
   ]
 }
