@@ -780,7 +780,7 @@ onEvent('recipes', event => {
   // Structurize - Wooden Timber Frames
   for (pattern of STRUCTURIZE_PATTERNS) {
     for (wood of STRUCTURIZE_WOODS) {
-      for (material of STRUCURIZE_WOODEN_MATERIALS) {
+      for (material of STRUCTURIZE_WOODEN_MATERIALS) {
         for (altPattern of STRUCTURIZE_PATTERNS) {
           if (pattern === altPattern) {
             continue;
