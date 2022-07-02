@@ -465,7 +465,7 @@ onEvent('item.tags', event => {
 
   // Missing Mud Brick Tags
   event.add('forge:ingots/mud_brick', ['environmental:mud_brick', 'biomesoplenty:mud_brick']);
-  event.add('engineersdecor:brick_ingots', 'environmental:mud_brick', 'biomesoplenty:mud_brick');
+  event.add('engineersdecor:brick_ingots', ['environmental:mud_brick', 'biomesoplenty:mud_brick']);
 
   // Missing Glass Panes Tags
   event.get('forge:glass_panes').add([
