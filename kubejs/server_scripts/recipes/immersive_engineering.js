@@ -33,14 +33,23 @@ onEvent('recipes', event => {
     });
   };
 
+  /**
+   * Creates an Immersive Engineering Unpacking Recipe.
+   * @param {(string|Item)} output Output item(s).
+   * @param {(string|Ingredient)} input Input item(s).
+   */
+  const unpack = (output, input) => {
+    event.recipes.immersiveengineering.metal_press(output, input, 'immersiveengineering:mold_unpacking');
+  }
+
   // Atmospheric Compat
-  event.recipes.immersiveengineering.metal_press('9x atmospheric:aloe_leaves', 'atmospheric:aloe_bundle', 'immersiveengineering:mold_unpacking');
-  event.recipes.immersiveengineering.metal_press('9x atmospheric:barrel_cactus', 'atmospheric:barrel_cactus_batch', 'immersiveengineering:mold_unpacking');
-  event.recipes.immersiveengineering.metal_press('9x atmospheric:passion_vine', 'atmospheric:passion_vine_bundle', 'immersiveengineering:mold_unpacking');
+  unpack('9x atmospheric:aloe_leaves', 'atmospheric:aloe_bundle');
+  unpack('9x atmospheric:barrel_cactus', 'atmospheric:barrel_cactus_batch');
+  unpack('9x atmospheric:passion_vine', 'atmospheric:passion_vine_bundle');
   event.recipes.immersiveengineering.cloche(['2x atmospheric:aloe_leaves', '2x minecraft:yellow_dye', 'atmospheric:aloe_kernels'], 'atmospheric:aloe_kernels', 'atmospheric:arid_sand', {type: 'crop', block: 'atmospheric:aloe_vera'}).time(800);
 
   // Autumnity Compat
-  event.recipes.immersiveengineering.metal_press('9x autumnity:snail_slime', 'autumnity:snail_slime_block', 'immersiveengineering:mold_unpacking');
+  unpack('9x autumnity:snail_slime', 'autumnity:snail_slime_block');
   event.recipes.immersiveengineering.cloche(['2x autumnity:foul_berries'], 'autumnity:foul_berry_pips', 'minecraft:dirt', {type: 'crop', block: 'autumnity:foul_berry_bush'}).time(560);
 
   // BetterEnd Compat
@@ -61,6 +70,23 @@ onEvent('recipes', event => {
   event.recipes.immersiveengineering.crusher('2x biomesoplenty:black_sand', '#forge:sandstone/black', Item.of('bloodmagic:saltpeter').withChance(0.5));
   event.recipes.immersiveengineering.crusher('2x biomesoplenty:orange_sand', '#forge:sandstone/orange', Item.of('bloodmagic:saltpeter').withChance(0.5));
 
+  // Cultural Delights Compat
+  event.recipes.immersiveengineering.cloche(['culturaldelights:corn_cob', 'culturaldelights:corn_kernels'], 'culturaldelights:corn_kernels', 'minecraft:dirt', {type: 'crop', block: 'culturaldelights:corn'}).time(800);
+  event.recipes.immersiveengineering.cloche(['culturaldelights:cucumber', 'culturaldelights:cucumber_seeds'], 'culturaldelights:cucumber_seeds', 'minecraft:dirt', {type: 'crop', block: 'culturaldelights:cucumbers'}).time(800);
+  event.recipes.immersiveengineering.cloche(['culturaldelights:eggplant', 'culturaldelights:eggplant_seeds'], 'culturaldelights:eggplant_seeds', 'minecraft:dirt', {type: 'crop', block: 'culturaldelights:eggplants'}).time(800);
+  event.recipes.immersiveengineering.cloche(['culturaldelights:white_eggplant', 'culturaldelights:white_eggplant_seeds'], 'culturaldelights:white_eggplant_seeds', 'minecraft:dirt', {type: 'crop', block: 'culturaldelights:white_eggplants'}).time(800);
+  fermenter('immersiveengineering:ethanol', 'culturaldelights:corn_kernels', 80);
+  squeezer('immersiveengineering:plantoil', 'culturaldelights:cucumber_seeds', 40);
+  squeezer('immersiveengineering:plantoil', 'culturaldelights:eggplant_seeds', 40);
+  squeezer('immersiveengineering:plantoil', 'culturaldelights:white_eggplant_seeds', 40);
+  unpack('3x culturaldelights:avocado', 'culturaldelights:avocado_bundle');
+  unpack('9x culturaldelights:avocado', 'culturaldelights:avocado_crate');
+  unpack('9x culturaldelights:corn_cob', 'culturaldelights:corn_cob_crate');
+  unpack('9x culturaldelights:cucumber', 'culturaldelights:cucumber_crate');
+  unpack('9x culturaldelights:pickle', 'culturaldelights:pickle_crate');
+  unpack('9x culturaldelights:eggplant', 'culturaldelights:eggplant_crate');
+  unpack('9x culturaldelights:white_eggplant', 'culturaldelights:white_eggplant_crate');
+
   // Druidcraft Compat
   squeezer('immersiveengineering:plantoil', 'druidcraft:hemp_seeds', 120);
   event.recipes.immersiveengineering.cloche(['druidcraft:hemp', 'druidcraft:hemp_seeds'], 'druidcraft:hemp_seeds', 'minecraft:dirt', {type: 'crop', block: 'druidcraft:hemp_crop'}).time(800);
@@ -71,7 +97,7 @@ onEvent('recipes', event => {
   // Forbidden & Arcanus Compat
   event.recipes.immersiveengineering.crusher('2x forbidden_arcanus:soulless_sand', '#forge:sandstone/soulless', Item.of('bloodmagic:saltpeter').withChance(0.5));
   squeezer('immersiveengineering:plantoil', 'forbidden_arcanus:golden_orchid_seeds', 40);
-  event.recipes.immersiveengineering.cloche(['forbidden_arcanus:arcane_gold_nugget', 'forbidden_arcanus:golden_orchid_seeds'], 'forbidden_arcanus:golden_orchid_seeds', 'minecraft:dirt', {type: 'crop', block: 'forbidden_arcanus:golden_orchid'}).time(800);
+  event.recipes.immersiveengineering.cloche(['forbidden_arcanus:arcane_gold_nugget', 'forbidden_arcanus:golden_orchid_seeds'], 'forbidden_arcanus:golden_orchid_seeds', 'minecraft:dirt', {type: 'crop', block: 'forbidden_arcanus:golden_orchid'}).time(1600);
 
   // Immersive Engineering Compat
   event.recipes.immersiveengineering.cloche(['2x immersiveengineering:hemp_fiber', 'immersiveengineering:seed'], 'immersiveengineering:seed', 'minecraft:dirt', {type: 'hemp', block: 'immersiveengineering:hemp'}).time(560);
@@ -87,8 +113,8 @@ onEvent('recipes', event => {
 
   // Minecraft Tweaks
   event.recipes.immersiveengineering.metal_press('minecraft:blaze_rod', '6x minecraft:blaze_powder', 'immersiveengineering:mold_rod');
-  event.recipes.immersiveengineering.metal_press('9x minecraft:dried_kelp', 'minecraft:dried_kelp_block', 'immersiveengineering:mold_unpacking');
-  event.recipes.immersiveengineering.metal_press('4x minecraft:nether_wart', 'minecraft:nether_wart_block', 'immersiveengineering:mold_unpacking');
+  unpack('9x minecraft:dried_kelp', 'minecraft:dried_kelp_block');
+  unpack('4x minecraft:nether_wart', 'minecraft:nether_wart_block');
   event.recipes.immersiveengineering.crusher('9x minecraft:bone_meal', 'minecraft:bone_block');
   event.recipes.immersiveengineering.crusher('4x minecraft:nether_wart', 'minecraft:nether_wart_block');
 
@@ -98,8 +124,8 @@ onEvent('recipes', event => {
 
   // Neapolitan Compat
   event.recipes.immersiveengineering.cloche(['2x neapolitan:strawberries'], 'neapolitan:strawberry_pips', 'minecraft:dirt', {type: 'crop', block: 'neapolitan:strawberry_bush'}).time(800);
-  event.recipes.immersiveengineering.metal_press('3x neapolitan:banana', 'neapolitan:banana_bunch', 'immersiveengineering:mold_unpacking');
-  event.recipes.immersiveengineering.metal_press('9x neapolitan:banana_bunch', 'neapolitan:banana_crate', 'immersiveengineering:mold_unpacking');
+  unpack('3x neapolitan:banana', 'neapolitan:banana_bunch');
+  unpack('9x neapolitan:banana_bunch', 'neapolitan:banana_crate');
 
   // Quark Compat
   event.recipes.immersiveengineering.crusher('2x minecraft:soul_sand', '#forge:sandstone/soul', Item.of('bloodmagic:saltpeter').withChance(0.5));
