@@ -201,6 +201,7 @@ onEvent('recipes', event => {
     'minecolonies:chainmailboots',
 
     // Minecraft
+    'minecraft:book', // Using Atum's recipe instead - uses forge:paper and forge:leather by default.
     'minecraft:cake', // Duplicate Recipe.
     'minecraft:dark_prismarine', // Replaced with a different recipe.
     'minecraft:slime_block', // Removed but re-added later in another script to avoid being hit by the replaceInput of slime balls.
@@ -211,6 +212,7 @@ onEvent('recipes', event => {
     'mysticalworld:gold_ingot_from_blasting_dust', // Duplicate recipe.
     'mysticalworld:iron_ingot_from_smelting_dust', // Duplicate recipe.
     'mysticalworld:iron_ingot_from_blasting_dust', // Duplicate recipe.
+    'mysticalworld:shaped_book_with_string', // Not needed, shapeless is fine.
 
     // Quark
     'quark:building/crafting/oak_bookshelf', // Duplicate recipe.
