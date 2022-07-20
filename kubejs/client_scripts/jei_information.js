@@ -79,6 +79,9 @@ onEvent('jei.information', event => {
   // Farmer's Delight
   event.add('farmersdelight:rice', "Rice can be grown by planting it on dirt that is in shallow water, rather than regular farmland.");
 
+  // Farmer's Respite
+  event.add('farmersrespite:coffee_beans', 'Can be planted on top of Basalt.');
+
   // Forbidden and Arcanus
   event.add('forbidden_arcanus:fungyss', "Can be planted on top of Diorite and grown with bone meal.");
 
