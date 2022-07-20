@@ -32,6 +32,11 @@ onEvent('recipes', event => {
   replaceInput('immersiveengineering:ore_silver', '#forge:ores/silver');
   replaceInput('minecraft:iron_ore', '#forge:ores/iron');
   replaceInput('minecraft:gold_ore', '#forge:ores/gold');
+  replaceInput('mysticalworld:cooked_aubergine', '#forge:cooked_vegetables/aubergine');
+  replaceInput('mysticalworld:aubergine', '#forge:crops/aubergine', true);
+  replaceInput('#culturaldelights:regular_eggplants', '#forge:crops/aubergine', true);
+  replaceInput('#culturaldelights:smoked_regular_eggplants', '#forge:cooked_vegetables/aubergine', true);
+  replaceInput('minecraft:bread', '#forge:bread', true);
 
   // Replace specific item inputs by recipe type:
   event.replaceInput({type: 'minecraft:crafting_shapeless'}, 'minecraft:vine', '#valhelsia:vines/green', true);
