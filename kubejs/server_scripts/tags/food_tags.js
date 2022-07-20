@@ -42,18 +42,63 @@ onEvent('item.tags', event => {
     'blue_skies:cryo_root',
     'blue_skies:fiery_beans',
     'blue_skies:winter_leaves',
+    'culturaldelights:avocado',
+    'culturaldelights:cut_avocado',
+    'culturaldelights:corn_cob',
+    'culturaldelights:cucumber',
+    'culturaldelights:cut_cucumber',
+    'culturaldelights:eggplant',
+    'culturaldelights:cut_eggplant',
+    'culturaldelights:pickle',
+    'culturaldelights:popcorn',
+    'culturaldelights:cut_pickle',
+    'culturaldelights:white_eggplant',
   ]);
 
   // Specific Vegetables
   event.add('forge:vegetables/amber_root', 'betterendforge:amber_root_raw');
+  event.add('forge:vegetables/aubergine', 'culturaldelights:eggplant', 'mysticalworld:aubergine');
+  event.add('forge:vegetables/corn', 'culturaldelights:corn_cob');
   event.add('forge:vegetables/cryo_root', 'blue_skies:cryo_root');
+  event.add('forge:vegetables/eggplant', 'culturaldelights:eggplant', 'mysticalworld:aubergine');
   event.add('forge:vegetables/fiery_beans', 'blue_skies:fiery_beans');
+  event.add('forge:vegetables/white_eggplant', 'culturaldelights:white_eggplant');
   event.add('forge:vegetables/winter_leaves', 'blue_skies:winter_leaves');
 
   // Cooked Vegetables
   event.add('forge:cooked_vegetables', [
     'seasonals:roasted_pumpkin',
+    'culturaldelights:smoked_corn',
+    'culturaldelights:smoked_eggplant',
+    'culturaldelights:smoked_cut_eggplant',
+    'culturaldelights:smoked_white_eggplant',
+    'culturaldelights:smoked_tomato',
   ]);
+
+  // Aubergine
+  event.add('forge:cooked_vegetables/aubergine', [
+    'culturaldelights:smoked_eggplant', 
+    'culturaldelights:smoked_cut_eggplant', 
+    'mysticalworld:cooked_aubergine',
+  ]);
+
+  // Crops
+  event.add('forge:crops', [
+    'culturaldelights:avocado',
+    'culturaldelights:cut_avocado',
+    'culturaldelights:cucumber',
+    'culturaldelights:cut_cucumber',
+    'culturaldelights:eggplant',
+    'culturaldelights:cut_eggplant',
+    'culturaldelights:white_eggplant',
+  ]);
+
+  // Specific Crops
+  event.add('forge:crops/aubergine', ['culturaldelights:eggplant', 'culturaldelights:cut_eggplant']);
+  event.add('forge:crops/avocado', ['culturaldelights:avocado', 'culturaldelights:cut_avocado']);
+  event.add('forge:crops/cucumber', ['culturaldelights:cucumber', 'culturaldelights:cut_cucumber']);
+  event.add('forge:crops/eggplant', ['culturaldelights:eggplant', 'culturaldelights:cut_eggplant']);
+  event.add('forge:crops/white_eggplant', ['culturaldelights:white_eggplant']);
 
   // Cookies (mainly so that they can be added to Jars)
   event.add('supplementaries:cookies', [
@@ -69,6 +114,7 @@ onEvent('item.tags', event => {
   // Dough
   event.add('forge:food/dough', [ // Using the tag that Atum already uses.
     'create:dough',
+    'culturaldelights:corn_dough',
     'farmersdelight:wheat_dough',
     'minecolonies:bread_dough',
     // Deliberately excluding Cookie Dough here - this is intended to be fairly neutral doughs.

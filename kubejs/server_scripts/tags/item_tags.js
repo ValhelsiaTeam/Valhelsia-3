@@ -78,6 +78,10 @@ onEvent('item.tags', event => {
     'betterendforge:lanceleaf_seed',
     'betterendforge:lumecorn_seed',
     'betterendforge:shadow_berry', // This is the seed item, despite the ID.
+    'culturaldelights:cucumber_seeds',
+    'culturaldelights:corn_kernels',
+    'culturaldelights:eggplant_seeds',
+    'culturaldelights:white_eggplant_seeds',
     'environmental:cattail_seeds',
     'mysticalworld:aubergine_seeds',
   ]);
@@ -149,6 +153,7 @@ onEvent('item.tags', event => {
     'biomesoplenty:magic_sapling',
     'biomesoplenty:umbran_sapling',
     'biomesoplenty:hellbark_sapling',
+    'culturaldelights:avocado_sapling',
     'druidcraft:darkwood_sapling',
     'druidcraft:elder_sapling',
     'forbidden_arcanus:cherrywood_sapling',
@@ -163,6 +168,11 @@ onEvent('item.tags', event => {
     'twilightforest:transformation_sapling',
     'twilightforest:mining_sapling',
     'twilightforest:sorting_sapling',
+  ]);
+
+  // Missing minecraft:saplings item tags.
+  event.add('minecraft:saplings', [
+    'culturaldelights:avocado_sapling',
   ]);
 
   // Missing #minecraft:logs_that_burn item tags.
