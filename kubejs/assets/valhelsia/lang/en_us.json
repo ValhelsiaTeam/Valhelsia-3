@@ -85,6 +85,8 @@
   "effect.eidolon.chilled.description": "No description yet.",
   "effect.eidolon.anchored.description": "No description yet.",
 
+  "effect.farmersrespite.caffeinated.description": "Increases movement and attack speed.",
+
   "effect.forbidden_arcanus.fly.description": "Allows the player to fly as though in Creative Mode.",
   "effect.forbidden_arcanus.spectral_vision.description": "Highlights nearby entities in the same way as a Spectral Arrow.",
   "effect.forbidden_arcanus.darkened.description": "Causes the player to have darker vision.",
