@@ -82,6 +82,8 @@ onEvent('item.tags', event => {
     'culturaldelights:corn_kernels',
     'culturaldelights:eggplant_seeds',
     'culturaldelights:white_eggplant_seeds',
+    'farmersrespite:coffee_beans',
+    'farmersrespite:tea_seeds',
     'environmental:cattail_seeds',
     'mysticalworld:aubergine_seeds',
   ]);
