@@ -27,6 +27,7 @@ onEvent('recipes', event => {
     'aquaculture:tin_can_to_iron_nugget_from_blasting', // Replaced with tin nuggets.
 
     // Atum 2
+    'atum:cake', // Duplicate recipe.
     'atum:pumpkin_pie', // Duplicate recipe.
     'atum:gold_ingot', // Duplicate recipe.
     'atum:gold_ingot_from_blasting', // Duplicate recipe.
@@ -102,6 +103,9 @@ onEvent('recipes', event => {
     // Eidolon
     'eidolon:pewter_blend',
     'eidolon:smelt_stone_brick', // Conflicts with vanilla recipe.
+
+    // Farmer's Delight
+    'farmersdelight:cake_from_milk_bottle', // Duplicate Recipe.
     
     // Immersive Engineering
     'immersiveengineering:crafting/paper_from_sawdust', // Removed since Mekanism method made this redundant.
@@ -197,6 +201,7 @@ onEvent('recipes', event => {
     'minecolonies:chainmailboots',
 
     // Minecraft
+    'minecraft:cake', // Duplicate Recipe.
     'minecraft:dark_prismarine', // Replaced with a different recipe.
     'minecraft:slime_block', // Removed but re-added later in another script to avoid being hit by the replaceInput of slime balls.
 
