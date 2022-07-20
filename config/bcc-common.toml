@@ -7,7 +7,7 @@
 	#The name of the modpack
 	modpackName = "Valhelsia 3"
 	#The version of the modpack
-	modpackVersion = "3.5.2"
+	modpackVersion = "3.6.0"
 	#Use the metadata.json to determine the modpack version
 	#ONLY ENABLE THIS IF YOU KNOW WHAT YOU ARE DOING
 	useMetadata = false
