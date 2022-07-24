@@ -50,7 +50,7 @@
 	#Enable the nbt storage block or not
 	enableNBTStorage = true
 	#Enable RF storage for peripherals, that could use it
-	enablePoweredPeripherals = false
+	enablePoweredPeripherals = true
 
 [operations]
 	#Range: > 1000
