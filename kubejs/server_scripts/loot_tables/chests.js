@@ -64,23 +64,23 @@ onEvent('chest.loot_tables', event => {
   // Has a chance to drop End-based treasure due to proximity to End Portal.
   event.modify('betterstrongholds:treasure', table => {
     table.addPool(pool => {
-      pool.rolls = [1, 2];
+      pool.rolls = [0, 1];
       pool.addItem('druidcraft:moonstone', 1, [1, 2]);
       pool.addItem('mysticalworld:sapphire', 1, [1, 2]);
       pool.addItem('mysticalworld:lustrous_pearl', 1, [1, 2]);
-      pool.addItem('mysticalworld:quicksilver_ingot', 1, [2, 3]);
-      pool.addItem('immersiveengineering:ingot_silver', 1, [2, 3]);
-      pool.addItem('betterendforge:thallasium_ingot', 1, [2, 3]);
-      pool.addItem('betterendforge:thallasium_nugget', 1, [2, 7]);
-      pool.addItem('betterendforge:terminite_ingot', 1, [2, 3]);
-      pool.addItem('betterendforge:terminite_nugget', 1, [2, 7]);
+      pool.addItem('mysticalworld:quicksilver_ingot', 2, [2, 3]);
+      pool.addItem('immersiveengineering:ingot_silver', 3, [2, 3]);
+      pool.addItem('betterendforge:thallasium_ingot', 2, [2, 3]);
+      pool.addItem('betterendforge:thallasium_nugget', 2, [2, 7]);
+      pool.addItem('betterendforge:terminite_ingot', 2, [2, 3]);
+      pool.addItem('betterendforge:terminite_nugget', 2, [2, 7]);
     });
   });
 
   // Better Strongholds Armoury Loot
   event.modify('betterstrongholds:armoury', table => {
     table.addPool(pool => {
-      pool.rolls = {n: 1, p: 0.2}; // 20% chance of 1 artifact in each barrel, 3 barrels per armoury room.
+      pool.rolls = {n: 1, p: 0.2};
       pool.addItem('artifacts:power_glove', 3);
       pool.addItem('artifacts:antidote_vessel', 3);
       pool.addItem('artifacts:superstitious_hat', 3);
@@ -90,7 +90,7 @@ onEvent('chest.loot_tables', event => {
     });
   });
 
-  /*
+  // Add Ancient Tomes to Better Strongholds Libraries (and Grand Libraries)
   [
     'betterstrongholds:library_md',
     'betterstrongholds:grand_library',
@@ -98,11 +98,10 @@ onEvent('chest.loot_tables', event => {
     event.modify(chestID, table => {
       table.addPool(pool => {
         pool.rolls = 1;
-        // Looks like this function requires something else to function correctly, disabled for now.
-        pool.addItem('quark:ancient_tome', 30).quality(2).addFunction('quark:tome_enchant');
+        pool.addItem('quark:ancient_tome', 20).quality(2).addFunction({function: 'quark:tome_enchant'});
       });
     });
   });
-  */
+  
 
 });
