@@ -57,10 +57,10 @@ onEvent('item.tags', event => {
 
   // Specific Vegetables
   event.add('forge:vegetables/amber_root', 'betterendforge:amber_root_raw');
-  event.add('forge:vegetables/aubergine', 'culturaldelights:eggplant', 'mysticalworld:aubergine');
+  event.add('forge:vegetables/aubergine', ['culturaldelights:eggplant', 'mysticalworld:aubergine']);
   event.add('forge:vegetables/corn', 'culturaldelights:corn_cob');
   event.add('forge:vegetables/cryo_root', 'blue_skies:cryo_root');
-  event.add('forge:vegetables/eggplant', 'culturaldelights:eggplant', 'mysticalworld:aubergine');
+  event.add('forge:vegetables/eggplant', ['culturaldelights:eggplant', 'mysticalworld:aubergine']);
   event.add('forge:vegetables/fiery_beans', 'blue_skies:fiery_beans');
   event.add('forge:vegetables/white_eggplant', 'culturaldelights:white_eggplant');
   event.add('forge:vegetables/winter_leaves', 'blue_skies:winter_leaves');
@@ -98,7 +98,7 @@ onEvent('item.tags', event => {
   event.add('forge:crops/avocado', ['culturaldelights:avocado', 'culturaldelights:cut_avocado']);
   event.add('forge:crops/cucumber', ['culturaldelights:cucumber', 'culturaldelights:cut_cucumber']);
   event.add('forge:crops/eggplant', ['culturaldelights:eggplant', 'culturaldelights:cut_eggplant']);
-  event.add('forge:crops/white_eggplant', ['culturaldelights:white_eggplant']);
+  event.add('forge:crops/white_eggplant', 'culturaldelights:white_eggplant');
 
   // Cookies (mainly so that they can be added to Jars)
   event.add('supplementaries:cookies', [
